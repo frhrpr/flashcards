@@ -28,3 +28,6 @@
 
 # supplied images before conversion (converted copies live in media/img)
 media/img/*.part
+
+# smoke test scratch module
+.smoke.mjs

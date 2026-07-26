@@ -559,6 +559,108 @@ function renderDone(){
     </div>`;
 }
 
+/* ── rendering ──────────────────────────────────────────────────────
+   Grammatical labels are Polish and abbreviated the way a Polish
+   dictionary does it. Every media element is optional: a note with no
+   image or audio simply renders without one, so the deck stays usable
+   while the media pipeline catches up. */
+const POS_PL = {
+  noun: "rzeczownik", verb: "czasownik", adjective: "przymiotnik",
+  adverb: "przysłówek", preposition: "przyimek", conjunction: "spójnik",
+  particle: "partykuła", pronoun: "zaimek", interjection: "wykrzyknik",
+};
+
+// Anything from the deck could contain < or &; it is rendered via innerHTML.
+const esc = s => String(s).replace(/[&<>"]/g, c =>
+  ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+/* Part of speech only. Declension tables and aspect pairs are deliberately
+   not stored — this is a vocabulary trainer, not a grammar reference, and
+   the example sentences are free to use whatever form reads naturally. */
+function grammar(n){
+  return `<div class="gram">${esc(POS_PL[n.pos] || n.pos)}</div>`;
+}
+
+let audioSeq = 0;
+const audioBtns = [];
+function playBtn(src, label, extra){
+  if (!src) return "";
+  const id = `play${audioSeq++}`;
+  audioBtns.push({ id, src });
+  return `<button class="play${extra ? " " + extra : ""}" id="${id}" ` +
+         `aria-label="${esc(label)}">▶</button>`;
+}
+function autoPlay(src){
+  if (!src) return;
+  new Audio(src).play().catch(() => {});   // blocked is fine, button remains
+}
+
+function wireAudio(){
+  for (const { id, src } of audioBtns.splice(0)) {
+    const el = $("#" + id);
+    if (el) el.addEventListener("click", () => new Audio(src).play().catch(e => {
+      // A rejection with no user gesture is routine; anything else is not.
+      if (e.name !== "NotAllowedError") {
+        writeError = new Error(`audio failed: ${src}`);
+        renderWarning();
+      }
+    }));
+  }
+}
+
+/* ── the four card types ────────────────────────────────────────────
+   Each note can produce up to four cards, each testing a different
+   direction. Which pieces appear where is the whole design:
+
+     recognition  PL word + audio + IPA  ->  meaning, image, sentence
+     production   image + English        ->  the Polish word
+     listening    the recording alone    ->  everything else
+
+   Nothing is shown on a front that would give the answer away — the
+   listening front is deliberately bare, and production withholds both the
+   Polish word and its audio. */
+const pieces = {
+  word:    n => `<div class="front">${esc(n.word)}</div>`,
+  ipa:     n => n.ipa ? `<div class="ipa">[${esc(n.ipa)}]</div>` : "",
+  gloss:   n => `<div class="back">${esc(n.gloss)}</div>`,
+  image:   n => n.image
+    ? `<img src="${esc(n.image)}" alt="${esc(n.image_alt || "")}">` : "",
+  note:    n => n.note ? `<div class="note">${esc(n.note)}</div>` : "",
+  audio:   n => playBtn(n.audio, `play ${n.word}`),
+  sentence: n => (n.sentence && n.sentence.pl) ? `
+    <div class="sent">
+      <div class="sent-pl">${esc(n.sentence.pl)}${playBtn(n.sentence.audio, "play the sentence")}</div>
+      <div class="sent-en">${esc(n.sentence.en || "")}</div>
+    </div>` : "",
+  gapped:  n => (n.sentence && n.sentence.gap) ? `
+    <div class="sent"><div class="sent-gap">${esc(n.sentence.gap)}</div></div>` : "",
+};
+
+const LAYOUT = {
+  recognition: {
+    front: ["word", "audio", "ipa"],
+    back:  ["word", "audio", "ipa", "gloss", "image", "sentence", "note"],
+  },
+  production: {
+    front: ["image", "gloss", "note", "gapped"],
+    back:  ["word", "audio", "ipa", "sentence"],
+  },
+  listening: {
+    front: ["audioOnly"],
+    back:  ["word", "audio", "ipa", "gloss", "image", "sentence", "note"],
+  },
+};
+
+// Fronts that are not simply a stack of the shared pieces.
+const special = {
+  audioOnly: n => playBtn(n.audio, `play ${n.word}`, "play-big"),
+};
+
+function side(n, type, which){
+  const names = (LAYOUT[type] || LAYOUT.recognition)[which];
+  return names.map(k => (special[k] || pieces[k])(n)).join("\n      ");
+}
+
 function renderCard(){
   revealed = false;
   current = queue[0];

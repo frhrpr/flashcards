@@ -24,6 +24,7 @@ media/img/*.webp    one image per note, 800px, generated
 media/manifest.json provenance for every media file — source, licence, checks
 media/ATTRIBUTION.md generated from the manifest; do not edit
 tools/validate.py   run after every change; exits non-zero if unshippable
+tools/smoke.mjs     renders every card face in node; run after touching index.html
 tools/audio.py      Commons recordings for words, TTS for sentences
 tools/images.py     generate / fetch / assign images, and --check them
 tools/review.py     builds the approval page; records approvals
@@ -192,6 +193,11 @@ Deferred on purpose: 4 grades instead of 2, and a stats screen.
 
 ## Working notes
 
+- **`node --check` is not enough for index.html.** It parses; it does not
+  resolve names, so it passes a file that calls a function an edit has
+  deleted. That happened. Run `node tools/smoke.mjs` after any change to
+  the app — it renders every card face against the real deck and catches
+  it in a second.
 - **Verify, don't assume.** Check `git log`, `git status`, and the actual
   file contents. This file has been wrong before.
 - **Fail loudly.** The user has asked explicitly for the pipeline to be
