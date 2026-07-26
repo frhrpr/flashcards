@@ -43,6 +43,21 @@ COMMONS_API = "https://commons.wikimedia.org/w/api.php"
 UA = "flashcards-vocab/0.1 (https://github.com/frhrpr/flashcards; personal study tool)"
 
 MIN_BYTES, MIN_SECONDS, PAUSE = 2000, 0.2, 0.6
+
+# Post-processing. Commons recordings come from different contributors on
+# different microphones — measured spread was 20 dB, with some clips peaking
+# at 0.0 dBFS. Everything is levelled to the same target so the deck does not
+# lurch in volume between a word and its sentence.
+#
+# Trimming happens AFTER levelling, deliberately: a fixed dB threshold applied
+# to a clip whose whole content sits at -37 dB would eat the word. The
+# threshold is conservative and 60 ms is kept either side, because Polish
+# words can open on a very quiet fricative (ś in śpiewać) that a keener
+# setting would clip. Anything losing more than TRIM_ALARM of its length is
+# reported rather than silently accepted.
+NORM_MEAN_DB, NORM_PEAK_DB = -19.0, -1.0
+TRIM_DB, TRIM_PAD, TRIM_ALARM = -50, 0.06, 0.30
+PROCESS_VERSION = 1     # bump to force every clip to be rebuilt
 KEY_ORDER = ["id", "word", "gloss", "pos", "ipa", "note", "image", "image_alt",
              "audio", "sentence", "cards", "reviewed"]
 SENT_KEY_ORDER = ["pl", "en", "gap", "answer", "answer_lemma", "audio"]
@@ -139,6 +154,48 @@ def synthesise(key, text, model, lang=None):
         raise RuntimeError(f"network error: {e.reason}") from None
 
 
+def measure(path):
+    """mean and peak dBFS, via ffmpeg's volumedetect."""
+    out = subprocess.run(["ffmpeg", "-v", "info", "-i", str(path), "-af", "volumedetect",
+                          "-f", "null", "-"], capture_output=True, text=True).stderr
+    mean = re.search(r"mean_volume:\s*(-?[\d.]+) dB", out)
+    peak = re.search(r"max_volume:\s*(-?[\d.]+) dB", out)
+    if not mean or not peak:
+        raise RuntimeError("could not measure loudness")
+    return float(mean.group(1)), float(peak.group(1))
+
+
+def duration(path):
+    r = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                        "-of", "csv=p=0", str(path)], capture_output=True, text=True)
+    try:
+        return float(r.stdout.strip())
+    except ValueError:
+        return 0.0
+
+
+def postprocess(src, dest):
+    """Level to a common target, then trim leading/trailing silence.
+
+    Returns (gain_db, seconds_before, seconds_after) for reporting.
+    """
+    mean, peak = measure(src)
+    # Whichever constraint binds first: hit the target mean, but never let the
+    # peak clip. A quiet clip is raised; a hot one is pulled down.
+    gain = min(NORM_MEAN_DB - mean, NORM_PEAK_DB - peak)
+    before = duration(src)
+    trim = (f"silenceremove=start_periods=1:start_silence={TRIM_PAD}"
+            f":start_threshold={TRIM_DB}dB:detection=peak")
+    r = subprocess.run(
+        ["ffmpeg", "-v", "error", "-y", "-i", str(src),
+         "-af", f"volume={gain:.2f}dB,{trim},areverse,{trim},areverse",
+         "-codec:a", "libmp3lame", "-q:a", "5", "-f", "mp3", str(dest)],
+        capture_output=True, text=True)
+    if r.returncode != 0:
+        raise RuntimeError(f"ffmpeg post-processing failed: {r.stderr.strip()[:140]}")
+    return gain, before, duration(dest)
+
+
 def verify(path):
     """An mp3 that is really a JSON error page passes an existence check."""
     size = path.stat().st_size if path.exists() else 0
@@ -172,7 +229,8 @@ def plan(notes, only, tts_words):
             model = SENTENCE_MODEL if kind == "sentence" else WORD_MODEL
             fp = fingerprint(kind, want, text,
                              VOICE_ID if want == "tts" else "commons",
-                             model if want == "tts" else "-")
+                             model if want == "tts" else "-",
+                             PROCESS_VERSION, NORM_MEAN_DB, NORM_PEAK_DB, TRIM_DB)
             entry = manifest.get(rel)
             if entry and entry.get("fingerprint") == fp and (ROOT / rel).exists():
                 if holder.get(key) != rel:
@@ -251,7 +309,8 @@ def main():
 
     key = load_key()
     AUDIO_DIR.mkdir(parents=True, exist_ok=True)
-    failed, changed, counts = [], set(), {"commons": 0, "tts": 0, "fallback": 0}
+    failed, changed, trimmed = [], set(), []
+    counts = {"commons": 0, "tts": 0, "fallback": 0}
 
     for j in relink:
         j["holder"][j["key"]] = j["rel"]
@@ -259,41 +318,51 @@ def main():
 
     for i, j in enumerate(todo, 1):
         print(f"  [{i}/{len(todo)}] {j['rel']} ... ", end="", flush=True)
+        raw = Path(tempfile.mkstemp(dir=AUDIO_DIR, suffix=".raw")[1])
         tmp = Path(tempfile.mkstemp(dir=AUDIO_DIR, suffix=".part")[1])
         prov, fell_back = None, False
         try:
             if j["want"] == "commons":
-                prov = fetch_commons(j["text"], tmp)
+                prov = fetch_commons(j["text"], raw)
                 if prov is None:            # no recording exists — pin the language
                     fell_back = True
-                    tmp.write_bytes(synthesise(key, j["text"], WORD_MODEL, WORD_LANG))
+                    raw.write_bytes(synthesise(key, j["text"], WORD_MODEL, WORD_LANG))
                     prov = {"source": "tts", "voice": VOICE_ID, "voice_name": VOICE_NAME,
                             "model": WORD_MODEL, "language_code": WORD_LANG,
                             "why": "no Commons recording for this word"}
             else:
                 model = SENTENCE_MODEL if j["kind"] == "sentence" else WORD_MODEL
                 lang = None if j["kind"] == "sentence" else WORD_LANG
-                tmp.write_bytes(synthesise(key, j["text"], model, lang))
+                raw.write_bytes(synthesise(key, j["text"], model, lang))
                 prov = {"source": "tts", "voice": VOICE_ID, "voice_name": VOICE_NAME,
                         "model": model, **({"language_code": lang} if lang else {})}
+            gain, before, after = postprocess(raw, tmp)
         except RuntimeError as e:
-            tmp.unlink(missing_ok=True)
+            raw.unlink(missing_ok=True); tmp.unlink(missing_ok=True)
             print("FAILED")
             failed.append((j["rel"], str(e)))
             continue
+        finally:
+            raw.unlink(missing_ok=True)
         problem = verify(tmp)
         if problem:
             tmp.unlink(missing_ok=True)
             print("FAILED")
             failed.append((j["rel"], problem))
             continue
+        cut = (before - after) / before if before else 0
+        if cut > TRIM_ALARM:
+            trimmed.append((j["rel"], before, after, cut))
         tmp.replace(ROOT / j["rel"])
         (ROOT / j["rel"]).chmod(0o644)
-        manifest[j["rel"]] = {"fingerprint": j["fp"], "text": j["text"], **prov}
+        manifest[j["rel"]] = {"fingerprint": j["fp"], "text": j["text"],
+                              "gain_db": round(gain, 1),
+                              "seconds": round(after, 2), **prov}
         j["holder"][j["key"]] = j["rel"]
         changed.add(j["note"]["id"])
         counts["fallback" if fell_back else prov["source"]] += 1
-        print(f"ok  [{'TTS fallback' if fell_back else prov['source']}]")
+        print(f"ok  [{'TTS fallback' if fell_back else prov['source']}] "
+              f"{gain:+.1f} dB, {before:.2f}s→{after:.2f}s")
         if prov["source"] == "tts":
             time.sleep(PAUSE)
 
@@ -307,6 +376,11 @@ def main():
 
     print(f"\n{counts['commons']} human recording(s), {counts['tts']} synthesised, "
           f"{counts['fallback']} synthesised because Commons had nothing")
+    if trimmed:
+        print(f"\n{len(trimmed)} clip(s) lost more than {TRIM_ALARM:.0%} to silence "
+              f"trimming — listen to these before approving:")
+        for rel, b, a, cut in trimmed:
+            print(f"  {rel}  {b:.2f}s -> {a:.2f}s  ({cut:.0%} removed)")
     if failed:
         print(f"\n{len(failed)} FAILED — nothing written for these:")
         for rel, why in failed:

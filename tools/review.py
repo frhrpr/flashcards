@@ -18,14 +18,16 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 NOTES_PATH = ROOT / "deck/notes.json"
 MANIFEST_PATH = ROOT / "media/manifest.json"
-OUT_NAME = "flashcards-review"
+# One folder for everything this project puts on the Windows side.
+OUT_ROOT = "flashcards"
+OUT_SUB = "review"
 
 
 def out_dir():
     for d in sorted(Path("/mnt/c/Users").glob("*/Downloads")):
         if d.is_dir() and not d.parent.name.startswith(("Default", "All Users", "Public")):
-            return d / OUT_NAME
-    return ROOT / ".review"          # gitignored fallback when not on WSL
+            return d / OUT_ROOT / OUT_SUB
+    return ROOT / ".out" / OUT_SUB   # gitignored fallback when not on WSL
 
 
 def esc(s):
