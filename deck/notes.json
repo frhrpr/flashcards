@@ -22,7 +22,9 @@
         "audio": "media/audio/dom__sentence.mp3"
       },
       "cards": [
-        "recognition"
+        "recognition",
+        "production",
+        "listening"
       ],
       "reviewed": true
     },
@@ -47,7 +49,9 @@
         "audio": "media/audio/pies__sentence.mp3"
       },
       "cards": [
-        "recognition"
+        "recognition",
+        "production",
+        "listening"
       ],
       "reviewed": true
     },
@@ -72,7 +76,9 @@
         "audio": "media/audio/kot__sentence.mp3"
       },
       "cards": [
-        "recognition"
+        "recognition",
+        "production",
+        "listening"
       ],
       "reviewed": true
     },
@@ -97,7 +103,9 @@
         "audio": "media/audio/slonce__sentence.mp3"
       },
       "cards": [
-        "recognition"
+        "recognition",
+        "production",
+        "listening"
       ],
       "reviewed": true
     },
@@ -122,7 +130,9 @@
         "audio": "media/audio/pilka__sentence.mp3"
       },
       "cards": [
-        "recognition"
+        "recognition",
+        "production",
+        "listening"
       ],
       "reviewed": true
     },
@@ -147,7 +157,9 @@
         "audio": "media/audio/skakac__sentence.mp3"
       },
       "cards": [
-        "recognition"
+        "recognition",
+        "production",
+        "listening"
       ],
       "reviewed": true
     },
@@ -172,7 +184,9 @@
         "audio": "media/audio/spiewac__sentence.mp3"
       },
       "cards": [
-        "recognition"
+        "recognition",
+        "production",
+        "listening"
       ],
       "reviewed": true
     },
@@ -197,7 +211,9 @@
         "audio": "media/audio/zielony__sentence.mp3"
       },
       "cards": [
-        "recognition"
+        "recognition",
+        "production",
+        "listening"
       ],
       "reviewed": true
     }

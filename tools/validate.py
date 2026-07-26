@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parent.parent
 NOTES, VOCAB = ROOT / "deck/notes.json", ROOT / "deck/vocab.csv"
 MANIFEST = ROOT / "media/manifest.json"
 
-CARD_TYPES = {"recognition", "cloze"}
+CARD_TYPES = {"recognition", "production", "listening", "cloze"}
 POS = {"noun", "verb", "adjective", "adverb", "preposition", "conjunction",
        "particle", "pronoun", "interjection"}
 ID_RE = re.compile(r"[a-z0-9_]+$")
@@ -93,8 +93,13 @@ def main():
         for t in n.get("cards", []):
             if t not in CARD_TYPES:
                 err(nid, f"unknown card type {t!r}")
-        if "cloze" in n.get("cards", []) and not n.get("sentence"):
-            err(nid, "cloze card needs a sentence")
+        # A card type whose material is missing renders a blank front.
+        if "cloze" in n.get("cards", []) and not (n.get("sentence") or {}).get("gap"):
+            err(nid, "cloze card needs a gapped sentence")
+        if "listening" in n.get("cards", []) and "audio" not in n:
+            err(nid, "listening card needs word audio — its whole front is the recording")
+        if "production" in n.get("cards", []) and not n.get("image") and not n.get("note"):
+            warn(nid, "production card has only the English gloss as a cue (no image)")
 
         if isinstance(n.get("sentence"), dict):
             check_sentence(nid, n["sentence"], n.get("word", ""))

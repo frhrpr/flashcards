@@ -78,9 +78,19 @@ notes`. `status` is `queued` → `known` → `carded`.
   press once the log is long, felt on mobile long before the 1 MiB document
   ceiling matters. First run still needs `setDoc`; `updateDoc` requires an
   existing document.
-- **State is keyed `${noteId}__${cardType}`**, so production / listening /
-  cloze cards can be added without migrating live progress. Only
-  `recognition` exists today. Legacy bare-note-id state is folded in on load.
+- **State is keyed `${noteId}__${cardType}`**, so card types can be added
+  without migrating live progress. Legacy bare-note-id state is folded in on
+  load. Four types exist; `cloze` is built but switched off in the data.
+  What each side shows is declared in `LAYOUT` in `index.html` — a front
+  never carries anything that would give its own answer away, which is why
+  production withholds the audio and IPA as well as the word.
+- **`recognition` is what the user calls "comprehension".** Kept as-is: the
+  id is a live Firestore field path, and renaming it would migrate real
+  progress for a cosmetic gain.
+- **Siblings are buried.** Answering one card of a note drops its other
+  cards from today's queue, and the daily new-card budget takes at most one
+  card per note. Without this he passes the second and third on ten-second
+  recall rather than on knowing the word, and the scheduler believes it.
 - **`note_id` must match `[a-z0-9_]+`** — it is used as a Firestore field
   path, where diacritics would need backtick quoting. `słońce` → `slonce`,
   `śmiać się` → `smiac_sie`.
