@@ -80,7 +80,9 @@ notes`. `status` is `queued` → `known` → `carded`.
   existing document.
 - **State is keyed `${noteId}__${cardType}`**, so card types can be added
   without migrating live progress. Legacy bare-note-id state is folded in on
-  load. Four types exist; `cloze` is built but switched off in the data.
+  load. Three types exist. Cloze was built and removed: its only unique
+  contribution was drilling the *inflected* form, which is the morphology
+  this tool deliberately does not teach.
   What each side shows is declared in `LAYOUT` in `index.html` — a front
   never carries anything that would give its own answer away, which is why
   production withholds the audio and IPA as well as the word.
@@ -91,7 +93,7 @@ notes`. `status` is `queued` → `known` → `carded`.
   cards from today's queue, and the daily new-card budget takes at most one
   card per note. Without this he passes the second and third on ten-second
   recall rather than on knowing the word, and the scheduler believes it.
-- **Staged unlock.** `production`, `listening` and `cloze` are not introduced
+- **Staged unlock.** `production` and `listening` are not introduced
   until that note's `recognition` card has `ivl >= 6` — two correct answers,
   about a week in. The gate governs *introducing* only: a card that already
   has state stays in rotation, so a later lapse on recognition cannot yank
@@ -134,8 +136,8 @@ not). Check before assuming.
 ## Roadmap
 
 Full Anki-style notes: image, audio, IPA, example sentence, gapped sentence
-for cloze, part of speech, short Polish definition. One note produces up to
-four cards (recognition, production, listening, cloze).
+for cloze, part of speech, short Polish definition. One note produces three
+cards (recognition, production, listening).
 
 Decided so far:
 
