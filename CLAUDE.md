@@ -113,10 +113,11 @@ notes`. `status` is `queued` → `known` → `carded`.
   while every day differs. Without it the sequence was identical every
   session and new words arrived in file order, so notes at the end of the
   file would never be introduced.
-- **Any user id starting `test` never writes.** Poking at the app leaves no
-  document behind, and a banner says so, so a scratch session cannot be
-  mistaken for a real one. Progress in test mode dies on reload — that is
-  the point.
+- **Any user id starting `test` never writes, and skips the maturity gate**
+  so every card type is visible at once. A scratch session is for looking at
+  the app, not for learning; waiting a week to see a production card would
+  defeat it. A banner says so, and progress dies on reload — that is the
+  point. Nothing to corrupt, since these sessions never save.
 - **The closing screen sells coming back, not completeness.** Order is:
   you are finished, well done, come back on this day. Locked cards are last,
   small and grey, with a line saying there is nothing to do about them — a
