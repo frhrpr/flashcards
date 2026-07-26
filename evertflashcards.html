@@ -51,32 +51,21 @@ button{font-family:inherit;cursor:pointer;border-radius:4px}
 
 <script type="module">
 /* ══════════════════════════════════════════════════════════════════
-   CONFIG — paste your Firebase project's config below, then set
-   FIREBASE_READY to true. Get this from: Firebase console → your
-   project → gear icon → Project settings → your web app → SDK setup
-   and configuration → "Config".
+   CONFIG — Firebase project config. Get this from: Firebase console →
+   your project → gear icon → Project settings → your web app → SDK
+   setup and configuration → "Config".
    ══════════════════════════════════════════════════════════════════ */
 
-const FIREBASE_READY = true; // ← flip to true once the config below is real
-
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-// Your web app's Firebase configuration
+const FIREBASE_READY = true;
 
 const firebaseConfig = {
-apiKey: "AIzaSyAZD5VoyBU22jaSBpajmbUiO-ZW8WDkEEo",
-authDomain: "flashcards-f5b40.firebaseapp.com",
-projectId: "flashcards-f5b40",
-storageBucket: "flashcards-f5b40.firebasestorage.app",
-messagingSenderId: "24461231038",
-appId: "1:24461231038:web:87e1160e6008d9d6b0efef"
+  apiKey: "AIzaSyAZD5VoyBU22jaSBpajmbUiO-ZW8WDkEEo",
+  authDomain: "flashcards-f5b40.firebaseapp.com",
+  projectId: "flashcards-f5b40",
+  storageBucket: "flashcards-f5b40.firebasestorage.app",
+  messagingSenderId: "24461231038",
+  appId: "1:24461231038:web:87e1160e6008d9d6b0efef"
 };
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-</script>
 
 /* ── the deck ──────────────────────────────────────────────────────
    Add cards here as you go. `img` and `audio` are optional — leave
@@ -179,9 +168,11 @@ function schedule(state, grade){
 
 /* ── load, build today's queue ─────────────────────────────────── */
 let cardStates = {};
+let reviewLog = [];
 try {
   const snap = await getDoc(docRef);
   cardStates = snap.exists() ? (snap.data().cards || {}) : {};
+  reviewLog = snap.exists() ? (snap.data().log || []) : [];
 } catch (e) {
   showError("Couldn't reach Firestore.\n\n" + e.message +
     "\n\nCheck: the config is correct, Firestore is enabled, and the\n" +
@@ -218,7 +209,7 @@ function renderCard(){
     </div>
     <button class="reveal" id="reveal">Show answer</button>
   `;
-  if (c.audio) $("#play").addEventListener("click", () => new Audio(c.audio).play());
+  if (c.audio) $("#play").addEventListener("click", () => new Audio(c.audio).play().catch(() => {}));
   $("#reveal").addEventListener("click", showBack);
 }
 
@@ -238,7 +229,7 @@ function showBack(){
       <button class="g-good" id="good">Good</button>
     </div>
   `;
-  if (c.audio) $("#play").addEventListener("click", () => new Audio(c.audio).play());
+  if (c.audio) $("#play").addEventListener("click", () => new Audio(c.audio).play().catch(() => {}));
   $("#again").addEventListener("click", () => grade("again"));
   $("#good").addEventListener("click", () => grade("good"));
 }
@@ -247,9 +238,10 @@ async function grade(g){
   const id = queue.shift();
   const prev = cardStates[id] || newCardState();
   cardStates[id] = schedule(prev, g);
+  reviewLog.push({ card: id, grade: g, ts: Date.now() });
 
   try {
-    await setDoc(docRef, { cards: cardStates, updated: Date.now() });
+    await setDoc(docRef, { cards: cardStates, log: reviewLog, updated: Date.now() });
   } catch (e) {
     showError("Couldn't save that review — check your connection.\n\n" + e.message);
     return;
