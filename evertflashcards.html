@@ -23,6 +23,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--sans);padding:1.
 
 .msg{text-align:center;padding:3rem 1rem;color:var(--dim);font-size:1rem;line-height:1.6}
 .msg.err{color:var(--bad);font-family:var(--mono);font-size:.82rem;text-align:left;white-space:pre-wrap}
+.warn{margin:0 0 1rem;padding:.6rem .75rem;border:1px solid var(--line);border-left:2px solid var(--bad);font-family:var(--mono);font-size:.7rem;line-height:1.5;color:var(--dim)}
 
 .card{background:var(--card);border:1px solid var(--line);padding:3rem 1.5rem;text-align:center;min-height:11rem;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.75rem}
 .front{font-size:2.1rem;font-weight:300}
@@ -46,6 +47,7 @@ button{font-family:inherit;cursor:pointer;border-radius:4px}
     <span class="eyebrow">Polish vocab</span>
     <span class="eyebrow" id="count"></span>
   </div>
+  <div id="warn"></div>
   <div id="app"><p class="msg">Loading…</p></div>
 </div>
 
@@ -89,7 +91,7 @@ const CARDS = {
    ══════════════════════════════════════════════════════════════════ */
 
 const $ = sel => document.querySelector(sel);
-const appEl = $("#app"), countEl = $("#count");
+const appEl = $("#app"), countEl = $("#count"), warnEl = $("#warn");
 
 function showError(msg){
   appEl.innerHTML = `<p class="msg err">${msg}</p>`;
@@ -117,7 +119,7 @@ if (!FIREBASE_READY) {
 }
 
 const { initializeApp } = await import("https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js");
-const { getFirestore, doc, getDoc, setDoc } =
+const { getFirestore, doc, getDoc, setDoc, updateDoc, arrayUnion } =
   await import("https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js");
 
 const app = initializeApp(firebaseConfig);
@@ -147,6 +149,31 @@ const docRef = doc(db, "progress", uid);
    steps. A card marked "again" is also nudged back into today's
    session queue so it comes up again this sitting, not just tomorrow. */
 const MS_DAY = 86400000;
+
+/* ── cards per note ────────────────────────────────────────────────
+   One note will eventually spawn several cards (recognition, production,
+   listening, cloze). Only recognition exists today, but scheduling state is
+   keyed per *card* from the start, so adding a type later is a data change
+   rather than a migration of live progress.
+
+   Keys are `${noteId}__${cardType}`. Keep note ids to [A-Za-z0-9_]: the key
+   is used as a Firestore field path in save(), and anything outside that
+   set would need backtick quoting. */
+const CARD_TYPES = ["recognition"];
+const cardKey = (noteId, type) => `${noteId}__${type}`;
+const noteOf  = key => key.slice(0, key.lastIndexOf("__"));
+// Hook for later: cloze cards only where a note actually has a sentence.
+function typesFor(_note){ return CARD_TYPES; }
+
+/* Cap on cards introduced per day. Irrelevant at 8 cards, load-bearing once
+   the real deck lands — without it every unseen card is due on day one. */
+const NEW_PER_DAY = 10;
+
+/* Firestore caps a document at 1 MiB. We warn well before that; see
+   logBytes() for why the estimate errs high. */
+const DOC_LIMIT = 1048576;
+const WARN_AT   = 0.7;
+
 function today(){ const d = new Date(); d.setHours(0,0,0,0); return d.getTime(); }
 function newCardState(){ return { ivl: 0, ease: 2.5, reps: 0, due: today() }; }
 function schedule(state, grade){
@@ -169,10 +196,12 @@ function schedule(state, grade){
 /* ── load, build today's queue ─────────────────────────────────── */
 let cardStates = {};
 let reviewLog = [];
+let docExists = false;
 try {
   const snap = await getDoc(docRef);
-  cardStates = snap.exists() ? (snap.data().cards || {}) : {};
-  reviewLog = snap.exists() ? (snap.data().log || []) : [];
+  docExists = snap.exists();
+  cardStates = docExists ? (snap.data().cards || {}) : {};
+  reviewLog = docExists ? (snap.data().log || []) : [];
 } catch (e) {
   showError("Couldn't reach Firestore.\n\n" + e.message +
     "\n\nCheck: the config is correct, Firestore is enabled, and the\n" +
@@ -180,13 +209,76 @@ try {
   throw e;
 }
 
+/* State written before cards-per-note existed is keyed by bare note id.
+   Fold it into the recognition card so nobody loses their progress. */
+let migrated = false;
+for (const key of Object.keys(cardStates)) {
+  if (key.includes("__")) continue;
+  cardStates[cardKey(key, "recognition")] = cardStates[key];
+  delete cardStates[key];
+  migrated = true;
+}
+
 const t = today();
-let queue = Object.keys(CARDS)
-  .filter(id => (cardStates[id]?.due ?? t) <= t)
-  .sort((a, b) => (cardStates[a]?.due ?? t) - (cardStates[b]?.due ?? t));
+
+const allCards = Object.keys(CARDS).flatMap(
+  id => typesFor(CARDS[id]).map(type => cardKey(id, type))
+);
+
+/* Due first, oldest due date first; then as many never-seen cards as
+   today's budget still allows. `introduced` is stamped on the first grade,
+   so the count survives a reload and a second device. */
+const introducedToday = Object.values(cardStates)
+  .filter(s => s.introduced === t).length;
+
+let queue = [
+  ...allCards
+    .filter(k => cardStates[k] && cardStates[k].due <= t)
+    .sort((a, b) => cardStates[a].due - cardStates[b].due),
+  ...allCards
+    .filter(k => !cardStates[k])
+    .slice(0, Math.max(0, NEW_PER_DAY - introducedToday)),
+];
 
 let current = null;
 let revealed = false;
+
+/* ── persistence ───────────────────────────────────────────────────
+   Write a delta, not the whole document. The previous setDoc re-uploaded
+   every card state *and* the entire review log on every single grade — a
+   few hundred KB per button press once the log is long, which is felt on a
+   phone long before the 1 MiB document ceiling is anywhere in sight. */
+async function save(key, state, entry){
+  if (!docExists) {
+    // updateDoc requires an existing document; first run has to create one.
+    await setDoc(docRef, {
+      cards: cardStates, log: reviewLog, logBytes: logBytes(), updated: Date.now()
+    });
+    docExists = true;
+    return;
+  }
+  await updateDoc(docRef, {
+    [`cards.${key}`]: state,
+    // arrayUnion is set-semantics: an entry identical in card, grade *and*
+    // millisecond timestamp would be dropped. Not reachable in practice.
+    log: arrayUnion(entry),
+    logBytes: logBytes(),
+    updated: Date.now(),
+  });
+}
+
+/* JSON length runs a little above Firestore's own accounting, which is the
+   safe direction for a warning. Also stored on the document each save, so
+   the number is visible in the Firebase console without opening the app. */
+function logBytes(){ return JSON.stringify(reviewLog).length; }
+
+function renderWarning(){
+  const bytes = logBytes();
+  if (bytes < DOC_LIMIT * WARN_AT) { warnEl.innerHTML = ""; return; }
+  const pct = Math.round(bytes / DOC_LIMIT * 100);
+  warnEl.innerHTML = `<p class="warn">Review log is at ~${pct}% of the 1 MiB ` +
+    `Firestore document limit (${reviewLog.length} entries). Trim or archive it.</p>`;
+}
 
 function renderCount(){
   countEl.textContent = queue.length ? `${queue.length} due` : "";
@@ -194,14 +286,16 @@ function renderCount(){
 
 function renderDone(){
   countEl.textContent = "";
+  renderWarning();
   appEl.innerHTML = `<p class="msg">Nothing due right now. Nice work.</p>`;
 }
 
 function renderCard(){
   revealed = false;
   current = queue[0];
-  const c = CARDS[current];
+  const c = CARDS[noteOf(current)];
   renderCount();
+  renderWarning();
   appEl.innerHTML = `
     <div class="card">
       <div class="front">${c.front}</div>
@@ -216,7 +310,7 @@ function renderCard(){
 function showBack(){
   if (revealed) return;
   revealed = true;
-  const c = CARDS[current];
+  const c = CARDS[noteOf(current)];
   appEl.innerHTML = `
     <div class="card">
       <div class="front">${c.front}</div>
@@ -235,13 +329,18 @@ function showBack(){
 }
 
 async function grade(g){
-  const id = queue.shift();
-  const prev = cardStates[id] || newCardState();
-  cardStates[id] = schedule(prev, g);
-  reviewLog.push({ card: id, grade: g, ts: Date.now() });
+  const key = queue.shift();
+  const isNew = !cardStates[key];
+  const next = schedule(cardStates[key] || newCardState(), g);
+  // Stamped whichever way it was graded — it was still introduced today.
+  if (isNew) next.introduced = today();
+  cardStates[key] = next;
+
+  const entry = { card: key, grade: g, ts: Date.now() };
+  reviewLog.push(entry);
 
   try {
-    await setDoc(docRef, { cards: cardStates, log: reviewLog, updated: Date.now() });
+    await save(key, next, entry);
   } catch (e) {
     showError("Couldn't save that review — check your connection.\n\n" + e.message);
     return;
@@ -249,10 +348,22 @@ async function grade(g){
 
   if (g === "again") {
     // resurface later this session rather than only tomorrow
-    queue.splice(Math.min(queue.length, 3), 0, id);
+    queue.splice(Math.min(queue.length, 3), 0, key);
   }
 
   queue.length ? renderCard() : renderDone();
+}
+
+// One-off rewrite so the folded legacy keys above are actually persisted.
+if (migrated && docExists) {
+  try {
+    await setDoc(docRef, {
+      cards: cardStates, log: reviewLog, logBytes: logBytes(), updated: Date.now()
+    });
+  } catch (e) {
+    showError("Couldn't migrate saved progress.\n\n" + e.message);
+    throw e;
+  }
 }
 
 queue.length ? renderCard() : renderDone();

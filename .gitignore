@@ -1,0 +1,17 @@
+# These are /dev/null bind-mounts created by the Claude Code sandbox, not
+# real files. They show up as untracked and clutter `git status`.
+.bash_profile
+.bashrc
+.gitconfig
+.gitmodules
+.idea
+.mcp.json
+.profile
+.ripgreprc
+.vscode
+.zprofile
+.zshrc
+
+# Local Claude Code state. Remove this line if you ever add project skills
+# or hooks that should be shared.
+.claude/
