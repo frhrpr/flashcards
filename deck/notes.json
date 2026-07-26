@@ -24,7 +24,7 @@
       "cards": [
         "recognition"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "pies",
@@ -49,7 +49,7 @@
       "cards": [
         "recognition"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "kot",
@@ -74,7 +74,7 @@
       "cards": [
         "recognition"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "slonce",
@@ -99,7 +99,7 @@
       "cards": [
         "recognition"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "pilka",
@@ -124,7 +124,7 @@
       "cards": [
         "recognition"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "skakac",
@@ -149,7 +149,7 @@
       "cards": [
         "recognition"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "spiewac",
@@ -174,7 +174,7 @@
       "cards": [
         "recognition"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "zielony",
@@ -199,7 +199,7 @@
       "cards": [
         "recognition"
       ],
-      "reviewed": false
+      "reviewed": true
     }
   ]
 }
