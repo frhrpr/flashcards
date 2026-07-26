@@ -11,6 +11,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 NOTES, VOCAB = ROOT / "deck/notes.json", ROOT / "deck/vocab.csv"
+MANIFEST = ROOT / "media/manifest.json"
 
 CARD_TYPES = {"recognition", "cloze"}
 POS = {"noun", "verb", "adjective", "adverb", "preposition", "conjunction",
@@ -65,6 +66,13 @@ def check_sentence(nid, s, word):
 def main():
     notes, vocab = load()
     todo = {"image": [], "audio": [], "sentence audio": [], "review": []}
+    manifest = {}
+    if MANIFEST.exists():
+        try:
+            manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as e:
+            errors.append(f"media/manifest.json is not valid JSON: {e}")
+    sources = {"commons": 0, "tts": 0, "unrecorded": 0}
 
     seen = set()
     for n in notes:
@@ -91,13 +99,33 @@ def main():
         if isinstance(n.get("sentence"), dict):
             check_sentence(nid, n["sentence"], n.get("word", ""))
 
-        # Media is absent until generated. A path that IS set must resolve.
-        for key in ("image", "audio"):
-            if key in n and not (ROOT / n[key]).exists():
-                err(nid, f"{key} points at a missing file: {n[key]}")
+        # Media is absent until generated. A path that IS set must resolve,
+        # and every clip must have provenance — without it, tools/audio.py
+        # cannot tell a stale clip from a current one and will never rebuild.
+        clips = [(key, n[key]) for key in ("image", "audio") if key in n]
         if isinstance(n.get("sentence"), dict) and "audio" in n["sentence"]:
-            if not (ROOT / n["sentence"]["audio"]).exists():
-                err(nid, f"sentence.audio points at a missing file: {n['sentence']['audio']}")
+            clips.append(("sentence.audio", n["sentence"]["audio"]))
+        for key, rel in clips:
+            if not (ROOT / rel).exists():
+                err(nid, f"{key} points at a missing file: {rel}")
+            elif key.endswith("audio"):
+                entry = manifest.get(rel)
+                if not entry:
+                    err(nid, f"{key} has no entry in media/manifest.json — "
+                             f"delete {rel} and re-run tools/audio.py")
+                    sources["unrecorded"] += 1
+                else:
+                    sources[entry.get("source", "unrecorded")] = \
+                        sources.get(entry.get("source", "unrecorded"), 0) + 1
+                    if entry.get("text") != (n["word"] if key == "audio"
+                                             else n["sentence"]["pl"]):
+                        err(nid, f"{key} was generated from "
+                                 f"{entry.get('text')!r}, which is no longer the text — "
+                                 f"re-run tools/audio.py")
+
+        if n.get("reviewed") and not (n.get("audio") and
+                                      (n.get("sentence") or {}).get("audio")):
+            err(nid, "marked reviewed but audio is missing")
         # Not-yet-generated media is normal, so it is counted rather than
         # listed — 30 lines of "no image yet" would bury a real problem.
         for key in ("image", "audio"):
@@ -132,6 +160,10 @@ def main():
     if warnings:
         print()
 
+    human = sources.get("commons", 0)
+    synth = sources.get("tts", 0)
+    if human or synth:
+        print(f"  audio  {human} human recording(s), {synth} synthesised")
     for label, ids in todo.items():
         if not ids:
             continue

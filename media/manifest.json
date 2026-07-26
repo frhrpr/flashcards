@@ -1,128 +1,136 @@
 {
   "media/audio/dom.mp3": {
-    "bytes": 15090,
-    "fingerprint": "df4f4508af516aef",
-    "model": "eleven_multilingual_v2",
-    "text": "dom",
-    "voice": "ErXwobaYiN019PkySvjV",
-    "voice_name": "Antoni"
+    "author": "tsca",
+    "commons_file": "Pl-dom.ogg",
+    "fingerprint": "0dca80228f9772ef",
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-dom.ogg",
+    "source": "commons",
+    "text": "dom"
   },
   "media/audio/dom__sentence.mp3": {
-    "bytes": 26375,
-    "fingerprint": "b2ba920f75d46868",
+    "fingerprint": "d5b2149153145508",
     "model": "eleven_multilingual_v2",
+    "source": "tts",
     "text": "Rano wracam do domu.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
   "media/audio/kot.mp3": {
-    "bytes": 10911,
-    "fingerprint": "77d03663357ad6f8",
-    "model": "eleven_multilingual_v2",
-    "text": "kot",
-    "voice": "ErXwobaYiN019PkySvjV",
-    "voice_name": "Antoni"
+    "author": "Halibutt",
+    "commons_file": "Pl-kot.ogg",
+    "fingerprint": "d836bcaedc3cfbdb",
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-kot.ogg",
+    "source": "commons",
+    "text": "kot"
   },
   "media/audio/kot__sentence.mp3": {
-    "bytes": 26375,
-    "fingerprint": "e134ea2996c6d115",
+    "fingerprint": "5e7d950d66adde05",
     "model": "eleven_multilingual_v2",
+    "source": "tts",
     "text": "Mały kot pije mleko.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
   "media/audio/pies.mp3": {
-    "bytes": 13000,
-    "fingerprint": "34abb34269139677",
-    "model": "eleven_multilingual_v2",
-    "text": "pies",
-    "voice": "ErXwobaYiN019PkySvjV",
-    "voice_name": "Antoni"
+    "author": "unknown",
+    "commons_file": "Pl-pies.ogg",
+    "fingerprint": "2a5d61b00786be58",
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-pies.ogg",
+    "source": "commons",
+    "text": "pies"
   },
   "media/audio/pies__sentence.mp3": {
-    "bytes": 31391,
-    "fingerprint": "9439de0f3ebc85fe",
+    "fingerprint": "99480d9c3bb2d28b",
     "model": "eleven_multilingual_v2",
+    "source": "tts",
     "text": "Pod drzewem siedzi pies.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
   "media/audio/pilka.mp3": {
-    "bytes": 16762,
-    "fingerprint": "92a747bbc8259753",
-    "model": "eleven_multilingual_v2",
-    "text": "piłka",
-    "voice": "ErXwobaYiN019PkySvjV",
-    "voice_name": "Antoni"
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-piłka.ogg",
+    "fingerprint": "342971facc801882",
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-pi%C5%82ka.ogg",
+    "source": "commons",
+    "text": "piłka"
   },
   "media/audio/pilka__sentence.mp3": {
-    "bytes": 27211,
-    "fingerprint": "831a8da6367c3638",
+    "fingerprint": "322b37c2218be678",
     "model": "eleven_multilingual_v2",
+    "source": "tts",
     "text": "Pod ławką jest piłka.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
   "media/audio/skakac.mp3": {
-    "bytes": 15926,
-    "fingerprint": "a912c34c2afb326f",
-    "model": "eleven_multilingual_v2",
-    "text": "skakać",
-    "voice": "ErXwobaYiN019PkySvjV",
-    "voice_name": "Antoni"
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-skakać.ogg",
+    "fingerprint": "1cd1400a9434a1d9",
+    "licence": "CC BY 2.5 pl",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-skaka%C4%87.ogg",
+    "source": "commons",
+    "text": "skakać"
   },
   "media/audio/skakac__sentence.mp3": {
-    "bytes": 26375,
-    "fingerprint": "f1deb1fc3cf39da3",
+    "fingerprint": "a836fba8f83471da",
     "model": "eleven_multilingual_v2",
+    "source": "tts",
     "text": "Kot skacze na ławkę.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
   "media/audio/slonce.mp3": {
-    "bytes": 18852,
-    "fingerprint": "4aa8ae89a5ba1378",
-    "model": "eleven_multilingual_v2",
-    "text": "słońce",
-    "voice": "ErXwobaYiN019PkySvjV",
-    "voice_name": "Antoni"
+    "author": "Frizabela",
+    "commons_file": "Pl-słońce.ogg",
+    "fingerprint": "99984d57f0684ed3",
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-s%C5%82o%C5%84ce.ogg",
+    "source": "commons",
+    "text": "słońce"
   },
   "media/audio/slonce__sentence.mp3": {
-    "bytes": 27211,
-    "fingerprint": "7de2bd2f9cd9b6ac",
+    "fingerprint": "32d94573d64aed4b",
     "model": "eleven_multilingual_v2",
+    "source": "tts",
     "text": "Rano słońce jest żółte.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
   "media/audio/spiewac.mp3": {
-    "bytes": 18852,
-    "fingerprint": "17a7fd51cc20ce08",
-    "model": "eleven_multilingual_v2",
-    "text": "śpiewać",
-    "voice": "ErXwobaYiN019PkySvjV",
-    "voice_name": "Antoni"
+    "author": "Derbeth",
+    "commons_file": "Pl-śpiewać.ogg",
+    "fingerprint": "999928056a8fc2d4",
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-%C5%9Bpiewa%C4%87.ogg",
+    "source": "commons",
+    "text": "śpiewać"
   },
   "media/audio/spiewac__sentence.mp3": {
-    "bytes": 24285,
-    "fingerprint": "ccdc7a70583bd16b",
+    "fingerprint": "a07ea041a3f46ee1",
     "model": "eleven_multilingual_v2",
+    "source": "tts",
     "text": "Ptak śpiewa w parku.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
   "media/audio/zielony.mp3": {
-    "bytes": 18016,
-    "fingerprint": "fb10fd041c747853",
-    "model": "eleven_multilingual_v2",
-    "text": "zielony",
-    "voice": "ErXwobaYiN019PkySvjV",
-    "voice_name": "Antoni"
+    "author": "Derbeth",
+    "commons_file": "Pl-zielony.ogg",
+    "fingerprint": "32a0a4911de90c99",
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-zielony.ogg",
+    "source": "commons",
+    "text": "zielony"
   },
   "media/audio/zielony__sentence.mp3": {
-    "bytes": 28465,
-    "fingerprint": "abe7103f21e812b8",
+    "fingerprint": "fdc81f4de1b56103",
     "model": "eleven_multilingual_v2",
+    "source": "tts",
     "text": "To drzewo jest zielone.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
