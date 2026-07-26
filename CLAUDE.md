@@ -180,6 +180,18 @@ Decided so far:
   every image model — it has never been free). Flash not pro: these render
   at 800px on a phone.
 
+**Prefer the sentence's scene, but not at the cost of a complicated prompt.**
+An image that shows what the sentence says is worth more than a stock picture
+of the word, because it reinforces the card as one unit. Take it whenever the
+sentence is a subject doing one plain action — `Mały kot pije mleko.` is a
+cat drinking milk from a bowl, and that beats a cat standing about.
+
+Fall back to the word alone when the sentence hinges on a **spatial relation**
+(`pod ławką`, `na ławkę`, `w parku`) or needs several elements arranged just
+so. Those are what these models fumble, and a wrong picture is worse than a
+plain one. `image_basis` records which was used, and the check prompt depends
+on it.
+
 **Keep image prompts as simple as the word allows.** Every clause is a
 chance to be wrong. The first `skakać` prompt asked for a cat jumping *onto*
 a bench and got one jumping away — spatial relations are what these models
