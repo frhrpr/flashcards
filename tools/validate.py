@@ -65,7 +65,8 @@ def check_sentence(nid, s, word):
 
 def main():
     notes, vocab = load()
-    todo = {"image": [], "audio": [], "sentence audio": [], "review": []}
+    todo = {"image": [], "audio": [], "sentence audio": [],
+            "listening audio": [], "review": []}
     manifest = {}
     if MANIFEST.exists():
         try:
@@ -93,10 +94,15 @@ def main():
         for t in n.get("cards", []):
             if t not in CARD_TYPES:
                 err(nid, f"unknown card type {t!r}")
-        # A card type whose material is missing renders a blank front.
+        # A listening card needs word audio, but media arrives after the text,
+        # so this is a to-do rather than an error — the app drops the card
+        # type until the file exists (see NEEDS in index.html).
         if "listening" in n.get("cards", []) and "audio" not in n:
-            err(nid, "listening card needs word audio — its whole front is the recording")
-        if "production" in n.get("cards", []) and not n.get("image") and not n.get("note"):
+            todo["listening audio"].append(nid)
+        # Only worth saying once a note is otherwise finished; before that the
+        # "awaiting image" to-do already covers it.
+        if (n.get("reviewed") and "production" in n.get("cards", [])
+                and not n.get("image") and not n.get("note")):
             warn(nid, "production card has only the English gloss as a cue (no image)")
 
         if isinstance(n.get("sentence"), dict):

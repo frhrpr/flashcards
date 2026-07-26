@@ -66,7 +66,7 @@ const check = (cond, msg) => { console.log((cond ? "ok   " : "FAIL ") + msg); if
 try {
   const m = await import("file://" + tmp);
   for (const n of deck.notes) {
-    for (const type of n.cards || []) {
+    for (const type of (n.cards || []).filter(c => c !== "listening" || n.audio)) {
       for (const which of ["front", "back"]) {
         let out;
         try {
@@ -82,11 +82,13 @@ try {
   }
   // The whole point of the layouts: a front must not leak its own answer.
   for (const n of deck.notes) {
-    if ((n.cards || []).includes("production")) {
+    // Skipped where the English gloss IS the Polish word (park, park) — the
+    // card is fine, the string check simply cannot tell them apart.
+    if ((n.cards || []).includes("production") && n.gloss !== n.word) {
       const f = m.face(`${n.id}__production`, "front");
       check(!f.includes(`>${n.word}<`), `${n.id} production front hides the word`);
     }
-    if ((n.cards || []).includes("listening")) {
+    if ((n.cards || []).includes("listening") && n.audio) {
       const f = m.face(`${n.id}__listening`, "front");
       check(!f.includes(`>${n.word}<`) && !f.includes(n.gloss),
             `${n.id} listening front hides word and gloss`);
