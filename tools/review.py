@@ -50,12 +50,17 @@ def build(notes, manifest, dest):
     dest.mkdir(parents=True, exist_ok=True)
     audio_out = dest / "audio"
     audio_out.mkdir(exist_ok=True)
+    img_out = dest / "img"
+    img_out.mkdir(exist_ok=True)
     copied = 0
     for n in notes:
         for rel in (n.get("audio"), (n.get("sentence") or {}).get("audio")):
             if rel and (ROOT / rel).exists():
                 shutil.copy2(ROOT / rel, audio_out / Path(rel).name)
                 copied += 1
+        if n.get("image") and (ROOT / n["image"]).exists():
+            shutil.copy2(ROOT / n["image"], img_out / Path(n["image"]).name)
+            copied += 1
 
     def player(rel):
         return (f'<audio controls preload=none src="audio/{esc(Path(rel).name)}"></audio>'
@@ -65,8 +70,12 @@ def build(notes, manifest, dest):
     for n in sorted(notes, key=lambda x: (x.get("reviewed", False), x["id"])):
         s = n.get("sentence") or {}
         done = n.get("reviewed", False)
+        pic = (f'<img src="img/{esc(Path(n["image"]).name)}" alt="">'
+               if n.get("image") else '<div class="noimg">no image</div>')
         cards += f'''
 <div class="c{' ok' if done else ''}">
+  <div class="pic">{pic}</div>
+  <div class="body">
   <div class="h"><span class="w">{esc(n['word'])}</span>
     <span class="ipa">[{esc(n.get('ipa',''))}]</span>
     <span class="gl">{esc(n.get('gloss',''))}</span>
@@ -79,17 +88,25 @@ def build(notes, manifest, dest):
   <div class="pl">{esc(s.get('pl',''))}</div>
   <div class="en">{esc(s.get('en',''))}</div>
   <div class="gap">gap: {esc(s.get('gap',''))} &nbsp;→&nbsp; <b>{esc(s.get('answer',''))}</b>
-    &nbsp;·&nbsp; image: {'yes' if n.get('image') else '<span class="bad">none yet</span>'}</div>
+</div>
+  </div>
 </div>'''
 
     pending = [n["id"] for n in notes if not n.get("reviewed")]
     html = f'''<!doctype html><meta charset=utf-8><title>Deck review</title><style>
-body{{font-family:system-ui,sans-serif;max-width:46rem;margin:2rem auto;padding:0 1rem;
+body{{font-family:system-ui,sans-serif;max-width:52rem;margin:2rem auto;padding:0 1rem;
 background:#E8EBE4;color:#181B18;line-height:1.5}}
 h1{{font-size:1.15rem;margin-bottom:.25rem}}
 .sum{{font-size:.85rem;color:#6C736B;margin-bottom:1.5rem}}
 .c{{background:#FCFDFB;border:1px solid #C9CFC4;border-left:3px solid #A32C22;
-padding:.9rem 1.1rem;margin:1rem 0}}
+padding:.9rem 1.1rem;margin:1rem 0;display:flex;gap:1.1rem;align-items:flex-start}}
+.pic{{flex:0 0 11rem}}
+.pic img{{width:11rem;height:11rem;object-fit:contain;background:#F2F4F0;
+border:1px solid #C9CFC4}}
+.noimg{{width:11rem;height:11rem;display:flex;align-items:center;justify-content:center;
+background:#F2F4F0;color:#A32C22;font-size:.78rem;border:1px solid #C9CFC4}}
+.body{{flex:1;min-width:0}}
+@media (max-width:38rem){{.c{{flex-direction:column}}.pic,.pic img,.noimg{{width:100%}}}}
 .c.ok{{border-left-color:#2F6B3E;opacity:.62}}
 .h{{display:flex;align-items:baseline;gap:.6rem;flex-wrap:wrap;margin-bottom:.6rem}}
 .w{{font-size:1.5rem;font-weight:300}}
@@ -99,7 +116,7 @@ padding:.9rem 1.1rem;margin:1rem 0}}
 letter-spacing:.1em;color:#A32C22}}
 .c.ok .st{{color:#2F6B3E}}
 .row{{display:flex;align-items:center;gap:.8rem;margin:.25rem 0}}
-.lab{{flex:0 0 13rem;font-size:.8rem}}
+.lab{{flex:0 0 11rem;font-size:.8rem}}
 .lab em{{display:block;font-style:normal;font-size:.68rem;color:#6C736B;
 font-family:ui-monospace,monospace}}
 audio{{flex:1;height:2rem}}
@@ -108,7 +125,7 @@ audio{{flex:1;height:2rem}}
 font-family:ui-monospace,monospace;font-size:.7rem;color:#6C736B}}
 .bad{{color:#A32C22}}</style>
 <h1>Deck review — {len(notes)} notes, {len(pending)} awaiting approval</h1>
-<div class=sum>Listen to both clips and read the Polish. Tell Claude which are wrong;
+<div class=sum>Everything for each note in one place — image, both recordings, sentence, gap.\nTell Claude which are wrong;
 anything you do not flag gets approved. Approved notes are dimmed and sink to the bottom.</div>
 {cards}'''
     (dest / "review.html").write_text(html, encoding="utf-8")

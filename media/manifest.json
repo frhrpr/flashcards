@@ -208,12 +208,12 @@
     "source": "generated"
   },
   "media/img/skakac.webp": {
-    "bytes": 137116,
-    "fingerprint": "4f5a8673a53d574b",
+    "bytes": 237652,
+    "fingerprint": "78fb0731c7ff9031",
     "model": "gemini-2.5-flash-image",
     "original_size": "1024x1024",
     "process_version": 1,
-    "prompt": "A cat caught mid-jump, in the air, landing onto a wooden park bench. Side view so the leap is obvious, daylight park setting, no people, no text or lettering. Square image.",
+    "prompt": "A cat in mid-air directly above a wooden park bench, legs extended, just about to land on the bench seat. Side view, green park in daylight, no people, no text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
