@@ -20,9 +20,14 @@ deck/notes.json     card content, fetched by the app at load
 deck/vocab.csv      every word he has met, whether or not it has a card
 deck/frequency.csv  top-500 Polish list — sentence allowlist, NOT a syllabus
 media/audio/*.mp3   generated once and committed, never fetched per review
-media/manifest.json what each clip was generated from, for staleness checks
+media/img/*.webp    one image per note, 800px, generated
+media/manifest.json provenance for every media file — source, licence, checks
+media/ATTRIBUTION.md generated from the manifest; do not edit
 tools/validate.py   run after every change; exits non-zero if unshippable
-tools/tts.py        synthesises missing audio; dry-run by default
+tools/audio.py      Commons recordings for words, TTS for sentences
+tools/images.py     generate / fetch / assign images, and --check them
+tools/review.py     builds the approval page; records approvals
+tools/deckio.py     shared loading, saving, attribution (not runnable)
 ```
 
 The app has deliberately **no build pipeline**. Tools under `tools/` generate
@@ -43,7 +48,7 @@ data; they do not build the app. Keep `index.html` a single static file.
     "answer": "kot",                // the form as it appears in the sentence
     "answer_lemma": "kot",          // the headword it belongs to
     "audio": "media/audio/kot__sentence.mp3" },
-  "cards": ["recognition"], // add "cloze" to drill the gapped sentence too
+  "cards": ["recognition", "production", "listening"],
   "reviewed": false }       // true once a human has read the Polish
 ```
 
@@ -113,11 +118,10 @@ notes`. `status` is `queued` → `known` → `carded`.
 Working and deployed. Firebase config is live in `index.html` and
 `FIREBASE_READY` is true.
 
-`deck/notes.json` holds 8 notes — gloss, part of speech, IPA, and an example
-sentence with an English translation and a gapped variant. The app fetches
-it at load; `CARDS` no longer exists. Text was authored by Claude, **not yet
-checked by a human** (`reviewed: false` on every note). No audio and no
-images exist yet, so those keys are absent and cards render without them.
+`deck/notes.json` holds 8 complete, human-approved notes: image, word audio
+(human, from Wikimedia Commons), sentence audio (ElevenLabs), sentence with
+translation and gap, gloss, part of speech, IPA. Three cards each, 24 in
+total, of which 16 start locked behind the maturity gate.
 
 **No grammar metadata.** Gender, aspect, and declension tables were tried
 and deliberately removed: this trains vocabulary, not morphology, and
@@ -136,12 +140,12 @@ not). Check before assuming.
 ## Roadmap
 
 Full Anki-style notes: image, audio, IPA, example sentence, gapped sentence
-for cloze, part of speech, short Polish definition. One note produces three
-cards (recognition, production, listening).
+part of speech, short Polish definition. One note produces three cards
+(recognition, production, listening).
 
 Decided so far:
 
-- **Text** (POS, gender/aspect, definition, sentence, cloze) — one LLM call
+- **Text** (POS, definition, sentence, gap) — written by Claude in session
   per word with structured outputs. Constrain sentence vocabulary to an
   allowlist of `deck/vocab.csv` plus the top N of `deck/frequency.csv`, or
   sentences come out full of words he doesn't know.
