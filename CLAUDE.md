@@ -59,8 +59,16 @@ the app. Keep `index.html` a single static file.
 ## Current state
 
 Working and deployed. Firebase config is live in `index.html` and
-`FIREBASE_READY` is true. 8 cards in `CARDS`, hardcoded; the 60 words in
-`deck/vocab.csv` are not wired into the app yet.
+`FIREBASE_READY` is true.
+
+`deck/notes.json` holds 8 fully-specified notes — gloss, IPA, gender or
+aspect, principal forms, example sentence with an English translation and a
+gapped variant. The app fetches it at load; `CARDS` no longer exists. Text
+was authored by Claude, **not yet checked by a human** (`reviewed: false` on
+every note). No audio and no images exist yet, so those keys are absent and
+the cards render without them.
+
+The remaining 52 words in `deck/vocab.csv` have no notes yet.
 
 **Unverified:** whether the Firestore security rule above has actually been
 published, and whether the `updateDoc` delta writes succeed against a real

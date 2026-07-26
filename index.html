@@ -36,6 +36,15 @@ body{background:var(--paper);color:var(--ink);font-family:var(--sans);padding:1.
 .front{font-size:2.1rem;font-weight:300}
 .back{font-size:1.3rem;color:var(--dim)}
 .card img{max-width:100%;max-height:9rem;margin-top:.5rem;border-radius:4px}
+.ipa{font-family:var(--mono);font-size:.85rem;color:var(--dim)}
+.cloze{font-size:1.35rem;font-weight:300;line-height:1.5}
+.sent{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--line);width:100%}
+.sent-pl{font-size:1.05rem;line-height:1.5;display:flex;align-items:center;justify-content:center;gap:.5rem;flex-wrap:wrap}
+.sent-pl .play{width:2rem;height:2rem;font-size:.75rem;flex:none}
+.sent-en{font-size:.85rem;color:var(--dim);margin-top:.35rem}
+.gram{margin-top:1rem;padding-top:.75rem;border-top:1px solid var(--line);width:100%;font-family:var(--mono);font-size:.68rem;letter-spacing:.06em;color:var(--dim)}
+.gram .forms{display:block;margin-top:.25rem;opacity:.8}
+.note{margin-top:.5rem;font-size:.8rem;color:var(--dim);font-style:italic}
 .play{background:none;border:1px solid var(--line);border-radius:50%;width:2.5rem;height:2.5rem;font-size:1rem;cursor:pointer;color:var(--ink)}
 .play:hover{border-color:var(--dim)}
 
@@ -76,25 +85,10 @@ const firebaseConfig = {
   appId: "1:24461231038:web:87e1160e6008d9d6b0efef"
 };
 
-/* ── the deck ──────────────────────────────────────────────────────
-   Add cards here as you go. `img` and `audio` are optional — leave
-   them out entirely for a text-only card. Paths are relative to this
-   file, same as the audio/ folder in the other trainer. */
-const CARDS = {
-  dom:      { front: "dom",      back: "house" },
-  pies:     { front: "pies",     back: "dog" },
-  kot:      { front: "kot",      back: "cat" },
-  slonce:   { front: "słońce",   back: "sun" },
-  pilka:    { front: "piłka",    back: "ball" },
-  skakac:   { front: "skakać",   back: "to jump" },
-  spiewac:  { front: "śpiewać",  back: "to sing" },
-  zielony:  { front: "zielony",  back: "green" }
-  // img/audio example:
-  // reks: { front: "Reks", back: "(the dog's name)", img: "img/reks.jpg", audio: "audio/reks.mp3" }
-};
-
 /* ══════════════════════════════════════════════════════════════════
-   Below here you shouldn't need to touch anything for now.
+   Below here you shouldn't need to touch anything for now. The deck
+   lives in deck/notes.json — adding a word means editing that file,
+   not this one. Run tools/validate.py after any edit.
    ══════════════════════════════════════════════════════════════════ */
 
 const $ = sel => document.querySelector(sel);
@@ -213,11 +207,16 @@ const MS_DAY = 86400000;
    Keys are `${noteId}__${cardType}`. Keep note ids to [A-Za-z0-9_]: the key
    is used as a Firestore field path in save(), and anything outside that
    set would need backtick quoting. */
-const CARD_TYPES = ["recognition"];
 const cardKey = (noteId, type) => `${noteId}__${type}`;
 const noteOf  = key => key.slice(0, key.lastIndexOf("__"));
-// Hook for later: cloze cards only where a note actually has a sentence.
-function typesFor(_note){ return CARD_TYPES; }
+const typeOf  = key => key.slice(key.lastIndexOf("__") + 2);
+/* Which cards a note produces is data, not code — set `cards` in
+   deck/notes.json. A cloze card needs a sentence to gap, so it is dropped
+   if one is missing rather than rendering a blank card. */
+function typesFor(note){
+  return (note.cards || ["recognition"])
+    .filter(t => t !== "cloze" || (note.sentence && note.sentence.gap));
+}
 
 /* Cap on cards introduced per day. Irrelevant at 8 cards, load-bearing once
    the real deck lands — without it every unseen card is due on day one. */
@@ -248,6 +247,25 @@ function schedule(state, grade){
 }
 
 /* ── load, build today's queue ─────────────────────────────────── */
+/* ── the deck ───────────────────────────────────────────────────────
+   deck/notes.json is the single source of truth for card content, fetched
+   rather than inlined so adding a word never means editing this file.
+   Validate it with tools/validate.py before pushing. */
+let NOTES;
+try {
+  const res = await fetch("deck/notes.json", { cache: "no-cache" });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const deck = await res.json();
+  if (deck.schema !== 1) throw new Error(`unexpected schema version ${deck.schema}`);
+  if (!Array.isArray(deck.notes) || !deck.notes.length) throw new Error("no notes in deck");
+  NOTES = Object.fromEntries(deck.notes.map(n => [n.id, n]));
+} catch (e) {
+  showError("Couldn't load the deck (deck/notes.json).\n\n" + e.message +
+    "\n\nIf you opened this file straight from disk, that's the reason —\n" +
+    "the deck is fetched over HTTP. Use the GitHub Pages link instead.");
+  throw e;
+}
+
 let cardStates = {};
 let reviewLog = [];
 let docExists = false;
@@ -275,8 +293,8 @@ for (const key of Object.keys(cardStates)) {
 
 const t = today();
 
-const allCards = Object.keys(CARDS).flatMap(
-  id => typesFor(CARDS[id]).map(type => cardKey(id, type))
+const allCards = Object.values(NOTES).flatMap(
+  n => typesFor(n).map(type => cardKey(n.id, type))
 );
 
 /* Due first, oldest due date first; then as many never-seen cards as
@@ -370,40 +388,111 @@ function renderDone(){
   appEl.innerHTML = `<p class="msg">Nothing due right now. Nice work.</p>`;
 }
 
+/* ── rendering ──────────────────────────────────────────────────────
+   Grammatical labels are Polish and abbreviated the way a Polish
+   dictionary does it. Every media element is optional: a note with no
+   image or audio simply renders without one, so the deck stays usable
+   while the media pipeline catches up. */
+const POS_PL = {
+  noun: "rzeczownik", verb: "czasownik", adjective: "przymiotnik",
+  adverb: "przysłówek", preposition: "przyimek", conjunction: "spójnik",
+  particle: "partykuła", pronoun: "zaimek", interjection: "wykrzyknik",
+};
+const GENDER_PL = { "m-anim": "r.m. żyw.", "m-inan": "r.m. nżyw.", f: "r.ż.", n: "r.n." };
+const ASPECT_PL = { impf: "ndk.", pf: "dk." };
+
+// Anything from the deck could contain < or &; it is rendered via innerHTML.
+const esc = s => String(s).replace(/[&<>"]/g, c =>
+  ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+function grammar(n){
+  const bits = [POS_PL[n.pos] || n.pos];
+  if (n.gender) bits.push(GENDER_PL[n.gender] || n.gender);
+  if (n.aspect) bits.push(ASPECT_PL[n.aspect] || n.aspect);
+  if (n.aspect_pair) bits.push(`${ASPECT_PL.pf} ${n.aspect_pair}`);
+  const f = n.forms || {};
+  const forms = n.pos === "noun" ? [f.gen && `D. ${f.gen}`, f.pl && `lm. ${f.pl}`]
+              : n.pos === "verb" ? [f.sg1, f.sg3]
+              : [f.f, f.n];
+  return `<div class="gram">${esc(bits.join(" · "))}` +
+    (forms.filter(Boolean).length
+      ? `<span class="forms">${esc(forms.filter(Boolean).join(" · "))}</span>` : "") +
+    `</div>`;
+}
+
+let audioSeq = 0;
+const audioBtns = [];
+function playBtn(src, label){
+  if (!src) return "";
+  const id = `play${audioSeq++}`;
+  audioBtns.push({ id, src });
+  return `<button class="play" id="${id}" aria-label="${esc(label)}">▶</button>`;
+}
+function wireAudio(){
+  for (const { id, src } of audioBtns.splice(0)) {
+    const el = $("#" + id);
+    if (el) el.addEventListener("click", () => new Audio(src).play().catch(e => {
+      // A rejection with no user gesture is routine; anything else is not.
+      if (e.name !== "NotAllowedError") {
+        writeError = new Error(`audio failed: ${src}`);
+        renderWarning();
+      }
+    }));
+  }
+}
+
 function renderCard(){
   revealed = false;
   current = queue[0];
-  const c = CARDS[noteOf(current)];
+  const n = NOTES[noteOf(current)];
+  const type = typeOf(current);
   renderCount();
   renderWarning();
+  const s = n.sentence || {};
   appEl.innerHTML = `
-    <div class="card">
-      <div class="front">${c.front}</div>
-      ${c.audio ? `<button class="play" id="play">▶</button>` : ""}
+    <div class="card">` + (type === "cloze" ? `
+      <div class="cloze">${esc(s.gap || "")}</div>` : `
+      <div class="front">${esc(n.word)}</div>
+      ${playBtn(n.audio, `play ${n.word}`)}`) + `
     </div>
     <button class="reveal" id="reveal">Show answer</button>
   `;
-  if (c.audio) $("#play").addEventListener("click", () => new Audio(c.audio).play().catch(() => {}));
+  wireAudio();
   $("#reveal").addEventListener("click", showBack);
 }
 
 function showBack(){
   if (revealed) return;
   revealed = true;
-  const c = CARDS[noteOf(current)];
+  const n = NOTES[noteOf(current)];
+  const type = typeOf(current);
+  const s = n.sentence || {};
+  const sentence = s.pl ? `
+    <div class="sent">
+      <div class="sent-pl">${esc(s.pl)}${playBtn(s.audio, "play the sentence")}</div>
+      <div class="sent-en">${esc(s.en || "")}</div>
+    </div>` : "";
+
   appEl.innerHTML = `
-    <div class="card">
-      <div class="front">${c.front}</div>
-      <div class="back">${c.back}</div>
-      ${c.img ? `<img src="${c.img}" alt="">` : ""}
-      ${c.audio ? `<button class="play" id="play">▶</button>` : ""}
+    <div class="card">` + (type === "cloze" ? `
+      <div class="front">${esc(s.answer || "")}</div>
+      <div class="back">${esc(n.gloss)}</div>
+      ${sentence}` : `
+      <div class="front">${esc(n.word)}</div>
+      ${n.ipa ? `<div class="ipa">[${esc(n.ipa)}]</div>` : ""}
+      <div class="back">${esc(n.gloss)}</div>
+      ${playBtn(n.audio, `play ${n.word}`)}
+      ${n.image ? `<img src="${esc(n.image)}" alt="${esc(n.image_alt || "")}">` : ""}
+      ${sentence}`) + `
+      ${grammar(n)}
+      ${n.note ? `<div class="note">${esc(n.note)}</div>` : ""}
     </div>
     <div class="grades">
       <button class="g-again" id="again">Again</button>
       <button class="g-good" id="good">Good</button>
     </div>
   `;
-  if (c.audio) $("#play").addEventListener("click", () => new Audio(c.audio).play().catch(() => {}));
+  wireAudio();
   $("#again").addEventListener("click", () => grade("again"));
   $("#good").addEventListener("click", () => grade("good"));
 }

@@ -1,0 +1,158 @@
+{
+  "schema": 1,
+  "notes": [
+    {
+      "id": "dom",
+      "word": "dom",
+      "gloss": "house, home",
+      "pos": "noun",
+      "gender": "m-inan",
+      "forms": { "gen": "domu", "pl": "domy" },
+      "ipa": "dɔm",
+      "note": null,
+      "sentence": {
+        "pl": "Rano wracam do domu.",
+        "en": "In the morning I go back home.",
+        "gap": "Rano wracam do ___.",
+        "answer": "domu",
+        "answer_lemma": "dom"
+      },
+      "cards": ["recognition"],
+      "reviewed": false
+    },
+    {
+      "id": "pies",
+      "word": "pies",
+      "gloss": "dog",
+      "pos": "noun",
+      "gender": "m-anim",
+      "forms": { "gen": "psa", "pl": "psy" },
+      "ipa": "pjɛs",
+      "note": "D. psa — bez -e-",
+      "sentence": {
+        "pl": "Pod drzewem siedzi pies.",
+        "en": "A dog is sitting under the tree.",
+        "gap": "Pod drzewem siedzi ___.",
+        "answer": "pies",
+        "answer_lemma": "pies"
+      },
+      "cards": ["recognition"],
+      "reviewed": false
+    },
+    {
+      "id": "kot",
+      "word": "kot",
+      "gloss": "cat",
+      "pos": "noun",
+      "gender": "m-anim",
+      "forms": { "gen": "kota", "pl": "koty" },
+      "ipa": "kɔt",
+      "note": null,
+      "sentence": {
+        "pl": "Mały kot pije mleko.",
+        "en": "The little cat is drinking milk.",
+        "gap": "Mały ___ pije mleko.",
+        "answer": "kot",
+        "answer_lemma": "kot"
+      },
+      "cards": ["recognition"],
+      "reviewed": false
+    },
+    {
+      "id": "slonce",
+      "word": "słońce",
+      "gloss": "sun",
+      "pos": "noun",
+      "gender": "n",
+      "forms": { "gen": "słońca", "pl": "słońca" },
+      "ipa": "ˈswɔɲt͡sɛ",
+      "note": null,
+      "sentence": {
+        "pl": "Rano słońce jest żółte.",
+        "en": "In the morning the sun is yellow.",
+        "gap": "Rano ___ jest żółte.",
+        "answer": "słońce",
+        "answer_lemma": "słońce"
+      },
+      "cards": ["recognition"],
+      "reviewed": false
+    },
+    {
+      "id": "pilka",
+      "word": "piłka",
+      "gloss": "ball",
+      "pos": "noun",
+      "gender": "f",
+      "forms": { "gen": "piłki", "pl": "piłki" },
+      "ipa": "ˈpiwka",
+      "note": null,
+      "sentence": {
+        "pl": "Pod ławką jest piłka.",
+        "en": "There is a ball under the bench.",
+        "gap": "Pod ławką jest ___.",
+        "answer": "piłka",
+        "answer_lemma": "piłka"
+      },
+      "cards": ["recognition"],
+      "reviewed": false
+    },
+    {
+      "id": "skakac",
+      "word": "skakać",
+      "gloss": "to jump",
+      "pos": "verb",
+      "aspect": "impf",
+      "aspect_pair": "skoczyć",
+      "forms": { "sg1": "skaczę", "sg3": "skacze" },
+      "ipa": "ˈskakat͡ɕ",
+      "note": null,
+      "sentence": {
+        "pl": "Kot skacze na ławkę.",
+        "en": "The cat jumps onto the bench.",
+        "gap": "Kot ___ na ławkę.",
+        "answer": "skacze",
+        "answer_lemma": "skakać"
+      },
+      "cards": ["recognition"],
+      "reviewed": false
+    },
+    {
+      "id": "spiewac",
+      "word": "śpiewać",
+      "gloss": "to sing",
+      "pos": "verb",
+      "aspect": "impf",
+      "aspect_pair": "zaśpiewać",
+      "forms": { "sg1": "śpiewam", "sg3": "śpiewa" },
+      "ipa": "ˈɕpjɛvat͡ɕ",
+      "note": null,
+      "sentence": {
+        "pl": "Ptak śpiewa w parku.",
+        "en": "A bird is singing in the park.",
+        "gap": "Ptak ___ w parku.",
+        "answer": "śpiewa",
+        "answer_lemma": "śpiewać"
+      },
+      "cards": ["recognition"],
+      "reviewed": false
+    },
+    {
+      "id": "zielony",
+      "word": "zielony",
+      "gloss": "green",
+      "pos": "adjective",
+      "forms": { "f": "zielona", "n": "zielone" },
+      "ipa": "ʑɛˈlɔnɨ",
+      "note": null,
+      "sentence": {
+        "pl": "To drzewo jest zielone.",
+        "en": "This tree is green.",
+        "gap": "To drzewo jest ___.",
+        "answer": "zielone",
+        "answer_lemma": "zielony"
+      },
+      "cards": ["recognition"],
+      "reviewed": false
+    }
+  ]
+}
