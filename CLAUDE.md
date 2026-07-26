@@ -7,17 +7,52 @@ https://frhrpr.github.io/flashcards/
 Same student as the sibling *sibilants* repo. That is a separate, unrelated
 tool — don't merge them.
 
+**The user does everything through Claude.** He does not edit these files by
+hand and should not be told to. He supplies words after a lesson, approves
+sentences and image prompts, and drops generated images into a folder;
+Claude does the rest, including running the tools and pushing.
+
 ## Layout
 
 ```
-index.html         the whole app — one file, no build step, served by Pages
-deck/vocab.csv     every word he has met (see deck/README.md)
-deck/frequency.csv top-500 Polish list — the sentence allowlist, NOT a syllabus
+index.html          the whole app — one file, no build step, served by Pages
+deck/notes.json     card content, fetched by the app at load
+deck/vocab.csv      every word he has met, whether or not it has a card
+deck/frequency.csv  top-500 Polish list — sentence allowlist, NOT a syllabus
+media/audio/*.mp3   generated once and committed, never fetched per review
+media/manifest.json what each clip was generated from, for staleness checks
+tools/validate.py   run after every change; exits non-zero if unshippable
+tools/tts.py        synthesises missing audio; dry-run by default
 ```
 
-The app has deliberately **no build pipeline**. A content pipeline under
-`tools/` is planned (see Roadmap) — that generates data, it does not build
-the app. Keep `index.html` a single static file.
+The app has deliberately **no build pipeline**. Tools under `tools/` generate
+data; they do not build the app. Keep `index.html` a single static file.
+
+### notes.json
+
+```jsonc
+{ "id": "kot",              // == a note_id in vocab.csv, [a-z0-9_]+
+  "word": "kot", "gloss": "cat", "pos": "noun", "ipa": "kɔt",
+  "note": null,             // Polish, short, only when it earns its place
+  "image": "media/img/kot.webp",  // omit the key until the file exists
+  "image_alt": "a cat",           // required whenever image is set
+  "audio": "media/audio/kot.mp3", // omit the key until the file exists
+  "sentence": {
+    "pl": "Mały kot pije mleko.", "en": "The little cat is drinking milk.",
+    "gap": "Mały ___ pije mleko.",  // gap + answer must rebuild pl exactly
+    "answer": "kot",                // the form as it appears in the sentence
+    "answer_lemma": "kot",          // the headword it belongs to
+    "audio": "media/audio/kot__sentence.mp3" },
+  "cards": ["recognition"], // add "cloze" to drill the gapped sentence too
+  "reviewed": false }       // true once a human has read the Polish
+```
+
+Media keys are **absent until the file exists**. A path that is set but
+missing is an error; a missing key is only a to-do. The deck therefore stays
+shippable, and `validate.py` still reports what is outstanding.
+
+`vocab.csv` columns: `word, note_id, pos, flashcard, status, source, added,
+notes`. `status` is `queued` → `known` → `carded`.
 
 ## Key decisions — don't relitigate without reason
 
@@ -93,12 +128,6 @@ Decided so far:
   per word with structured outputs. Constrain sentence vocabulary to an
   allowlist of `deck/vocab.csv` plus the top N of `deck/frequency.csv`, or
   sentences come out full of words he doesn't know.
-- **Audio** — neural pl-PL TTS, generated once at build time and committed,
-  not fetched per review. SRS means ~20 reviews per card; on-demand would
-  re-synthesise the same string every time and add latency to every flip.
-  The whole deck is ~25k characters, inside every provider's free tier.
-  Name files by hash of text+voice so editing one sentence regenerates one
-  clip.
 - **IPA** — carried in the data whether or not it's displayed. Polish
   orthography is near-phonemic, so this is low value next to audio.
 - **Images** — only for concrete words; roughly half the deck has nothing
@@ -119,9 +148,23 @@ of production cards behind mature recognition cards.
   visible list rather than a log, dry-run anything that spends money.
 - **The user spot-checks the Polish.** Generated sentences go to a real
   student, so build a review step rather than trusting generation.
-- **The Google Drive connector is read-and-create only** — no update, no
-  delete. A file there can never be edited in place. This is why the word
-  list lives in the repo. A Drive sheet *the user* writes and Claude only
-  reads would work, if phone editing of the CSV ever becomes annoying.
+- **Audio is generated once and committed**, never fetched per review — a
+  card is seen ~20 times, so on-demand would re-synthesise the same string
+  every time and put a round-trip in front of every flip. `tools/tts.py`
+  fingerprints each clip over text + voice + model, so a corrected sentence
+  regenerates exactly one file. ElevenLabs, free tier, voice Antoni
+  (`ErXwobaYiN019PkySvjV`), `eleven_multilingual_v2`. Key in `.env`,
+  gitignored. Free-tier keys **cannot use Voice Library voices via the API**,
+  only certain built-ins.
+- **Verify audio before adopting it.** A 256-byte JSON error page passes an
+  existence check happily; `tts.py` writes to a temp file and only keeps it
+  once ffprobe confirms real audio of non-zero length.
 - Auth is an SSH key; the remote is `git@github.com:frhrpr/flashcards.git`.
-  Claude can't push from the sandbox (it denies `~/.ssh` by design).
+  Pushing and any non-allowlisted network call need
+  `dangerouslyDisableSandbox` — the sandbox denies `~/.ssh` and allows only
+  github/npm/pypi. Writing to `/mnt/c/...` (to put files somewhere Windows
+  can open them) needs it too.
+- **The Google Drive connector is read-and-create only** — no update, no
+  delete, so nothing there can be maintained in place. The repo is the only
+  store both sides can write to. Superseded in practice: the user works
+  through Claude at this machine rather than editing files from a phone.

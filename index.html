@@ -68,13 +68,10 @@ button{font-family:inherit;cursor:pointer;border-radius:4px}
 
 <script type="module">
 /* ══════════════════════════════════════════════════════════════════
-   CONFIG — Firebase project config. Get this from: Firebase console →
-   your project → gear icon → Project settings → your web app → SDK
-   setup and configuration → "Config".
+   Firebase project config — console → gear → Project settings → your
+   web app → SDK setup and configuration. Not a secret: Firestore access
+   is governed by the rule on the collection, not by this key.
    ══════════════════════════════════════════════════════════════════ */
-
-const FIREBASE_READY = true;
-
 const firebaseConfig = {
   apiKey: "AIzaSyAZD5VoyBU22jaSBpajmbUiO-ZW8WDkEEo",
   authDomain: "flashcards-f5b40.firebaseapp.com",
@@ -95,27 +92,6 @@ const appEl = $("#app"), countEl = $("#count"), warnEl = $("#warn");
 
 function showError(msg){
   appEl.innerHTML = `<p class="msg err">${msg}</p>`;
-}
-
-if (!FIREBASE_READY) {
-  showError(
-    "Firebase isn't set up yet.\n\n" +
-    "1. Create a project at https://console.firebase.google.com (free, no card).\n" +
-    "2. Enable Firestore (Build → Firestore Database → Create database).\n" +
-    "3. Project settings → your web app → SDK setup → copy the config object.\n" +
-    "4. Paste it into firebaseConfig near the top of this file.\n" +
-    "5. Set FIREBASE_READY = true.\n" +
-    "6. Add this Firestore rule (Firestore → Rules):\n\n" +
-    "   rules_version = '2';\n" +
-    "   service cloud.firestore {\n" +
-    "     match /databases/{database}/documents {\n" +
-    "       match /progress/{docId} {\n" +
-    "         allow read, write: if true;\n" +
-    "       }\n" +
-    "     }\n" +
-    "   }"
-  );
-  throw new Error("Firebase not configured — see on-page instructions.");
 }
 
 const { initializeApp } = await import("https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js");

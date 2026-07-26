@@ -18,3 +18,7 @@
 
 # API keys — read by tools/, never committed
 .env
+
+# LibreOffice / Excel lock files, created when a CSV is open
+.~lock.*#
+~$*
