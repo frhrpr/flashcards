@@ -1,4 +1,130 @@
 {
+  "media/audio/byc.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-być.ogg",
+    "fingerprint": "7b06d1895dab19c8",
+    "gain_db": 7.0,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-by%C4%87.ogg",
+    "seconds": 0.73,
+    "source": "commons",
+    "text": "być"
+  },
+  "media/audio/byc__sentence.mp3": {
+    "fingerprint": "1efbe493d5647486",
+    "gain_db": 0.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.23,
+    "source": "tts",
+    "text": "Tutaj jest sklep.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/chleb.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-chleb.ogg",
+    "fingerprint": "8a97a3fc46a3a445",
+    "gain_db": -3.8,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-chleb.ogg",
+    "seconds": 0.71,
+    "source": "commons",
+    "text": "chleb"
+  },
+  "media/audio/chleb__sentence.mp3": {
+    "fingerprint": "455a7a15b42da88f",
+    "gain_db": -1.0,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.25,
+    "source": "tts",
+    "text": "Kupuję chleb i mleko.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/chodzic.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-chodzić.ogg",
+    "fingerprint": "c8a969de45ae8f25",
+    "gain_db": 1.1,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-chodzi%C4%87.ogg",
+    "seconds": 0.78,
+    "source": "commons",
+    "text": "chodzić"
+  },
+  "media/audio/chodzic__sentence.mp3": {
+    "fingerprint": "efb1addd3aec5a3c",
+    "gain_db": -1.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.15,
+    "source": "tts",
+    "text": "Rano chodzę do sklepu.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/czerwony.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-czerwony.ogg",
+    "fingerprint": "808a4fe37e86669d",
+    "gain_db": -2.3,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-czerwony.ogg",
+    "seconds": 0.84,
+    "source": "commons",
+    "text": "czerwony"
+  },
+  "media/audio/czerwony__sentence.mp3": {
+    "fingerprint": "5eda8d35cf3253cc",
+    "gain_db": -1.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.2,
+    "source": "tts",
+    "text": "Piłka jest czerwona.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/czesc.mp3": {
+    "author": "Tomasz \"odder\" Kozlowski",
+    "commons_file": "Pl-cześć.ogg",
+    "fingerprint": "b38ea260627f8895",
+    "gain_db": 8.7,
+    "licence": "CC BY-SA 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-cze%C5%9B%C4%87.ogg",
+    "seconds": 1.23,
+    "source": "commons",
+    "text": "cześć"
+  },
+  "media/audio/czesc__sentence.mp3": {
+    "fingerprint": "396c869bb4c83444",
+    "gain_db": 0.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.33,
+    "source": "tts",
+    "text": "Ty mówisz cześć.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/dawac.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-dawać.ogg",
+    "fingerprint": "5476fcef980f244f",
+    "gain_db": 0.0,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-dawa%C4%87.ogg",
+    "seconds": 1.44,
+    "source": "commons",
+    "text": "dawać"
+  },
+  "media/audio/dawac__sentence.mp3": {
+    "fingerprint": "88ee42160a0acb7f",
+    "gain_db": -2.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.33,
+    "source": "tts",
+    "text": "Rano daję psu wodę.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/dom.mp3": {
     "author": "tsca",
     "commons_file": "Pl-dom.ogg",
@@ -20,6 +146,195 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/drzewo.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-drzewo.ogg",
+    "fingerprint": "d7c6cce54a57b95b",
+    "gain_db": 8.3,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-drzewo.ogg",
+    "seconds": 0.89,
+    "source": "commons",
+    "text": "drzewo"
+  },
+  "media/audio/drzewo__sentence.mp3": {
+    "fingerprint": "26fe567aabfc5645",
+    "gain_db": -1.8,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.18,
+    "source": "tts",
+    "text": "Widzę duże drzewo.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/duzy.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-duży.ogg",
+    "fingerprint": "4217f8fa5c84018b",
+    "gain_db": -0.4,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-du%C5%BCy.ogg",
+    "seconds": 0.68,
+    "source": "commons",
+    "text": "duży"
+  },
+  "media/audio/duzy__sentence.mp3": {
+    "fingerprint": "e4059d06892525db",
+    "gain_db": -1.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.07,
+    "source": "tts",
+    "text": "To jest duży dom.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/dzien.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-dzień.ogg",
+    "fingerprint": "7d31495469b17118",
+    "gain_db": 0.9,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-dzie%C5%84.ogg",
+    "seconds": 0.78,
+    "source": "commons",
+    "text": "dzień"
+  },
+  "media/audio/dzien__sentence.mp3": {
+    "fingerprint": "e722b98bd01727f4",
+    "gain_db": -0.2,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.12,
+    "source": "tts",
+    "text": "To jest dziwny dzień.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/dziwny.mp3": {
+    "author": "Wyksztalcioch",
+    "commons_file": "Pl-dziwny.ogg",
+    "fingerprint": "726c26b491232262",
+    "gain_db": -3.7,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-dziwny.ogg",
+    "seconds": 0.89,
+    "source": "commons",
+    "text": "dziwny"
+  },
+  "media/audio/dziwny__sentence.mp3": {
+    "fingerprint": "444401cb61309562",
+    "gain_db": 0.6,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.31,
+    "source": "tts",
+    "text": "Pies jest dziwny.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/imie.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-imię.ogg",
+    "fingerprint": "62baf74c523fa2fc",
+    "gain_db": 4.5,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-imi%C4%99.ogg",
+    "seconds": 0.91,
+    "source": "commons",
+    "text": "imię"
+  },
+  "media/audio/imie__sentence.mp3": {
+    "fingerprint": "2635ba483245fcb9",
+    "gain_db": -0.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.2,
+    "source": "tts",
+    "text": "Mam na imię Marek.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/isc.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-iść.ogg",
+    "fingerprint": "10956c3db64de2e9",
+    "gain_db": 2.9,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-i%C5%9B%C4%87.ogg",
+    "seconds": 0.81,
+    "source": "commons",
+    "text": "iść"
+  },
+  "media/audio/isc__sentence.mp3": {
+    "fingerprint": "5c6eccebecd769e3",
+    "gain_db": -0.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.04,
+    "source": "tts",
+    "text": "Teraz idę do domu.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/jesc.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-jeść.ogg",
+    "fingerprint": "1cabdb3cf946ba7c",
+    "gain_db": 6.8,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-je%C5%9B%C4%87.ogg",
+    "seconds": 0.89,
+    "source": "commons",
+    "text": "jeść"
+  },
+  "media/audio/jesc__sentence.mp3": {
+    "fingerprint": "1e609ae15b0cf6d9",
+    "gain_db": 0.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.84,
+    "source": "tts",
+    "text": "Rano jem chleb.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/kasa.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-kasa.ogg",
+    "fingerprint": "a3ba3ffc4a22b130",
+    "gain_db": 0.0,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-kasa.ogg",
+    "seconds": 1.38,
+    "source": "commons",
+    "text": "kasa"
+  },
+  "media/audio/kasa__sentence.mp3": {
+    "fingerprint": "901e1a40e05c62de",
+    "gain_db": 0.8,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.23,
+    "source": "tts",
+    "text": "W sklepie jest kasa.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/kasza.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-kasza.ogg",
+    "fingerprint": "7a37a2973247b770",
+    "gain_db": 1.8,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-kasza.ogg",
+    "seconds": 0.68,
+    "source": "commons",
+    "text": "kasza"
+  },
+  "media/audio/kasza__sentence.mp3": {
+    "fingerprint": "ff83a6f81ca49c59",
+    "gain_db": 0.2,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.07,
+    "source": "tts",
+    "text": "Jem kaszę rano.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/kot.mp3": {
     "author": "Halibutt",
     "commons_file": "Pl-kot.ogg",
@@ -38,6 +353,258 @@
     "seconds": 1.44,
     "source": "tts",
     "text": "Mały kot pije mleko.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/kupowac.mp3": {
+    "author": "Wyksztalcioch",
+    "commons_file": "Pl-kupować.ogg",
+    "fingerprint": "73e1dea51a1947e5",
+    "gain_db": -5.3,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-kupowa%C4%87.ogg",
+    "seconds": 0.84,
+    "source": "commons",
+    "text": "kupować"
+  },
+  "media/audio/kupowac__sentence.mp3": {
+    "fingerprint": "8a7fd7f0db9cb4d7",
+    "gain_db": 1.6,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.31,
+    "source": "tts",
+    "text": "Ty kupujesz chleb.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/kwiat.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-kwiat.ogg",
+    "fingerprint": "c7b7c2b9a8dc0804",
+    "gain_db": 0.2,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-kwiat.ogg",
+    "seconds": 1.23,
+    "source": "commons",
+    "text": "kwiat"
+  },
+  "media/audio/kwiat__sentence.mp3": {
+    "fingerprint": "eb81b8aa5aa79d0c",
+    "gain_db": 2.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.36,
+    "source": "tts",
+    "text": "To jest żółty kwiat.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/lawka.mp3": {
+    "author": "Frizabela",
+    "commons_file": "Pl-ławka.ogg",
+    "fingerprint": "bfe65821a7dccea4",
+    "gain_db": -2.6,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-%C5%82awka.ogg",
+    "seconds": 0.71,
+    "source": "commons",
+    "text": "ławka"
+  },
+  "media/audio/lawka__sentence.mp3": {
+    "fingerprint": "7cd46596ef441cc9",
+    "gain_db": -1.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.23,
+    "source": "tts",
+    "text": "W parku jest ławka.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/leciec.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-lecieć.ogg",
+    "fingerprint": "9b106108c21212b2",
+    "gain_db": -0.4,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-lecie%C4%87.ogg",
+    "seconds": 1.49,
+    "source": "commons",
+    "text": "lecieć"
+  },
+  "media/audio/leciec__sentence.mp3": {
+    "fingerprint": "d59f4aa4c06dfe38",
+    "gain_db": 0.8,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.15,
+    "source": "tts",
+    "text": "Żółty ptak leci.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/maly.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-mały.ogg",
+    "fingerprint": "e0103404cdaaf90c",
+    "gain_db": -2.0,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-ma%C5%82y.ogg",
+    "seconds": 0.84,
+    "source": "commons",
+    "text": "mały"
+  },
+  "media/audio/maly__sentence.mp3": {
+    "fingerprint": "e13569084fd95026",
+    "gain_db": -0.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.1,
+    "source": "tts",
+    "text": "To jest mały ptak.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/miec.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-mieć.ogg",
+    "fingerprint": "e57b9755a132c149",
+    "gain_db": 0.6,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-mie%C4%87.ogg",
+    "seconds": 0.89,
+    "source": "commons",
+    "text": "mieć"
+  },
+  "media/audio/miec__sentence.mp3": {
+    "fingerprint": "6211e39b1460757d",
+    "gain_db": -1.0,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.73,
+    "source": "tts",
+    "text": "Ty masz psa.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/mleko.mp3": {
+    "author": "Kajervi",
+    "commons_file": "Pl-mleko.ogg",
+    "fingerprint": "cf7ac271c2852dca",
+    "gain_db": 4.8,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-mleko.ogg",
+    "seconds": 1.12,
+    "source": "commons",
+    "text": "mleko"
+  },
+  "media/audio/mleko__sentence.mp3": {
+    "fingerprint": "a101aca5989a29eb",
+    "gain_db": -0.5,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.2,
+    "source": "tts",
+    "text": "Kupuję mleko w sklepie.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/mowic.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-mówić.ogg",
+    "fingerprint": "9e9351427c8b688c",
+    "gain_db": 1.2,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-m%C3%B3wi%C4%87.ogg",
+    "seconds": 0.99,
+    "source": "commons",
+    "text": "mówić"
+  },
+  "media/audio/mowic__sentence.mp3": {
+    "fingerprint": "17128e7b1363dc6a",
+    "gain_db": 0.5,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.94,
+    "source": "tts",
+    "text": "Rano mówię cześć.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/nie.mp3": {
+    "author": "Tomasz \"odder\" Kozlowski",
+    "commons_file": "Pl-nie.ogg",
+    "fingerprint": "03d46316b47053fe",
+    "gain_db": 12.7,
+    "licence": "CC BY-SA 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-nie.ogg",
+    "seconds": 0.78,
+    "source": "commons",
+    "text": "nie"
+  },
+  "media/audio/nie__sentence.mp3": {
+    "fingerprint": "1b23f293b11d41a7",
+    "gain_db": -2.6,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.04,
+    "source": "tts",
+    "text": "To nie jest pies.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/park.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-park.ogg",
+    "fingerprint": "0a6c6ad17e9b28e0",
+    "gain_db": 0.2,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-park.ogg",
+    "seconds": 1.33,
+    "source": "commons",
+    "text": "park"
+  },
+  "media/audio/park__sentence.mp3": {
+    "fingerprint": "48651df5bbbddebe",
+    "gain_db": -0.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.25,
+    "source": "tts",
+    "text": "Rano chodzę do parku.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/patrzec.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-patrzeć.ogg",
+    "fingerprint": "ce3d28f031b0fb5b",
+    "gain_db": 0.6,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-patrze%C4%87.ogg",
+    "seconds": 0.99,
+    "source": "commons",
+    "text": "patrzeć"
+  },
+  "media/audio/patrzec__sentence.mp3": {
+    "fingerprint": "586ce8bf30ac3ffd",
+    "gain_db": 0.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.31,
+    "source": "tts",
+    "text": "Rano patrzę na słońce.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/pic.mp3": {
+    "author": "tsca",
+    "commons_file": "Pl-pić.ogg",
+    "fingerprint": "26c92b50e27ba389",
+    "gain_db": 10.4,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-pi%C4%87.ogg",
+    "seconds": 0.77,
+    "source": "commons",
+    "text": "pić"
+  },
+  "media/audio/pic__sentence.mp3": {
+    "fingerprint": "d0e8cc075ba82af0",
+    "gain_db": -0.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.02,
+    "source": "tts",
+    "text": "Ptak pije wodę.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -83,6 +650,133 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/potem.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-potem.ogg",
+    "fingerprint": "1675e8caedf2f2de",
+    "gain_db": 0.0,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-potem.ogg",
+    "seconds": 1.12,
+    "source": "commons",
+    "text": "potem"
+  },
+  "media/audio/potem__sentence.mp3": {
+    "fingerprint": "c0476cf3deb14e82",
+    "gain_db": -0.8,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.57,
+    "source": "tts",
+    "text": "Jem chleb, potem piję wodę.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/ptak.mp3": {
+    "author": "Marcowy zając",
+    "commons_file": "Pl-ptak.ogg",
+    "fingerprint": "bfbefa61a0a0155f",
+    "gain_db": -1.0,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-ptak.ogg",
+    "seconds": 0.84,
+    "source": "commons",
+    "text": "ptak"
+  },
+  "media/audio/ptak__sentence.mp3": {
+    "fingerprint": "80f3d48a10651b82",
+    "gain_db": -1.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.57,
+    "source": "tts",
+    "text": "Mały ptak siedzi na ławce.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/rano.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-rano.ogg",
+    "fingerprint": "493f7c7ce98c8508",
+    "gain_db": -0.2,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-rano.ogg",
+    "seconds": 1.59,
+    "source": "commons",
+    "text": "rano"
+  },
+  "media/audio/rano__sentence.mp3": {
+    "fingerprint": "796ea5f014dd1f34",
+    "gain_db": 0.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.1,
+    "source": "tts",
+    "text": "Wracam do domu rano.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/ryba.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-ryba.ogg",
+    "fingerprint": "7924cfbe058313a4",
+    "gain_db": 0.4,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-ryba.ogg",
+    "seconds": 0.65,
+    "source": "commons",
+    "text": "ryba"
+  },
+  "media/audio/ryba__sentence.mp3": {
+    "fingerprint": "0c7f853eeedd32f3",
+    "gain_db": -0.2,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.2,
+    "source": "tts",
+    "text": "W wodzie jest ryba.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/siadac.mp3": {
+    "fingerprint": "c1513975fbf08cb8",
+    "gain_db": 0.1,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.86,
+    "source": "tts",
+    "text": "siadać",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/siadac__sentence.mp3": {
+    "fingerprint": "9489af330023951a",
+    "gain_db": 1.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.18,
+    "source": "tts",
+    "text": "Ptak siada na drzewo.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/siedziec.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-siedzieć.ogg",
+    "fingerprint": "823bdb791d65cf02",
+    "gain_db": -0.2,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-siedzie%C4%87.ogg",
+    "seconds": 1.44,
+    "source": "commons",
+    "text": "siedzieć"
+  },
+  "media/audio/siedziec__sentence.mp3": {
+    "fingerprint": "56e49e9896c1245f",
+    "gain_db": 1.5,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.38,
+    "source": "tts",
+    "text": "Ty siedzisz w domu.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/skakac.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-skakać.ogg",
@@ -101,6 +795,27 @@
     "seconds": 1.2,
     "source": "tts",
     "text": "Kot skacze na ławkę.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/sklep.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-sklep.ogg",
+    "fingerprint": "e80aa27fa75cfc80",
+    "gain_db": 3.4,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-sklep.ogg",
+    "seconds": 0.65,
+    "source": "commons",
+    "text": "sklep"
+  },
+  "media/audio/sklep__sentence.mp3": {
+    "fingerprint": "4138789830f5a9e4",
+    "gain_db": 0.0,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.94,
+    "source": "tts",
+    "text": "Idę do sklepu.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -125,6 +840,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/smiac_sie.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-śmiać się.ogg",
+    "fingerprint": "f6b0e10f768c2af8",
+    "gain_db": -0.1,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-%C5%9Bmia%C4%87_si%C4%99.ogg",
+    "seconds": 1.65,
+    "source": "commons",
+    "text": "śmiać się"
+  },
+  "media/audio/smiac_sie__sentence.mp3": {
+    "fingerprint": "4a5c2552e7c7899c",
+    "gain_db": 0.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.38,
+    "source": "tts",
+    "text": "Rano śmieję się w parku.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/spiewac.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-śpiewać.ogg",
@@ -143,6 +879,153 @@
     "seconds": 1.23,
     "source": "tts",
     "text": "Ptak śpiewa w parku.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/tak.mp3": {
+    "author": "odder",
+    "commons_file": "Pl-tak.ogg",
+    "fingerprint": "cf168435b309d68c",
+    "gain_db": 1.9,
+    "licence": "CC BY-SA 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-tak.ogg",
+    "seconds": 0.52,
+    "source": "commons",
+    "text": "tak"
+  },
+  "media/audio/tak__sentence.mp3": {
+    "fingerprint": "48b0105194c93bb9",
+    "gain_db": 0.8,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.76,
+    "source": "tts",
+    "text": "Mówię tak.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/teraz.mp3": {
+    "author": "Wyksztalcioch",
+    "commons_file": "Pl-teraz.ogg",
+    "fingerprint": "a9ae95240a31a718",
+    "gain_db": -0.9,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-teraz.ogg",
+    "seconds": 0.65,
+    "source": "commons",
+    "text": "teraz"
+  },
+  "media/audio/teraz__sentence.mp3": {
+    "fingerprint": "206f26a9fb972510",
+    "gain_db": -0.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.2,
+    "source": "tts",
+    "text": "Idę do parku teraz.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/tez.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-też.ogg",
+    "fingerprint": "ea707dc9af6a1e06",
+    "gain_db": 0.8,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-te%C5%BC.ogg",
+    "seconds": 0.65,
+    "source": "commons",
+    "text": "też"
+  },
+  "media/audio/tez__sentence.mp3": {
+    "fingerprint": "8166add0480fdb73",
+    "gain_db": -0.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.91,
+    "source": "tts",
+    "text": "Ty też masz psa.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/tutaj.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-tutaj.ogg",
+    "fingerprint": "4d0a93d1f471c824",
+    "gain_db": 0.5,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-tutaj.ogg",
+    "seconds": 0.76,
+    "source": "commons",
+    "text": "tutaj"
+  },
+  "media/audio/tutaj__sentence.mp3": {
+    "fingerprint": "45ae51001480436e",
+    "gain_db": 0.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.99,
+    "source": "tts",
+    "text": "Kot siedzi tutaj.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/widziec.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-widzieć.ogg",
+    "fingerprint": "8e12acee0b3f5d4d",
+    "gain_db": 4.1,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-widzie%C4%87.ogg",
+    "seconds": 0.84,
+    "source": "commons",
+    "text": "widzieć"
+  },
+  "media/audio/widziec__sentence.mp3": {
+    "fingerprint": "26f349dc7ebdccfc",
+    "gain_db": 0.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.04,
+    "source": "tts",
+    "text": "Ty widzisz ptaka.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/woda.mp3": {
+    "author": "Frizabela",
+    "commons_file": "Pl-woda.ogg",
+    "fingerprint": "3f98ee7c1205a04d",
+    "gain_db": -2.1,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-woda.ogg",
+    "seconds": 0.68,
+    "source": "commons",
+    "text": "woda"
+  },
+  "media/audio/woda__sentence.mp3": {
+    "fingerprint": "cbcc4f04862b3462",
+    "gain_db": -0.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.94,
+    "source": "tts",
+    "text": "Pies pije wodę.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/wracac.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-wracać.ogg",
+    "fingerprint": "bc96a921554bfbb1",
+    "gain_db": -0.2,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-wraca%C4%87.ogg",
+    "seconds": 1.75,
+    "source": "commons",
+    "text": "wracać"
+  },
+  "media/audio/wracac__sentence.mp3": {
+    "fingerprint": "301144925875cfa0",
+    "gain_db": 0.5,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.15,
+    "source": "tts",
+    "text": "Ptak wraca do parku.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -167,6 +1050,123 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/zolty.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-żółty.ogg",
+    "fingerprint": "1ca6609e64e64508",
+    "gain_db": -2.1,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-%C5%BC%C3%B3%C5%82ty.ogg",
+    "seconds": 0.89,
+    "source": "commons",
+    "text": "żółty"
+  },
+  "media/audio/zolty__sentence.mp3": {
+    "fingerprint": "9798e66e293f0c18",
+    "gain_db": 0.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.1,
+    "source": "tts",
+    "text": "Ptak jest żółty.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/img/byc.webp": {
+    "bytes": 72762,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "The image shows a person pointing, which suggests actions like pointing or looking rather than the verb 'to be'.",
+      "verdict": "flag",
+      "why": "does not clearly show the word; ambiguous — something else dominates"
+    },
+    "fingerprint": "a038dd172254ee84",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person standing in a doorway pointing at a small shop across the street, daylight, no readable text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/chleb.webp": {
+    "bytes": 86384,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "b63a8a8ca77b9127",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A whole loaf of bread on a plain wooden board, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/chodzic.webp": {
+    "bytes": 256810,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "2f5da87b458a17b7",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person walking along a park path, whole body in frame, side on, daylight, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/czerwony.webp": {
+    "bytes": 13750,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "257bca60a45ffc61",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Four unrelated everyday objects all the same shade of red on a plain white background: an apple, a mug, a book and a scarf. The only thing they share is the colour. No text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/czesc.webp": {
+    "bytes": 33404,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "972d8253be0c2da5",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Two people greeting each other with a friendly wave, both smiling, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/dawac.webp": {
+    "bytes": 22634,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "77a99eaeb4bad696",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "One hand holding out a bowl towards a dog, the dog reaching for it, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/dom.webp": {
     "bytes": 77640,
     "check": {
@@ -183,6 +1183,150 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/drzewo.webp": {
+    "bytes": 141042,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "9598bf5cb46f5013",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "One tree with a full green crown, whole tree in frame, plain sky behind, no people, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/duzy.webp": {
+    "bytes": 9682,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "341f0cf6d7c40dc9",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Two balls of the same colour side by side on a plain white background, one very large and one very small, the large one at the front and in focus. No text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/dzien.webp": {
+    "bytes": 17622,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "88a48308aa9c8b81",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A bright blue daytime sky with the sun high and a few small clouds, nothing else in frame, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/dziwny.webp": {
+    "bytes": 67864,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "98882a4eb0f91057",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person with both eyebrows raised and head tilted, looking puzzled at something out of frame, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/imie.webp": {
+    "bytes": 27706,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "fd16fc73f3beaabf",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person pointing at their own chest with one hand while speaking, introducing themselves to someone off to the side. Plain background. Absolutely no text, lettering, badges or signage anywhere in the image. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/isc.webp": {
+    "bytes": 163050,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "6e49fcbbfeb6ad84",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A cat walking along a garden path towards a house, side on, the house ahead of it, daylight, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/jesc.webp": {
+    "bytes": 34286,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "af8297057b903db7",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A dog eating a piece of bread from the ground, mouth on the bread, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/kasa.webp": {
+    "bytes": 35090,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "65e4fc9977bb95f6",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A supermarket checkout counter with a till, no people, no readable text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/kasza.webp": {
+    "bytes": 69384,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "0dd4239e48c5dea8",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A bowl of cooked buckwheat groats on a plain surface, seen from above, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/kot.webp": {
     "bytes": 14230,
     "check": {
@@ -196,6 +1340,198 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "One domestic cat, full body, standing on a plain light surface against a plain background. Clear and simple, no people, no other objects competing for attention, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/kupowac.webp": {
+    "bytes": 35512,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "716733db47087dde",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A customer at a shop counter handing coins to a shopkeeper with one hand and taking a loaf of bread with the other. Plain background. Absolutely no text, lettering, price tags, labels or signage anywhere in the image. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/kwiat.webp": {
+    "bytes": 18018,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "6d36a73e53b71b17",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "One flower with a stem, whole flower in frame, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/lawka.webp": {
+    "bytes": 148064,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "f860e75b8118e404",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A wooden park bench on grass, side on, plain daylight, empty, no people, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/leciec.webp": {
+    "bytes": 11886,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "f067074d8d0739a5",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A bird in flight against a plain blue sky, wings spread, nothing else in frame, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/maly.webp": {
+    "bytes": 8474,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "70bfa0936a584330",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Two balls of the same colour side by side on a plain white background, one very large and one very small, the small one at the front and in focus. No text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/miec.webp": {
+    "bytes": 32898,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "b887115c531682a7",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person holding a dog's lead with the dog beside them, both fully in frame, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/mleko.webp": {
+    "bytes": 5586,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "dfcc2bbbb8b32783",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A glass of milk on a plain light surface, plain background, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/mowic.webp": {
+    "bytes": 19140,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "51d87a9a3a9d662c",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person mid-speech with their mouth open, seen from the side, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/nie.webp": {
+    "bytes": 32602,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "bfd1350bee9f977b",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person holding up one flat palm in a clear stop gesture and shaking their head, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/park.webp": {
+    "bytes": 195656,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "d5bbdab85b2112a1",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A green public park with grass, trees and a path, empty, daylight, no people, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/patrzec.webp": {
+    "bytes": 16584,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "65dbb54ad79b2ddb",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person shading their eyes with one hand and looking up at a bright sky, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/pic.webp": {
+    "bytes": 16950,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "6bd58a3c30dddc19",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A small bird drinking from a shallow pool of water, beak touching the surface, plain background, no text. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -231,6 +1567,102 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/potem.webp": {
+    "bytes": 15640,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "9fbe241488fe27dc",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Two halves side by side on a plain background: on the left a plate of bread, on the right a glass of water, with a simple arrow pointing from left to right. No text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/ptak.webp": {
+    "bytes": 38936,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "9e93563a0be0418d",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "One small bird perched on a branch, whole bird in frame, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/rano.webp": {
+    "bytes": 154224,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "1203c3ee8871a9dd",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Early morning sunlight low over a quiet empty street, long shadows, no people, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/ryba.webp": {
+    "bytes": 7050,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "70d3c582c70ecce4",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "One fish swimming underwater, side on, plain blue water, nothing else in frame, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/siadac.webp": {
+    "bytes": 55766,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "b5bb71697e63be10",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A bird just landing on a branch, wings still half open, feet touching the branch, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/siedziec.webp": {
+    "bytes": 66156,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "a5e6559220b2cb4d",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person sitting still in an armchair indoors, whole figure in frame, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/skakac.webp": {
     "bytes": 237652,
     "check": {
@@ -244,6 +1676,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A cat in mid-air directly above a wooden park bench, legs extended, just about to land on the bench seat. Side view, green park in daylight, no people, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/sklep.webp": {
+    "bytes": 128284,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "b99c46cd7b8db71f",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "The front of a small grocery shop seen from the street, daylight, no people, no readable signage or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -263,19 +1711,147 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/smiac_sie.webp": {
+    "bytes": 49008,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "733057df5184f033",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person laughing, head back, clearly amused, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/spiewac.webp": {
     "bytes": 61892,
     "check": {
       "model": "gemini-flash-latest",
-      "problem": "The image primarily depicts a bird, making it easy to mistake for the noun 'bird' rather than the verb 'to sing'.",
-      "verdict": "flag",
-      "why": "ambiguous — something else dominates"
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
     },
     "fingerprint": "2cb091ec16129151",
     "model": "gemini-2.5-flash-image",
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A small bird perched on a tree branch singing, beak clearly open, in a green park in daylight. One bird only, no people, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/tak.webp": {
+    "bytes": 20018,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "4078b1d7bb79dba4",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person nodding with a clear thumbs up, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/teraz.webp": {
+    "bytes": 6364,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "The image shows a wall clock, which suggests 'clock' or 'time' rather than 'now'.",
+      "verdict": "flag",
+      "why": "does not clearly show the word; ambiguous — something else dominates"
+    },
+    "fingerprint": "32e872dc54bc080d",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A close view of a wall clock face, plain background, hands clearly visible, no numerals or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/tez.webp": {
+    "bytes": 26620,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "6600cc356e08372a",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Two people standing side by side, each holding an identical red umbrella, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/tutaj.webp": {
+    "bytes": 18528,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "fe78680a7bbf09f8",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A hand pointing down at one specific spot on the ground, close up, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/widziec.webp": {
+    "bytes": 21940,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "88b76e930be36f9a",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A close view of a person's eyes looking straight ahead, sharp and clear, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/woda.webp": {
+    "bytes": 9362,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "0d584baa4a364ccf",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A clear glass of water on a plain light surface, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/wracac.webp": {
+    "bytes": 130098,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "1fa2408fa6891aa4",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person walking up to their own front door carrying a bag, seen from behind, daylight, no text. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -292,6 +1868,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "Four unrelated everyday objects that are all the same shade of green, arranged together on a plain white background: a green apple, a green leaf, a green mug, a green book. The only thing they have in common is the colour. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/zolty.webp": {
+    "bytes": 10178,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "af0ee26150ecb1e7",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Four unrelated everyday objects all the same shade of yellow on a plain white background: a lemon, a pencil, a mug and a folded shirt. The only thing they share is the colour. No text. Square image.",
     "size": "800x800",
     "source": "generated"
   }

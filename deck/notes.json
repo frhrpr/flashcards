@@ -224,14 +224,18 @@
       "pos": "noun",
       "ipa": "ˈimjɛ",
       "note": null,
-      "image_basis": "sentence",
-      "image_prompt": "A hand writing on a blank paper name badge, close up, plain background, no readable text. Square image.",
+      "image": "media/img/imie.webp",
+      "image_alt": "name",
+      "image_basis": "word",
+      "image_prompt": "A person pointing at their own chest with one hand while speaking, introducing themselves to someone off to the side. Plain background. Absolutely no text, lettering, badges or signage anywhere in the image. Square image.",
+      "audio": "media/audio/imie.mp3",
       "sentence": {
         "pl": "Mam na imię Marek.",
         "en": "My name is Marek.",
         "gap": "Mam na ___ Marek.",
         "answer": "imię",
-        "answer_lemma": "imię"
+        "answer_lemma": "imię",
+        "audio": "media/audio/imie__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -247,14 +251,18 @@
       "pos": "noun",
       "ipa": "ˈvɔda",
       "note": null,
+      "image": "media/img/woda.webp",
+      "image_alt": "water",
       "image_basis": "word",
       "image_prompt": "A clear glass of water on a plain light surface, plain background, no text. Square image.",
+      "audio": "media/audio/woda.mp3",
       "sentence": {
         "pl": "Pies pije wodę.",
         "en": "The dog is drinking water.",
         "gap": "Pies pije ___.",
         "answer": "wodę",
-        "answer_lemma": "woda"
+        "answer_lemma": "woda",
+        "audio": "media/audio/woda__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -270,14 +278,18 @@
       "pos": "noun",
       "ipa": "ˈrɨba",
       "note": null,
+      "image": "media/img/ryba.webp",
+      "image_alt": "fish",
       "image_basis": "word",
       "image_prompt": "One fish swimming underwater, side on, plain blue water, nothing else in frame, no text. Square image.",
+      "audio": "media/audio/ryba.mp3",
       "sentence": {
         "pl": "W wodzie jest ryba.",
         "en": "There is a fish in the water.",
         "gap": "W wodzie jest ___.",
         "answer": "ryba",
-        "answer_lemma": "ryba"
+        "answer_lemma": "ryba",
+        "audio": "media/audio/ryba__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -293,14 +305,18 @@
       "pos": "noun",
       "ipa": "park",
       "note": null,
+      "image": "media/img/park.webp",
+      "image_alt": "park",
       "image_basis": "word",
       "image_prompt": "A green public park with grass, trees and a path, empty, daylight, no people, no text. Square image.",
+      "audio": "media/audio/park.mp3",
       "sentence": {
         "pl": "Rano chodzę do parku.",
         "en": "In the morning I walk to the park.",
         "gap": "Rano chodzę do ___.",
         "answer": "parku",
-        "answer_lemma": "park"
+        "answer_lemma": "park",
+        "audio": "media/audio/park__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -316,14 +332,18 @@
       "pos": "noun",
       "ipa": "ˈwafka",
       "note": null,
+      "image": "media/img/lawka.webp",
+      "image_alt": "bench",
       "image_basis": "word",
       "image_prompt": "A wooden park bench on grass, side on, plain daylight, empty, no people, no text. Square image.",
+      "audio": "media/audio/lawka.mp3",
       "sentence": {
         "pl": "W parku jest ławka.",
         "en": "There is a bench in the park.",
         "gap": "W parku jest ___.",
         "answer": "ławka",
-        "answer_lemma": "ławka"
+        "answer_lemma": "ławka",
+        "audio": "media/audio/lawka__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -339,14 +359,18 @@
       "pos": "noun",
       "ipa": "ˈdʐɛvɔ",
       "note": null,
+      "image": "media/img/drzewo.webp",
+      "image_alt": "tree",
       "image_basis": "word",
       "image_prompt": "One tree with a full green crown, whole tree in frame, plain sky behind, no people, no text. Square image.",
+      "audio": "media/audio/drzewo.mp3",
       "sentence": {
         "pl": "Widzę duże drzewo.",
         "en": "I see a big tree.",
         "gap": "Widzę duże ___.",
         "answer": "drzewo",
-        "answer_lemma": "drzewo"
+        "answer_lemma": "drzewo",
+        "audio": "media/audio/drzewo__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -362,14 +386,18 @@
       "pos": "noun",
       "ipa": "d͡ʑɛɲ",
       "note": null,
-      "image_basis": "sentence",
+      "image": "media/img/dzien.webp",
+      "image_alt": "day",
+      "image_basis": "word",
       "image_prompt": "A bright blue daytime sky with the sun high and a few small clouds, nothing else in frame, no text. Square image.",
+      "audio": "media/audio/dzien.mp3",
       "sentence": {
         "pl": "To jest dziwny dzień.",
         "en": "This is a strange day.",
         "gap": "To jest dziwny ___.",
         "answer": "dzień",
-        "answer_lemma": "dzień"
+        "answer_lemma": "dzień",
+        "audio": "media/audio/dzien__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -385,14 +413,18 @@
       "pos": "noun",
       "ipa": "ptak",
       "note": null,
+      "image": "media/img/ptak.webp",
+      "image_alt": "bird",
       "image_basis": "word",
       "image_prompt": "One small bird perched on a branch, whole bird in frame, plain background, no text. Square image.",
+      "audio": "media/audio/ptak.mp3",
       "sentence": {
         "pl": "Mały ptak siedzi na ławce.",
         "en": "A small bird is sitting on the bench.",
         "gap": "Mały ___ siedzi na ławce.",
         "answer": "ptak",
-        "answer_lemma": "ptak"
+        "answer_lemma": "ptak",
+        "audio": "media/audio/ptak__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -408,14 +440,18 @@
       "pos": "noun",
       "ipa": "ˈmlɛkɔ",
       "note": null,
+      "image": "media/img/mleko.webp",
+      "image_alt": "milk",
       "image_basis": "word",
       "image_prompt": "A glass of milk on a plain light surface, plain background, no text or lettering. Square image.",
+      "audio": "media/audio/mleko.mp3",
       "sentence": {
         "pl": "Kupuję mleko w sklepie.",
         "en": "I buy milk at the shop.",
         "gap": "Kupuję ___ w sklepie.",
         "answer": "mleko",
-        "answer_lemma": "mleko"
+        "answer_lemma": "mleko",
+        "audio": "media/audio/mleko__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -431,14 +467,18 @@
       "pos": "noun",
       "ipa": "kfjat",
       "note": null,
+      "image": "media/img/kwiat.webp",
+      "image_alt": "flower",
       "image_basis": "word",
       "image_prompt": "One flower with a stem, whole flower in frame, plain background, no text. Square image.",
+      "audio": "media/audio/kwiat.mp3",
       "sentence": {
         "pl": "To jest żółty kwiat.",
         "en": "This is a yellow flower.",
         "gap": "To jest żółty ___.",
         "answer": "kwiat",
-        "answer_lemma": "kwiat"
+        "answer_lemma": "kwiat",
+        "audio": "media/audio/kwiat__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -454,14 +494,18 @@
       "pos": "noun",
       "ipa": "sklɛp",
       "note": null,
+      "image": "media/img/sklep.webp",
+      "image_alt": "shop",
       "image_basis": "word",
       "image_prompt": "The front of a small grocery shop seen from the street, daylight, no people, no readable signage or lettering. Square image.",
+      "audio": "media/audio/sklep.mp3",
       "sentence": {
         "pl": "Idę do sklepu.",
         "en": "I am going to the shop.",
         "gap": "Idę do ___.",
         "answer": "sklepu",
-        "answer_lemma": "sklep"
+        "answer_lemma": "sklep",
+        "audio": "media/audio/sklep__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -477,14 +521,18 @@
       "pos": "noun",
       "ipa": "ˈkaʂa",
       "note": null,
+      "image": "media/img/kasza.webp",
+      "image_alt": "groats, kasha",
       "image_basis": "word",
       "image_prompt": "A bowl of cooked buckwheat groats on a plain surface, seen from above, plain background, no text. Square image.",
+      "audio": "media/audio/kasza.mp3",
       "sentence": {
         "pl": "Jem kaszę rano.",
         "en": "I eat kasha in the morning.",
         "gap": "Jem ___ rano.",
         "answer": "kaszę",
-        "answer_lemma": "kasza"
+        "answer_lemma": "kasza",
+        "audio": "media/audio/kasza__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -500,14 +548,18 @@
       "pos": "noun",
       "ipa": "ˈkasa",
       "note": null,
+      "image": "media/img/kasa.webp",
+      "image_alt": "checkout, till",
       "image_basis": "word",
       "image_prompt": "A supermarket checkout counter with a till, no people, no readable text or lettering. Square image.",
+      "audio": "media/audio/kasa.mp3",
       "sentence": {
         "pl": "W sklepie jest kasa.",
         "en": "There is a checkout in the shop.",
         "gap": "W sklepie jest ___.",
         "answer": "kasa",
-        "answer_lemma": "kasa"
+        "answer_lemma": "kasa",
+        "audio": "media/audio/kasa__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -523,14 +575,18 @@
       "pos": "noun",
       "ipa": "xlɛp",
       "note": null,
+      "image": "media/img/chleb.webp",
+      "image_alt": "bread",
       "image_basis": "word",
       "image_prompt": "A whole loaf of bread on a plain wooden board, plain background, no text. Square image.",
+      "audio": "media/audio/chleb.mp3",
       "sentence": {
         "pl": "Kupuję chleb i mleko.",
         "en": "I buy bread and milk.",
         "gap": "Kupuję ___ i mleko.",
         "answer": "chleb",
-        "answer_lemma": "chleb"
+        "answer_lemma": "chleb",
+        "audio": "media/audio/chleb__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -546,14 +602,18 @@
       "pos": "verb",
       "ipa": "bɨt͡ɕ",
       "note": null,
-      "image_basis": "sentence",
+      "image": "media/img/byc.webp",
+      "image_alt": "to be",
+      "image_basis": "word",
       "image_prompt": "A person standing in a doorway pointing at a small shop across the street, daylight, no readable text. Square image.",
+      "audio": "media/audio/byc.mp3",
       "sentence": {
         "pl": "Tutaj jest sklep.",
         "en": "There is a shop here.",
         "gap": "Tutaj ___ sklep.",
         "answer": "jest",
-        "answer_lemma": "być"
+        "answer_lemma": "być",
+        "audio": "media/audio/byc__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -569,14 +629,18 @@
       "pos": "verb",
       "ipa": "mjɛt͡ɕ",
       "note": null,
-      "image_basis": "sentence",
+      "image": "media/img/miec.webp",
+      "image_alt": "to have",
+      "image_basis": "word",
       "image_prompt": "A person holding a dog's lead with the dog beside them, both fully in frame, plain background, no text. Square image.",
+      "audio": "media/audio/miec.mp3",
       "sentence": {
         "pl": "Ty masz psa.",
         "en": "You have a dog.",
         "gap": "Ty ___ psa.",
         "answer": "masz",
-        "answer_lemma": "mieć"
+        "answer_lemma": "mieć",
+        "audio": "media/audio/miec__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -592,14 +656,18 @@
       "pos": "verb",
       "ipa": "pit͡ɕ",
       "note": null,
-      "image_basis": "sentence",
+      "image": "media/img/pic.webp",
+      "image_alt": "to drink",
+      "image_basis": "word",
       "image_prompt": "A small bird drinking from a shallow pool of water, beak touching the surface, plain background, no text. Square image.",
+      "audio": "media/audio/pic.mp3",
       "sentence": {
         "pl": "Ptak pije wodę.",
         "en": "The bird is drinking water.",
         "gap": "Ptak ___ wodę.",
         "answer": "pije",
-        "answer_lemma": "pić"
+        "answer_lemma": "pić",
+        "audio": "media/audio/pic__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -615,14 +683,18 @@
       "pos": "verb",
       "ipa": "jɛɕt͡ɕ",
       "note": null,
-      "image_basis": "sentence",
+      "image": "media/img/jesc.webp",
+      "image_alt": "to eat",
+      "image_basis": "word",
       "image_prompt": "A dog eating a piece of bread from the ground, mouth on the bread, plain background, no text. Square image.",
+      "audio": "media/audio/jesc.mp3",
       "sentence": {
         "pl": "Rano jem chleb.",
         "en": "In the morning I eat bread.",
         "gap": "Rano ___ chleb.",
         "answer": "jem",
-        "answer_lemma": "jeść"
+        "answer_lemma": "jeść",
+        "audio": "media/audio/jesc__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -638,14 +710,18 @@
       "pos": "verb",
       "ipa": "ˈmuvit͡ɕ",
       "note": null,
-      "image_basis": "sentence",
+      "image": "media/img/mowic.webp",
+      "image_alt": "to speak",
+      "image_basis": "word",
       "image_prompt": "A person mid-speech with their mouth open, seen from the side, plain background, no text. Square image.",
+      "audio": "media/audio/mowic.mp3",
       "sentence": {
         "pl": "Rano mówię cześć.",
         "en": "In the morning I say hello.",
         "gap": "Rano ___ cześć.",
         "answer": "mówię",
-        "answer_lemma": "mówić"
+        "answer_lemma": "mówić",
+        "audio": "media/audio/mowic__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -661,14 +737,18 @@
       "pos": "verb",
       "ipa": "ˈxɔd͡ʑit͡ɕ",
       "note": null,
-      "image_basis": "sentence",
+      "image": "media/img/chodzic.webp",
+      "image_alt": "to walk, to go",
+      "image_basis": "word",
       "image_prompt": "A person walking along a park path, whole body in frame, side on, daylight, no text. Square image.",
+      "audio": "media/audio/chodzic.mp3",
       "sentence": {
         "pl": "Rano chodzę do sklepu.",
         "en": "In the morning I walk to the shop.",
         "gap": "Rano ___ do sklepu.",
         "answer": "chodzę",
-        "answer_lemma": "chodzić"
+        "answer_lemma": "chodzić",
+        "audio": "media/audio/chodzic__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -684,14 +764,18 @@
       "pos": "verb",
       "ipa": "iɕt͡ɕ",
       "note": null,
-      "image_basis": "sentence",
+      "image": "media/img/isc.webp",
+      "image_alt": "to go",
+      "image_basis": "word",
       "image_prompt": "A cat walking along a garden path towards a house, side on, the house ahead of it, daylight, no text. Square image.",
+      "audio": "media/audio/isc.mp3",
       "sentence": {
         "pl": "Teraz idę do domu.",
         "en": "I am going home now.",
         "gap": "Teraz ___ do domu.",
         "answer": "idę",
-        "answer_lemma": "iść"
+        "answer_lemma": "iść",
+        "audio": "media/audio/isc__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -707,14 +791,18 @@
       "pos": "verb",
       "ipa": "ˈpatʂɛt͡ɕ",
       "note": null,
-      "image_basis": "sentence",
+      "image": "media/img/patrzec.webp",
+      "image_alt": "to look",
+      "image_basis": "word",
       "image_prompt": "A person shading their eyes with one hand and looking up at a bright sky, plain background, no text. Square image.",
+      "audio": "media/audio/patrzec.mp3",
       "sentence": {
         "pl": "Rano patrzę na słońce.",
         "en": "In the morning I look at the sun.",
         "gap": "Rano ___ na słońce.",
         "answer": "patrzę",
-        "answer_lemma": "patrzeć"
+        "answer_lemma": "patrzeć",
+        "audio": "media/audio/patrzec__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -730,14 +818,18 @@
       "pos": "verb",
       "ipa": "ˈvid͡ʑɛt͡ɕ",
       "note": null,
-      "image_basis": "sentence",
+      "image": "media/img/widziec.webp",
+      "image_alt": "to see",
+      "image_basis": "word",
       "image_prompt": "A close view of a person's eyes looking straight ahead, sharp and clear, plain background, no text. Square image.",
+      "audio": "media/audio/widziec.mp3",
       "sentence": {
         "pl": "Ty widzisz ptaka.",
         "en": "You see a bird.",
         "gap": "Ty ___ ptaka.",
         "answer": "widzisz",
-        "answer_lemma": "widzieć"
+        "answer_lemma": "widzieć",
+        "audio": "media/audio/widziec__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -753,14 +845,18 @@
       "pos": "verb",
       "ipa": "ɕmjat͡ɕ ɕɛ",
       "note": null,
-      "image_basis": "sentence",
+      "image": "media/img/smiac_sie.webp",
+      "image_alt": "to laugh",
+      "image_basis": "word",
       "image_prompt": "A person laughing, head back, clearly amused, plain background, no text. Square image.",
+      "audio": "media/audio/smiac_sie.mp3",
       "sentence": {
         "pl": "Rano śmieję się w parku.",
         "en": "In the morning I laugh in the park.",
         "gap": "Rano ___ się w parku.",
         "answer": "śmieję",
-        "answer_lemma": "śmiać się"
+        "answer_lemma": "śmiać się",
+        "audio": "media/audio/smiac_sie__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -775,15 +871,19 @@
       "gloss": "to sit down",
       "pos": "verb",
       "ipa": "ˈɕadat͡ɕ",
-      "note": null,
-      "image_basis": "sentence",
+      "note": "the movement — you are taking a seat",
+      "image": "media/img/siadac.webp",
+      "image_alt": "to sit down",
+      "image_basis": "word",
       "image_prompt": "A bird just landing on a branch, wings still half open, feet touching the branch, plain background, no text. Square image.",
+      "audio": "media/audio/siadac.mp3",
       "sentence": {
         "pl": "Ptak siada na drzewo.",
         "en": "The bird sits down on the tree.",
         "gap": "Ptak ___ na drzewo.",
         "answer": "siada",
-        "answer_lemma": "siadać"
+        "answer_lemma": "siadać",
+        "audio": "media/audio/siadac__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -798,15 +898,19 @@
       "gloss": "to be sitting",
       "pos": "verb",
       "ipa": "ɕɛˈd͡ʑɛt͡ɕ",
-      "note": null,
-      "image_basis": "sentence",
+      "note": "the state — you are already seated",
+      "image": "media/img/siedziec.webp",
+      "image_alt": "to be sitting",
+      "image_basis": "word",
       "image_prompt": "A person sitting still in an armchair indoors, whole figure in frame, no text. Square image.",
+      "audio": "media/audio/siedziec.mp3",
       "sentence": {
         "pl": "Ty siedzisz w domu.",
         "en": "You are sitting at home.",
         "gap": "Ty ___ w domu.",
         "answer": "siedzisz",
-        "answer_lemma": "siedzieć"
+        "answer_lemma": "siedzieć",
+        "audio": "media/audio/siedziec__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -822,14 +926,18 @@
       "pos": "verb",
       "ipa": "ˈvrat͡sat͡ɕ",
       "note": null,
-      "image_basis": "sentence",
+      "image": "media/img/wracac.webp",
+      "image_alt": "to come back",
+      "image_basis": "word",
       "image_prompt": "A person walking up to their own front door carrying a bag, seen from behind, daylight, no text. Square image.",
+      "audio": "media/audio/wracac.mp3",
       "sentence": {
         "pl": "Ptak wraca do parku.",
         "en": "The bird comes back to the park.",
         "gap": "Ptak ___ do parku.",
         "answer": "wraca",
-        "answer_lemma": "wracać"
+        "answer_lemma": "wracać",
+        "audio": "media/audio/wracac__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -845,14 +953,18 @@
       "pos": "verb",
       "ipa": "ˈlɛt͡ɕɛt͡ɕ",
       "note": null,
-      "image_basis": "sentence",
+      "image": "media/img/leciec.webp",
+      "image_alt": "to fly",
+      "image_basis": "word",
       "image_prompt": "A bird in flight against a plain blue sky, wings spread, nothing else in frame, no text. Square image.",
+      "audio": "media/audio/leciec.mp3",
       "sentence": {
         "pl": "Żółty ptak leci.",
         "en": "A yellow bird is flying.",
         "gap": "Żółty ptak ___.",
         "answer": "leci",
-        "answer_lemma": "lecieć"
+        "answer_lemma": "lecieć",
+        "audio": "media/audio/leciec__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -868,14 +980,18 @@
       "pos": "verb",
       "ipa": "ˈdavat͡ɕ",
       "note": null,
-      "image_basis": "sentence",
+      "image": "media/img/dawac.webp",
+      "image_alt": "to give",
+      "image_basis": "word",
       "image_prompt": "One hand holding out a bowl towards a dog, the dog reaching for it, plain background, no text. Square image.",
+      "audio": "media/audio/dawac.mp3",
       "sentence": {
         "pl": "Rano daję psu wodę.",
         "en": "In the morning I give the dog water.",
         "gap": "Rano ___ psu wodę.",
         "answer": "daję",
-        "answer_lemma": "dawać"
+        "answer_lemma": "dawać",
+        "audio": "media/audio/dawac__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -891,14 +1007,18 @@
       "pos": "verb",
       "ipa": "kuˈpɔvat͡ɕ",
       "note": null,
-      "image_basis": "sentence",
-      "image_prompt": "A person handing money to a shopkeeper across a counter, plain background, no readable text. Square image.",
+      "image": "media/img/kupowac.webp",
+      "image_alt": "to buy",
+      "image_basis": "word",
+      "image_prompt": "A customer at a shop counter handing coins to a shopkeeper with one hand and taking a loaf of bread with the other. Plain background. Absolutely no text, lettering, price tags, labels or signage anywhere in the image. Square image.",
+      "audio": "media/audio/kupowac.mp3",
       "sentence": {
         "pl": "Ty kupujesz chleb.",
         "en": "You are buying bread.",
         "gap": "Ty ___ chleb.",
         "answer": "kupujesz",
-        "answer_lemma": "kupować"
+        "answer_lemma": "kupować",
+        "audio": "media/audio/kupowac__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -914,14 +1034,18 @@
       "pos": "adjective",
       "ipa": "ˈmawɨ",
       "note": null,
+      "image": "media/img/maly.webp",
+      "image_alt": "small",
       "image_basis": "word",
       "image_prompt": "Two balls of the same colour side by side on a plain white background, one very large and one very small, the small one at the front and in focus. No text. Square image.",
+      "audio": "media/audio/maly.mp3",
       "sentence": {
         "pl": "To jest mały ptak.",
         "en": "This is a small bird.",
         "gap": "To jest ___ ptak.",
         "answer": "mały",
-        "answer_lemma": "mały"
+        "answer_lemma": "mały",
+        "audio": "media/audio/maly__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -937,14 +1061,18 @@
       "pos": "adjective",
       "ipa": "ˈduʐɨ",
       "note": null,
+      "image": "media/img/duzy.webp",
+      "image_alt": "big",
       "image_basis": "word",
       "image_prompt": "Two balls of the same colour side by side on a plain white background, one very large and one very small, the large one at the front and in focus. No text. Square image.",
+      "audio": "media/audio/duzy.mp3",
       "sentence": {
         "pl": "To jest duży dom.",
         "en": "This is a big house.",
         "gap": "To jest ___ dom.",
         "answer": "duży",
-        "answer_lemma": "duży"
+        "answer_lemma": "duży",
+        "audio": "media/audio/duzy__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -960,14 +1088,18 @@
       "pos": "adjective",
       "ipa": "ˈʐuwtɨ",
       "note": null,
+      "image": "media/img/zolty.webp",
+      "image_alt": "yellow",
       "image_basis": "word",
       "image_prompt": "Four unrelated everyday objects all the same shade of yellow on a plain white background: a lemon, a pencil, a mug and a folded shirt. The only thing they share is the colour. No text. Square image.",
+      "audio": "media/audio/zolty.mp3",
       "sentence": {
         "pl": "Ptak jest żółty.",
         "en": "The bird is yellow.",
         "gap": "Ptak jest ___.",
         "answer": "żółty",
-        "answer_lemma": "żółty"
+        "answer_lemma": "żółty",
+        "audio": "media/audio/zolty__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -983,14 +1115,18 @@
       "pos": "adjective",
       "ipa": "t͡ʂɛrˈvɔnɨ",
       "note": null,
+      "image": "media/img/czerwony.webp",
+      "image_alt": "red",
       "image_basis": "word",
       "image_prompt": "Four unrelated everyday objects all the same shade of red on a plain white background: an apple, a mug, a book and a scarf. The only thing they share is the colour. No text. Square image.",
+      "audio": "media/audio/czerwony.mp3",
       "sentence": {
         "pl": "Piłka jest czerwona.",
         "en": "The ball is red.",
         "gap": "Piłka jest ___.",
         "answer": "czerwona",
-        "answer_lemma": "czerwony"
+        "answer_lemma": "czerwony",
+        "audio": "media/audio/czerwony__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -1006,14 +1142,18 @@
       "pos": "adjective",
       "ipa": "ˈd͡ʑivnɨ",
       "note": null,
-      "image_basis": "sentence",
+      "image": "media/img/dziwny.webp",
+      "image_alt": "strange",
+      "image_basis": "word",
       "image_prompt": "A person with both eyebrows raised and head tilted, looking puzzled at something out of frame, plain background, no text. Square image.",
+      "audio": "media/audio/dziwny.mp3",
       "sentence": {
         "pl": "Pies jest dziwny.",
         "en": "The dog is strange.",
         "gap": "Pies jest ___.",
         "answer": "dziwny",
-        "answer_lemma": "dziwny"
+        "answer_lemma": "dziwny",
+        "audio": "media/audio/dziwny__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -1029,14 +1169,18 @@
       "pos": "adverb",
       "ipa": "ˈranɔ",
       "note": null,
-      "image_basis": "sentence",
+      "image": "media/img/rano.webp",
+      "image_alt": "in the morning",
+      "image_basis": "word",
       "image_prompt": "Early morning sunlight low over a quiet empty street, long shadows, no people, no text. Square image.",
+      "audio": "media/audio/rano.mp3",
       "sentence": {
         "pl": "Wracam do domu rano.",
         "en": "I come home in the morning.",
         "gap": "Wracam do domu ___.",
         "answer": "rano",
-        "answer_lemma": "rano"
+        "answer_lemma": "rano",
+        "audio": "media/audio/rano__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -1052,14 +1196,18 @@
       "pos": "adverb",
       "ipa": "ˈpɔtɛm",
       "note": null,
-      "image_basis": "sentence",
+      "image": "media/img/potem.webp",
+      "image_alt": "then, afterwards",
+      "image_basis": "word",
       "image_prompt": "Two halves side by side on a plain background: on the left a plate of bread, on the right a glass of water, with a simple arrow pointing from left to right. No text. Square image.",
+      "audio": "media/audio/potem.mp3",
       "sentence": {
         "pl": "Jem chleb, potem piję wodę.",
         "en": "I eat bread, then I drink water.",
         "gap": "Jem chleb, ___ piję wodę.",
         "answer": "potem",
-        "answer_lemma": "potem"
+        "answer_lemma": "potem",
+        "audio": "media/audio/potem__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -1075,14 +1223,18 @@
       "pos": "adverb",
       "ipa": "ˈtutaj",
       "note": null,
-      "image_basis": "sentence",
+      "image": "media/img/tutaj.webp",
+      "image_alt": "here",
+      "image_basis": "word",
       "image_prompt": "A hand pointing down at one specific spot on the ground, close up, plain background, no text. Square image.",
+      "audio": "media/audio/tutaj.mp3",
       "sentence": {
         "pl": "Kot siedzi tutaj.",
         "en": "The cat is sitting here.",
         "gap": "Kot siedzi ___.",
         "answer": "tutaj",
-        "answer_lemma": "tutaj"
+        "answer_lemma": "tutaj",
+        "audio": "media/audio/tutaj__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -1098,14 +1250,18 @@
       "pos": "adverb",
       "ipa": "ˈtɛras",
       "note": null,
-      "image_basis": "sentence",
+      "image": "media/img/teraz.webp",
+      "image_alt": "now",
+      "image_basis": "word",
       "image_prompt": "A close view of a wall clock face, plain background, hands clearly visible, no numerals or lettering. Square image.",
+      "audio": "media/audio/teraz.mp3",
       "sentence": {
         "pl": "Idę do parku teraz.",
         "en": "I am going to the park now.",
         "gap": "Idę do parku ___.",
         "answer": "teraz",
-        "answer_lemma": "teraz"
+        "answer_lemma": "teraz",
+        "audio": "media/audio/teraz__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -1121,14 +1277,18 @@
       "pos": "particle",
       "ipa": "tak",
       "note": null,
-      "image_basis": "sentence",
+      "image": "media/img/tak.webp",
+      "image_alt": "yes",
+      "image_basis": "word",
       "image_prompt": "A person nodding with a clear thumbs up, plain background, no text. Square image.",
+      "audio": "media/audio/tak.mp3",
       "sentence": {
         "pl": "Mówię tak.",
         "en": "I say yes.",
         "gap": "Mówię ___.",
         "answer": "tak",
-        "answer_lemma": "tak"
+        "answer_lemma": "tak",
+        "audio": "media/audio/tak__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -1144,14 +1304,18 @@
       "pos": "particle",
       "ipa": "ɲɛ",
       "note": null,
-      "image_basis": "sentence",
+      "image": "media/img/nie.webp",
+      "image_alt": "no, not",
+      "image_basis": "word",
       "image_prompt": "A person holding up one flat palm in a clear stop gesture and shaking their head, plain background, no text. Square image.",
+      "audio": "media/audio/nie.mp3",
       "sentence": {
         "pl": "To nie jest pies.",
         "en": "That is not a dog.",
         "gap": "To ___ jest pies.",
         "answer": "nie",
-        "answer_lemma": "nie"
+        "answer_lemma": "nie",
+        "audio": "media/audio/nie__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -1167,14 +1331,18 @@
       "pos": "particle",
       "ipa": "tɛʂ",
       "note": null,
-      "image_basis": "sentence",
+      "image": "media/img/tez.webp",
+      "image_alt": "also, too",
+      "image_basis": "word",
       "image_prompt": "Two people standing side by side, each holding an identical red umbrella, plain background, no text. Square image.",
+      "audio": "media/audio/tez.mp3",
       "sentence": {
         "pl": "Ty też masz psa.",
         "en": "You have a dog too.",
         "gap": "Ty ___ masz psa.",
         "answer": "też",
-        "answer_lemma": "też"
+        "answer_lemma": "też",
+        "audio": "media/audio/tez__sentence.mp3"
       },
       "cards": [
         "recognition",
@@ -1190,14 +1358,18 @@
       "pos": "interjection",
       "ipa": "t͡ʂɛɕt͡ɕ",
       "note": null,
-      "image_basis": "sentence",
+      "image": "media/img/czesc.webp",
+      "image_alt": "hi, bye",
+      "image_basis": "word",
       "image_prompt": "Two people greeting each other with a friendly wave, both smiling, plain background, no text. Square image.",
+      "audio": "media/audio/czesc.mp3",
       "sentence": {
         "pl": "Ty mówisz cześć.",
         "en": "You say hello.",
         "gap": "Ty mówisz ___.",
         "answer": "cześć",
-        "answer_lemma": "cześć"
+        "answer_lemma": "cześć",
+        "audio": "media/audio/czesc__sentence.mp3"
       },
       "cards": [
         "recognition",

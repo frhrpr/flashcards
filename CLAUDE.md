@@ -189,11 +189,21 @@ whether a picture illustrates the word alone or the sentence's scene;
 concrete words take `word`, and the sentence is then irrelevant to the image
 because the card already carries it as text and audio.
 
-`tools/images.py --check` asks a vision model specific yes/no questions —
-does it show the word, is it unambiguous, is there text — and flags rather
-than blocks. It caught the `skakać` direction fault on its own. Judging a
-`word`-basis image against the sentence produces nothing but noise, which is
-why the prompt is conditional on `image_basis`.
+`tools/images.py --check` asks a vision model specific yes/no questions and
+flags rather than blocks. It caught the `skakać` direction fault on its own.
+Two calibration lessons, both learned by getting 24 flags out of 43:
+
+- Judging a `word`-basis image against the sentence is pure noise, so the
+  prompt is conditional on `image_basis`. Almost every image is `word` basis
+  — a picture of the concept, however abstract. Only `skakać` and `śpiewać`
+  actually re-enact their sentence.
+- The bar is **misleading, not merely insufficient**. The card also shows the
+  gloss and the sentence, so a picture only has to be a memory hook. Asking
+  "would a learner guess this word from the picture alone" flags every verb,
+  because a bird in flight does also contain a bird.
+
+Some words cannot be depicted at all — `być`, `teraz`. They keep their
+flagged image; the gloss and sentence carry the meaning.
 
 Deferred on purpose: 4 grades instead of 2, and a stats screen.
 

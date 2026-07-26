@@ -678,7 +678,8 @@ const LAYOUT = {
 
 // Fronts that are not simply a stack of the shared pieces.
 const special = {
-  audioOnly: n => playBtn(n.audio, `play ${n.word}`, "play-big"),
+  // Deliberately not "play <word>": the label is the answer.
+  audioOnly: n => playBtn(n.audio, "play the recording", "play-big"),
 };
 
 function side(n, type, which){
