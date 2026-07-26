@@ -106,6 +106,12 @@ notes`. `status` is `queued` → `known` → `carded`.
 - **`note_id` must match `[a-z0-9_]+`** — it is used as a Firestore field
   path, where diacritics would need backtick quoting. `słońce` → `slonce`,
   `śmiać się` → `smiac_sie`.
+- **Order is shuffled, seeded on the day plus the user id.** Due date still
+  dominates; the shuffle only breaks ties and orders the new-card pool. The
+  seed makes a mid-session reload stable rather than reshuffling under him,
+  while every day differs. Without it the sequence was identical every
+  session and new words arrived in file order, so notes at the end of the
+  file would never be introduced.
 - **`NEW_PER_DAY` caps new cards.** Counted from an `introduced` stamp on
   card state, not session state, so it survives reloads and a second device.
 - **Grammar words don't get cards.** `deck/vocab.csv` marks prepositions,
