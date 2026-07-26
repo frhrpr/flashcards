@@ -13,27 +13,16 @@ ROOT = Path(__file__).resolve().parent.parent
 NOTES, VOCAB = ROOT / "deck/notes.json", ROOT / "deck/vocab.csv"
 
 CARD_TYPES = {"recognition", "cloze"}
-GENDERS = {"m-anim", "m-inan", "f", "n"}
-ASPECTS = {"impf", "pf"}
+POS = {"noun", "verb", "adjective", "adverb", "preposition", "conjunction",
+       "particle", "pronoun", "interjection"}
 ID_RE = re.compile(r"[a-z0-9_]+$")
-# Polish letters only — used to pull words out of a sentence.
-WORD_RE = re.compile(r"[a-ząćęłńóśźż]+", re.IGNORECASE)
 
-# Inflected forms whose stem does not prefix-match their lemma — consonant
-# alternation (skakać → skacze), ć→j (pić → pije), suppletion (być → jest).
-# Extend as the deck grows. Keeping this honest matters: a check that warns
-# on every correct sentence is one you stop reading.
-IRREGULAR = {
-    "jest": "być", "jestem": "być", "są": "być", "było": "być",
-    "pije": "pić", "piję": "pić", "pijesz": "pić",
-    "je": "jeść", "jem": "jeść", "jedzą": "jeść",
-    "skacze": "skakać", "skaczę": "skakać",
-    "idzie": "iść", "idę": "iść", "idziesz": "iść",
-    "mówi": "mówić", "mówię": "mówić",
-    "widzi": "widzieć", "widzę": "widzieć",
-    "siedzi": "siedzieć", "siedzę": "siedzieć",
-    "daje": "dawać", "daję": "dawać",
-}
+# Deliberately NOT checked: whether every word in a sentence is one Evert
+# already knows. Doing that properly needs a lemmatiser — Polish inflection
+# means "nie mam psa" is a perfectly good sentence for "pies", and prefix
+# matching flags być→jest and skakać→skacze on every correct sentence.
+# Allowlist compliance is enforced where it belongs: the generator is handed
+# the allowlist, and a human reads the result before `reviewed` is set.
 
 errors, warnings = [], []
 def err(nid, msg): errors.append(f"{nid}: {msg}")
@@ -73,28 +62,8 @@ def check_sentence(nid, s, word):
         warn(nid, f"answer_lemma {s['answer_lemma']!r} is not the note word {word!r}")
 
 
-def check_vocabulary(nid, sentence_pl, known_words, known_stems):
-    """Heuristic: every word should trace back to something he already knows.
-
-    This is not a lemmatiser. It resolves known irregulars, then falls back to
-    a 4-character stem match, so treat a hit as 'look at this', not 'wrong'.
-    """
-    for w in WORD_RE.findall(sentence_pl.lower()):
-        if len(w) <= 3:
-            continue  # function words: to, na, w, i, do, pod ...
-        if w in known_words or IRREGULAR.get(w) in known_words:
-            continue
-        stem = w[:4]
-        if any(w.startswith(k) or k.startswith(stem) for k in known_stems):
-            continue
-        warn(nid, f"sentence word {w!r} may be outside the allowlist "
-                  f"(add to IRREGULAR in this script if it is a known form)")
-
-
 def main():
     notes, vocab = load()
-    known_words = {r["word"].lower() for r in vocab.values()}
-    known_stems = {w[:4] for w in known_words if len(w) >= 3}
     todo = {"image": [], "audio": [], "sentence audio": [], "review": []}
 
     seen = set()
@@ -110,14 +79,8 @@ def main():
             if not n.get(field):
                 err(nid, f"{field} is missing or empty")
 
-        pos = n.get("pos")
-        if pos == "noun" and n.get("gender") not in GENDERS:
-            err(nid, f"noun needs gender one of {sorted(GENDERS)}, got {n.get('gender')!r}")
-        if pos == "verb":
-            if n.get("aspect") not in ASPECTS:
-                err(nid, f"verb needs aspect impf/pf, got {n.get('aspect')!r}")
-            if not n.get("aspect_pair"):
-                warn(nid, "verb has no aspect_pair")
+        if n.get("pos") not in POS:
+            err(nid, f"pos must be one of {sorted(POS)}, got {n.get('pos')!r}")
 
         for t in n.get("cards", []):
             if t not in CARD_TYPES:
@@ -127,7 +90,6 @@ def main():
 
         if isinstance(n.get("sentence"), dict):
             check_sentence(nid, n["sentence"], n.get("word", ""))
-            check_vocabulary(nid, n["sentence"].get("pl", ""), known_words, known_stems)
 
         # Media is absent until generated. A path that IS set must resolve.
         for key in ("image", "audio"):

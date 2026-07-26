@@ -43,7 +43,6 @@ body{background:var(--paper);color:var(--ink);font-family:var(--sans);padding:1.
 .sent-pl .play{width:2rem;height:2rem;font-size:.75rem;flex:none}
 .sent-en{font-size:.85rem;color:var(--dim);margin-top:.35rem}
 .gram{margin-top:1rem;padding-top:.75rem;border-top:1px solid var(--line);width:100%;font-family:var(--mono);font-size:.68rem;letter-spacing:.06em;color:var(--dim)}
-.gram .forms{display:block;margin-top:.25rem;opacity:.8}
 .note{margin-top:.5rem;font-size:.8rem;color:var(--dim);font-style:italic}
 .play{background:none;border:1px solid var(--line);border-radius:50%;width:2.5rem;height:2.5rem;font-size:1rem;cursor:pointer;color:var(--ink)}
 .play:hover{border-color:var(--dim)}
@@ -398,26 +397,16 @@ const POS_PL = {
   adverb: "przysłówek", preposition: "przyimek", conjunction: "spójnik",
   particle: "partykuła", pronoun: "zaimek", interjection: "wykrzyknik",
 };
-const GENDER_PL = { "m-anim": "r.m. żyw.", "m-inan": "r.m. nżyw.", f: "r.ż.", n: "r.n." };
-const ASPECT_PL = { impf: "ndk.", pf: "dk." };
 
 // Anything from the deck could contain < or &; it is rendered via innerHTML.
 const esc = s => String(s).replace(/[&<>"]/g, c =>
   ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
+/* Part of speech only. Declension tables and aspect pairs are deliberately
+   not stored — this is a vocabulary trainer, not a grammar reference, and
+   the example sentences are free to use whatever form reads naturally. */
 function grammar(n){
-  const bits = [POS_PL[n.pos] || n.pos];
-  if (n.gender) bits.push(GENDER_PL[n.gender] || n.gender);
-  if (n.aspect) bits.push(ASPECT_PL[n.aspect] || n.aspect);
-  if (n.aspect_pair) bits.push(`${ASPECT_PL.pf} ${n.aspect_pair}`);
-  const f = n.forms || {};
-  const forms = n.pos === "noun" ? [f.gen && `D. ${f.gen}`, f.pl && `lm. ${f.pl}`]
-              : n.pos === "verb" ? [f.sg1, f.sg3]
-              : [f.f, f.n];
-  return `<div class="gram">${esc(bits.join(" · "))}` +
-    (forms.filter(Boolean).length
-      ? `<span class="forms">${esc(forms.filter(Boolean).join(" · "))}</span>` : "") +
-    `</div>`;
+  return `<div class="gram">${esc(POS_PL[n.pos] || n.pos)}</div>`;
 }
 
 let audioSeq = 0;

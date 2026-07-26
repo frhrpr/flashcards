@@ -6,8 +6,6 @@
       "word": "dom",
       "gloss": "house, home",
       "pos": "noun",
-      "gender": "m-inan",
-      "forms": { "gen": "domu", "pl": "domy" },
       "ipa": "dɔm",
       "note": null,
       "sentence": {
@@ -17,7 +15,9 @@
         "answer": "domu",
         "answer_lemma": "dom"
       },
-      "cards": ["recognition"],
+      "cards": [
+        "recognition"
+      ],
       "reviewed": false
     },
     {
@@ -25,10 +25,8 @@
       "word": "pies",
       "gloss": "dog",
       "pos": "noun",
-      "gender": "m-anim",
-      "forms": { "gen": "psa", "pl": "psy" },
       "ipa": "pjɛs",
-      "note": "D. psa — bez -e-",
+      "note": null,
       "sentence": {
         "pl": "Pod drzewem siedzi pies.",
         "en": "A dog is sitting under the tree.",
@@ -36,7 +34,9 @@
         "answer": "pies",
         "answer_lemma": "pies"
       },
-      "cards": ["recognition"],
+      "cards": [
+        "recognition"
+      ],
       "reviewed": false
     },
     {
@@ -44,8 +44,6 @@
       "word": "kot",
       "gloss": "cat",
       "pos": "noun",
-      "gender": "m-anim",
-      "forms": { "gen": "kota", "pl": "koty" },
       "ipa": "kɔt",
       "note": null,
       "sentence": {
@@ -55,7 +53,9 @@
         "answer": "kot",
         "answer_lemma": "kot"
       },
-      "cards": ["recognition"],
+      "cards": [
+        "recognition"
+      ],
       "reviewed": false
     },
     {
@@ -63,8 +63,6 @@
       "word": "słońce",
       "gloss": "sun",
       "pos": "noun",
-      "gender": "n",
-      "forms": { "gen": "słońca", "pl": "słońca" },
       "ipa": "ˈswɔɲt͡sɛ",
       "note": null,
       "sentence": {
@@ -74,7 +72,9 @@
         "answer": "słońce",
         "answer_lemma": "słońce"
       },
-      "cards": ["recognition"],
+      "cards": [
+        "recognition"
+      ],
       "reviewed": false
     },
     {
@@ -82,8 +82,6 @@
       "word": "piłka",
       "gloss": "ball",
       "pos": "noun",
-      "gender": "f",
-      "forms": { "gen": "piłki", "pl": "piłki" },
       "ipa": "ˈpiwka",
       "note": null,
       "sentence": {
@@ -93,7 +91,9 @@
         "answer": "piłka",
         "answer_lemma": "piłka"
       },
-      "cards": ["recognition"],
+      "cards": [
+        "recognition"
+      ],
       "reviewed": false
     },
     {
@@ -101,9 +101,6 @@
       "word": "skakać",
       "gloss": "to jump",
       "pos": "verb",
-      "aspect": "impf",
-      "aspect_pair": "skoczyć",
-      "forms": { "sg1": "skaczę", "sg3": "skacze" },
       "ipa": "ˈskakat͡ɕ",
       "note": null,
       "sentence": {
@@ -113,7 +110,9 @@
         "answer": "skacze",
         "answer_lemma": "skakać"
       },
-      "cards": ["recognition"],
+      "cards": [
+        "recognition"
+      ],
       "reviewed": false
     },
     {
@@ -121,9 +120,6 @@
       "word": "śpiewać",
       "gloss": "to sing",
       "pos": "verb",
-      "aspect": "impf",
-      "aspect_pair": "zaśpiewać",
-      "forms": { "sg1": "śpiewam", "sg3": "śpiewa" },
       "ipa": "ˈɕpjɛvat͡ɕ",
       "note": null,
       "sentence": {
@@ -133,7 +129,9 @@
         "answer": "śpiewa",
         "answer_lemma": "śpiewać"
       },
-      "cards": ["recognition"],
+      "cards": [
+        "recognition"
+      ],
       "reviewed": false
     },
     {
@@ -141,7 +139,6 @@
       "word": "zielony",
       "gloss": "green",
       "pos": "adjective",
-      "forms": { "f": "zielona", "n": "zielone" },
       "ipa": "ʑɛˈlɔnɨ",
       "note": null,
       "sentence": {
@@ -151,7 +148,9 @@
         "answer": "zielone",
         "answer_lemma": "zielony"
       },
-      "cards": ["recognition"],
+      "cards": [
+        "recognition"
+      ],
       "reviewed": false
     }
   ]

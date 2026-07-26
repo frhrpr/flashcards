@@ -1,37 +1,41 @@
 # deck/
 
-Source data for the trainer. Edit from anywhere — github.com's web editor
-works fine from a phone. **Run `python3 tools/validate.py` after any edit**;
-it catches everything below and exits non-zero if the deck is unshippable.
+## Which file do I edit?
+
+| I want to… | Edit |
+| --- | --- |
+| record a word Evert has met | `vocab.csv` — add a row |
+| fix a bad sentence, gloss or IPA | `notes.json` |
+| mark Polish as checked | `notes.json` — set `"reviewed": true` |
+| turn on cloze cards for a word | `notes.json` — add `"cloze"` to `cards` |
+
+Nothing else. `index.html` holds no card content.
+
+github.com's web editor works fine from a phone for both. **Run
+`python3 tools/validate.py` after any edit** — it exits non-zero if the deck
+is in a state that shouldn't reach a student.
 
 ## notes.json
 
-Card content. `index.html` fetches this at load, so adding a word means
-editing this file, never the app.
+Card content. `index.html` fetches this at load.
 
 ```jsonc
 {
   "id": "kot",              // must equal a note_id in vocab.csv, [a-z0-9_]+
-  "word": "kot",
+  "word": "kot",            // dictionary form
   "gloss": "cat",           // English
-  "pos": "noun",
-  "gender": "m-anim",       // nouns: m-anim | m-inan | f | n
-  "aspect": "impf",         // verbs: impf | pf
-  "aspect_pair": "skoczyć", // verbs: the other half of the pair
-  "forms": {                // nouns gen+pl, verbs sg1+sg3, adjectives f+n
-    "gen": "kota", "pl": "koty"
-  },
+  "pos": "noun",            // shown on the card, in Polish: "rzeczownik"
   "ipa": "kɔt",
   "note": null,             // Polish, short, only when it earns its place
-  "image": "media/img/kot.webp",   // omit until the file exists
+  "image": "media/img/kot.webp",   // omit the key until the file exists
   "image_alt": "a cat",            // required whenever image is set
-  "audio": "media/audio/kot.mp3",  // omit until the file exists
+  "audio": "media/audio/kot.mp3",  // omit the key until the file exists
   "sentence": {
     "pl": "Mały kot pije mleko.",
     "en": "The little cat is drinking milk.",
     "gap": "Mały ___ pije mleko.",  // gap + answer must rebuild pl exactly
-    "answer": "kot",                // the inflected form as it appears
-    "answer_lemma": "kot",          // the dictionary form
+    "answer": "kot",                // the form as it appears in the sentence
+    "answer_lemma": "kot",          // the headword it belongs to
     "audio": "media/audio/kot__sentence.mp3"
   },
   "cards": ["recognition"], // add "cloze" to also drill the gapped sentence
@@ -39,15 +43,17 @@ editing this file, never the app.
 }
 ```
 
+**No grammar tables.** Gender, aspect and declension are not stored — this
+trains vocabulary, not morphology. Sentences use whatever form reads
+naturally, so `Nie mam psa.` is a fine sentence for `pies`; only `answer`
+and `answer_lemma` record that the surface form differs from the headword.
+
 **Media keys are absent until the file exists.** A path that is set but
-missing is an error; a missing key is just a to-do. That way the deck is
-always shippable and the validator still tells you what's outstanding.
+missing is an error; a missing key is just a to-do. So the deck is always
+shippable, and the validator still tells you what is outstanding.
 
 **Gaps should not be sentence-initial** — capitalisation would give the
 answer away, and the validator warns about it.
-
-**`answer` is the inflected form**, because Polish sentences don't contain
-citation forms. `answer_lemma` keeps the link back to the headword.
 
 ## vocab.csv
 

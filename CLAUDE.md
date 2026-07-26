@@ -61,12 +61,18 @@ the app. Keep `index.html` a single static file.
 Working and deployed. Firebase config is live in `index.html` and
 `FIREBASE_READY` is true.
 
-`deck/notes.json` holds 8 fully-specified notes — gloss, IPA, gender or
-aspect, principal forms, example sentence with an English translation and a
-gapped variant. The app fetches it at load; `CARDS` no longer exists. Text
-was authored by Claude, **not yet checked by a human** (`reviewed: false` on
-every note). No audio and no images exist yet, so those keys are absent and
-the cards render without them.
+`deck/notes.json` holds 8 notes — gloss, part of speech, IPA, and an example
+sentence with an English translation and a gapped variant. The app fetches
+it at load; `CARDS` no longer exists. Text was authored by Claude, **not yet
+checked by a human** (`reviewed: false` on every note). No audio and no
+images exist yet, so those keys are absent and cards render without them.
+
+**No grammar metadata.** Gender, aspect, and declension tables were tried
+and deliberately removed: this trains vocabulary, not morphology, and
+sentences are free to use any inflected form (`Nie mam psa.` for `pies`).
+Don't reintroduce them. For the same reason the validator does not try to
+check sentence words against the allowlist — that needs a lemmatiser, and a
+prefix heuristic warns on every correct sentence.
 
 The remaining 52 words in `deck/vocab.csv` have no notes yet.
 
