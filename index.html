@@ -21,6 +21,17 @@ body{background:var(--paper);color:var(--ink);font-family:var(--sans);padding:1.
 .eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
 .top{display:flex;justify-content:space-between;align-items:baseline;padding-bottom:1.5rem}
 
+#bar{height:2px;background:var(--line);margin:0 0 1.25rem;display:none}
+#bar.on{display:block}
+#bar i{display:block;height:100%;background:var(--ink);width:0;transition:width .25s ease}
+.stats{background:var(--card);border:1px solid var(--line);padding:1.5rem}
+.stats h2{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin:0 0 1.1rem;font-weight:400}
+.rows{display:grid;grid-template-columns:auto 1fr;gap:.45rem 1rem;align-items:baseline}
+.rows dt{font-size:.85rem;color:var(--dim)}
+.rows dd{margin:0;font-family:var(--mono);font-size:1rem;text-align:right}
+.rows dd.big{font-size:1.6rem;font-weight:300;font-family:var(--sans)}
+.rows .muted{color:var(--dim)}
+.foot{margin-top:1.1rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.8rem;color:var(--dim);line-height:1.5}
 .msg{text-align:center;padding:3rem 1rem;color:var(--dim);font-size:1rem;line-height:1.6}
 .msg-sub{display:inline-block;margin-top:.75rem;font-size:.8rem;opacity:.75}
 .msg.err{color:var(--bad);font-family:var(--mono);font-size:.82rem;text-align:left;white-space:pre-wrap}
@@ -64,6 +75,7 @@ button{font-family:inherit;cursor:pointer;border-radius:4px}
     <span class="eyebrow">Polish vocab</span>
     <span class="eyebrow" id="count"></span>
   </div>
+  <div id="bar"><i></i></div>
   <div id="warn"></div>
   <div id="app"><p class="msg">Loading…</p></div>
 </div>
@@ -421,19 +433,99 @@ function renderWarning(){
   warnEl.innerHTML = banners.join("");
 }
 
+const barEl = $("#bar");
+let sessionDone = 0;
+
+function midnight(ms){ const d = new Date(ms); d.setHours(0,0,0,0); return d.getTime(); }
+
+/* Everything the two summary screens show, derived from state rather than
+   tracked separately, so it cannot drift from what the queue actually does. */
+function stats(){
+  const withState = allCards.filter(k => cardStates[k]);
+  const future = withState.filter(k => cardStates[k].due > t).map(k => cardStates[k].due);
+  const days = [...new Set(reviewLog.map(e => midnight(e.ts)))].sort((a, b) => b - a);
+  let streak = 0;
+  if (days.length && (days[0] === t || days[0] === t - MS_DAY)) {
+    streak = 1;
+    for (let i = 1; i < days.length; i++) {
+      if (days[i - 1] - days[i] !== MS_DAY) break;
+      streak++;
+    }
+  }
+  return {
+    due: withState.filter(k => cardStates[k].due <= t).length,
+    fresh: fresh.length,
+    locked: lockedCount,
+    started: withState.length,
+    total: allCards.length,
+    notes: Object.keys(NOTES).length,
+    todayReviews: reviewLog.filter(e => e.ts >= t).length,
+    nextDue: future.length ? Math.min(...future) : null,
+    streak,
+  };
+}
+
+function whenDue(ms){
+  if (ms == null) return "nothing scheduled yet";
+  const d = Math.round((midnight(ms) - t) / MS_DAY);
+  return d <= 0 ? "today" : d === 1 ? "tomorrow" : `in ${d} days`;
+}
+
+function row(label, value, cls){
+  return `<dt>${label}</dt><dd class="${cls || ""}">${value}</dd>`;
+}
+
+function renderStart(){
+  const s = stats();
+  barEl.className = "";
+  countEl.textContent = "";
+  appEl.innerHTML = `
+    <div class="stats">
+      <h2>Today</h2>
+      <dl class="rows">
+        ${row("To review", s.due, "big")}
+        ${row("New words", s.fresh, "big")}
+        ${s.locked ? row("Locked for now", s.locked, "muted") : ""}
+      </dl>
+      <div class="foot">
+        ${s.started} of ${s.total} cards started, across ${s.notes} words.
+        ${s.streak ? `${s.streak}-day streak.` : ""}
+        ${s.todayReviews ? `${s.todayReviews} done already today.` : ""}
+      </div>
+    </div>
+    <button class="reveal" id="start">Start</button>`;
+  $("#start").addEventListener("click", () => { renderCard(); });
+}
+
 function renderCount(){
-  countEl.textContent = queue.length ? `${queue.length} due` : "";
+  const left = queue.length;
+  const total = sessionDone + left;
+  countEl.textContent = total ? `${sessionDone} / ${total}` : "";
+  barEl.className = total ? "on" : "";
+  barEl.firstElementChild.style.width = total ? `${(sessionDone / total) * 100}%` : "0";
 }
 
 function renderDone(){
   countEl.textContent = "";
+  barEl.className = "";
   renderWarning();
-  // Say why the deck looks smaller than it is, rather than leaving him to
-  // wonder where the production cards went.
-  const locked = lockedCount
-    ? `<br><span class="msg-sub">${lockedCount} card${lockedCount === 1 ? "" : "s"} ` +
-      `still locked — they unlock as you get the words solid.</span>` : "";
-  appEl.innerHTML = `<p class="msg">Nothing due right now. Nice work.${locked}</p>`;
+  const s = stats();
+  const again = reviewLog.filter(e => e.ts >= t && e.grade === "again").length;
+  appEl.innerHTML = `
+    <div class="stats">
+      <h2>${sessionDone ? "Done for today" : "Nothing due"}</h2>
+      <dl class="rows">
+        ${row("Reviewed today", s.todayReviews, "big")}
+        ${again ? row("Needed another look", again, "muted") : ""}
+        ${row("Next cards due", whenDue(s.nextDue))}
+        ${s.locked ? row("Still locked", s.locked, "muted") : ""}
+      </dl>
+      <div class="foot">
+        ${s.started} of ${s.total} cards started, across ${s.notes} words.
+        ${s.streak ? `${s.streak}-day streak.` : ""}
+        ${s.locked ? "Locked cards unlock once you have their word solid." : ""}
+      </div>
+    </div>`;
 }
 
 /* ── rendering ──────────────────────────────────────────────────────
@@ -516,7 +608,7 @@ const pieces = {
 const LAYOUT = {
   recognition: {
     front: ["word", "audio", "ipa"],
-    back:  ["word", "ipa", "gloss", "image", "sentence", "note"],
+    back:  ["word", "audio", "ipa", "gloss", "image", "sentence", "note"],
   },
   production: {
     front: ["image", "gloss", "note", "gapped"],
@@ -577,6 +669,7 @@ function showBack(){
     </div>
   `;
   wireAudio();
+  autoPlay((n.sentence || {}).audio);
   $("#again").addEventListener("click", () => grade("again"));
   $("#good").addEventListener("click", () => grade("good"));
 }
@@ -589,6 +682,7 @@ function grade(g){
   if (isNew) next.introduced = today();
   cardStates[key] = next;
 
+  sessionDone++;
   const entry = { card: key, grade: g, ts: Date.now() };
   reviewLog.push(entry);
   queueWrite(key, next, entry);
@@ -620,7 +714,7 @@ if (migrated && docExists) {
   }
 }
 
-queue.length ? renderCard() : renderDone();
+queue.length ? renderStart() : renderDone();
 </script>
 </body>
 </html>
