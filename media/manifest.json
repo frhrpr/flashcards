@@ -169,6 +169,12 @@
   },
   "media/img/dom.webp": {
     "bytes": 77640,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
     "fingerprint": "3826604a24722e52",
     "model": "gemini-2.5-flash-image",
     "original_size": "1024x1024",
@@ -179,6 +185,12 @@
   },
   "media/img/kot.webp": {
     "bytes": 14230,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
     "fingerprint": "5f6b98bbe2e90135",
     "model": "gemini-2.5-flash-image",
     "original_size": "1024x1024",
@@ -189,6 +201,12 @@
   },
   "media/img/pies.webp": {
     "bytes": 54642,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
     "fingerprint": "7c83740c7f0ca345",
     "model": "gemini-2.5-flash-image",
     "original_size": "1024x1024",
@@ -199,6 +217,12 @@
   },
   "media/img/pilka.webp": {
     "bytes": 8608,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
     "fingerprint": "cef2be4847bbc0f5",
     "model": "gemini-2.5-flash-image",
     "original_size": "1024x1024",
@@ -209,6 +233,12 @@
   },
   "media/img/skakac.webp": {
     "bytes": 237652,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
     "fingerprint": "78fb0731c7ff9031",
     "model": "gemini-2.5-flash-image",
     "original_size": "1024x1024",
@@ -219,6 +249,12 @@
   },
   "media/img/slonce.webp": {
     "bytes": 6086,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
     "fingerprint": "2c2fb829ed2c9ad4",
     "model": "gemini-2.5-flash-image",
     "original_size": "1024x1024",
@@ -229,6 +265,12 @@
   },
   "media/img/spiewac.webp": {
     "bytes": 61892,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "The image primarily depicts a bird, making it easy to mistake for the noun 'bird' rather than the verb 'to sing'.",
+      "verdict": "flag",
+      "why": "ambiguous — something else dominates"
+    },
     "fingerprint": "2cb091ec16129151",
     "model": "gemini-2.5-flash-image",
     "original_size": "1024x1024",
@@ -239,6 +281,12 @@
   },
   "media/img/zielony.webp": {
     "bytes": 11426,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
     "fingerprint": "c7c4a72e63994c76",
     "model": "gemini-2.5-flash-image",
     "original_size": "1024x1024",

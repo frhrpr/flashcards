@@ -72,6 +72,13 @@ def build(notes, manifest, dest):
         done = n.get("reviewed", False)
         pic = (f'<img src="img/{esc(Path(n["image"]).name)}" alt="">'
                if n.get("image") else '<div class="noimg">no image</div>')
+        chk = (manifest.get(n.get("image") or "", {}) or {}).get("check") or {}
+        if chk.get("verdict") == "flag":
+            pic += (f'<div class="flag">flagged: {esc(chk.get("why",""))}'
+                    + (f'<em>{esc(chk["problem"])}</em>' if chk.get("problem") else "")
+                    + '</div>')
+        elif chk:
+            pic += '<div class="chk">auto-check ok</div>' 
         cards += f'''
 <div class="c{' ok' if done else ''}">
   <div class="pic">{pic}</div>
@@ -123,7 +130,13 @@ audio{{flex:1;height:2rem}}
 .pl{{font-size:1.05rem;margin-top:.7rem}} .en{{font-size:.85rem;color:#6C736B}}
 .gap{{margin-top:.6rem;padding-top:.5rem;border-top:1px solid #E8EBE4;
 font-family:ui-monospace,monospace;font-size:.7rem;color:#6C736B}}
-.bad{{color:#A32C22}}</style>
+.bad{{color:#A32C22}}
+.flag{{margin-top:.4rem;padding:.35rem .5rem;border-left:2px solid #A32C22;
+background:#F6EDEC;font-family:ui-monospace,monospace;font-size:.62rem;
+line-height:1.45;color:#A32C22}}
+.flag em{{display:block;font-style:normal;color:#6C736B;margin-top:.2rem}}
+.chk{{margin-top:.4rem;font-family:ui-monospace,monospace;font-size:.6rem;
+color:#6C736B}}</style>
 <h1>Deck review — {len(notes)} notes, {len(pending)} awaiting approval</h1>
 <div class=sum>Everything for each note in one place — image, both recordings, sentence, gap.\nTell Claude which are wrong;
 anything you do not flag gets approved. Approved notes are dimmed and sink to the bottom.</div>

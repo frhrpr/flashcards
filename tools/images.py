@@ -34,6 +34,9 @@ GEMINI = ("https://generativelanguage.googleapis.com/v1beta/models/"
 # Flash tier: a flashcard image needs to be legible at 800px on a phone, not
 # gallery-grade. ~1290 output tokens per image, so roughly 4 euro cents.
 GEN_MODEL = "gemini-2.5-flash-image"
+# Vision model for the sanity check. Cheap enough (~1300 tokens per image,
+# a small fraction of a cent) that every new image gets checked automatically.
+CHECK_MODEL = "gemini-flash-latest"
 WIKI_SUMMARY = "https://{lang}.wikipedia.org/api/rest_v1/page/summary/{title}"
 UA = "flashcards-vocab/0.1 (https://github.com/frhrpr/flashcards; personal study tool)"
 
@@ -148,6 +151,113 @@ def generate(key, prompt):
     return base64.b64decode(imgs[0]["inlineData"]["data"])
 
 
+CHECK_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "shows_word": {"type": "boolean"},
+        "unambiguous": {"type": "boolean"},
+        "has_text": {"type": "boolean"},
+        "problem": {"type": "string"},
+    },
+    "required": ["shows_word", "unambiguous", "has_text", "problem"],
+}
+
+
+def check_image(key, path, n):
+    """Ask a vision model what is wrong with this image for this word.
+
+    Specific yes/no questions beat "is this right?" — a model asked an open
+    question tends to agree with whatever it is shown.
+    """
+    s = n.get("sentence") or {}
+    # Only a picture that was built FROM the sentence should be judged against
+    # it. For the rest the picture illustrates the word alone, and complaining
+    # that the cat is not drinking milk is noise that buries real problems.
+    from_sentence = n.get("image_basis") == "sentence"
+    context = (f"The card's example sentence is: {s.get('pl','')} ({s.get('en','')}). "
+               f"This picture was made to illustrate that sentence.\n\n"
+               if from_sentence else
+               f"The picture illustrates the word on its own. The card's example "
+               f"sentence appears separately as text and audio, so do NOT judge "
+               f"the picture against it.\n\n")
+    prompt = (
+        f"This picture is the illustration on a vocabulary flashcard teaching an "
+        f"adult beginner the Polish word \"{n['word']}\", meaning \"{n.get('gloss','')}\".\n"
+        + context +
+        f"Answer strictly about what is visible:\n"
+        f"- shows_word: does the picture clearly depict \"{n.get('gloss','')}\"?\n"
+        f"- unambiguous: would a learner who did not already know the word guess "
+        f"\"{n.get('gloss','')}\" rather than some other object, action or idea in the "
+        f"frame? Answer false if something else dominates or competes.\n"
+        f"- has_text: is there any written text, lettering or watermark anywhere?\n"
+        f"- problem: if anything is wrong, say so in one short sentence"
+        + (", including any way the picture contradicts the sentence"
+           if from_sentence else "") + ". Otherwise empty string.")
+    body = {"contents": [{"parts": [
+                {"inline_data": {"mime_type": "image/webp",
+                                 "data": base64.b64encode(path.read_bytes()).decode()}},
+                {"text": prompt}]}],
+            "generationConfig": {"responseMimeType": "application/json",
+                                 "responseSchema": CHECK_SCHEMA}}
+    req = urllib.request.Request(GEMINI.format(model=CHECK_MODEL, key=key),
+                                 data=json.dumps(body).encode(),
+                                 headers={"Content-Type": "application/json"})
+    try:
+        with urllib.request.urlopen(req, timeout=120) as r:
+            d = json.load(r)
+        raw = d["candidates"][0]["content"]["parts"][0]["text"]
+        v = json.loads(raw)
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f"HTTP {e.code}: {e.read().decode('utf-8','replace')[:160]}") from None
+    except Exception as e:
+        raise RuntimeError(f"unreadable check response: {str(e)[:120]}") from None
+    failures = []
+    if not v.get("shows_word"):
+        failures.append("does not clearly show the word")
+    if not v.get("unambiguous"):
+        failures.append("ambiguous — something else dominates")
+    if v.get("has_text"):
+        failures.append("contains text or lettering")
+    return {"verdict": "flag" if failures else "ok",
+            "why": "; ".join(failures) or "",
+            "problem": (v.get("problem") or "").strip(),
+            "model": CHECK_MODEL}
+
+
+def cmd_check(deck, notes, manifest, only, force):
+    targets = [n for n in notes if n.get("image") and (ROOT / n["image"]).exists()
+               and (not only or n["id"] in only)
+               and (force or "check" not in manifest.get(n["image"], {}))]
+    if not targets:
+        print("nothing to check — every image has been checked "
+              "(use --force to check again)")
+        return 0
+    key = load_key("GEMINI_API_KEY")
+    flagged = []
+    for i, n in enumerate(targets, 1):
+        rel = n["image"]
+        print(f"  [{i}/{len(targets)}] {n['id']:<10} ", end="", flush=True)
+        try:
+            res = check_image(key, ROOT / rel, n)
+        except RuntimeError as e:
+            print(f"CHECK FAILED — {e}")
+            continue
+        manifest.setdefault(rel, {})["check"] = res
+        if res["verdict"] == "flag":
+            flagged.append((n["id"], res))
+            print(f"FLAG — {res['why']}")
+            if res["problem"]:
+                print(f"{'':<21}{res['problem']}")
+        else:
+            print("ok" + (f" — note: {res['problem']}" if res["problem"] else ""))
+        time.sleep(0.3)
+    save(deck, notes, manifest)
+    if flagged:
+        print(f"\n{len(flagged)} image(s) flagged. These are advisory, not errors — "
+              f"look at them on the review page before approving.")
+    return 0
+
+
 def cmd_generate(deck, notes, manifest, dest, only, go):
     targets = [n for n in notes if "image" not in n and n.get("image_prompt")
                and (not only or n["id"] in only)]
@@ -191,6 +301,9 @@ def cmd_generate(deck, notes, manifest, dest, only, go):
     if not plan:
         return 1
     rc = adopt(deck, notes, manifest, plan, True)
+    if rc == 0:
+        print("\n  checking what came back:")
+        cmd_check(deck, notes, manifest, {n["id"] for _, n, _ in plan}, force=True)
     return rc or (1 if failed else 0)
 
 
@@ -439,6 +552,9 @@ def main():
     ap.add_argument("--fetch", action="store_true", help="download candidates")
     ap.add_argument("--pick", default="", help="comma-separated note_id=number")
     ap.add_argument("--assign", default="", help="comma-separated file=note_id")
+    ap.add_argument("--check", action="store_true",
+                    help="ask a vision model what is wrong with each image")
+    ap.add_argument("--force", action="store_true", help="re-check already-checked images")
     ap.add_argument("--sheet", action="store_true")
     ap.add_argument("--only", default="")
     ap.add_argument("--count", type=int, default=CANDIDATES)
@@ -461,6 +577,8 @@ def main():
     if args.assign:
         return cmd_assign(deck, notes, manifest, inbox,
                           [p for p in (s.strip() for s in args.assign.split(",")) if p], args.go)
+    if args.check:
+        return cmd_check(deck, notes, manifest, only, args.force)
     if args.sheet:
         return cmd_sheet(notes, manifest, dest)
     return cmd_status(notes, inbox, dest)

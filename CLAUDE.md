@@ -130,10 +130,25 @@ Decided so far:
   sentences come out full of words he doesn't know.
 - **IPA** — carried in the data whether or not it's displayed. Polish
   orthography is near-phonemic, so this is low value next to audio.
-- **Images** — only for concrete words; roughly half the deck has nothing
-  depictable. LLM sets a `concrete`/`scene`/`none` flag. No image-gen API
-  key yet, so the plan is to generate *prompts* and produce them by hand
-  (~10/week is tractable).
+- **Images** — generated with `gemini-2.5-flash-image`, ~4 euro cents each,
+  billing enabled on the Gemini key (the free tier reports `limit: 0` for
+  every image model — it has never been free). Flash not pro: these render
+  at 800px on a phone.
+
+**Keep image prompts as simple as the word allows.** Every clause is a
+chance to be wrong. The first `skakać` prompt asked for a cat jumping *onto*
+a bench and got one jumping away — spatial relations are what these models
+fumble. Describe a position ("above the bench, about to land") rather than a
+direction, and drop any detail the word does not need. `image_basis` records
+whether a picture illustrates the word alone or the sentence's scene;
+concrete words take `word`, and the sentence is then irrelevant to the image
+because the card already carries it as text and audio.
+
+`tools/images.py --check` asks a vision model specific yes/no questions —
+does it show the word, is it unambiguous, is there text — and flags rather
+than blocks. It caught the `skakać` direction fault on its own. Judging a
+`word`-basis image against the sentence produces nothing but noise, which is
+why the prompt is conditional on `image_basis`.
 
 Deferred on purpose: 4 grades instead of 2, a stats screen, staged unlock
 of production cards behind mature recognition cards.
