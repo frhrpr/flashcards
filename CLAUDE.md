@@ -139,10 +139,13 @@ notes`. `status` is `queued` → `known` → `carded`.
 Working and deployed. Firebase config is live in `index.html` and
 `FIREBASE_READY` is true.
 
-`deck/notes.json` holds 8 complete, human-approved notes: image, word audio
-(human, from Wikimedia Commons), sentence audio (ElevenLabs), sentence with
-translation and gap, gloss, part of speech, IPA. Three cards each, 24 in
-total, of which 16 start locked behind the maturity gate.
+`deck/notes.json` holds **51 complete, human-approved notes** — every word in
+`vocab.csv` marked `flashcard: yes`. Each has an image, word audio (human,
+from Wikimedia Commons, except `siadać` which is TTS), sentence audio, an
+example sentence with translation and gap, gloss, part of speech and IPA.
+Three cards each, 153 in total. Day one offers 10 recognition cards; the rest
+arrive at 3 new words a day with production and listening unlocking behind
+the maturity gate.
 
 **No grammar metadata.** Gender, aspect, and declension tables were tried
 and deliberately removed: this trains vocabulary, not morphology, and
@@ -150,8 +153,6 @@ sentences are free to use any inflected form (`Nie mam psa.` for `pies`).
 Don't reintroduce them. For the same reason the validator does not try to
 check sentence words against the allowlist — that needs a lemmatiser, and a
 prefix heuristic warns on every correct sentence.
-
-The remaining 52 words in `deck/vocab.csv` have no notes yet.
 
 The Firestore rule **is** published — confirmed by reading and deleting
 documents over the REST API with only the web key, which is exactly what the
