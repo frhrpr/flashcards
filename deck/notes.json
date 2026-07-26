@@ -8,12 +8,14 @@
       "pos": "noun",
       "ipa": "dɔm",
       "note": null,
+      "audio": "media/audio/dom.mp3",
       "sentence": {
         "pl": "Rano wracam do domu.",
         "en": "In the morning I go back home.",
         "gap": "Rano wracam do ___.",
         "answer": "domu",
-        "answer_lemma": "dom"
+        "answer_lemma": "dom",
+        "audio": "media/audio/dom__sentence.mp3"
       },
       "cards": [
         "recognition"
@@ -27,12 +29,14 @@
       "pos": "noun",
       "ipa": "pjɛs",
       "note": null,
+      "audio": "media/audio/pies.mp3",
       "sentence": {
         "pl": "Pod drzewem siedzi pies.",
         "en": "A dog is sitting under the tree.",
         "gap": "Pod drzewem siedzi ___.",
         "answer": "pies",
-        "answer_lemma": "pies"
+        "answer_lemma": "pies",
+        "audio": "media/audio/pies__sentence.mp3"
       },
       "cards": [
         "recognition"
@@ -46,12 +50,14 @@
       "pos": "noun",
       "ipa": "kɔt",
       "note": null,
+      "audio": "media/audio/kot.mp3",
       "sentence": {
         "pl": "Mały kot pije mleko.",
         "en": "The little cat is drinking milk.",
         "gap": "Mały ___ pije mleko.",
         "answer": "kot",
-        "answer_lemma": "kot"
+        "answer_lemma": "kot",
+        "audio": "media/audio/kot__sentence.mp3"
       },
       "cards": [
         "recognition"
@@ -65,12 +71,14 @@
       "pos": "noun",
       "ipa": "ˈswɔɲt͡sɛ",
       "note": null,
+      "audio": "media/audio/slonce.mp3",
       "sentence": {
         "pl": "Rano słońce jest żółte.",
         "en": "In the morning the sun is yellow.",
         "gap": "Rano ___ jest żółte.",
         "answer": "słońce",
-        "answer_lemma": "słońce"
+        "answer_lemma": "słońce",
+        "audio": "media/audio/slonce__sentence.mp3"
       },
       "cards": [
         "recognition"
@@ -84,12 +92,14 @@
       "pos": "noun",
       "ipa": "ˈpiwka",
       "note": null,
+      "audio": "media/audio/pilka.mp3",
       "sentence": {
         "pl": "Pod ławką jest piłka.",
         "en": "There is a ball under the bench.",
         "gap": "Pod ławką jest ___.",
         "answer": "piłka",
-        "answer_lemma": "piłka"
+        "answer_lemma": "piłka",
+        "audio": "media/audio/pilka__sentence.mp3"
       },
       "cards": [
         "recognition"
@@ -103,12 +113,14 @@
       "pos": "verb",
       "ipa": "ˈskakat͡ɕ",
       "note": null,
+      "audio": "media/audio/skakac.mp3",
       "sentence": {
         "pl": "Kot skacze na ławkę.",
         "en": "The cat jumps onto the bench.",
         "gap": "Kot ___ na ławkę.",
         "answer": "skacze",
-        "answer_lemma": "skakać"
+        "answer_lemma": "skakać",
+        "audio": "media/audio/skakac__sentence.mp3"
       },
       "cards": [
         "recognition"
@@ -122,12 +134,14 @@
       "pos": "verb",
       "ipa": "ˈɕpjɛvat͡ɕ",
       "note": null,
+      "audio": "media/audio/spiewac.mp3",
       "sentence": {
         "pl": "Ptak śpiewa w parku.",
         "en": "A bird is singing in the park.",
         "gap": "Ptak ___ w parku.",
         "answer": "śpiewa",
-        "answer_lemma": "śpiewać"
+        "answer_lemma": "śpiewać",
+        "audio": "media/audio/spiewac__sentence.mp3"
       },
       "cards": [
         "recognition"
@@ -141,12 +155,14 @@
       "pos": "adjective",
       "ipa": "ʑɛˈlɔnɨ",
       "note": null,
+      "audio": "media/audio/zielony.mp3",
       "sentence": {
         "pl": "To drzewo jest zielone.",
         "en": "This tree is green.",
         "gap": "To drzewo jest ___.",
         "answer": "zielone",
-        "answer_lemma": "zielony"
+        "answer_lemma": "zielony",
+        "audio": "media/audio/zielony__sentence.mp3"
       },
       "cards": [
         "recognition"

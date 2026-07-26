@@ -1,0 +1,130 @@
+{
+  "media/audio/dom.mp3": {
+    "bytes": 15090,
+    "fingerprint": "df4f4508af516aef",
+    "model": "eleven_multilingual_v2",
+    "text": "dom",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/dom__sentence.mp3": {
+    "bytes": 26375,
+    "fingerprint": "b2ba920f75d46868",
+    "model": "eleven_multilingual_v2",
+    "text": "Rano wracam do domu.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/kot.mp3": {
+    "bytes": 10911,
+    "fingerprint": "77d03663357ad6f8",
+    "model": "eleven_multilingual_v2",
+    "text": "kot",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/kot__sentence.mp3": {
+    "bytes": 26375,
+    "fingerprint": "e134ea2996c6d115",
+    "model": "eleven_multilingual_v2",
+    "text": "Mały kot pije mleko.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/pies.mp3": {
+    "bytes": 13000,
+    "fingerprint": "34abb34269139677",
+    "model": "eleven_multilingual_v2",
+    "text": "pies",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/pies__sentence.mp3": {
+    "bytes": 31391,
+    "fingerprint": "9439de0f3ebc85fe",
+    "model": "eleven_multilingual_v2",
+    "text": "Pod drzewem siedzi pies.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/pilka.mp3": {
+    "bytes": 16762,
+    "fingerprint": "92a747bbc8259753",
+    "model": "eleven_multilingual_v2",
+    "text": "piłka",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/pilka__sentence.mp3": {
+    "bytes": 27211,
+    "fingerprint": "831a8da6367c3638",
+    "model": "eleven_multilingual_v2",
+    "text": "Pod ławką jest piłka.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/skakac.mp3": {
+    "bytes": 15926,
+    "fingerprint": "a912c34c2afb326f",
+    "model": "eleven_multilingual_v2",
+    "text": "skakać",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/skakac__sentence.mp3": {
+    "bytes": 26375,
+    "fingerprint": "f1deb1fc3cf39da3",
+    "model": "eleven_multilingual_v2",
+    "text": "Kot skacze na ławkę.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/slonce.mp3": {
+    "bytes": 18852,
+    "fingerprint": "4aa8ae89a5ba1378",
+    "model": "eleven_multilingual_v2",
+    "text": "słońce",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/slonce__sentence.mp3": {
+    "bytes": 27211,
+    "fingerprint": "7de2bd2f9cd9b6ac",
+    "model": "eleven_multilingual_v2",
+    "text": "Rano słońce jest żółte.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/spiewac.mp3": {
+    "bytes": 18852,
+    "fingerprint": "17a7fd51cc20ce08",
+    "model": "eleven_multilingual_v2",
+    "text": "śpiewać",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/spiewac__sentence.mp3": {
+    "bytes": 24285,
+    "fingerprint": "ccdc7a70583bd16b",
+    "model": "eleven_multilingual_v2",
+    "text": "Ptak śpiewa w parku.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/zielony.mp3": {
+    "bytes": 18016,
+    "fingerprint": "fb10fd041c747853",
+    "model": "eleven_multilingual_v2",
+    "text": "zielony",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/zielony__sentence.mp3": {
+    "bytes": 28465,
+    "fingerprint": "abe7103f21e812b8",
+    "model": "eleven_multilingual_v2",
+    "text": "To drzewo jest zielone.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  }
+}
