@@ -369,6 +369,9 @@ const UNLOCK_IVL = 6;
 const GATED = new Set(["production", "listening"]);
 
 function unlocked(key){
+  // A scratch session is for looking at the app, not for learning — waiting
+  // a week to see a production card would defeat the point.
+  if (TEST_MODE) return true;
   const type = typeOf(key);
   if (!GATED.has(type)) return true;
   const note = NOTES[noteOf(key)];
