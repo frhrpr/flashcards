@@ -91,6 +91,11 @@ notes`. `status` is `queued` → `known` → `carded`.
   cards from today's queue, and the daily new-card budget takes at most one
   card per note. Without this he passes the second and third on ten-second
   recall rather than on knowing the word, and the scheduler believes it.
+- **Staged unlock.** `production`, `listening` and `cloze` are not introduced
+  until that note's `recognition` card has `ivl >= 6` — two correct answers,
+  about a week in. The gate governs *introducing* only: a card that already
+  has state stays in rotation, so a later lapse on recognition cannot yank
+  away production work under way.
 - **`note_id` must match `[a-z0-9_]+`** — it is used as a Firestore field
   path, where diacritics would need backtick quoting. `słońce` → `slonce`,
   `śmiać się` → `smiac_sie`.
@@ -160,8 +165,7 @@ than blocks. It caught the `skakać` direction fault on its own. Judging a
 `word`-basis image against the sentence produces nothing but noise, which is
 why the prompt is conditional on `image_basis`.
 
-Deferred on purpose: 4 grades instead of 2, a stats screen, staged unlock
-of production cards behind mature recognition cards.
+Deferred on purpose: 4 grades instead of 2, and a stats screen.
 
 ## Working notes
 

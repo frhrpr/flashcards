@@ -22,6 +22,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--sans);padding:1.
 .top{display:flex;justify-content:space-between;align-items:baseline;padding-bottom:1.5rem}
 
 .msg{text-align:center;padding:3rem 1rem;color:var(--dim);font-size:1rem;line-height:1.6}
+.msg-sub{display:inline-block;margin-top:.75rem;font-size:.8rem;opacity:.75}
 .msg.err{color:var(--bad);font-family:var(--mono);font-size:.82rem;text-align:left;white-space:pre-wrap}
 .warn{margin:0 0 1rem;padding:.6rem .75rem;border:1px solid var(--line);border-left:2px solid var(--bad);font-family:var(--mono);font-size:.7rem;line-height:1.5;color:var(--dim)}
 .warn.err{color:var(--bad);background:#F6EDEC}
@@ -284,6 +285,28 @@ const allCards = Object.values(NOTES).flatMap(
 const introducedToday = Object.values(cardStates)
   .filter(s => s.introduced === t).length;
 
+/* Staged unlock. Producing a word is much harder than recognising it, so the
+   harder types stay locked until the recognition card has been answered
+   correctly twice — an interval of 6 days under the schedule above, roughly
+   a week after the word is introduced. Meeting a brand-new word in three
+   directions at once mostly generates failures.
+
+   The gate only governs *introducing* a card. Once a card has state it stays
+   in rotation, so a later lapse on recognition does not yank away production
+   work already under way. */
+const UNLOCK_IVL = 6;
+const GATED = new Set(["production", "listening", "cloze"]);
+
+function unlocked(key){
+  const type = typeOf(key);
+  if (!GATED.has(type)) return true;
+  const note = NOTES[noteOf(key)];
+  // A note that produces no recognition card has nothing to gate against.
+  if (!typesFor(note).includes("recognition")) return true;
+  const base = cardStates[cardKey(noteOf(key), "recognition")];
+  return !!base && base.ivl >= UNLOCK_IVL;
+}
+
 /* At most one *new* card per note per day. A note's cards are siblings —
    answering one gives away the others — so introducing three at once would
    waste two of them. Burying (see grade) enforces the same rule for reviews;
@@ -291,9 +314,11 @@ const introducedToday = Object.values(cardStates)
 const freshBudget = Math.max(0, NEW_PER_DAY - introducedToday);
 const freshSeen = new Set();
 const fresh = [];
+let lockedCount = 0;
 for (const k of allCards) {
-  if (fresh.length >= freshBudget) break;
-  if (cardStates[k] || freshSeen.has(noteOf(k))) continue;
+  if (cardStates[k]) continue;
+  if (!unlocked(k)) { lockedCount++; continue; }
+  if (fresh.length >= freshBudget || freshSeen.has(noteOf(k))) continue;
   freshSeen.add(noteOf(k));
   fresh.push(k);
 }
@@ -378,7 +403,12 @@ function renderCount(){
 function renderDone(){
   countEl.textContent = "";
   renderWarning();
-  appEl.innerHTML = `<p class="msg">Nothing due right now. Nice work.</p>`;
+  // Say why the deck looks smaller than it is, rather than leaving him to
+  // wonder where the production cards went.
+  const locked = lockedCount
+    ? `<br><span class="msg-sub">${lockedCount} card${lockedCount === 1 ? "" : "s"} ` +
+      `still locked — they unlock as you get the words solid.</span>` : "";
+  appEl.innerHTML = `<p class="msg">Nothing due right now. Nice work.${locked}</p>`;
 }
 
 /* ── rendering ──────────────────────────────────────────────────────
