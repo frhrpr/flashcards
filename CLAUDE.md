@@ -121,8 +121,14 @@ notes`. `status` is `queued` → `known` → `carded`.
   you are finished, well done, come back on this day. Locked cards are last,
   small and grey, with a line saying there is nothing to do about them — a
   count he cannot act on reads as a backlog and discourages.
-- **`NEW_PER_DAY` caps new cards.** Counted from an `introduced` stamp on
-  card state, not session state, so it survives reloads and a second device.
+- **Intake is capped in words, not cards** — 3 a day, matched to what he
+  meets in lessons. A word's other card types are not new vocabulary, and on
+  a shared budget an unlocking backlog would starve new words entirely, so
+  siblings get their own smaller allowance (5). The first ever session gets
+  10, because there is nothing to review yet and finishing after two cards
+  reads as broken; that is a day-one problem, not a reason to top up every
+  quiet day. All counted from `introduced` stamps on card state, so the
+  numbers survive a reload and a second device.
 - **Grammar words don't get cards.** `deck/vocab.csv` marks prepositions,
   conjunctions and similar `flashcard: no`. They still count as known and
   stay in the sentence allowlist — `na` is learned through the case it
@@ -206,6 +212,13 @@ Deferred on purpose: 4 grades instead of 2, and a stats screen.
   visible list rather than a log, dry-run anything that spends money.
 - **The user spot-checks the Polish.** Generated sentences go to a real
   student, so build a review step rather than trusting generation.
+- **Use the implicit subject.** The allowlist contains no words for people,
+  so sentences kept reaching for animals and came out absurd — a bird that
+  walks, a dog fed milk. Polish drops pronouns, so a conjugated verb supplies
+  a human subject at zero vocabulary cost: `Rano jem chleb.` is natural where
+  `Pies je chleb.` is not. Prefer 1st and 2nd person for verbs, and reach for
+  `deck/frequency.csv` when a sentence needs a noun the deck lacks — a
+  natural sentence with one unmet common word beats a strange one.
 - **Audio is generated once and committed**, never fetched per review — a
   card is seen ~20 times, so on-demand would re-synthesise the same string
   every time and put a round-trip in front of every flip. `tools/tts.py`

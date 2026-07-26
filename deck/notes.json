@@ -227,9 +227,9 @@
       "image_basis": "sentence",
       "image_prompt": "A hand writing on a blank paper name badge, close up, plain background, no readable text. Square image.",
       "sentence": {
-        "pl": "To imię jest dziwne.",
-        "en": "That name is strange.",
-        "gap": "To ___ jest dziwne.",
+        "pl": "Mam na imię Marek.",
+        "en": "My name is Marek.",
+        "gap": "Mam na ___ Marek.",
         "answer": "imię",
         "answer_lemma": "imię"
       },
@@ -618,10 +618,10 @@
       "image_basis": "sentence",
       "image_prompt": "A dog eating a piece of bread from the ground, mouth on the bread, plain background, no text. Square image.",
       "sentence": {
-        "pl": "Pies je chleb.",
-        "en": "The dog is eating bread.",
-        "gap": "Pies ___ chleb.",
-        "answer": "je",
+        "pl": "Rano jem chleb.",
+        "en": "In the morning I eat bread.",
+        "gap": "Rano ___ chleb.",
+        "answer": "jem",
         "answer_lemma": "jeść"
       },
       "cards": [
@@ -664,10 +664,10 @@
       "image_basis": "sentence",
       "image_prompt": "A person walking along a park path, whole body in frame, side on, daylight, no text. Square image.",
       "sentence": {
-        "pl": "Ptak chodzi w parku.",
-        "en": "The bird walks in the park.",
-        "gap": "Ptak ___ w parku.",
-        "answer": "chodzi",
+        "pl": "Rano chodzę do sklepu.",
+        "en": "In the morning I walk to the shop.",
+        "gap": "Rano ___ do sklepu.",
+        "answer": "chodzę",
         "answer_lemma": "chodzić"
       },
       "cards": [
@@ -687,10 +687,10 @@
       "image_basis": "sentence",
       "image_prompt": "A cat walking along a garden path towards a house, side on, the house ahead of it, daylight, no text. Square image.",
       "sentence": {
-        "pl": "Kot idzie do domu.",
-        "en": "The cat is going home.",
-        "gap": "Kot ___ do domu.",
-        "answer": "idzie",
+        "pl": "Teraz idę do domu.",
+        "en": "I am going home now.",
+        "gap": "Teraz ___ do domu.",
+        "answer": "idę",
         "answer_lemma": "iść"
       },
       "cards": [
@@ -871,9 +871,9 @@
       "image_basis": "sentence",
       "image_prompt": "One hand holding out a bowl towards a dog, the dog reaching for it, plain background, no text. Square image.",
       "sentence": {
-        "pl": "Rano daję psu mleko.",
-        "en": "In the morning I give the dog milk.",
-        "gap": "Rano ___ psu mleko.",
+        "pl": "Rano daję psu wodę.",
+        "en": "In the morning I give the dog water.",
+        "gap": "Rano ___ psu wodę.",
         "answer": "daję",
         "answer_lemma": "dawać"
       },

@@ -221,9 +221,20 @@ function typesFor(note){
   return (note.cards || ["recognition"]).filter(t => !NEEDS[t] || NEEDS[t](note));
 }
 
-/* Cap on cards introduced per day. Irrelevant at 8 cards, load-bearing once
-   the real deck lands — without it every unseen card is due on day one. */
-const NEW_PER_DAY = 10;
+/* Daily intake, counted in *words* rather than cards. A word's second and
+   third card types are not new vocabulary, and if they competed for the same
+   budget an unlocking backlog could starve new words entirely.
+
+   Three a day is matched to what he actually meets in lessons. The first
+   session gets a larger allowance because there is nothing to review yet and
+   finishing after two cards feels like the app is broken — and that is a
+   day-one problem, not a reason to top up every quiet day afterwards.
+
+   Sibling cards get their own smaller budget so that a batch of words all
+   maturing at once does not arrive as a cliff. */
+const NEW_WORDS_PER_DAY = 3;
+const FIRST_SESSION_WORDS = 10;
+const NEW_SIBLINGS_PER_DAY = 5;
 
 /* Firestore caps a document at 1 MiB. We warn well before that; see
    logBytes() for why the estimate errs high. */
@@ -300,11 +311,22 @@ const allCards = Object.values(NOTES).flatMap(
   n => typesFor(n).map(type => cardKey(n.id, type))
 );
 
-/* Due first, oldest due date first; then as many never-seen cards as
-   today's budget still allows. `introduced` is stamped on the first grade,
-   so the count survives a reload and a second device. */
-const introducedToday = Object.values(cardStates)
-  .filter(s => s.introduced === t).length;
+/* `introduced` is stamped on a card's first grade, so these counts survive a
+   reload and a second device. A word counts as introduced on the day its
+   *first* card was, not each time another of its types starts. */
+const firstSeen = {};
+for (const [k, st] of Object.entries(cardStates)) {
+  if (st.introduced == null) continue;
+  const n = noteOf(k);
+  firstSeen[n] = Math.min(firstSeen[n] ?? Infinity, st.introduced);
+}
+const wordsToday = Object.values(firstSeen).filter(d => d === t).length;
+const siblingsToday = Object.entries(cardStates)
+  .filter(([k, st]) => st.introduced === t && firstSeen[noteOf(k)] < t).length;
+const everStudied = reviewLog.length > 0;
+const wordBudget = Math.max(0,
+  (everStudied ? NEW_WORDS_PER_DAY : FIRST_SESSION_WORDS) - wordsToday);
+const siblingBudget = Math.max(0, NEW_SIBLINGS_PER_DAY - siblingsToday);
 
 /* Order. Sorting by due date alone left the sequence identical every
    session and introduced new words in file order, so the last notes in the
@@ -360,14 +382,17 @@ function unlocked(key){
    answering one gives away the others — so introducing three at once would
    waste two of them. Burying (see grade) enforces the same rule for reviews;
    this stops the daily budget being spent on cards that would be buried. */
-const freshBudget = Math.max(0, NEW_PER_DAY - introducedToday);
+const started = new Set(Object.keys(cardStates).map(noteOf));
 const freshSeen = new Set();
 const fresh = [];
-let lockedCount = 0;
+let lockedCount = 0, words = 0, siblings = 0;
 for (const k of shuffle([...allCards])) {
   if (cardStates[k]) continue;
   if (!unlocked(k)) { lockedCount++; continue; }
-  if (fresh.length >= freshBudget || freshSeen.has(noteOf(k))) continue;
+  if (freshSeen.has(noteOf(k))) continue;          // one card per note per day
+  const isNewWord = !started.has(noteOf(k));
+  if (isNewWord ? words >= wordBudget : siblings >= siblingBudget) continue;
+  isNewWord ? words++ : siblings++;
   freshSeen.add(noteOf(k));
   fresh.push(k);
 }
