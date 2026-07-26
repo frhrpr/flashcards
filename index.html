@@ -686,10 +686,14 @@ const special = {
   audioOnly: n => playBtn(n.audio, "play the recording", "play-big"),
 };
 
-/* A front that is only a play button gives no clue what is being asked, so
-   the listening card says it. The others show the word or the picture, which
-   is task enough. */
-const TASK = { listening: "What does this word mean?" };
+/* Every front says what it is asking. Production especially: an image and an
+   English word look exactly like a comprehension card until you notice you
+   are meant to produce the Polish. */
+const TASK = {
+  recognition: "What does this mean?",
+  production:  "How do you say this in Polish?",
+  listening:   "What does this word mean?",
+};
 
 function side(n, type, which){
   const names = (LAYOUT[type] || LAYOUT.recognition)[which];
