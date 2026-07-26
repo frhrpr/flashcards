@@ -15,3 +15,6 @@
 # Local Claude Code state. Remove this line if you ever add project skills
 # or hooks that should be shared.
 .claude/
+
+# API keys — read by tools/, never committed
+.env
