@@ -24,6 +24,13 @@ body{background:var(--paper);color:var(--ink);font-family:var(--sans);padding:1.
 .msg{text-align:center;padding:3rem 1rem;color:var(--dim);font-size:1rem;line-height:1.6}
 .msg.err{color:var(--bad);font-family:var(--mono);font-size:.82rem;text-align:left;white-space:pre-wrap}
 .warn{margin:0 0 1rem;padding:.6rem .75rem;border:1px solid var(--line);border-left:2px solid var(--bad);font-family:var(--mono);font-size:.7rem;line-height:1.5;color:var(--dim)}
+.warn.err{color:var(--bad);background:#F6EDEC}
+.gate{background:var(--card);border:1px solid var(--line);padding:1.75rem 1.5rem}
+.gate-h{font-family:var(--mono);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--bad);margin:0 0 .75rem}
+.gate p{margin:0 0 1rem;font-size:.95rem;line-height:1.6;color:var(--dim)}
+.gate .reveal{margin-top:.5rem}
+.reveal.alt{background:none;color:var(--dim);border:1px solid var(--line)}
+.reveal.alt:hover{background:none;border-color:var(--dim);color:var(--ink)}
 
 .card{background:var(--card);border:1px solid var(--line);padding:3rem 1.5rem;text-align:center;min-height:11rem;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.75rem}
 .front{font-size:2.1rem;font-weight:300}
@@ -128,18 +135,65 @@ const db = getFirestore(app);
 /* ── identity: the link is the login ──────────────────────────────
    No signup, no password. The URL carries a long random ID; whoever
    has the link has the data. Fine for a private study tool, not a
-   real access-control system — see the README note on this. */
+   real access-control system — see the README note on this.
+
+   Opening the wrong link silently starts an empty deck, which is the one
+   genuinely confusing failure this design allows. So both odd cases —
+   no id at all, and a URL id that disagrees with the one last used on this
+   device — stop and say so before any reviewing happens. */
 function getUserId(){
   const params = new URLSearchParams(location.search);
-  let id = params.get("u") || localStorage.getItem("vocab-uid");
-  if (!id) {
-    id = crypto.randomUUID();
+  const fromUrl = params.get("u");
+  const stored  = localStorage.getItem("vocab-uid");
+
+  if (!fromUrl && !stored) {
+    const id = crypto.randomUUID();
     history.replaceState(null, "", "?u=" + id);
+    return { id, stored, alert: "new" };
   }
+  if (fromUrl && stored && fromUrl !== stored) {
+    // Deliberately does NOT overwrite the stored id: if this is a misclick
+    // on an old link, the usual session stays recoverable.
+    return { id: fromUrl, stored, alert: "switched" };
+  }
+  const id = fromUrl || stored;
+  // Put a localStorage-recovered id back in the URL so the link stays copyable.
+  if (!fromUrl) history.replaceState(null, "", "?u=" + id);
   localStorage.setItem("vocab-uid", id);
-  return id;
+  return { id, stored, alert: null };
 }
-const uid = getUserId();
+
+function confirmIdentity(alert, id, stored){
+  return new Promise(resolve => {
+    countEl.textContent = "";
+    appEl.innerHTML = alert === "new" ? `
+      <div class="gate">
+        <p class="gate-h">New, empty deck</p>
+        <p>This link has no saved progress on it. If you have used this
+        trainer before, close this and open your usual bookmarked link —
+        carrying on here will start you from zero.</p>
+        <button class="reveal" id="go">Start a new deck anyway</button>
+      </div>` : `
+      <div class="gate">
+        <p class="gate-h">Different deck</p>
+        <p>This link is not the one you last used on this device. Your
+        progress is not lost — it is on the other link.</p>
+        <button class="reveal" id="back">Go to my usual deck</button>
+        <button class="reveal alt" id="go">Use this link instead</button>
+      </div>`;
+    $("#go").addEventListener("click", () => {
+      localStorage.setItem("vocab-uid", id);
+      resolve();
+    });
+    const back = $("#back");
+    if (back) back.addEventListener("click", () => {
+      location.search = "?u=" + stored;
+    });
+  });
+}
+
+const { id: uid, stored: storedUid, alert: idAlert } = getUserId();
+if (idAlert) await confirmIdentity(idAlert, uid, storedUid);
 const docRef = doc(db, "progress", uid);
 
 /* ── SM-2-lite scheduling ──────────────────────────────────────────
@@ -272,12 +326,38 @@ async function save(key, state, entry){
    the number is visible in the Firebase console without opening the app. */
 function logBytes(){ return JSON.stringify(reviewLog).length; }
 
+/* Grading used to await the server ack before drawing the next card, which
+   put a visible stall on every button press. Writes now go out behind the
+   UI, chained so they stay ordered and so two fast grades can't both take
+   the "document doesn't exist yet" branch in save(). The Firestore SDK
+   retries a queued write on its own; what it can't survive is the tab being
+   closed mid-flight, so a failure has to be visible rather than swallowed. */
+let writeChain = Promise.resolve();
+let writeError = null;
+
+function queueWrite(key, state, entry){
+  writeChain = writeChain
+    .then(() => save(key, state, entry))
+    .then(() => { writeError = null; })
+    .catch(e => { writeError = e; console.error("save failed", e); })
+    .finally(renderWarning);
+  return writeChain;
+}
+
 function renderWarning(){
+  const banners = [];
+  if (writeError) {
+    banners.push(`<p class="warn err">Not saving. The last review did not reach ` +
+      `the server (${writeError.message}). Check your connection — progress from ` +
+      `here on may be lost.</p>`);
+  }
   const bytes = logBytes();
-  if (bytes < DOC_LIMIT * WARN_AT) { warnEl.innerHTML = ""; return; }
-  const pct = Math.round(bytes / DOC_LIMIT * 100);
-  warnEl.innerHTML = `<p class="warn">Review log is at ~${pct}% of the 1 MiB ` +
-    `Firestore document limit (${reviewLog.length} entries). Trim or archive it.</p>`;
+  if (bytes >= DOC_LIMIT * WARN_AT) {
+    const pct = Math.round(bytes / DOC_LIMIT * 100);
+    banners.push(`<p class="warn">Review log is at ~${pct}% of the 1 MiB ` +
+      `Firestore document limit (${reviewLog.length} entries). Trim or archive it.</p>`);
+  }
+  warnEl.innerHTML = banners.join("");
 }
 
 function renderCount(){
@@ -328,7 +408,7 @@ function showBack(){
   $("#good").addEventListener("click", () => grade("good"));
 }
 
-async function grade(g){
+function grade(g){
   const key = queue.shift();
   const isNew = !cardStates[key];
   const next = schedule(cardStates[key] || newCardState(), g);
@@ -338,13 +418,7 @@ async function grade(g){
 
   const entry = { card: key, grade: g, ts: Date.now() };
   reviewLog.push(entry);
-
-  try {
-    await save(key, next, entry);
-  } catch (e) {
-    showError("Couldn't save that review — check your connection.\n\n" + e.message);
-    return;
-  }
+  queueWrite(key, next, entry);
 
   if (g === "again") {
     // resurface later this session rather than only tomorrow
