@@ -20,15 +20,20 @@ file in the inbox if none of them are right.
 Images are converted to WebP, capped in width and stripped of metadata.
 Assigning one clears `reviewed` — a new picture has not been looked at.
 """
-import argparse, hashlib, json, shutil, subprocess, sys, time
+import argparse, base64, hashlib, json, shutil, subprocess, sys, time
 import urllib.parse, urllib.request, urllib.error
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from deckio import ROOT, load, save, out_dir, esc
+from deckio import ROOT, load, save, out_dir, esc, load_key
 
 IMG_DIR = ROOT / "media/img"
 OPENVERSE = "https://api.openverse.org/v1/images/"
+GEMINI = ("https://generativelanguage.googleapis.com/v1beta/models/"
+          "{model}:generateContent?key={key}")
+# Flash tier: a flashcard image needs to be legible at 800px on a phone, not
+# gallery-grade. ~1290 output tokens per image, so roughly 4 euro cents.
+GEN_MODEL = "gemini-2.5-flash-image"
 WIKI_SUMMARY = "https://{lang}.wikipedia.org/api/rest_v1/page/summary/{title}"
 UA = "flashcards-vocab/0.1 (https://github.com/frhrpr/flashcards; personal study tool)"
 
@@ -115,6 +120,78 @@ def wikipedia(q):
                      "source_url": (d.get("content_urls", {}).get("desktop", {})
                                     .get("page", ""))}]
     return []
+
+
+def generate(key, prompt):
+    """One image from one prompt. Returns PNG/JPEG bytes."""
+    body = json.dumps({"contents": [{"parts": [{"text": prompt}]}]}).encode()
+    req = urllib.request.Request(GEMINI.format(model=GEN_MODEL, key=key), data=body,
+                                 headers={"Content-Type": "application/json"})
+    try:
+        with urllib.request.urlopen(req, timeout=180) as r:
+            d = json.load(r)
+    except urllib.error.HTTPError as e:
+        detail = e.read().decode("utf-8", "replace")
+        try:
+            detail = json.loads(detail)["error"]["message"]
+        except Exception:
+            pass
+        raise RuntimeError(f"HTTP {e.code}: {detail[:200]}") from None
+    except urllib.error.URLError as e:
+        raise RuntimeError(f"network error: {e.reason}") from None
+    parts = (d.get("candidates") or [{}])[0].get("content", {}).get("parts", [])
+    imgs = [p for p in parts if "inlineData" in p]
+    if not imgs:
+        # The model sometimes refuses and answers in prose instead.
+        text = next((p.get("text", "") for p in parts if p.get("text")), "")
+        raise RuntimeError(f"no image returned: {text[:160] or 'empty response'}")
+    return base64.b64decode(imgs[0]["inlineData"]["data"])
+
+
+def cmd_generate(deck, notes, manifest, dest, only, go):
+    targets = [n for n in notes if "image" not in n and n.get("image_prompt")
+               and (not only or n["id"] in only)]
+    skipped = [n["id"] for n in notes
+               if "image" not in n and not n.get("image_prompt")]
+    if skipped:
+        print(f"  no image_prompt, skipping: {', '.join(skipped)}")
+    if not targets:
+        print("nothing to generate")
+        return 0
+    for n in targets:
+        print(f"  {n['id']:<10} {n['image_prompt'][:88]}")
+    print(f"\n{len(targets)} image(s) via {GEN_MODEL}, roughly "
+          f"{len(targets) * 4} euro cents")
+    if not go:
+        print("\ndry run. Re-run with --go.")
+        return 0
+
+    key = load_key("GEMINI_API_KEY")
+    raw_dir = dest / "generated"
+    raw_dir.mkdir(parents=True, exist_ok=True)
+    plan, failed = [], []
+    for i, n in enumerate(targets, 1):
+        print(f"  [{i}/{len(targets)}] {n['id']} ... ", end="", flush=True)
+        try:
+            data = generate(key, n["image_prompt"])
+        except RuntimeError as e:
+            print("FAILED")
+            failed.append((n["id"], str(e)))
+            continue
+        raw = raw_dir / f"{n['id']}.png"
+        raw.write_bytes(data)
+        print(f"ok ({len(data) // 1024} KB)")
+        plan.append((raw, n, {"source": "generated", "model": GEN_MODEL,
+                              "prompt": n["image_prompt"]}))
+        time.sleep(0.5)
+    if failed:
+        print(f"\n{len(failed)} generation(s) FAILED:")
+        for nid, why in failed:
+            print(f"  {nid}\n      {why}")
+    if not plan:
+        return 1
+    rc = adopt(deck, notes, manifest, plan, True)
+    return rc or (1 if failed else 0)
 
 
 def cmd_fetch(notes, dest, only, count):
@@ -357,6 +434,8 @@ def cmd_status(notes, inbox, dest):
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--generate", action="store_true",
+                    help="generate images from each note's image_prompt")
     ap.add_argument("--fetch", action="store_true", help="download candidates")
     ap.add_argument("--pick", default="", help="comma-separated note_id=number")
     ap.add_argument("--assign", default="", help="comma-separated file=note_id")
@@ -372,6 +451,8 @@ def main():
     inbox.mkdir(parents=True, exist_ok=True)
     only = {s.strip() for s in args.only.split(",") if s.strip()}
 
+    if args.generate:
+        return cmd_generate(deck, notes, manifest, dest, only, args.go)
     if args.fetch:
         return cmd_fetch(notes, dest, only, args.count)
     if args.pick:

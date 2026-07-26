@@ -8,6 +8,9 @@
       "pos": "noun",
       "ipa": "dɔm",
       "note": null,
+      "image": "media/img/dom.webp",
+      "image_alt": "house, home",
+      "image_prompt": "A single ordinary detached family house seen from the front, in plain daylight. Simple photographic style, uncluttered background, no people, no cars, no text or lettering anywhere. Square image.",
       "audio": "media/audio/dom.mp3",
       "sentence": {
         "pl": "Rano wracam do domu.",
@@ -29,6 +32,9 @@
       "pos": "noun",
       "ipa": "pjɛs",
       "note": null,
+      "image": "media/img/pies.webp",
+      "image_alt": "dog",
+      "image_prompt": "One dog sitting on grass, full body clearly visible, side-on. Plain simple background, no people, no other animals, no text or lettering. Square image.",
       "audio": "media/audio/pies.mp3",
       "sentence": {
         "pl": "Pod drzewem siedzi pies.",
@@ -50,6 +56,9 @@
       "pos": "noun",
       "ipa": "kɔt",
       "note": null,
+      "image": "media/img/kot.webp",
+      "image_alt": "cat",
+      "image_prompt": "One domestic cat, full body, standing on a plain light surface against a plain background. Clear and simple, no people, no other objects competing for attention, no text or lettering. Square image.",
       "audio": "media/audio/kot.mp3",
       "sentence": {
         "pl": "Mały kot pije mleko.",
@@ -71,6 +80,9 @@
       "pos": "noun",
       "ipa": "ˈswɔɲt͡sɛ",
       "note": null,
+      "image": "media/img/slonce.webp",
+      "image_alt": "sun",
+      "image_prompt": "The sun as a bright yellow disc in a clear blue sky. Nothing else in frame - no landscape, no horizon, no buildings, no people, no text or lettering. Square image.",
       "audio": "media/audio/slonce.mp3",
       "sentence": {
         "pl": "Rano słońce jest żółte.",
@@ -92,6 +104,9 @@
       "pos": "noun",
       "ipa": "ˈpiwka",
       "note": null,
+      "image": "media/img/pilka.webp",
+      "image_alt": "ball",
+      "image_prompt": "A single ball resting on a plain flat surface against a plain background. Just the ball, no people, no sports field, no text or lettering. Square image.",
       "audio": "media/audio/pilka.mp3",
       "sentence": {
         "pl": "Pod ławką jest piłka.",
@@ -113,6 +128,9 @@
       "pos": "verb",
       "ipa": "ˈskakat͡ɕ",
       "note": null,
+      "image": "media/img/skakac.webp",
+      "image_alt": "to jump",
+      "image_prompt": "A cat caught mid-jump, in the air, landing onto a wooden park bench. Side view so the leap is obvious, daylight park setting, no people, no text or lettering. Square image.",
       "audio": "media/audio/skakac.mp3",
       "sentence": {
         "pl": "Kot skacze na ławkę.",
@@ -134,6 +152,9 @@
       "pos": "verb",
       "ipa": "ˈɕpjɛvat͡ɕ",
       "note": null,
+      "image": "media/img/spiewac.webp",
+      "image_alt": "to sing",
+      "image_prompt": "A small bird perched on a tree branch singing, beak clearly open, in a green park in daylight. One bird only, no people, no text or lettering. Square image.",
       "audio": "media/audio/spiewac.mp3",
       "sentence": {
         "pl": "Ptak śpiewa w parku.",
@@ -155,6 +176,9 @@
       "pos": "adjective",
       "ipa": "ʑɛˈlɔnɨ",
       "note": null,
+      "image": "media/img/zielony.webp",
+      "image_alt": "green",
+      "image_prompt": "Four unrelated everyday objects that are all the same shade of green, arranged together on a plain white background: a green apple, a green leaf, a green mug, a green book. The only thing they have in common is the colour. No text or lettering. Square image.",
       "audio": "media/audio/zielony.mp3",
       "sentence": {
         "pl": "To drzewo jest zielone.",

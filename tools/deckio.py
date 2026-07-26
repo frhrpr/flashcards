@@ -12,7 +12,7 @@ MANIFEST_PATH = ROOT / "media/manifest.json"
 ATTRIB_PATH = ROOT / "media/ATTRIBUTION.md"
 
 KEY_ORDER = ["id", "word", "gloss", "pos", "ipa", "note", "image", "image_alt",
-             "audio", "sentence", "cards", "reviewed"]
+             "image_prompt", "audio", "sentence", "cards", "reviewed"]
 SENT_KEY_ORDER = ["pl", "en", "gap", "answer", "answer_lemma", "audio"]
 
 # Everything the project puts where Windows can open it goes under one root.
@@ -24,6 +24,19 @@ def out_dir(sub):
         if d.is_dir() and not d.parent.name.startswith(("Default", "All Users", "Public")):
             return d / OUT_ROOT / sub
     return ROOT / ".out" / sub          # gitignored fallback when not on WSL
+
+
+def load_key(name):
+    """Read one key out of .env. Never printed, never committed."""
+    env = ROOT / ".env"
+    if not env.exists():
+        raise SystemExit(f"no .env — expected {name} in {env}")
+    for line in env.read_text(encoding="utf-8").splitlines():
+        if line.strip().startswith(f"{name}="):
+            v = line.split("=", 1)[1].strip().strip("'\"")
+            if v:
+                return v
+    raise SystemExit(f".env has no {name} value")
 
 
 def esc(s):
