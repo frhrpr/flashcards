@@ -31,6 +31,14 @@ body{background:var(--paper);color:var(--ink);font-family:var(--sans);padding:1.
 .rows dd{margin:0;font-family:var(--mono);font-size:1rem;text-align:right}
 .rows dd.big{font-size:1.6rem;font-weight:300;font-family:var(--sans)}
 .rows .muted{color:var(--dim)}
+.done{text-align:center}
+.done-h{font-size:1.35rem;font-weight:300;margin:.5rem 0 .25rem}
+.done-sub{color:var(--dim);margin:0 0 1.5rem}
+.done-cta{font-family:var(--mono);font-size:.95rem;letter-spacing:.04em;
+  color:var(--ok);margin:0 0 1.75rem;padding:.85rem;border:1px solid var(--ok);border-radius:4px}
+.rows.small{text-align:left;font-size:.9rem}
+.rows.small dd{font-size:.95rem}
+.aside{margin:1.5rem 0 0;font-size:.72rem;line-height:1.5;color:var(--dim);opacity:.7}
 .foot{margin-top:1.1rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.8rem;color:var(--dim);line-height:1.5}
 .msg{text-align:center;padding:3rem 1rem;color:var(--dim);font-size:1rem;line-height:1.6}
 .msg-sub{display:inline-block;margin-top:.75rem;font-size:.8rem;opacity:.75}
@@ -176,6 +184,9 @@ function confirmIdentity(alert, id, stored){
 }
 
 const { id: uid, stored: storedUid, alert: idAlert } = getUserId();
+/* Any id beginning "test" is a scratch session: it reviews normally but
+   never writes, so poking at the app does not leave documents behind. */
+const TEST_MODE = /^test/i.test(uid);
 if (idAlert) await confirmIdentity(idAlert, uid, storedUid);
 const docRef = doc(db, "progress", uid);
 
@@ -376,6 +387,7 @@ let revealed = false;
    few hundred KB per button press once the log is long, which is felt on a
    phone long before the 1 MiB document ceiling is anywhere in sight. */
 async function save(key, state, entry){
+  if (TEST_MODE) return;
   if (!docExists) {
     // updateDoc requires an existing document; first run has to create one.
     await setDoc(docRef, {
@@ -419,6 +431,10 @@ function queueWrite(key, state, entry){
 
 function renderWarning(){
   const banners = [];
+  if (TEST_MODE) {
+    banners.push(`<p class="warn">Test session — nothing is saved. ` +
+      `Reload to start over.</p>`);
+  }
   if (writeError) {
     banners.push(`<p class="warn err">Not saving. The last review did not reach ` +
       `the server (${writeError.message}). Check your connection — progress from ` +
@@ -459,6 +475,7 @@ function stats(){
     started: withState.length,
     total: allCards.length,
     notes: Object.keys(NOTES).length,
+    startedNotes: new Set(withState.map(noteOf)).size,
     todayReviews: reviewLog.filter(e => e.ts >= t).length,
     nextDue: future.length ? Math.min(...future) : null,
     streak,
@@ -509,125 +526,37 @@ function renderDone(){
   countEl.textContent = "";
   barEl.className = "";
   renderWarning();
-  const s = stats();
-  const again = reviewLog.filter(e => e.ts >= t && e.grade === "again").length;
+  const st = stats();
+  const today = reviewLog.filter(e => e.ts >= t);
+  const good = today.filter(e => e.grade === "good").length;
+  const rate = today.length ? Math.round((good / today.length) * 100) : null;
+
+  /* What he should leave with, in order: you are finished, well done, come
+     back on this day. Locked cards are deliberately last, small and grey —
+     it is not something he can act on, and reading it as a backlog would be
+     discouraging. */
+  const when = st.nextDue == null ? null
+             : Math.round((midnight(st.nextDue) - t) / MS_DAY);
+  const back = when == null
+    ? "Add some words and come back."
+    : when <= 1 ? "Come back tomorrow." : `Come back in ${when} days.`;
+
   appEl.innerHTML = `
-    <div class="stats">
-      <h2>${sessionDone ? "Done for today" : "Nothing due"}</h2>
-      <dl class="rows">
-        ${row("Reviewed today", s.todayReviews, "big")}
-        ${again ? row("Needed another look", again, "muted") : ""}
-        ${row("Next cards due", whenDue(s.nextDue))}
-        ${s.locked ? row("Still locked", s.locked, "muted") : ""}
-      </dl>
-      <div class="foot">
-        ${s.started} of ${s.total} cards started, across ${s.notes} words.
-        ${s.streak ? `${s.streak}-day streak.` : ""}
-        ${s.locked ? "Locked cards unlock once you have their word solid." : ""}
-      </div>
+    <div class="stats done">
+      <p class="done-h">${sessionDone ? "That's everything for today" : "Nothing due right now"}</p>
+      ${sessionDone ? `<p class="done-sub">Nice work.</p>` : ""}
+      <p class="done-cta">${esc(back)}</p>
+      ${today.length ? `
+      <dl class="rows small">
+        ${row("Reviewed today", today.length)}
+        ${rate !== null ? row("Got it first time", rate + "%") : ""}
+        ${st.streak > 1 ? row("Days in a row", st.streak) : ""}
+        ${row("Words started", `${st.startedNotes} of ${st.notes}`)}
+      </dl>` : ""}
+      ${st.locked ? `<p class="aside">${st.locked} card${st.locked === 1 ? "" : "s"} ` +
+        `waiting in the wings (nothing to do about those — they turn up on ` +
+        `their own once a word is solid).</p>` : ""}
     </div>`;
-}
-
-/* ── rendering ──────────────────────────────────────────────────────
-   Grammatical labels are Polish and abbreviated the way a Polish
-   dictionary does it. Every media element is optional: a note with no
-   image or audio simply renders without one, so the deck stays usable
-   while the media pipeline catches up. */
-const POS_PL = {
-  noun: "rzeczownik", verb: "czasownik", adjective: "przymiotnik",
-  adverb: "przysłówek", preposition: "przyimek", conjunction: "spójnik",
-  particle: "partykuła", pronoun: "zaimek", interjection: "wykrzyknik",
-};
-
-// Anything from the deck could contain < or &; it is rendered via innerHTML.
-const esc = s => String(s).replace(/[&<>"]/g, c =>
-  ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-
-/* Part of speech only. Declension tables and aspect pairs are deliberately
-   not stored — this is a vocabulary trainer, not a grammar reference, and
-   the example sentences are free to use whatever form reads naturally. */
-function grammar(n){
-  return `<div class="gram">${esc(POS_PL[n.pos] || n.pos)}</div>`;
-}
-
-let audioSeq = 0;
-const audioBtns = [];
-function playBtn(src, label, extra){
-  if (!src) return "";
-  const id = `play${audioSeq++}`;
-  audioBtns.push({ id, src });
-  return `<button class="play${extra ? " " + extra : ""}" id="${id}" ` +
-         `aria-label="${esc(label)}">▶</button>`;
-}
-function autoPlay(src){
-  if (!src) return;
-  new Audio(src).play().catch(() => {});   // blocked is fine, button remains
-}
-
-function wireAudio(){
-  for (const { id, src } of audioBtns.splice(0)) {
-    const el = $("#" + id);
-    if (el) el.addEventListener("click", () => new Audio(src).play().catch(e => {
-      // A rejection with no user gesture is routine; anything else is not.
-      if (e.name !== "NotAllowedError") {
-        writeError = new Error(`audio failed: ${src}`);
-        renderWarning();
-      }
-    }));
-  }
-}
-
-/* ── the four card types ────────────────────────────────────────────
-   Each note can produce up to four cards, each testing a different
-   direction. Which pieces appear where is the whole design:
-
-     recognition  PL word + audio + IPA  ->  meaning, image, sentence
-     production   image + English        ->  the Polish word
-     listening    the recording alone    ->  everything else
-
-   Nothing is shown on a front that would give the answer away — the
-   listening front is deliberately bare, and production withholds both the
-   Polish word and its audio. */
-const pieces = {
-  word:    n => `<div class="front">${esc(n.word)}</div>`,
-  ipa:     n => n.ipa ? `<div class="ipa">[${esc(n.ipa)}]</div>` : "",
-  gloss:   n => `<div class="back">${esc(n.gloss)}</div>`,
-  image:   n => n.image
-    ? `<img src="${esc(n.image)}" alt="${esc(n.image_alt || "")}">` : "",
-  note:    n => n.note ? `<div class="note">${esc(n.note)}</div>` : "",
-  audio:   n => playBtn(n.audio, `play ${n.word}`),
-  sentence: n => (n.sentence && n.sentence.pl) ? `
-    <div class="sent">
-      <div class="sent-pl">${esc(n.sentence.pl)}${playBtn(n.sentence.audio, "play the sentence")}</div>
-      <div class="sent-en">${esc(n.sentence.en || "")}</div>
-    </div>` : "",
-  gapped:  n => (n.sentence && n.sentence.gap) ? `
-    <div class="sent"><div class="sent-gap">${esc(n.sentence.gap)}</div></div>` : "",
-};
-
-const LAYOUT = {
-  recognition: {
-    front: ["word", "audio", "ipa"],
-    back:  ["word", "audio", "ipa", "gloss", "image", "sentence", "note"],
-  },
-  production: {
-    front: ["image", "gloss", "note", "gapped"],
-    back:  ["word", "audio", "ipa", "sentence"],
-  },
-  listening: {
-    front: ["audioOnly"],
-    back:  ["word", "audio", "ipa", "gloss", "image", "sentence", "note"],
-  },
-};
-
-// Fronts that are not simply a stack of the shared pieces.
-const special = {
-  audioOnly: n => playBtn(n.audio, `play ${n.word}`, "play-big"),
-};
-
-function side(n, type, which){
-  const names = (LAYOUT[type] || LAYOUT.recognition)[which];
-  return names.map(k => (special[k] || pieces[k])(n)).join("\n      ");
 }
 
 function renderCard(){
@@ -649,7 +578,7 @@ function renderCard(){
   if (n.image && type !== "production") new Image().src = n.image;
   // Sticky user activation from the previous tap usually lets this through;
   // if the browser refuses, the button is still there. See wireAudio.
-  if (type === "listening") autoPlay(n.audio);
+  if (type === "listening" || type === "recognition") autoPlay(n.audio);
   $("#reveal").addEventListener("click", showBack);
 }
 
@@ -703,7 +632,7 @@ function grade(g){
 }
 
 // One-off rewrite so the folded legacy keys above are actually persisted.
-if (migrated && docExists) {
+if (migrated && docExists && !TEST_MODE) {
   try {
     await setDoc(docRef, {
       cards: cardStates, log: reviewLog, logBytes: logBytes(), updated: Date.now()

@@ -112,6 +112,14 @@ notes`. `status` is `queued` → `known` → `carded`.
   while every day differs. Without it the sequence was identical every
   session and new words arrived in file order, so notes at the end of the
   file would never be introduced.
+- **Any user id starting `test` never writes.** Poking at the app leaves no
+  document behind, and a banner says so, so a scratch session cannot be
+  mistaken for a real one. Progress in test mode dies on reload — that is
+  the point.
+- **The closing screen sells coming back, not completeness.** Order is:
+  you are finished, well done, come back on this day. Locked cards are last,
+  small and grey, with a line saying there is nothing to do about them — a
+  count he cannot act on reads as a backlog and discourages.
 - **`NEW_PER_DAY` caps new cards.** Counted from an `introduced` stamp on
   card state, not session state, so it survives reloads and a second device.
 - **Grammar words don't get cards.** `deck/vocab.csv` marks prepositions,
@@ -138,10 +146,13 @@ prefix heuristic warns on every correct sentence.
 
 The remaining 52 words in `deck/vocab.csv` have no notes yet.
 
-**Unverified:** whether the Firestore security rule above has actually been
-published, and whether the `updateDoc` delta writes succeed against a real
-document (syntax and queue logic are tested, the Firestore round-trip is
-not). Check before assuming.
+The Firestore rule **is** published — confirmed by reading and deleting
+documents over the REST API with only the web key, which is exactly what the
+open rule permits. Delta writes work against a real document. Documents can
+be listed and deleted from here:
+
+    K=$(grep -o 'apiKey: "[^"]*"' index.html | cut -d'"' -f2)
+    curl -s "https://firestore.googleapis.com/v1/projects/flashcards-f5b40/databases/(default)/documents/progress?key=$K"
 
 ## Roadmap
 
