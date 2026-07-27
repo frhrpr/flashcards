@@ -28,6 +28,7 @@ tools/smoke.mjs     renders every card face in node; run after touching index.ht
 tools/audio.py      Commons recordings for words, TTS for sentences
 tools/images.py     generate / fetch / assign images, and --check them
 tools/review.py     builds the approval page; records approvals
+tools/progress.py   how the student is getting on; reads Firestore over REST
 tools/deckio.py     shared loading, saving, attribution (not runnable)
 ```
 
