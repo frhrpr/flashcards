@@ -1377,6 +1377,276 @@
         "listening"
       ],
       "reviewed": true
+    },
+    {
+      "id": "chciec",
+      "word": "chcieć",
+      "gloss": "to want",
+      "pos": "verb",
+      "ipa": "xt͡ɕɛt͡ɕ",
+      "note": null,
+      "image": "media/img/chciec.webp",
+      "image_alt": "to want",
+      "image_basis": "sentence",
+      "image_prompt": "A person at a table reaching out towards a loaf of bread, clearly wanting it, eyes on the bread. Plain background, no text or lettering. Square image.",
+      "audio": "media/audio/chciec.mp3",
+      "sentence": {
+        "pl": "Teraz chcę chleb.",
+        "en": "Now I want bread.",
+        "gap": "Teraz ___ chleb.",
+        "answer": "chcę",
+        "answer_lemma": "chcieć",
+        "audio": "media/audio/chciec__sentence.mp3"
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "wiedziec",
+      "word": "wiedzieć",
+      "gloss": "to know",
+      "pos": "verb",
+      "ipa": "ˈvjɛd͡ʑɛt͡ɕ",
+      "note": null,
+      "image": "media/img/wiedziec.webp",
+      "image_alt": "to know",
+      "image_basis": "word",
+      "image_prompt": "A person tapping one finger to their temple with a confident, knowing expression. Plain background, no text or lettering. Square image.",
+      "audio": "media/audio/wiedziec.mp3",
+      "sentence": {
+        "pl": "Ty wiesz, gdzie jest sklep.",
+        "en": "You know where the shop is.",
+        "gap": "Ty ___, gdzie jest sklep.",
+        "answer": "wiesz",
+        "answer_lemma": "wiedzieć",
+        "audio": "media/audio/wiedziec__sentence.mp3"
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "dobry",
+      "word": "dobry",
+      "gloss": "good",
+      "pos": "adjective",
+      "ipa": "ˈdɔbrɨ",
+      "note": null,
+      "image": "media/img/dobry.webp",
+      "image_alt": "good",
+      "image_basis": "word",
+      "image_prompt": "A person tasting food from a spoon and looking delighted with it. Plain background, no text or lettering. Square image.",
+      "audio": "media/audio/dobry.mp3",
+      "sentence": {
+        "pl": "To jest dobry dzień.",
+        "en": "This is a good day.",
+        "gap": "To jest ___ dzień.",
+        "answer": "dobry",
+        "answer_lemma": "dobry",
+        "audio": "media/audio/dobry__sentence.mp3"
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "dziecko",
+      "word": "dziecko",
+      "gloss": "child",
+      "pos": "noun",
+      "ipa": "ˈd͡ʑɛt͡skɔ",
+      "note": null,
+      "image": "media/img/dziecko.webp",
+      "image_alt": "child",
+      "image_basis": "word",
+      "image_prompt": "One child of about seven standing and smiling, whole figure in frame. Plain simple background, no other people, no text or lettering. Square image.",
+      "audio": "media/audio/dziecko.mp3",
+      "sentence": {
+        "pl": "Małe dziecko idzie do parku.",
+        "en": "A small child is going to the park.",
+        "gap": "Małe ___ idzie do parku.",
+        "answer": "dziecko",
+        "answer_lemma": "dziecko",
+        "audio": "media/audio/dziecko__sentence.mp3"
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "reka",
+      "word": "ręka",
+      "gloss": "hand",
+      "pos": "noun",
+      "ipa": "ˈrɛŋka",
+      "note": null,
+      "image": "media/img/reka.webp",
+      "image_alt": "hand",
+      "image_basis": "sentence",
+      "image_prompt": "One open hand holding a small ball, close up, plain background, no text or lettering. Square image.",
+      "audio": "media/audio/reka.mp3",
+      "sentence": {
+        "pl": "Mam piłkę w ręce.",
+        "en": "I have a ball in my hand.",
+        "gap": "Mam piłkę w ___.",
+        "answer": "ręce",
+        "answer_lemma": "ręka",
+        "audio": "media/audio/reka__sentence.mp3"
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "droga",
+      "word": "droga",
+      "gloss": "road, way",
+      "pos": "noun",
+      "ipa": "ˈdrɔɡa",
+      "note": null,
+      "image": "media/img/droga.webp",
+      "image_alt": "road, way",
+      "image_basis": "word",
+      "image_prompt": "An empty country road running away from the viewer into the distance, daylight, no cars, no people, no signs or lettering. Square image.",
+      "audio": "media/audio/droga.mp3",
+      "sentence": {
+        "pl": "Idę drogą do parku.",
+        "en": "I walk along the road to the park.",
+        "gap": "Idę ___ do parku.",
+        "answer": "drogą",
+        "answer_lemma": "droga",
+        "audio": "media/audio/droga__sentence.mp3"
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "kobieta",
+      "word": "kobieta",
+      "gloss": "woman",
+      "pos": "noun",
+      "ipa": "kɔˈbjɛta",
+      "note": null,
+      "image": "media/img/kobieta.webp",
+      "image_alt": "woman",
+      "image_basis": "sentence",
+      "image_prompt": "A woman sitting on a wooden park bench, whole figure in frame, side on, daylight. One person only, no text or lettering. Square image.",
+      "audio": "media/audio/kobieta.mp3",
+      "sentence": {
+        "pl": "Na ławce siedzi kobieta.",
+        "en": "A woman is sitting on the bench.",
+        "gap": "Na ławce siedzi ___.",
+        "answer": "kobieta",
+        "answer_lemma": "kobieta",
+        "audio": "media/audio/kobieta__sentence.mp3"
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "stary",
+      "word": "stary",
+      "gloss": "old",
+      "pos": "adjective",
+      "ipa": "ˈstarɨ",
+      "note": null,
+      "image": "media/img/stary.webp",
+      "image_alt": "old",
+      "image_basis": "word",
+      "image_prompt": "Two identical wooden chairs side by side on a plain background: one brand new and clean, one visibly old, worn and weathered. The old one stands at the front and in focus. No text or lettering. Square image.",
+      "audio": "media/audio/stary.mp3",
+      "sentence": {
+        "pl": "W parku jest stare drzewo.",
+        "en": "There is an old tree in the park.",
+        "gap": "W parku jest ___ drzewo.",
+        "answer": "stare",
+        "answer_lemma": "stary",
+        "audio": "media/audio/stary__sentence.mp3"
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "czekac",
+      "word": "czekać",
+      "gloss": "to wait",
+      "pos": "verb",
+      "ipa": "ˈt͡ʂɛkat͡ɕ",
+      "note": null,
+      "image": "media/img/czekac.webp",
+      "image_alt": "to wait",
+      "image_basis": "sentence",
+      "image_prompt": "A dog sitting patiently under a tree, ears up, looking off into the distance as if waiting for someone. Daylight, no people, no text or lettering. Square image.",
+      "audio": "media/audio/czekac.mp3",
+      "sentence": {
+        "pl": "Pies czeka pod drzewem.",
+        "en": "The dog is waiting under the tree.",
+        "gap": "Pies ___ pod drzewem.",
+        "answer": "czeka",
+        "answer_lemma": "czekać",
+        "audio": "media/audio/czekac__sentence.mp3"
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "szukac",
+      "word": "szukać",
+      "gloss": "to look for",
+      "pos": "verb",
+      "ipa": "ˈʂukat͡ɕ",
+      "note": null,
+      "image": "media/img/szukac.webp",
+      "image_alt": "to look for",
+      "image_basis": "sentence",
+      "image_prompt": "A child crouching on grass and searching through it with both hands, clearly looking for something. Daylight, no text or lettering. Square image.",
+      "audio": "media/audio/szukac.mp3",
+      "sentence": {
+        "pl": "Dziecko szuka piłki.",
+        "en": "The child is looking for the ball.",
+        "gap": "Dziecko ___ piłki.",
+        "answer": "szuka",
+        "answer_lemma": "szukać",
+        "audio": "media/audio/szukac__sentence.mp3"
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
     }
   ]
 }

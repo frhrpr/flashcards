@@ -20,6 +20,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/chciec.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-chcieć.ogg",
+    "fingerprint": "eec69271e0eed54b",
+    "gain_db": 0.7,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-chcie%C4%87.ogg",
+    "seconds": 1.1,
+    "source": "commons",
+    "text": "chcieć"
+  },
+  "media/audio/chciec__sentence.mp3": {
+    "fingerprint": "f2e52f47d9fead69",
+    "gain_db": 0.8,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.07,
+    "source": "tts",
+    "text": "Teraz chcę chleb.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/chleb.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-chleb.ogg",
@@ -59,6 +80,27 @@
     "seconds": 1.15,
     "source": "tts",
     "text": "Rano chodzę do sklepu.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/czekac.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-czekać.ogg",
+    "fingerprint": "c335a4b0c32e4e51",
+    "gain_db": -0.3,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-czeka%C4%87.ogg",
+    "seconds": 1.02,
+    "source": "commons",
+    "text": "czekać"
+  },
+  "media/audio/czekac__sentence.mp3": {
+    "fingerprint": "aa133b2a0d789f42",
+    "gain_db": 1.5,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.46,
+    "source": "tts",
+    "text": "Pies czeka pod drzewem.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -125,6 +167,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/dobry.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-dobry.ogg",
+    "fingerprint": "dff0cc1ff64fa6b7",
+    "gain_db": 4.2,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-dobry.ogg",
+    "seconds": 0.78,
+    "source": "commons",
+    "text": "dobry"
+  },
+  "media/audio/dobry__sentence.mp3": {
+    "fingerprint": "c3ac25ec64c60f62",
+    "gain_db": -0.2,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.1,
+    "source": "tts",
+    "text": "To jest dobry dzień.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/dom.mp3": {
     "author": "tsca",
     "commons_file": "Pl-dom.ogg",
@@ -143,6 +206,27 @@
     "seconds": 1.28,
     "source": "tts",
     "text": "Rano wracam do domu.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/droga.mp3": {
+    "author": "Frizabela",
+    "commons_file": "Pl-droga.ogg",
+    "fingerprint": "ff3c524d5c5b1bad",
+    "gain_db": -5.3,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-droga.ogg",
+    "seconds": 0.97,
+    "source": "commons",
+    "text": "droga"
+  },
+  "media/audio/droga__sentence.mp3": {
+    "fingerprint": "88ed08410ac2f8b0",
+    "gain_db": -0.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.23,
+    "source": "tts",
+    "text": "Idę drogą do parku.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -185,6 +269,27 @@
     "seconds": 1.07,
     "source": "tts",
     "text": "To jest duży dom.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/dziecko.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-dziecko.ogg",
+    "fingerprint": "799b01af8067eb20",
+    "gain_db": 0.9,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-dziecko.ogg",
+    "seconds": 0.84,
+    "source": "commons",
+    "text": "dziecko"
+  },
+  "media/audio/dziecko__sentence.mp3": {
+    "fingerprint": "776ea3f60e8497bd",
+    "gain_db": -0.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.75,
+    "source": "tts",
+    "text": "Małe dziecko idzie do parku.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -332,6 +437,27 @@
     "seconds": 1.07,
     "source": "tts",
     "text": "Jem kaszę rano.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/kobieta.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-kobieta.ogg",
+    "fingerprint": "fec81a82964cc52a",
+    "gain_db": 1.1,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-kobieta.ogg",
+    "seconds": 0.91,
+    "source": "commons",
+    "text": "kobieta"
+  },
+  "media/audio/kobieta__sentence.mp3": {
+    "fingerprint": "e7c0a5a99f910051",
+    "gain_db": 0.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.46,
+    "source": "tts",
+    "text": "Na ławce siedzi kobieta.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -713,6 +839,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/reka.mp3": {
+    "author": "Wyksztalcioch",
+    "commons_file": "Pl-ręka.ogg",
+    "fingerprint": "91c8b181a23ce7f0",
+    "gain_db": -1.9,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-r%C4%99ka.ogg",
+    "seconds": 0.71,
+    "source": "commons",
+    "text": "ręka"
+  },
+  "media/audio/reka__sentence.mp3": {
+    "fingerprint": "ca0498100c8bf69c",
+    "gain_db": 0.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.46,
+    "source": "tts",
+    "text": "Mam piłkę w ręce.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/ryba.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-ryba.ogg",
@@ -882,6 +1029,48 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/stary.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-stary.ogg",
+    "fingerprint": "c70d9e2597758bb6",
+    "gain_db": -0.2,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-stary.ogg",
+    "seconds": 1.54,
+    "source": "commons",
+    "text": "stary"
+  },
+  "media/audio/stary__sentence.mp3": {
+    "fingerprint": "4e8eae2b5c14fda7",
+    "gain_db": 1.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.91,
+    "source": "tts",
+    "text": "W parku jest stare drzewo.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/szukac.mp3": {
+    "author": "Faselhase",
+    "commons_file": "Pl-szukać.ogg",
+    "fingerprint": "f7746b2b417f9a68",
+    "gain_db": 3.0,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-szuka%C4%87.ogg",
+    "seconds": 0.94,
+    "source": "commons",
+    "text": "szukać"
+  },
+  "media/audio/szukac__sentence.mp3": {
+    "fingerprint": "b6996f4b6fbf228c",
+    "gain_db": -1.2,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.33,
+    "source": "tts",
+    "text": "Dziecko szuka piłki.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/tak.mp3": {
     "author": "odder",
     "commons_file": "Pl-tak.ogg",
@@ -987,6 +1176,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/wiedziec.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-wiedzieć.ogg",
+    "fingerprint": "61e4b5d89e466f08",
+    "gain_db": -1.6,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-wiedzie%C4%87.ogg",
+    "seconds": 0.97,
+    "source": "commons",
+    "text": "wiedzieć"
+  },
+  "media/audio/wiedziec__sentence.mp3": {
+    "fingerprint": "1d00435754780958",
+    "gain_db": -1.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.38,
+    "source": "tts",
+    "text": "Ty wiesz, gdzie jest sklep.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/woda.mp3": {
     "author": "Frizabela",
     "commons_file": "Pl-woda.ogg",
@@ -1087,6 +1297,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/chciec.webp": {
+    "bytes": 38274,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "e7b7483fced751e7",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person at a table reaching out towards a loaf of bread, clearly wanting it, eyes on the bread. Plain background, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/chleb.webp": {
     "bytes": 86384,
     "check": {
@@ -1116,6 +1342,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A person walking along a park path, whole body in frame, side on, daylight, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/czekac.webp": {
+    "bytes": 159590,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "54919949dd6347bf",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A dog sitting patiently under a tree, ears up, looking off into the distance as if waiting for someone. Daylight, no people, no text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -1167,6 +1409,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/dobry.webp": {
+    "bytes": 41954,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "b6c77b9fe2e44794",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person tasting food from a spoon and looking delighted with it. Plain background, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/dom.webp": {
     "bytes": 77640,
     "check": {
@@ -1180,6 +1438,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A single ordinary detached family house seen from the front, in plain daylight. Simple photographic style, uncluttered background, no people, no cars, no text or lettering anywhere. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/droga.webp": {
+    "bytes": 189278,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "2d61c27c1d0f19bc",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "An empty country road running away from the viewer into the distance, daylight, no cars, no people, no signs or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -1212,6 +1486,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "Two balls of the same colour side by side on a plain white background, one very large and one very small, the large one at the front and in focus. No text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/dziecko.webp": {
+    "bytes": 14018,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "600062ab4fac257e",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "One child of about seven standing and smiling, whole figure in frame. Plain simple background, no other people, no text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -1324,6 +1614,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A bowl of cooked buckwheat groats on a plain surface, seen from above, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/kobieta.webp": {
+    "bytes": 181884,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "5fb0324484e880da",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A woman sitting on a wooden park bench, whole figure in frame, side on, daylight. One person only, no text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -1615,6 +1921,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/reka.webp": {
+    "bytes": 14290,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "3f36ebaab71880fd",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "One open hand holding a small ball, close up, plain background, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/ryba.webp": {
     "bytes": 7050,
     "check": {
@@ -1743,6 +2065,38 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/stary.webp": {
+    "bytes": 31780,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "a6eeaaeaf800f1ee",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Two identical wooden chairs side by side on a plain background: one brand new and clean, one visibly old, worn and weathered. The old one stands at the front and in focus. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/szukac.webp": {
+    "bytes": 163024,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "4121b2edd22f5c49",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A child crouching on grass and searching through it with both hands, clearly looking for something. Daylight, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/tak.webp": {
     "bytes": 20018,
     "check": {
@@ -1820,6 +2174,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A close view of a person's eyes looking straight ahead, sharp and clear, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/wiedziec.webp": {
+    "bytes": 16540,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "0720bc4b11352be2",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person tapping one finger to their temple with a confident, knowing expression. Plain background, no text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
