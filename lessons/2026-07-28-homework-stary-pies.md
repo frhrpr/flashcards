@@ -41,37 +41,38 @@ Stary pies siedzi i patrzy na kobietę. To jest dobry dzień.
 
 ## Answers
 
-### 1 · Tak czy nie?
+Sixteen about the story, then five about him. Mixed yes/no and open
+throughout rather than grouped, so he cannot fall into answering by pattern.
 
-1. Kobieta idzie do sklepu. — **tak**
-2. Stary pies czeka w sklepie. — **nie** (czeka pod drzewem)
-3. Dziecko wie, gdzie jest chleb. — **tak**
-4. Kobieta kupuje piłkę. — **nie** (chleb, mleko, wodę)
-5. Ptak śpiewa w parku. — **tak**
-6. Pies nie chce piłki. — **nie** (chce)
-7. Kobieta wraca do domu. — **tak**
-8. Dziecko daje psu chleb. — **nie** (piłkę)
+### O historii
 
-### 2 · Napisz słowo
+1. Czy kobieta idzie rano do sklepu? — **Tak, kobieta idzie rano do sklepu.**
+2. Gdzie czeka stary pies? — **Pies czeka pod drzewem.**
+3. Czy kobieta wie, gdzie jest chleb? — **Nie, kobieta nie wie.**
+4. Kto wie, gdzie jest chleb? — **Dziecko wie.**
+5. Co ma dziecko w ręce? — **Dziecko ma chleb w ręce.**
+6. Co chce kobieta kupić w sklepie? — **Chce kupić chleb i mleko.**
+7. Czy kobieta kupuje piłkę? — **Nie, kupuje chleb, mleko i wodę.**
+8. Gdzie idzie kobieta potem? — **Kobieta idzie do parku.**
+9. Kto śpiewa na starym drzewie? — **Ptak śpiewa.**
+10. Gdzie siedzi kobieta w parku? — **Kobieta siedzi na ławce.**
+11. Czego szuka pies? — **Pies szuka piłki.** ← genitive
+12. Gdzie jest piłka? — **Piłka jest pod ławką.**
+13. Kto daje psu piłkę? — **Dziecko daje psu piłkę.**
+14. Czy pies czeka? — **Nie, pies nie czeka — pies skacze.**
+15. Co kobieta je w domu? — **Kobieta je chleb.**
+16. Czy to jest dobry dzień? — **Tak, to jest dobry dzień.**
 
-1. Rano **kobieta** idzie do sklepu.
-2. **Stary** pies czeka pod drzewem.
-3. Kobieta **szuka** chleba w sklepie.
-4. **Dziecko** wie, gdzie jest chleb.
-5. W **ręce** ma **chleb**.
-6. Kobieta **chce** chleb i mleko.
-7. Pies **czeka** pod drzewem.
-8. To jest **dobry** dzień.
-9. Idę **drogą** do parku.
-10. Ty **wiesz**, gdzie jest kasa?
+### O tobie — answers vary
 
-Word bank has eleven entries for ten gaps — `chleb` fills the second slot in
-number 5, so nothing is left over.
+Co jesz rano? · Czego szukasz w sklepie? · Na co czekasz? ·
+Czy masz starego psa? · Gdzie idziesz rano?
 
-### 3 · Odpowiedz — about him, so answers vary
+Watch for `szukać` + genitive (*szukam chleba*), `czekać na` + accusative
+(*czekam na psa*), and `nie mam starego psa* in the negative.
 
-Watch for: `szukać` + genitive (*szukam chleba*, not *chleb*), `czekać na` +
-accusative (*czekam na psa*), and `starego psa` in the negative
-(*nie mam starego psa*).
+### One new form
 
-### 4 · Napisz — his own sentences with dziecko, ręka, droga
+Question 6 uses **kupić**, the perfective of `kupować`, because `chcieć`
+takes an infinitive and `chcieć kupować` would be wrong. He has not met it;
+worth a word before he starts, or let him meet it and explain after.
