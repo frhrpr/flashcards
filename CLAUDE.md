@@ -19,6 +19,7 @@ index.html          the whole app — one file, no build step, served by Pages
 deck/notes.json     card content, fetched by the app at load
 deck/vocab.csv      every word he has met, whether or not it has a card
 deck/frequency.csv  top-500 Polish list — sentence allowlist, NOT a syllabus
+lessons/*.md        one per lesson: story, new words, questions asked
 media/audio/*.mp3   generated once and committed, never fetched per review
 media/img/*.webp    one image per note, 800px, generated
 media/manifest.json provenance for every media file — source, licence, checks
@@ -235,6 +236,15 @@ Deferred on purpose: 4 grades instead of 2, and a stats screen.
   bulletproof and to surface errors rather than swallow them. Validate at
   every boundary, make re-runs idempotent and resumable, put failures in a
   visible list rather than a log, dry-run anything that spends money.
+- **Lessons are stories.** Each lesson introduces ~10 new words inside a
+  short story built from the deck plus those words, because a narrative gives
+  each word a hook and the story's lines can become the card sentences later.
+  Words are picked from `deck/frequency.csv` *and* for whether a story can be
+  written round them — utility first, coherence second. Ten a week sits under
+  the 3-a-day intake cap, so a lesson is absorbed without backing up. Kept in
+  `lessons/` as the teaching record; a page for use during the lesson goes to
+  `Downloads/flashcards/lessons/`. Cards are made **after** the lesson, so
+  only words that actually landed get carded.
 - **The user spot-checks the Polish.** Generated sentences go to a real
   student, so build a review step rather than trusting generation.
 - **Use the implicit subject.** The allowlist contains no words for people,
