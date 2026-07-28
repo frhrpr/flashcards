@@ -1403,7 +1403,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "wiedziec",
@@ -1430,7 +1430,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "dobry",
@@ -1457,7 +1457,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "dziecko",
@@ -1484,7 +1484,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "reka",
@@ -1511,7 +1511,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "droga",
@@ -1538,7 +1538,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "kobieta",
@@ -1565,7 +1565,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "stary",
@@ -1592,7 +1592,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "czekac",
@@ -1619,7 +1619,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "szukac",
@@ -1646,7 +1646,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     }
   ]
 }

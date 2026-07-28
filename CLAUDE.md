@@ -142,13 +142,16 @@ notes`. `status` is `queued` → `known` → `carded`.
 Working and deployed. Firebase config is live in `index.html` and
 `FIREBASE_READY` is true.
 
-`deck/notes.json` holds **51 complete, human-approved notes** — every word in
+`deck/notes.json` holds **61 complete, human-approved notes** — every word in
 `vocab.csv` marked `flashcard: yes`. Each has an image, word audio (human,
 from Wikimedia Commons, except `siadać` which is TTS), sentence audio, an
 example sentence with translation and gap, gloss, part of speech and IPA.
-Three cards each, 153 in total. Day one offers 10 recognition cards; the rest
+Three cards each, 183 in total. Day one offers 10 recognition cards; the rest
 arrive at 3 new words a day with production and listening unlocking behind
 the maturity gate.
+
+Live since 2026-07-26 at `?u=evert`. One lesson taught (`lessons/`), whose
+ten words are carded.
 
 **No grammar metadata.** Gender, aspect, and declension tables were tried
 and deliberately removed: this trains vocabulary, not morphology, and
