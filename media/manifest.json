@@ -1522,18 +1522,18 @@
     "source": "generated"
   },
   "media/img/dziwny.webp": {
-    "bytes": 67864,
+    "bytes": 168744,
     "check": {
       "model": "gemini-flash-latest",
       "problem": "",
       "verdict": "ok",
       "why": ""
     },
-    "fingerprint": "98882a4eb0f91057",
+    "fingerprint": "fea05dd07f4257bc",
     "model": "gemini-2.5-flash-image",
     "original_size": "1024x1024",
     "process_version": 1,
-    "prompt": "A person with both eyebrows raised and head tilted, looking puzzled at something out of frame, plain background, no text. Square image.",
+    "prompt": "A dog with a distinctly odd appearance standing on grass in an ordinary garden: a very long body on short legs, one ear up and one ear down, and a patchy mismatched coat. It looks peculiar and comical, not frightening and not sad. Plain daylight, no people, no text or lettering anywhere. Square image.",
     "size": "800x800",
     "source": "generated"
   },

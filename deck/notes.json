@@ -1144,8 +1144,8 @@
       "note": null,
       "image": "media/img/dziwny.webp",
       "image_alt": "strange",
-      "image_basis": "word",
-      "image_prompt": "A person with both eyebrows raised and head tilted, looking puzzled at something out of frame, plain background, no text. Square image.",
+      "image_basis": "sentence",
+      "image_prompt": "A dog with a distinctly odd appearance standing on grass in an ordinary garden: a very long body on short legs, one ear up and one ear down, and a patchy mismatched coat. It looks peculiar and comical, not frightening and not sad. Plain daylight, no people, no text or lettering anywhere. Square image.",
       "audio": "media/audio/dziwny.mp3",
       "sentence": {
         "pl": "Pies jest dziwny.",
