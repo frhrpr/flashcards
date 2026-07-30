@@ -101,11 +101,15 @@ notes`. `status` is `queued` → `known` → `carded`.
   cards from today's queue, and the daily new-card budget takes at most one
   card per note. Without this he passes the second and third on ten-second
   recall rather than on knowing the word, and the scheduler believes it.
-- **Staged unlock.** `production` and `listening` are not introduced
-  until that note's `recognition` card has `ivl >= 6` — two correct answers,
-  about a week in. The gate governs *introducing* only: a card that already
-  has state stays in rotation, so a later lapse on recognition cannot yank
-  away production work under way.
+- **Staged unlock, per type.** `UNLOCK_IVL` maps each gated type to the
+  recognition interval it waits for. Intervals run 1, 6, 15, 38, so the
+  thresholds land at real points: `production` at `ivl >= 6` opens the day
+  after the word is introduced, `listening` at `ivl >= 15` a week in. Note
+  that 6 is reached on day *one*, not after a week — two correct answers
+  happen on consecutive days. Listening is pushed back deliberately: reading
+  leaves him the spelling to lean on and the recording leaves him nothing.
+  The gate governs *introducing* only: a card that already has state stays in
+  rotation, so a later lapse on recognition cannot yank away work under way.
 - **`note_id` must match `[a-z0-9_]+`** — it is used as a Firestore field
   path, where diacritics would need backtick quoting. `słońce` → `slonce`,
   `śmiać się` → `smiac_sie`.

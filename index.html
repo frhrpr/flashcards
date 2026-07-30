@@ -358,29 +358,34 @@ function shuffle(arr){
   return arr;
 }
 
-/* Staged unlock. Producing a word is much harder than recognising it, so the
-   harder types stay locked until the recognition card has been answered
-   correctly twice — an interval of 6 days under the schedule above, roughly
-   a week after the word is introduced. Meeting a brand-new word in three
-   directions at once mostly generates failures.
+/* Staged unlock, per type. Meeting a brand-new word in three directions at
+   once mostly generates failures, so the harder types wait on the recognition
+   card's interval. Because intervals go 1, 6, 15, 38, the thresholds land at
+   real points in the word's life:
+
+     production  ivl >= 6   the day after the word is introduced
+     listening   ivl >= 15  a week in, after three correct answers
+
+   Listening is pushed further back deliberately: reading gives him the
+   spelling to lean on, and the recording gives him nothing, so ear training
+   wants a firmer foundation than production does.
 
    The gate only governs *introducing* a card. Once a card has state it stays
-   in rotation, so a later lapse on recognition does not yank away production
-   work already under way. */
-const UNLOCK_IVL = 6;
-const GATED = new Set(["production", "listening"]);
+   in rotation, so a later lapse on recognition does not yank away work
+   already under way. */
+const UNLOCK_IVL = { production: 6, listening: 15 };
 
 function unlocked(key){
   // A scratch session is for looking at the app, not for learning — waiting
   // a week to see a production card would defeat the point.
   if (TEST_MODE) return true;
-  const type = typeOf(key);
-  if (!GATED.has(type)) return true;
+  const need = UNLOCK_IVL[typeOf(key)];
+  if (need === undefined) return true;
   const note = NOTES[noteOf(key)];
   // A note that produces no recognition card has nothing to gate against.
   if (!typesFor(note).includes("recognition")) return true;
   const base = cardStates[cardKey(noteOf(key), "recognition")];
-  return !!base && base.ivl >= UNLOCK_IVL;
+  return !!base && base.ivl >= need;
 }
 
 /* At most one *new* card per note per day. A note's cards are siblings —
