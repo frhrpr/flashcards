@@ -135,6 +135,28 @@ def analyse(cards, log, notes):
             if not mature:
                 locked += 1
 
+    # One row per card he has actually met. Unseen cards have no record, so
+    # listing all 183 would bury the 22 that mean anything.
+    hist = defaultdict(list)
+    for e in sorted(log, key=lambda x: x["ts"]):
+        hist[e["card"]].append(e)
+    records = []
+    for key, st in cards.items():
+        h = hist.get(key, [])
+        again = sum(1 for e in h if e["grade"] == "again")
+        records.append({
+            "key": key, "note": note_of(key), "type": type_of(key),
+            "word": word.get(note_of(key), note_of(key)),
+            "gloss": gloss.get(note_of(key), ""),
+            "ivl": st.get("ivl", 0), "ease": st.get("ease", 0),
+            "reps": st.get("reps", 0), "due": st.get("due"),
+            "again": again, "seen": len(h),
+            "history": [(e["ts"], e["grade"]) for e in h],
+            "last": h[-1]["ts"] if h else None,
+        })
+    # Most trouble first: lapses, then the least-established cards.
+    records.sort(key=lambda r: (-r["again"], r["ivl"], r["word"]))
+
     sess = sessions(log)
     lengths = [(s[-1]["ts"] - s[0]["ts"]) / 60000 for s in sess if len(s) > 1]
     hours = Counter(datetime.fromtimestamp(s[0]["ts"] / 1000).hour for s in sess)
@@ -146,7 +168,7 @@ def analyse(cards, log, notes):
         median_minutes=sorted(lengths)[len(lengths) // 2] if lengths else 0,
         usual_hour=hours.most_common(1)[0][0] if hours else None,
         last_seen=days[-1] if days else None, today=today,
-        type_of=type_of, reviews=len(log),
+        type_of=type_of, reviews=len(log), records=records,
     )
 
 
@@ -182,7 +204,21 @@ def report(uid, a):
         for nid, miss, tot in a["hard"]:
             p(f"    {a['word'].get(nid, nid):<14} {a['gloss'].get(nid, ''):<18} "
               f"missed {miss} of {tot}")
+    p("\n  every card he has met, worst first"
+      "   (v = got it, x = missed, oldest on the left)")
+    p(f"    {'word':<13} {'type':<12} {'ivl':>4} {'ease':>5}  {'due':<12} history")
+    for r in a["records"]:
+        strip = "".join("v" if g == "good" else "x" for _, g in r["history"])
+        p(f"    {r['word']:<13} {r['type']:<12} {r['ivl']:>4} {r['ease']:>5.2f}  "
+          f"{due_in(r['due'], a['today']):<12} {strip}")
     p("")
+
+
+def due_in(due, today):
+    if due is None: return "—"
+    d = round((midnight(due) - today) / DAY)
+    return "today" if d == 0 else "tomorrow" if d == 1 else \
+           f"in {d} days" if d > 0 else f"{-d} day(s) late"
 
 
 def html(uid, a, dest):
@@ -199,6 +235,21 @@ def html(uid, a, dest):
                  f'<u style="width:{aw:.1f}%"></u></td>'
                  f'<td class=n>{tot}</td>'
                  f'<td class=n>{round(v["good"]/tot*100) if tot else 0}%</td></tr>')
+    rows_cards = ""
+    for r in a["records"]:
+        strip = "".join(
+            f'<b class="{"g" if g == "good" else "a"}" title="'
+            f'{datetime.fromtimestamp(ts/1000).strftime("%a %d %b %H:%M")}">'
+            f'{"✓" if g == "good" else "✗"}</b>' for ts, g in r["history"])
+        late = r["due"] is not None and midnight(r["due"]) < a["today"]
+        rows_cards += (
+            f'<tr class="{"warn" if r["again"] >= 3 else ""}">'
+            f'<td class=w>{esc(r["word"])}<em>{esc(r["gloss"])}</em></td>'
+            f'<td class=ty>{esc(r["type"])}</td>'
+            f'<td class=n>{r["ivl"]}</td>'
+            f'<td class="n {"low" if r["ease"] <= 1.5 else ""}">{r["ease"]:.2f}</td>'
+            f'<td class="n {"late" if late else ""}">{esc(due_in(r["due"], a["today"]))}</td>'
+            f'<td class=hist>{strip}</td></tr>')
     hard = "".join(
         f'<tr><td class=w>{esc(a["word"].get(n, n))}</td>'
         f'<td class=g>{esc(a["gloss"].get(n, ""))}</td>'
@@ -226,6 +277,18 @@ td.n{{text-align:right;font-family:ui-monospace,monospace;width:4.5rem}}
 td.w{{font-size:1rem}} td.g{{color:#6C736B;font-size:.8rem}}
 td.bar i,td.bar u{{display:inline-block;height:.7rem;vertical-align:middle}}
 td.bar i{{background:#2F6B3E}} td.bar u{{background:#A32C22}}
+table.cards th{{text-align:left;font-family:ui-monospace,monospace;font-size:.6rem;
+letter-spacing:.1em;text-transform:uppercase;color:#6C736B;font-weight:400;
+padding:.2rem .4rem;border-bottom:1px solid #C9CFC4}}
+table.cards th:nth-child(n+3){{text-align:right}}
+table.cards th:last-child{{text-align:left}}
+tr.warn td{{background:#F9F1F0}}
+td.w em{{display:block;font-style:normal;color:#6C736B;font-size:.72rem}}
+td.ty{{font-family:ui-monospace,monospace;font-size:.68rem;color:#6C736B}}
+td.n.low{{color:#A32C22;font-weight:700}} td.n.late{{color:#A32C22}}
+td.hist{{font-family:ui-monospace,monospace;letter-spacing:.08em;white-space:nowrap}}
+td.hist b{{font-weight:400;cursor:default}}
+td.hist b.g{{color:#2F6B3E}} td.hist b.a{{color:#A32C22}}
 </style>
 <h1>{esc(uid)}</h1>
 <div class=sub>last seen {esc(when)} · {a['streak']}-day streak · {a['reviews']} reviews all told</div>
@@ -241,6 +304,11 @@ td.bar i{{background:#2F6B3E}} td.bar u{{background:#A32C22}}
 <div class=box><table>{rows}</table></div>
 <h2>Giving him trouble</h2>
 <div class=box><table>{hard}</table></div>
+<h2>Every card he has met — {len(a['records'])} of {a['total_notes'] * 3}</h2>
+<div class=box><table class=cards>
+<tr><th>word</th><th>type</th><th>ivl</th><th>ease</th><th>due</th>
+<th>history — oldest first, hover for the date</th></tr>
+{rows_cards}</table></div>
 """
     (dest / "progress.html").write_text(page, encoding="utf-8")
     return dest / "progress.html"
