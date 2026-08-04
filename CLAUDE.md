@@ -136,6 +136,13 @@ notes`. `status` is `queued` → `known` → `carded`.
   reads as broken; that is a day-one problem, not a reason to top up every
   quiet day. All counted from `introduced` stamps on card state, so the
   numbers survive a reload and a second device.
+- **A note can drop a card type when that type is unanswerable.** `chodzić`
+  and `iść` are both "to go"; `siadać` and `siedzieć` are both about sitting.
+  Shown the English and asked for the Polish there are two right answers and
+  only one is marked correct, so those four notes carry no `production` card.
+  The distinction is real Polish and is taught in the `note` field and in
+  lessons — it is just not something a flashcard can grade. Check
+  `deck/notes.json` glosses for collisions before adding a word.
 - **Grammar words don't get cards.** `deck/vocab.csv` marks prepositions,
   conjunctions and similar `flashcard: no`. They still count as known and
   stay in the sentence allowlist — `na` is learned through the case it
