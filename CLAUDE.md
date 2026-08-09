@@ -77,9 +77,16 @@ notes`. `status` is `queued` → `known` → `carded`.
 - Firestore rule is deliberately wide open within one collection:
   `match /progress/{docId} { allow read, write: if true; }`
 - **SM-2-lite, two grades** (Again / Good) — not Anki's four. Ease starts
-  at 2.5, floors at 1.3, moves only on a lapse. Intervals 1 day, 6 days,
-  then `ivl * ease`. No sub-day learning steps. "Again" also splices the
-  card back into the session queue at `min(queue.length, 3)`.
+  at 2.5 and floors at 1.3. Intervals 1 day, 6 days, then `ivl * ease`. No
+  sub-day learning steps. "Again" also splices the card back into the session
+  queue at `min(queue.length, 3)`.
+- **Ease recovers, but only when earned.** A lapse costs 0.2; a correct
+  answer returns 0.15, and only from the third consecutive one — which is
+  also where ease starts affecting the interval. Ten correct answers in a row
+  climb from the floor back to 2.5. Ease used to fall only, so a word failed
+  during one bad fortnight stayed on short intervals permanently, long after
+  it was learned. With two grades there is no "Easy" button, so recovery has
+  to be inferred from a streak.
 - **Writes are deltas.** `updateDoc` with a field path for the one card that
   changed plus `arrayUnion` on the log. The old `setDoc` re-uploaded every
   card state and the whole log on every grade — hundreds of KB per button
