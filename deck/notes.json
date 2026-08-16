@@ -1643,6 +1643,131 @@
         "listening"
       ],
       "reviewed": true
+    },
+    {
+      "id": "moc",
+      "word": "móc",
+      "gloss": "can, to be able to",
+      "pos": "verb",
+      "ipa": "mut͡s",
+      "note": null,
+      "image_basis": "sentence",
+      "image_prompt": "A person at a table holding one hand up in a polite asking gesture towards a glass of water, clearly requesting it rather than taking it. Plain background, no text or lettering. Square image.",
+      "audio": "media/audio/moc.mp3",
+      "sentence": {
+        "pl": "Czy mogę mieć wodę?",
+        "en": "May I have some water?",
+        "gap": "Czy ___ mieć wodę?",
+        "answer": "mogę",
+        "answer_lemma": "móc",
+        "audio": "media/audio/moc__sentence.mp3"
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "czas",
+      "word": "czas",
+      "gloss": "time",
+      "pos": "noun",
+      "ipa": "t͡ʂas",
+      "note": null,
+      "image_basis": "word",
+      "image_prompt": "An hourglass with sand running through it, standing on a plain surface against a plain background. No clock face, no text or lettering. Square image.",
+      "audio": "media/audio/czas.mp3",
+      "sentence": {
+        "pl": "Czy masz czas?",
+        "en": "Do you have time?",
+        "gap": "Czy masz ___?",
+        "answer": "czas",
+        "answer_lemma": "czas",
+        "audio": "media/audio/czas__sentence.mp3"
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "miejsce",
+      "word": "miejsce",
+      "gloss": "place",
+      "pos": "noun",
+      "ipa": "ˈmjɛjst͡sɛ",
+      "note": null,
+      "image_basis": "word",
+      "image_prompt": "A single red circle marked on the grass in an open field, clearly marking one particular spot on the ground. Nothing else in frame, no text or lettering. Square image.",
+      "audio": "media/audio/miejsce.mp3",
+      "sentence": {
+        "pl": "To jest dobre miejsce.",
+        "en": "This is a good place.",
+        "gap": "To jest dobre ___.",
+        "answer": "miejsce",
+        "answer_lemma": "miejsce",
+        "audio": "media/audio/miejsce__sentence.mp3"
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "nowy",
+      "word": "nowy",
+      "gloss": "new",
+      "pos": "adjective",
+      "ipa": "ˈnɔvɨ",
+      "note": null,
+      "image_basis": "word",
+      "image_prompt": "Two footballs side by side on a plain white background: one brand new, clean and bright, one old, scuffed and grey. The new one stands at the front and in focus. No text or lettering. Square image.",
+      "audio": "media/audio/nowy.mp3",
+      "sentence": {
+        "pl": "Dziecko ma nową piłkę.",
+        "en": "The child has a new ball.",
+        "gap": "Dziecko ma ___ piłkę.",
+        "answer": "nową",
+        "answer_lemma": "nowy",
+        "audio": "media/audio/nowy__sentence.mp3"
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "stac",
+      "word": "stać",
+      "gloss": "to stand",
+      "pos": "verb",
+      "ipa": "stat͡ɕ",
+      "note": null,
+      "image_basis": "sentence",
+      "image_prompt": "A woman standing upright and still on a path in a green park, whole figure in frame, side on, daylight. One person only, no text or lettering. Square image.",
+      "audio": "media/audio/stac.mp3",
+      "sentence": {
+        "pl": "W parku stoi kobieta.",
+        "en": "A woman is standing in the park.",
+        "gap": "W parku ___ kobieta.",
+        "answer": "stoi",
+        "answer_lemma": "stać",
+        "audio": "media/audio/stac__sentence.mp3"
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
     }
   ]
 }

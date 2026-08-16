@@ -83,6 +83,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/czas.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-czas.ogg",
+    "fingerprint": "39dcfd5e11c08473",
+    "gain_db": -0.9,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-czas.ogg",
+    "seconds": 0.52,
+    "source": "commons",
+    "text": "czas"
+  },
+  "media/audio/czas__sentence.mp3": {
+    "fingerprint": "0c597445bb95ca32",
+    "gain_db": 0.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.86,
+    "source": "tts",
+    "text": "Czy masz czas?",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/czekac.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-czekać.ogg",
@@ -608,6 +629,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/miejsce.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-miejsce.ogg",
+    "fingerprint": "6bc68132da488281",
+    "gain_db": -4.6,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-miejsce.ogg",
+    "seconds": 1.04,
+    "source": "commons",
+    "text": "miejsce"
+  },
+  "media/audio/miejsce__sentence.mp3": {
+    "fingerprint": "30db0a52d2dd9d37",
+    "gain_db": 1.2,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.31,
+    "source": "tts",
+    "text": "To jest dobre miejsce.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/mleko.mp3": {
     "author": "Kajervi",
     "commons_file": "Pl-mleko.ogg",
@@ -626,6 +668,27 @@
     "seconds": 1.2,
     "source": "tts",
     "text": "Kupuję mleko w sklepie.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/moc.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-móc.ogg",
+    "fingerprint": "e5628abdd19ceed8",
+    "gain_db": 1.6,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-m%C3%B3c.ogg",
+    "seconds": 0.89,
+    "source": "commons",
+    "text": "móc"
+  },
+  "media/audio/moc__sentence.mp3": {
+    "fingerprint": "3ee71862b2ac4958",
+    "gain_db": -2.2,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.07,
+    "source": "tts",
+    "text": "Czy mogę mieć wodę?",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -668,6 +731,27 @@
     "seconds": 1.04,
     "source": "tts",
     "text": "To nie jest pies.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/nowy.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-nowy.ogg",
+    "fingerprint": "db406ff551ace989",
+    "gain_db": -5.2,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-nowy.ogg",
+    "seconds": 0.76,
+    "source": "commons",
+    "text": "nowy"
+  },
+  "media/audio/nowy__sentence.mp3": {
+    "fingerprint": "012434e90e3d070e",
+    "gain_db": -0.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.44,
+    "source": "tts",
+    "text": "Dziecko ma nową piłkę.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1026,6 +1110,27 @@
     "seconds": 1.23,
     "source": "tts",
     "text": "Ptak śpiewa w parku.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/stac.mp3": {
+    "author": "tsca",
+    "commons_file": "Pl-stać.ogg",
+    "fingerprint": "ae4c5c23a5123328",
+    "gain_db": 16.0,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-sta%C4%87.ogg",
+    "seconds": 0.82,
+    "source": "commons",
+    "text": "stać"
+  },
+  "media/audio/stac__sentence.mp3": {
+    "fingerprint": "ce4e84cb65c4bda0",
+    "gain_db": -0.6,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.28,
+    "source": "tts",
+    "text": "W parku stoi kobieta.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
