@@ -160,16 +160,16 @@ notes`. `status` is `queued` → `known` → `carded`.
 Working and deployed. Firebase config is live in `index.html` and
 `FIREBASE_READY` is true.
 
-`deck/notes.json` holds **61 complete, human-approved notes** — every word in
+`deck/notes.json` holds **66 complete, human-approved notes** — every word in
 `vocab.csv` marked `flashcard: yes`. Each has an image, word audio (human,
 from Wikimedia Commons, except `siadać` which is TTS), sentence audio, an
 example sentence with translation and gap, gloss, part of speech and IPA.
-Three cards each, 183 in total. Day one offers 10 recognition cards; the rest
-arrive at 3 new words a day with production and listening unlocking behind
-the maturity gate.
+194 cards; four notes carry no `production` card (see the gloss-collision
+rule above).
 
-Live since 2026-07-26 at `?u=evert`. One lesson taught (`lessons/`), whose
-ten words are carded.
+Live since 2026-07-26 at `?u=evert`, and he is using it — ~390 reviews over
+15 days, 90%+ correct in the most recent week. Three lessons taught, all in
+`lessons/`, and their words are carded.
 
 **No grammar metadata.** Gender, aspect, and declension tables were tried
 and deliberately removed: this trains vocabulary, not morphology, and
@@ -267,7 +267,10 @@ Deferred on purpose: 4 grades instead of 2, and a stats screen.
   `Downloads/flashcards/lessons/`. Cards are made **after** the lesson, so
   only words that actually landed get carded.
 - **The user spot-checks the Polish.** Generated sentences go to a real
-  student, so build a review step rather than trusting generation.
+  student, so build a review step rather than trusting generation. He caught
+  `Czy mogę mieć wodę?` as a calque — Polish uses `mieć` to possess, never to
+  request. Watch for English idioms carried over word-for-word; the validator
+  cannot see them and neither can the generator that wrote them.
 - **Use the implicit subject.** The allowlist contains no words for people,
   so sentences kept reaching for animals and came out absurd — a bird that
   walks, a dog fed milk. Polish drops pronouns, so a conjugated verb supplies
