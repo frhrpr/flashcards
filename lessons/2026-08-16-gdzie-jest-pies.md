@@ -10,7 +10,7 @@ straight narration would have modelled none of the target material.
 
 | word | | rank | why |
 | --- | --- | --- | --- |
-| móc | can, to be able to | 3 | *Czy mogę…?* — the polite request, and a top-3 verb |
+| móc | can, to be able to | 3 | *Czy mogę iść…?* — permission, and a top-3 verb |
 | czas | time | 5 | *Nie mam czasu* also drills genitive after negation |
 | miejsce | place | 17 | pairs with the lesson's `gdzie` |
 | nowy | new | 19 | direct contrast with `stary`, which is in the story |
@@ -43,13 +43,13 @@ Pod drzewem stoi pies. Pies czeka.
 
 Pies skacze. Dziecko daje psu nową piłkę.
 
-— Czy mogę mieć wodę? — mówi kobieta.
-— Nie, nie mamy wody. Ale mamy chleb.
+— Czy masz wodę? — mówi kobieta.
+— Nie, nie mam wody. Ale mam chleb.
 
 Ptaki są na drzewie. Śpiewają.
 
 — To jest dobre miejsce — mówi kobieta.
-— Tak. To jest dobry dzień — mówi dziecko.
+— Tak. Teraz możemy iść do domu — mówi dziecko.
 
 Potem dziecko i pies wracają drogą do domu.
 

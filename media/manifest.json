@@ -683,12 +683,12 @@
     "text": "móc"
   },
   "media/audio/moc__sentence.mp3": {
-    "fingerprint": "3ee71862b2ac4958",
-    "gain_db": -2.2,
+    "fingerprint": "d49baf319ebf2b7f",
+    "gain_db": -1.7,
     "model": "eleven_multilingual_v2",
-    "seconds": 1.07,
+    "seconds": 1.23,
     "source": "tts",
-    "text": "Czy mogę mieć wodę?",
+    "text": "Czy mogę iść do parku?",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1450,6 +1450,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/czas.webp": {
+    "bytes": 14550,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "3099379c4de3560a",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "An hourglass with sand running through it, standing on a plain surface against a plain background. No clock face, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/czekac.webp": {
     "bytes": 159590,
     "check": {
@@ -1850,6 +1866,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/miejsce.webp": {
+    "bytes": 216140,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "3b934858c1cf63f9",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A single red circle marked on the grass in an open field, clearly marking one particular spot on the ground. Nothing else in frame, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/mleko.webp": {
     "bytes": 5586,
     "check": {
@@ -1863,6 +1895,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A glass of milk on a plain light surface, plain background, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/moc.webp": {
+    "bytes": 34988,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "9f0962f4f92f07e0",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A child looking up questioningly at an adult and pointing along a path towards a green park, clearly asking permission to go. Daylight, plain background, no text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -1895,6 +1943,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A person holding up one flat palm in a clear stop gesture and shaking their head, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/nowy.webp": {
+    "bytes": 15092,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "f95c0382d2e92751",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Two footballs side by side on a plain white background: one brand new, clean and bright, one old, scuffed and grey. The new one stands at the front and in focus. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -2167,6 +2231,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A small bird perched on a tree branch singing, beak clearly open, in a green park in daylight. One bird only, no people, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/stac.webp": {
+    "bytes": 186366,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "4dd849b0073c8cbf",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A woman standing upright and still on a path in a green park, whole figure in frame, side on, daylight. One person only, no text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
