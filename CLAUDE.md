@@ -155,12 +155,15 @@ notes`. `status` is `queued` → `known` → `carded`.
   word learned, so the word count stays honest and `validate.py` skips the
   cross-check for them.
 
-  Three rules differ from ordinary notes. They are **not buried** — knowing
-  `jest` gives away nothing about `jestem`, and seeing the paradigm together
-  is the entire point. They are **introduced as a whole set**, one verb per
-  day, exempt from the word and sibling budgets, because six forms met on six
-  days are six unrelated facts. And they are **gated on the parent verb's**
+  Two rules differ from ordinary notes. They are **not buried** — knowing
+  `jest` gives away nothing about `jestem`, so when several do fall on the
+  same day the contrast is welcome. And they are **gated on the parent verb's**
   recognition card, having none of their own.
+
+  They draw on the *sibling* allowance, not the daily word budget: a form was
+  already taught in the lesson, so it is not new vocabulary. An earlier
+  version introduced a whole paradigm at once, exempt from both budgets; that
+  was removed as unnecessary for the same reason.
 
   This is a deliberate, bounded exception to the no-morphology rule. It
   applies to two irregular verbs whose forms *are* the vocabulary. Do not let

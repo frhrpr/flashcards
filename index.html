@@ -410,38 +410,22 @@ function unlocked(key){
 const started = new Set(Object.keys(cardStates).map(noteOf));
 const isForm = k => (NOTES[noteOf(k)] || {}).kind === "form";
 
-/* Conjugation drills arrive as a whole paradigm, not one form a day. Six
-   forms met on six separate days are six unrelated facts; met together they
-   are a system, which is the only reason to drill them at all. They are also
-   exempt from the per-note and per-word budgets — one verb's set is a single
-   introduction, and one verb per day. */
-const formsByParent = {};
-let lockedCount = 0;
-for (const k of allCards) {
-  if (cardStates[k] || !isForm(k)) continue;
-  if (!unlocked(k)) { lockedCount++; continue; }
-  (formsByParent[NOTES[noteOf(k)].parent] ||= []).push(k);
-}
-const formStartedToday = Object.entries(cardStates)
-  .some(([k, st]) => st.introduced === t && isForm(k));
-const parentsReady = Object.keys(formsByParent).sort();
-const formFresh = (formStartedToday || !parentsReady.length)
-  ? [] : formsByParent[parentsReady[0]];
-
 const freshSeen = new Set();
 const fresh = [];
-let words = 0, siblings = 0;
+let lockedCount = 0, words = 0, siblings = 0;
 for (const k of shuffle([...allCards])) {
-  if (cardStates[k] || isForm(k)) continue;
+  if (cardStates[k]) continue;
   if (!unlocked(k)) { lockedCount++; continue; }
   if (freshSeen.has(noteOf(k))) continue;          // one card per note per day
-  const isNewWord = !started.has(noteOf(k));
+  /* A conjugation drill is not new vocabulary — the form was taught in the
+     lesson — so it draws on the sibling allowance rather than the daily word
+     budget, and trickles in like any other card. */
+  const isNewWord = !isForm(k) && !started.has(noteOf(k));
   if (isNewWord ? words >= wordBudget : siblings >= siblingBudget) continue;
   isNewWord ? words++ : siblings++;
   freshSeen.add(noteOf(k));
   fresh.push(k);
 }
-fresh.push(...formFresh);
 
 let queue = [
   ...shuffle(allCards.filter(k => cardStates[k] && cardStates[k].due <= t))
