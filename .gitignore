@@ -31,3 +31,6 @@ media/img/*.part
 
 # smoke test scratch module
 .smoke.mjs
+
+# python bytecode from importing tools/ directly
+__pycache__/

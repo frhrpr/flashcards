@@ -4,8 +4,11 @@ Spaced-repetition vocab trainer for one adult student — Evert, 40s, A1/A2
 Polish. Repo: github.com/frhrpr/flashcards, served at
 https://frhrpr.github.io/flashcards/
 
-Same student as the sibling *sibilants* repo. That is a separate, unrelated
-tool — don't merge them.
+Two modes, one site, one Firestore document per student: **vocab**
+flashcards and **ear training** on minimal pairs. The ear trainer was a
+separate repo (`~/projects/Polish`, "sibilants") until 2026-08-18 and was
+merged in here; that repo is archived and its `CLAUDE.md` now points at
+this one.
 
 **The user does everything through Claude.** He does not edit these files by
 hand and should not be told to. He supplies words after a lesson, approves
@@ -24,13 +27,18 @@ media/audio/*.mp3   generated once and committed, never fetched per review
 media/img/*.webp    one image per note, 800px, generated
 media/manifest.json provenance for every media file — source, licence, checks
 media/ATTRIBUTION.md generated from the manifest; do not edit
+ear/raw/*/          source recordings, one folder per word, plus the master take
+ear/audio/*/        trimmed and levelled mp3s — generated, do not edit
+ear/manifest.json   which clips exist for which word — generated
 tools/validate.py   run after every change; exits non-zero if unshippable
-tools/smoke.mjs     renders every card face in node; run after touching index.html
+tools/smoke.mjs     renders every card face AND every ear trial in node
 tools/audio.py      Commons recordings for words, TTS for sentences
 tools/images.py     generate / fetch / assign images, and --check them
 tools/review.py     builds the approval page; records approvals
 tools/progress.py   how the student is getting on; reads Firestore over REST
 tools/deckio.py     shared loading, saving, attribution (not runnable)
+tools/ear_split.py  cuts one long take into ear/raw/<word>/; prints the read-aloud sheet
+tools/ear_build.py  ear/raw → ear/audio + ear/manifest.json (trim, level, encode)
 ```
 
 The app has deliberately **no build pipeline**. Tools under `tools/` generate
@@ -180,17 +188,117 @@ notes`. `status` is `queued` → `known` → `carded`.
   stay in the sentence allowlist — `na` is learned through the case it
   governs, not from a card saying "na = on".
 
+## Ear training
+
+Merged in from the sibilants repo on 2026-08-18. Forced-choice minimal
+pairs: hear a word, tap which of two you heard.
+
+- **A separate session, not cards in the vocab queue.** The interaction
+  models are opposites — a flashcard is revealed and self-graded, a minimal
+  pair is tapped and graded automatically — and they want different
+  schedulers. SM-2 pushes a known item toward long maintenance intervals,
+  which is exactly wrong for a perceptual skill measured across many
+  exemplars.
+- **The unit is the confusion pair, not the word.** `SETS` in `index.html`
+  declares contrast families; `PAIRS` expands each into its two-way
+  combinations at runtime, so `kos/kosz/koś` is three pairs. The old app
+  showed all three at once, which half-reports: a miss tells you which
+  confusion, but a hit only tells you he avoided both. And s-vs-sz is a
+  different skill from s-vs-ś — only pair-level state can see which one he
+  is failing, or aim the next trial at it.
+- **Twenty trials, shrinking.** Length is set by trial count, never by
+  mastery: if "done" meant clearing the failing pairs, a bad day would get
+  longer exactly when he is having the worst time. The block does shrink as
+  pairs retire — `clamp(round(20 * active / total), 6, 20)` — and that is
+  the reward.
+- **Sampling is weighted toward what he is currently failing**, and every
+  active pair is guaranteed one appearance before anything repeats. Both
+  were on the old repo's roadmap and never done; trials there were uniformly
+  random.
+- **Retirement at 9 of the last 10, and any miss un-retires.** Those two
+  rules only coexist if a retired pair's window *restarts* on a miss —
+  otherwise 10/10 followed by a miss is still 9/10 and the pair never comes
+  back. So it does restart. Once every pair has retired, a 6-trial
+  maintenance block from the longest-unseen pairs, at most every third day;
+  on other days the landing shows ear training as satisfied. Never offer a
+  mode you cannot fill.
+- **Firestore: two new top-level fields, and `cards` is untouched.**
+  `ear: { "kos|kosz": { seen, hist, last } }` where `hist` is the trailing
+  ten outcomes, and `done: { "<dayMs>": ["vocab","ear"] }` pruned at 90 days.
+  Putting pair items in `cards` would entangle a perceptual drill with the
+  daily budgets, the unlock gates and sibling burying for no gain and real
+  risk to live progress. Burying needs no exemption as a result: `kasa` is
+  both a vocab note and an ear word, but an ear trial never touches `queue`.
+- **Ear keys need `FieldPath`.** They carry `|` and `-`, and `done` keys are
+  bare digits; none are legal in an unquoted dotted field path, so ear writes
+  use `new FieldPath("ear", key)` rather than a template string. Renaming the
+  ids to dodge this was rejected — the ids are `ear/raw/` folder names, and
+  renaming them orphans the recordings.
+- **One log shape.** Ear entries are `{card: "kos__ear", grade, ts, chose, vs}`.
+  Keying `<word>__ear` matches `${noteId}__${cardType}`, and keeping `grade`
+  means the day buckets, the streak and the sittings split in `progress.py`
+  work untouched — attendance is unified for free. `chose` powers the
+  confusion matrix. `vs` names the distractor, and is a deliberate addition
+  to the merge plan's shape: on a correct answer `chose == played`, so
+  without it the pair a trial belonged to is unrecoverable from the log and
+  only the ten-trial window could say anything about it.
+- **One streak, not two**, derived from the shared log's day buckets. Two
+  streaks would let a good day on one side visibly break the other's,
+  manufacturing a failure out of a success. The per-mode breakdown is fully
+  available to the teacher because the log is granular; this is a display
+  decision only.
+- **The landing states each mode's size**, and a satisfied mode is greyed and
+  not tappable — tapping in and landing on "nothing due" reads as broken
+  rather than finished. When both are open ear training gets the visual
+  default: it is short, it is a warm-up, and there is no
+  did-I-remember-this pressure in it. Completion is read from `done`, not
+  session state, so a reload or his other device does not re-offer it.
+- **`FALLBACK_TTS` is gone.** It existed so the app was testable before any
+  audio existed. Worse than useless now: for c/cz/ć before recordings exist
+  it would drill him against a TTS voice that may not render the contrast at
+  all. Skipping sets with no audio is the right fallback and already works.
+- **Pairs are not vocabulary.** Like `kind: "form"` notes they never enter
+  `deck/vocab.csv`, so the word count stays honest. They live in `WORDS` and
+  `SETS` in `index.html` rather than a JSON file because `ear_build.py` and
+  `ear_split.py` parse them straight out of it.
+- The old per-browser `localStorage` stats (`pl-sibilants-v1`) were dropped
+  rather than migrated — per-browser, modest, and never reached the teacher.
+
+### Recording new pairs
+
+1. Add the words to `WORDS` and the row to `SETS` in `index.html`. They ship
+   immediately and are skipped until audio exists.
+2. `python3 tools/ear_split.py` — writes `ear/raw/_RECORD_ORDER.txt`, which
+   marks what is already recorded and prints the `--subset` line for the rest.
+3. He reads the unmarked words into one take, ~1 s of silence between each.
+4. `python3 tools/ear_split.py take.wav --subset a,b,c` then
+   `python3 tools/ear_build.py`. The split refuses to write anything if the
+   number of segments it finds disagrees with the number of words expected,
+   so a miscount can never quietly shift every word into the wrong folder.
+
+The 150 ms silence pad and the RMS levelling in `ear_build.py` are tuned for
+frication onsets and have nothing to do with `tools/audio.py`. The ffmpeg
+version check in both scripts must survive: it exists because an ancient 2013
+`ffmpeg.exe` in `Python310\Scripts` once shadowed the real one on this user's
+PATH and every call failed confusingly.
+
 ## Current state
 
 Working and deployed. Firebase config is live in `index.html` and
 `FIREBASE_READY` is true.
 
-`deck/notes.json` holds **66 complete, human-approved notes** — every word in
+`deck/notes.json` holds **78 complete, human-approved notes** — 66 words, every
+one in
 `vocab.csv` marked `flashcard: yes`. Each has an image, word audio (human,
 from Wikimedia Commons, except `siadać` which is TTS), sentence audio, an
 example sentence with translation and gap, gloss, part of speech and IPA.
-194 cards; four notes carry no `production` card (see the gloss-collision
-rule above).
+plus 12 `kind: "form"` conjugation drills. 206 cards across four types
+(66 recognition, 66 listening, 62 production, 12 form); four notes carry no
+`production` card (see the gloss-collision rule above).
+
+Ear training holds **24 minimal pairs** derived from 18 contrast sets, of
+which 16 have recordings. The 8 c/cz/ć pairs are approved and shipped in
+`WORDS`/`SETS` but unrecorded, so the app skips them until the audio lands.
 
 Live since 2026-07-26 at `?u=evert`, and he is using it — ~390 reviews over
 15 days, 90%+ correct in the most recent week. Three lessons taught, all in
@@ -214,8 +322,8 @@ be listed and deleted from here:
 ## Roadmap
 
 Full Anki-style notes: image, audio, IPA, example sentence, gapped sentence
-part of speech, short Polish definition. One note produces three cards
-(recognition, production, listening).
+part of speech, short Polish definition. One note produces up to four cards
+(recognition, production, listening, and `form` for conjugation drills).
 
 Decided so far:
 
@@ -282,8 +390,13 @@ Deferred on purpose: 4 grades instead of 2, and a stats screen.
 - **`node --check` is not enough for index.html.** It parses; it does not
   resolve names, so it passes a file that calls a function an edit has
   deleted. That happened. Run `node tools/smoke.mjs` after any change to
-  the app — it renders every card face against the real deck and catches
-  it in a second.
+  the app — it renders every card face against the real deck, drives a whole
+  ear session, and catches it in a second. It works by slicing three regions
+  out of `index.html` between literal markers rather than copying them, so it
+  cannot drift; if a marker moves it fails loudly. A slice must not end
+  inside a comment — one did, silently commenting out the block after it,
+  which is why `/* ── end of ear content ── */` exists as an explicit
+  boundary.
 - **Verify, don't assume.** Check `git log`, `git status`, and the actual
   file contents. This file has been wrong before.
 - **Fail loudly.** The user has asked explicitly for the pipeline to be

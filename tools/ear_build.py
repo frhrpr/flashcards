@@ -1,0 +1,308 @@
+#!/usr/bin/env python3
+"""
+Builds ear/audio/ and ear/manifest.json from whatever is sitting in ear/raw/.
+
+    python3 tools/ear_build.py
+
+    ear/raw/kos/anything.mp3      ->  ear/audio/kos/anything.mp3  (trimmed, levelled)
+    ear/raw/kos/anna__take2.wav   ->  ear/audio/kos/anna__take2.mp3
+    ear/raw/kos-acute/...
+
+Folder name = the word key in index.html. Filenames inside are free.
+A "speaker__" prefix is optional; if present it's used to keep the
+listen-to-both comparison on one voice.
+
+Standard library only. ffmpeg is used if present; without it files are
+copied through unchanged and you get a warning.
+"""
+
+import json
+import os
+import re
+import shutil
+import subprocess
+import sys
+from pathlib import Path
+
+# ── settings ────────────────────────────────────────────────────────
+ROOT        = Path(__file__).resolve().parent.parent
+RAW         = ROOT / "ear/raw"
+OUT         = ROOT / "ear/audio"
+MANIFEST    = ROOT / "ear/manifest.json"
+INDEX       = ROOT / "index.html"
+
+PROCESS     = True      # False = copy raw files through untouched
+TRIM        = True      # trim leading/trailing silence
+TARGET_RMS  = -20.0     # dBFS
+PEAK_CEIL   = -1.0      # dBFS, gain is clamped so peaks never exceed this
+TRIM_THRESH = "-50dB"   # conservative: sibilant frication is quiet but not silent
+TRIM_PAD    = 0.15      # seconds of silence kept before onset — the safety margin
+BITRATE     = "64k"
+SAMPLE_RATE = "44100"
+
+AUDIO_EXT = {".mp3", ".wav", ".m4a", ".ogg", ".opus", ".flac", ".aac", ".aiff", ".aif", ".wma", ".webm"}
+SPEAKER_SEP = "__"
+
+# ── plumbing ────────────────────────────────────────────────────────
+class Report:
+    def __init__(self):
+        self.lines, self.warnings, self.errors = [], [], []
+    def say(self, s):   self.lines.append(s);    print(s)
+    def warn(self, s):  self.warnings.append(s); print("  ! " + s)
+    def err(self, s):   self.errors.append(s);   print("  X " + s)
+
+R = Report()
+
+
+def have_ffmpeg():
+    return shutil.which("ffmpeg") is not None and shutil.which("ffprobe") is not None
+
+
+def ffmpeg_too_old():
+    """Presence isn't enough — a genuinely ancient build (pre-2014) rejects
+    flags this script relies on and fails in ways that look like a levels
+    problem. Catch that here, once, with a clear message."""
+    p = run(["ffmpeg", "-hide_banner", "-version"])
+    if p.returncode == 0:
+        return None
+    path = shutil.which("ffmpeg") or "(not found)"
+    ver = run(["ffmpeg", "-version"])
+    first_line = ver.stdout.splitlines()[0] if ver.stdout else "(couldn't even get a version string)"
+    return (f"The ffmpeg on your PATH is too old for this script.\n"
+            f"    Location: {path}\n"
+            f"    Reports:  {first_line}\n\n"
+            f"    Likely a leftover from an old Audacity install still sitting earlier on\n"
+            f"    PATH than anything newer. Fix: winget install Gyan.FFmpeg (or brew install\n"
+            f"    ffmpeg on Mac), then make sure that one is what 'ffmpeg' resolves to.\n"
+            f"    'Get-Command ffmpeg -All' in PowerShell lists every copy in PATH order.")
+
+
+def run(args):
+    return subprocess.run(args, capture_output=True, text=True,
+                          encoding="utf-8", errors="replace")
+
+
+def duration(path):
+    p = run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+             "-of", "default=nw=1:nk=1", str(path)])
+    try:
+        return float(p.stdout.strip())
+    except ValueError:
+        return None
+
+
+def measure(path):
+    """Returns (mean_dB, max_dB) via volumedetect."""
+    p = run(["ffmpeg", "-hide_banner", "-i", str(path),
+             "-af", "volumedetect", "-f", "null", "-"])
+    mean = re.search(r"mean_volume:\s*(-?\d+(?:\.\d+)?) dB", p.stderr)
+    peak = re.search(r"max_volume:\s*(-?\d+(?:\.\d+)?) dB", p.stderr)
+    return (float(mean.group(1)) if mean else None,
+            float(peak.group(1)) if peak else None)
+
+
+def words_from_index():
+    """Pull word keys, spellings and glosses out of index.html so we can flag
+    mismatches and write a reference list. Best effort — if the parse fails we
+    just skip those steps."""
+    try:
+        text = INDEX.read_text(encoding="utf-8")
+    except OSError:
+        return None
+    block = re.search(r"const WORDS\s*=\s*\{(.*?)\n\};", text, re.S)
+    if not block:
+        return None
+    out = {}
+    pat = re.compile(r'"([^"]+)"\s*:\s*\{\s*w\s*:\s*\[([^\]]*)\]\s*,\s*g\s*:\s*"([^"]*)"')
+    for key, warr, gloss in pat.findall(block.group(1)):
+        parts = re.findall(r'"([^"]*)"', warr)
+        out[key] = ("".join(parts), gloss)
+    return out or None
+
+
+def write_word_list(words):
+    """Drop a plain-text crib sheet into ear/raw/ so the folder names are
+    self-documenting."""
+    w1 = max(len(k) for k in words)
+    w2 = max(len(v[0]) for v in words.values())
+    lines = [
+        "Folder names and what goes in them.",
+        "Regenerated by ear_build.py every run — edit WORDS in index.html, not this file.",
+        "",
+        f"{'folder'.ljust(w1)}  {'word'.ljust(w2)}  meaning",
+        f"{'-' * w1}  {'-' * w2}  -------",
+    ]
+    for key in sorted(words, key=lambda k: words[k][0]):
+        word, gloss = words[key]
+        lines.append(f"{key.ljust(w1)}  {word.ljust(w2)}  {gloss}")
+    lines += ["", f"{len(words)} words. Filenames inside each folder don't matter.",
+              "Optional speaker tag: name a file  anna__whatever.mp3"]
+    (RAW / "_WORDS.txt").write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def speaker_of(stem):
+    if SPEAKER_SEP in stem:
+        spk = stem.split(SPEAKER_SEP, 1)[0].strip()
+        if spk:
+            return spk
+    return None
+
+
+def safe_name(stem):
+    s = re.sub(r"[^A-Za-z0-9._-]+", "-", stem).strip("-")
+    return s or "clip"
+
+
+# ── per-file processing ─────────────────────────────────────────────
+def process(src_path, dst_path, ff):
+    """Returns a dict of stats, or None on failure."""
+    if not ff or not PROCESS:
+        shutil.copy2(src_path, dst_path.with_suffix(src_path.suffix))
+        return {"copied": True, "out": dst_path.with_suffix(src_path.suffix)}
+
+    dur_in = duration(src_path)
+    tmp = dst_path.with_suffix(".tmp.wav")
+
+    # 1. trim, to an intermediate wav so we only encode to mp3 once
+    if TRIM:
+        sr = (f"silenceremove=start_periods=1:start_duration=0:"
+              f"start_threshold={TRIM_THRESH}:start_silence={TRIM_PAD}:detection=peak")
+        af = f"{sr},areverse,{sr},areverse"
+    else:
+        af = "anull"
+    p = run(["ffmpeg", "-hide_banner", "-y", "-i", str(src_path),
+             "-af", af, "-ac", "1", "-ar", SAMPLE_RATE, str(tmp)])
+    if p.returncode != 0 or not tmp.exists():
+        R.err(f"{src_path.name}: ffmpeg failed on trim step")
+        tmp.unlink(missing_ok=True)
+        return None
+
+    dur_out = duration(tmp)
+
+    # 2. measure and work out the gain
+    mean, peak = measure(tmp)
+    if mean is None or peak is None or mean < -80:
+        gain = 0.0
+        R.warn(f"{src_path.name}: could not measure level, left as-is")
+    else:
+        gain = TARGET_RMS - mean
+        gain = min(gain, PEAK_CEIL - peak)   # never clip
+        gain = max(-24.0, min(24.0, gain))   # sanity rails
+
+    # 3. apply gain, encode
+    p = run(["ffmpeg", "-hide_banner", "-y", "-i", str(tmp),
+             "-af", f"volume={gain:.2f}dB",
+             "-c:a", "libmp3lame", "-b:a", BITRATE, "-ac", "1", "-ar", SAMPLE_RATE,
+             str(dst_path)])
+    tmp.unlink(missing_ok=True)
+    if p.returncode != 0 or not dst_path.exists():
+        R.err(f"{src_path.name}: ffmpeg failed on encode step")
+        return None
+
+    return {"copied": False, "out": dst_path, "gain": gain,
+            "dur_in": dur_in, "dur_out": dur_out}
+
+
+# ── main ────────────────────────────────────────────────────────────
+def main():
+    ff = have_ffmpeg()
+    old_reason = ffmpeg_too_old() if ff else None
+    if old_reason:
+        ff = False
+    RAW.mkdir(exist_ok=True)
+
+    known = words_from_index()
+    if known is None:
+        R.warn("couldn't read word list from index.html — skipping name checks")
+    else:
+        for k in sorted(known):
+            (RAW / k).mkdir(parents=True, exist_ok=True)   # so empty folders are visible
+        write_word_list(known)
+
+    if old_reason:
+        R.warn("ffmpeg found, but it's too old to use — copying files through with no "
+               "trimming or levelling.")
+        for line in old_reason.splitlines():
+            R.warn(line) if line.strip() else None
+    elif not ff:
+        R.warn("ffmpeg not found — copying files through with no trimming or levelling.")
+        R.warn("Install it (winget install Gyan.FFmpeg  /  brew install ffmpeg) and re-run.")
+
+    if OUT.exists():
+        shutil.rmtree(OUT)
+    OUT.mkdir()
+
+    folders = sorted(d for d in RAW.iterdir() if d.is_dir())
+    if not folders:
+        R.err("ear/raw/ has no word folders. Nothing to do.")
+        return 1
+
+    words, n_files, trims, unknown, empty, speakers = {}, 0, [], [], [], set()
+
+    for folder in folders:
+        key = folder.name
+        if known is not None and key not in known:
+            unknown.append(key)
+
+        clips = sorted(f for f in folder.iterdir()
+                       if f.is_file() and f.suffix.lower() in AUDIO_EXT)
+        if not clips:
+            empty.append(key)
+            continue
+
+        (OUT / key).mkdir(parents=True, exist_ok=True)
+        entries = []
+        for clip in clips:
+            stem = safe_name(clip.stem)
+            spk = speaker_of(clip.stem)
+            if spk:
+                speakers.add(spk)
+            res = process(clip, OUT / key / (stem + ".mp3"), ff)
+            if not res:
+                continue
+            rel = res["out"].relative_to(ROOT).as_posix()
+            entries.append({"f": rel, "spk": spk})
+            n_files += 1
+            if not res["copied"] and res.get("dur_in") and res.get("dur_out"):
+                trims.append((clip.name, res["dur_in"] - res["dur_out"], res["dur_out"]))
+
+        if entries:
+            words[key] = entries
+        else:
+            empty.append(key)
+
+    MANIFEST.write_text(json.dumps({"words": words}, ensure_ascii=False, indent=1),
+                        encoding="utf-8")
+
+    # ── report ──────────────────────────────────────────────────────
+    print()
+    R.say(f"{len(words)} words · {n_files} recordings"
+          + (f" · {len(speakers)} speakers tagged ({', '.join(sorted(speakers))})" if speakers else ""))
+
+    if empty:
+        R.warn(f"no audio yet: {', '.join(sorted(set(empty)))}")
+        R.warn("  questions using these words will be skipped in the app")
+    if unknown:
+        R.warn(f"folders that match no word in index.html: {', '.join(sorted(unknown))}")
+        R.warn("  typo in the folder name, or a word you still need to add to WORDS")
+
+    if trims:
+        big = [t for t in trims if t[1] > 1.5]
+        short = [t for t in trims if t[2] < 0.25]
+        avg = sum(t[1] for t in trims) / len(trims)
+        R.say(f"trimmed {avg:.2f}s of silence per clip on average")
+        for name, cut, out_len in sorted(big, key=lambda t: -t[1])[:8]:
+            R.warn(f"{name}: cut {cut:.2f}s — check it still sounds whole")
+        for name, cut, out_len in sorted(short, key=lambda t: t[2])[:8]:
+            R.warn(f"{name}: only {out_len:.2f}s left — the onset may have been clipped")
+
+    if R.errors:
+        print(f"\n{len(R.errors)} file(s) failed. Fix or remove them and re-run.")
+        return 1
+
+    print("\near/manifest.json written. Commit it with the audio.")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

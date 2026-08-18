@@ -1,4 +1,4 @@
-/* Render every card face against the real deck, in node.
+/* Render every card face and every ear trial against the real deck, in node.
  *
  *     node tools/smoke.mjs
  *
@@ -8,8 +8,8 @@
  * button before dying on a missing `side()`. This catches that class of
  * fault by actually running the render functions.
  *
- * The functions are sliced out of index.html rather than copied, so the test
- * cannot drift from the code. If the markers move, this fails loudly.
+ * The code is sliced out of index.html rather than copied, so the test
+ * cannot drift from the app. If the markers move, this fails loudly.
  */
 import fs from "fs";
 import path from "path";
@@ -18,39 +18,74 @@ import { fileURLToPath } from "url";
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const src = fs.readFileSync(path.join(ROOT, "index.html"), "utf8");
 const deck = JSON.parse(fs.readFileSync(path.join(ROOT, "deck/notes.json"), "utf8"));
+const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, "ear/manifest.json"), "utf8"));
 
-const FROM = 'const barEl = $("#bar");';
-const TO = "function grade(g){";
-if (!src.includes(FROM) || !src.includes(TO)) {
-  console.error(`smoke: cannot find the render block markers in index.html\n` +
-                `  looked for ${JSON.stringify(FROM)} and ${JSON.stringify(TO)}`);
-  process.exit(1);
-}
+/* Each slice is [from, to); `to` is left out of the slice. */
+const SLICES = [
+  ["const WORDS = {", "/* ── end of ear content ──"],
+  ['const barEl = $("#bar");', "function grade(g){"],
+  ["/* ══ ear training ══", "/* ══ boot ══"],
+];
+const cut = ([from, to]) => {
+  const a = src.indexOf(from), b = src.indexOf(to);
+  if (a < 0 || b < 0 || b < a) {
+    console.error(`smoke: cannot find slice markers in index.html\n` +
+                  `  looked for ${JSON.stringify(from)} and ${JSON.stringify(to)}`);
+    process.exit(1);
+  }
+  return src.slice(a, b);
+};
+
+/* A DOM element stub rich enough for the render paths: they set innerHTML,
+   toggle classes, read children and attach listeners, and nothing else. */
+const el = () => ({
+  innerHTML: "", textContent: "", className: "", disabled: false,
+  style: {}, dataset: {},
+  classList: { add(){}, remove(){}, toggle(){} },
+  firstElementChild: { style: {} },
+  children: new Proxy({}, { get: () => ({ className: "" }) }),
+  addEventListener(){}, querySelectorAll: () => [], querySelector: () => el(),
+});
 
 const stubs = `
 const MS_DAY = 86400000;
 const t = (() => { const d = new Date(); d.setHours(0,0,0,0); return d.getTime(); })();
+const TEST_MODE = true;
 const NOTES = ${JSON.stringify(Object.fromEntries(deck.notes.map(n => [n.id, n])))};
 const allCards = ${JSON.stringify(deck.notes.flatMap(n =>
   (n.cards || []).map(c => `${n.id}__${c}`)))};
 const noteOf = k => k.slice(0, k.lastIndexOf("__"));
 const typeOf = k => k.slice(k.lastIndexOf("__") + 2);
 let cardStates = {}, reviewLog = [], fresh = [], lockedCount = 0;
-let queue = [], current = null, revealed = false, writeError = null;
+let earStates = {}, doneDays = {};
+let queue = [], current = null, revealed = false, writeError = null, earLoadError = null;
+let writeChain = Promise.resolve(), docExists = false;
+const docRef = {}, arrayUnion = (...a) => a, FieldPath = function(){};
+const updateDoc = async () => {}, firstWrite = async () => {};
+const logBytes = () => JSON.stringify(reviewLog).length;
+let rndSeed = 12345;
+const rand = () => (rndSeed = (rndSeed * 1103515245 + 12345) % 2147483648) / 2147483648;
+const shuffle = a => { for (let i = a.length - 1; i > 0; i--) {
+  const j = Math.floor(rand() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const fetch = async () => ({ ok: true, json: async () => (${JSON.stringify(manifest)}) });
 let html = "";
-const appEl = { set innerHTML(v){ html = v; }, get innerHTML(){ return html; } };
+const appEl = { set innerHTML(v){ html = v; }, get innerHTML(){ return html; },
+  querySelectorAll: () => [], querySelector: () => ${"({ children: new Proxy({}, { get: () => ({ className: \"\" }) }) })"} };
 const countEl = { textContent: "" };
+const _stub = ${el.toString()};
+const $ = sel => sel === "#bar" ? _barStub : _stub();
 const _barStub = { className: "", firstElementChild: { style: {} } };
-const $ = sel => sel === "#bar" ? _barStub : ({ addEventListener(){} });
 const Image = function(){ return { set src(_v){} }; };
 const Audio = function(){ return { play: () => Promise.resolve() }; };
 const grade = () => {};
 const renderWarning = () => {};
+const renderCard_ = null;
 `;
 
-const body = src.slice(src.indexOf(FROM), src.indexOf(TO));
-const mod = `${stubs}\n${body}
-export { renderStart, renderDone };
+const mod = `${stubs}
+${SLICES.map(cut).join("\n")}
+export { renderDone, renderLanding, startEar, earPlan, nextEarTrial, answerEar };
+export const state = () => ({ html, PAIRS, livePairs, earQueue, earIdx, earStates });
 export function face(key, side){
   current = key; queue = [key]; revealed = false;
   renderCard();
@@ -97,10 +132,36 @@ try {
             `${n.id} listening front hides word and gloss`);
     }
   }
-  m.renderStart(); check(true, "renderStart runs");
-  m.renderDone();  check(true, "renderDone runs");
+
+  // ── ear training ────────────────────────────────────────────────
+  const s0 = m.state();
+  check(s0.PAIRS.length > 0, `${s0.PAIRS.length} minimal pairs derived from SETS`);
+  check(s0.livePairs.length > 0, `${s0.livePairs.length} of them have recordings`);
+  check(s0.PAIRS.every(p => p.length === 2), "every trial is a two-way choice");
+
+  // Drive a whole session: the queue builder, every trial face, grading,
+  // the trailing window, and the closing screen.
+  m.startEar();
+  let guard = 0;
+  while (m.state().earIdx < m.state().earQueue.length && guard++ < 200) {
+    const st = m.state();
+    const tr = st.earQueue[st.earIdx];
+    const out = st.html;
+    check(out.includes("opt-word") && !out.includes("undefined"),
+          `ear ${tr.key} trial renders cleanly`);
+    // Alternate right and wrong so both feedback paths and both branches of
+    // the retirement rule get exercised.
+    m.answerEar(st.earIdx % 2 ? tr.other : tr.target);
+    m.nextEarTrial();
+  }
+  check(guard < 200, "ear session terminates");
+  check(m.state().html.includes("done-h"), "ear closing screen renders");
+  check(Object.keys(m.state().earStates).length > 0, "ear state was recorded");
+
+  m.renderDone();    check(true, "renderDone runs");
+  m.renderLanding(); check(true, "renderLanding runs");
 } finally {
-  fs.unlinkSync(tmp);
+  if (!process.env.SMOKE_KEEP) fs.unlinkSync(tmp);
 }
 
 console.log(fail ? `\n${fail} FAILED` : `\nall render faces ok`);

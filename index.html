@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Polish vocab</title>
+<title>Polish practice</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -77,12 +77,69 @@ button{font-family:inherit;cursor:pointer;border-radius:4px}
 .grades button{flex:1;padding:1rem;border:1px solid var(--line);background:var(--card);font-family:var(--mono);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase}
 .g-again{color:var(--bad)} .g-again:hover{border-color:var(--bad)}
 .g-good{color:var(--ok)} .g-good:hover{border-color:var(--ok)}
+
+/* ── landing: pick a mode ─────────────────────────────────────────── */
+.modes{display:flex;flex-direction:column;gap:.6rem;margin-bottom:1.25rem}
+.mode{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;
+  width:100%;text-align:left;background:var(--card);border:1px solid var(--line);
+  padding:1.1rem 1.25rem;color:var(--ink)}
+.mode:hover{border-color:var(--dim)}
+.mode-n{font-size:1.1rem;font-weight:300}
+.mode-sub{font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;color:var(--dim);text-align:right}
+.mode.lead{background:var(--ink);border-color:var(--ink);color:var(--card)}
+.mode.lead .mode-sub{color:var(--line)}
+.mode.is-done{background:none;border-style:dashed;color:var(--dim);cursor:default}
+.mode.is-done:hover{border-color:var(--line)}
+.mode.is-done .mode-n{font-weight:400}
+
+/* ── ear training ─────────────────────────────────────────────────── */
+.ticks{display:flex;gap:3px;margin-bottom:1rem}
+.ticks i{flex:1;height:3px;background:var(--line)}
+.ticks i.hit{background:var(--ink)}
+.ticks i.miss{background:var(--bad)}
+.player{width:100%;background:var(--card);border:1px solid var(--line);
+  padding:1.5rem 1rem 1.1rem;margin-bottom:1.25rem;display:block;color:var(--ink)}
+.player:hover{border-color:var(--dim)}
+.bars{display:flex;align-items:flex-end;justify-content:center;gap:2px;height:52px}
+.bars span{width:3px;background:var(--dim);opacity:.45;transform-origin:bottom;transition:opacity .2s}
+.player.playing .bars span{opacity:1;background:var(--ink);animation:hiss .55s ease-in-out infinite alternate}
+@keyframes hiss{from{transform:scaleY(.35)}to{transform:scaleY(1.35)}}
+@media (prefers-reduced-motion:reduce){.player.playing .bars span{animation:none}}
+.player-label{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--dim);margin-top:1rem;text-align:center;display:block}
+.opts{display:flex;flex-direction:column;gap:.6rem}
+.opt{width:100%;text-align:left;background:var(--card);border:1px solid var(--line);
+  padding:.95rem 1.1rem;display:flex;align-items:center;gap:1rem;color:var(--ink)}
+.opt:hover:not(:disabled){border-color:var(--dim)}
+.opt-main{flex:1;min-width:0}
+.opt-word{font-size:1.7rem;line-height:1.15;font-weight:300;color:var(--dim);display:block}
+.opt-word mark{background:none;color:var(--ink);font-weight:700}
+.opt-gloss{font-family:var(--mono);font-size:.74rem;color:var(--dim);margin-top:.3rem;display:block}
+.opt-ipa{font-family:var(--mono);font-size:.9rem;color:var(--dim)}
+.opt:disabled{cursor:default;opacity:1}
+.opt.correct{border-color:var(--ok);background:#F1F7F1}
+.opt.correct .opt-ipa{color:var(--ok)}
+.opt.wrong{border-color:var(--bad);background:#FBF1F0}
+.opt.wrong .opt-ipa{color:var(--bad)}
+.opt.faded{opacity:.4}
+.verdict{font-family:var(--mono);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;
+  margin:1.25rem 0 .5rem;text-align:center;min-height:1.1rem}
+.verdict.ok{color:var(--ok)} .verdict.bad{color:var(--bad)}
+.compare{display:flex;gap:.6rem;margin-top:.75rem}
+.compare button{flex:1;background:none;border:1px solid var(--line);padding:.7rem .4rem;color:var(--ink)}
+.compare button:hover{border-color:var(--dim)}
+.compare .lbl{font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--dim);display:block}
+.compare .wd{font-size:1.15rem;display:block;margin-top:.25rem}
+.missed{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:.78rem;margin-top:.5rem}
+.missed td{padding:.4rem .3rem;text-align:left;border-bottom:1px solid var(--line);color:var(--dim)}
+.missed td:last-child{text-align:right}
 </style>
 </head>
 <body>
 <div class="wrap">
   <div class="top">
-    <span class="eyebrow">Polish vocab</span>
+    <span class="eyebrow" id="mode-label">Polish</span>
     <span class="eyebrow" id="count"></span>
   </div>
   <div id="bar"><i></i></div>
@@ -106,9 +163,113 @@ const firebaseConfig = {
 };
 
 /* ══════════════════════════════════════════════════════════════════
-   Below here you shouldn't need to touch anything for now. The deck
-   lives in deck/notes.json — adding a word means editing that file,
-   not this one. Run tools/validate.py after any edit.
+   EAR TRAINING CONTENT — the one part of this file meant to be edited.
+
+   Vocabulary lives in deck/notes.json, but minimal pairs live here,
+   because tools/ear_build.py and tools/ear_split.py read the WORDS and
+   SETS literals straight out of this file, to name the recording folders
+   and to print the record-order sheet. Both parse them with a regex that
+   wants each declaration opened on its own line and closed on a line of
+   its own; keep the shape below and they keep working.
+
+   Pairs are not vocabulary — like kind:"form" notes they never enter
+   deck/vocab.csv, so the word count stays honest.
+
+   w:  [before, the consonant, after] — the middle part gets highlighted
+   s:  which sound, for the IPA badge and the confusion matrix
+   g:  English gloss
+   ══════════════════════════════════════════════════════════════════ */
+const WORDS = {
+  "kos":        {w:["ko","s",""],    g:"blackbird",           s:"s"},
+  "kosz":       {w:["ko","sz",""],   g:"basket",              s:"sz"},
+  "kos-acute":  {w:["ko","ś",""],    g:"mow! (imperative)",   s:"si"},
+
+  "pas":        {w:["pa","s",""],    g:"belt",                s:"s"},
+  "pasz":       {w:["pa","sz",""],   g:"of fodder",           s:"sz"},
+  "pas-acute":  {w:["pa","ś",""],    g:"graze! (imperative)", s:"si"},
+
+  "kasa":       {w:["ka","s","a"],   g:"till, cash desk",     s:"s"},
+  "kasza":      {w:["ka","sz","a"],  g:"groats, kasha",       s:"sz"},
+  "kasia":      {w:["Ka","si","a"],  g:"Katie",               s:"si"},
+
+  "sok":        {w:["","s","ok"],    g:"juice",               s:"s"},
+  "szok":       {w:["","sz","ok"],   g:"shock",               s:"sz"},
+
+  "sum":        {w:["","s","um"],    g:"catfish",             s:"s"},
+  "szum":       {w:["","sz","um"],   g:"hum, rustle",         s:"sz"},
+
+  "syk":        {w:["","s","yk"],    g:"hiss",                s:"s"},
+  "szyk":       {w:["","sz","yk"],   g:"word order",          s:"sz"},
+
+  "prosze":     {w:["pro","sz","ę"], g:"please",              s:"sz"},
+  "prosie":     {w:["pro","si","ę"], g:"piglet",              s:"si"},
+
+  "wiesz":      {w:["wie","sz",""],  g:"you know",            s:"sz"},
+  "wies-acute": {w:["wie","ś",""],   g:"village",             s:"si"},
+
+  "sad":        {w:["","s","ad"],    g:"orchard",             s:"s"},
+  "siad":       {w:["","si","ad"],   g:"sitting position",    s:"si"},
+
+  "nos":        {w:["no","s",""],    g:"nose",                s:"s"},
+  "nos-acute":  {w:["no","ś",""],    g:"carry! (imperative)", s:"si"},
+
+  /* c · cz · ć — approved 2026-08-18, recordings still to come. Until the
+     audio lands these pairs are skipped automatically. */
+  "nic":        {w:["ni","c",""],    g:"nothing",             s:"c"},
+  "nic-acute":  {w:["ni","ć",""],    g:"thread",              s:"ci"},
+
+  "czy":        {w:["","cz","y"],    g:"whether",             s:"cz"},
+  "ci":         {w:["","ci",""],     g:"to you",              s:"ci"},
+
+  "car":        {w:["","c","ar"],    g:"tsar",                s:"c"},
+  "czar":       {w:["","cz","ar"],   g:"charm, spell",        s:"cz"},
+
+  "moc":        {w:["mo","c",""],    g:"power, might",        s:"c"},
+  "mocz":       {w:["mo","cz",""],   g:"urine",               s:"cz"},
+
+  "piec":       {w:["pie","c",""],   g:"oven, stove",         s:"c"},
+  "piecz":      {w:["pie","cz",""],  g:"bake! (imperative)",  s:"cz"},
+
+  "leci":       {w:["le","ci",""],   g:"flies, is flying",    s:"ci"},
+  "leczy":      {w:["le","cz","y"],  g:"heals, treats",       s:"cz"},
+
+  "place":      {w:["pła","c","e"],  g:"wages",               s:"c"},
+  "placze":     {w:["pła","cz","e"], g:"cries, weeps",        s:"cz"},
+
+  "owca":       {w:["ow","c","a"],   g:"sheep",               s:"c"},
+  "owcza":      {w:["ow","cz","a"],  g:"ovine, sheep's",      s:"cz"}
+};
+
+/* One row per contrast family. A row of three is three separate pairs at
+   runtime — see PAIRS below for why. */
+const SETS = [
+  ["kos","kosz","kos-acute"],
+  ["pas","pasz","pas-acute"],
+  ["kasa","kasza","kasia"],
+  ["sok","szok"],
+  ["sum","szum"],
+  ["syk","szyk"],
+  ["prosze","prosie"],
+  ["wiesz","wies-acute"],
+  ["sad","siad"],
+  ["nos","nos-acute"],
+
+  ["nic","nic-acute"],
+  ["czy","ci"],
+  ["car","czar"],
+  ["moc","mocz"],
+  ["piec","piecz"],
+  ["leci","leczy"],
+  ["place","placze"],
+  ["owca","owcza"]
+];
+/* ── end of ear content ───────────────────────────────────────────── */
+
+/* ══════════════════════════════════════════════════════════════════
+   Below here you shouldn't need to touch anything. Vocabulary lives in
+   deck/notes.json — adding a word means editing that file, not this
+   one. Run tools/validate.py after a deck edit and tools/smoke.mjs
+   after any edit to this file.
    ══════════════════════════════════════════════════════════════════ */
 
 const $ = sel => document.querySelector(sel);
@@ -119,7 +280,7 @@ function showError(msg){
 }
 
 const { initializeApp } = await import("https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js");
-const { getFirestore, doc, getDoc, setDoc, updateDoc, arrayUnion } =
+const { getFirestore, doc, getDoc, setDoc, updateDoc, arrayUnion, FieldPath } =
   await import("https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js");
 
 const app = initializeApp(firebaseConfig);
@@ -292,12 +453,23 @@ try {
 
 let cardStates = {};
 let reviewLog = [];
+/* Ear-training state is deliberately NOT in `cards`. The vocab queue, the
+   daily budgets, the unlock gates and sibling burying all assume note-cards;
+   a perceptual drill keyed by confusion pair has no business in there, and
+   putting it there would risk live progress for no gain. */
+let earStates = {};
+/* Which modes were finished on which day, so a reload or his other device
+   does not re-offer a session he has already done. Same reasoning as the
+   `introduced` stamps on card state. */
+let doneDays = {};
 let docExists = false;
 try {
   const snap = await getDoc(docRef);
   docExists = snap.exists();
   cardStates = docExists ? (snap.data().cards || {}) : {};
   reviewLog = docExists ? (snap.data().log || []) : [];
+  earStates = docExists ? (snap.data().ear || {}) : {};
+  doneDays  = docExists ? (snap.data().done || {}) : {};
 } catch (e) {
   showError("Couldn't reach Firestore.\n\n" + e.message +
     "\n\nCheck: the config is correct, Firestore is enabled, and the\n" +
@@ -441,16 +613,18 @@ let revealed = false;
    every card state *and* the entire review log on every single grade — a
    few hundred KB per button press once the log is long, which is felt on a
    phone long before the 1 MiB document ceiling is anywhere in sight. */
+// updateDoc requires an existing document; first run has to create one.
+async function firstWrite(){
+  await setDoc(docRef, {
+    cards: cardStates, ear: earStates, done: doneDays,
+    log: reviewLog, logBytes: logBytes(), updated: Date.now()
+  });
+  docExists = true;
+}
+
 async function save(key, state, entry){
   if (TEST_MODE) return;
-  if (!docExists) {
-    // updateDoc requires an existing document; first run has to create one.
-    await setDoc(docRef, {
-      cards: cardStates, log: reviewLog, logBytes: logBytes(), updated: Date.now()
-    });
-    docExists = true;
-    return;
-  }
+  if (!docExists) return firstWrite();
   await updateDoc(docRef, {
     [`cards.${key}`]: state,
     // arrayUnion is set-semantics: an entry identical in card, grade *and*
@@ -474,6 +648,10 @@ function logBytes(){ return JSON.stringify(reviewLog).length; }
    closed mid-flight, so a failure has to be visible rather than swallowed. */
 let writeChain = Promise.resolve();
 let writeError = null;
+/* Declared up here rather than beside the ear code that sets it, because
+   renderWarning reads it and `typeof` is no protection against a temporal
+   dead zone — it throws for a `let` that has not been reached yet. */
+let earLoadError = null;
 
 function queueWrite(key, state, entry){
   writeChain = writeChain
@@ -494,6 +672,10 @@ function renderWarning(){
     banners.push(`<p class="warn err">Not saving. The last review did not reach ` +
       `the server (${writeError.message}). Check your connection — progress from ` +
       `here on may be lost.</p>`);
+  }
+  if (earLoadError) {
+    banners.push(`<p class="warn err">Ear training is unavailable — could not ` +
+      `read ear/manifest.json (${earLoadError}). Vocab is unaffected.</p>`);
   }
   const bytes = logBytes();
   if (bytes >= DOC_LIMIT * WARN_AT) {
@@ -537,36 +719,8 @@ function stats(){
   };
 }
 
-function whenDue(ms){
-  if (ms == null) return "nothing scheduled yet";
-  const d = Math.round((midnight(ms) - t) / MS_DAY);
-  return d <= 0 ? "today" : d === 1 ? "tomorrow" : `in ${d} days`;
-}
-
 function row(label, value, cls){
   return `<dt>${label}</dt><dd class="${cls || ""}">${value}</dd>`;
-}
-
-function renderStart(){
-  const s = stats();
-  barEl.className = "";
-  countEl.textContent = "";
-  appEl.innerHTML = `
-    <div class="stats">
-      <h2>Today</h2>
-      <dl class="rows">
-        ${row("To review", s.due, "big")}
-        ${row("New words", s.fresh, "big")}
-        ${s.locked ? row("Locked for now", s.locked, "muted") : ""}
-      </dl>
-      <div class="foot">
-        ${s.started} of ${s.total} cards started, across ${s.notes} words.
-        ${s.streak ? `${s.streak}-day streak.` : ""}
-        ${s.todayReviews ? `${s.todayReviews} done already today.` : ""}
-      </div>
-    </div>
-    <button class="reveal" id="start">Start</button>`;
-  $("#start").addEventListener("click", () => { renderCard(); });
 }
 
 function renderCount(){
@@ -582,7 +736,11 @@ function renderDone(){
   barEl.className = "";
   renderWarning();
   const st = stats();
-  const today = reviewLog.filter(e => e.ts >= t);
+  if (sessionDone) markDone("vocab");
+  const earLeft = earPending();
+  // Vocab-only: an ear trial is not a card reviewed, and this screen is
+  // reporting on the session he has just finished.
+  const today = reviewLog.filter(e => e.ts >= t && !e.card.endsWith("__ear"));
   const good = today.filter(e => e.grade === "good").length;
   const rate = today.length ? Math.round((good / today.length) * 100) : null;
 
@@ -598,7 +756,8 @@ function renderDone(){
 
   appEl.innerHTML = `
     <div class="stats done">
-      <p class="done-h">${sessionDone ? "That's everything for today" : "Nothing due right now"}</p>
+      <p class="done-h">${!sessionDone ? "Nothing due right now"
+        : earLeft ? "That's vocab done for today" : "That's everything for today"}</p>
       ${sessionDone ? `<p class="done-sub">Nice work.</p>` : ""}
       <p class="done-cta">${esc(back)}</p>
       ${today.length ? `
@@ -611,7 +770,14 @@ function renderDone(){
       ${st.locked ? `<p class="aside">${st.locked} card${st.locked === 1 ? "" : "s"} ` +
         `waiting in the wings (nothing to do about those — they turn up on ` +
         `their own once a word is solid).</p>` : ""}
-    </div>`;
+    </div>
+    ${earLeft
+      ? `<button class="reveal" id="cross">Ear training · about ${earMins(earLeft)}</button>`
+      : `<button class="reveal alt" id="home">Back</button>`}`;
+  const cross = $("#cross");
+  if (cross) cross.addEventListener("click", startEar);
+  const home = $("#home");
+  if (home) home.addEventListener("click", renderLanding);
 }
 
 /* ── rendering ──────────────────────────────────────────────────────
@@ -827,19 +993,438 @@ function grade(g){
   queue.length ? renderCard() : renderDone();
 }
 
+
+/* ══ ear training ══════════════════════════════════════════════════
+   The second mode: forced-choice minimal pairs. Deliberately a separate
+   session rather than cards spliced into the vocab queue. The two
+   interaction models are opposites — a flashcard is revealed and
+   self-graded, a minimal pair is tapped and graded automatically — and
+   they want different schedulers. SM-2 pushes a known item toward long
+   maintenance intervals, which is exactly wrong for a perceptual skill
+   measured across many exemplars.
+
+   Everything below reads and writes `earStates` and `doneDays`, never
+   `cardStates`, so none of the vocab machinery can be disturbed by it.
+   Burying is not a concern for the same reason: kasa exists as both a
+   vocab note and an ear word, but an ear trial never touches `queue`. */
+
+const SOUND_IPA   = { s:"/s/", sz:"/ʂ/", si:"/ɕ/", c:"/t͡s/", cz:"/t͡ʂ/", ci:"/t͡ɕ/" };
+/* Unused in the app — tools/progress.py parses it out of this file to label
+   the rows and columns of the confusion matrix. Deleting it as dead code
+   breaks the report, so it lives here next to the sounds it names. */
+const SOUND_LABEL = { s:"s", sz:"sz", si:"ś", c:"c", cz:"cz", ci:"ć" };
+
+/* Every unordered pair inside a set. A row of three like kos/kosz/koś is
+   three contrasts, not one three-way question: s vs sz is a different skill
+   from s vs ś, and only pair-level tracking can see which one he is failing
+   — or aim the next trial at it. A three-way trial also only half-reports:
+   a miss says which confusion, but a hit says merely that he avoided both. */
+const PAIRS = SETS.flatMap(set =>
+  set.flatMap((a, i) => set.slice(i + 1).map(b => [a, b])));
+const pairKey = p => [...p].sort().join("|");
+
+/* Recordings. A pair is playable only when both its words have audio, so a
+   new contrast can ship in WORDS/SETS and go live the day the recordings
+   land, with no code change. Missing audio for *some* pairs is the normal
+   state; failing to read the manifest at all is not, and says so. */
+let REC = {};
+try {
+  const res = await fetch("ear/manifest.json", { cache: "no-cache" });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  REC = (await res.json()).words || {};
+} catch (e) {
+  earLoadError = e.message;
+}
+const recsFor = id => REC[id] || [];
+const livePairs = PAIRS.filter(p => p.every(id => recsFor(id).length));
+
+const EAR_TRIALS  = 20;   // a full session
+const EAR_MIN     = 6;    // never offer a session shorter than this
+const EAR_WINDOW  = 10;   // trailing outcomes kept per pair
+const EAR_RETIRE  = 9;    // correct out of that window
+const MAINT_EVERY = 3;    // days between maintenance blocks once all retired
+const SEC_PER_TRIAL = 8;
+
+const earOf = k => earStates[k] || { seen: 0, hist: [], last: 0 };
+const earScore = s => s.hist.reduce((a, b) => a + b, 0);
+
+function retired(k){
+  const s = earOf(k);
+  return s.hist.length >= EAR_WINDOW && earScore(s) >= EAR_RETIRE;
+}
+const activePairs = () => livePairs.filter(p => !retired(pairKey(p)));
+
+/* Length is set by trial count, never by mastery. Struggling changes *what*
+   he is shown, never *how much*: if "done" meant clearing the failing pairs,
+   a bad day would get longer exactly when he is having the worst time.
+   The block does shrink as pairs retire — that is the reward. */
+function earPlan(){
+  if (!livePairs.length) return null;
+  const active = activePairs();
+  if (active.length) {
+    return { pool: active, maint: false,
+      n: Math.max(EAR_MIN, Math.min(EAR_TRIALS,
+        Math.round(EAR_TRIALS * active.length / livePairs.length))) };
+  }
+  /* Zero case: everything has retired. Never offer a mode that cannot be
+     filled — but never make a settled contrast a daily chore either. A short
+     block from the pairs he has not heard in longest, at most every third
+     day; on the other days the landing shows ear training as satisfied. */
+  if (!maintenanceDue()) return null;
+  const cold = [...livePairs].sort(
+    (a, b) => earOf(pairKey(a)).last - earOf(pairKey(b)).last);
+  return { pool: cold.slice(0, EAR_MIN), n: EAR_MIN, maint: true };
+}
+
+function lastEarDay(){
+  const days = Object.entries(doneDays)
+    .filter(([, m]) => m.includes("ear")).map(([d]) => Number(d));
+  return days.length ? Math.max(...days) : null;
+}
+function maintenanceDue(){
+  const last = lastEarDay();
+  return last === null || (t - last) >= MAINT_EVERY * MS_DAY;
+}
+
+/* Weighted toward whatever he is currently getting wrong. A pair he mostly
+   gets right still turns up, just less often than one he is guessing at. */
+function weightedPair(pool){
+  const w = pool.map(p => {
+    const s = earOf(pairKey(p));
+    return 0.25 + (1 - (s.hist.length ? earScore(s) / s.hist.length : 0.5));
+  });
+  let r = rand() * w.reduce((a, b) => a + b, 0);
+  for (let i = 0; i < pool.length; i++) if ((r -= w[i]) <= 0) return pool[i];
+  return pool[pool.length - 1];
+}
+
+// Nothing asked twice running while another contrast is still available.
+function deadjacent(arr, key){
+  for (let i = 1; i < arr.length; i++) {
+    if (key(arr[i]) !== key(arr[i - 1])) continue;
+    const j = arr.findIndex((x, k) => k > i && key(x) !== key(arr[i]));
+    if (j > i) [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+function buildEarQueue(plan){
+  // Every pair in the pool is guaranteed one appearance before anything
+  // repeats; only the remainder is drawn weighted.
+  const picks = shuffle([...plan.pool]).slice(0, plan.n);
+  while (picks.length < plan.n) picks.push(weightedPair(plan.pool));
+  return deadjacent(shuffle(picks), pairKey).map(p => {
+    const target = p[Math.floor(rand() * 2)];
+    return { pair: p, key: pairKey(p), target,
+             other: p[0] === target ? p[1] : p[0],
+             opts: shuffle([...p]), rec: pickRec(target) };
+  });
+}
+
+function pickRec(id){
+  const r = recsFor(id);
+  return r.length ? r[Math.floor(rand() * r.length)] : null;
+}
+/* For the listen-to-both comparison: the same speaker as the target where
+   the recordings allow it, so the only thing differing is the sound. */
+function matchRec(id, spk){
+  const r = recsFor(id);
+  if (!r.length) return null;
+  const same = spk ? r.filter(x => x.spk === spk) : [];
+  const pool = same.length ? same : r;
+  return pool[Math.floor(Math.random() * pool.length)];
+}
+
+/* ── ear persistence ─────────────────────────────────────────────────
+   `ear` keys carry "|" and "-" and `done` keys are bare digits, none of
+   which are legal in an unquoted dotted field path — hence FieldPath. */
+async function saveEar(key, state, entry){
+  if (TEST_MODE) return;
+  if (!docExists) return firstWrite();
+  await updateDoc(docRef,
+    new FieldPath("ear", key), state,
+    "log", arrayUnion(entry),
+    "logBytes", logBytes(),
+    "updated", Date.now());
+}
+
+function queueEarWrite(key, state, entry){
+  writeChain = writeChain
+    .then(() => saveEar(key, state, entry))
+    .then(() => { writeError = null; })
+    .catch(e => { writeError = e; console.error("save failed", e); })
+    .finally(renderWarning);
+  return writeChain;
+}
+
+function markDone(mode){
+  const day = String(t);
+  const list = new Set(doneDays[day] || []);
+  if (list.has(mode)) return;
+  list.add(mode);
+  doneDays[day] = [...list];
+  // A few bytes a day, but it should not grow forever.
+  for (const d of Object.keys(doneDays))
+    if (t - Number(d) > 90 * MS_DAY) delete doneDays[d];
+  if (TEST_MODE) return;
+  writeChain = writeChain
+    .then(() => docExists
+      ? updateDoc(docRef, "done", doneDays, "updated", Date.now())
+      : firstWrite())
+    .then(() => { writeError = null; })
+    .catch(e => { writeError = e; console.error("save failed", e); })
+    .finally(renderWarning);
+}
+
+function recordEar(tr, chosen, ok){
+  const prev = earOf(tr.key);
+  const was = retired(tr.key);
+  const st = { seen: prev.seen + 1, last: Date.now(),
+               hist: [...prev.hist, ok ? 1 : 0].slice(-EAR_WINDOW) };
+  /* A retired pair that fails starts its window again. Without this, 10/10
+     followed by a miss is still 9/10 and the pair never actually comes back
+     — "any miss un-retires it" has to mean something. */
+  if (was && !ok) st.hist = [0];
+  earStates[tr.key] = st;
+
+  /* One log shape for both modes. Keying `<word>__ear` matches the existing
+     `${noteId}__${cardType}` convention, and keeping `grade` means the day
+     buckets, the streak and the sittings split in tools/progress.py keep
+     working untouched. `chose` is what powers the confusion matrix, and `vs`
+   names the distractor: on a correct answer chose == played, so without it
+   the pair a trial belonged to would be unrecoverable from the log and only
+   the ten-trial window in `ear` could say anything about it. */
+  const entry = { card: `${tr.target}__ear`, grade: ok ? "good" : "again",
+                  ts: Date.now(), chose: chosen, vs: tr.other };
+  reviewLog.push(entry);
+  queueEarWrite(tr.key, st, entry);
+}
+
+/* ── ear rendering ─────────────────────────────────────────────────── */
+const modeLabel = $("#mode-label");
+const BARS = Array.from({ length: 44 }, (_, i) =>
+  `<span style="height:${18 + Math.round(34 * Math.abs(Math.sin(i * 1.9)))}%;` +
+  `animation-delay:${(i % 7) * 60}ms"></span>`).join("");
+
+const spell = id => WORDS[id].w.join("");
+const wordHtml = id => {
+  const W = WORDS[id];
+  return `${esc(W.w[0])}<mark>${esc(W.w[1])}</mark>${esc(W.w[2])}`;
+};
+
+const earCache = new Map();
+function playRec(rec, cb){
+  const p = $("#player");
+  if (!rec) { if (cb) cb(); return; }
+  if (p) p.classList.add("playing");
+  const done = () => { if (p) p.classList.remove("playing"); if (cb) cb(); };
+  let a = earCache.get(rec.f);
+  if (!a) { a = new Audio(rec.f); earCache.set(rec.f, a); }
+  a.onended = done;
+  a.onerror = done;
+  a.currentTime = 0;
+  const pr = a.play();
+  if (pr && pr.catch) pr.catch(done);
+}
+
+let earQueue = [], earIdx = 0, earTrial = null, earAnswered = false;
+let earMarks = [], earLog = [];
+
+function startEar(){
+  const plan = earPlan();
+  if (!plan) return renderLanding();
+  earQueue = buildEarQueue(plan);
+  earIdx = 0; earMarks = []; earLog = [];
+  renderEarTrial();
+}
+
+function renderEarTrial(){
+  earTrial = earQueue[earIdx];
+  earAnswered = false;
+  modeLabel.textContent = "Ear training";
+  countEl.textContent = `${earIdx + 1} / ${earQueue.length}`;
+  barEl.className = "on";
+  barEl.firstElementChild.style.width = `${(earIdx / earQueue.length) * 100}%`;
+  renderWarning();
+  appEl.innerHTML = `
+    <div class="ticks">${earQueue.map((_, i) =>
+      `<i class="${earMarks[i] || ""}"></i>`).join("")}</div>
+    <button class="player" id="player">
+      <span class="bars">${BARS}</span>
+      <span class="player-label">Tap to play again</span>
+    </button>
+    <div class="opts">${earTrial.opts.map(id => `
+      <button class="opt" data-id="${esc(id)}">
+        <span class="opt-main">
+          <span class="opt-word">${wordHtml(id)}</span>
+          <span class="opt-gloss">${esc(WORDS[id].g)}</span>
+        </span>
+        <span class="opt-ipa">${SOUND_IPA[WORDS[id].s] || ""}</span>
+      </button>`).join("")}</div>
+    <p class="verdict" id="verdict"></p>
+    <div class="compare" id="compare" style="display:none"></div>
+    <button class="reveal" id="ear-next" style="display:none">Next</button>`;
+  appEl.querySelectorAll(".opt").forEach(b =>
+    b.addEventListener("click", () => answerEar(b.dataset.id)));
+  $("#player").addEventListener("click", () => playRec(earTrial.rec));
+  $("#ear-next").addEventListener("click", nextEarTrial);
+  playRec(earTrial.rec);
+}
+
+function answerEar(chosen){
+  if (earAnswered) return;
+  earAnswered = true;
+  const ok = chosen === earTrial.target;
+  earMarks[earIdx] = ok ? "hit" : "miss";
+  earLog.push({ target: earTrial.target, chosen, ok });
+  recordEar(earTrial, chosen, ok);
+
+  appEl.querySelectorAll(".opt").forEach(b => {
+    b.disabled = true;
+    if (b.dataset.id === earTrial.target) b.classList.add("correct");
+    else if (b.dataset.id === chosen) b.classList.add("wrong");
+    else b.classList.add("faded");
+  });
+  appEl.querySelector(".ticks").children[earIdx].className = earMarks[earIdx];
+
+  const v = $("#verdict");
+  if (ok) {
+    v.textContent = "Correct";
+    v.className = "verdict ok";
+    const at = earIdx;
+    setTimeout(() => { if (earIdx === at && earAnswered) nextEarTrial(); }, 800);
+    return;
+  }
+  v.textContent = "Listen to both";
+  v.className = "verdict bad";
+  const cmp = matchRec(chosen, earTrial.rec ? earTrial.rec.spk : null);
+  const c = $("#compare");
+  c.innerHTML =
+    `<button data-role="target"><span class="lbl">played</span>` +
+      `<span class="wd">${esc(spell(earTrial.target))}</span></button>` +
+    `<button data-role="chosen"><span class="lbl">you tapped</span>` +
+      `<span class="wd">${esc(spell(chosen))}</span></button>`;
+  c.style.display = "flex";
+  c.querySelectorAll("button").forEach(b => b.addEventListener("click", () =>
+    playRec(b.dataset.role === "target" ? earTrial.rec : cmp)));
+  $("#ear-next").style.display = "block";
+  playRec(earTrial.rec, () => setTimeout(() => playRec(cmp), 550));
+}
+
+function nextEarTrial(){
+  earIdx++;
+  earIdx >= earQueue.length ? renderEarDone() : renderEarTrial();
+}
+
+function renderEarDone(){
+  markDone("ear");
+  modeLabel.textContent = "Polish";
+  countEl.textContent = "";
+  barEl.className = "";
+  renderWarning();
+  const hits = earLog.filter(x => x.ok).length;
+  const missed = earLog.filter(x => !x.ok);
+  const vocabLeft = vocabPending();
+  appEl.innerHTML = `
+    <div class="stats done">
+      <p class="done-h">${hits} of ${earLog.length}</p>
+      <p class="done-sub">${missed.length ? "Nice work." : "Nothing missed."}</p>
+      ${missed.length ? `<table class="missed">${missed.map(m =>
+        `<tr><td>${esc(spell(m.target))}</td>` +
+        `<td>heard as ${esc(spell(m.chosen))}</td></tr>`).join("")}</table>` : ""}
+    </div>
+    ${vocabLeft
+      ? `<button class="reveal" id="cross">Vocab · ${vocabLeft} card${vocabLeft === 1 ? "" : "s"} due</button>`
+      : `<button class="reveal alt" id="home">Done for today</button>`}`;
+  const cross = $("#cross");
+  if (cross) cross.addEventListener("click", () => { modeLabel.textContent = "Vocab"; renderCard(); });
+  const home = $("#home");
+  if (home) home.addEventListener("click", renderLanding);
+}
+
+/* ══ landing ═══════════════════════════════════════════════════════
+   Two buttons, each stating its size so he knows what he is committing
+   to. A satisfied mode is greyed and not tappable: tapping into a mode
+   and landing on "nothing due" reads as broken rather than finished. */
+
+function vocabPending(){
+  if ((doneDays[String(t)] || []).includes("vocab")) return 0;
+  return queue.length;
+}
+function earPending(){
+  if ((doneDays[String(t)] || []).includes("ear")) return 0;
+  const plan = earPlan();
+  return plan ? plan.n : 0;
+}
+const earMins = n => `${Math.max(1, Math.round(n * SEC_PER_TRIAL / 60))} minutes`;
+
+function earIdleLabel(){
+  if ((doneDays[String(t)] || []).includes("ear")) return "✓ done today";
+  if (earLoadError) return "audio unavailable";
+  if (!livePairs.length) return "no recordings yet";
+  return "✓ settled";
+}
+
+function renderLanding(){
+  modeLabel.textContent = "Polish";
+  countEl.textContent = "";
+  barEl.className = "";
+  renderWarning();
+  const s = stats();
+  const v = vocabPending(), e = earPending();
+  // When both are open, ear training leads: it is short, it is a warm-up,
+  // and there is no did-I-remember-this pressure in it.
+  const tile = (id, name, sub, lead) =>
+    `<button class="mode${lead ? " lead" : ""}" id="${id}">` +
+    `<span class="mode-n">${name}</span><span class="mode-sub">${esc(sub)}</span></button>`;
+  const idle = (name, sub) =>
+    `<div class="mode is-done"><span class="mode-n">${name}</span>` +
+    `<span class="mode-sub">${esc(sub)}</span></div>`;
+
+  const when = s.nextDue == null ? null
+             : Math.round((midnight(s.nextDue) - t) / MS_DAY);
+  const back = when == null ? "Add some words and come back."
+             : when <= 1 ? "Come back tomorrow." : `Come back in ${when} days.`;
+
+  appEl.innerHTML = `
+    <div class="modes">
+      ${v ? tile("go-vocab", "Vocab", `${v} card${v === 1 ? "" : "s"} due`, false)
+          : idle("Vocab", (doneDays[String(t)] || []).includes("vocab")
+                            ? "✓ done today" : "nothing due")}
+      ${e ? tile("go-ear", "Ear training", `${e} trials · about ${earMins(e)}`, !!v)
+          : idle("Ear training", earIdleLabel())}
+    </div>
+    ${(!v && !e) ? `<div class="stats done">
+      <p class="done-h">All done for today</p>
+      <p class="done-cta">${esc(back)}</p>
+    </div>` : ""}
+    <div class="stats">
+      <h2>So far</h2>
+      <dl class="rows">
+        ${row("Words started", `${s.startedNotes} of ${s.notes}`)}
+        ${row("Cards started", `${s.started} of ${s.total}`)}
+        ${s.streak ? row("Days in a row", s.streak) : ""}
+        ${s.todayReviews ? row("Answered today", s.todayReviews) : ""}
+      </dl>
+    </div>`;
+  const gv = $("#go-vocab");
+  if (gv) gv.addEventListener("click", () => { modeLabel.textContent = "Vocab"; renderCard(); });
+  const ge = $("#go-ear");
+  if (ge) ge.addEventListener("click", startEar);
+}
+
+/* ══ boot ══════════════════════════════════════════════════════════ */
 // One-off rewrite so the folded legacy keys above are actually persisted.
 if (migrated && docExists && !TEST_MODE) {
   try {
-    await setDoc(docRef, {
-      cards: cardStates, log: reviewLog, logBytes: logBytes(), updated: Date.now()
-    });
+    await firstWrite();
   } catch (e) {
     showError("Couldn't migrate saved progress.\n\n" + e.message);
     throw e;
   }
 }
 
-queue.length ? renderStart() : renderDone();
+renderLanding();
 </script>
 </body>
 </html>

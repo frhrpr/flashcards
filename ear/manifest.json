@@ -1,0 +1,142 @@
+{
+ "words": {
+  "kasa": [
+   {
+    "f": "ear/audio/kasa/frank0__20260725-151120-07.mp3",
+    "spk": "frank0"
+   }
+  ],
+  "kasia": [
+   {
+    "f": "ear/audio/kasia/frank0__20260725-151120-09.mp3",
+    "spk": "frank0"
+   }
+  ],
+  "kasza": [
+   {
+    "f": "ear/audio/kasza/frank0__20260725-151120-08.mp3",
+    "spk": "frank0"
+   }
+  ],
+  "kos": [
+   {
+    "f": "ear/audio/kos/frank0__20260725-151120-01.mp3",
+    "spk": "frank0"
+   }
+  ],
+  "kos-acute": [
+   {
+    "f": "ear/audio/kos-acute/frank0__20260725-151120-03.mp3",
+    "spk": "frank0"
+   }
+  ],
+  "kosz": [
+   {
+    "f": "ear/audio/kosz/frank0__20260725-151120-02.mp3",
+    "spk": "frank0"
+   }
+  ],
+  "nos": [
+   {
+    "f": "ear/audio/nos/frank0__20260725-151120-22.mp3",
+    "spk": "frank0"
+   }
+  ],
+  "nos-acute": [
+   {
+    "f": "ear/audio/nos-acute/frank0__20260725-151120-23.mp3",
+    "spk": "frank0"
+   }
+  ],
+  "pas": [
+   {
+    "f": "ear/audio/pas/frank0__20260725-151120-04.mp3",
+    "spk": "frank0"
+   }
+  ],
+  "pas-acute": [
+   {
+    "f": "ear/audio/pas-acute/frank0__20260725-151120-06.mp3",
+    "spk": "frank0"
+   }
+  ],
+  "pasz": [
+   {
+    "f": "ear/audio/pasz/frank0__20260725-151120-05.mp3",
+    "spk": "frank0"
+   }
+  ],
+  "prosie": [
+   {
+    "f": "ear/audio/prosie/frank0__20260725-151120-17.mp3",
+    "spk": "frank0"
+   }
+  ],
+  "prosze": [
+   {
+    "f": "ear/audio/prosze/frank0__20260725-151120-16.mp3",
+    "spk": "frank0"
+   }
+  ],
+  "sad": [
+   {
+    "f": "ear/audio/sad/frank0__20260725-151120-20.mp3",
+    "spk": "frank0"
+   }
+  ],
+  "siad": [
+   {
+    "f": "ear/audio/siad/frank0__20260725-151120-21.mp3",
+    "spk": "frank0"
+   }
+  ],
+  "sok": [
+   {
+    "f": "ear/audio/sok/frank0__20260725-151120-10.mp3",
+    "spk": "frank0"
+   }
+  ],
+  "sum": [
+   {
+    "f": "ear/audio/sum/frank0__20260725-151120-12.mp3",
+    "spk": "frank0"
+   }
+  ],
+  "syk": [
+   {
+    "f": "ear/audio/syk/frank0__20260725-151120-14.mp3",
+    "spk": "frank0"
+   }
+  ],
+  "szok": [
+   {
+    "f": "ear/audio/szok/frank0__20260725-151120-11.mp3",
+    "spk": "frank0"
+   }
+  ],
+  "szum": [
+   {
+    "f": "ear/audio/szum/frank0__20260725-151120-13.mp3",
+    "spk": "frank0"
+   }
+  ],
+  "szyk": [
+   {
+    "f": "ear/audio/szyk/frank0__20260725-151120-15.mp3",
+    "spk": "frank0"
+   }
+  ],
+  "wies-acute": [
+   {
+    "f": "ear/audio/wies-acute/frank0__20260725-151120-19.mp3",
+    "spk": "frank0"
+   }
+  ],
+  "wiesz": [
+   {
+    "f": "ear/audio/wiesz/frank0__20260725-151120-18.mp3",
+    "spk": "frank0"
+   }
+  ]
+ }
+}

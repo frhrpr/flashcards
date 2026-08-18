@@ -26,6 +26,11 @@ BASE = f"https://firestore.googleapis.com/v1/projects/{PROJECT}/databases/(defau
 DAY = 86400_000
 SESSION_GAP = 30 * 60_000        # a half-hour gap starts a new sitting
 YOUNG, MATURE = 6, 21            # interval days: learning / young / mature
+EAR_WINDOW, EAR_RETIRE = 10, 9   # must match index.html, or "retired" lies here
+MATRIX_TRIALS = 300              # confusion matrix window, most recent trials
+SOUND_ORDER = ["s", "sz", "si", "c", "cz", "ci"]
+
+is_ear = lambda e: e["card"].endswith("__ear")
 
 
 def die(msg): sys.exit(f"progress: {msg}")
@@ -74,7 +79,75 @@ def load_remote(key, user):
             die(f"{len(docs)} decks exist; pass --user to choose: {names}")
         doc = docs[0]
     fields = {k: dec(v) for k, v in doc.get("fields", {}).items()}
-    return doc["name"].split("/")[-1], fields.get("cards") or {}, fields.get("log") or []
+    return (doc["name"].split("/")[-1], fields.get("cards") or {},
+            fields.get("log") or [], fields.get("ear") or {})
+
+
+def ear_content():
+    """WORDS and SOUND_LABEL straight out of index.html — the same source the
+    app renders from and tools/ear_build.py names folders from, so this report
+    cannot drift from what he was actually asked."""
+    text = (ROOT / "index.html").read_text(encoding="utf-8")
+    block = re.search(r"const WORDS\s*=\s*\{(.*?)\n\};", text, re.S)
+    lbl = re.search(r"const SOUND_LABEL\s*=\s*\{([^}]*)\}", text)
+    if not block or not lbl:
+        die("could not read WORDS / SOUND_LABEL out of index.html")
+    spell, sound = {}, {}
+    for key, warr, snd in re.findall(
+            r'"([^"]+)"\s*:\s*\{\s*w\s*:\s*\[([^\]]*)\][^}]*?s\s*:\s*"([^"]*)"',
+            block.group(1)):
+        spell[key] = "".join(re.findall(r'"([^"]*)"', warr))
+        sound[key] = snd
+    label = dict(re.findall(r'(\w+)\s*:\s*"([^"]*)"', lbl.group(1)))
+    return spell, sound, label
+
+
+def analyse_ear(ear, log, spell, sound, label):
+    """Minimal-pair training. The unit that matters is the confusion pair, so
+    everything here is keyed by pair rather than by word — hearing ś as sz is
+    a different fault from hearing sz as ś, and only this view separates them."""
+    entries = sorted((e for e in log if is_ear(e)), key=lambda e: e["ts"])
+    if not entries:
+        return None
+    for e in entries:
+        e["_word"] = e["card"][:-len("__ear")]
+
+    matrix = Counter()
+    for e in entries[-MATRIX_TRIALS:]:
+        played, tapped = sound.get(e["_word"]), sound.get(e.get("chose") or "")
+        if played and tapped:
+            matrix[(played, tapped)] += 1
+    sounds = [s for s in SOUND_ORDER if any(s in k for k in matrix)]
+
+    # `vs` names the distractor. Entries written before it existed cannot be
+    # attributed to a pair at all, so they are counted and set aside rather
+    # than guessed at.
+    per, orphans = defaultdict(list), 0
+    for e in entries:
+        if not e.get("vs"):
+            orphans += 1
+            continue
+        per["|".join(sorted([e["_word"], e["vs"]]))].append((e["ts"], e["grade"]))
+
+    rows = []
+    for key, h in per.items():
+        st = ear.get(key) or {}
+        hist = st.get("hist") or []
+        good = sum(1 for _, g in h if g == "good")
+        rows.append({
+            "key": key,
+            "words": " / ".join(spell.get(w, w) for w in key.split("|")),
+            "seen": len(h), "good": good, "pct": good / len(h),
+            "history": h,
+            "retired": len(hist) >= EAR_WINDOW and sum(hist) >= EAR_RETIRE,
+            # The app restarts a retired pair's window on a miss, so a short
+            # window on a well-seen pair is exactly the un-retire signature.
+            "unretired": st.get("seen", 0) >= EAR_WINDOW and len(hist) < EAR_WINDOW,
+        })
+    rows.sort(key=lambda r: (r["pct"], -r["seen"]))
+    return dict(rows=rows, matrix=matrix, sounds=sounds, label=label,
+                trials=len(entries), orphans=orphans,
+                retired=[r for r in rows if r["retired"]])
 
 
 def midnight(ms):
@@ -113,8 +186,13 @@ def analyse(cards, log, notes):
             if prev - d != DAY: break
             streak += 1; prev = d
 
-    lapses = Counter(note_of(e["card"]) for e in log if e["grade"] == "again")
-    seen = Counter(note_of(e["card"]) for e in log)
+    # Attendance, streak and sittings deliberately count both modes — doing
+    # some Polish is doing some Polish. Everything below this line is about
+    # vocabulary cards, so ear trials are filtered out explicitly rather than
+    # left to fall through into a table of words.
+    vocab = [e for e in log if not is_ear(e)]
+    lapses = Counter(note_of(e["card"]) for e in vocab if e["grade"] == "again")
+    seen = Counter(note_of(e["card"]) for e in vocab)
     hard = sorted(((nid, lapses[nid], seen[nid]) for nid in lapses),
                   key=lambda r: (-r[1], -(r[1] / max(r[2], 1))))[:12]
 
@@ -138,7 +216,7 @@ def analyse(cards, log, notes):
     # One row per card he has actually met. Unseen cards have no record, so
     # listing all 183 would bury the 22 that mean anything.
     hist = defaultdict(list)
-    for e in sorted(log, key=lambda x: x["ts"]):
+    for e in sorted(vocab, key=lambda x: x["ts"]):
         hist[e["card"]].append(e)
     records = []
     for key, st in cards.items():
@@ -168,14 +246,43 @@ def analyse(cards, log, notes):
         median_minutes=sorted(lengths)[len(lengths) // 2] if lengths else 0,
         usual_hour=hours.most_common(1)[0][0] if hours else None,
         last_seen=days[-1] if days else None, today=today,
-        type_of=type_of, reviews=len(log), records=records,
+        type_of=type_of, reviews=len(log), vocab_reviews=len(vocab),
+        records=records, total_cards=sum(len(n.get("cards", [])) for n in notes),
     )
 
 
 def fmt_day(ms): return datetime.fromtimestamp(ms / 1000).strftime("%a %d %b")
 
 
-def report(uid, a):
+def strip_of(history):
+    return "".join("v" if g == "good" else "x" for _, g in history)
+
+
+def report_ear(e):
+    p = print
+    p(f"\n  ear training   {e['trials']} trials"
+      + (f" ({e['orphans']} too old to attribute to a pair)" if e["orphans"] else ""))
+    if e["sounds"]:
+        p(f"\n  what was played -> what he tapped   "
+          f"(last {min(e['trials'], MATRIX_TRIALS)} trials)")
+        L = e["label"]
+        p("    played  " + "".join(f"{L.get(s, s):>6}" for s in e["sounds"]))
+        for r in e["sounds"]:
+            cells = ""
+            for c in e["sounds"]:
+                n = e["matrix"].get((r, c), 0)
+                cells += f"{f'[{n}]' if r == c else (n or '·'):>6}"
+            p(f"    {L.get(r, r):<8}" + cells)
+        p("    (the diagonal is correct; everything off it is a confusion)")
+    p("\n  by pair, weakest first"
+      "   (v = got it, x = missed, oldest on the left)")
+    for r in e["rows"]:
+        flag = " retired" if r["retired"] else " un-retired" if r["unretired"] else ""
+        p(f"    {r['words']:<22} {r['good']:>3}/{r['seen']:<3} "
+          f"{round(r['pct']*100):>3}%  {strip_of(r['history'])}{flag}")
+
+
+def report(uid, a, e):
     p = print
     p(f"\n  deck {uid}\n")
     if not a["days"]:
@@ -190,6 +297,9 @@ def report(uid, a):
       + (f", usually around {a['usual_hour']:02d}:00" if a["usual_hour"] is not None else ""))
     p(f"  deck          {a['started']}/{a['total_notes']} words started, "
       f"{a['cards_started']} cards, {a['locked']} still locked")
+    if a["reviews"] != a["vocab_reviews"]:
+        p(f"                {a['vocab_reviews']} of those are vocab cards, "
+          f"{a['reviews'] - a['vocab_reviews']} ear trials")
     b = a["buckets"]
     p(f"  maturity      {b['learning']} learning, {b['young']} young, {b['mature']} mature")
     p("\n  recent days")
@@ -208,9 +318,11 @@ def report(uid, a):
       "   (v = got it, x = missed, oldest on the left)")
     p(f"    {'word':<13} {'type':<12} {'ivl':>4} {'ease':>5}  {'due':<12} history")
     for r in a["records"]:
-        strip = "".join("v" if g == "good" else "x" for _, g in r["history"])
+        strip = strip_of(r["history"])
         p(f"    {r['word']:<13} {r['type']:<12} {r['ivl']:>4} {r['ease']:>5.2f}  "
           f"{due_in(r['due'], a['today']):<12} {strip}")
+    if e:
+        report_ear(e)
     p("")
 
 
@@ -221,7 +333,50 @@ def due_in(due, today):
            f"in {d} days" if d > 0 else f"{-d} day(s) late"
 
 
-def html(uid, a, dest):
+def hist_html(history):
+    return "".join(
+        f'<b class="{"g" if g == "good" else "a"}" title="'
+        f'{datetime.fromtimestamp(ts/1000).strftime("%a %d %b %H:%M")}">'
+        f'{"✓" if g == "good" else "✗"}</b>' for ts, g in history)
+
+
+def ear_html(e):
+    if not e:
+        return ""
+    L = e["label"]
+    head = "".join(f"<th>{esc(L.get(s, s))}</th>" for s in e["sounds"])
+    mat = ""
+    for r in e["sounds"]:
+        cells = ""
+        for c in e["sounds"]:
+            n = e["matrix"].get((r, c), 0)
+            cls = "diag" if r == c else ("hot" if n else "")
+            cells += f'<td class="n {cls}">{n or "·"}</td>'
+        mat += f'<tr><td class=w>{esc(L.get(r, r))}</td>{cells}</tr>'
+    rows = ""
+    for r in e["rows"]:
+        flag = ("<em>retired</em>" if r["retired"]
+                else "<em>un-retired after a lapse</em>" if r["unretired"] else "")
+        rows += (f'<tr class="{"warn" if r["pct"] < 0.75 else ""}">'
+                 f'<td class=w>{esc(r["words"])}{flag}</td>'
+                 f'<td class=n>{r["good"]}/{r["seen"]}</td>'
+                 f'<td class="n {"low" if r["pct"] < 0.75 else ""}">{round(r["pct"]*100)}%</td>'
+                 f'<td class=hist>{hist_html(r["history"])}</td></tr>')
+    note = (f" · {e['orphans']} trial(s) predate the pair being logged"
+            if e["orphans"] else "")
+    return f"""
+<h2>Ear training — {e['trials']} trials{esc(note)}</h2>
+<div class=box>
+<p class=sub>What was played, and what he tapped. Last
+{min(e['trials'], MATRIX_TRIALS)} trials; the diagonal is correct.</p>
+<table class=cards><tr><th>played</th>{head}</tr>{mat}</table>
+<p class=sub style="margin-top:1.5rem">By pair, weakest first.</p>
+<table class=cards><tr><th>pair</th><th>right</th><th>rate</th>
+<th>history — oldest first</th></tr>{rows}</table>
+</div>"""
+
+
+def html(uid, a, e, dest):
     dest.mkdir(parents=True, exist_ok=True)
     peak = max((v["good"] + v["again"] for v in a["by_day"].values()), default=1)
     rows = ""
@@ -237,10 +392,7 @@ def html(uid, a, dest):
                  f'<td class=n>{round(v["good"]/tot*100) if tot else 0}%</td></tr>')
     rows_cards = ""
     for r in a["records"]:
-        strip = "".join(
-            f'<b class="{"g" if g == "good" else "a"}" title="'
-            f'{datetime.fromtimestamp(ts/1000).strftime("%a %d %b %H:%M")}">'
-            f'{"✓" if g == "good" else "✗"}</b>' for ts, g in r["history"])
+        strip = hist_html(r["history"])
         late = r["due"] is not None and midnight(r["due"]) < a["today"]
         rows_cards += (
             f'<tr class="{"warn" if r["again"] >= 3 else ""}">'
@@ -286,6 +438,7 @@ tr.warn td{{background:#F9F1F0}}
 td.w em{{display:block;font-style:normal;color:#6C736B;font-size:.72rem}}
 td.ty{{font-family:ui-monospace,monospace;font-size:.68rem;color:#6C736B}}
 td.n.low{{color:#A32C22;font-weight:700}} td.n.late{{color:#A32C22}}
+td.n.diag{{color:#6C736B}} td.n.hot{{color:#A32C22;font-weight:700}}
 td.hist{{font-family:ui-monospace,monospace;letter-spacing:.08em;white-space:nowrap}}
 td.hist b{{font-weight:400;cursor:default}}
 td.hist b.g{{color:#2F6B3E}} td.hist b.a{{color:#A32C22}}
@@ -304,11 +457,12 @@ td.hist b.g{{color:#2F6B3E}} td.hist b.a{{color:#A32C22}}
 <div class=box><table>{rows}</table></div>
 <h2>Giving him trouble</h2>
 <div class=box><table>{hard}</table></div>
-<h2>Every card he has met — {len(a['records'])} of {a['total_notes'] * 3}</h2>
+<h2>Every card he has met — {len(a['records'])} of {a['total_cards']}</h2>
 <div class=box><table class=cards>
 <tr><th>word</th><th>type</th><th>ivl</th><th>ease</th><th>due</th>
 <th>history — oldest first, hover for the date</th></tr>
 {rows_cards}</table></div>
+{ear_html(e)}
 """
     (dest / "progress.html").write_text(page, encoding="utf-8")
     return dest / "progress.html"
@@ -331,12 +485,14 @@ def main():
                   f"{len(f.get('cards') or {}):>4} cards  {len(f.get('log') or []):>5} reviews")
         return 0
 
-    uid, cards, log = load_remote(key, args.user)
+    uid, cards, log, ear = load_remote(key, args.user)
     notes = json.loads((ROOT / "deck/notes.json").read_text(encoding="utf-8"))["notes"]
+    spell, sound, label = ear_content()
     a = analyse(cards, log, notes)
-    report(uid, a)
+    e = analyse_ear(ear, log, spell, sound, label)
+    report(uid, a, e)
     if a["days"]:
-        print(f"  wrote {html(uid, a, out_dir('progress'))}\n")
+        print(f"  wrote {html(uid, a, e, out_dir('progress'))}\n")
     return 0
 
 
