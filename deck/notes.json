@@ -1802,7 +1802,7 @@
       "cards": [
         "form"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "kind": "form",
       "parent": "byc"
     },
@@ -1829,7 +1829,7 @@
       "cards": [
         "form"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "kind": "form",
       "parent": "byc"
     },
@@ -1856,7 +1856,7 @@
       "cards": [
         "form"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "kind": "form",
       "parent": "byc"
     },
@@ -1883,7 +1883,7 @@
       "cards": [
         "form"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "kind": "form",
       "parent": "byc"
     },
@@ -1910,7 +1910,7 @@
       "cards": [
         "form"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "kind": "form",
       "parent": "byc"
     },
@@ -1937,7 +1937,7 @@
       "cards": [
         "form"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "kind": "form",
       "parent": "byc"
     },
@@ -1964,7 +1964,7 @@
       "cards": [
         "form"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "kind": "form",
       "parent": "miec"
     },
@@ -1991,7 +1991,7 @@
       "cards": [
         "form"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "kind": "form",
       "parent": "miec"
     },
@@ -2018,7 +2018,7 @@
       "cards": [
         "form"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "kind": "form",
       "parent": "miec"
     },
@@ -2045,7 +2045,7 @@
       "cards": [
         "form"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "kind": "form",
       "parent": "miec"
     },
@@ -2072,7 +2072,7 @@
       "cards": [
         "form"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "kind": "form",
       "parent": "miec"
     },
@@ -2099,7 +2099,7 @@
       "cards": [
         "form"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "kind": "form",
       "parent": "miec"
     }

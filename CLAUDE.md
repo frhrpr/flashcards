@@ -239,6 +239,14 @@ so. Those are what these models fumble, and a wrong picture is worse than a
 plain one. `image_basis` records which was used, and the check prompt depends
 on it.
 
+**"Plain background" is for objects, not people.** It suits a single concrete
+noun, where anything else in frame competes with the thing being named. Asked
+for a *person*, the same phrase produces a figure marooned in a grey studio,
+which looks synthetic and gives the sentence nothing to sit in. Let the scene
+be wherever the sentence implies — a kitchen, a shop, a park — and simply say
+nothing about the background when the sentence names no place. Do not invent
+a setting for its own sake either; an unstated one is fine.
+
 **Keep image prompts as simple as the word allows.** Every clause is a
 chance to be wrong. The first `skakać` prompt asked for a cat jumping *onto*
 a bench and got one jumping away — spatial relations are what these models
