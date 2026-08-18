@@ -1778,6 +1778,330 @@
         "listening"
       ],
       "reviewed": true
+    },
+    {
+      "id": "byc_jestem",
+      "word": "jestem",
+      "gloss": "I am",
+      "pos": "verb",
+      "ipa": "ˈjɛstɛm",
+      "note": null,
+      "image": "media/img/byc_jestem.webp",
+      "image_alt": "I am",
+      "image_basis": "sentence",
+      "image_prompt": "One person sitting alone in the living room of a house, relaxed and at home. Plain simple scene, one person only, no text or lettering. Square image.",
+      "audio": "media/audio/byc_jestem.mp3",
+      "sentence": {
+        "pl": "Ja jestem w domu.",
+        "en": "I am at home.",
+        "gap": "Ja ___ w domu.",
+        "answer": "jestem",
+        "answer_lemma": "jestem",
+        "audio": "media/audio/byc_jestem__sentence.mp3"
+      },
+      "cards": [
+        "form"
+      ],
+      "reviewed": false,
+      "kind": "form",
+      "parent": "byc"
+    },
+    {
+      "id": "byc_jestes",
+      "word": "jesteś",
+      "gloss": "you are",
+      "pos": "verb",
+      "ipa": "ˈjɛstɛɕ",
+      "note": null,
+      "image": "media/img/byc_jestes.webp",
+      "image_alt": "you are",
+      "image_basis": "sentence",
+      "image_prompt": "One person standing on a path in a green park, facing the viewer as if being spoken to. One person only, daylight, no text or lettering. Square image.",
+      "audio": "media/audio/byc_jestes.mp3",
+      "sentence": {
+        "pl": "Ty jesteś w parku.",
+        "en": "You are in the park.",
+        "gap": "Ty ___ w parku.",
+        "answer": "jesteś",
+        "answer_lemma": "jesteś",
+        "audio": "media/audio/byc_jestes__sentence.mp3"
+      },
+      "cards": [
+        "form"
+      ],
+      "reviewed": false,
+      "kind": "form",
+      "parent": "byc"
+    },
+    {
+      "id": "byc_jest",
+      "word": "jest",
+      "gloss": "he/she/it is",
+      "pos": "verb",
+      "ipa": "jɛst",
+      "note": null,
+      "image": "media/img/byc_jest.webp",
+      "image_alt": "he/she/it is",
+      "image_basis": "sentence",
+      "image_prompt": "A dog lying in the shade directly underneath a large tree, daylight, no people, no text or lettering. Square image.",
+      "audio": "media/audio/byc_jest.mp3",
+      "sentence": {
+        "pl": "Pies jest pod drzewem.",
+        "en": "The dog is under the tree.",
+        "gap": "Pies ___ pod drzewem.",
+        "answer": "jest",
+        "answer_lemma": "jest",
+        "audio": "media/audio/byc_jest__sentence.mp3"
+      },
+      "cards": [
+        "form"
+      ],
+      "reviewed": false,
+      "kind": "form",
+      "parent": "byc"
+    },
+    {
+      "id": "byc_jestesmy",
+      "word": "jesteśmy",
+      "gloss": "we are",
+      "pos": "verb",
+      "ipa": "jɛsˈtɛɕmɨ",
+      "note": null,
+      "image": "media/img/byc_jestesmy.webp",
+      "image_alt": "we are",
+      "image_basis": "sentence",
+      "image_prompt": "Two people standing together inside a small grocery shop, both clearly present in the scene. No readable signage or lettering. Square image.",
+      "audio": "media/audio/byc_jestesmy.mp3",
+      "sentence": {
+        "pl": "My jesteśmy w sklepie.",
+        "en": "We are in the shop.",
+        "gap": "My ___ w sklepie.",
+        "answer": "jesteśmy",
+        "answer_lemma": "jesteśmy",
+        "audio": "media/audio/byc_jestesmy__sentence.mp3"
+      },
+      "cards": [
+        "form"
+      ],
+      "reviewed": false,
+      "kind": "form",
+      "parent": "byc"
+    },
+    {
+      "id": "byc_jestescie",
+      "word": "jesteście",
+      "gloss": "you are (plural)",
+      "pos": "verb",
+      "ipa": "jɛsˈtɛɕt͡ɕɛ",
+      "note": null,
+      "image": "media/img/byc_jestescie.webp",
+      "image_alt": "you are (plural)",
+      "image_basis": "sentence",
+      "image_prompt": "A group of four people standing together facing the viewer, as if being addressed. Plain background, no text or lettering. Square image.",
+      "audio": "media/audio/byc_jestescie.mp3",
+      "sentence": {
+        "pl": "Wy jesteście tutaj.",
+        "en": "You are here.",
+        "gap": "Wy ___ tutaj.",
+        "answer": "jesteście",
+        "answer_lemma": "jesteście",
+        "audio": "media/audio/byc_jestescie__sentence.mp3"
+      },
+      "cards": [
+        "form"
+      ],
+      "reviewed": false,
+      "kind": "form",
+      "parent": "byc"
+    },
+    {
+      "id": "byc_sa",
+      "word": "są",
+      "gloss": "they are",
+      "pos": "verb",
+      "ipa": "sɔ̃",
+      "note": null,
+      "image": "media/img/byc_sa.webp",
+      "image_alt": "they are",
+      "image_basis": "sentence",
+      "image_prompt": "Three birds perched together on the branches of one tree, plain sky behind, no people, no text or lettering. Square image.",
+      "audio": "media/audio/byc_sa.mp3",
+      "sentence": {
+        "pl": "Ptaki są na drzewie.",
+        "en": "The birds are on the tree.",
+        "gap": "Ptaki ___ na drzewie.",
+        "answer": "są",
+        "answer_lemma": "są",
+        "audio": "media/audio/byc_sa__sentence.mp3"
+      },
+      "cards": [
+        "form"
+      ],
+      "reviewed": false,
+      "kind": "form",
+      "parent": "byc"
+    },
+    {
+      "id": "miec_mam",
+      "word": "mam",
+      "gloss": "I have",
+      "pos": "verb",
+      "ipa": "mam",
+      "note": null,
+      "image": "media/img/miec_mam.webp",
+      "image_alt": "I have",
+      "image_basis": "sentence",
+      "image_prompt": "One person holding a loaf of bread in both hands, close to the chest, plain background, no text or lettering. Square image.",
+      "audio": "media/audio/miec_mam.mp3",
+      "sentence": {
+        "pl": "Ja mam chleb.",
+        "en": "I have bread.",
+        "gap": "Ja ___ chleb.",
+        "answer": "mam",
+        "answer_lemma": "mam",
+        "audio": "media/audio/miec_mam__sentence.mp3"
+      },
+      "cards": [
+        "form"
+      ],
+      "reviewed": false,
+      "kind": "form",
+      "parent": "miec"
+    },
+    {
+      "id": "miec_masz",
+      "word": "masz",
+      "gloss": "you have",
+      "pos": "verb",
+      "ipa": "maʂ",
+      "note": null,
+      "image": "media/img/miec_masz.webp",
+      "image_alt": "you have",
+      "image_basis": "sentence",
+      "image_prompt": "One person holding a dog's lead with the dog beside them, facing the viewer as if being spoken to. Plain background, no text or lettering. Square image.",
+      "audio": "media/audio/miec_masz.mp3",
+      "sentence": {
+        "pl": "Ty masz psa.",
+        "en": "You have a dog.",
+        "gap": "Ty ___ psa.",
+        "answer": "masz",
+        "answer_lemma": "masz",
+        "audio": "media/audio/miec_masz__sentence.mp3"
+      },
+      "cards": [
+        "form"
+      ],
+      "reviewed": false,
+      "kind": "form",
+      "parent": "miec"
+    },
+    {
+      "id": "miec_ma",
+      "word": "ma",
+      "gloss": "he/she/it has",
+      "pos": "verb",
+      "ipa": "ma",
+      "note": null,
+      "image": "media/img/miec_ma.webp",
+      "image_alt": "he/she/it has",
+      "image_basis": "sentence",
+      "image_prompt": "One child holding a ball with both hands, whole figure in frame, plain background, no other people, no text or lettering. Square image.",
+      "audio": "media/audio/miec_ma.mp3",
+      "sentence": {
+        "pl": "Dziecko ma piłkę.",
+        "en": "The child has a ball.",
+        "gap": "Dziecko ___ piłkę.",
+        "answer": "ma",
+        "answer_lemma": "ma",
+        "audio": "media/audio/miec_ma__sentence.mp3"
+      },
+      "cards": [
+        "form"
+      ],
+      "reviewed": false,
+      "kind": "form",
+      "parent": "miec"
+    },
+    {
+      "id": "miec_mamy",
+      "word": "mamy",
+      "gloss": "we have",
+      "pos": "verb",
+      "ipa": "ˈmamɨ",
+      "note": null,
+      "image": "media/img/miec_mamy.webp",
+      "image_alt": "we have",
+      "image_basis": "sentence",
+      "image_prompt": "Two people standing side by side, each holding a bottle of water clearly visible. Plain background, no text or lettering, no labels. Square image.",
+      "audio": "media/audio/miec_mamy.mp3",
+      "sentence": {
+        "pl": "My mamy wodę.",
+        "en": "We have water.",
+        "gap": "My ___ wodę.",
+        "answer": "mamy",
+        "answer_lemma": "mamy",
+        "audio": "media/audio/miec_mamy__sentence.mp3"
+      },
+      "cards": [
+        "form"
+      ],
+      "reviewed": false,
+      "kind": "form",
+      "parent": "miec"
+    },
+    {
+      "id": "miec_macie",
+      "word": "macie",
+      "gloss": "you have (plural)",
+      "pos": "verb",
+      "ipa": "ˈmat͡ɕɛ",
+      "note": null,
+      "image": "media/img/miec_macie.webp",
+      "image_alt": "you have (plural)",
+      "image_basis": "sentence",
+      "image_prompt": "A group of three people sitting relaxed and unhurried on a bench, an hourglass on the ground beside them. Plain background, no text or lettering. Square image.",
+      "audio": "media/audio/miec_macie.mp3",
+      "sentence": {
+        "pl": "Wy macie czas.",
+        "en": "You have time.",
+        "gap": "Wy ___ czas.",
+        "answer": "macie",
+        "answer_lemma": "macie",
+        "audio": "media/audio/miec_macie__sentence.mp3"
+      },
+      "cards": [
+        "form"
+      ],
+      "reviewed": false,
+      "kind": "form",
+      "parent": "miec"
+    },
+    {
+      "id": "miec_maja",
+      "word": "mają",
+      "gloss": "they have",
+      "pos": "verb",
+      "ipa": "ˈmajɔ̃",
+      "note": null,
+      "image": "media/img/miec_maja.webp",
+      "image_alt": "they have",
+      "image_basis": "sentence",
+      "image_prompt": "Three children standing together, each holding a flower. Plain background, no text or lettering. Square image.",
+      "audio": "media/audio/miec_maja.mp3",
+      "sentence": {
+        "pl": "Dzieci mają kwiaty.",
+        "en": "The children have flowers.",
+        "gap": "Dzieci ___ kwiaty.",
+        "answer": "mają",
+        "answer_lemma": "mają",
+        "audio": "media/audio/miec_maja__sentence.mp3"
+      },
+      "cards": [
+        "form"
+      ],
+      "reviewed": false,
+      "kind": "form",
+      "parent": "miec"
     }
   ]
 }

@@ -6,6 +6,8 @@ do not edit by hand.
 | File | Title | Author | Licence | Source |
 | --- | --- | --- | --- | --- |
 | `media/audio/byc.mp3` | [Pl-być.ogg](https://commons.wikimedia.org/wiki/File:Pl-by%C4%87.ogg) | Derbeth | CC BY 2.5 | commons |
+| `media/audio/byc_jest.mp3` | [Pl-jest.ogg](https://commons.wikimedia.org/wiki/File:Pl-jest.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
+| `media/audio/byc_jestem.mp3` | [Pl-jestem.ogg](https://commons.wikimedia.org/wiki/File:Pl-jestem.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/chciec.mp3` | [Pl-chcieć.ogg](https://commons.wikimedia.org/wiki/File:Pl-chcie%C4%87.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/chleb.mp3` | [Pl-chleb.ogg](https://commons.wikimedia.org/wiki/File:Pl-chleb.ogg) | user Equadus (inactive global account) | CC BY 2.5 | commons |
 | `media/audio/chodzic.mp3` | [Pl-chodzić.ogg](https://commons.wikimedia.org/wiki/File:Pl-chodzi%C4%87.ogg) | Derbeth | CC BY 2.5 | commons |

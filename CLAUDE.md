@@ -143,6 +143,28 @@ notes`. `status` is `queued` → `known` → `carded`.
   reads as broken; that is a day-one problem, not a reason to top up every
   quiet day. All counted from `introduced` stamps on card state, so the
   numbers survive a reload and a second device.
+- **Conjugation drills are notes with `kind: "form"`.** `być` and `mieć` are
+  his worst cards precisely because the deck teaches a headword he will never
+  utter — he says *jestem*, *jest*, *są*. Each form is therefore its own note
+  (`byc_jestem`, `miec_mam`, …) carrying one `form` card: a gapped sentence
+  with the verb cued in brackets, plus its own image and audio.
+
+  They are notes rather than a nested array *because* each needs its own
+  media — that way `audio.py`, `images.py`, `review.py` and `smoke.mjs` work
+  unchanged. They never enter `vocab.csv`: `jestem` is a form of `być`, not a
+  word learned, so the word count stays honest and `validate.py` skips the
+  cross-check for them.
+
+  Three rules differ from ordinary notes. They are **not buried** — knowing
+  `jest` gives away nothing about `jestem`, and seeing the paradigm together
+  is the entire point. They are **introduced as a whole set**, one verb per
+  day, exempt from the word and sibling budgets, because six forms met on six
+  days are six unrelated facts. And they are **gated on the parent verb's**
+  recognition card, having none of their own.
+
+  This is a deliberate, bounded exception to the no-morphology rule. It
+  applies to two irregular verbs whose forms *are* the vocabulary. Do not let
+  it grow into declension tables.
 - **A note can drop a card type when that type is unanswerable.** `chodzić`
   and `iść` are both "to go"; `siadać` and `siedzieć` are both about sitting.
   Shown the English and asked for the Polish there are two right answers and

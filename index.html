@@ -387,6 +387,13 @@ function unlocked(key){
   // A scratch session is for looking at the app, not for learning — waiting
   // a week to see a production card would defeat the point.
   if (TEST_MODE) return true;
+  const n0 = NOTES[noteOf(key)];
+  /* A conjugation drill waits on the verb it conjugates, not on itself —
+     it has no recognition card of its own to mature. */
+  if (n0 && n0.kind === "form") {
+    const base = cardStates[cardKey(n0.parent, "recognition")];
+    return !!base && base.ivl >= UNLOCK_IVL.production;
+  }
   const need = UNLOCK_IVL[typeOf(key)];
   if (need === undefined) return true;
   const note = NOTES[noteOf(key)];
@@ -401,11 +408,31 @@ function unlocked(key){
    waste two of them. Burying (see grade) enforces the same rule for reviews;
    this stops the daily budget being spent on cards that would be buried. */
 const started = new Set(Object.keys(cardStates).map(noteOf));
+const isForm = k => (NOTES[noteOf(k)] || {}).kind === "form";
+
+/* Conjugation drills arrive as a whole paradigm, not one form a day. Six
+   forms met on six separate days are six unrelated facts; met together they
+   are a system, which is the only reason to drill them at all. They are also
+   exempt from the per-note and per-word budgets — one verb's set is a single
+   introduction, and one verb per day. */
+const formsByParent = {};
+let lockedCount = 0;
+for (const k of allCards) {
+  if (cardStates[k] || !isForm(k)) continue;
+  if (!unlocked(k)) { lockedCount++; continue; }
+  (formsByParent[NOTES[noteOf(k)].parent] ||= []).push(k);
+}
+const formStartedToday = Object.entries(cardStates)
+  .some(([k, st]) => st.introduced === t && isForm(k));
+const parentsReady = Object.keys(formsByParent).sort();
+const formFresh = (formStartedToday || !parentsReady.length)
+  ? [] : formsByParent[parentsReady[0]];
+
 const freshSeen = new Set();
 const fresh = [];
-let lockedCount = 0, words = 0, siblings = 0;
+let words = 0, siblings = 0;
 for (const k of shuffle([...allCards])) {
-  if (cardStates[k]) continue;
+  if (cardStates[k] || isForm(k)) continue;
   if (!unlocked(k)) { lockedCount++; continue; }
   if (freshSeen.has(noteOf(k))) continue;          // one card per note per day
   const isNewWord = !started.has(noteOf(k));
@@ -414,6 +441,7 @@ for (const k of shuffle([...allCards])) {
   freshSeen.add(noteOf(k));
   fresh.push(k);
 }
+fresh.push(...formFresh);
 
 let queue = [
   ...shuffle(allCards.filter(k => cardStates[k] && cardStates[k].due <= t))
@@ -670,6 +698,9 @@ const pieces = {
     ? `<img src="${esc(n.image)}" alt="${esc(n.image_alt || "")}">` : "",
   note:    n => n.note ? `<div class="note">${esc(n.note)}</div>` : "",
   audio:   n => playBtn(n.audio, `play ${n.word}`),
+  sentenceEn: n => (n.sentence && n.sentence.en)
+    ? `<div class="sent-en">${esc(n.sentence.en)}</div>` : "",
+  sentenceAudio: n => playBtn((n.sentence || {}).audio, "play the sentence"),
   sentence: n => (n.sentence && n.sentence.pl) ? `
     <div class="sent">
       <div class="sent-pl">${esc(n.sentence.pl)}${playBtn(n.sentence.audio, "play the sentence")}</div>
@@ -680,6 +711,13 @@ const pieces = {
 };
 
 const LAYOUT = {
+  /* A conjugation drill, not a vocabulary card. The bracketed cue names the
+     verb, because "Dziecko ___ psa" takes jest or ma and a card with two
+     right answers grades nothing. */
+  form: {
+    front: ["image", "formGap"],
+    back:  ["formFull", "sentenceAudio", "sentenceEn", "image"],
+  },
   recognition: {
     front: ["word", "audio", "ipa"],
     back:  ["word", "audio", "ipa", "gloss", "image", "sentence", "note"],
@@ -696,6 +734,14 @@ const LAYOUT = {
 
 // Fronts that are not simply a stack of the shared pieces.
 const special = {
+  formGap:  n => `<div class="cloze">${esc((n.sentence || {}).gap || "")}` +
+    (n.parent && NOTES[n.parent] ? ` <em class="cue">(${esc(NOTES[n.parent].word)})</em>` : "") +
+    `</div>`,
+  formFull: n => {
+    const s = n.sentence || {};
+    return `<div class="cloze">${esc(s.gap || "").replace("___",
+      `<b>${esc(s.answer || "")}</b>`)}</div>`;
+  },
   // Deliberately not "play <word>": the label is the answer.
   audioOnly: n => playBtn(n.audio, "play the recording", "play-big"),
 };
@@ -704,6 +750,7 @@ const special = {
    English word look exactly like a comprehension card until you notice you
    are meant to produce the Polish. */
 const TASK = {
+  form:        "Wpisz słowo — fill in the gap",
   recognition: "What does this mean?",
   production:  "How do you say this in Polish?",
   listening:   "What does this word mean?",

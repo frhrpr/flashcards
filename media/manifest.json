@@ -20,6 +20,136 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/byc_jest.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-jest.ogg",
+    "fingerprint": "75a87d7a5d8e2362",
+    "gain_db": -1.0,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-jest.ogg",
+    "seconds": 0.76,
+    "source": "commons",
+    "text": "jest"
+  },
+  "media/audio/byc_jest__sentence.mp3": {
+    "fingerprint": "ab56fbaddeec334b",
+    "gain_db": 1.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.23,
+    "source": "tts",
+    "text": "Pies jest pod drzewem.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/byc_jestem.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-jestem.ogg",
+    "fingerprint": "5b9562d569050955",
+    "gain_db": 4.9,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-jestem.ogg",
+    "seconds": 0.84,
+    "source": "commons",
+    "text": "jestem"
+  },
+  "media/audio/byc_jestem__sentence.mp3": {
+    "fingerprint": "9a0f22773b226db1",
+    "gain_db": 0.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.99,
+    "source": "tts",
+    "text": "Ja jestem w domu.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/byc_jestes.mp3": {
+    "fingerprint": "8ce615eb271eb46b",
+    "gain_db": -4.0,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.76,
+    "source": "tts",
+    "text": "jesteś",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/byc_jestes__sentence.mp3": {
+    "fingerprint": "ffd4ba12d3369efe",
+    "gain_db": 1.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.02,
+    "source": "tts",
+    "text": "Ty jesteś w parku.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/byc_jestescie.mp3": {
+    "fingerprint": "32bc7e4bd34d577a",
+    "gain_db": -0.3,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.73,
+    "source": "tts",
+    "text": "jesteście",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/byc_jestescie__sentence.mp3": {
+    "fingerprint": "33038bc1e6fb7d65",
+    "gain_db": 0.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.18,
+    "source": "tts",
+    "text": "Wy jesteście tutaj.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/byc_jestesmy.mp3": {
+    "fingerprint": "b6cff66311dcc1ab",
+    "gain_db": -0.6,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.68,
+    "source": "tts",
+    "text": "jesteśmy",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/byc_jestesmy__sentence.mp3": {
+    "fingerprint": "3d9e2d4fe0135d9f",
+    "gain_db": -0.6,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.2,
+    "source": "tts",
+    "text": "My jesteśmy w sklepie.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/byc_sa.mp3": {
+    "fingerprint": "17c0a6bc44f63bbc",
+    "gain_db": -0.5,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.44,
+    "source": "tts",
+    "text": "są",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/byc_sa__sentence.mp3": {
+    "fingerprint": "ad7c374fbe8c83de",
+    "gain_db": 0.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.12,
+    "source": "tts",
+    "text": "Ptaki są na drzewie.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/chciec.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-chcieć.ogg",
@@ -624,6 +754,138 @@
     "gain_db": -1.0,
     "model": "eleven_multilingual_v2",
     "seconds": 0.73,
+    "source": "tts",
+    "text": "Ty masz psa.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/miec_ma.mp3": {
+    "fingerprint": "acdf8f2e2877b9c0",
+    "gain_db": -4.9,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.52,
+    "source": "tts",
+    "text": "ma",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/miec_ma__sentence.mp3": {
+    "fingerprint": "2d720de7c5f97ab7",
+    "gain_db": 0.5,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.1,
+    "source": "tts",
+    "text": "Dziecko ma piłkę.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/miec_macie.mp3": {
+    "fingerprint": "c7d9cbb8104ee325",
+    "gain_db": -3.1,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.71,
+    "source": "tts",
+    "text": "macie",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/miec_macie__sentence.mp3": {
+    "fingerprint": "8016166dca93dc30",
+    "gain_db": -0.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.97,
+    "source": "tts",
+    "text": "Wy macie czas.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/miec_maja.mp3": {
+    "fingerprint": "80f435378489e141",
+    "gain_db": -2.6,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.65,
+    "source": "tts",
+    "text": "mają",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/miec_maja__sentence.mp3": {
+    "fingerprint": "529bee95d877f22f",
+    "gain_db": 0.0,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.2,
+    "source": "tts",
+    "text": "Dzieci mają kwiaty.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/miec_mam.mp3": {
+    "fingerprint": "cba3360dbffadfc0",
+    "gain_db": -3.8,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.57,
+    "source": "tts",
+    "text": "mam",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/miec_mam__sentence.mp3": {
+    "fingerprint": "33646321dff92b16",
+    "gain_db": -1.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.86,
+    "source": "tts",
+    "text": "Ja mam chleb.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/miec_mamy.mp3": {
+    "fingerprint": "fa5b69011915e9d7",
+    "gain_db": -2.3,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.65,
+    "source": "tts",
+    "text": "mamy",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/miec_mamy__sentence.mp3": {
+    "fingerprint": "a9ba45d81c0ada7e",
+    "gain_db": -4.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.89,
+    "source": "tts",
+    "text": "My mamy wodę.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/miec_masz.mp3": {
+    "fingerprint": "a8587c146e020f03",
+    "gain_db": -0.4,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.42,
+    "source": "tts",
+    "text": "masz",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/miec_masz__sentence.mp3": {
+    "fingerprint": "6211e39b1460757d",
+    "gain_db": 0.6,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.78,
     "source": "tts",
     "text": "Ty masz psa.",
     "voice": "ErXwobaYiN019PkySvjV",
@@ -1402,6 +1664,102 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/byc_jest.webp": {
+    "bytes": 141002,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "b8e6be828bef5b57",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A dog lying in the shade directly underneath a large tree, daylight, no people, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/byc_jestem.webp": {
+    "bytes": 33166,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "4061e3a05db4984a",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "One person sitting alone in the living room of a house, relaxed and at home. Plain simple scene, one person only, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/byc_jestes.webp": {
+    "bytes": 198014,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "82e9e1ddade1d803",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "One person standing on a path in a green park, facing the viewer as if being spoken to. One person only, daylight, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/byc_jestescie.webp": {
+    "bytes": 52626,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "4ffa870c836122f6",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A group of four people standing together facing the viewer, as if being addressed. Plain background, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/byc_jestesmy.webp": {
+    "bytes": 104994,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "39048ffefd12862f",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Two people standing together inside a small grocery shop, both clearly present in the scene. No readable signage or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/byc_sa.webp": {
+    "bytes": 59702,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "d68c85f8d3aab08f",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Three birds perched together on the branches of one tree, plain sky behind, no people, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/chciec.webp": {
     "bytes": 38274,
     "check": {
@@ -1863,6 +2221,102 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A person holding a dog's lead with the dog beside them, both fully in frame, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/miec_ma.webp": {
+    "bytes": 21800,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "ffffaed404ea3211",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "One child holding a ball with both hands, whole figure in frame, plain background, no other people, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/miec_macie.webp": {
+    "bytes": 65048,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "ed8930626512fc47",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A group of three people sitting relaxed and unhurried on a bench, an hourglass on the ground beside them. Plain background, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/miec_maja.webp": {
+    "bytes": 40856,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "79974188a6b58afa",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Three children standing together, each holding a flower. Plain background, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/miec_mam.webp": {
+    "bytes": 53334,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "ec86fa8c7d1b41f3",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "One person holding a loaf of bread in both hands, close to the chest, plain background, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/miec_mamy.webp": {
+    "bytes": 26854,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "8f7925e3ed3ba3ac",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Two people standing side by side, each holding a bottle of water clearly visible. Plain background, no text or lettering, no labels. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/miec_masz.webp": {
+    "bytes": 36042,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "04f9e61bab20ddd5",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "One person holding a dog's lead with the dog beside them, facing the viewer as if being spoken to. Plain background, no text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },

@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parent.parent
 NOTES, VOCAB = ROOT / "deck/notes.json", ROOT / "deck/vocab.csv"
 MANIFEST = ROOT / "media/manifest.json"
 
-CARD_TYPES = {"recognition", "production", "listening"}
+CARD_TYPES = {"recognition", "production", "listening", "form"}
 POS = {"noun", "verb", "adjective", "adverb", "preposition", "conjunction",
        "particle", "pronoun", "interjection"}
 ID_RE = re.compile(r"[a-z0-9_]+$")
@@ -147,6 +147,17 @@ def main():
 
         if not n.get("reviewed"):
             todo["review"].append(nid)
+
+        # Conjugation drills are notes but not vocabulary: jestem is a form of
+        # być, not a word he has "learned", so they stay out of vocab.csv.
+        if n.get("kind") == "form":
+            if not n.get("parent"):
+                err(nid, "form note has no parent verb")
+            elif n["parent"] not in {m["id"] for m in notes}:
+                err(nid, f"parent {n['parent']!r} is not a note")
+            if n.get("cards") != ["form"]:
+                err(nid, "a form note should carry exactly the form card")
+            continue
 
         row = vocab.get(nid)
         if row is None:
