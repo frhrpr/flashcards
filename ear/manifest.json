@@ -172,10 +172,6 @@
   ],
   "kosz": [
    {
-    "f": "ear/audio/kosz/alan__20260821-173852-003.mp3",
-    "spk": "alan"
-   },
-   {
     "f": "ear/audio/kosz/alan__20260821-173852-004.mp3",
     "spk": "alan"
    },
@@ -281,10 +277,6 @@
    }
   ],
   "nic": [
-   {
-    "f": "ear/audio/nic/alan__20260821-173852-011.mp3",
-    "spk": "alan"
-   },
    {
     "f": "ear/audio/nic/alan__20260821-173852-012.mp3",
     "spk": "alan"
