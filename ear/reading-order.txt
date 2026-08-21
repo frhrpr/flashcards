@@ -1,0 +1,47 @@
+Shuffled reading order for volunteer recordings.
+Generated once and FIXED — every reader gets this same order, and
+tools/ear_split.py must be given it via --subset when their take comes in.
+Deliberately not the SETS order: reading kos/kosz/kos-acute back to back
+invites contrastive stress. No two words of a set are within 6 positions.
+
+ 1. car      car
+ 2. kosz     kosz
+ 3. wieś     wies-acute
+ 4. szum     szum
+ 5. kasza    kasza
+ 6. nic      nic
+ 7. leci     leci
+ 8. mocz     mocz
+ 9. wiesz    wiesz
+10. noś      nos-acute
+11. paś      pas-acute
+12. kos      kos
+13. Kasia    kasia
+14. płacze   placze
+15. szyk     szyk
+16. owcza    owcza
+17. ci       ci
+18. nos      nos
+19. siad     siad
+20. piecz    piecz
+21. proszę   prosze
+22. pasz     pasz
+23. moc      moc
+24. szok     szok
+25. sad      sad
+26. sum      sum
+27. koś      kos-acute
+28. pas      pas
+29. owca     owca
+30. czar     czar
+31. piec     piec
+32. syk      syk
+33. czy      czy
+34. prosię   prosie
+35. nić      nic-acute
+36. leczy    leczy
+37. płace    place
+38. sok      sok
+39. kasa     kasa
+
+--subset car,kosz,wies-acute,szum,kasza,nic,leci,mocz,wiesz,nos-acute,pas-acute,kos,kasia,placze,szyk,owcza,ci,nos,siad,piecz,prosze,pasz,moc,szok,sad,sum,kos-acute,pas,owca,czar,piec,syk,czy,prosie,nic-acute,leczy,place,sok,kasa
