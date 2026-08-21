@@ -80,7 +80,8 @@ def load_remote(key, user):
         doc = docs[0]
     fields = {k: dec(v) for k, v in doc.get("fields", {}).items()}
     return (doc["name"].split("/")[-1], fields.get("cards") or {},
-            fields.get("log") or [], fields.get("ear") or {})
+            fields.get("log") or [], fields.get("ear") or {},
+            fields.get("done") or {})
 
 
 def ear_content():
@@ -167,7 +168,7 @@ def sessions(log):
     return out
 
 
-def analyse(cards, log, notes):
+def analyse(cards, log, notes, done):
     word = {n["id"]: n["word"] for n in notes}
     gloss = {n["id"]: n.get("gloss", "") for n in notes}
     note_of = lambda k: k.rsplit("__", 1)[0]
@@ -177,6 +178,11 @@ def analyse(cards, log, notes):
     for e in log:
         by_day[midnight(e["ts"])][e["grade"]] += 1
     days = sorted(by_day)
+
+    # Days he chose "just reviews". Worth watching: the option exists so a
+    # tired evening still happens, but if it becomes the default the deck
+    # quietly stops growing while the streak and the accuracy look fine.
+    light = {int(d) for d, modes in done.items() if "vocab-light" in modes}
 
     today = midnight(int(datetime.now().timestamp() * 1000))
     streak = 0
@@ -246,7 +252,7 @@ def analyse(cards, log, notes):
         median_minutes=sorted(lengths)[len(lengths) // 2] if lengths else 0,
         usual_hour=hours.most_common(1)[0][0] if hours else None,
         last_seen=days[-1] if days else None, today=today,
-        type_of=type_of, reviews=len(log), vocab_reviews=len(vocab),
+        type_of=type_of, reviews=len(log), vocab_reviews=len(vocab), light=light,
         records=records, total_cards=sum(len(n.get("cards", [])) for n in notes),
     )
 
@@ -308,7 +314,13 @@ def report(uid, a, e):
         tot = v["good"] + v["again"]
         rate = round(v["good"] / tot * 100) if tot else 0
         p(f"    {fmt_day(d)}  {tot:>3} reviews  {rate:>3}% first time  "
-          + "█" * min(tot, 40))
+          + "█" * min(tot, 40) + ("  reviews only" if d in a["light"] else ""))
+    recent = [d for d in a["days"][-14:]]
+    n_light = sum(1 for d in recent if d in a["light"])
+    if n_light:
+        p(f"\n  reviews-only on {n_light} of his last {len(recent)} active day(s)"
+          + ("  — no new words went in on those" if n_light < len(recent)
+             else "  — ALL of them; nothing new has gone in"))
     if a["hard"]:
         p("\n  giving him trouble")
         for nid, miss, tot in a["hard"]:
@@ -389,7 +401,8 @@ def html(uid, a, e, dest):
                  f'<td class=bar><i style="width:{gw:.1f}%"></i>'
                  f'<u style="width:{aw:.1f}%"></u></td>'
                  f'<td class=n>{tot}</td>'
-                 f'<td class=n>{round(v["good"]/tot*100) if tot else 0}%</td></tr>')
+                 f'<td class=n>{round(v["good"]/tot*100) if tot else 0}%</td>'
+                 f'<td class=g>{"reviews only" if d in a["light"] else ""}</td></tr>')
     rows_cards = ""
     for r in a["records"]:
         strip = hist_html(r["history"])
@@ -485,10 +498,10 @@ def main():
                   f"{len(f.get('cards') or {}):>4} cards  {len(f.get('log') or []):>5} reviews")
         return 0
 
-    uid, cards, log, ear = load_remote(key, args.user)
+    uid, cards, log, ear, done = load_remote(key, args.user)
     notes = json.loads((ROOT / "deck/notes.json").read_text(encoding="utf-8"))["notes"]
     spell, sound, label = ear_content()
-    a = analyse(cards, log, notes)
+    a = analyse(cards, log, notes, done)
     e = analyse_ear(ear, log, spell, sound, label)
     report(uid, a, e)
     if a["days"]:

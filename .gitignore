@@ -35,5 +35,6 @@ media/img/*.part
 # python bytecode from importing tools/ directly
 __pycache__/
 
-# local clip-audition page (regenerate when needed)
+# local clip-audition pages (regenerated when needed, never committed)
 trim-check.html
+audition.html

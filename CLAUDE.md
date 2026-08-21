@@ -176,6 +176,23 @@ notes`. `status` is `queued` → `known` → `carded`.
   This is a deliberate, bounded exception to the no-morphology rule. It
   applies to two irregular verbs whose forms *are* the vocabulary. Do not let
   it grow into declension tables.
+- **A "just reviews" session exists, and is deliberately a lesser option.**
+  A small grey link under the Vocab tile, not a third mode: it drops `fresh`
+  and runs the due cards alone, for a tired or busy evening. Skipping creates
+  no debt — the budget is counted from `introduced` stamps, so tomorrow is
+  three again rather than six; a bad day must not buy a punishing one.
+
+  Offered only when there is both something due and something new to skip,
+  or it is an empty session or identical to the full one.
+
+  It records `done: {"<day>": ["vocab-light"]}` rather than `"vocab"`, for
+  one reason: without it the escape hatch is a trapdoor. Taken most evenings
+  it would silently stop the deck growing while the streak, the review counts
+  and the accuracy all still looked healthy. `progress.py` reports
+  reviews-only days in the attendance table and counts them over the last
+  fortnight. `vocabPending` reads the marker rather than the queue, because
+  after a light session the new cards are still sitting in `fresh` and a
+  reload would otherwise re-offer them.
 - **A note can drop a card type when that type is unanswerable.** `chodzić`
   and `iść` are both "to go"; `siadać` and `siedzieć` are both about sitting.
   Shown the English and asked for the Polish there are two right answers and

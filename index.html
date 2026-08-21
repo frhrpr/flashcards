@@ -92,6 +92,11 @@ button{font-family:inherit;cursor:pointer;border-radius:4px}
 .mode.is-done:hover{border-color:var(--line)}
 .mode.is-done .mode-n{font-weight:400}
 
+.lighter{display:block;width:100%;margin:-.2rem 0 0;padding:.6rem;background:none;
+  border:0;color:var(--dim);font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;
+  text-align:center;text-decoration:underline;text-underline-offset:3px}
+.lighter:hover{color:var(--ink)}
+
 /* ── ear training ─────────────────────────────────────────────────── */
 .ticks{display:flex;gap:3px;margin-bottom:1rem}
 .ticks i{flex:1;height:3px;background:var(--line)}
@@ -599,11 +604,13 @@ for (const k of shuffle([...allCards])) {
   fresh.push(k);
 }
 
-let queue = [
-  ...shuffle(allCards.filter(k => cardStates[k] && cardStates[k].due <= t))
-    .sort((a, b) => cardStates[a].due - cardStates[b].due),
-  ...fresh,
-];
+const dueCards = shuffle(allCards.filter(k => cardStates[k] && cardStates[k].due <= t))
+  .sort((a, b) => cardStates[a].due - cardStates[b].due);
+let queue = [...dueCards, ...fresh];
+/* A "just reviews" session drops the new cards. Skipping them creates no
+   debt: the daily budget is counted from `introduced` stamps, so tomorrow
+   is three again rather than six. A tired day must not buy a punishing one. */
+let vocabLight = false;
 
 let current = null;
 let revealed = false;
@@ -736,7 +743,7 @@ function renderDone(){
   barEl.className = "";
   renderWarning();
   const st = stats();
-  if (sessionDone) markDone("vocab");
+  if (sessionDone) markDone(vocabLight ? "vocab-light" : "vocab");
   const earLeft = earPending();
   // Vocab-only: an ear trial is not a card reviewed, and this screen is
   // reporting on the session he has just finished.
@@ -1337,7 +1344,7 @@ function renderEarDone(){
       ? `<button class="reveal" id="cross">Vocab · ${vocabLeft} card${vocabLeft === 1 ? "" : "s"} due</button>`
       : `<button class="reveal alt" id="home">Done for today</button>`}`;
   const cross = $("#cross");
-  if (cross) cross.addEventListener("click", () => { modeLabel.textContent = "Vocab"; renderCard(); });
+  if (cross) cross.addEventListener("click", () => startVocab(false));
   const home = $("#home");
   if (home) home.addEventListener("click", renderLanding);
 }
@@ -1347,9 +1354,22 @@ function renderEarDone(){
    to. A satisfied mode is greyed and not tappable: tapping into a mode
    and landing on "nothing due" reads as broken rather than finished. */
 
+function startVocab(light){
+  vocabLight = !!light;
+  queue = light ? [...dueCards] : [...dueCards, ...fresh];
+  modeLabel.textContent = "Vocab";
+  renderCard();
+}
+
+const vocabDone = () => {
+  const d = doneDays[String(t)] || [];
+  return d.includes("vocab") ? "full" : d.includes("vocab-light") ? "light" : null;
+};
+
 function vocabPending(){
-  if ((doneDays[String(t)] || []).includes("vocab")) return 0;
-  return queue.length;
+  // Read from `done`, not from the queue: after a light session the new cards
+  // are still sitting in `fresh`, and a reload would otherwise re-offer them.
+  return vocabDone() ? 0 : queue.length;
 }
 function earPending(){
   if ((doneDays[String(t)] || []).includes("ear")) return 0;
@@ -1372,6 +1392,7 @@ function renderLanding(){
   renderWarning();
   const s = stats();
   const v = vocabPending(), e = earPending();
+  const light = v && dueCards.length && fresh.length;
   // When both are open, ear training leads: it is short, it is a warm-up,
   // and there is no did-I-remember-this pressure in it.
   const tile = (id, name, sub, lead) =>
@@ -1389,8 +1410,11 @@ function renderLanding(){
   appEl.innerHTML = `
     <div class="modes">
       ${v ? tile("go-vocab", "Vocab", `${v} card${v === 1 ? "" : "s"} due`, false)
-          : idle("Vocab", (doneDays[String(t)] || []).includes("vocab")
-                            ? "✓ done today" : "nothing due")}
+          : idle("Vocab", vocabDone() === "full" ? "✓ done today"
+                        : vocabDone() === "light" ? "✓ reviews only"
+                        : "nothing due")}
+      ${light ? `<button class="lighter" id="go-light">Tired? Just the ` +
+        `${dueCards.length} review${dueCards.length === 1 ? "" : "s"}, no new words</button>` : ""}
       ${e ? tile("go-ear", "Ear training", `${e} trials · about ${earMins(e)}`, !!v)
           : idle("Ear training", earIdleLabel())}
     </div>
@@ -1408,7 +1432,9 @@ function renderLanding(){
       </dl>
     </div>`;
   const gv = $("#go-vocab");
-  if (gv) gv.addEventListener("click", () => { modeLabel.textContent = "Vocab"; renderCard(); });
+  if (gv) gv.addEventListener("click", () => startVocab(false));
+  const gl = $("#go-light");
+  if (gl) gl.addEventListener("click", () => startVocab(true));
   const ge = $("#go-ear");
   if (ge) ge.addEventListener("click", startEar);
 }

@@ -59,6 +59,8 @@ const typeOf = k => k.slice(k.lastIndexOf("__") + 2);
 let cardStates = {}, reviewLog = [], fresh = [], lockedCount = 0;
 let earStates = {}, doneDays = {};
 let queue = [], current = null, revealed = false, writeError = null, earLoadError = null;
+const dueCards = [];
+let vocabLight = false;
 let writeChain = Promise.resolve(), docExists = false;
 const docRef = {}, arrayUnion = (...a) => a, FieldPath = function(){};
 const updateDoc = async () => {}, firstWrite = async () => {};
@@ -84,8 +86,10 @@ const renderCard_ = null;
 
 const mod = `${stubs}
 ${SLICES.map(cut).join("\n")}
-export { renderDone, renderLanding, startEar, earPlan, nextEarTrial, answerEar };
-export const state = () => ({ html, PAIRS, livePairs, earQueue, earIdx, earStates });
+export { renderDone, renderLanding, startEar, earPlan, nextEarTrial, answerEar, startVocab, vocabPending };
+export const state = () => ({ html, PAIRS, livePairs, earQueue, earIdx, earStates, queue, doneDays, vocabLight });
+export const seed = (due, nw) => { dueCards.length = 0; dueCards.push(...due);
+  fresh.length = 0; fresh.push(...nw); queue = [...due, ...nw]; };
 export function face(key, side){
   current = key; queue = [key]; revealed = false;
   renderCard();
@@ -158,6 +162,36 @@ try {
   check(m.state().html.includes("done-h"), "ear closing screen renders");
   check(Object.keys(m.state().earStates).length > 0, "ear state was recorded");
 
+  // ── the "just reviews" session ──────────────────────────────────
+  const due = deck.notes.slice(0, 3).map(n => `${n.id}__recognition`);
+  const nw  = deck.notes.slice(3, 5).map(n => `${n.id}__recognition`);
+  m.seed(due, nw);
+  m.renderLanding();
+  check(m.state().html.includes("go-light"), "landing offers the light session");
+  m.startVocab(true);
+  check(m.state().queue.length === due.length &&
+        nw.every(k => !m.state().queue.includes(k)), "light session drops the new cards");
+  m.startVocab(false);
+  check(m.state().queue.length === due.length + nw.length, "full session keeps them");
+
+  // Offered only when there is both something to review and something to skip.
+  m.seed(due, []);
+  m.renderLanding();
+  check(!m.state().html.includes("go-light"), "no light option when nothing new is due");
+  m.seed([], nw);
+  m.renderLanding();
+  check(!m.state().html.includes("go-light"), "no light option when nothing is due to review");
+
+  // A finished light session must not re-offer the new cards after a reload:
+  // they are still sitting in `fresh`, so only `done` can suppress them.
+  m.seed(due, nw);
+  const day = String((() => { const d = new Date(); d.setHours(0,0,0,0); return d.getTime(); })());
+  check(m.vocabPending() > 0, "vocab is pending before the session");
+  m.state().doneDays[day] = ["vocab-light"];
+  check(m.vocabPending() === 0, "a finished light session suppresses the new cards");
+  m.renderLanding();
+  check(m.state().html.includes("reviews only"), "landing says it was reviews only");
+  delete m.state().doneDays[day];
   m.renderDone();    check(true, "renderDone runs");
   m.renderLanding(); check(true, "renderLanding runs");
 } finally {
