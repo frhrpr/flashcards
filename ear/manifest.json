@@ -46,10 +46,6 @@
     "spk": "frank2"
    },
    {
-    "f": "ear/audio/czar/frank2__20260821-140445-089.mp3",
-    "spk": "frank2"
-   },
-   {
     "f": "ear/audio/czar/frank2__20260821-140445-090.mp3",
     "spk": "frank2"
    }
@@ -150,10 +146,6 @@
     "spk": "frank0"
    },
    {
-    "f": "ear/audio/kos-acute/frank2__20260821-140445-079.mp3",
-    "spk": "frank2"
-   },
-   {
     "f": "ear/audio/kos-acute/frank2__20260821-140445-080.mp3",
     "spk": "frank2"
    },
@@ -205,10 +197,6 @@
    },
    {
     "f": "ear/audio/leczy/frank2__20260821-140445-106.mp3",
-    "spk": "frank2"
-   },
-   {
-    "f": "ear/audio/leczy/frank2__20260821-140445-107.mp3",
     "spk": "frank2"
    },
    {
@@ -274,10 +262,6 @@
    {
     "f": "ear/audio/nic-acute/frank1__20260821-134643-02.mp3",
     "spk": "frank1"
-   },
-   {
-    "f": "ear/audio/nic-acute/frank2__20260821-140445-103.mp3",
-    "spk": "frank2"
    },
    {
     "f": "ear/audio/nic-acute/frank2__20260821-140445-104.mp3",
