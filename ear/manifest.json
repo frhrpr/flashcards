@@ -4,234 +4,702 @@
    {
     "f": "ear/audio/car/frank1__20260821-134643-05.mp3",
     "spk": "frank1"
+   },
+   {
+    "f": "ear/audio/car/frank2__20260821-140445-001.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/car/frank2__20260821-140445-002.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/car/frank2__20260821-140445-003.mp3",
+    "spk": "frank2"
    }
   ],
   "ci": [
    {
     "f": "ear/audio/ci/frank1__20260821-134643-04.mp3",
     "spk": "frank1"
+   },
+   {
+    "f": "ear/audio/ci/frank2__20260821-140445-049.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/ci/frank2__20260821-140445-050.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/ci/frank2__20260821-140445-051.mp3",
+    "spk": "frank2"
    }
   ],
   "czar": [
    {
     "f": "ear/audio/czar/frank1__20260821-134643-06.mp3",
     "spk": "frank1"
+   },
+   {
+    "f": "ear/audio/czar/frank2__20260821-140445-088.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/czar/frank2__20260821-140445-089.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/czar/frank2__20260821-140445-090.mp3",
+    "spk": "frank2"
    }
   ],
   "czy": [
    {
     "f": "ear/audio/czy/frank1__20260821-134643-03.mp3",
     "spk": "frank1"
+   },
+   {
+    "f": "ear/audio/czy/frank2__20260821-140445-097.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/czy/frank2__20260821-140445-098.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/czy/frank2__20260821-140445-099.mp3",
+    "spk": "frank2"
    }
   ],
   "kasa": [
    {
     "f": "ear/audio/kasa/frank0__20260725-151120-07.mp3",
     "spk": "frank0"
+   },
+   {
+    "f": "ear/audio/kasa/frank2__20260821-140445-115.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/kasa/frank2__20260821-140445-116.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/kasa/frank2__20260821-140445-117.mp3",
+    "spk": "frank2"
    }
   ],
   "kasia": [
    {
     "f": "ear/audio/kasia/frank0__20260725-151120-09.mp3",
     "spk": "frank0"
+   },
+   {
+    "f": "ear/audio/kasia/frank2__20260821-140445-037.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/kasia/frank2__20260821-140445-038.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/kasia/frank2__20260821-140445-039.mp3",
+    "spk": "frank2"
    }
   ],
   "kasza": [
    {
     "f": "ear/audio/kasza/frank0__20260725-151120-08.mp3",
     "spk": "frank0"
+   },
+   {
+    "f": "ear/audio/kasza/frank2__20260821-140445-013.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/kasza/frank2__20260821-140445-014.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/kasza/frank2__20260821-140445-015.mp3",
+    "spk": "frank2"
    }
   ],
   "kos": [
    {
     "f": "ear/audio/kos/frank0__20260725-151120-01.mp3",
     "spk": "frank0"
+   },
+   {
+    "f": "ear/audio/kos/frank2__20260821-140445-034.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/kos/frank2__20260821-140445-035.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/kos/frank2__20260821-140445-036.mp3",
+    "spk": "frank2"
    }
   ],
   "kos-acute": [
    {
     "f": "ear/audio/kos-acute/frank0__20260725-151120-03.mp3",
     "spk": "frank0"
+   },
+   {
+    "f": "ear/audio/kos-acute/frank2__20260821-140445-079.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/kos-acute/frank2__20260821-140445-080.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/kos-acute/frank2__20260821-140445-081.mp3",
+    "spk": "frank2"
    }
   ],
   "kosz": [
    {
     "f": "ear/audio/kosz/frank0__20260725-151120-02.mp3",
     "spk": "frank0"
+   },
+   {
+    "f": "ear/audio/kosz/frank2__20260821-140445-004.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/kosz/frank2__20260821-140445-005.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/kosz/frank2__20260821-140445-006.mp3",
+    "spk": "frank2"
    }
   ],
   "leci": [
    {
     "f": "ear/audio/leci/frank1__20260821-134643-11.mp3",
     "spk": "frank1"
+   },
+   {
+    "f": "ear/audio/leci/frank2__20260821-140445-019.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/leci/frank2__20260821-140445-020.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/leci/frank2__20260821-140445-021.mp3",
+    "spk": "frank2"
    }
   ],
   "leczy": [
    {
     "f": "ear/audio/leczy/frank1__20260821-134643-12.mp3",
     "spk": "frank1"
+   },
+   {
+    "f": "ear/audio/leczy/frank2__20260821-140445-106.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/leczy/frank2__20260821-140445-107.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/leczy/frank2__20260821-140445-108.mp3",
+    "spk": "frank2"
    }
   ],
   "moc": [
    {
     "f": "ear/audio/moc/frank1__20260821-134643-07.mp3",
     "spk": "frank1"
+   },
+   {
+    "f": "ear/audio/moc/frank2__20260821-140445-067.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/moc/frank2__20260821-140445-068.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/moc/frank2__20260821-140445-069.mp3",
+    "spk": "frank2"
    }
   ],
   "mocz": [
    {
     "f": "ear/audio/mocz/frank1__20260821-134643-08.mp3",
     "spk": "frank1"
+   },
+   {
+    "f": "ear/audio/mocz/frank2__20260821-140445-022.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/mocz/frank2__20260821-140445-023.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/mocz/frank2__20260821-140445-024.mp3",
+    "spk": "frank2"
    }
   ],
   "nic": [
    {
     "f": "ear/audio/nic/frank1__20260821-134643-01.mp3",
     "spk": "frank1"
+   },
+   {
+    "f": "ear/audio/nic/frank2__20260821-140445-016.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/nic/frank2__20260821-140445-017.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/nic/frank2__20260821-140445-018.mp3",
+    "spk": "frank2"
    }
   ],
   "nic-acute": [
    {
     "f": "ear/audio/nic-acute/frank1__20260821-134643-02.mp3",
     "spk": "frank1"
+   },
+   {
+    "f": "ear/audio/nic-acute/frank2__20260821-140445-103.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/nic-acute/frank2__20260821-140445-104.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/nic-acute/frank2__20260821-140445-105.mp3",
+    "spk": "frank2"
    }
   ],
   "nos": [
    {
     "f": "ear/audio/nos/frank0__20260725-151120-22.mp3",
     "spk": "frank0"
+   },
+   {
+    "f": "ear/audio/nos/frank2__20260821-140445-052.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/nos/frank2__20260821-140445-053.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/nos/frank2__20260821-140445-054.mp3",
+    "spk": "frank2"
    }
   ],
   "nos-acute": [
    {
     "f": "ear/audio/nos-acute/frank0__20260725-151120-23.mp3",
     "spk": "frank0"
+   },
+   {
+    "f": "ear/audio/nos-acute/frank2__20260821-140445-028.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/nos-acute/frank2__20260821-140445-029.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/nos-acute/frank2__20260821-140445-030.mp3",
+    "spk": "frank2"
    }
   ],
   "owca": [
    {
     "f": "ear/audio/owca/frank1__20260821-134643-15.mp3",
     "spk": "frank1"
+   },
+   {
+    "f": "ear/audio/owca/frank2__20260821-140445-085.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/owca/frank2__20260821-140445-086.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/owca/frank2__20260821-140445-087.mp3",
+    "spk": "frank2"
    }
   ],
   "owcza": [
    {
     "f": "ear/audio/owcza/frank1__20260821-134643-16.mp3",
     "spk": "frank1"
+   },
+   {
+    "f": "ear/audio/owcza/frank2__20260821-140445-046.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/owcza/frank2__20260821-140445-047.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/owcza/frank2__20260821-140445-048.mp3",
+    "spk": "frank2"
    }
   ],
   "pas": [
    {
     "f": "ear/audio/pas/frank0__20260725-151120-04.mp3",
     "spk": "frank0"
+   },
+   {
+    "f": "ear/audio/pas/frank2__20260821-140445-082.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/pas/frank2__20260821-140445-083.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/pas/frank2__20260821-140445-084.mp3",
+    "spk": "frank2"
    }
   ],
   "pas-acute": [
    {
     "f": "ear/audio/pas-acute/frank0__20260725-151120-06.mp3",
     "spk": "frank0"
+   },
+   {
+    "f": "ear/audio/pas-acute/frank2__20260821-140445-031.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/pas-acute/frank2__20260821-140445-032.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/pas-acute/frank2__20260821-140445-033.mp3",
+    "spk": "frank2"
    }
   ],
   "pasz": [
    {
     "f": "ear/audio/pasz/frank0__20260725-151120-05.mp3",
     "spk": "frank0"
+   },
+   {
+    "f": "ear/audio/pasz/frank2__20260821-140445-064.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/pasz/frank2__20260821-140445-065.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/pasz/frank2__20260821-140445-066.mp3",
+    "spk": "frank2"
    }
   ],
   "piec": [
    {
     "f": "ear/audio/piec/frank1__20260821-134643-09.mp3",
     "spk": "frank1"
+   },
+   {
+    "f": "ear/audio/piec/frank2__20260821-140445-091.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/piec/frank2__20260821-140445-092.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/piec/frank2__20260821-140445-093.mp3",
+    "spk": "frank2"
    }
   ],
   "piecz": [
    {
     "f": "ear/audio/piecz/frank1__20260821-134643-10.mp3",
     "spk": "frank1"
+   },
+   {
+    "f": "ear/audio/piecz/frank2__20260821-140445-058.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/piecz/frank2__20260821-140445-059.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/piecz/frank2__20260821-140445-060.mp3",
+    "spk": "frank2"
    }
   ],
   "place": [
    {
     "f": "ear/audio/place/frank1__20260821-134643-13.mp3",
     "spk": "frank1"
+   },
+   {
+    "f": "ear/audio/place/frank2__20260821-140445-109.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/place/frank2__20260821-140445-110.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/place/frank2__20260821-140445-111.mp3",
+    "spk": "frank2"
    }
   ],
   "placze": [
    {
     "f": "ear/audio/placze/frank1__20260821-134643-14.mp3",
     "spk": "frank1"
+   },
+   {
+    "f": "ear/audio/placze/frank2__20260821-140445-040.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/placze/frank2__20260821-140445-041.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/placze/frank2__20260821-140445-042.mp3",
+    "spk": "frank2"
    }
   ],
   "prosie": [
    {
     "f": "ear/audio/prosie/frank0__20260725-151120-17.mp3",
     "spk": "frank0"
+   },
+   {
+    "f": "ear/audio/prosie/frank2__20260821-140445-100.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/prosie/frank2__20260821-140445-101.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/prosie/frank2__20260821-140445-102.mp3",
+    "spk": "frank2"
    }
   ],
   "prosze": [
    {
     "f": "ear/audio/prosze/frank0__20260725-151120-16.mp3",
     "spk": "frank0"
+   },
+   {
+    "f": "ear/audio/prosze/frank2__20260821-140445-061.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/prosze/frank2__20260821-140445-062.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/prosze/frank2__20260821-140445-063.mp3",
+    "spk": "frank2"
    }
   ],
   "sad": [
    {
     "f": "ear/audio/sad/frank0__20260725-151120-20.mp3",
     "spk": "frank0"
+   },
+   {
+    "f": "ear/audio/sad/frank2__20260821-140445-073.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/sad/frank2__20260821-140445-074.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/sad/frank2__20260821-140445-075.mp3",
+    "spk": "frank2"
    }
   ],
   "siad": [
    {
     "f": "ear/audio/siad/frank0__20260725-151120-21.mp3",
     "spk": "frank0"
+   },
+   {
+    "f": "ear/audio/siad/frank2__20260821-140445-055.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/siad/frank2__20260821-140445-056.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/siad/frank2__20260821-140445-057.mp3",
+    "spk": "frank2"
    }
   ],
   "sok": [
    {
     "f": "ear/audio/sok/frank0__20260725-151120-10.mp3",
     "spk": "frank0"
+   },
+   {
+    "f": "ear/audio/sok/frank2__20260821-140445-112.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/sok/frank2__20260821-140445-113.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/sok/frank2__20260821-140445-114.mp3",
+    "spk": "frank2"
    }
   ],
   "sum": [
    {
     "f": "ear/audio/sum/frank0__20260725-151120-12.mp3",
     "spk": "frank0"
+   },
+   {
+    "f": "ear/audio/sum/frank2__20260821-140445-076.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/sum/frank2__20260821-140445-077.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/sum/frank2__20260821-140445-078.mp3",
+    "spk": "frank2"
    }
   ],
   "syk": [
    {
     "f": "ear/audio/syk/frank0__20260725-151120-14.mp3",
     "spk": "frank0"
+   },
+   {
+    "f": "ear/audio/syk/frank2__20260821-140445-094.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/syk/frank2__20260821-140445-095.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/syk/frank2__20260821-140445-096.mp3",
+    "spk": "frank2"
    }
   ],
   "szok": [
    {
     "f": "ear/audio/szok/frank0__20260725-151120-11.mp3",
     "spk": "frank0"
+   },
+   {
+    "f": "ear/audio/szok/frank2__20260821-140445-070.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/szok/frank2__20260821-140445-071.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/szok/frank2__20260821-140445-072.mp3",
+    "spk": "frank2"
    }
   ],
   "szum": [
    {
     "f": "ear/audio/szum/frank0__20260725-151120-13.mp3",
     "spk": "frank0"
+   },
+   {
+    "f": "ear/audio/szum/frank2__20260821-140445-010.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/szum/frank2__20260821-140445-011.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/szum/frank2__20260821-140445-012.mp3",
+    "spk": "frank2"
    }
   ],
   "szyk": [
    {
     "f": "ear/audio/szyk/frank0__20260725-151120-15.mp3",
     "spk": "frank0"
+   },
+   {
+    "f": "ear/audio/szyk/frank2__20260821-140445-043.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/szyk/frank2__20260821-140445-044.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/szyk/frank2__20260821-140445-045.mp3",
+    "spk": "frank2"
    }
   ],
   "wies-acute": [
    {
     "f": "ear/audio/wies-acute/frank0__20260725-151120-19.mp3",
     "spk": "frank0"
+   },
+   {
+    "f": "ear/audio/wies-acute/frank2__20260821-140445-007.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/wies-acute/frank2__20260821-140445-008.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/wies-acute/frank2__20260821-140445-009.mp3",
+    "spk": "frank2"
    }
   ],
   "wiesz": [
    {
     "f": "ear/audio/wiesz/frank0__20260725-151120-18.mp3",
     "spk": "frank0"
+   },
+   {
+    "f": "ear/audio/wiesz/frank2__20260821-140445-025.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/wiesz/frank2__20260821-140445-026.mp3",
+    "spk": "frank2"
+   },
+   {
+    "f": "ear/audio/wiesz/frank2__20260821-140445-027.mp3",
+    "spk": "frank2"
    }
   ]
  }

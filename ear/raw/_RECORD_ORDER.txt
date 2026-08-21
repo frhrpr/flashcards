@@ -2,11 +2,6 @@ Read these aloud IN THIS ORDER into one recording.
 Leave ~1 second of clear silence between each. Normal pace, don't over-enunciate.
 Then:  python3 tools/ear_split.py yourfile.wav
 
-23 of these are already recorded, marked (done) below.
-To record only what is missing, read just the unmarked ones and run:
-
-    python3 tools/ear_split.py yourfile.wav --subset nic,nic-acute,czy,ci,car,czar,moc,mocz,piec,piecz,leci,leczy,place,placze,owca,owcza
-
  1. kos   (done)
  2. kosz   (done)
  3. koś   (done)
@@ -30,19 +25,19 @@ To record only what is missing, read just the unmarked ones and run:
 21. siad   (done)
 22. nos   (done)
 23. noś   (done)
-24. nic
-25. nić
-26. czy
-27. ci
-28. car
-29. czar
-30. moc
-31. mocz
-32. piec
-33. piecz
-34. leci
-35. leczy
-36. płace
-37. płacze
-38. owca
-39. owcza
+24. nic   (done)
+25. nić   (done)
+26. czy   (done)
+27. ci   (done)
+28. car   (done)
+29. czar   (done)
+30. moc   (done)
+31. mocz   (done)
+32. piec   (done)
+33. piecz   (done)
+34. leci   (done)
+35. leczy   (done)
+36. płace   (done)
+37. płacze   (done)
+38. owca   (done)
+39. owcza   (done)

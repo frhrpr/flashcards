@@ -16,6 +16,11 @@ miscount can never quietly shift every word into the wrong folder.
 Re-recording only a few? Give them in order:
     python3 tools/ear_split.py fixes.wav --subset kos,kosz,siad
 
+Read each word several times in a row for a bigger sample? Say how many:
+    python3 tools/ear_split.py mytake.wav --reps 3
+The app picks one take at random per trial, so extra takes cost nothing and
+stop him learning one particular recording instead of the contrast.
+
 The input filename becomes the speaker tag (frank0.wav -> "frank0"), so the
 app can pin the "listen to both" comparison to one voice. Override it with
 --speaker if you'd rather name it something else:
@@ -217,6 +222,8 @@ def main():
                     help="silence threshold, e.g. -35dB (a leading dash is fine)")
     ap.add_argument("--gap", type=float, default=DEF_GAP)
     ap.add_argument("--pad", type=float, default=DEF_PAD)
+    ap.add_argument("--reps", type=int, default=1,
+                    help="how many times each word was read, in a row (default 1)")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args(fixed)
 
@@ -244,16 +251,25 @@ def main():
     else:
         want = order
 
+    if args.reps < 1:
+        die("--reps must be at least 1")
+    # Each word read R times in a row, so segment i belongs to word i // R.
+    # Extra takes are pure gain: the app picks one at random per trial, so
+    # more tokens per word means he learns the contrast rather than one clip.
+    expect = [w for w in want for _ in range(args.reps)]
+
     total = duration(src)
     seg = detect_speech(src, args.noise, args.gap, total)
     speaker = speaker_from_filename(args.speaker if args.speaker else src.stem)
 
-    print(f"expected {len(want)} words, found {len(seg)} sound segments "
-          f"in {total:.1f}s  (noise={args.noise} gap={args.gap}s)")
+    print(f"expected {len(want)} words"
+          + (f" x {args.reps} takes = {len(expect)} segments" if args.reps > 1 else "")
+          + f", found {len(seg)} sound segments in {total:.1f}s"
+          + f"  (noise={args.noise} gap={args.gap}s)")
     print(f"speaker tag: {speaker}"
           + ("" if args.speaker else f"  (from filename — override with --speaker)") + "\n")
 
-    if len(seg) != len(want):
+    if len(seg) != len(expect):
         print("COUNT MISMATCH — nothing written. Detected segments:\n")
         for i, (s, e) in enumerate(seg, 1):
             flag = "  <- very short" if e - s < 0.2 else ("  <- long, two words merged?" if e - s > 1.2 else "")
@@ -264,6 +280,11 @@ def main():
         print("  too few segments   -> two words ran together; leave longer gaps and re-record,")
         print("                        or lower --gap (e.g. 0.25)")
         print("  Re-record just the run that went wrong with --subset.")
+        if args.reps > 1:
+            over = len(seg) - len(expect)
+            print(f"  Off by {over:+d}. With --reps {args.reps} the count must be an exact")
+            print(f"  multiple of {args.reps}, so a single dropped or doubled take shifts")
+            print(f"  every word after it — which is why nothing is written.")
         sys.exit(1)
 
     # count matches: assign in order
@@ -271,7 +292,7 @@ def main():
     durs = [e - s for s, e in seg]
     med = sorted(durs)[len(durs) // 2]
     stamp = time.strftime("%Y%m%d-%H%M%S")
-    for i, (word, (s, e)) in enumerate(zip(want, seg), 1):
+    for i, (word, (s, e)) in enumerate(zip(expect, seg), 1):
         d = e - s
         note = ""
         if d < 0.18:
@@ -280,10 +301,22 @@ def main():
             note = "LONG — may contain two words"; outliers.append(word)
         rows.append((i, word, spell.get(word, word), s, d, note))
 
+    # One line per word, its takes side by side. Reading across shows whether
+    # the repeats agree with each other — a hurried one stands out.
     w = max(len(r[2]) for r in rows)
-    print("assignment:")
-    for i, key, sp, s, d, note in rows:
-        print(f"  {i:2}. {sp.ljust(w)}  @{s:6.2f}s  {d:.2f}s  -> ear/raw/{key}/   {note}")
+    print("assignment:" + (f"  {len(want)} words x {args.reps} takes" if args.reps > 1 else ""))
+    for n, word in enumerate(want):
+        take = rows[n * args.reps:(n + 1) * args.reps]
+        spread = ""
+        if args.reps > 1:
+            ds = [r[4] for r in take]
+            if max(ds) > min(ds) * 1.8:
+                spread = "  <- takes disagree, listen"
+                outliers.append(word)
+        notes = "  ".join(dict.fromkeys(r[5] for r in take if r[5]))
+        print(f"  {n+1:2}. {take[0][2].ljust(w)}  @{take[0][3]:6.2f}s  "
+              + " ".join(f"{r[4]:.2f}" for r in take)
+              + f"  -> ear/raw/{word}/  {notes}{spread}")
 
     if args.dry_run:
         print("\ndry run — nothing written.")
@@ -296,7 +329,7 @@ def main():
     written = 0
     for i, key, sp, s, d, note in rows:
         (RAW / key).mkdir(parents=True, exist_ok=True)
-        dst = RAW / key / f"{speaker}__{stamp}-{i:02}.wav"
+        dst = RAW / key / f"{speaker}__{stamp}-{i:03}.wav"
         if cut(src, seg[i - 1], args.pad, total, dst):
             written += 1
         else:
