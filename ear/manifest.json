@@ -1,5 +1,29 @@
 {
  "words": {
+  "car": [
+   {
+    "f": "ear/audio/car/frank1__20260821-134643-05.mp3",
+    "spk": "frank1"
+   }
+  ],
+  "ci": [
+   {
+    "f": "ear/audio/ci/frank1__20260821-134643-04.mp3",
+    "spk": "frank1"
+   }
+  ],
+  "czar": [
+   {
+    "f": "ear/audio/czar/frank1__20260821-134643-06.mp3",
+    "spk": "frank1"
+   }
+  ],
+  "czy": [
+   {
+    "f": "ear/audio/czy/frank1__20260821-134643-03.mp3",
+    "spk": "frank1"
+   }
+  ],
   "kasa": [
    {
     "f": "ear/audio/kasa/frank0__20260725-151120-07.mp3",
@@ -36,6 +60,42 @@
     "spk": "frank0"
    }
   ],
+  "leci": [
+   {
+    "f": "ear/audio/leci/frank1__20260821-134643-11.mp3",
+    "spk": "frank1"
+   }
+  ],
+  "leczy": [
+   {
+    "f": "ear/audio/leczy/frank1__20260821-134643-12.mp3",
+    "spk": "frank1"
+   }
+  ],
+  "moc": [
+   {
+    "f": "ear/audio/moc/frank1__20260821-134643-07.mp3",
+    "spk": "frank1"
+   }
+  ],
+  "mocz": [
+   {
+    "f": "ear/audio/mocz/frank1__20260821-134643-08.mp3",
+    "spk": "frank1"
+   }
+  ],
+  "nic": [
+   {
+    "f": "ear/audio/nic/frank1__20260821-134643-01.mp3",
+    "spk": "frank1"
+   }
+  ],
+  "nic-acute": [
+   {
+    "f": "ear/audio/nic-acute/frank1__20260821-134643-02.mp3",
+    "spk": "frank1"
+   }
+  ],
   "nos": [
    {
     "f": "ear/audio/nos/frank0__20260725-151120-22.mp3",
@@ -46,6 +106,18 @@
    {
     "f": "ear/audio/nos-acute/frank0__20260725-151120-23.mp3",
     "spk": "frank0"
+   }
+  ],
+  "owca": [
+   {
+    "f": "ear/audio/owca/frank1__20260821-134643-15.mp3",
+    "spk": "frank1"
+   }
+  ],
+  "owcza": [
+   {
+    "f": "ear/audio/owcza/frank1__20260821-134643-16.mp3",
+    "spk": "frank1"
    }
   ],
   "pas": [
@@ -64,6 +136,30 @@
    {
     "f": "ear/audio/pasz/frank0__20260725-151120-05.mp3",
     "spk": "frank0"
+   }
+  ],
+  "piec": [
+   {
+    "f": "ear/audio/piec/frank1__20260821-134643-09.mp3",
+    "spk": "frank1"
+   }
+  ],
+  "piecz": [
+   {
+    "f": "ear/audio/piecz/frank1__20260821-134643-10.mp3",
+    "spk": "frank1"
+   }
+  ],
+  "place": [
+   {
+    "f": "ear/audio/place/frank1__20260821-134643-13.mp3",
+    "spk": "frank1"
+   }
+  ],
+  "placze": [
+   {
+    "f": "ear/audio/placze/frank1__20260821-134643-14.mp3",
+    "spk": "frank1"
    }
   ],
   "prosie": [
