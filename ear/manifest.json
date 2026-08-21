@@ -2,6 +2,14 @@
  "words": {
   "car": [
    {
+    "f": "ear/audio/car/alan__20260821-173852-001.mp3",
+    "spk": "alan"
+   },
+   {
+    "f": "ear/audio/car/alan__20260821-173852-002.mp3",
+    "spk": "alan"
+   },
+   {
     "f": "ear/audio/car/frank1__20260821-134643-05.mp3",
     "spk": "frank1"
    },
@@ -106,6 +114,14 @@
   ],
   "kasza": [
    {
+    "f": "ear/audio/kasza/alan__20260821-173852-009.mp3",
+    "spk": "alan"
+   },
+   {
+    "f": "ear/audio/kasza/alan__20260821-173852-010.mp3",
+    "spk": "alan"
+   },
+   {
     "f": "ear/audio/kasza/frank0__20260725-151120-08.mp3",
     "spk": "frank0"
    },
@@ -156,6 +172,14 @@
   ],
   "kosz": [
    {
+    "f": "ear/audio/kosz/alan__20260821-173852-003.mp3",
+    "spk": "alan"
+   },
+   {
+    "f": "ear/audio/kosz/alan__20260821-173852-004.mp3",
+    "spk": "alan"
+   },
+   {
     "f": "ear/audio/kosz/frank0__20260725-151120-02.mp3",
     "spk": "frank0"
    },
@@ -173,6 +197,14 @@
    }
   ],
   "leci": [
+   {
+    "f": "ear/audio/leci/alan__20260821-173852-013.mp3",
+    "spk": "alan"
+   },
+   {
+    "f": "ear/audio/leci/alan__20260821-173852-014.mp3",
+    "spk": "alan"
+   },
    {
     "f": "ear/audio/leci/frank1__20260821-134643-11.mp3",
     "spk": "frank1"
@@ -224,6 +256,14 @@
   ],
   "mocz": [
    {
+    "f": "ear/audio/mocz/alan__20260821-173852-015.mp3",
+    "spk": "alan"
+   },
+   {
+    "f": "ear/audio/mocz/alan__20260821-173852-016.mp3",
+    "spk": "alan"
+   },
+   {
     "f": "ear/audio/mocz/frank1__20260821-134643-08.mp3",
     "spk": "frank1"
    },
@@ -241,6 +281,14 @@
    }
   ],
   "nic": [
+   {
+    "f": "ear/audio/nic/alan__20260821-173852-011.mp3",
+    "spk": "alan"
+   },
+   {
+    "f": "ear/audio/nic/alan__20260821-173852-012.mp3",
+    "spk": "alan"
+   },
    {
     "f": "ear/audio/nic/frank1__20260821-134643-01.mp3",
     "spk": "frank1"
@@ -291,6 +339,14 @@
    }
   ],
   "nos-acute": [
+   {
+    "f": "ear/audio/nos-acute/alan__20260821-173852-019.mp3",
+    "spk": "alan"
+   },
+   {
+    "f": "ear/audio/nos-acute/alan__20260821-173852-020.mp3",
+    "spk": "alan"
+   },
    {
     "f": "ear/audio/nos-acute/frank0__20260725-151120-23.mp3",
     "spk": "frank0"
@@ -616,6 +672,14 @@
   ],
   "szum": [
    {
+    "f": "ear/audio/szum/alan__20260821-173852-007.mp3",
+    "spk": "alan"
+   },
+   {
+    "f": "ear/audio/szum/alan__20260821-173852-008.mp3",
+    "spk": "alan"
+   },
+   {
     "f": "ear/audio/szum/frank0__20260725-151120-13.mp3",
     "spk": "frank0"
    },
@@ -652,6 +716,14 @@
   ],
   "wies-acute": [
    {
+    "f": "ear/audio/wies-acute/alan__20260821-173852-005.mp3",
+    "spk": "alan"
+   },
+   {
+    "f": "ear/audio/wies-acute/alan__20260821-173852-006.mp3",
+    "spk": "alan"
+   },
+   {
     "f": "ear/audio/wies-acute/frank0__20260725-151120-19.mp3",
     "spk": "frank0"
    },
@@ -669,6 +741,14 @@
    }
   ],
   "wiesz": [
+   {
+    "f": "ear/audio/wiesz/alan__20260821-173852-017.mp3",
+    "spk": "alan"
+   },
+   {
+    "f": "ear/audio/wiesz/alan__20260821-173852-018.mp3",
+    "spk": "alan"
+   },
    {
     "f": "ear/audio/wiesz/frank0__20260725-151120-18.mp3",
     "spk": "frank0"
