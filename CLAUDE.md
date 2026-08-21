@@ -139,6 +139,29 @@ notes`. `status` is `queued` → `known` → `carded`.
   the app, not for learning; waiting a week to see a production card would
   defeat it. A banner says so, and progress dies on reload — that is the
   point. Nothing to corrupt, since these sessions never save.
+- **`?u=<id>&peek` shows a student's deck without touching it.** Built after
+  a scratch `?u=test` session turned out to be a poor preview: it never
+  writes, so no card ever has state, so nothing is ever *due* and the app is
+  permanently on day one. The "just reviews" link was invisible there, which
+  is how this came up.
+
+  The alternative considered was seeding test mode with synthetic card
+  states. Rejected: that is a second, fake reality to keep in step with the
+  real one, and it would drift. A peek shows the truth and has nothing to
+  maintain.
+
+  It differs from test mode in two ways beyond the data. It does **not**
+  write `localStorage` — otherwise opening a student's link to check on him
+  would silently make the teacher's own browser that student — and it does
+  **not** skip the maturity gate, because a preview that lied about the gate
+  would be worthless.
+
+  Safety is structural rather than promised. Both modes set `READ_ONLY`, and
+  every write in `index.html` goes through a single `write` object whose two
+  members are stubs when `READ_ONLY` is set. `setDoc` and `updateDoc` are
+  named in exactly two places: the import, and that one binding. A peek
+  points at real progress, so "nothing can write" has to be a property of
+  the plumbing, not a rule each caller remembers.
 - **The closing screen sells coming back, not completeness.** Order is:
   you are finished, well done, come back on this day. Locked cards are last,
   small and grey, with a line saying there is nothing to do about them — a

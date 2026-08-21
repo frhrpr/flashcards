@@ -63,6 +63,8 @@ const dueCards = [];
 let vocabLight = false;
 let writeChain = Promise.resolve(), docExists = false;
 const docRef = {}, arrayUnion = (...a) => a, FieldPath = function(){};
+const READ_ONLY = true, PEEK = false;
+const write = { set: async () => {}, update: async () => {} };
 const updateDoc = async () => {}, firstWrite = async () => {};
 const logBytes = () => JSON.stringify(reviewLog).length;
 let rndSeed = 12345;

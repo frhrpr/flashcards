@@ -305,6 +305,13 @@ function getUserId(){
   const fromUrl = params.get("u");
   const stored  = localStorage.getItem("vocab-uid");
 
+  /* ?u=<id>&peek — look at a real student's deck without touching it.
+     Deliberately does not write localStorage and does not run the identity
+     gate below: this is an explicit act of looking at someone else's data,
+     not a claim to be them. Without that, opening a student's link to check
+     on him would silently make the teacher's own browser that student. */
+  if (params.has("peek")) return { id: fromUrl, stored, alert: null, peek: true };
+
   if (!fromUrl && !stored) {
     const id = crypto.randomUUID();
     history.replaceState(null, "", "?u=" + id);
@@ -351,12 +358,31 @@ function confirmIdentity(alert, id, stored){
   });
 }
 
-const { id: uid, stored: storedUid, alert: idAlert } = getUserId();
+const { id: uid, stored: storedUid, alert: idAlert, peek } = getUserId();
+const PEEK = !!peek;
+if (PEEK && !uid) {
+  showError("Peek needs a deck to look at.\n\nUse ?u=<their id>&peek");
+  throw new Error("peek without a target");
+}
 /* Any id beginning "test" is a scratch session: it reviews normally but
    never writes, so poking at the app does not leave documents behind. */
 const TEST_MODE = /^test/i.test(uid);
+/* Both never write. They differ in what they show: a test session is a
+   scratch deck of its own and skips the maturity gate so every card type is
+   visible at once, while a peek shows exactly what the student would see,
+   gate and all — a preview that lied about the gate would be worthless. */
+const READ_ONLY = TEST_MODE || PEEK;
 if (idAlert) await confirmIdentity(idAlert, uid, storedUid);
 const docRef = doc(db, "progress", uid);
+
+/* Every write in this file goes through `write`, and in a read-only session
+   both members are stubs. The per-caller READ_ONLY checks below are belt to
+   this braces: peek points at real student progress, so "nothing can write"
+   has to be a property of the plumbing rather than a promise each caller
+   remembers to keep. */
+const write = READ_ONLY
+  ? { set: async () => {}, update: async () => {} }
+  : { set: setDoc, update: updateDoc };
 
 /* ── SM-2-lite scheduling ──────────────────────────────────────────
    Two grades only: again / good. Ease starts at 2.5 and only moves
@@ -563,6 +589,7 @@ const UNLOCK_IVL = { production: 6, listening: 15 };
 function unlocked(key){
   // A scratch session is for looking at the app, not for learning — waiting
   // a week to see a production card would defeat the point.
+  // A peek must show the gate, not skip it — see READ_ONLY above.
   if (TEST_MODE) return true;
   const n0 = NOTES[noteOf(key)];
   /* A conjugation drill waits on the verb it conjugates, not on itself —
@@ -622,7 +649,7 @@ let revealed = false;
    phone long before the 1 MiB document ceiling is anywhere in sight. */
 // updateDoc requires an existing document; first run has to create one.
 async function firstWrite(){
-  await setDoc(docRef, {
+  await write.set(docRef, {
     cards: cardStates, ear: earStates, done: doneDays,
     log: reviewLog, logBytes: logBytes(), updated: Date.now()
   });
@@ -630,9 +657,9 @@ async function firstWrite(){
 }
 
 async function save(key, state, entry){
-  if (TEST_MODE) return;
+  if (READ_ONLY) return;
   if (!docExists) return firstWrite();
-  await updateDoc(docRef, {
+  await write.update(docRef, {
     [`cards.${key}`]: state,
     // arrayUnion is set-semantics: an entry identical in card, grade *and*
     // millisecond timestamp would be dropped. Not reachable in practice.
@@ -671,7 +698,10 @@ function queueWrite(key, state, entry){
 
 function renderWarning(){
   const banners = [];
-  if (TEST_MODE) {
+  if (PEEK) {
+    banners.push(`<p class="warn">Looking at <b>${esc(uid)}</b>'s deck as he ` +
+      `would see it. Nothing here is saved — grade freely, reload to reset.</p>`);
+  } else if (TEST_MODE) {
     banners.push(`<p class="warn">Test session — nothing is saved. ` +
       `Reload to start over.</p>`);
   }
@@ -1146,9 +1176,9 @@ function matchRec(id, spk){
    `ear` keys carry "|" and "-" and `done` keys are bare digits, none of
    which are legal in an unquoted dotted field path — hence FieldPath. */
 async function saveEar(key, state, entry){
-  if (TEST_MODE) return;
+  if (READ_ONLY) return;
   if (!docExists) return firstWrite();
-  await updateDoc(docRef,
+  await write.update(docRef,
     new FieldPath("ear", key), state,
     "log", arrayUnion(entry),
     "logBytes", logBytes(),
@@ -1173,10 +1203,10 @@ function markDone(mode){
   // A few bytes a day, but it should not grow forever.
   for (const d of Object.keys(doneDays))
     if (t - Number(d) > 90 * MS_DAY) delete doneDays[d];
-  if (TEST_MODE) return;
+  if (READ_ONLY) return;
   writeChain = writeChain
     .then(() => docExists
-      ? updateDoc(docRef, "done", doneDays, "updated", Date.now())
+      ? write.update(docRef, "done", doneDays, "updated", Date.now())
       : firstWrite())
     .then(() => { writeError = null; })
     .catch(e => { writeError = e; console.error("save failed", e); })
@@ -1441,7 +1471,7 @@ function renderLanding(){
 
 /* ══ boot ══════════════════════════════════════════════════════════ */
 // One-off rewrite so the folded legacy keys above are actually persisted.
-if (migrated && docExists && !TEST_MODE) {
+if (migrated && docExists && !READ_ONLY) {
   try {
     await firstWrite();
   } catch (e) {
