@@ -1,47 +1,52 @@
-Shuffled reading order for volunteer recordings.
-Generated once and FIXED — every reader gets this same order, and
-tools/ear_split.py must be given it via --subset when their take comes in.
-Deliberately not the SETS order: reading kos/kosz/kos-acute back to back
-invites contrastive stress. No two words of a set are within 6 positions.
+THE reading order. Fixed — every reader gets this one, and
+tools/ear_split.py --subset must match it. Regenerated on each run
+of that tool; to change the order itself, use --reorder.
 
- 1. car      car
- 2. kosz     kosz
- 3. wieś     wies-acute
- 4. szum     szum
- 5. kasza    kasza
- 6. nic      nic
- 7. leci     leci
- 8. mocz     mocz
- 9. wiesz    wiesz
-10. noś      nos-acute
-11. paś      pas-acute
-12. kos      kos
-13. Kasia    kasia
-14. płacze   placze
-15. szyk     szyk
-16. owcza    owcza
-17. ci       ci
-18. nos      nos
-19. siad     siad
-20. piecz    piecz
-21. proszę   prosze
-22. pasz     pasz
-23. moc      moc
-24. szok     szok
-25. sad      sad
-26. sum      sum
-27. koś      kos-acute
-28. pas      pas
-29. owca     owca
-30. czar     czar
-31. piec     piec
-32. syk      syk
-33. czy      czy
-34. prosię   prosie
-35. nić      nic-acute
-36. leczy    leczy
-37. płace    place
-38. sok      sok
-39. kasa     kasa
+Read these aloud IN THIS ORDER into one continuous recording.
+Leave ~1 second of clear silence between each. Normal pace — please
+don't over-enunciate: many of these are near-identical to others
+further down, and that is the whole exercise.
+
+    python3 tools/ear_split.py yourfile.wav
+
+ 1. car       car   (done)
+ 2. kosz      kosz   (done)
+ 3. wieś      wies-acute   (done)
+ 4. szum      szum   (done)
+ 5. kasza     kasza   (done)
+ 6. nic       nic   (done)
+ 7. leci      leci   (done)
+ 8. mocz      mocz   (done)
+ 9. wiesz     wiesz   (done)
+10. noś       nos-acute   (done)
+11. paś       pas-acute   (done)
+12. kos       kos   (done)
+13. Kasia     kasia   (done)
+14. płacze    placze   (done)
+15. szyk      szyk   (done)
+16. owcza     owcza   (done)
+17. ci        ci   (done)
+18. nos       nos   (done)
+19. siad      siad   (done)
+20. piecz     piecz   (done)
+21. proszę    prosze   (done)
+22. pasz      pasz   (done)
+23. moc       moc   (done)
+24. szok      szok   (done)
+25. sad       sad   (done)
+26. sum       sum   (done)
+27. koś       kos-acute   (done)
+28. pas       pas   (done)
+29. owca      owca   (done)
+30. czar      czar   (done)
+31. piec      piec   (done)
+32. syk       syk   (done)
+33. czy       czy   (done)
+34. prosię    prosie   (done)
+35. nić       nic-acute   (done)
+36. leczy     leczy   (done)
+37. płace     place   (done)
+38. sok       sok   (done)
+39. kasa      kasa   (done)
 
 --subset car,kosz,wies-acute,szum,kasza,nic,leci,mocz,wiesz,nos-acute,pas-acute,kos,kasia,placze,szyk,owcza,ci,nos,siad,piecz,prosze,pasz,moc,szok,sad,sum,kos-acute,pas,owca,czar,piec,syk,czy,prosie,nic-acute,leczy,place,sok,kasa

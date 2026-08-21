@@ -5,7 +5,7 @@ Split ONE continuous recording into the per-word folders.
     python3 tools/ear_split.py                 # just (re)write the order sheet
     python3 tools/ear_split.py mytake.wav
 
-Read the words aloud in the order printed in ear/raw/_RECORD_ORDER.txt (this script
+Read the words aloud in the order printed in ear/reading-order.txt (this script
 writes that file), leaving about a second of silence between each. The script
 finds the gaps, checks it got exactly the number of words it expected, and only
 then drops each piece into ear/raw/<word>/.
@@ -33,6 +33,7 @@ Standard library + ffmpeg only.
 """
 
 import argparse
+import random
 import re
 import subprocess
 import sys
@@ -42,6 +43,14 @@ from pathlib import Path
 ROOT  = Path(__file__).resolve().parent.parent
 RAW   = ROOT / "ear/raw"
 INDEX = ROOT / "index.html"
+ORDER = ROOT / "ear/reading-order.txt"
+
+# Reading order is FIXED once and stored, not derived fresh each run. Every
+# reader gets the same order and --subset must match it, so a second opinion
+# about the order would file a whole take into the wrong folders — and the
+# segment count would still come out exactly right, so nothing would catch it.
+ORDER_SEED = 20260821
+MIN_APART  = 4     # positions between two words of the same contrast set
 
 DEF_NOISE = "-35dB"   # louder than this counts as speech; raise toward -30 if gaps are noisy, lower toward -45 if quiet
 DEF_GAP   = 0.30      # a silence must last this long to count as a word boundary
@@ -97,9 +106,9 @@ def run(args):
                           encoding="utf-8", errors="replace")
 
 
-def read_order():
-    """Recording order = SETS in file order, flattened, de-duplicated.
-    Same source the app uses, so it can't drift."""
+def parse_index():
+    """Word keys and spellings out of index.html — the same source the app
+    renders from and ear_build.py names folders from."""
     try:
         text = INDEX.read_text(encoding="utf-8")
     except OSError:
@@ -108,14 +117,84 @@ def read_order():
     words = re.search(r"const WORDS\s*=\s*\{(.*?)\n\};", text, re.S)
     if not sets or not words:
         die("couldn't parse SETS/WORDS out of index.html")
-    order, seen = [], set()
-    for key in re.findall(r'"([^"]+)"', sets.group(1)):
-        if key not in seen:
-            seen.add(key); order.append(key)
-    # spelling for the printed sheet
+    rows, keys, seen = [], [], set()
+    for line in sets.group(1).splitlines():
+        row = re.findall(r'"([^"]+)"', line)
+        if not row:
+            continue
+        rows.append(row)
+        for k in row:
+            if k not in seen:
+                seen.add(k); keys.append(k)
     spell = {}
     for k, warr in re.findall(r'"([^"]+)"\s*:\s*\{\s*w\s*:\s*\[([^\]]*)\]', words.group(1)):
         spell[k] = "".join(re.findall(r'"([^"]*)"', warr))
+    return keys, rows, spell
+
+
+def shuffled(keys, rows):
+    """An order that keeps a contrast set's members well apart. Reading
+    kos / kosz / koś back to back invites contrastive stress, and a trainer
+    built from hyperarticulated tokens is easier than speech."""
+    setof = {k: i for i, row in enumerate(rows) for k in row}
+    rng = random.Random(ORDER_SEED)
+    def gap(o):
+        last, worst = {}, 99
+        for i, k in enumerate(o):
+            s = setof[k]
+            if s in last:
+                worst = min(worst, i - last[s])
+            last[s] = i
+        return worst
+    best = None
+    for _ in range(200000):
+        o = keys[:]; rng.shuffle(o)
+        g = gap(o)
+        if best is None or g > best[0]:
+            best = (g, o)
+            if g > MIN_APART + 1:
+                break
+    if best[0] < MIN_APART:
+        die(f"couldn't find a reading order with {MIN_APART} positions between "
+            f"members of a contrast set (best was {best[0]}). Lower MIN_APART.")
+    return best[1]
+
+
+def read_order(reorder=False):
+    keys, rows, spell = parse_index()
+
+    if ORDER.exists() and not reorder:
+        # Parse the --subset line, not the numbered list: that line is written
+        # for machines, while the list carries "(done)" marks and column
+        # padding meant for a person. Reading the pretty half is how this
+        # broke the first time.
+        body = ORDER.read_text(encoding="utf-8")
+        m = re.search(r"^--subset\s+(\S+)\s*$", body, re.M)
+        if not m:
+            die(f"{ORDER.relative_to(ROOT)} has no --subset line — delete it and "
+                f"re-run to regenerate, or restore it from git")
+        have = [k for k in m.group(1).split(",") if k]
+        extra = [k for k in have if k not in keys]
+        missing = [k for k in keys if k not in have]
+        if extra or missing:
+            # Silently carrying on would file a take into the wrong folders
+            # while the segment count still matched exactly — invisible.
+            print("X ear/reading-order.txt disagrees with index.html.")
+            if missing:
+                print(f"    new in index.html, not in the order: {', '.join(missing)}")
+            if extra:
+                print(f"    in the order, gone from index.html: {', '.join(extra)}")
+            print("\n  The order is fixed on purpose: every reader gets the same one and")
+            print("  --subset must match it. Regenerate it with:")
+            print("      python3 tools/ear_split.py --reorder")
+            print("  Any reading sheet already sent out becomes stale when you do.")
+            sys.exit(1)
+        return have, spell
+
+    order = shuffled(keys, rows)
+    if reorder:
+        print("! regenerated the reading order — any sheet already sent out is now")
+        print("  stale, and a take read from it would be filed wrongly.\n")
     return order, spell
 
 
@@ -129,10 +208,23 @@ def already_recorded():
 
 
 def write_order_sheet(order, spell, have):
+    """The one order, and the --subset line that matches it. Regenerated on
+    every run from the same list read_order returned, so the file on disk
+    can never disagree with what the splitter would use."""
     todo = [k for k in order if k not in have]
-    lines = ["Read these aloud IN THIS ORDER into one recording.",
-             "Leave ~1 second of clear silence between each. Normal pace, don't over-enunciate.",
-             "Then:  python3 tools/ear_split.py yourfile.wav", ""]
+    lines = [
+        "THE reading order. Fixed — every reader gets this one, and",
+        "tools/ear_split.py --subset must match it. Regenerated on each run",
+        "of that tool; to change the order itself, use --reorder.",
+        "",
+        "Read these aloud IN THIS ORDER into one continuous recording.",
+        "Leave ~1 second of clear silence between each. Normal pace — please",
+        "don't over-enunciate: many of these are near-identical to others",
+        "further down, and that is the whole exercise.",
+        "",
+        "    python3 tools/ear_split.py yourfile.wav",
+        "",
+    ]
     if have and todo:
         lines += [f"{len(have)} of these are already recorded, marked (done) below.",
                   "To record only what is missing, read just the unmarked ones and run:",
@@ -140,8 +232,14 @@ def write_order_sheet(order, spell, have):
                   "    python3 tools/ear_split.py yourfile.wav --subset " + ",".join(todo),
                   ""]
     for i, k in enumerate(order, 1):
-        lines.append(f"{i:2}. {spell.get(k, k)}" + ("   (done)" if k in have else ""))
-    (RAW / "_RECORD_ORDER.txt").write_text("\n".join(lines) + "\n", encoding="utf-8")
+        lines.append(f"{i:2}. {spell.get(k, k):<9} {k}" + ("   (done)" if k in have else ""))
+    lines += ["", "--subset " + ",".join(order)]
+    ORDER.parent.mkdir(parents=True, exist_ok=True)
+    ORDER.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    back, _ = read_order()
+    if back != order:
+        die(f"{ORDER.relative_to(ROOT)} does not read back as it was written — "
+            f"the format and the parser disagree. This is a bug in ear_split.py.")
 
 
 def duration(path):
@@ -222,15 +320,17 @@ def main():
                     help="silence threshold, e.g. -35dB (a leading dash is fine)")
     ap.add_argument("--gap", type=float, default=DEF_GAP)
     ap.add_argument("--pad", type=float, default=DEF_PAD)
+    ap.add_argument("--reorder", action="store_true",
+                    help="regenerate the reading order itself (invalidates sheets already sent)")
     ap.add_argument("--reps", type=int, default=1,
                     help="how many times each word was read, in a row (default 1)")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args(fixed)
 
-    order, spell = read_order()
+    order, spell = read_order(args.reorder)
     RAW.mkdir(parents=True, exist_ok=True)
     write_order_sheet(order, spell, already_recorded())
-    print("wrote ear/raw/_RECORD_ORDER.txt")
+    print("wrote ear/reading-order.txt")
     if not args.recording:
         return 0
 
@@ -241,7 +341,7 @@ def main():
         die(problem)
     src = Path(args.recording)
     if not src.exists():
-        die(f"no such file: {src}   (ear/raw/_RECORD_ORDER.txt is ready, though)")
+        die(f"no such file: {src}   (ear/reading-order.txt is ready, though)")
 
     if args.subset:
         want = [w.strip() for w in args.subset.split(",") if w.strip()]

@@ -308,13 +308,33 @@ pairs: hear a word, tap which of two you heard.
 
 1. Add the words to `WORDS` and the row to `SETS` in `index.html`. They ship
    immediately and are skipped until audio exists.
-2. `python3 tools/ear_split.py` — writes `ear/raw/_RECORD_ORDER.txt`, which
-   marks what is already recorded and prints the `--subset` line for the rest.
-3. He reads the unmarked words into one take, ~1 s of silence between each.
+2. `python3 tools/ear_split.py` — rewrites `ear/reading-order.txt`, marking
+   what is already recorded and printing the `--subset` line for the rest.
+3. Read the unmarked words into one take, ~1 s of silence between each.
+   `--reps N` if each word is read N times in a row; the app picks one take
+   at random per trial, so extra tokens stop him learning a single clip.
 4. `python3 tools/ear_split.py take.wav --subset a,b,c` then
    `python3 tools/ear_build.py`. The split refuses to write anything if the
-   number of segments it finds disagrees with the number of words expected,
-   so a miscount can never quietly shift every word into the wrong folder.
+   number of segments it finds disagrees with the number expected, so a
+   miscount can never quietly shift every word into the wrong folder.
+
+**There is exactly one reading order, and it lives in
+`ear/reading-order.txt`.** It is generated once, stored, and reused — not
+derived from `SETS` per run. Two reasons. It deliberately keeps a contrast
+set's members four or more positions apart, because reading `kos / kosz /
+koś` in a row invites contrastive stress and a trainer built from
+hyperarticulated tokens is easier than speech. And more importantly, order
+is load-bearing: `--subset` must match what the reader actually read, and a
+mismatch files an entire take into the wrong folders *while the segment
+count still comes out exactly right*, so nothing downstream would catch it.
+
+`ear_split.py` therefore validates the stored order against `WORDS`/`SETS`
+on every run and refuses if they disagree, naming the words that drifted.
+Adding a pair means running `--reorder`, which invalidates any sheet already
+sent out and says so. The file is parsed from its `--subset` line rather
+than its numbered list — the list carries `(done)` marks and column padding
+meant for a person, and reading that half is how this broke the first time,
+so the writer now asserts the file reads back as it was written.
 
 The 150 ms silence pad and the RMS levelling in `ear_build.py` are tuned for
 frication onsets and have nothing to do with `tools/audio.py`. The ffmpeg
