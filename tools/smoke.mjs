@@ -79,8 +79,10 @@ const countEl = { textContent: "" };
 const _stub = ${el.toString()};
 const $ = sel => sel === "#bar" ? _barStub : _stub();
 const _barStub = { className: "", firstElementChild: { style: {} } };
-const Image = function(){ return { set src(_v){} }; };
-const Audio = function(){ return { play: () => Promise.resolve() }; };
+const asked = [];
+const Image = function(){ return { set src(v){ asked.push(v); } }; };
+const Audio = function(){ return { play: () => Promise.resolve(), preload: "",
+  set src(v){ asked.push(v); } }; };
 const grade = () => {};
 const renderWarning = () => {};
 const renderCard_ = null;
@@ -90,6 +92,8 @@ const mod = `${stubs}
 ${SLICES.map(cut).join("\n")}
 export { renderDone, renderLanding, startEar, earPlan, nextEarTrial, answerEar, startVocab, vocabPending , TASK, SUBTASK };
 export const state = () => ({ html, PAIRS, livePairs, earQueue, earIdx, earStates, queue, doneDays, vocabLight });
+export const requested = () => asked;
+export const forgetPreloads = () => { preloaded.clear(); asked.length = 0; };
 export const seed = (due, nw) => { dueCards.length = 0; dueCards.push(...due);
   fresh.length = 0; fresh.push(...nw); queue = [...due, ...nw]; };
 export function face(key, side){
@@ -208,6 +212,19 @@ try {
   m.renderLanding();
   check(m.state().html.includes("reviews only"), "landing says it was reviews only");
   delete m.state().doneDays[day];
+  // Preloading: the cards behind the current one must already have been
+  // requested, or every flip waits on a round trip it could have started.
+  const withImg = deck.notes.filter(n => n.image).slice(0, 5);
+  m.forgetPreloads();
+  m.seed(withImg.map(n => `${n.id}__recognition`), []);
+  m.startVocab(false);
+  const got = m.requested();
+  const ahead = withImg.slice(1, 4).filter(n => got.includes(n.image));
+  check(ahead.length === 3,
+        `preloads the next 3 cards' images (got ${ahead.length} of 3)`);
+  check(!got.includes(withImg[4].image),
+        "does not pull the whole session down at once");
+
   m.renderDone();    check(true, "renderDone runs");
   m.renderLanding(); check(true, "renderLanding runs");
 } finally {

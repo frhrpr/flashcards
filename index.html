@@ -854,6 +854,32 @@ function autoPlay(src){
   new Audio(src).play().catch(() => {});   // blocked is fine, button remains
 }
 
+/* Media for the cards just behind this one. Without it every card fetches
+   its own image at the moment it is drawn, which reads as a beat of blank
+   space on the flip. The bytes are not the problem — 38 KB median — the
+   round trip is, so what matters is starting it early rather than making it
+   smaller. Three ahead keeps well in front of him without pulling a whole
+   session down at once, and the set stops us asking twice. */
+const PRELOAD_AHEAD = 3;
+const preloaded = new Set();
+function preload(url){
+  if (!url || preloaded.has(url)) return;
+  preloaded.add(url);
+  if (/\.(webp|png|jpe?g|gif)$/i.test(url)) { new Image().src = url; return; }
+  const a = new Audio();
+  a.preload = "auto";
+  a.src = url;
+}
+function preloadAhead(){
+  for (const key of queue.slice(0, PRELOAD_AHEAD + 1)) {
+    const n = NOTES[noteOf(key)];
+    if (!n) continue;
+    preload(n.image);
+    preload(n.audio);
+    preload((n.sentence || {}).audio);
+  }
+}
+
 function wireAudio(){
   for (const { id, src } of audioBtns.splice(0)) {
     const el = $("#" + id);
@@ -973,9 +999,7 @@ function renderCard(){
     <button class="reveal" id="reveal">Show answer</button>
   `;
   wireAudio();
-  // The image only appears on the back, so fetch it now — otherwise it pops
-  // in a beat after the flip.
-  if (n.image && type !== "production") new Image().src = n.image;
+  preloadAhead();
   // Sticky user activation from the previous tap usually lets this through;
   // if the browser refuses, the button is still there. See wireAudio.
   if (type === "listening" || type === "recognition") autoPlay(n.audio);
@@ -1307,6 +1331,11 @@ function renderEarTrial(){
   $("#player").addEventListener("click", () => playRec(earTrial.rec));
   $("#ear-next").addEventListener("click", nextEarTrial);
   playRec(earTrial.rec);
+  // Same round trip, one trial ahead. Clips are a few KB; the wait is not.
+  for (const tr of earQueue.slice(earIdx + 1, earIdx + 1 + PRELOAD_AHEAD)) {
+    if (tr.rec) preload(tr.rec.f);
+    preload((recsFor(tr.other)[0] || {}).f);   // the listen-to-both partner
+  }
 }
 
 function answerEar(chosen){

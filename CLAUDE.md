@@ -27,7 +27,8 @@ media/audio/*.mp3   generated once and committed, never fetched per review
 media/img/*.webp    one image per note, 800px, generated
 media/manifest.json provenance for every media file — source, licence, checks
 media/ATTRIBUTION.md generated from the manifest; do not edit
-ear/raw/*/          source recordings, one folder per word, plus the master take
+ear/takes/          the original recordings, one file per session — not regenerable
+ear/raw/*/          per-word clips cut out of those — regenerable
 ear/audio/*/        trimmed and levelled mp3s — generated, do not edit
 ear/manifest.json   which clips exist for which word — generated
 tools/validate.py   run after every change; exits non-zero if unshippable
@@ -335,6 +336,14 @@ sent out and says so. The file is parsed from its `--subset` line rather
 than its numbered list — the list carries `(done)` marks and column padding
 meant for a person, and reading that half is how this broke the first time,
 so the writer now asserts the file reads back as it was written.
+
+**Keep the source takes.** `ear/takes/` holds every original recording with
+a README giving, per file, who read it, what they read, how many repetitions
+and the exact `--noise` floor that made the segment count come out right.
+That floor is a property of the room rather than of the words — frank2
+needed -40dB, alan1 -30dB — and without it written down a re-cut is
+guesswork. `ear/raw/` and `ear/audio/` are both regenerable from these;
+these are not regenerable from anything.
 
 The 150 ms silence pad and the RMS levelling in `ear_build.py` are tuned for
 frication onsets and have nothing to do with `tools/audio.py`. The ffmpeg
