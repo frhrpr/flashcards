@@ -1,4 +1,26 @@
 {
+  "media/audio/buty.mp3": {
+    "fingerprint": "38d8fbee0636d8cf",
+    "gain_db": 2.1,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.6,
+    "source": "tts",
+    "text": "buty",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/buty__sentence.mp3": {
+    "fingerprint": "8e7de75d3c412f8c",
+    "gain_db": -0.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.99,
+    "source": "tts",
+    "text": "Mam nowe buty.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/byc.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-być.ogg",
@@ -402,6 +424,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/deszcz.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-deszcz.ogg",
+    "fingerprint": "4fb1a716f2065ae1",
+    "gain_db": 3.9,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-deszcz.ogg",
+    "seconds": 0.91,
+    "source": "commons",
+    "text": "deszcz"
+  },
+  "media/audio/deszcz__sentence.mp3": {
+    "fingerprint": "eaa170faa0c0fdf1",
+    "gain_db": 1.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.23,
+    "source": "tts",
+    "text": "W parku pada deszcz.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/dobry.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-dobry.ogg",
@@ -756,6 +799,27 @@
     "seconds": 1.07,
     "source": "tts",
     "text": "Jem kaszę rano.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/kawa.mp3": {
+    "author": "Frizabela",
+    "commons_file": "Pl-kawa.ogg",
+    "fingerprint": "a28bd25f03ae6f01",
+    "gain_db": -4.2,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-kawa.ogg",
+    "seconds": 0.63,
+    "source": "commons",
+    "text": "kawa"
+  },
+  "media/audio/kawa__sentence.mp3": {
+    "fingerprint": "df1e21efe4c74019",
+    "gain_db": -0.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.94,
+    "source": "tts",
+    "text": "Rano piję kawę.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1563,6 +1627,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/pieniadze.mp3": {
+    "author": "tsca",
+    "commons_file": "Pl-pieniądze.ogg",
+    "fingerprint": "2533b933a7adf3fc",
+    "gain_db": 14.8,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-pieni%C4%85dze.ogg",
+    "seconds": 1.01,
+    "source": "commons",
+    "text": "pieniądze"
+  },
+  "media/audio/pieniadze__sentence.mp3": {
+    "fingerprint": "7d3a4e63feda78fe",
+    "gain_db": -0.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.02,
+    "source": "tts",
+    "text": "Nie mam pieniędzy.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/pierwszy.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-pierwszy.ogg",
@@ -1644,6 +1729,48 @@
     "seconds": 1.49,
     "source": "tts",
     "text": "Dziecko pisze w domu.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/placic.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-płacić.ogg",
+    "fingerprint": "52b6316879569f82",
+    "gain_db": -1.0,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-p%C5%82aci%C4%87.ogg",
+    "seconds": 0.84,
+    "source": "commons",
+    "text": "płacić"
+  },
+  "media/audio/placic__sentence.mp3": {
+    "fingerprint": "e867f251e40e863c",
+    "gain_db": 0.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.23,
+    "source": "tts",
+    "text": "Płacę kartą w sklepie.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/pociag.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-pociąg.ogg",
+    "fingerprint": "69e672b6b46d2b93",
+    "gain_db": 1.7,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-poci%C4%85g.ogg",
+    "seconds": 0.91,
+    "source": "commons",
+    "text": "pociąg"
+  },
+  "media/audio/pociag__sentence.mp3": {
+    "fingerprint": "b6a35be9cbb0169a",
+    "gain_db": -0.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.28,
+    "source": "tts",
+    "text": "Pociąg jedzie do miasta.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -2110,6 +2237,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/spac.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-spać.ogg",
+    "fingerprint": "ac92fb7725dda68d",
+    "gain_db": 0.0,
+    "licence": "CC BY 2.5 pl",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-spa%C4%87.ogg",
+    "seconds": 0.78,
+    "source": "commons",
+    "text": "spać"
+  },
+  "media/audio/spac__sentence.mp3": {
+    "fingerprint": "405b514d09111689",
+    "gain_db": 2.5,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.12,
+    "source": "tts",
+    "text": "Dziecko śpi w łóżku.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/spiewac.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-śpiewać.ogg",
@@ -2299,6 +2447,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/telefon.mp3": {
+    "author": "unknown",
+    "commons_file": "Pl-telefon.ogg",
+    "fingerprint": "c8dff569a8650e1d",
+    "gain_db": 2.2,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-telefon.ogg",
+    "seconds": 1.57,
+    "source": "commons",
+    "text": "telefon"
+  },
+  "media/audio/telefon__sentence.mp3": {
+    "fingerprint": "75389b31adb24725",
+    "gain_db": -0.2,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.07,
+    "source": "tts",
+    "text": "Mój telefon jest nowy.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/teraz.mp3": {
     "author": "Wyksztalcioch",
     "commons_file": "Pl-teraz.ogg",
@@ -2380,6 +2549,27 @@
     "seconds": 0.99,
     "source": "tts",
     "text": "Kot siedzi tutaj.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/tydzien.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-tydzień.ogg",
+    "fingerprint": "656cd13ff20798fc",
+    "gain_db": 0.5,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-tydzie%C5%84.ogg",
+    "seconds": 0.78,
+    "source": "commons",
+    "text": "tydzień"
+  },
+  "media/audio/tydzien__sentence.mp3": {
+    "fingerprint": "b0aaeca317a04150",
+    "gain_db": -0.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.18,
+    "source": "tts",
+    "text": "Tydzień ma siedem dni.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -2551,6 +2741,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/zimny.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-zimny.ogg",
+    "fingerprint": "518bcc05c4eddeda",
+    "gain_db": -2.7,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-zimny.ogg",
+    "seconds": 1.07,
+    "source": "commons",
+    "text": "zimny"
+  },
+  "media/audio/zimny__sentence.mp3": {
+    "fingerprint": "fde98a42bc371dae",
+    "gain_db": -1.0,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.15,
+    "source": "tts",
+    "text": "Woda jest zimna.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/znalezc.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-znaleźć.ogg",
@@ -2613,6 +2824,22 @@
     "text": "Ptak jest żółty.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
+  },
+  "media/img/buty.webp": {
+    "bytes": 20054,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "58623086b4459b9f",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "One pair of new leather shoes side by side on a plain floor, clean and unworn. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
   },
   "media/img/byc.webp": {
     "bytes": 72762,
@@ -2918,6 +3145,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/deszcz.webp": {
+    "bytes": 96644,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "b6354a554e2329aa",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Heavy rain falling in a green park, puddles on the path and drops visible against the trees, nobody about. Grey daylight. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/dobry.webp": {
     "bytes": 41954,
     "check": {
@@ -3182,6 +3425,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A bowl of cooked buckwheat groats on a plain surface, seen from above, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/kawa.webp": {
+    "bytes": 24550,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "3626da2cc0162596",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A white cup of black coffee on a saucer with steam rising, on a kitchen table in morning light. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -3793,6 +4052,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/pieniadze.webp": {
+    "bytes": 24184,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "472b661e556699ca",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "An open wallet held in one hand, plainly empty, no notes or coins in it. Plain indoor background. No readable text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/pierwszy.webp": {
     "bytes": 114046,
     "check": {
@@ -3854,6 +4129,38 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A hand holding a pen and writing on a sheet of paper on a wooden desk, close up. The writing is indistinct. Daylight. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/placic.webp": {
+    "bytes": 31210,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "ed4256c28cae536d",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A close view of a hand holding a bank card against a payment terminal at a shop counter. No readable text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/pociag.webp": {
+    "bytes": 152644,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "13c00bc172443bd3",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A passenger train moving along a track towards the viewer, seen from the side of the line, town buildings in the distance. Daylight. No readable text. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -4199,6 +4506,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/spac.webp": {
+    "bytes": 22122,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "dca7108564a2a02e",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A young child asleep in bed under a duvet, eyes closed, head on the pillow. Dim night light. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/spiewac.webp": {
     "bytes": 61892,
     "check": {
@@ -4343,6 +4666,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/telefon.webp": {
+    "bytes": 22244,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "8e2533386cc0ada9",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "One modern smartphone lying face up on a plain wooden table, screen dark. Nothing else in frame. No readable text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/teraz.webp": {
     "bytes": 6364,
     "check": {
@@ -4406,6 +4745,17 @@
     "prompt": "A hand pointing down at one specific spot on the ground, close up, plain background, no text. Square image.",
     "size": "800x800",
     "source": "generated"
+  },
+  "media/img/tydzien.webp": {
+    "author": "supplied by user",
+    "bytes": 99878,
+    "fingerprint": "53ae805e15ced4b7",
+    "licence": "n/a",
+    "original": "tydzien-supplied.png",
+    "original_size": "1254x1254",
+    "process_version": 1,
+    "size": "800x800",
+    "source": "supplied"
   },
   "media/img/wazny.webp": {
     "author": "supplied by user",
@@ -4527,6 +4877,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "Four unrelated everyday objects that are all the same shade of green, arranged together on a plain white background: a green apple, a green leaf, a green mug, a green book. The only thing they have in common is the colour. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/zimny.webp": {
+    "bytes": 32500,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "09723c62d96bbea7",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A glass of iced water beaded with condensation, ice cubes clearly visible in it, on a plain surface. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },

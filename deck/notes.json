@@ -4061,6 +4061,332 @@
         "listening"
       ],
       "reviewed": true
+    },
+    {
+      "id": "kawa",
+      "word": "kawa",
+      "gloss": "coffee",
+      "pos": "noun",
+      "ipa": "ˈkava",
+      "note": null,
+      "image": "media/img/kawa.webp",
+      "image_alt": "a steaming cup of black coffee",
+      "image_basis": "sentence",
+      "image_prompt": "A white cup of black coffee on a saucer with steam rising, on a kitchen table in morning light. No text or lettering. Square image.",
+      "audio": "media/audio/kawa.mp3",
+      "sentence": {
+        "pl": "Rano piję kawę.",
+        "en": "In the morning I drink coffee.",
+        "gap": "Rano piję ___.",
+        "answer": "kawę",
+        "answer_lemma": "kawa",
+        "audio": "media/audio/kawa__sentence.mp3",
+        "lemmas": [
+          "rano",
+          "pić",
+          "kawa"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "pieniadze",
+      "word": "pieniądze",
+      "gloss": "money",
+      "pos": "noun",
+      "ipa": "pʲɛˈɲɔnd͡zɛ",
+      "note": "always plural — there is no singular in normal use",
+      "image": "media/img/pieniadze.webp",
+      "image_alt": "an open empty wallet",
+      "image_basis": "sentence",
+      "image_prompt": "An open wallet held in one hand, plainly empty, no notes or coins in it. Plain indoor background. No readable text. Square image.",
+      "audio": "media/audio/pieniadze.mp3",
+      "sentence": {
+        "pl": "Nie mam pieniędzy.",
+        "en": "I don't have any money.",
+        "gap": "Nie mam ___.",
+        "answer": "pieniędzy",
+        "answer_lemma": "pieniądze",
+        "audio": "media/audio/pieniadze__sentence.mp3",
+        "lemmas": [
+          "nie",
+          "mieć",
+          "pieniądze"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "placic",
+      "word": "płacić",
+      "gloss": "to pay",
+      "pos": "verb",
+      "ipa": "ˈpwat͡ɕit͡ɕ",
+      "note": null,
+      "image": "media/img/placic.webp",
+      "image_alt": "a hand paying with a card at a terminal",
+      "image_basis": "sentence",
+      "image_prompt": "A close view of a hand holding a bank card against a payment terminal at a shop counter. No readable text. Square image.",
+      "audio": "media/audio/placic.mp3",
+      "sentence": {
+        "pl": "Płacę kartą w sklepie.",
+        "en": "I pay by card in the shop.",
+        "gap": "___ kartą w sklepie.",
+        "answer": "Płacę",
+        "answer_lemma": "płacić",
+        "audio": "media/audio/placic__sentence.mp3",
+        "lemmas": [
+          "płacić",
+          "karta",
+          "w",
+          "sklep"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "pociag",
+      "word": "pociąg",
+      "gloss": "train",
+      "pos": "noun",
+      "ipa": "ˈpɔt͡ɕɔŋk",
+      "note": null,
+      "image": "media/img/pociag.webp",
+      "image_alt": "a train travelling towards a town",
+      "image_basis": "sentence",
+      "image_prompt": "A passenger train moving along a track towards the viewer, seen from the side of the line, town buildings in the distance. Daylight. No readable text. Square image.",
+      "audio": "media/audio/pociag.mp3",
+      "sentence": {
+        "pl": "Pociąg jedzie do miasta.",
+        "en": "The train is going to the town.",
+        "gap": "___ jedzie do miasta.",
+        "answer": "Pociąg",
+        "answer_lemma": "pociąg",
+        "audio": "media/audio/pociag__sentence.mp3",
+        "lemmas": [
+          "pociąg",
+          "jechać",
+          "do",
+          "miasto"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "spac",
+      "word": "spać",
+      "gloss": "to sleep",
+      "pos": "verb",
+      "ipa": "spat͡ɕ",
+      "note": null,
+      "image": "media/img/spac.webp",
+      "image_alt": "a child asleep in bed",
+      "image_basis": "sentence",
+      "image_prompt": "A young child asleep in bed under a duvet, eyes closed, head on the pillow. Dim night light. No text or lettering. Square image.",
+      "audio": "media/audio/spac.mp3",
+      "sentence": {
+        "pl": "Dziecko śpi w łóżku.",
+        "en": "The child is sleeping in bed.",
+        "gap": "Dziecko ___ w łóżku.",
+        "answer": "śpi",
+        "answer_lemma": "spać",
+        "audio": "media/audio/spac__sentence.mp3",
+        "lemmas": [
+          "dziecko",
+          "spać",
+          "w",
+          "łóżko"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "telefon",
+      "word": "telefon",
+      "gloss": "telephone",
+      "pos": "noun",
+      "ipa": "tɛˈlɛfɔn",
+      "note": null,
+      "image": "media/img/telefon.webp",
+      "image_alt": "a smartphone on a table",
+      "image_basis": "sentence",
+      "image_prompt": "One modern smartphone lying face up on a plain wooden table, screen dark. Nothing else in frame. No readable text. Square image.",
+      "audio": "media/audio/telefon.mp3",
+      "sentence": {
+        "pl": "Mój telefon jest nowy.",
+        "en": "My telephone is new.",
+        "gap": "Mój ___ jest nowy.",
+        "answer": "telefon",
+        "answer_lemma": "telefon",
+        "audio": "media/audio/telefon__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "telefon",
+          "być",
+          "nowy"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "deszcz",
+      "word": "deszcz",
+      "gloss": "rain",
+      "pos": "noun",
+      "ipa": "dɛʂt͡ʂ",
+      "note": null,
+      "image": "media/img/deszcz.webp",
+      "image_alt": "rain falling in a park",
+      "image_basis": "sentence",
+      "image_prompt": "Heavy rain falling in a green park, puddles on the path and drops visible against the trees, nobody about. Grey daylight. No text or lettering. Square image.",
+      "audio": "media/audio/deszcz.mp3",
+      "sentence": {
+        "pl": "W parku pada deszcz.",
+        "en": "It is raining in the park.",
+        "gap": "W parku pada ___.",
+        "answer": "deszcz",
+        "answer_lemma": "deszcz",
+        "audio": "media/audio/deszcz__sentence.mp3",
+        "lemmas": [
+          "w",
+          "park",
+          "padać",
+          "deszcz"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "zimny",
+      "word": "zimny",
+      "gloss": "cold",
+      "pos": "adjective",
+      "ipa": "ˈʑimnɨ",
+      "note": null,
+      "image": "media/img/zimny.webp",
+      "image_alt": "a glass of iced water with condensation",
+      "image_basis": "sentence",
+      "image_prompt": "A glass of iced water beaded with condensation, ice cubes clearly visible in it, on a plain surface. No text or lettering. Square image.",
+      "audio": "media/audio/zimny.mp3",
+      "sentence": {
+        "pl": "Woda jest zimna.",
+        "en": "The water is cold.",
+        "gap": "Woda jest ___.",
+        "answer": "zimna",
+        "answer_lemma": "zimny",
+        "audio": "media/audio/zimny__sentence.mp3",
+        "lemmas": [
+          "woda",
+          "być",
+          "zimny"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "buty",
+      "word": "buty",
+      "gloss": "shoes",
+      "pos": "noun",
+      "ipa": "ˈbutɨ",
+      "note": "the everyday form is the plural; one shoe is but",
+      "image": "media/img/buty.webp",
+      "image_alt": "a pair of new shoes",
+      "image_basis": "sentence",
+      "image_prompt": "One pair of new leather shoes side by side on a plain floor, clean and unworn. No text or lettering. Square image.",
+      "audio": "media/audio/buty.mp3",
+      "sentence": {
+        "pl": "Mam nowe buty.",
+        "en": "I have new shoes.",
+        "gap": "Mam nowe ___.",
+        "answer": "buty",
+        "answer_lemma": "buty",
+        "audio": "media/audio/buty__sentence.mp3",
+        "lemmas": [
+          "mieć",
+          "nowy",
+          "buty"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "tydzien",
+      "word": "tydzień",
+      "gloss": "week",
+      "pos": "noun",
+      "ipa": "ˈtɨd͡ʑɛɲ",
+      "note": null,
+      "image": "media/img/tydzien.webp",
+      "image_alt": "seven panels, one for each day of the week, labelled with the Polish day names",
+      "image_basis": "sentence",
+      "image_prompt": "Supplied by the user, not generated. Seven illustrated panels, one per day, each labelled with its Polish name from poniedziałek to niedziela. Deliberately lettered, and in Polish — the words are the point. Two generated attempts gave six squares and then seven bare ones that read as 'seven', not 'week'.",
+      "audio": "media/audio/tydzien.mp3",
+      "sentence": {
+        "pl": "Tydzień ma siedem dni.",
+        "en": "A week has seven days.",
+        "gap": "___ ma siedem dni.",
+        "answer": "Tydzień",
+        "answer_lemma": "tydzień",
+        "audio": "media/audio/tydzien__sentence.mp3",
+        "lemmas": [
+          "tydzień",
+          "mieć",
+          "siedem",
+          "dzień"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
     }
   ]
 }

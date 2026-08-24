@@ -132,3 +132,25 @@ my,my,pronoun,no,known,used in sentences and the paradigm tables,2026-08-24,
 wy,wy,pronoun,no,known,used in sentences and the paradigm tables,2026-08-24,
 się,sie,particle,no,known,"reflexive, carried by śmiać się",2026-08-24,not a word on its own
 Marek,marek,noun,no,known,the name in imię's sentence,2026-08-24,"a given name, not vocabulary"
+kawa,kawa,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-24,
+pieniądze,pieniadze,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-24,
+płacić,placic,verb,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-24,
+pociąg,pociag,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-24,
+spać,spac,verb,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-24,
+telefon,telefon,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-24,
+deszcz,deszcz,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-24,
+zimny,zimny,adjective,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-24,
+buty,buty,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-24,
+tydzień,tydzien,noun,yes,carded,frequency rank 130,2026-08-24,
+karta,karta,noun,yes,queued,sentence for płacić,2026-08-24,"met in a sentence, not carded"
+jechać,jechac,verb,yes,queued,sentence for pociąg,2026-08-24,"met in a sentence, not carded"
+łóżko,lozko,noun,yes,queued,sentence for spać,2026-08-24,"met in a sentence, not carded"
+padać,padac,verb,yes,queued,sentence for deszcz,2026-08-24,"met in a sentence, not carded"
+siedem,siedem,numeral,yes,queued,sentence for tydzień,2026-08-24,"met in a sentence, not carded"
+poniedziałek,poniedzialek,noun,yes,queued,on the tydzień card image,2026-08-24,"met on a card image, not in a sentence"
+wtorek,wtorek,noun,yes,queued,on the tydzień card image,2026-08-24,"met on a card image, not in a sentence"
+środa,sroda,noun,yes,queued,on the tydzień card image,2026-08-24,"met on a card image, not in a sentence"
+czwartek,czwartek,noun,yes,queued,on the tydzień card image,2026-08-24,"met on a card image, not in a sentence"
+piątek,piatek,noun,yes,queued,on the tydzień card image,2026-08-24,"met on a card image, not in a sentence"
+sobota,sobota,noun,yes,queued,on the tydzień card image,2026-08-24,"met on a card image, not in a sentence"
+niedziela,niedziela,noun,yes,queued,on the tydzień card image,2026-08-24,"met on a card image, not in a sentence"

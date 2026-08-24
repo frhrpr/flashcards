@@ -405,6 +405,18 @@ Decided so far:
   every image model — it has never been free). Flash not pro: these render
   at 800px on a phone.
 
+**Borrowing an unrecorded word into a sentence is good, not a cost.** The
+sentence introduces the word in a context it has earned, `validate.py` puts
+it in the queue automatically, and it gets carded next round. That is a
+better selection mechanism than picking off a list, because the word arrives
+with a reason to exist. Six words were carded on 2026-08-24 that way.
+
+The constraint is not "borrow nothing" — an early draft of those six was
+rewritten to borrow nothing, which was needless caution. It is only the same
+test as for any card: `sierpień`, `jabłko`, `morze`, `znać` yes; `stanowić`
+no. Record the borrowed word in `vocab.csv` as `queued` at the time, and it
+turns up under `next` on the following run.
+
 ### `deck/frequency.csv` is half-blind — do not use it as a syllabus
 
 It is a **written-corpus** list: the `ARF` column is Average Reduced
