@@ -549,6 +549,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/glos.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-głos.ogg",
+    "fingerprint": "e2880ca7d7545f95",
+    "gain_db": -0.3,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-g%C5%82os.ogg",
+    "seconds": 1.04,
+    "source": "commons",
+    "text": "głos"
+  },
+  "media/audio/glos__sentence.mp3": {
+    "fingerprint": "56b5b34a6107a6de",
+    "gain_db": 0.5,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.2,
+    "source": "tts",
+    "text": "Słyszę głos dziecka.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/glowa.mp3": {
     "author": "tsca",
     "commons_file": "Pl-głowa.ogg",
@@ -1311,6 +1332,69 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/okno.mp3": {
+    "author": "Marcowy zając",
+    "commons_file": "Pl-okno.ogg",
+    "fingerprint": "93779889cd9c2cbe",
+    "gain_db": 18.7,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-okno.ogg",
+    "seconds": 1.2,
+    "source": "commons",
+    "text": "okno"
+  },
+  "media/audio/okno__sentence.mp3": {
+    "fingerprint": "6a63e2d9bef75330",
+    "gain_db": -1.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.07,
+    "source": "tts",
+    "text": "Kot siedzi w oknie.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/oko.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-oko.ogg",
+    "fingerprint": "ace9ac3ad3187601",
+    "gain_db": -0.9,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-oko.ogg",
+    "seconds": 0.6,
+    "source": "commons",
+    "text": "oko"
+  },
+  "media/audio/oko__sentence.mp3": {
+    "fingerprint": "5a2d1195d5070451",
+    "gain_db": -1.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.15,
+    "source": "tts",
+    "text": "Kot ma zielone oko.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/otworzyc.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-otworzyć.ogg",
+    "fingerprint": "271f719dadd7ede8",
+    "gain_db": -0.1,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-otworzy%C4%87.ogg",
+    "seconds": 1.78,
+    "source": "commons",
+    "text": "otworzyć"
+  },
+  "media/audio/otworzyc__sentence.mp3": {
+    "fingerprint": "f5a9c852f4c8114a",
+    "gain_db": 5.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.23,
+    "source": "tts",
+    "text": "Muszę otworzyć okno.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/pamietac.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-pamiętać.ogg",
@@ -1395,6 +1479,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/pierwszy.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-pierwszy.ogg",
+    "fingerprint": "7a1b3332c512e06f",
+    "gain_db": 1.1,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-pierwszy.ogg",
+    "seconds": 0.73,
+    "source": "commons",
+    "text": "pierwszy"
+  },
+  "media/audio/pierwszy__sentence.mp3": {
+    "fingerprint": "2d75408b86cd779b",
+    "gain_db": -0.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.04,
+    "source": "tts",
+    "text": "Jestem pierwszy.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/pies.mp3": {
     "author": "unknown",
     "commons_file": "Pl-pies.ogg",
@@ -1455,6 +1560,27 @@
     "seconds": 1.49,
     "source": "tts",
     "text": "Dziecko pisze w domu.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/pomoc_v.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-pomóc.ogg",
+    "fingerprint": "57f36d81a94647d9",
+    "gain_db": 0.0,
+    "licence": "CC BY 2.5 pl",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-pom%C3%B3c.ogg",
+    "seconds": 0.99,
+    "source": "commons",
+    "text": "pomóc"
+  },
+  "media/audio/pomoc_v__sentence.mp3": {
+    "fingerprint": "1ef8ea2d07f4af8c",
+    "gain_db": 2.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.15,
+    "source": "tts",
+    "text": "Chcę pomóc matce.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1647,6 +1773,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/rozumiec.mp3": {
+    "author": "Kajervi",
+    "commons_file": "Pl-rozumieć.ogg",
+    "fingerprint": "b8970d951ec486a5",
+    "gain_db": -1.3,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-rozumie%C4%87.ogg",
+    "seconds": 1.02,
+    "source": "commons",
+    "text": "rozumieć"
+  },
+  "media/audio/rozumiec__sentence.mp3": {
+    "fingerprint": "f100b590e0b380ec",
+    "gain_db": 1.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.31,
+    "source": "tts",
+    "text": "Nie rozumiem, co mówisz.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/ryba.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-ryba.ogg",
@@ -1795,6 +1942,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/slowo.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-słowo.ogg",
+    "fingerprint": "d620a0156c0d082c",
+    "gain_db": -1.3,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-s%C5%82owo.ogg",
+    "seconds": 0.94,
+    "source": "commons",
+    "text": "słowo"
+  },
+  "media/audio/slowo__sentence.mp3": {
+    "fingerprint": "226f380a76e46b20",
+    "gain_db": 2.2,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.49,
+    "source": "tts",
+    "text": "To jest trudne słowo.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/slyszec.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-słyszeć.ogg",
@@ -1858,6 +2026,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/spotkac.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-spotkać.ogg",
+    "fingerprint": "21278c9e62152a3e",
+    "gain_db": 0.7,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-spotka%C4%87.ogg",
+    "seconds": 1.15,
+    "source": "commons",
+    "text": "spotkać"
+  },
+  "media/audio/spotkac__sentence.mp3": {
+    "fingerprint": "0fc184a01ff81276",
+    "gain_db": 0.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.2,
+    "source": "tts",
+    "text": "Rano spotkam ojca.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/stac.mp3": {
     "author": "tsca",
     "commons_file": "Pl-stać.ogg",
@@ -1897,6 +2086,27 @@
     "seconds": 1.91,
     "source": "tts",
     "text": "W parku jest stare drzewo.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/stol.mp3": {
+    "author": "Frizabela",
+    "commons_file": "Pl-stół.ogg",
+    "fingerprint": "db1e737c891a2f2f",
+    "gain_db": 9.0,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-st%C3%B3%C5%82.ogg",
+    "seconds": 0.68,
+    "source": "commons",
+    "text": "stół"
+  },
+  "media/audio/stol__sentence.mp3": {
+    "fingerprint": "08fbe89a65c3480e",
+    "gain_db": 0.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.04,
+    "source": "tts",
+    "text": "Stół jest duży.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -2694,6 +2904,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/glos.webp": {
+    "bytes": 181492,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "fff452043c5722bb",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A child standing outdoors with both hands cupped round their mouth, calling loudly into the distance. Daylight, open field behind. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/glowa.webp": {
     "bytes": 70380,
     "check": {
@@ -3265,6 +3491,54 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/okno.webp": {
+    "bytes": 40808,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "3037c4b1d3a1c434",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A cat sitting on a broad windowsill inside a room, the window behind it filled with daylight. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/oko.webp": {
+    "bytes": 51042,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "765d995a73606f64",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "An extreme close view of a cat's green eye, the pupil sharp and the fur around it soft. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/otworzyc.webp": {
+    "bytes": 23712,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "61fd3ddcf7d5bbff",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A close view of one hand pushing a window open by its handle, the frame swinging outward. Daylight beyond. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/pamietac.webp": {
     "bytes": 34936,
     "check": {
@@ -3329,6 +3603,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/pierwszy.webp": {
+    "bytes": 114046,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "flag",
+      "why": "contains text or lettering"
+    },
+    "fingerprint": "ffbde2a8756977d1",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A runner breaking the tape at a finish line with both arms raised, well clear of everyone behind. Daylight. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/pies.webp": {
     "bytes": 54642,
     "check": {
@@ -3374,6 +3664,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A hand holding a pen and writing on a sheet of paper on a wooden desk, close up. The writing is indistinct. Daylight. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/pomoc_v.webp": {
+    "bytes": 76616,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "ecc4e58020a64960",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A young man carrying two heavy shopping bags for an older woman walking beside him. Daylight on a street. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -3516,6 +3822,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/rozumiec.webp": {
+    "bytes": 51924,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "e27d1a9b774ef7fb",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Two people facing each other, one shrugging with both palms turned up and eyebrows raised, plainly not following. Daylight. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/ryba.webp": {
     "bytes": 7050,
     "check": {
@@ -3628,6 +3950,17 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/slowo.webp": {
+    "author": "supplied by user",
+    "bytes": 57874,
+    "fingerprint": "91dd43ed8e2d49e4",
+    "licence": "n/a",
+    "original": "slowo-supplied.jpg",
+    "original_size": "1280x854",
+    "process_version": 1,
+    "size": "800x534",
+    "source": "supplied"
+  },
   "media/img/slyszec.webp": {
     "bytes": 172974,
     "check": {
@@ -3676,6 +4009,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/spotkac.webp": {
+    "bytes": 34024,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "d778f48e74372cd3",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Two men greeting each other on a street, shaking hands and smiling, having just met. Morning daylight. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/stac.webp": {
     "bytes": 186366,
     "check": {
@@ -3705,6 +4054,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "Two identical wooden chairs side by side on a plain background: one brand new and clean, one visibly old, worn and weathered. The old one stands at the front and in focus. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/stol.webp": {
+    "bytes": 18804,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "ce4a2639ea6836dd",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "One large heavy wooden dining table standing alone in the middle of an empty room, filling most of the frame, nothing on it and nobody near it. Daylight. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },

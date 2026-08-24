@@ -2912,6 +2912,276 @@
         "listening"
       ],
       "reviewed": true
+    },
+    {
+      "id": "oko",
+      "word": "oko",
+      "gloss": "eye",
+      "pos": "noun",
+      "ipa": "ˈɔkɔ",
+      "note": null,
+      "image": "media/img/oko.webp",
+      "image_alt": "a close view of a cat's green eye",
+      "image_basis": "sentence",
+      "image_prompt": "An extreme close view of a cat's green eye, the pupil sharp and the fur around it soft. No text or lettering. Square image.",
+      "audio": "media/audio/oko.mp3",
+      "sentence": {
+        "pl": "Kot ma zielone oko.",
+        "en": "The cat has a green eye.",
+        "gap": "Kot ma zielone ___.",
+        "answer": "oko",
+        "answer_lemma": "oko",
+        "audio": "media/audio/oko__sentence.mp3"
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "slowo",
+      "word": "słowo",
+      "gloss": "word",
+      "pos": "noun",
+      "ipa": "ˈswɔvɔ",
+      "note": null,
+      "image": "media/img/slowo.webp",
+      "image_alt": "a close view of a printed dictionary page",
+      "image_basis": "sentence",
+      "image_prompt": "Supplied by the user, not generated. A close photograph of a printed dictionary page, shallow depth of field, the entries in French. The generated version ringed a garbled English word on a page of nonsense type.",
+      "audio": "media/audio/slowo.mp3",
+      "sentence": {
+        "pl": "To jest trudne słowo.",
+        "en": "This is a difficult word.",
+        "gap": "To jest trudne ___.",
+        "answer": "słowo",
+        "answer_lemma": "słowo",
+        "audio": "media/audio/slowo__sentence.mp3"
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "glos",
+      "word": "głos",
+      "gloss": "voice",
+      "pos": "noun",
+      "ipa": "ɡwɔs",
+      "note": null,
+      "image": "media/img/glos.webp",
+      "image_alt": "a child calling out with hands cupped round their mouth",
+      "image_basis": "sentence",
+      "image_prompt": "A child standing outdoors with both hands cupped round their mouth, calling loudly into the distance. Daylight, open field behind. No text or lettering. Square image.",
+      "audio": "media/audio/glos.mp3",
+      "sentence": {
+        "pl": "Słyszę głos dziecka.",
+        "en": "I hear a child's voice.",
+        "gap": "Słyszę ___ dziecka.",
+        "answer": "głos",
+        "answer_lemma": "głos",
+        "audio": "media/audio/glos__sentence.mp3"
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "rozumiec",
+      "word": "rozumieć",
+      "gloss": "to understand",
+      "pos": "verb",
+      "ipa": "rɔˈzumʲɛt͡ɕ",
+      "note": null,
+      "image": "media/img/rozumiec.webp",
+      "image_alt": "a person shrugging, not understanding",
+      "image_basis": "sentence",
+      "image_prompt": "Two people facing each other, one shrugging with both palms turned up and eyebrows raised, plainly not following. Daylight. No text or lettering. Square image.",
+      "audio": "media/audio/rozumiec.mp3",
+      "sentence": {
+        "pl": "Nie rozumiem, co mówisz.",
+        "en": "I don't understand what you are saying.",
+        "gap": "Nie ___, co mówisz.",
+        "answer": "rozumiem",
+        "answer_lemma": "rozumieć",
+        "audio": "media/audio/rozumiec__sentence.mp3"
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "pomoc_v",
+      "word": "pomóc",
+      "gloss": "to help",
+      "pos": "verb",
+      "ipa": "ˈpɔmut͡s",
+      "note": null,
+      "image": "media/img/pomoc_v.webp",
+      "image_alt": "a young man carrying bags for an older woman",
+      "image_basis": "sentence",
+      "image_prompt": "A young man carrying two heavy shopping bags for an older woman walking beside him. Daylight on a street. No text or lettering. Square image.",
+      "audio": "media/audio/pomoc_v.mp3",
+      "sentence": {
+        "pl": "Chcę pomóc matce.",
+        "en": "I want to help my mother.",
+        "gap": "Chcę ___ matce.",
+        "answer": "pomóc",
+        "answer_lemma": "pomóc",
+        "audio": "media/audio/pomoc_v__sentence.mp3"
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "spotkac",
+      "word": "spotkać",
+      "gloss": "to meet",
+      "pos": "verb",
+      "ipa": "ˈspɔtkat͡ɕ",
+      "note": null,
+      "image": "media/img/spotkac.webp",
+      "image_alt": "two men greeting each other on a street",
+      "image_basis": "sentence",
+      "image_prompt": "Two men greeting each other on a street, shaking hands and smiling, having just met. Morning daylight. No text or lettering. Square image.",
+      "audio": "media/audio/spotkac.mp3",
+      "sentence": {
+        "pl": "Rano spotkam ojca.",
+        "en": "In the morning I will meet my father.",
+        "gap": "Rano ___ ojca.",
+        "answer": "spotkam",
+        "answer_lemma": "spotkać",
+        "audio": "media/audio/spotkac__sentence.mp3"
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "okno",
+      "word": "okno",
+      "gloss": "window",
+      "pos": "noun",
+      "ipa": "ˈɔknɔ",
+      "note": null,
+      "image": "media/img/okno.webp",
+      "image_alt": "a cat sitting on a windowsill",
+      "image_basis": "sentence",
+      "image_prompt": "A cat sitting on a broad windowsill inside a room, the window behind it filled with daylight. No text or lettering. Square image.",
+      "audio": "media/audio/okno.mp3",
+      "sentence": {
+        "pl": "Kot siedzi w oknie.",
+        "en": "The cat is sitting in the window.",
+        "gap": "Kot siedzi w ___.",
+        "answer": "oknie",
+        "answer_lemma": "okno",
+        "audio": "media/audio/okno__sentence.mp3"
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "otworzyc",
+      "word": "otworzyć",
+      "gloss": "to open",
+      "pos": "verb",
+      "ipa": "ɔtˈvɔʐɨt͡ɕ",
+      "note": null,
+      "image": "media/img/otworzyc.webp",
+      "image_alt": "a hand pushing a window open",
+      "image_basis": "sentence",
+      "image_prompt": "A close view of one hand pushing a window open by its handle, the frame swinging outward. Daylight beyond. No text or lettering. Square image.",
+      "audio": "media/audio/otworzyc.mp3",
+      "sentence": {
+        "pl": "Muszę otworzyć okno.",
+        "en": "I must open the window.",
+        "gap": "Muszę ___ okno.",
+        "answer": "otworzyć",
+        "answer_lemma": "otworzyć",
+        "audio": "media/audio/otworzyc__sentence.mp3"
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "stol",
+      "word": "stół",
+      "gloss": "table",
+      "pos": "noun",
+      "ipa": "stuw",
+      "note": null,
+      "image": "media/img/stol.webp",
+      "image_alt": "a large wooden table alone in a room",
+      "image_basis": "sentence",
+      "image_prompt": "One large heavy wooden dining table standing alone in the middle of an empty room, filling most of the frame, nothing on it and nobody near it. Daylight. No text or lettering. Square image.",
+      "audio": "media/audio/stol.mp3",
+      "sentence": {
+        "pl": "Stół jest duży.",
+        "en": "The table is big.",
+        "gap": "___ jest duży.",
+        "answer": "Stół",
+        "answer_lemma": "stół",
+        "audio": "media/audio/stol__sentence.mp3"
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "pierwszy",
+      "word": "pierwszy",
+      "gloss": "first",
+      "pos": "adjective",
+      "ipa": "ˈpjɛrfʂɨ",
+      "note": null,
+      "image": "media/img/pierwszy.webp",
+      "image_alt": "a runner crossing the finish line first",
+      "image_basis": "sentence",
+      "image_prompt": "A runner breaking the tape at a finish line with both arms raised, well clear of everyone behind. Daylight. No text or lettering. Square image.",
+      "audio": "media/audio/pierwszy.mp3",
+      "sentence": {
+        "pl": "Jestem pierwszy.",
+        "en": "I am first.",
+        "gap": "Jestem ___.",
+        "answer": "pierwszy",
+        "answer_lemma": "pierwszy",
+        "audio": "media/audio/pierwszy__sentence.mp3"
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
     }
   ]
 }
