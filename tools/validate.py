@@ -57,8 +57,20 @@ def check_sentence(nid, s, word):
     # or the student is shown one string and graded against another.
     if s["gap"].replace("___", s["answer"]) != s["pl"]:
         err(nid, "sentence.gap + answer does not reconstruct sentence.pl")
-    if s["gap"].strip().startswith("___"):
-        warn(nid, "gap is sentence-initial — capitalisation makes the answer ambiguous")
+    # A sentence-initial gap used to warn here, on the theory that the answer's
+    # capital is ambiguous. It is not worth a warning: the blank hides the
+    # capital, so nothing leaks before he answers, and whether the capital is
+    # positional or lexical changes nothing he would write. Polish drops
+    # pronouns, so "Lubię mojego psa." cannot avoid starting with the verb —
+    # the check fired on correct sentences, which is how warnings get ignored.
+    #
+    # What is worth catching is the same capital in a place position cannot
+    # explain: a mid-sentence answer capitalised when the headword is not.
+    # That is always a typo in the data.
+    if (s["answer"][:1].isupper() and not word[:1].isupper()
+            and not s["gap"].strip().startswith("___")):
+        warn(nid, f"answer {s['answer']!r} is capitalised mid-sentence, but "
+                  f"{word!r} is not a proper noun")
     if s["answer_lemma"] != word:
         warn(nid, f"answer_lemma {s['answer_lemma']!r} is not the note word {word!r}")
 

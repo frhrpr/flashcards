@@ -84,6 +84,14 @@ def load_remote(key, user):
             fields.get("done") or {})
 
 
+def intake_rate():
+    """NEW_WORDS_PER_DAY out of index.html, so this report cannot quietly
+    disagree with the app about how fast the deck is consumed."""
+    m = re.search(r"const NEW_WORDS_PER_DAY\s*=\s*(\d+)",
+                  (ROOT / "index.html").read_text(encoding="utf-8"))
+    return int(m.group(1)) if m else 3
+
+
 def ear_content():
     """WORDS and SOUND_LABEL straight out of index.html — the same source the
     app renders from and tools/ear_build.py names folders from, so this report
@@ -208,6 +216,13 @@ def analyse(cards, log, notes, done):
         buckets["learning" if ivl < YOUNG else "young" if ivl < MATURE else "mature"] += 1
 
     started_notes = {note_of(k) for k in cards}
+    # How much new vocabulary is left. Conjugation drills are not new words —
+    # they draw on the sibling allowance — so they are excluded, exactly as
+    # the app excludes them from the daily word budget.
+    rate = intake_rate()
+    unseen = [n for n in notes
+              if n.get("kind") != "form" and n["id"] not in started_notes]
+    runway = len(unseen) / rate if rate else 0
     # A gated card is locked while its note's recognition card is immature.
     locked = 0
     for n in notes:
@@ -253,6 +268,7 @@ def analyse(cards, log, notes, done):
         usual_hour=hours.most_common(1)[0][0] if hours else None,
         last_seen=days[-1] if days else None, today=today,
         type_of=type_of, reviews=len(log), vocab_reviews=len(vocab), light=light,
+        unseen=len(unseen), runway=runway, rate=rate,
         records=records, total_cards=sum(len(n.get("cards", [])) for n in notes),
     )
 
@@ -301,11 +317,19 @@ def report(uid, a, e):
     p(f"  reviews       {a['reviews']} total, "
       f"median sitting {a['median_minutes']:.0f} min"
       + (f", usually around {a['usual_hour']:02d}:00" if a["usual_hour"] is not None else ""))
+    if a["reviews"] != a["vocab_reviews"]:
+        p(f"                {a['vocab_reviews']} vocab cards, "
+          f"{a['reviews'] - a['vocab_reviews']} ear trials")
     p(f"  deck          {a['started']}/{a['total_notes']} words started, "
       f"{a['cards_started']} cards, {a['locked']} still locked")
-    if a["reviews"] != a["vocab_reviews"]:
-        p(f"                {a['vocab_reviews']} of those are vocab cards, "
-          f"{a['reviews'] - a['vocab_reviews']} ear trials")
+    # Running out of new words is invisible from the review counts — they stay
+    # healthy while the deck quietly stops growing — so it gets its own line.
+    if a["runway"] < 4:
+        p(f"  new words     {a['unseen']} left"
+          + (f" — at {a['rate']}/day that is under a day. " if a["unseen"] else " — ")
+          + "THE DECK NEEDS NEW WORDS.")
+    else:
+        p(f"  new words     {a['unseen']} left, about {a['runway']:.0f} days at {a['rate']}/day")
     b = a["buckets"]
     p(f"  maturity      {b['learning']} learning, {b['young']} young, {b['mature']} mature")
     p("\n  recent days")
@@ -450,7 +474,7 @@ table.cards th:last-child{{text-align:left}}
 tr.warn td{{background:#F9F1F0}}
 td.w em{{display:block;font-style:normal;color:#6C736B;font-size:.72rem}}
 td.ty{{font-family:ui-monospace,monospace;font-size:.68rem;color:#6C736B}}
-td.n.low{{color:#A32C22;font-weight:700}} td.n.late{{color:#A32C22}}
+td.n.low{{color:#A32C22;font-weight:700}} dd.low{{color:#A32C22;font-weight:700}} td.n.late{{color:#A32C22}}
 td.n.diag{{color:#6C736B}} td.n.hot{{color:#A32C22;font-weight:700}}
 td.hist{{font-family:ui-monospace,monospace;letter-spacing:.08em;white-space:nowrap}}
 td.hist b{{font-weight:400;cursor:default}}
@@ -463,6 +487,7 @@ td.hist b.g{{color:#2F6B3E}} td.hist b.a{{color:#A32C22}}
 <dt>Words started</dt><dd>{a['started']} of {a['total_notes']}</dd>
 <dt>Cards in rotation</dt><dd>{a['cards_started']}</dd>
 <dt>Still locked</dt><dd>{a['locked']}</dd>
+<dt>New words left</dt><dd{' class=low' if a['runway'] < 4 else ''}>{a['unseen']}</dd>
 <dt>Learning / young / mature</dt><dd>{b['learning']} / {b['young']} / {b['mature']}</dd>
 <dt>Median sitting</dt><dd>{a['median_minutes']:.0f} min</dd>
 </dl></div>

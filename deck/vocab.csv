@@ -79,3 +79,29 @@ czas,czas,noun,yes,carded,lesson 2026-08-16 Gdzie jest pies?,2026-08-16,
 miejsce,miejsce,noun,yes,carded,lesson 2026-08-16 Gdzie jest pies?,2026-08-16,
 nowy,nowy,adjective,yes,carded,lesson 2026-08-16 Gdzie jest pies?,2026-08-16,
 stać,stac,verb,yes,carded,lesson 2026-08-16 Gdzie jest pies?,2026-08-16,
+że,ze,conjunction,no,known,"needed for myśleć, że …",2026-08-24,given free with myśleć
+pytać,pytac,verb,yes,carded,frequency rank 251,2026-08-24,
+człowiek,czlowiek,noun,yes,carded,frequency rank 8,2026-08-24,
+musieć,musiec,verb,yes,carded,frequency rank 13,2026-08-24,
+znaleźć,znalezc,verb,yes,carded,frequency rank 42,2026-08-24,
+robić,robic,verb,yes,carded,frequency rank 46,2026-08-24,
+miasto,miasto,noun,yes,carded,frequency rank 55,2026-08-24,
+myśleć,myslec,verb,yes,carded,frequency rank 69,2026-08-24,
+młody,mlody,adjective,yes,carded,frequency rank 70,2026-08-24,
+praca,praca,noun,yes,carded,frequency rank 28,2026-08-24,
+godzina,godzina,noun,yes,carded,frequency rank 86,2026-08-24,
+rok,rok,noun,yes,carded,frequency rank 4,2026-08-24,
+rodzina,rodzina,noun,yes,carded,frequency rank 78,2026-08-24,
+mężczyzna,mezczyzna,noun,yes,carded,frequency rank 84,2026-08-24,
+głowa,glowa,noun,yes,carded,frequency rank 52,2026-08-24,
+lubić,lubic,verb,yes,carded,frequency rank 238,2026-08-24,
+pisać,pisac,verb,yes,carded,frequency rank 101,2026-08-24,
+czytać,czytac,verb,yes,carded,frequency rank 233,2026-08-24,
+słyszeć,slyszec,verb,yes,carded,frequency rank 210,2026-08-24,
+pamiętać,pamietac,verb,yes,carded,frequency rank 122,2026-08-24,
+ważny,wazny,adjective,yes,carded,frequency rank 49,2026-08-24,
+mój,moj,pronoun,no,known,used in lessons since 2026-08-16,2026-08-24,possessive; given free
+chłopiec,chlopiec,noun,yes,queued,sentence for czytać,2026-08-24,"met in a sentence, not carded"
+książka,ksiazka,noun,yes,queued,"sentence for czytać, frequency rank 124",2026-08-24,"met in a sentence, not carded"
+dwanaście,dwanascie,numeral,yes,queued,sentence for rok,2026-08-24,"met in a sentence, not carded"
+miesiąc,miesiac,noun,yes,queued,"sentence for rok, frequency rank 96",2026-08-24,"met in a sentence, not carded"

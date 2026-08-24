@@ -388,9 +388,16 @@ part of speech, short Polish definition. One note produces up to four cards
 Decided so far:
 
 - **Text** (POS, definition, sentence, gap) — written by Claude in session
-  per word with structured outputs. Constrain sentence vocabulary to an
-  allowlist of `deck/vocab.csv` plus the top N of `deck/frequency.csv`, or
-  sentences come out full of words he doesn't know.
+  per word with structured outputs. The sentence allowlist is **all of
+  `deck/vocab.csv` plus all of `deck/frequency.csv`** — deliberately not just
+  the words already carded. Restricting it to carded words was the practice
+  for a while and it was a mistake: with sixty-odd words and none for people,
+  sentences got assembled from whatever was sayable rather than describing
+  anything, which is how *a bird that walks* and *a dog fed milk* happened.
+  A word from the allowlist he has not met yet is fine — the image carries
+  the meaning, and he only ever produces the one gapped word. Record any such
+  word in `vocab.csv` with status `queued`: met, uncarded, cardable later.
+  Simple where possible, but no simpler than the picture needs.
 - **IPA** — carried in the data whether or not it's displayed. Polish
   orthography is near-phonemic, so this is low value next to audio.
 - **Images** — generated with `gemini-2.5-flash-image`, ~4 euro cents each,
@@ -398,17 +405,33 @@ Decided so far:
   every image model — it has never been free). Flash not pro: these render
   at 800px on a phone.
 
-**Prefer the sentence's scene, but not at the cost of a complicated prompt.**
-An image that shows what the sentence says is worth more than a stock picture
-of the word, because it reinforces the card as one unit. Take it whenever the
-sentence is a subject doing one plain action — `Mały kot pije mleko.` is a
-cat drinking milk from a bowl, and that beats a cat standing about.
+**Follow the sentence's scene when it is easy, and keep the two related even
+when it is not.** An image that shows what the sentence says reinforces the
+card as one unit. Take it whenever the sentence is a subject doing one plain
+action — `Mały kot pije mleko.` is a cat drinking milk from a bowl, and that
+beats a cat standing about.
 
 Fall back to the word alone when the sentence hinges on a **spatial relation**
 (`pod ławką`, `na ławkę`, `w parku`) or needs several elements arranged just
 so. Those are what these models fumble, and a wrong picture is worse than a
-plain one. `image_basis` records which was used, and the check prompt depends
-on it.
+plain one.
+
+But `word` basis is not licence for the two to be strangers. Even then the
+picture should sit in the sentence's world where that costs nothing — same
+object, same setting, same person. A card whose picture and sentence have
+plainly nothing to do with each other is teaching two unrelated things at
+once. `image_basis` records which was used, and the check prompt depends on
+it.
+
+Writing the sentence *after* looking at the picture is a legitimate and often
+better order. Several notes here were fixed that way.
+
+**Check the neighbouring images before writing a prompt.** `teraz` was
+already a clock face and `czas` already an hourglass when `godzina` was given
+a clock too — a duplicate picture is worse than a weak one, because two cards
+then cue each other's word. This is the gloss-collision rule wearing a
+different hat: `kobieta` and `człowiek` are both people on park benches, so
+`mężczyzna` had to be standing indoors.
 
 **"Plain background" is for objects, not people.** It suits a single concrete
 noun, where anything else in frame competes with the thing being named. Asked
@@ -422,26 +445,56 @@ a setting for its own sake either; an unstated one is fine.
 chance to be wrong. The first `skakać` prompt asked for a cat jumping *onto*
 a bench and got one jumping away — spatial relations are what these models
 fumble. Describe a position ("above the bench, about to land") rather than a
-direction, and drop any detail the word does not need. `image_basis` records
-whether a picture illustrates the word alone or the sentence's scene;
-concrete words take `word`, and the sentence is then irrelevant to the image
-because the card already carries it as text and audio.
+direction, and drop any detail the word does not need. Two generated attempts
+at *walking into an office* both walked out.
+
+**These models cannot count.** Asked for one hour marked on a dial they drew
+a quarter, three times running, however the fraction was phrased. Asked for
+twelve calendar pages they drew sixteen. What finally worked was stating the
+count twice and forbidding the alternative — "twelve in total, no more and no
+fewer". If a picture depends on a number being right, verify it by eye; the
+check will not always.
 
 `tools/images.py --check` asks a vision model specific yes/no questions and
 flags rather than blocks. It caught the `skakać` direction fault on its own.
 Two calibration lessons, both learned by getting 24 flags out of 43:
 
 - Judging a `word`-basis image against the sentence is pure noise, so the
-  prompt is conditional on `image_basis`. Almost every image is `word` basis
-  — a picture of the concept, however abstract. Only `skakać` and `śpiewać`
-  actually re-enact their sentence.
+  prompt is conditional on `image_basis`. That conditioning had a side
+  effect worth knowing: labelling a note `word` also silences the sentence
+  question, so there was quiet pressure to label things `word` and keep the
+  check quiet. Under the rule above more notes should be `sentence` basis,
+  and the check should have correspondingly more to bite on.
 - The bar is **misleading, not merely insufficient**. The card also shows the
   gloss and the sentence, so a picture only has to be a memory hook. Asking
   "would a learner guess this word from the picture alone" flags every verb,
   because a bird in flight does also contain a bird.
 
+**The check is advisory and it misses things.** It waved through all three
+wrong clocks, including one whose red arc spanned six hours, and it passed
+`praca` walking out of the office twice. It reliably catches lettering and
+countable errors it was told to expect. Treat an `ok` as "nothing obvious",
+not as approval — look at any image whose prompt contains a number, a
+direction, or a spatial relation.
+
 Some words cannot be depicted at all — `być`, `teraz`. They keep their
 flagged image; the gloss and sentence carry the meaning.
+
+**A `note` must never name its own word.** It is shown on the production
+*front*, where the word is the answer — so `musieć: "stronger than móc, musieć
+is have to"` handed it straight over. Say "this" instead, as the siadać and
+siedzieć notes do. `tools/smoke.mjs` catches it: that is what its
+"production front hides the word" assertion is for, and it is why the test
+compares visible text rather than the raw HTML.
+
+**A sentence-initial gap is fine.** `validate.py` used to warn about it, on
+the theory that the answer's capital is ambiguous. It is not: the blank hides
+the capital, so nothing leaks before he answers, and whether the capital is
+positional or lexical changes nothing he would write. Polish drops pronouns,
+so `Lubię mojego psa.` cannot avoid starting with its verb — the check fired
+on correct sentences, which is how a person learns to ignore warnings. It was
+replaced by one that can only fire on a real fault: an answer capitalised
+mid-sentence when the headword is not a proper noun.
 
 Deferred on purpose: 4 grades instead of 2, and a stats screen.
 
