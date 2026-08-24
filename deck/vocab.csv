@@ -101,10 +101,10 @@ słyszeć,slyszec,verb,yes,carded,frequency rank 210,2026-08-24,
 pamiętać,pamietac,verb,yes,carded,frequency rank 122,2026-08-24,
 ważny,wazny,adjective,yes,carded,frequency rank 49,2026-08-24,
 mój,moj,pronoun,no,known,used in lessons since 2026-08-16,2026-08-24,possessive; given free
-chłopiec,chlopiec,noun,yes,queued,sentence for czytać,2026-08-24,"met in a sentence, not carded"
-książka,ksiazka,noun,yes,queued,"sentence for czytać, frequency rank 124",2026-08-24,"met in a sentence, not carded"
-dwanaście,dwanascie,numeral,yes,queued,sentence for rok,2026-08-24,"met in a sentence, not carded"
-miesiąc,miesiac,noun,yes,queued,"sentence for rok, frequency rank 96",2026-08-24,"met in a sentence, not carded"
+chłopiec,chlopiec,noun,yes,carded,sentence for czytać,2026-08-24,"met in a sentence first, then carded"
+książka,ksiazka,noun,yes,carded,"sentence for czytać, frequency rank 124",2026-08-24,"met in a sentence first, then carded"
+dwanaście,dwanascie,numeral,yes,carded,sentence for rok,2026-08-24,"met in a sentence first, then carded"
+miesiąc,miesiac,noun,yes,carded,"sentence for rok, frequency rank 96",2026-08-24,"met in a sentence first, then carded"
 ojciec,ojciec,noun,yes,carded,frequency rank 121,2026-08-24,
 matka,matka,noun,yes,carded,frequency rank 146,2026-08-24,
 szkoła,szkola,noun,yes,carded,frequency rank 144,2026-08-24,
@@ -115,8 +115,8 @@ czuć,czuc,verb,yes,carded,frequency rank 82,2026-08-24,
 wysoki,wysoki,adjective,yes,carded,frequency rank 65,2026-08-24,
 trudny,trudny,adjective,yes,carded,frequency rank 228,2026-08-24,
 świat,swiat,noun,yes,carded,frequency rank 30,2026-08-24,
-polski,polski,adjective,yes,queued,"sentence for trudny, frequency rank 31",2026-08-24,"met in a sentence, not carded"
-zobaczyć,zobaczyc,verb,yes,queued,"sentence for świat, frequency rank 119",2026-08-24,"met in a sentence, not carded"
+polski,polski,adjective,yes,carded,"sentence for trudny, frequency rank 31",2026-08-24,"met in a sentence first, then carded"
+zobaczyć,zobaczyc,verb,yes,carded,"sentence for świat, frequency rank 119",2026-08-24,"met in a sentence first, then carded"
 oko,oko,noun,yes,carded,frequency rank 50,2026-08-24,
 słowo,slowo,noun,yes,carded,frequency rank 47,2026-08-24,
 głos,glos,noun,yes,carded,frequency rank 87,2026-08-24,
@@ -127,3 +127,8 @@ okno,okno,noun,yes,carded,frequency rank 357,2026-08-24,
 otworzyć,otworzyc,verb,yes,carded,frequency rank 402,2026-08-24,
 stół,stol,noun,yes,carded,frequency rank 476,2026-08-24,
 pierwszy,pierwszy,adjective,yes,carded,frequency rank 12,2026-08-24,
+ja,ja,pronoun,no,known,used in sentences and the paradigm tables,2026-08-24,
+my,my,pronoun,no,known,used in sentences and the paradigm tables,2026-08-24,
+wy,wy,pronoun,no,known,used in sentences and the paradigm tables,2026-08-24,
+się,sie,particle,no,known,"reflexive, carried by śmiać się",2026-08-24,not a word on its own
+Marek,marek,noun,no,known,the name in imię's sentence,2026-08-24,"a given name, not vocabulary"

@@ -19,7 +19,13 @@
         "gap": "Rano wracam do ___.",
         "answer": "domu",
         "answer_lemma": "dom",
-        "audio": "media/audio/dom__sentence.mp3"
+        "audio": "media/audio/dom__sentence.mp3",
+        "lemmas": [
+          "rano",
+          "wracać",
+          "do",
+          "dom"
+        ]
       },
       "cards": [
         "recognition",
@@ -46,7 +52,13 @@
         "gap": "Pod drzewem siedzi ___.",
         "answer": "pies",
         "answer_lemma": "pies",
-        "audio": "media/audio/pies__sentence.mp3"
+        "audio": "media/audio/pies__sentence.mp3",
+        "lemmas": [
+          "pod",
+          "drzewo",
+          "siedzieć",
+          "pies"
+        ]
       },
       "cards": [
         "recognition",
@@ -73,7 +85,13 @@
         "gap": "Mały ___ pije mleko.",
         "answer": "kot",
         "answer_lemma": "kot",
-        "audio": "media/audio/kot__sentence.mp3"
+        "audio": "media/audio/kot__sentence.mp3",
+        "lemmas": [
+          "mały",
+          "kot",
+          "pić",
+          "mleko"
+        ]
       },
       "cards": [
         "recognition",
@@ -100,7 +118,13 @@
         "gap": "Rano ___ jest żółte.",
         "answer": "słońce",
         "answer_lemma": "słońce",
-        "audio": "media/audio/slonce__sentence.mp3"
+        "audio": "media/audio/slonce__sentence.mp3",
+        "lemmas": [
+          "rano",
+          "słońce",
+          "być",
+          "żółty"
+        ]
       },
       "cards": [
         "recognition",
@@ -127,7 +151,13 @@
         "gap": "Pod ławką jest ___.",
         "answer": "piłka",
         "answer_lemma": "piłka",
-        "audio": "media/audio/pilka__sentence.mp3"
+        "audio": "media/audio/pilka__sentence.mp3",
+        "lemmas": [
+          "pod",
+          "ławka",
+          "być",
+          "piłka"
+        ]
       },
       "cards": [
         "recognition",
@@ -154,7 +184,13 @@
         "gap": "Kot ___ na ławkę.",
         "answer": "skacze",
         "answer_lemma": "skakać",
-        "audio": "media/audio/skakac__sentence.mp3"
+        "audio": "media/audio/skakac__sentence.mp3",
+        "lemmas": [
+          "kot",
+          "skakać",
+          "na",
+          "ławka"
+        ]
       },
       "cards": [
         "recognition",
@@ -181,7 +217,13 @@
         "gap": "Ptak ___ w parku.",
         "answer": "śpiewa",
         "answer_lemma": "śpiewać",
-        "audio": "media/audio/spiewac__sentence.mp3"
+        "audio": "media/audio/spiewac__sentence.mp3",
+        "lemmas": [
+          "ptak",
+          "śpiewać",
+          "w",
+          "park"
+        ]
       },
       "cards": [
         "recognition",
@@ -208,7 +250,13 @@
         "gap": "To drzewo jest ___.",
         "answer": "zielone",
         "answer_lemma": "zielony",
-        "audio": "media/audio/zielony__sentence.mp3"
+        "audio": "media/audio/zielony__sentence.mp3",
+        "lemmas": [
+          "to",
+          "drzewo",
+          "być",
+          "zielony"
+        ]
       },
       "cards": [
         "recognition",
@@ -235,7 +283,13 @@
         "gap": "Mam na ___ Marek.",
         "answer": "imię",
         "answer_lemma": "imię",
-        "audio": "media/audio/imie__sentence.mp3"
+        "audio": "media/audio/imie__sentence.mp3",
+        "lemmas": [
+          "mieć",
+          "na",
+          "imię",
+          "Marek"
+        ]
       },
       "cards": [
         "recognition",
@@ -262,7 +316,12 @@
         "gap": "Pies pije ___.",
         "answer": "wodę",
         "answer_lemma": "woda",
-        "audio": "media/audio/woda__sentence.mp3"
+        "audio": "media/audio/woda__sentence.mp3",
+        "lemmas": [
+          "pies",
+          "pić",
+          "woda"
+        ]
       },
       "cards": [
         "recognition",
@@ -289,7 +348,13 @@
         "gap": "W wodzie jest ___.",
         "answer": "ryba",
         "answer_lemma": "ryba",
-        "audio": "media/audio/ryba__sentence.mp3"
+        "audio": "media/audio/ryba__sentence.mp3",
+        "lemmas": [
+          "w",
+          "woda",
+          "być",
+          "ryba"
+        ]
       },
       "cards": [
         "recognition",
@@ -316,7 +381,13 @@
         "gap": "Rano chodzę do ___.",
         "answer": "parku",
         "answer_lemma": "park",
-        "audio": "media/audio/park__sentence.mp3"
+        "audio": "media/audio/park__sentence.mp3",
+        "lemmas": [
+          "rano",
+          "chodzić",
+          "do",
+          "park"
+        ]
       },
       "cards": [
         "recognition",
@@ -343,7 +414,13 @@
         "gap": "W parku jest ___.",
         "answer": "ławka",
         "answer_lemma": "ławka",
-        "audio": "media/audio/lawka__sentence.mp3"
+        "audio": "media/audio/lawka__sentence.mp3",
+        "lemmas": [
+          "w",
+          "park",
+          "być",
+          "ławka"
+        ]
       },
       "cards": [
         "recognition",
@@ -370,7 +447,12 @@
         "gap": "Widzę duże ___.",
         "answer": "drzewo",
         "answer_lemma": "drzewo",
-        "audio": "media/audio/drzewo__sentence.mp3"
+        "audio": "media/audio/drzewo__sentence.mp3",
+        "lemmas": [
+          "widzieć",
+          "duży",
+          "drzewo"
+        ]
       },
       "cards": [
         "recognition",
@@ -397,7 +479,13 @@
         "gap": "To jest dziwny ___.",
         "answer": "dzień",
         "answer_lemma": "dzień",
-        "audio": "media/audio/dzien__sentence.mp3"
+        "audio": "media/audio/dzien__sentence.mp3",
+        "lemmas": [
+          "to",
+          "być",
+          "dziwny",
+          "dzień"
+        ]
       },
       "cards": [
         "recognition",
@@ -424,7 +512,14 @@
         "gap": "Mały ___ siedzi na ławce.",
         "answer": "ptak",
         "answer_lemma": "ptak",
-        "audio": "media/audio/ptak__sentence.mp3"
+        "audio": "media/audio/ptak__sentence.mp3",
+        "lemmas": [
+          "mały",
+          "ptak",
+          "siedzieć",
+          "na",
+          "ławka"
+        ]
       },
       "cards": [
         "recognition",
@@ -451,7 +546,13 @@
         "gap": "Kupuję ___ w sklepie.",
         "answer": "mleko",
         "answer_lemma": "mleko",
-        "audio": "media/audio/mleko__sentence.mp3"
+        "audio": "media/audio/mleko__sentence.mp3",
+        "lemmas": [
+          "kupować",
+          "mleko",
+          "w",
+          "sklep"
+        ]
       },
       "cards": [
         "recognition",
@@ -478,7 +579,13 @@
         "gap": "To jest żółty ___.",
         "answer": "kwiat",
         "answer_lemma": "kwiat",
-        "audio": "media/audio/kwiat__sentence.mp3"
+        "audio": "media/audio/kwiat__sentence.mp3",
+        "lemmas": [
+          "to",
+          "być",
+          "żółty",
+          "kwiat"
+        ]
       },
       "cards": [
         "recognition",
@@ -505,7 +612,12 @@
         "gap": "Idę do ___.",
         "answer": "sklepu",
         "answer_lemma": "sklep",
-        "audio": "media/audio/sklep__sentence.mp3"
+        "audio": "media/audio/sklep__sentence.mp3",
+        "lemmas": [
+          "iść",
+          "do",
+          "sklep"
+        ]
       },
       "cards": [
         "recognition",
@@ -532,7 +644,12 @@
         "gap": "Jem ___ rano.",
         "answer": "kaszę",
         "answer_lemma": "kasza",
-        "audio": "media/audio/kasza__sentence.mp3"
+        "audio": "media/audio/kasza__sentence.mp3",
+        "lemmas": [
+          "jeść",
+          "kasza",
+          "rano"
+        ]
       },
       "cards": [
         "recognition",
@@ -559,7 +676,13 @@
         "gap": "W sklepie jest ___.",
         "answer": "kasa",
         "answer_lemma": "kasa",
-        "audio": "media/audio/kasa__sentence.mp3"
+        "audio": "media/audio/kasa__sentence.mp3",
+        "lemmas": [
+          "w",
+          "sklep",
+          "być",
+          "kasa"
+        ]
       },
       "cards": [
         "recognition",
@@ -586,7 +709,13 @@
         "gap": "Kupuję ___ i mleko.",
         "answer": "chleb",
         "answer_lemma": "chleb",
-        "audio": "media/audio/chleb__sentence.mp3"
+        "audio": "media/audio/chleb__sentence.mp3",
+        "lemmas": [
+          "kupować",
+          "chleb",
+          "i",
+          "mleko"
+        ]
       },
       "cards": [
         "recognition",
@@ -613,7 +742,12 @@
         "gap": "Tutaj ___ sklep.",
         "answer": "jest",
         "answer_lemma": "być",
-        "audio": "media/audio/byc__sentence.mp3"
+        "audio": "media/audio/byc__sentence.mp3",
+        "lemmas": [
+          "tutaj",
+          "być",
+          "sklep"
+        ]
       },
       "cards": [
         "recognition",
@@ -640,7 +774,12 @@
         "gap": "Ty ___ psa.",
         "answer": "masz",
         "answer_lemma": "mieć",
-        "audio": "media/audio/miec__sentence.mp3"
+        "audio": "media/audio/miec__sentence.mp3",
+        "lemmas": [
+          "ty",
+          "mieć",
+          "pies"
+        ]
       },
       "cards": [
         "recognition",
@@ -667,7 +806,12 @@
         "gap": "Ptak ___ wodę.",
         "answer": "pije",
         "answer_lemma": "pić",
-        "audio": "media/audio/pic__sentence.mp3"
+        "audio": "media/audio/pic__sentence.mp3",
+        "lemmas": [
+          "ptak",
+          "pić",
+          "woda"
+        ]
       },
       "cards": [
         "recognition",
@@ -694,7 +838,12 @@
         "gap": "Rano ___ chleb.",
         "answer": "jem",
         "answer_lemma": "jeść",
-        "audio": "media/audio/jesc__sentence.mp3"
+        "audio": "media/audio/jesc__sentence.mp3",
+        "lemmas": [
+          "rano",
+          "jeść",
+          "chleb"
+        ]
       },
       "cards": [
         "recognition",
@@ -721,7 +870,12 @@
         "gap": "Rano ___ cześć.",
         "answer": "mówię",
         "answer_lemma": "mówić",
-        "audio": "media/audio/mowic__sentence.mp3"
+        "audio": "media/audio/mowic__sentence.mp3",
+        "lemmas": [
+          "rano",
+          "mówić",
+          "cześć"
+        ]
       },
       "cards": [
         "recognition",
@@ -748,7 +902,13 @@
         "gap": "Rano ___ do sklepu.",
         "answer": "chodzę",
         "answer_lemma": "chodzić",
-        "audio": "media/audio/chodzic__sentence.mp3"
+        "audio": "media/audio/chodzic__sentence.mp3",
+        "lemmas": [
+          "rano",
+          "chodzić",
+          "do",
+          "sklep"
+        ]
       },
       "cards": [
         "recognition",
@@ -774,7 +934,13 @@
         "gap": "Teraz ___ do domu.",
         "answer": "idę",
         "answer_lemma": "iść",
-        "audio": "media/audio/isc__sentence.mp3"
+        "audio": "media/audio/isc__sentence.mp3",
+        "lemmas": [
+          "teraz",
+          "iść",
+          "do",
+          "dom"
+        ]
       },
       "cards": [
         "recognition",
@@ -800,7 +966,13 @@
         "gap": "Rano ___ na słońce.",
         "answer": "patrzę",
         "answer_lemma": "patrzeć",
-        "audio": "media/audio/patrzec__sentence.mp3"
+        "audio": "media/audio/patrzec__sentence.mp3",
+        "lemmas": [
+          "rano",
+          "patrzeć",
+          "na",
+          "słońce"
+        ]
       },
       "cards": [
         "recognition",
@@ -827,7 +999,12 @@
         "gap": "Ty ___ ptaka.",
         "answer": "widzisz",
         "answer_lemma": "widzieć",
-        "audio": "media/audio/widziec__sentence.mp3"
+        "audio": "media/audio/widziec__sentence.mp3",
+        "lemmas": [
+          "ty",
+          "widzieć",
+          "ptak"
+        ]
       },
       "cards": [
         "recognition",
@@ -854,7 +1031,14 @@
         "gap": "Rano ___ się w parku.",
         "answer": "śmieję",
         "answer_lemma": "śmiać się",
-        "audio": "media/audio/smiac_sie__sentence.mp3"
+        "audio": "media/audio/smiac_sie__sentence.mp3",
+        "lemmas": [
+          "rano",
+          "śmiać się",
+          "się",
+          "w",
+          "park"
+        ]
       },
       "cards": [
         "recognition",
@@ -881,7 +1065,13 @@
         "gap": "Ptak ___ na drzewo.",
         "answer": "siada",
         "answer_lemma": "siadać",
-        "audio": "media/audio/siadac__sentence.mp3"
+        "audio": "media/audio/siadac__sentence.mp3",
+        "lemmas": [
+          "ptak",
+          "siadać",
+          "na",
+          "drzewo"
+        ]
       },
       "cards": [
         "recognition",
@@ -907,7 +1097,13 @@
         "gap": "Ty ___ w domu.",
         "answer": "siedzisz",
         "answer_lemma": "siedzieć",
-        "audio": "media/audio/siedziec__sentence.mp3"
+        "audio": "media/audio/siedziec__sentence.mp3",
+        "lemmas": [
+          "ty",
+          "siedzieć",
+          "w",
+          "dom"
+        ]
       },
       "cards": [
         "recognition",
@@ -933,7 +1129,13 @@
         "gap": "Ptak ___ do parku.",
         "answer": "wraca",
         "answer_lemma": "wracać",
-        "audio": "media/audio/wracac__sentence.mp3"
+        "audio": "media/audio/wracac__sentence.mp3",
+        "lemmas": [
+          "ptak",
+          "wracać",
+          "do",
+          "park"
+        ]
       },
       "cards": [
         "recognition",
@@ -960,7 +1162,12 @@
         "gap": "Żółty ptak ___.",
         "answer": "leci",
         "answer_lemma": "lecieć",
-        "audio": "media/audio/leciec__sentence.mp3"
+        "audio": "media/audio/leciec__sentence.mp3",
+        "lemmas": [
+          "żółty",
+          "ptak",
+          "lecieć"
+        ]
       },
       "cards": [
         "recognition",
@@ -987,7 +1194,13 @@
         "gap": "Rano ___ psu wodę.",
         "answer": "daję",
         "answer_lemma": "dawać",
-        "audio": "media/audio/dawac__sentence.mp3"
+        "audio": "media/audio/dawac__sentence.mp3",
+        "lemmas": [
+          "rano",
+          "dawać",
+          "pies",
+          "woda"
+        ]
       },
       "cards": [
         "recognition",
@@ -1014,7 +1227,12 @@
         "gap": "Ty ___ chleb.",
         "answer": "kupujesz",
         "answer_lemma": "kupować",
-        "audio": "media/audio/kupowac__sentence.mp3"
+        "audio": "media/audio/kupowac__sentence.mp3",
+        "lemmas": [
+          "ty",
+          "kupować",
+          "chleb"
+        ]
       },
       "cards": [
         "recognition",
@@ -1041,7 +1259,13 @@
         "gap": "To jest ___ ptak.",
         "answer": "mały",
         "answer_lemma": "mały",
-        "audio": "media/audio/maly__sentence.mp3"
+        "audio": "media/audio/maly__sentence.mp3",
+        "lemmas": [
+          "to",
+          "być",
+          "mały",
+          "ptak"
+        ]
       },
       "cards": [
         "recognition",
@@ -1068,7 +1292,13 @@
         "gap": "To jest ___ dom.",
         "answer": "duży",
         "answer_lemma": "duży",
-        "audio": "media/audio/duzy__sentence.mp3"
+        "audio": "media/audio/duzy__sentence.mp3",
+        "lemmas": [
+          "to",
+          "być",
+          "duży",
+          "dom"
+        ]
       },
       "cards": [
         "recognition",
@@ -1095,7 +1325,12 @@
         "gap": "Ptak jest ___.",
         "answer": "żółty",
         "answer_lemma": "żółty",
-        "audio": "media/audio/zolty__sentence.mp3"
+        "audio": "media/audio/zolty__sentence.mp3",
+        "lemmas": [
+          "ptak",
+          "być",
+          "żółty"
+        ]
       },
       "cards": [
         "recognition",
@@ -1122,7 +1357,12 @@
         "gap": "Piłka jest ___.",
         "answer": "czerwona",
         "answer_lemma": "czerwony",
-        "audio": "media/audio/czerwony__sentence.mp3"
+        "audio": "media/audio/czerwony__sentence.mp3",
+        "lemmas": [
+          "piłka",
+          "być",
+          "czerwony"
+        ]
       },
       "cards": [
         "recognition",
@@ -1149,7 +1389,12 @@
         "gap": "Pies jest ___.",
         "answer": "dziwny",
         "answer_lemma": "dziwny",
-        "audio": "media/audio/dziwny__sentence.mp3"
+        "audio": "media/audio/dziwny__sentence.mp3",
+        "lemmas": [
+          "pies",
+          "być",
+          "dziwny"
+        ]
       },
       "cards": [
         "recognition",
@@ -1176,7 +1421,13 @@
         "gap": "Wracam do domu ___.",
         "answer": "rano",
         "answer_lemma": "rano",
-        "audio": "media/audio/rano__sentence.mp3"
+        "audio": "media/audio/rano__sentence.mp3",
+        "lemmas": [
+          "wracać",
+          "do",
+          "dom",
+          "rano"
+        ]
       },
       "cards": [
         "recognition",
@@ -1203,7 +1454,14 @@
         "gap": "Jem chleb, ___ piję wodę.",
         "answer": "potem",
         "answer_lemma": "potem",
-        "audio": "media/audio/potem__sentence.mp3"
+        "audio": "media/audio/potem__sentence.mp3",
+        "lemmas": [
+          "jeść",
+          "chleb",
+          "potem",
+          "pić",
+          "woda"
+        ]
       },
       "cards": [
         "recognition",
@@ -1230,7 +1488,12 @@
         "gap": "Kot siedzi ___.",
         "answer": "tutaj",
         "answer_lemma": "tutaj",
-        "audio": "media/audio/tutaj__sentence.mp3"
+        "audio": "media/audio/tutaj__sentence.mp3",
+        "lemmas": [
+          "kot",
+          "siedzieć",
+          "tutaj"
+        ]
       },
       "cards": [
         "recognition",
@@ -1257,7 +1520,13 @@
         "gap": "Idę do parku ___.",
         "answer": "teraz",
         "answer_lemma": "teraz",
-        "audio": "media/audio/teraz__sentence.mp3"
+        "audio": "media/audio/teraz__sentence.mp3",
+        "lemmas": [
+          "iść",
+          "do",
+          "park",
+          "teraz"
+        ]
       },
       "cards": [
         "recognition",
@@ -1284,7 +1553,11 @@
         "gap": "Mówię ___.",
         "answer": "tak",
         "answer_lemma": "tak",
-        "audio": "media/audio/tak__sentence.mp3"
+        "audio": "media/audio/tak__sentence.mp3",
+        "lemmas": [
+          "mówić",
+          "tak"
+        ]
       },
       "cards": [
         "recognition",
@@ -1311,7 +1584,13 @@
         "gap": "To ___ jest pies.",
         "answer": "nie",
         "answer_lemma": "nie",
-        "audio": "media/audio/nie__sentence.mp3"
+        "audio": "media/audio/nie__sentence.mp3",
+        "lemmas": [
+          "to",
+          "nie",
+          "być",
+          "pies"
+        ]
       },
       "cards": [
         "recognition",
@@ -1338,7 +1617,13 @@
         "gap": "Ty ___ masz psa.",
         "answer": "też",
         "answer_lemma": "też",
-        "audio": "media/audio/tez__sentence.mp3"
+        "audio": "media/audio/tez__sentence.mp3",
+        "lemmas": [
+          "ty",
+          "też",
+          "mieć",
+          "pies"
+        ]
       },
       "cards": [
         "recognition",
@@ -1365,7 +1650,12 @@
         "gap": "Ty mówisz ___.",
         "answer": "cześć",
         "answer_lemma": "cześć",
-        "audio": "media/audio/czesc__sentence.mp3"
+        "audio": "media/audio/czesc__sentence.mp3",
+        "lemmas": [
+          "ty",
+          "mówić",
+          "cześć"
+        ]
       },
       "cards": [
         "recognition",
@@ -1392,7 +1682,12 @@
         "gap": "Teraz ___ chleb.",
         "answer": "chcę",
         "answer_lemma": "chcieć",
-        "audio": "media/audio/chciec__sentence.mp3"
+        "audio": "media/audio/chciec__sentence.mp3",
+        "lemmas": [
+          "teraz",
+          "chcieć",
+          "chleb"
+        ]
       },
       "cards": [
         "recognition",
@@ -1419,7 +1714,14 @@
         "gap": "Ty ___, gdzie jest sklep.",
         "answer": "wiesz",
         "answer_lemma": "wiedzieć",
-        "audio": "media/audio/wiedziec__sentence.mp3"
+        "audio": "media/audio/wiedziec__sentence.mp3",
+        "lemmas": [
+          "ty",
+          "wiedzieć",
+          "gdzie",
+          "być",
+          "sklep"
+        ]
       },
       "cards": [
         "recognition",
@@ -1446,7 +1748,13 @@
         "gap": "To jest ___ dzień.",
         "answer": "dobry",
         "answer_lemma": "dobry",
-        "audio": "media/audio/dobry__sentence.mp3"
+        "audio": "media/audio/dobry__sentence.mp3",
+        "lemmas": [
+          "to",
+          "być",
+          "dobry",
+          "dzień"
+        ]
       },
       "cards": [
         "recognition",
@@ -1473,7 +1781,14 @@
         "gap": "Małe ___ idzie do parku.",
         "answer": "dziecko",
         "answer_lemma": "dziecko",
-        "audio": "media/audio/dziecko__sentence.mp3"
+        "audio": "media/audio/dziecko__sentence.mp3",
+        "lemmas": [
+          "mały",
+          "dziecko",
+          "iść",
+          "do",
+          "park"
+        ]
       },
       "cards": [
         "recognition",
@@ -1500,7 +1815,13 @@
         "gap": "Mam piłkę w ___.",
         "answer": "ręce",
         "answer_lemma": "ręka",
-        "audio": "media/audio/reka__sentence.mp3"
+        "audio": "media/audio/reka__sentence.mp3",
+        "lemmas": [
+          "mieć",
+          "piłka",
+          "w",
+          "ręka"
+        ]
       },
       "cards": [
         "recognition",
@@ -1527,7 +1848,13 @@
         "gap": "Idę ___ do parku.",
         "answer": "drogą",
         "answer_lemma": "droga",
-        "audio": "media/audio/droga__sentence.mp3"
+        "audio": "media/audio/droga__sentence.mp3",
+        "lemmas": [
+          "iść",
+          "droga",
+          "do",
+          "park"
+        ]
       },
       "cards": [
         "recognition",
@@ -1554,7 +1881,13 @@
         "gap": "Na ławce siedzi ___.",
         "answer": "kobieta",
         "answer_lemma": "kobieta",
-        "audio": "media/audio/kobieta__sentence.mp3"
+        "audio": "media/audio/kobieta__sentence.mp3",
+        "lemmas": [
+          "na",
+          "ławka",
+          "siedzieć",
+          "kobieta"
+        ]
       },
       "cards": [
         "recognition",
@@ -1581,7 +1914,14 @@
         "gap": "W parku jest ___ drzewo.",
         "answer": "stare",
         "answer_lemma": "stary",
-        "audio": "media/audio/stary__sentence.mp3"
+        "audio": "media/audio/stary__sentence.mp3",
+        "lemmas": [
+          "w",
+          "park",
+          "być",
+          "stary",
+          "drzewo"
+        ]
       },
       "cards": [
         "recognition",
@@ -1608,7 +1948,13 @@
         "gap": "Pies ___ pod drzewem.",
         "answer": "czeka",
         "answer_lemma": "czekać",
-        "audio": "media/audio/czekac__sentence.mp3"
+        "audio": "media/audio/czekac__sentence.mp3",
+        "lemmas": [
+          "pies",
+          "czekać",
+          "pod",
+          "drzewo"
+        ]
       },
       "cards": [
         "recognition",
@@ -1635,7 +1981,12 @@
         "gap": "Dziecko ___ piłki.",
         "answer": "szuka",
         "answer_lemma": "szukać",
-        "audio": "media/audio/szukac__sentence.mp3"
+        "audio": "media/audio/szukac__sentence.mp3",
+        "lemmas": [
+          "dziecko",
+          "szukać",
+          "piłka"
+        ]
       },
       "cards": [
         "recognition",
@@ -1662,7 +2013,14 @@
         "gap": "Czy ___ iść do parku?",
         "answer": "mogę",
         "answer_lemma": "móc",
-        "audio": "media/audio/moc__sentence.mp3"
+        "audio": "media/audio/moc__sentence.mp3",
+        "lemmas": [
+          "czy",
+          "móc",
+          "iść",
+          "do",
+          "park"
+        ]
       },
       "cards": [
         "recognition",
@@ -1689,7 +2047,12 @@
         "gap": "Czy masz ___?",
         "answer": "czas",
         "answer_lemma": "czas",
-        "audio": "media/audio/czas__sentence.mp3"
+        "audio": "media/audio/czas__sentence.mp3",
+        "lemmas": [
+          "czy",
+          "mieć",
+          "czas"
+        ]
       },
       "cards": [
         "recognition",
@@ -1716,7 +2079,13 @@
         "gap": "To jest dobre ___.",
         "answer": "miejsce",
         "answer_lemma": "miejsce",
-        "audio": "media/audio/miejsce__sentence.mp3"
+        "audio": "media/audio/miejsce__sentence.mp3",
+        "lemmas": [
+          "to",
+          "być",
+          "dobry",
+          "miejsce"
+        ]
       },
       "cards": [
         "recognition",
@@ -1743,7 +2112,13 @@
         "gap": "Dziecko ma ___ piłkę.",
         "answer": "nową",
         "answer_lemma": "nowy",
-        "audio": "media/audio/nowy__sentence.mp3"
+        "audio": "media/audio/nowy__sentence.mp3",
+        "lemmas": [
+          "dziecko",
+          "mieć",
+          "nowy",
+          "piłka"
+        ]
       },
       "cards": [
         "recognition",
@@ -1770,7 +2145,13 @@
         "gap": "W parku ___ kobieta.",
         "answer": "stoi",
         "answer_lemma": "stać",
-        "audio": "media/audio/stac__sentence.mp3"
+        "audio": "media/audio/stac__sentence.mp3",
+        "lemmas": [
+          "w",
+          "park",
+          "stać",
+          "kobieta"
+        ]
       },
       "cards": [
         "recognition",
@@ -1797,7 +2178,13 @@
         "gap": "Ja ___ w domu.",
         "answer": "jestem",
         "answer_lemma": "jestem",
-        "audio": "media/audio/byc_jestem__sentence.mp3"
+        "audio": "media/audio/byc_jestem__sentence.mp3",
+        "lemmas": [
+          "ja",
+          "być",
+          "w",
+          "dom"
+        ]
       },
       "cards": [
         "form"
@@ -1824,7 +2211,13 @@
         "gap": "Ty ___ w parku.",
         "answer": "jesteś",
         "answer_lemma": "jesteś",
-        "audio": "media/audio/byc_jestes__sentence.mp3"
+        "audio": "media/audio/byc_jestes__sentence.mp3",
+        "lemmas": [
+          "ty",
+          "być",
+          "w",
+          "park"
+        ]
       },
       "cards": [
         "form"
@@ -1851,7 +2244,13 @@
         "gap": "Pies ___ pod drzewem.",
         "answer": "jest",
         "answer_lemma": "jest",
-        "audio": "media/audio/byc_jest__sentence.mp3"
+        "audio": "media/audio/byc_jest__sentence.mp3",
+        "lemmas": [
+          "pies",
+          "być",
+          "pod",
+          "drzewo"
+        ]
       },
       "cards": [
         "form"
@@ -1878,7 +2277,13 @@
         "gap": "My ___ w sklepie.",
         "answer": "jesteśmy",
         "answer_lemma": "jesteśmy",
-        "audio": "media/audio/byc_jestesmy__sentence.mp3"
+        "audio": "media/audio/byc_jestesmy__sentence.mp3",
+        "lemmas": [
+          "my",
+          "być",
+          "w",
+          "sklep"
+        ]
       },
       "cards": [
         "form"
@@ -1905,7 +2310,12 @@
         "gap": "Wy ___ tutaj.",
         "answer": "jesteście",
         "answer_lemma": "jesteście",
-        "audio": "media/audio/byc_jestescie__sentence.mp3"
+        "audio": "media/audio/byc_jestescie__sentence.mp3",
+        "lemmas": [
+          "wy",
+          "być",
+          "tutaj"
+        ]
       },
       "cards": [
         "form"
@@ -1932,7 +2342,13 @@
         "gap": "Ptaki ___ na drzewie.",
         "answer": "są",
         "answer_lemma": "są",
-        "audio": "media/audio/byc_sa__sentence.mp3"
+        "audio": "media/audio/byc_sa__sentence.mp3",
+        "lemmas": [
+          "ptak",
+          "być",
+          "na",
+          "drzewo"
+        ]
       },
       "cards": [
         "form"
@@ -1959,7 +2375,12 @@
         "gap": "Ja ___ chleb.",
         "answer": "mam",
         "answer_lemma": "mam",
-        "audio": "media/audio/miec_mam__sentence.mp3"
+        "audio": "media/audio/miec_mam__sentence.mp3",
+        "lemmas": [
+          "ja",
+          "mieć",
+          "chleb"
+        ]
       },
       "cards": [
         "form"
@@ -1986,7 +2407,12 @@
         "gap": "Ty ___ psa.",
         "answer": "masz",
         "answer_lemma": "masz",
-        "audio": "media/audio/miec_masz__sentence.mp3"
+        "audio": "media/audio/miec_masz__sentence.mp3",
+        "lemmas": [
+          "ty",
+          "mieć",
+          "pies"
+        ]
       },
       "cards": [
         "form"
@@ -2013,7 +2439,12 @@
         "gap": "Dziecko ___ piłkę.",
         "answer": "ma",
         "answer_lemma": "ma",
-        "audio": "media/audio/miec_ma__sentence.mp3"
+        "audio": "media/audio/miec_ma__sentence.mp3",
+        "lemmas": [
+          "dziecko",
+          "mieć",
+          "piłka"
+        ]
       },
       "cards": [
         "form"
@@ -2040,7 +2471,12 @@
         "gap": "My ___ wodę.",
         "answer": "mamy",
         "answer_lemma": "mamy",
-        "audio": "media/audio/miec_mamy__sentence.mp3"
+        "audio": "media/audio/miec_mamy__sentence.mp3",
+        "lemmas": [
+          "my",
+          "mieć",
+          "woda"
+        ]
       },
       "cards": [
         "form"
@@ -2067,7 +2503,12 @@
         "gap": "Wy ___ czas.",
         "answer": "macie",
         "answer_lemma": "macie",
-        "audio": "media/audio/miec_macie__sentence.mp3"
+        "audio": "media/audio/miec_macie__sentence.mp3",
+        "lemmas": [
+          "wy",
+          "mieć",
+          "czas"
+        ]
       },
       "cards": [
         "form"
@@ -2094,7 +2535,12 @@
         "gap": "Dzieci ___ kwiaty.",
         "answer": "mają",
         "answer_lemma": "mają",
-        "audio": "media/audio/miec_maja__sentence.mp3"
+        "audio": "media/audio/miec_maja__sentence.mp3",
+        "lemmas": [
+          "dziecko",
+          "mieć",
+          "kwiat"
+        ]
       },
       "cards": [
         "form"
@@ -2121,7 +2567,14 @@
         "gap": "Rano ___, gdzie jest sklep.",
         "answer": "pytam",
         "answer_lemma": "pytać",
-        "audio": "media/audio/pytac__sentence.mp3"
+        "audio": "media/audio/pytac__sentence.mp3",
+        "lemmas": [
+          "rano",
+          "pytać",
+          "gdzie",
+          "być",
+          "sklep"
+        ]
       },
       "cards": [
         "recognition",
@@ -2148,7 +2601,14 @@
         "gap": "W parku siedzi stary ___.",
         "answer": "człowiek",
         "answer_lemma": "człowiek",
-        "audio": "media/audio/czlowiek__sentence.mp3"
+        "audio": "media/audio/czlowiek__sentence.mp3",
+        "lemmas": [
+          "w",
+          "park",
+          "siedzieć",
+          "stary",
+          "człowiek"
+        ]
       },
       "cards": [
         "recognition",
@@ -2175,7 +2635,14 @@
         "gap": "Teraz ___ iść do domu.",
         "answer": "muszę",
         "answer_lemma": "musieć",
-        "audio": "media/audio/musiec__sentence.mp3"
+        "audio": "media/audio/musiec__sentence.mp3",
+        "lemmas": [
+          "teraz",
+          "musieć",
+          "iść",
+          "do",
+          "dom"
+        ]
       },
       "cards": [
         "recognition",
@@ -2202,7 +2669,13 @@
         "gap": "Nie mogę ___ piłki.",
         "answer": "znaleźć",
         "answer_lemma": "znaleźć",
-        "audio": "media/audio/znalezc__sentence.mp3"
+        "audio": "media/audio/znalezc__sentence.mp3",
+        "lemmas": [
+          "nie",
+          "móc",
+          "znaleźć",
+          "piłka"
+        ]
       },
       "cards": [
         "recognition",
@@ -2229,7 +2702,12 @@
         "gap": "Co ___ rano?",
         "answer": "robisz",
         "answer_lemma": "robić",
-        "audio": "media/audio/robic__sentence.mp3"
+        "audio": "media/audio/robic__sentence.mp3",
+        "lemmas": [
+          "co",
+          "robić",
+          "rano"
+        ]
       },
       "cards": [
         "recognition",
@@ -2256,7 +2734,14 @@
         "gap": "W ___ jest duży sklep.",
         "answer": "mieście",
         "answer_lemma": "miasto",
-        "audio": "media/audio/miasto__sentence.mp3"
+        "audio": "media/audio/miasto__sentence.mp3",
+        "lemmas": [
+          "w",
+          "miasto",
+          "być",
+          "duży",
+          "sklep"
+        ]
       },
       "cards": [
         "recognition",
@@ -2283,7 +2768,16 @@
         "gap": "Teraz ___, że to jest dobre miejsce.",
         "answer": "myślę",
         "answer_lemma": "myśleć",
-        "audio": "media/audio/myslec__sentence.mp3"
+        "audio": "media/audio/myslec__sentence.mp3",
+        "lemmas": [
+          "teraz",
+          "myśleć",
+          "że",
+          "to",
+          "być",
+          "dobry",
+          "miejsce"
+        ]
       },
       "cards": [
         "recognition",
@@ -2310,7 +2804,15 @@
         "gap": "Pies jest ___, a kot jest stary.",
         "answer": "młody",
         "answer_lemma": "młody",
-        "audio": "media/audio/mlody__sentence.mp3"
+        "audio": "media/audio/mlody__sentence.mp3",
+        "lemmas": [
+          "pies",
+          "być",
+          "młody",
+          "a",
+          "kot",
+          "stary"
+        ]
       },
       "cards": [
         "recognition",
@@ -2337,7 +2839,13 @@
         "gap": "Rano idę do ___.",
         "answer": "pracy",
         "answer_lemma": "praca",
-        "audio": "media/audio/praca__sentence.mp3"
+        "audio": "media/audio/praca__sentence.mp3",
+        "lemmas": [
+          "rano",
+          "iść",
+          "do",
+          "praca"
+        ]
       },
       "cards": [
         "recognition",
@@ -2364,7 +2872,13 @@
         "gap": "Czekam ___ w parku.",
         "answer": "godzinę",
         "answer_lemma": "godzina",
-        "audio": "media/audio/godzina__sentence.mp3"
+        "audio": "media/audio/godzina__sentence.mp3",
+        "lemmas": [
+          "czekać",
+          "godzina",
+          "w",
+          "park"
+        ]
       },
       "cards": [
         "recognition",
@@ -2391,7 +2905,13 @@
         "gap": "___ ma dwanaście miesięcy.",
         "answer": "Rok",
         "answer_lemma": "rok",
-        "audio": "media/audio/rok__sentence.mp3"
+        "audio": "media/audio/rok__sentence.mp3",
+        "lemmas": [
+          "rok",
+          "mieć",
+          "dwanaście",
+          "miesiąc"
+        ]
       },
       "cards": [
         "recognition",
@@ -2418,7 +2938,13 @@
         "gap": "Rano ___ je chleb.",
         "answer": "rodzina",
         "answer_lemma": "rodzina",
-        "audio": "media/audio/rodzina__sentence.mp3"
+        "audio": "media/audio/rodzina__sentence.mp3",
+        "lemmas": [
+          "rano",
+          "rodzina",
+          "jeść",
+          "chleb"
+        ]
       },
       "cards": [
         "recognition",
@@ -2445,7 +2971,13 @@
         "gap": "W sklepie czeka ___.",
         "answer": "mężczyzna",
         "answer_lemma": "mężczyzna",
-        "audio": "media/audio/mezczyzna__sentence.mp3"
+        "audio": "media/audio/mezczyzna__sentence.mp3",
+        "lemmas": [
+          "w",
+          "sklep",
+          "czekać",
+          "mężczyzna"
+        ]
       },
       "cards": [
         "recognition",
@@ -2472,7 +3004,13 @@
         "gap": "Ptak ma małą ___.",
         "answer": "głowę",
         "answer_lemma": "głowa",
-        "audio": "media/audio/glowa__sentence.mp3"
+        "audio": "media/audio/glowa__sentence.mp3",
+        "lemmas": [
+          "ptak",
+          "mieć",
+          "mały",
+          "głowa"
+        ]
       },
       "cards": [
         "recognition",
@@ -2499,7 +3037,12 @@
         "gap": "___ mojego psa.",
         "answer": "Lubię",
         "answer_lemma": "lubić",
-        "audio": "media/audio/lubic__sentence.mp3"
+        "audio": "media/audio/lubic__sentence.mp3",
+        "lemmas": [
+          "lubić",
+          "mój",
+          "pies"
+        ]
       },
       "cards": [
         "recognition",
@@ -2526,7 +3069,13 @@
         "gap": "Dziecko ___ w domu.",
         "answer": "pisze",
         "answer_lemma": "pisać",
-        "audio": "media/audio/pisac__sentence.mp3"
+        "audio": "media/audio/pisac__sentence.mp3",
+        "lemmas": [
+          "dziecko",
+          "pisać",
+          "w",
+          "dom"
+        ]
       },
       "cards": [
         "recognition",
@@ -2553,7 +3102,12 @@
         "gap": "Chłopiec ___ książkę.",
         "answer": "czyta",
         "answer_lemma": "czytać",
-        "audio": "media/audio/czytac__sentence.mp3"
+        "audio": "media/audio/czytac__sentence.mp3",
+        "lemmas": [
+          "chłopiec",
+          "czytać",
+          "książka"
+        ]
       },
       "cards": [
         "recognition",
@@ -2580,7 +3134,12 @@
         "gap": "Rano ___ ptaki.",
         "answer": "słyszę",
         "answer_lemma": "słyszeć",
-        "audio": "media/audio/slyszec__sentence.mp3"
+        "audio": "media/audio/slyszec__sentence.mp3",
+        "lemmas": [
+          "rano",
+          "słyszeć",
+          "ptak"
+        ]
       },
       "cards": [
         "recognition",
@@ -2607,7 +3166,14 @@
         "gap": "Nie ___, kto to jest.",
         "answer": "pamiętam",
         "answer_lemma": "pamiętać",
-        "audio": "media/audio/pamietac__sentence.mp3"
+        "audio": "media/audio/pamietac__sentence.mp3",
+        "lemmas": [
+          "nie",
+          "pamiętać",
+          "kto",
+          "to",
+          "być"
+        ]
       },
       "cards": [
         "recognition",
@@ -2634,7 +3200,13 @@
         "gap": "To jest ___ dzień.",
         "answer": "ważny",
         "answer_lemma": "ważny",
-        "audio": "media/audio/wazny__sentence.mp3"
+        "audio": "media/audio/wazny__sentence.mp3",
+        "lemmas": [
+          "to",
+          "być",
+          "ważny",
+          "dzień"
+        ]
       },
       "cards": [
         "recognition",
@@ -2661,7 +3233,14 @@
         "gap": "Mój ___ ma nowy samochód.",
         "answer": "ojciec",
         "answer_lemma": "ojciec",
-        "audio": "media/audio/ojciec__sentence.mp3"
+        "audio": "media/audio/ojciec__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "ojciec",
+          "mieć",
+          "nowy",
+          "samochód"
+        ]
       },
       "cards": [
         "recognition",
@@ -2688,7 +3267,13 @@
         "gap": "Rano ___ śpiewa dziecku.",
         "answer": "matka",
         "answer_lemma": "matka",
-        "audio": "media/audio/matka__sentence.mp3"
+        "audio": "media/audio/matka__sentence.mp3",
+        "lemmas": [
+          "rano",
+          "matka",
+          "śpiewać",
+          "dziecko"
+        ]
       },
       "cards": [
         "recognition",
@@ -2715,7 +3300,13 @@
         "gap": "Dzieci idą do ___.",
         "answer": "szkoły",
         "answer_lemma": "szkoła",
-        "audio": "media/audio/szkola__sentence.mp3"
+        "audio": "media/audio/szkola__sentence.mp3",
+        "lemmas": [
+          "dziecko",
+          "iść",
+          "do",
+          "szkoła"
+        ]
       },
       "cards": [
         "recognition",
@@ -2742,7 +3333,14 @@
         "gap": "Czerwony ___ stoi na drodze.",
         "answer": "samochód",
         "answer_lemma": "samochód",
-        "audio": "media/audio/samochod__sentence.mp3"
+        "audio": "media/audio/samochod__sentence.mp3",
+        "lemmas": [
+          "czerwony",
+          "samochód",
+          "stać",
+          "na",
+          "droga"
+        ]
       },
       "cards": [
         "recognition",
@@ -2769,7 +3367,14 @@
         "gap": "W ___ nie widzę drogi.",
         "answer": "nocy",
         "answer_lemma": "noc",
-        "audio": "media/audio/noc__sentence.mp3"
+        "audio": "media/audio/noc__sentence.mp3",
+        "lemmas": [
+          "w",
+          "noc",
+          "nie",
+          "widzieć",
+          "droga"
+        ]
       },
       "cards": [
         "recognition",
@@ -2796,7 +3401,12 @@
         "gap": "Muszę ___ pracę.",
         "answer": "zacząć",
         "answer_lemma": "zacząć",
-        "audio": "media/audio/zaczac__sentence.mp3"
+        "audio": "media/audio/zaczac__sentence.mp3",
+        "lemmas": [
+          "musieć",
+          "zacząć",
+          "praca"
+        ]
       },
       "cards": [
         "recognition",
@@ -2823,7 +3433,12 @@
         "gap": "Nie ___ ręki.",
         "answer": "czuję",
         "answer_lemma": "czuć",
-        "audio": "media/audio/czuc__sentence.mp3"
+        "audio": "media/audio/czuc__sentence.mp3",
+        "lemmas": [
+          "nie",
+          "czuć",
+          "ręka"
+        ]
       },
       "cards": [
         "recognition",
@@ -2850,7 +3465,13 @@
         "gap": "Mój ojciec jest ___.",
         "answer": "wysoki",
         "answer_lemma": "wysoki",
-        "audio": "media/audio/wysoki__sentence.mp3"
+        "audio": "media/audio/wysoki__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "ojciec",
+          "być",
+          "wysoki"
+        ]
       },
       "cards": [
         "recognition",
@@ -2877,7 +3498,12 @@
         "gap": "Polski jest ___.",
         "answer": "trudny",
         "answer_lemma": "trudny",
-        "audio": "media/audio/trudny__sentence.mp3"
+        "audio": "media/audio/trudny__sentence.mp3",
+        "lemmas": [
+          "polski",
+          "być",
+          "trudny"
+        ]
       },
       "cards": [
         "recognition",
@@ -2904,7 +3530,12 @@
         "gap": "Chcę zobaczyć ___.",
         "answer": "świat",
         "answer_lemma": "świat",
-        "audio": "media/audio/swiat__sentence.mp3"
+        "audio": "media/audio/swiat__sentence.mp3",
+        "lemmas": [
+          "chcieć",
+          "zobaczyć",
+          "świat"
+        ]
       },
       "cards": [
         "recognition",
@@ -2931,7 +3562,13 @@
         "gap": "Kot ma zielone ___.",
         "answer": "oko",
         "answer_lemma": "oko",
-        "audio": "media/audio/oko__sentence.mp3"
+        "audio": "media/audio/oko__sentence.mp3",
+        "lemmas": [
+          "kot",
+          "mieć",
+          "zielony",
+          "oko"
+        ]
       },
       "cards": [
         "recognition",
@@ -2958,7 +3595,13 @@
         "gap": "To jest trudne ___.",
         "answer": "słowo",
         "answer_lemma": "słowo",
-        "audio": "media/audio/slowo__sentence.mp3"
+        "audio": "media/audio/slowo__sentence.mp3",
+        "lemmas": [
+          "to",
+          "być",
+          "trudny",
+          "słowo"
+        ]
       },
       "cards": [
         "recognition",
@@ -2985,7 +3628,12 @@
         "gap": "Słyszę ___ dziecka.",
         "answer": "głos",
         "answer_lemma": "głos",
-        "audio": "media/audio/glos__sentence.mp3"
+        "audio": "media/audio/glos__sentence.mp3",
+        "lemmas": [
+          "słyszeć",
+          "głos",
+          "dziecko"
+        ]
       },
       "cards": [
         "recognition",
@@ -3012,7 +3660,13 @@
         "gap": "Nie ___, co mówisz.",
         "answer": "rozumiem",
         "answer_lemma": "rozumieć",
-        "audio": "media/audio/rozumiec__sentence.mp3"
+        "audio": "media/audio/rozumiec__sentence.mp3",
+        "lemmas": [
+          "nie",
+          "rozumieć",
+          "co",
+          "mówić"
+        ]
       },
       "cards": [
         "recognition",
@@ -3039,7 +3693,12 @@
         "gap": "Chcę ___ matce.",
         "answer": "pomóc",
         "answer_lemma": "pomóc",
-        "audio": "media/audio/pomoc_v__sentence.mp3"
+        "audio": "media/audio/pomoc_v__sentence.mp3",
+        "lemmas": [
+          "chcieć",
+          "pomóc",
+          "matka"
+        ]
       },
       "cards": [
         "recognition",
@@ -3066,7 +3725,12 @@
         "gap": "Rano ___ ojca.",
         "answer": "spotkam",
         "answer_lemma": "spotkać",
-        "audio": "media/audio/spotkac__sentence.mp3"
+        "audio": "media/audio/spotkac__sentence.mp3",
+        "lemmas": [
+          "rano",
+          "spotkać",
+          "ojciec"
+        ]
       },
       "cards": [
         "recognition",
@@ -3093,7 +3757,13 @@
         "gap": "Kot siedzi w ___.",
         "answer": "oknie",
         "answer_lemma": "okno",
-        "audio": "media/audio/okno__sentence.mp3"
+        "audio": "media/audio/okno__sentence.mp3",
+        "lemmas": [
+          "kot",
+          "siedzieć",
+          "w",
+          "okno"
+        ]
       },
       "cards": [
         "recognition",
@@ -3120,7 +3790,12 @@
         "gap": "Muszę ___ okno.",
         "answer": "otworzyć",
         "answer_lemma": "otworzyć",
-        "audio": "media/audio/otworzyc__sentence.mp3"
+        "audio": "media/audio/otworzyc__sentence.mp3",
+        "lemmas": [
+          "musieć",
+          "otworzyć",
+          "okno"
+        ]
       },
       "cards": [
         "recognition",
@@ -3147,7 +3822,12 @@
         "gap": "___ jest duży.",
         "answer": "Stół",
         "answer_lemma": "stół",
-        "audio": "media/audio/stol__sentence.mp3"
+        "audio": "media/audio/stol__sentence.mp3",
+        "lemmas": [
+          "stół",
+          "być",
+          "duży"
+        ]
       },
       "cards": [
         "recognition",
@@ -3174,7 +3854,206 @@
         "gap": "Jestem ___.",
         "answer": "pierwszy",
         "answer_lemma": "pierwszy",
-        "audio": "media/audio/pierwszy__sentence.mp3"
+        "audio": "media/audio/pierwszy__sentence.mp3",
+        "lemmas": [
+          "być",
+          "pierwszy"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "chlopiec",
+      "word": "chłopiec",
+      "gloss": "boy",
+      "pos": "noun",
+      "ipa": "ˈxwɔpjɛt͡s",
+      "note": null,
+      "image": "media/img/chlopiec.webp",
+      "image_alt": "a boy holding a new ball",
+      "image_basis": "sentence",
+      "image_prompt": "A boy of about ten standing outdoors holding a new football in both hands, pleased with it. Daylight. No text or lettering. Square image.",
+      "audio": "media/audio/chlopiec.mp3",
+      "sentence": {
+        "pl": "Chłopiec ma nową piłkę.",
+        "en": "The boy has a new ball.",
+        "gap": "___ ma nową piłkę.",
+        "answer": "Chłopiec",
+        "answer_lemma": "chłopiec",
+        "audio": "media/audio/chlopiec__sentence.mp3",
+        "lemmas": [
+          "chłopiec",
+          "mieć",
+          "nowy",
+          "piłka"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "ksiazka",
+      "word": "książka",
+      "gloss": "book",
+      "pos": "noun",
+      "ipa": "ˈkɕɔ̃ʂka",
+      "note": null,
+      "image": "media/img/ksiazka.webp",
+      "image_alt": "an old worn hardback book",
+      "image_basis": "sentence",
+      "image_prompt": "One old hardback book with a worn cloth cover and yellowed page edges, lying closed on a plain surface. No readable text. Square image.",
+      "audio": "media/audio/ksiazka.mp3",
+      "sentence": {
+        "pl": "To jest stara książka.",
+        "en": "This is an old book.",
+        "gap": "To jest stara ___.",
+        "answer": "książka",
+        "answer_lemma": "książka",
+        "audio": "media/audio/ksiazka__sentence.mp3",
+        "lemmas": [
+          "to",
+          "być",
+          "stary",
+          "książka"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "miesiac",
+      "word": "miesiąc",
+      "gloss": "month",
+      "pos": "noun",
+      "ipa": "ˈmʲɛɕɔnt͡s",
+      "note": null,
+      "image": "media/img/miesiac.webp",
+      "image_alt": "a calendar page for one month",
+      "image_basis": "sentence",
+      "image_prompt": "A single clean calendar page for one month, a plain grid of empty squares, hanging on a wall. No writing or marks on it. Square image.",
+      "audio": "media/audio/miesiac.mp3",
+      "sentence": {
+        "pl": "To jest trudny miesiąc.",
+        "en": "This is a difficult month.",
+        "gap": "To jest trudny ___.",
+        "answer": "miesiąc",
+        "answer_lemma": "miesiąc",
+        "audio": "media/audio/miesiac__sentence.mp3",
+        "lemmas": [
+          "to",
+          "być",
+          "trudny",
+          "miesiąc"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "dwanascie",
+      "word": "dwanaście",
+      "gloss": "twelve",
+      "pos": "numeral",
+      "ipa": "dvaˈnaɕt͡ɕɛ",
+      "note": null,
+      "image": "media/img/dwanascie.webp",
+      "image_alt": "twelve flowers laid out in a grid",
+      "image_basis": "sentence",
+      "image_prompt": "Twelve tulips laid side by side in one single straight row on a plain white surface, evenly spaced, all stems pointing the same way. Count them: there must be twelve, no more and no fewer. Nothing else in the picture. Seen from directly above.",
+      "audio": "media/audio/dwanascie.mp3",
+      "sentence": {
+        "pl": "Mam dwanaście kwiatów.",
+        "en": "I have twelve flowers.",
+        "gap": "Mam ___ kwiatów.",
+        "answer": "dwanaście",
+        "answer_lemma": "dwanaście",
+        "audio": "media/audio/dwanascie__sentence.mp3",
+        "lemmas": [
+          "mieć",
+          "dwanaście",
+          "kwiat"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "polski",
+      "word": "polski",
+      "gloss": "Polish",
+      "pos": "adjective",
+      "ipa": "ˈpɔlski",
+      "note": null,
+      "image": "media/img/polski.webp",
+      "image_alt": "an open book resting on a Polish flag",
+      "image_basis": "sentence",
+      "image_prompt": "An open book resting on a Polish flag, the flag's white and red halves clearly visible under it. Plain surface. No readable text. Square image.",
+      "audio": "media/audio/polski.mp3",
+      "sentence": {
+        "pl": "Czytam polską książkę.",
+        "en": "I am reading a Polish book.",
+        "gap": "Czytam ___ książkę.",
+        "answer": "polską",
+        "answer_lemma": "polski",
+        "audio": "media/audio/polski__sentence.mp3",
+        "lemmas": [
+          "czytać",
+          "polski",
+          "książka"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "zobaczyc",
+      "word": "zobaczyć",
+      "gloss": "to catch sight of",
+      "pos": "verb",
+      "ipa": "zɔˈbat͡ʂɨt͡ɕ",
+      "note": "the moment — patrzeć is looking, this is spotting it",
+      "image": "media/img/zobaczyc.webp",
+      "image_alt": "a person spotting a bird and pointing at it",
+      "image_basis": "sentence",
+      "image_prompt": "A person lowering a pair of binoculars and pointing up at a bird they have just spotted, mouth open in surprise. Daylight outdoors. No text or lettering. Square image.",
+      "audio": "media/audio/zobaczyc.mp3",
+      "sentence": {
+        "pl": "Chcę zobaczyć ptaka.",
+        "en": "I want to catch sight of a bird.",
+        "gap": "Chcę ___ ptaka.",
+        "answer": "zobaczyć",
+        "answer_lemma": "zobaczyć",
+        "audio": "media/audio/zobaczyc__sentence.mp3",
+        "lemmas": [
+          "chcieć",
+          "zobaczyć",
+          "ptak"
+        ]
       },
       "cards": [
         "recognition",

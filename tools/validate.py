@@ -15,15 +15,18 @@ MANIFEST = ROOT / "media/manifest.json"
 
 CARD_TYPES = {"recognition", "production", "listening", "form"}
 POS = {"noun", "verb", "adjective", "adverb", "preposition", "conjunction",
-       "particle", "pronoun", "interjection"}
+       "particle", "pronoun", "interjection", "numeral"}
 ID_RE = re.compile(r"[a-z0-9_]+$")
 
-# Deliberately NOT checked: whether every word in a sentence is one Evert
-# already knows. Doing that properly needs a lemmatiser — Polish inflection
-# means "nie mam psa" is a perfectly good sentence for "pies", and prefix
-# matching flags być→jest and skakać→skacze on every correct sentence.
-# Allowlist compliance is enforced where it belongs: the generator is handed
-# the allowlist, and a human reads the result before `reviewed` is set.
+# Sentence vocabulary IS checked, but not by guessing. An earlier version
+# tried to derive lemmas from surface forms and cried wolf on every correct
+# sentence — Polish inflection means "nie mam psa" is fine for "pies", and
+# prefix matching flags być→jest and skakać→skacze. So each sentence now
+# carries the lemmas it uses, written down when the sentence is written,
+# because whoever chooses the words already knows them. That turns an
+# unsolvable parsing problem into bookkeeping, and gives two things:
+# every word he reads is one we have recorded, and the words he has already
+# met in a sentence are exactly the queue for the next notes to make.
 
 errors, warnings = [], []
 def err(nid, msg): errors.append(f"{nid}: {msg}")
@@ -44,7 +47,7 @@ def load():
     return data["notes"], vocab
 
 
-def check_sentence(nid, s, word):
+def check_sentence(nid, s, word, vocab, kind=None):
     for field in ("pl", "en", "gap", "answer", "answer_lemma"):
         if not s.get(field):
             err(nid, f"sentence.{field} is missing or empty")
@@ -74,9 +77,25 @@ def check_sentence(nid, s, word):
     if s["answer_lemma"] != word:
         warn(nid, f"answer_lemma {s['answer_lemma']!r} is not the note word {word!r}")
 
+    lemmas = s.get("lemmas")
+    if not lemmas:
+        err(nid, "sentence has no lemmas list — record the words it uses")
+        return
+    # Cheap guard against a stale list: the answer must be one of them. A
+    # conjugation drill is exempt — its answer_lemma is the inflected form it
+    # teaches (mamy, jestem), which is deliberately not a vocab.csv word; the
+    # parent verb appears in the lemmas list instead.
+    if kind != "form" and s["answer_lemma"] not in lemmas:
+        err(nid, f"sentence.lemmas does not include {s['answer_lemma']!r} — "
+                 f"the list is stale, rewrite it for the current sentence")
+    for lem in lemmas:
+        if lem not in vocab:
+            err(nid, f"sentence uses {lem!r}, which is not in deck/vocab.csv")
+
 
 def main():
     notes, vocab = load()
+    by_word = {row["word"] for row in vocab.values()}
     todo = {"image": [], "audio": [], "sentence audio": [],
             "listening audio": [], "review": []}
     manifest = {}
@@ -118,7 +137,8 @@ def main():
             warn(nid, "production card has only the English gloss as a cue (no image)")
 
         if isinstance(n.get("sentence"), dict):
-            check_sentence(nid, n["sentence"], n.get("word", ""))
+            check_sentence(nid, n["sentence"], n.get("word", ""), by_word,
+                           n.get("kind"))
 
         # Media is absent until generated. A path that IS set must resolve,
         # and every clip must have provenance — without it, tools/audio.py
@@ -186,6 +206,15 @@ def main():
         if row["status"] == "carded" and nid not in seen:
             err(nid, "vocab.csv says carded but there is no note")
 
+    # Words he has already met in a sentence but has no card for. These are
+    # the top of the queue for new notes: carding them closes the loop, so
+    # every word he reads is one he is also learning.
+    met = {lem for n in notes for lem in (n.get("sentence") or {}).get("lemmas", [])}
+    uncarded = sorted(
+        w for w in met
+        if any(r["word"] == w and r["flashcard"] == "yes" and r["status"] != "carded"
+               for r in vocab.values()))
+
     print(f"{len(notes)} notes checked\n")
     for w in warnings:
         print(f"  warn   {w}")
@@ -196,6 +225,9 @@ def main():
     synth = sources.get("tts", 0)
     if human or synth:
         print(f"  audio  {human} human recording(s), {synth} synthesised")
+    if uncarded:
+        print(f"  next   {len(uncarded)} word(s) he has met in a sentence but has no "
+              f"card for: {', '.join(uncarded)}")
     for label, ids in todo.items():
         if not ids:
             continue

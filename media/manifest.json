@@ -192,6 +192,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/chlopiec.mp3": {
+    "author": "Ewczy",
+    "commons_file": "Pl-chłopiec.ogg",
+    "fingerprint": "534c0b4762069388",
+    "gain_db": 13.4,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-ch%C5%82opiec.ogg",
+    "seconds": 1.62,
+    "source": "commons",
+    "text": "chłopiec"
+  },
+  "media/audio/chlopiec__sentence.mp3": {
+    "fingerprint": "c36c370cff1df44c",
+    "gain_db": -0.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.31,
+    "source": "tts",
+    "text": "Chłopiec ma nową piłkę.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/chodzic.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-chodzić.ogg",
@@ -486,6 +507,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/dwanascie.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-dwanaście.ogg",
+    "fingerprint": "53c7e67469999cca",
+    "gain_db": 0.2,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-dwana%C5%9Bcie.ogg",
+    "seconds": 1.31,
+    "source": "commons",
+    "text": "dwanaście"
+  },
+  "media/audio/dwanascie__sentence.mp3": {
+    "fingerprint": "c4db52b1c0777a44",
+    "gain_db": -0.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.31,
+    "source": "tts",
+    "text": "Mam dwanaście kwiatów.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/dziecko.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-dziecko.ogg",
@@ -756,6 +798,27 @@
     "seconds": 1.44,
     "source": "tts",
     "text": "Mały kot pije mleko.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/ksiazka.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-książka.ogg",
+    "fingerprint": "60ec9de5ddfd8787",
+    "gain_db": 4.2,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-ksi%C4%85%C5%BCka.ogg",
+    "seconds": 1.02,
+    "source": "commons",
+    "text": "książka"
+  },
+  "media/audio/ksiazka__sentence.mp3": {
+    "fingerprint": "97d409e36dc44a2b",
+    "gain_db": 0.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.67,
+    "source": "tts",
+    "text": "To jest stara książka.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1119,6 +1182,27 @@
     "seconds": 1.31,
     "source": "tts",
     "text": "To jest dobre miejsce.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/miesiac.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-miesiąc.ogg",
+    "fingerprint": "0a70a1a2d6449899",
+    "gain_db": 1.9,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-miesi%C4%85c.ogg",
+    "seconds": 1.2,
+    "source": "commons",
+    "text": "miesiąc"
+  },
+  "media/audio/miesiac__sentence.mp3": {
+    "fingerprint": "ebc0dd9102698c6e",
+    "gain_db": -1.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.38,
+    "source": "tts",
+    "text": "To jest trudny miesiąc.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1560,6 +1644,27 @@
     "seconds": 1.49,
     "source": "tts",
     "text": "Dziecko pisze w domu.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/polski.mp3": {
+    "author": "Tsca",
+    "commons_file": "Pl-polski.ogg",
+    "fingerprint": "ade5f3e02aaef381",
+    "gain_db": -1.0,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-polski.ogg",
+    "seconds": 0.89,
+    "source": "commons",
+    "text": "polski"
+  },
+  "media/audio/polski__sentence.mp3": {
+    "fingerprint": "e79e00a48d7825d7",
+    "gain_db": 0.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.28,
+    "source": "tts",
+    "text": "Czytam polską książkę.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -2467,6 +2572,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/zobaczyc.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-zobaczyć.ogg",
+    "fingerprint": "0f7d4a173b1df5bb",
+    "gain_db": -1.0,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-zobaczy%C4%87.ogg",
+    "seconds": 0.94,
+    "source": "commons",
+    "text": "zobaczyć"
+  },
+  "media/audio/zobaczyc__sentence.mp3": {
+    "fingerprint": "f3053bbaae067234",
+    "gain_db": 0.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.41,
+    "source": "tts",
+    "text": "Chcę zobaczyć ptaka.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/zolty.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-żółty.ogg",
@@ -2629,6 +2755,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A whole loaf of bread on a plain wooden board, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/chlopiec.webp": {
+    "bytes": 88390,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "7b009b9e3e657e10",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A boy of about ten standing outdoors holding a new football in both hands, pleased with it. Daylight. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -2856,6 +2998,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/dwanascie.webp": {
+    "bytes": 14452,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "bfafdde2483873d7",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Twelve tulips laid side by side in one single straight row on a plain white surface, evenly spaced, all stems pointing the same way. Count them: there must be twelve, no more and no fewer. Nothing else in the picture. Seen from directly above.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/dziecko.webp": {
     "bytes": 14018,
     "check": {
@@ -3056,6 +3214,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "One domestic cat, full body, standing on a plain light surface against a plain background. Clear and simple, no people, no other objects competing for attention, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/ksiazka.webp": {
+    "bytes": 34856,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "4289d15bc699deb2",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "One old hardback book with a worn cloth cover and yellowed page edges, lying closed on a plain surface. No readable text. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -3328,6 +3502,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A single red circle marked on the grass in an open field, clearly marking one particular spot on the ground. Nothing else in frame, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/miesiac.webp": {
+    "bytes": 16198,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "208b137f442d44a1",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A single clean calendar page for one month, a plain grid of empty squares, hanging on a wall. No writing or marks on it. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -3664,6 +3854,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A hand holding a pen and writing on a sheet of paper on a wooden desk, close up. The writing is indistinct. Daylight. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/polski.webp": {
+    "bytes": 9822,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "9e91b01ed04d02a8",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "An open book resting on a Polish flag, the flag's white and red halves clearly visible under it. Plain surface. No readable text. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -4337,6 +4543,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A child kneeling in grass, holding up a ball they have just found, pleased. Daylight, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/zobaczyc.webp": {
+    "bytes": 56218,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "e162ac18100bd425",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person lowering a pair of binoculars and pointing up at a bird they have just spotted, mouth open in surprise. Daylight outdoors. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
