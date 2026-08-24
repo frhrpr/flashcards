@@ -105,3 +105,15 @@ chłopiec,chlopiec,noun,yes,queued,sentence for czytać,2026-08-24,"met in a sen
 książka,ksiazka,noun,yes,queued,"sentence for czytać, frequency rank 124",2026-08-24,"met in a sentence, not carded"
 dwanaście,dwanascie,numeral,yes,queued,sentence for rok,2026-08-24,"met in a sentence, not carded"
 miesiąc,miesiac,noun,yes,queued,"sentence for rok, frequency rank 96",2026-08-24,"met in a sentence, not carded"
+ojciec,ojciec,noun,yes,carded,frequency rank 121,2026-08-24,
+matka,matka,noun,yes,carded,frequency rank 146,2026-08-24,
+szkoła,szkola,noun,yes,carded,frequency rank 144,2026-08-24,
+samochód,samochod,noun,yes,carded,frequency rank 171,2026-08-24,
+noc,noc,noun,yes,carded,frequency rank 176,2026-08-24,
+zacząć,zaczac,verb,yes,carded,frequency rank 35,2026-08-24,
+czuć,czuc,verb,yes,carded,frequency rank 82,2026-08-24,
+wysoki,wysoki,adjective,yes,carded,frequency rank 65,2026-08-24,
+trudny,trudny,adjective,yes,carded,frequency rank 228,2026-08-24,
+świat,swiat,noun,yes,carded,frequency rank 30,2026-08-24,
+polski,polski,adjective,yes,queued,"sentence for trudny, frequency rank 31",2026-08-24,"met in a sentence, not carded"
+zobaczyć,zobaczyc,verb,yes,queued,"sentence for świat, frequency rank 119",2026-08-24,"met in a sentence, not carded"

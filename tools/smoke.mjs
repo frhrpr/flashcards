@@ -123,18 +123,26 @@ try {
   }
   // The whole point of the layouts: a front must not leak its own answer.
   // Compare visible text only — attributes and class names produce false
-  // positives ("play-big" contains the gloss of duży).
+  // positives ("play-big" contains the gloss of duży) — and compare whole
+  // words, not substrings: the listening card's own instruction, "This card
+  // is sound only", contains the gloss of samochód.
   const text = h => h.replace(/<[^>]*>/g, " ");
+  const toks = s => s.toLowerCase().split(/[^\p{L}]+/u).filter(Boolean);
+  const says = (haystack, phrase) => {
+    const hay = toks(haystack), want = toks(phrase);
+    return want.length > 0 &&
+      hay.some((_, i) => want.every((w, j) => hay[i + j] === w));
+  };
   for (const n of deck.notes) {
     // Skipped where the English gloss IS the Polish word (park, park) — the
     // card is fine, the string check simply cannot tell them apart.
     if ((n.cards || []).includes("production") && n.gloss !== n.word) {
       const f = text(m.face(`${n.id}__production`, "front"));
-      check(!f.includes(n.word), `${n.id} production front hides the word`);
+      check(!says(f, n.word), `${n.id} production front hides the word`);
     }
     if ((n.cards || []).includes("listening") && n.audio) {
       const f = text(m.face(`${n.id}__listening`, "front"));
-      check(!f.includes(n.word) && !f.includes(n.gloss),
+      check(!says(f, n.word) && !says(f, n.gloss),
             `${n.id} listening front hides word and gloss`);
     }
   }

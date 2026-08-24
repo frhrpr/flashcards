@@ -318,6 +318,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/czuc.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-czuć.ogg",
+    "fingerprint": "8891d3e06512c74c",
+    "gain_db": -0.4,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-czu%C4%87.ogg",
+    "seconds": 0.97,
+    "source": "commons",
+    "text": "czuć"
+  },
+  "media/audio/czuc__sentence.mp3": {
+    "fingerprint": "b978571687bd1c18",
+    "gain_db": 1.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.1,
+    "source": "tts",
+    "text": "Nie czuję ręki.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/czytac.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-czytać.ogg",
@@ -843,6 +864,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/matka.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-matka.ogg",
+    "fingerprint": "7a045bbf8d9fff7b",
+    "gain_db": -1.0,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-matka.ogg",
+    "seconds": 0.76,
+    "source": "commons",
+    "text": "matka"
+  },
+  "media/audio/matka__sentence.mp3": {
+    "fingerprint": "6018391e164b9d5b",
+    "gain_db": -0.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.38,
+    "source": "tts",
+    "text": "Rano matka śpiewa dziecku.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/mezczyzna.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-mężczyzna.ogg",
@@ -1206,6 +1248,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/noc.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-noc.ogg",
+    "fingerprint": "1d972dfff047a596",
+    "gain_db": -3.8,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-noc.ogg",
+    "seconds": 0.63,
+    "source": "commons",
+    "text": "noc"
+  },
+  "media/audio/noc__sentence.mp3": {
+    "fingerprint": "5400d2f86fec5b94",
+    "gain_db": 0.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.18,
+    "source": "tts",
+    "text": "W nocy nie widzę drogi.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/nowy.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-nowy.ogg",
@@ -1224,6 +1287,27 @@
     "seconds": 1.44,
     "source": "tts",
     "text": "Dziecko ma nową piłkę.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/ojciec.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-ojciec.ogg",
+    "fingerprint": "aa540a896276bd1f",
+    "gain_db": -2.8,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-ojciec.ogg",
+    "seconds": 0.76,
+    "source": "commons",
+    "text": "ojciec"
+  },
+  "media/audio/ojciec__sentence.mp3": {
+    "fingerprint": "edead252db285a4a",
+    "gain_db": -0.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.41,
+    "source": "tts",
+    "text": "Mój ojciec ma nowy samochód.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1584,6 +1668,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/samochod.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-samochód.ogg",
+    "fingerprint": "c04f3a1575d1373d",
+    "gain_db": 4.9,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-samoch%C3%B3d.ogg",
+    "seconds": 1.04,
+    "source": "commons",
+    "text": "samochód"
+  },
+  "media/audio/samochod__sentence.mp3": {
+    "fingerprint": "6c21158c40a511df",
+    "gain_db": -1.0,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.88,
+    "source": "tts",
+    "text": "Czerwony samochód stoi na drodze.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/siadac.mp3": {
     "fingerprint": "c1513975fbf08cb8",
     "gain_db": 0.1,
@@ -1795,6 +1900,48 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/swiat.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-świat.ogg",
+    "fingerprint": "eca195586c683126",
+    "gain_db": -0.7,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-%C5%9Bwiat.ogg",
+    "seconds": 0.99,
+    "source": "commons",
+    "text": "świat"
+  },
+  "media/audio/swiat__sentence.mp3": {
+    "fingerprint": "cb7d07b824aae98d",
+    "gain_db": 1.0,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.18,
+    "source": "tts",
+    "text": "Chcę zobaczyć świat.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/szkola.mp3": {
+    "author": "Frizabela",
+    "commons_file": "Pl-szkoła.ogg",
+    "fingerprint": "df0ccca06b5a5506",
+    "gain_db": -4.2,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-szko%C5%82a.ogg",
+    "seconds": 1.2,
+    "source": "commons",
+    "text": "szkoła"
+  },
+  "media/audio/szkola__sentence.mp3": {
+    "fingerprint": "b450da1cd261bf65",
+    "gain_db": 0.8,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.33,
+    "source": "tts",
+    "text": "Dzieci idą do szkoły.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/szukac.mp3": {
     "author": "Faselhase",
     "commons_file": "Pl-szukać.ogg",
@@ -1876,6 +2023,27 @@
     "seconds": 0.91,
     "source": "tts",
     "text": "Ty też masz psa.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/trudny.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-trudny.ogg",
+    "fingerprint": "0bd72a619700992a",
+    "gain_db": -0.5,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-trudny.ogg",
+    "seconds": 1.54,
+    "source": "commons",
+    "text": "trudny"
+  },
+  "media/audio/trudny__sentence.mp3": {
+    "fingerprint": "632ee099ff42eade",
+    "gain_db": -1.6,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.15,
+    "source": "tts",
+    "text": "Polski jest trudny.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -2002,6 +2170,48 @@
     "seconds": 1.15,
     "source": "tts",
     "text": "Ptak wraca do parku.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/wysoki.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-wysoki.ogg",
+    "fingerprint": "2ff3b45dacfbc3f0",
+    "gain_db": -1.3,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-wysoki.ogg",
+    "seconds": 0.86,
+    "source": "commons",
+    "text": "wysoki"
+  },
+  "media/audio/wysoki__sentence.mp3": {
+    "fingerprint": "d40cb5a8deb9b3df",
+    "gain_db": 1.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.31,
+    "source": "tts",
+    "text": "Mój ojciec jest wysoki.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/zaczac.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-zacząć.ogg",
+    "fingerprint": "f00a7305582955eb",
+    "gain_db": 0.6,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-zacz%C4%85%C4%87.ogg",
+    "seconds": 0.99,
+    "source": "commons",
+    "text": "zacząć"
+  },
+  "media/audio/zaczac__sentence.mp3": {
+    "fingerprint": "c1083a6facf154ae",
+    "gain_db": 0.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.49,
+    "source": "tts",
+    "text": "Muszę zacząć pracę.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -2308,6 +2518,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/czuc.webp": {
+    "bytes": 13786,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "780b7e4a042289da",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person gripping their own wrist with the other hand, the held hand hanging limp and unfeeling. Close up, plain indoor setting. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/czytac.webp": {
     "bytes": 33042,
     "check": {
@@ -2405,18 +2631,18 @@
     "source": "generated"
   },
   "media/img/duzy.webp": {
-    "bytes": 9682,
+    "bytes": 146414,
     "check": {
       "model": "gemini-flash-latest",
       "problem": "",
       "verdict": "ok",
       "why": ""
     },
-    "fingerprint": "341f0cf6d7c40dc9",
+    "fingerprint": "aa2f8287346c9fa9",
     "model": "gemini-2.5-flash-image",
     "original_size": "1024x1024",
     "process_version": 1,
-    "prompt": "Two balls of the same colour side by side on a plain white background, one very large and one very small, the large one at the front and in focus. No text. Square image.",
+    "prompt": "A very large house seen from the front, with one person standing at the door looking small against it so the size is obvious. Daylight. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -2703,6 +2929,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/matka.webp": {
+    "bytes": 36906,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "aee473401d723143",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A mother sitting on the edge of a bed singing to a small child, her mouth open in song, the child listening. Morning light through a window. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/mezczyzna.webp": {
     "bytes": 98056,
     "check": {
@@ -2975,6 +3217,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/noc.webp": {
+    "bytes": 64700,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "9966171dcb53cddf",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A dark country road at night, headlights picking out a short stretch of it and everything beyond fading into black. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/nowy.webp": {
     "bytes": 15092,
     "check": {
@@ -2988,6 +3246,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "Two footballs side by side on a plain white background: one brand new, clean and bright, one old, scuffed and grey. The new one stands at the front and in focus. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/ojciec.webp": {
+    "bytes": 57898,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "addd5120488c3da3",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A man in his forties standing beside a new car on a driveway, one hand resting on the roof, pleased with it. Daylight. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -3258,6 +3532,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/samochod.webp": {
+    "bytes": 53596,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "ac195c8c3c4315eb",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A red car parked on a road, seen from the side and filling most of the frame. Daylight, no people. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/siadac.webp": {
     "bytes": 55766,
     "check": {
@@ -3418,6 +3708,38 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/swiat.webp": {
+    "bytes": 63066,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "ba904e5babe63ea6",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person standing in front of a large world map on a wall, looking up at it. Seen from behind. Daylight. No readable text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/szkola.webp": {
+    "bytes": 88738,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "01b85c52b7c55d27",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Three children with backpacks walking together towards the entrance of a large school building, seen from behind. Morning daylight. No readable signage. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/szukac.webp": {
     "bytes": 163024,
     "check": {
@@ -3479,6 +3801,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "Two people standing side by side, each holding an identical red umbrella, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/trudny.webp": {
+    "bytes": 36472,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "0d770fd58b23fe5c",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person at a desk with both hands pressed to their temples over a thick open book of dense text, frustrated. Warm indoor light. No readable text. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -3570,6 +3908,38 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A person walking up to their own front door carrying a bag, seen from behind, daylight, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/wysoki.webp": {
+    "bytes": 140692,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "d9cd6db1a548c2a2",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A very tall man standing next to a young child, the child reaching only to his hip, the height difference obvious. Daylight outdoors. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/zaczac.webp": {
+    "bytes": 26674,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "1802edbe33f15709",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person sitting down at a desk and opening a notebook, pen not yet in hand, about to start. Morning light. No readable text. Square image.",
     "size": "800x800",
     "source": "generated"
   },
