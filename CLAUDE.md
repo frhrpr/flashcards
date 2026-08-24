@@ -21,7 +21,7 @@ Claude does the rest, including running the tools and pushing.
 index.html          the whole app — one file, no build step, served by Pages
 deck/notes.json     card content, fetched by the app at load
 deck/vocab.csv      every word he has met, whether or not it has a card
-deck/frequency.csv  top-500 Polish list — sentence allowlist, NOT a syllabus
+deck/frequency.csv  top-500 written-corpus list — half-blind, see below
 lessons/*.md        one per lesson: story, new words, questions asked
 media/audio/*.mp3   generated once and committed, never fetched per review
 media/img/*.webp    one image per note, 800px, generated
@@ -390,7 +390,7 @@ Decided so far:
 - **Text** (POS, definition, sentence, gap) — written by Claude in session
   per word with structured outputs. The sentence allowlist is **all of
   `deck/vocab.csv` plus all of `deck/frequency.csv`** — deliberately not just
-  the words already carded. Restricting it to carded words was the practice
+  the words already carded (but read the warning about that list below). Restricting it to carded words was the practice
   for a while and it was a mistake: with sixty-odd words and none for people,
   sentences got assembled from whatever was sayable rather than describing
   anything, which is how *a bird that walks* and *a dog fed milk* happened.
@@ -404,6 +404,43 @@ Decided so far:
   billing enabled on the Gemini key (the free tier reports `limit: 0` for
   every image model — it has never been free). Flash not pro: these render
   at 800px on a phone.
+
+### `deck/frequency.csv` is half-blind — do not use it as a syllabus
+
+It is a **written-corpus** list: the `ARF` column is Average Reduced
+Frequency, a corpus statistic, and `source_tags` holds Polish morphological
+tags. News, official prose and literature is what it counts, and those
+genres are full of *matters*, *situations* and *cases* and contain almost no
+coffee, beds or Tuesdays.
+
+Tested against 57 ordinary A1/A2 words, **49 are absent**: `kawa`, `herbata`,
+`chleb`, `mleko`, `obiad`, `talerz`, `nóż`, `kuchnia`, `łóżko`, `krzesło`,
+`buty`, `pociąg`, `autobus`, `bilet`, `sklep`, `apteka`, `poniedziałek`,
+`styczeń`, `zima`, `siostra`, `zielony`, `zimny`, `spać`, `gotować`,
+`płacić`, `dziękować` — and `pies` and `kot`. Meanwhile `sprawa` is rank 26,
+`sposób` 39, `własny` 53, `sytuacja` 62, `przypadek` 74.
+
+**33 of the deck's own 106 carded words are not on it at all**, including
+`pies`, `kot`, `chleb`, `mleko`, `sklep`, `park`, `słońce`, `ptak`, `ryba`
+and `zielony`. Those came from lessons and judgement, which is how it should
+be. Four sets were once picked by leaning on the list hard, and it showed.
+
+So: it is right about the half of the language a written corpus can see —
+verbs, function words, abstract nouns. `być`, `mieć`, `robić`, `móc`,
+`chcieć`, `musieć`, `pytać`, `rozumieć` all came from it correctly. It is
+structurally unable to tell you which concrete everyday nouns a beginner
+needs, because those are rare in print and constant in life.
+
+**A word earns a card if either** it is in `frequency.csv`, **or** an adult
+would plausibly use it in an ordinary week — food, home, clothes, transport,
+time, weather, money, body, people, everyday actions. Say which of the two
+applies when proposing it. If neither does, it does not go in.
+
+There is no thematic list and deliberately so; picking ad hoc each time
+weighs utility, depictability and gloss collisions better than any list. The
+cost is that gaps accumulate invisibly: as of 2026-08-24 the deck had eight
+ways to talk about time and no numbers, no days of the week, no clothes, no
+weather, and one word each for transport and money.
 
 **Follow the sentence's scene when it is easy, and keep the two related even
 when it is not.** An image that shows what the sentence says reinforces the
