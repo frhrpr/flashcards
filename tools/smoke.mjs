@@ -88,7 +88,7 @@ const renderCard_ = null;
 
 const mod = `${stubs}
 ${SLICES.map(cut).join("\n")}
-export { renderDone, renderLanding, startEar, earPlan, nextEarTrial, answerEar, startVocab, vocabPending };
+export { renderDone, renderLanding, startEar, earPlan, nextEarTrial, answerEar, startVocab, vocabPending , TASK, SUBTASK };
 export const state = () => ({ html, PAIRS, livePairs, earQueue, earIdx, earStates, queue, doneDays, vocabLight });
 export const seed = (due, nw) => { dueCards.length = 0; dueCards.push(...due);
   fresh.length = 0; fresh.push(...nw); queue = [...due, ...nw]; };
@@ -126,7 +126,13 @@ try {
   // positives ("play-big" contains the gloss of duży) — and compare whole
   // words, not substrings: the listening card's own instruction, "This card
   // is sound only", contains the gloss of samochód.
-  const text = h => h.replace(/<[^>]*>/g, " ");
+  // Strip the fixed chrome first. Every listening front carries "What does
+  // this word mean?", which contains the gloss of słowo; every card carries
+  // its task line. Boilerplate is not a leak, and leaving it in makes the
+  // check fire on whichever note happens to collide with the instructions.
+  const chrome = [...Object.values(m.TASK), ...Object.values(m.SUBTASK)];
+  const text = h => chrome.reduce((s, c) => s.split(c).join(" "),
+                                  h.replace(/<[^>]*>/g, " "));
   const toks = s => s.toLowerCase().split(/[^\p{L}]+/u).filter(Boolean);
   const says = (haystack, phrase) => {
     const hay = toks(haystack), want = toks(phrase);
