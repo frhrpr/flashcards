@@ -405,6 +405,14 @@ Decided so far:
   every image model — it has never been free). Flash not pro: these render
   at 800px on a phone.
 
+**`validate.py` prints the queue of words wanted but not carded**, split into
+those already used in a sentence — he is reading them now, so they come first
+— and the rest. Anything in `vocab.csv` with `flashcard: yes` and a status
+short of `carded` appears. It once watched sentences only and so lost sight
+of the seven day names, which arrive on the `tydzień` card image rather than
+in any sentence; a queue that quietly omits things is the failure it exists
+to prevent.
+
 **Borrowing an unrecorded word into a sentence is good, not a cost.** The
 sentence introduces the word in a context it has earned, `validate.py` puts
 it in the queue automatically, and it gets carded next round. That is a

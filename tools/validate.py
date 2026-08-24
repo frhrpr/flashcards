@@ -206,14 +206,17 @@ def main():
         if row["status"] == "carded" and nid not in seen:
             err(nid, "vocab.csv says carded but there is no note")
 
-    # Words he has already met in a sentence but has no card for. These are
-    # the top of the queue for new notes: carding them closes the loop, so
-    # every word he reads is one he is also learning.
+    # Everything decided-on but not yet carded: the queue for new notes.
+    # Words already used in a sentence come first, because he is reading them
+    # now — but the queue lists the rest too. It once watched sentences only,
+    # and so lost sight of the seven day names that arrive on the tydzień card
+    # image; a queue that quietly omits things is the failure it exists to
+    # prevent.
     met = {lem for n in notes for lem in (n.get("sentence") or {}).get("lemmas", [])}
-    uncarded = sorted(
-        w for w in met
-        if any(r["word"] == w and r["flashcard"] == "yes" and r["status"] != "carded"
-               for r in vocab.values()))
+    wanted = {r["word"] for r in vocab.values()
+              if r["flashcard"] == "yes" and r["status"] != "carded"}
+    in_use = sorted(wanted & met)
+    elsewhere = sorted(wanted - met)
 
     print(f"{len(notes)} notes checked\n")
     for w in warnings:
@@ -225,9 +228,12 @@ def main():
     synth = sources.get("tts", 0)
     if human or synth:
         print(f"  audio  {human} human recording(s), {synth} synthesised")
-    if uncarded:
-        print(f"  next   {len(uncarded)} word(s) he has met in a sentence but has no "
-              f"card for: {', '.join(uncarded)}")
+    if in_use or elsewhere:
+        print(f"  next   {len(in_use) + len(elsewhere)} word(s) wanted but not carded")
+        if in_use:
+            print(f"           in a sentence already: {', '.join(in_use)}")
+        if elsewhere:
+            print(f"           waiting             : {', '.join(elsewhere)}")
     for label, ids in todo.items():
         if not ids:
             continue
