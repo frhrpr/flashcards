@@ -614,10 +614,32 @@ function unlocked(key){
 const started = new Set(Object.keys(cardStates).map(noteOf));
 const isForm = k => (NOTES[noteOf(k)] || {}).kind === "form";
 
+/* Which words come out of the bank first. A note marked `priority: true` in
+   deck/notes.json is introduced ahead of the rest — for the words from a
+   lesson, so the story he has just been told is what turns up next.
+
+   Deliberately narrow. It reorders the *bank* of not-yet-seen cards and
+   nothing else: reviews are untouched, the daily budgets are untouched, and
+   it does not bypass the maturity gate below — a prioritised production card
+   still waits for its recognition card to mature, or "priority" would come
+   to mean "show three cards for a word he met yesterday", which is what
+   burying and gating exist to prevent.
+
+   The sort is stable, so the day's shuffle survives inside each band: the
+   prioritised words still arrive in a different order every day.
+
+   It needs no cleaning up. Priority only affects cards with no state yet, so
+   the flag goes inert the moment a word is introduced. */
+function bankOrder(cards){
+  const prio = k => (NOTES[noteOf(k)] || {}).priority ? 1 : 0;
+  return cards.slice().sort((a, b) => prio(b) - prio(a));
+}
+/* ── end of bank order ─────────────────────────────────────────────── */
+
 const freshSeen = new Set();
 const fresh = [];
 let lockedCount = 0, words = 0, siblings = 0;
-for (const k of shuffle([...allCards])) {
+for (const k of bankOrder(shuffle([...allCards]))) {
   if (cardStates[k]) continue;
   if (!unlocked(k)) { lockedCount++; continue; }
   if (freshSeen.has(noteOf(k))) continue;          // one card per note per day

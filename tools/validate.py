@@ -228,6 +228,14 @@ def main():
     synth = sources.get("tts", 0)
     if human or synth:
         print(f"  audio  {human} human recording(s), {synth} synthesised")
+    # Priority goes inert once a word is introduced, so a stale flag does no
+    # harm — but it should not be invisible either, or nobody remembers to
+    # clear it and "prioritised" quietly comes to mean "everything".
+    prio = [n["id"] for n in notes if n.get("priority")]
+    if prio:
+        print(f"  prio   {len(prio)} note(s) marked priority, out of the bank first: "
+              f"{', '.join(prio)}")
+
     if in_use or elsewhere:
         print(f"  next   {len(in_use) + len(elsewhere)} word(s) wanted but not carded")
         if in_use:

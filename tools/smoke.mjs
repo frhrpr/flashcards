@@ -23,6 +23,7 @@ const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, "ear/manifest.json")
 /* Each slice is [from, to); `to` is left out of the slice. */
 const SLICES = [
   ["const WORDS = {", "/* ── end of ear content ──"],
+  ["function bankOrder(cards){", "/* ── end of bank order ──"],
   ['const barEl = $("#bar");', "function grade(g){"],
   ["/* ══ ear training ══", "/* ══ boot ══"],
 ];
@@ -93,6 +94,7 @@ ${SLICES.map(cut).join("\n")}
 export { renderDone, renderLanding, startEar, earPlan, nextEarTrial, answerEar, startVocab, vocabPending , TASK, SUBTASK };
 export const state = () => ({ html, PAIRS, livePairs, earQueue, earIdx, earStates, queue, doneDays, vocabLight });
 export const requested = () => asked;
+export { bankOrder, NOTES };
 export const forgetPreloads = () => { preloaded.clear(); asked.length = 0; };
 export const seed = (due, nw) => { dueCards.length = 0; dueCards.push(...due);
   fresh.length = 0; fresh.push(...nw); queue = [...due, ...nw]; };
@@ -224,6 +226,26 @@ try {
         `preloads the next 3 cards' images (got ${ahead.length} of 3)`);
   check(!got.includes(withImg[4].image),
         "does not pull the whole session down at once");
+
+  // Priority pulls a word out of the bank first, and nothing else.
+  const ids = deck.notes.filter(n => n.kind !== "form").slice(0, 6).map(n => n.id);
+  const bank = ids.map(i => `${i}__recognition`);
+  const plain = m.bankOrder(bank);
+  check(plain.join() === bank.join(), "no priority leaves the order alone");
+  m.NOTES[ids[4]].priority = true;
+  const withPrio = m.bankOrder(bank);
+  check(withPrio[0] === `${ids[4]}__recognition`, "a prioritised word comes out first");
+  check(withPrio.slice(1).join() ===
+        bank.filter(k => k !== `${ids[4]}__recognition`).join(),
+        "everything else keeps its shuffled order");
+  m.NOTES[ids[1]].priority = true;
+  const two = m.bankOrder(bank);
+  check(two.slice(0, 2).sort().join() ===
+        [`${ids[1]}__recognition`, `${ids[4]}__recognition`].sort().join(),
+        "two prioritised words both come first");
+  check(two[0] === `${ids[1]}__recognition`,
+        "and keep their relative order — the sort is stable");
+  delete m.NOTES[ids[1]].priority; delete m.NOTES[ids[4]].priority;
 
   m.renderDone();    check(true, "renderDone runs");
   m.renderLanding(); check(true, "renderLanding runs");

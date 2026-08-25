@@ -200,6 +200,27 @@ notes`. `status` is `queued` → `known` → `carded`.
   This is a deliberate, bounded exception to the no-morphology rule. It
   applies to two irregular verbs whose forms *are* the vocabulary. Do not let
   it grow into declension tables.
+- **`priority: true` on a note pulls it out of the bank first.** For the
+  words from a lesson, so the story he has just been told is what turns up
+  next rather than whatever the day's shuffle happened to surface.
+
+  Deliberately narrow. It reorders the bank of not-yet-seen cards and nothing
+  else: **reviews are untouched** — there is no priority among due cards and
+  should not be — the daily budgets are untouched, and it does **not** bypass
+  the maturity gate. A prioritised production card still waits for its
+  recognition card, or "priority" would come to mean "three cards for a word
+  he met yesterday", which is what burying and gating exist to prevent.
+
+  A boolean rather than a rank: the sort is stable, so the day's shuffle
+  survives within each band and the prioritised words still arrive in a
+  different order each day.
+
+  Nothing needs cleaning up afterwards — priority only affects cards with no
+  state, so the flag goes inert the moment the word is introduced.
+  `validate.py` lists the marked notes anyway, because a flag nobody can see
+  is one nobody clears, and "prioritised" would drift into meaning
+  "everything".
+
 - **A "just reviews" session exists, and is deliberately a lesser option.**
   A small grey link under the Vocab tile, not a third mode: it drops `fresh`
   and runs the due cards alone, for a tired or busy evening. Skipping creates
