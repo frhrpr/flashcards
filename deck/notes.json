@@ -7276,7 +7276,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "tani",
@@ -7309,7 +7309,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "zawsze",
@@ -7342,7 +7342,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "zab",
@@ -7405,7 +7405,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "turysta",
@@ -7439,7 +7439,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "restauracja",
@@ -7472,7 +7472,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "hotel",
@@ -7505,7 +7505,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "sol",
@@ -7537,7 +7537,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "serce",
@@ -7570,7 +7570,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "przyjaciel",
@@ -7602,7 +7602,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "uczyc_sie",
@@ -7633,7 +7633,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "klucz",
@@ -7666,7 +7666,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "dworzec",
@@ -7698,7 +7698,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     }
   ]
 }
