@@ -669,6 +669,16 @@ function bankOrder(cards){
   const prio = k => (NOTES[noteOf(k)] || {}).priority ? 1 : 0;
   return cards.slice().sort((a, b) => prio(b) - prio(a));
 }
+
+/* Whether a card may come out of the bank at all. A note no human has read
+   must never reach him: the app is served straight from the repo, so without
+   this the only thing between a half-written sentence and the student is
+   remembering not to push. Strict — the flag must be exactly true — so a
+   note that loses the key is withheld rather than quietly shipped;
+   validate.py refuses a deck where it is missing, so this cannot go unseen. */
+function introducible(k){
+  return (NOTES[noteOf(k)] || {}).reviewed === true;
+}
 /* ── end of bank order ─────────────────────────────────────────────── */
 
 const freshSeen = new Set();
@@ -676,6 +686,12 @@ const fresh = [];
 let lockedCount = 0, words = 0, siblings = 0;
 for (const k of bankOrder(shuffle([...allCards]))) {
   if (cardStates[k]) continue;
+  /* Sits after the state check, so it can only ever withhold a card never
+     seen — a flag cleared by accident (audio.py did exactly that once)
+     cannot yank back work under way, the rule the maturity gate follows too.
+     Not counted as locked: locked means waiting on his own progress, and
+     this is waiting on the teacher. */
+  if (!introducible(k)) continue;
   if (!unlocked(k)) { lockedCount++; continue; }
   if (freshSeen.has(noteOf(k))) continue;          // one card per note per day
   /* A conjugation drill is not new vocabulary — the form was taught in the

@@ -173,6 +173,12 @@ def main():
                                  f"{entry.get('text')!r}, which is no longer the text — "
                                  f"re-run tools/audio.py")
 
+        # The app withholds any note whose reviewed flag is not exactly true,
+        # so a missing or non-boolean flag silently removes a card from the
+        # deck. Refuse it here rather than let it vanish quietly.
+        if not isinstance(n.get("reviewed"), bool):
+            err(nid, f"reviewed is {n.get('reviewed')!r}, must be true or false")
+
         if n.get("reviewed") and not (n.get("audio") and
                                       (n.get("sentence") or {}).get("audio")):
             err(nid, "marked reviewed but audio is missing")

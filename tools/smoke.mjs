@@ -99,7 +99,7 @@ ${SLICES.map(cut).join("\n")}
 export { renderDone, renderLanding, startEar, earPlan, nextEarTrial, answerEar, startVocab, vocabPending , TASK, SUBTASK };
 export const state = () => ({ html, PAIRS, livePairs, earQueue, earIdx, earStates, queue, doneDays, vocabLight });
 export const requested = () => asked;
-export { bankOrder, NOTES, openHint, hintOpens, HINT_SETS };
+export { bankOrder, introducible, NOTES, openHint, hintOpens, HINT_SETS };
 export const forgetPreloads = () => { preloaded.clear(); asked.length = 0; };
 export const seed = (due, nw) => { dueCards.length = 0; dueCards.push(...due);
   fresh.length = 0; fresh.push(...nw); queue = [...due, ...nw]; };
@@ -250,6 +250,21 @@ try {
         "two prioritised words both come first");
   check(two[0] === `${ids[1]}__recognition`,
         "and keep their relative order — the sort is stable");
+
+  /* An unread note must never be introduced. The app is served straight out
+     of the repo, so this is the only thing standing between a half-written
+     sentence and the student. */
+  const nid = ids[0], key = `${nid}__recognition`;
+  m.NOTES[nid].reviewed = true;
+  check(m.introducible(key) === true, "an approved note can be introduced");
+  m.NOTES[nid].reviewed = false;
+  check(m.introducible(key) === false, "an unapproved note cannot be introduced");
+  delete m.NOTES[nid].reviewed;
+  check(m.introducible(key) === false,
+        "and neither can one whose flag has gone missing");
+  m.NOTES[nid].reviewed = true;
+  check(deck.notes.every(n => typeof n.reviewed === "boolean"),
+        "every note in the real deck carries a boolean reviewed flag");
   delete m.NOTES[ids[1]].priority; delete m.NOTES[ids[4]].priority;
 
   // The hint sheet: every word it offers must actually have audio, or it
