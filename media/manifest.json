@@ -1,4 +1,25 @@
 {
+  "media/audio/apteka.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-apteka.ogg",
+    "fingerprint": "c19a75d35844414f",
+    "gain_db": 0.2,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-apteka.ogg",
+    "seconds": 1.23,
+    "source": "commons",
+    "text": "apteka"
+  },
+  "media/audio/apteka__sentence.mp3": {
+    "fingerprint": "4773018020d62e6a",
+    "gain_db": 1.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.04,
+    "source": "tts",
+    "text": "Idę do apteki.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/autobus.mp3": {
     "author": "Frizabela",
     "commons_file": "Pl-autobus.ogg",
@@ -635,6 +656,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/czysty.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-czysty.ogg",
+    "fingerprint": "f481cdf799aee357",
+    "gain_db": -1.4,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-czysty.ogg",
+    "seconds": 0.68,
+    "source": "commons",
+    "text": "czysty"
+  },
+  "media/audio/czysty__sentence.mp3": {
+    "fingerprint": "c0d8dd59b4885357",
+    "gain_db": -0.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.33,
+    "source": "tts",
+    "text": "Moja koszula jest czysta.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/czytac.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-czytać.ogg",
@@ -1097,6 +1139,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/dzwonic.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-dzwonić.ogg",
+    "fingerprint": "3af6ac60bfff5287",
+    "gain_db": 0.7,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-dzwoni%C4%87.ogg",
+    "seconds": 1.2,
+    "source": "commons",
+    "text": "dzwonić"
+  },
+  "media/audio/dzwonic__sentence.mp3": {
+    "fingerprint": "363ac9c2aea47c84",
+    "gain_db": 0.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.99,
+    "source": "tts",
+    "text": "Dzwonię do matki.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/glodny.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-głodny.ogg",
@@ -1178,6 +1241,27 @@
     "seconds": 1.2,
     "source": "tts",
     "text": "Czekam godzinę w parku.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/gora.mp3": {
+    "author": "Frizabela",
+    "commons_file": "Pl-góra.ogg",
+    "fingerprint": "42c73b815bded7c9",
+    "gain_db": -6.5,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-g%C3%B3ra.ogg",
+    "seconds": 0.94,
+    "source": "commons",
+    "text": "góra"
+  },
+  "media/audio/gora__sentence.mp3": {
+    "fingerprint": "88d684fa93f3e05d",
+    "gain_db": -0.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.62,
+    "source": "tts",
+    "text": "Ta góra jest bardzo wysoka.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -2364,6 +2448,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/minuta.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-minuta.ogg",
+    "fingerprint": "b8d10f0c13b622eb",
+    "gain_db": -2.4,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-minuta.ogg",
+    "seconds": 0.97,
+    "source": "commons",
+    "text": "minuta"
+  },
+  "media/audio/minuta__sentence.mp3": {
+    "fingerprint": "d7c137c929e7aef0",
+    "gain_db": 0.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.99,
+    "source": "tts",
+    "text": "Czekam pięć minut.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/mleko.mp3": {
     "author": "Kajervi",
     "commons_file": "Pl-mleko.ogg",
@@ -2992,6 +3097,27 @@
     "seconds": 1.31,
     "source": "tts",
     "text": "Rano patrzę na słońce.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/peron.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-peron.ogg",
+    "fingerprint": "2c848e387a56bda5",
+    "gain_db": 0.1,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-peron.ogg",
+    "seconds": 1.65,
+    "source": "commons",
+    "text": "peron"
+  },
+  "media/audio/peron__sentence.mp3": {
+    "fingerprint": "e309a72d518a9454",
+    "gain_db": -1.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.31,
+    "source": "tts",
+    "text": "Pociąg czeka na peronie.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -3730,6 +3856,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/samolot.mp3": {
+    "author": "Wyksztalcioch",
+    "commons_file": "Pl-samolot.ogg",
+    "fingerprint": "2b4a27ced46c0f68",
+    "gain_db": 0.0,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-samolot.ogg",
+    "seconds": 0.78,
+    "source": "commons",
+    "text": "samolot"
+  },
+  "media/audio/samolot__sentence.mp3": {
+    "fingerprint": "0c471069ecaaadd7",
+    "gain_db": -1.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.65,
+    "source": "tts",
+    "text": "Ten samolot jest bardzo duży.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/sciana.mp3": {
     "author": "Frizabela",
     "commons_file": "Pl-ściana.ogg",
@@ -4193,6 +4340,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/srodek.mp3": {
+    "author": "Frizabela",
+    "commons_file": "Pl-środek.ogg",
+    "fingerprint": "ef9cbd54164afe98",
+    "gain_db": -0.8,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-%C5%9Brodek.ogg",
+    "seconds": 0.91,
+    "source": "commons",
+    "text": "środek"
+  },
+  "media/audio/srodek__sentence.mp3": {
+    "fingerprint": "367361e357991119",
+    "gain_db": -0.6,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.62,
+    "source": "tts",
+    "text": "Sklep jest w środku miasta.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/stac.mp3": {
     "author": "tsca",
     "commons_file": "Pl-stać.ogg",
@@ -4337,6 +4505,27 @@
     "seconds": 1.33,
     "source": "tts",
     "text": "Dzieci idą do szkoły.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/szpital.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-szpital.ogg",
+    "fingerprint": "25c7370633d06867",
+    "gain_db": -0.2,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-szpital.ogg",
+    "seconds": 1.54,
+    "source": "commons",
+    "text": "szpital"
+  },
+  "media/audio/szpital__sentence.mp3": {
+    "fingerprint": "6146b38a17a9bbc5",
+    "gain_db": 0.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.75,
+    "source": "tts",
+    "text": "Moja siostra pracuje w szpitalu.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -5141,6 +5330,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/zostac.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-zostać.ogg",
+    "fingerprint": "10a0648bfa1ad129",
+    "gain_db": -0.9,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-zosta%C4%87.ogg",
+    "seconds": 0.86,
+    "source": "commons",
+    "text": "zostać"
+  },
+  "media/audio/zostac__sentence.mp3": {
+    "fingerprint": "fe0b3790392f9ca9",
+    "gain_db": 0.0,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.12,
+    "source": "tts",
+    "text": "Chcę zostać w domu.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/zupa.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-zupa.ogg",
@@ -5161,6 +5371,22 @@
     "text": "Jem zupę na obiad.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
+  },
+  "media/img/apteka.webp": {
+    "bytes": 119090,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "b224e971a9bba27a",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "The front of a pharmacy on a street with a large green cross sign above the door. No words, only the symbol. Square image.",
+    "size": "800x800",
+    "source": "generated"
   },
   "media/img/bardzo.webp": {
     "bytes": 52640,
@@ -5605,6 +5831,22 @@
     "size": "263x350",
     "source": "supplied"
   },
+  "media/img/czysty.webp": {
+    "bytes": 10890,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "604de4db95d266c1",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A neat stack of freshly folded white shirts on a table. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/czytac.webp": {
     "bytes": 33042,
     "check": {
@@ -5925,6 +6167,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/dzwonic.webp": {
+    "bytes": 48104,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "b281f824b845a90d",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A woman standing outdoors holding a phone to her ear, mid-conversation. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/glodny.webp": {
     "bytes": 37498,
     "check": {
@@ -5983,6 +6241,22 @@
     "process_version": 1,
     "size": "800x534",
     "source": "supplied"
+  },
+  "media/img/gora.webp": {
+    "bytes": 45302,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "75ae86dda1929acf",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A single rocky mountain peak rising above a valley under a clear sky. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
   },
   "media/img/goracy.webp": {
     "bytes": 34266,
@@ -6859,6 +7133,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/minuta.webp": {
+    "bytes": 22188,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "The digital timer screen contains the letters 'NO'.",
+      "verdict": "flag",
+      "why": "contains text or lettering"
+    },
+    "fingerprint": "4411cdbcbe1c0239",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A digital stopwatch held in a hand, its display showing five minutes. No words, only the numbers. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/mleko.webp": {
     "bytes": 5586,
     "check": {
@@ -7331,6 +7621,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A person shading their eyes with one hand and looking up at a bright sky, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/peron.webp": {
+    "bytes": 84938,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "6f61236d33b5962c",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A busy railway platform with a train standing alongside it and people waiting with suitcases. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -7863,6 +8169,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/samolot.webp": {
+    "bytes": 11610,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "21e8e14b64bdc13a",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A large passenger aeroplane in flight against a clear sky, seen from below. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/sciana.webp": {
     "bytes": 247446,
     "check": {
@@ -8163,6 +8485,22 @@
     "size": "263x350",
     "source": "supplied"
   },
+  "media/img/srodek.webp": {
+    "bytes": 96098,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "flag",
+      "why": "contains text or lettering"
+    },
+    "fingerprint": "0f4c95f510e37fa1",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A dartboard seen straight on with a single dart in the very centre of the bullseye. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/stac.webp": {
     "bytes": 186366,
     "check": {
@@ -8272,6 +8610,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "Three children with backpacks walking together towards the entrance of a large school building, seen from behind. Morning daylight. No readable signage. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/szpital.webp": {
+    "bytes": 103544,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "e9121af4b3ea0d57",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A large modern hospital building seen from the street with an ambulance parked outside. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -8845,6 +9199,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A man and a woman sitting together at a small cafe table, the woman holding a cup of coffee, both wearing wedding rings. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/zostac.webp": {
+    "bytes": 34862,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "2190b5555d91f66a",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A man sitting alone on a sofa at home in the evening with a lamp lit and his coat still hanging by the door. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },

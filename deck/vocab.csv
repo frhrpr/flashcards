@@ -249,7 +249,7 @@ przyjaciel,przyjaciel,noun,yes,carded,2026-08-26 batch,2026-08-26,
 uczyć się,uczyc_sie,verb,yes,carded,2026-08-26 batch,2026-08-26,
 klucz,klucz,noun,yes,carded,2026-08-26 batch,2026-08-26,
 dworzec,dworzec,noun,yes,carded,2026-08-26 batch,2026-08-26,
-środek,srodek,noun,yes,queued,borrowed into serce sentence,2026-08-26,
+środek,srodek,noun,yes,carded,borrowed into serce sentence,2026-08-26,
 jeden,jeden,numeral,yes,carded,2026-08-26 numbers batch,2026-08-26,
 dwa,dwa,numeral,yes,carded,2026-08-26 numbers batch,2026-08-26,
 trzy,trzy,numeral,yes,carded,2026-08-26 numbers batch,2026-08-26,
@@ -263,6 +263,13 @@ drugi,drugi,adjective,yes,carded,2026-08-26 numbers batch,2026-08-26,
 kontener,kontener,noun,no,known,borrowed into a number sentence,2026-08-26,"close to English, no card wanted"
 kilometr,kilometr,noun,no,known,borrowed into a number sentence,2026-08-26,"close to English, no card wanted"
 tor,tor,noun,no,known,borrowed into a number sentence,2026-08-26,lane — running track or swimming pool
-zostać,zostac,verb,yes,queued,borrowed into a number sentence,2026-08-26,
+zostać,zostac,verb,yes,carded,borrowed into a number sentence,2026-08-26,
 szafka,szafka,noun,no,known,borrowed into a number sentence,2026-08-26,"locker, small cupboard — scenery only"
-peron,peron,noun,yes,queued,borrowed into a number sentence,2026-08-26,worth a card next to dworzec
+peron,peron,noun,yes,carded,borrowed into a number sentence,2026-08-26,worth a card next to dworzec
+apteka,apteka,noun,yes,carded,2026-08-26 batch,2026-08-26,
+szpital,szpital,noun,yes,carded,2026-08-26 batch,2026-08-26,
+samolot,samolot,noun,yes,carded,2026-08-26 batch,2026-08-26,
+minuta,minuta,noun,yes,carded,2026-08-26 batch,2026-08-26,
+czysty,czysty,adjective,yes,carded,2026-08-26 batch,2026-08-26,
+dzwonić,dzwonic,verb,yes,carded,2026-08-26 batch,2026-08-26,
+góra,gora,noun,yes,carded,2026-08-26 batch,2026-08-26,

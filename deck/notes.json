@@ -8034,6 +8034,337 @@
         "listening"
       ],
       "reviewed": true
+    },
+    {
+      "id": "peron",
+      "word": "peron",
+      "gloss": "platform",
+      "pos": "noun",
+      "ipa": "ˈpɛrɔn",
+      "note": null,
+      "image": "media/img/peron.webp",
+      "image_alt": "platform",
+      "image_basis": "sentence",
+      "image_prompt": "A busy railway platform with a train standing alongside it and people waiting with suitcases. No text or lettering. Square image.",
+      "audio": "media/audio/peron.mp3",
+      "sentence": {
+        "pl": "Pociąg czeka na peronie.",
+        "en": "The train is waiting at the platform.",
+        "gap": "Pociąg czeka na ___.",
+        "answer": "peronie",
+        "answer_lemma": "peron",
+        "audio": "media/audio/peron__sentence.mp3",
+        "lemmas": [
+          "pociąg",
+          "czekać",
+          "na",
+          "peron"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "zostac",
+      "word": "zostać",
+      "gloss": "to stay, to remain",
+      "pos": "verb",
+      "ipa": "ˈzɔstat͡ɕ",
+      "note": null,
+      "image": "media/img/zostac.webp",
+      "image_alt": "to stay, to remain",
+      "image_basis": "sentence",
+      "image_prompt": "A man sitting alone on a sofa at home in the evening with a lamp lit and his coat still hanging by the door. No text or lettering. Square image.",
+      "audio": "media/audio/zostac.mp3",
+      "sentence": {
+        "pl": "Chcę zostać w domu.",
+        "en": "I want to stay at home.",
+        "gap": "Chcę ___ w domu.",
+        "answer": "zostać",
+        "answer_lemma": "zostać",
+        "audio": "media/audio/zostac__sentence.mp3",
+        "lemmas": [
+          "chcieć",
+          "zostać",
+          "w",
+          "dom"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "srodek",
+      "word": "środek",
+      "gloss": "middle, centre",
+      "pos": "noun",
+      "ipa": "ˈɕrɔdɛk",
+      "note": null,
+      "image": "media/img/srodek.webp",
+      "image_alt": "middle, centre",
+      "image_basis": "word",
+      "image_prompt": "A dartboard seen straight on with a single dart in the very centre of the bullseye. No text or lettering. Square image.",
+      "audio": "media/audio/srodek.mp3",
+      "sentence": {
+        "pl": "Sklep jest w środku miasta.",
+        "en": "The shop is in the middle of the city.",
+        "gap": "Sklep jest w ___ miasta.",
+        "answer": "środku",
+        "answer_lemma": "środek",
+        "audio": "media/audio/srodek__sentence.mp3",
+        "lemmas": [
+          "sklep",
+          "być",
+          "w",
+          "środek",
+          "miasto"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "apteka",
+      "word": "apteka",
+      "gloss": "pharmacy",
+      "pos": "noun",
+      "ipa": "apˈtɛka",
+      "note": null,
+      "image": "media/img/apteka.webp",
+      "image_alt": "pharmacy",
+      "image_basis": "sentence",
+      "image_prompt": "The front of a pharmacy on a street with a large green cross sign above the door. No words, only the symbol. Square image.",
+      "audio": "media/audio/apteka.mp3",
+      "sentence": {
+        "pl": "Idę do apteki.",
+        "en": "I am going to the pharmacy.",
+        "gap": "Idę do ___.",
+        "answer": "apteki",
+        "answer_lemma": "apteka",
+        "audio": "media/audio/apteka__sentence.mp3",
+        "lemmas": [
+          "iść",
+          "do",
+          "apteka"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "szpital",
+      "word": "szpital",
+      "gloss": "hospital",
+      "pos": "noun",
+      "ipa": "ˈʂpital",
+      "note": null,
+      "image": "media/img/szpital.webp",
+      "image_alt": "hospital",
+      "image_basis": "sentence",
+      "image_prompt": "A large modern hospital building seen from the street with an ambulance parked outside. No text or lettering. Square image.",
+      "audio": "media/audio/szpital.mp3",
+      "sentence": {
+        "pl": "Moja siostra pracuje w szpitalu.",
+        "en": "My sister works at a hospital.",
+        "gap": "Moja siostra pracuje w ___.",
+        "answer": "szpitalu",
+        "answer_lemma": "szpital",
+        "audio": "media/audio/szpital__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "siostra",
+          "pracować",
+          "w",
+          "szpital"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "samolot",
+      "word": "samolot",
+      "gloss": "aeroplane",
+      "pos": "noun",
+      "ipa": "saˈmɔlɔt",
+      "note": null,
+      "image": "media/img/samolot.webp",
+      "image_alt": "aeroplane",
+      "image_basis": "sentence",
+      "image_prompt": "A large passenger aeroplane in flight against a clear sky, seen from below. No text or lettering. Square image.",
+      "audio": "media/audio/samolot.mp3",
+      "sentence": {
+        "pl": "Ten samolot jest bardzo duży.",
+        "en": "This aeroplane is very big.",
+        "gap": "Ten ___ jest bardzo duży.",
+        "answer": "samolot",
+        "answer_lemma": "samolot",
+        "audio": "media/audio/samolot__sentence.mp3",
+        "lemmas": [
+          "ten",
+          "samolot",
+          "być",
+          "bardzo",
+          "duży"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "minuta",
+      "word": "minuta",
+      "gloss": "minute",
+      "pos": "noun",
+      "ipa": "miˈnuta",
+      "note": null,
+      "image": "media/img/minuta.webp",
+      "image_alt": "minute",
+      "image_basis": "word",
+      "image_prompt": "A digital stopwatch held in a hand, its display showing five minutes. No words, only the numbers. Square image.",
+      "audio": "media/audio/minuta.mp3",
+      "sentence": {
+        "pl": "Czekam pięć minut.",
+        "en": "I am waiting five minutes.",
+        "gap": "Czekam pięć ___.",
+        "answer": "minut",
+        "answer_lemma": "minuta",
+        "audio": "media/audio/minuta__sentence.mp3",
+        "lemmas": [
+          "czekać",
+          "pięć",
+          "minuta"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "czysty",
+      "word": "czysty",
+      "gloss": "clean",
+      "pos": "adjective",
+      "ipa": "ˈt͡ʂɨstɨ",
+      "note": null,
+      "image": "media/img/czysty.webp",
+      "image_alt": "clean",
+      "image_basis": "word",
+      "image_prompt": "A neat stack of freshly folded white shirts on a table. No text or lettering. Square image.",
+      "audio": "media/audio/czysty.mp3",
+      "sentence": {
+        "pl": "Moja koszula jest czysta.",
+        "en": "My shirt is clean.",
+        "gap": "Moja koszula jest ___.",
+        "answer": "czysta",
+        "answer_lemma": "czysty",
+        "audio": "media/audio/czysty__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "koszula",
+          "być",
+          "czysty"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "dzwonic",
+      "word": "dzwonić",
+      "gloss": "to call, to ring",
+      "pos": "verb",
+      "ipa": "ˈd͡zvɔɲit͡ɕ",
+      "note": null,
+      "image": "media/img/dzwonic.webp",
+      "image_alt": "to call, to ring",
+      "image_basis": "word",
+      "image_prompt": "A woman standing outdoors holding a phone to her ear, mid-conversation. No text or lettering. Square image.",
+      "audio": "media/audio/dzwonic.mp3",
+      "sentence": {
+        "pl": "Dzwonię do matki.",
+        "en": "I am calling my mother.",
+        "gap": "___ do matki.",
+        "answer": "Dzwonię",
+        "answer_lemma": "dzwonić",
+        "audio": "media/audio/dzwonic__sentence.mp3",
+        "lemmas": [
+          "dzwonić",
+          "do",
+          "matka"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "gora",
+      "word": "góra",
+      "gloss": "mountain",
+      "pos": "noun",
+      "ipa": "ˈɡura",
+      "note": null,
+      "image": "media/img/gora.webp",
+      "image_alt": "mountain",
+      "image_basis": "sentence",
+      "image_prompt": "A single rocky mountain peak rising above a valley under a clear sky. No text or lettering. Square image.",
+      "audio": "media/audio/gora.mp3",
+      "sentence": {
+        "pl": "Ta góra jest bardzo wysoka.",
+        "en": "This mountain is very high.",
+        "gap": "Ta ___ jest bardzo wysoka.",
+        "answer": "góra",
+        "answer_lemma": "góra",
+        "audio": "media/audio/gora__sentence.mp3",
+        "lemmas": [
+          "ten",
+          "góra",
+          "być",
+          "bardzo",
+          "wysoki"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
     }
   ]
 }
