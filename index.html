@@ -99,9 +99,11 @@ button{font-family:inherit;cursor:pointer;border-radius:4px}
 
 
 /* ── the sibilant hint sheet ──────────────────────────────────────── */
-.hint-btn{background:none;border:1px solid var(--line);color:var(--dim);border-radius:50%;
-  width:1.6rem;height:1.6rem;font-family:var(--mono);font-size:.8rem;line-height:1;padding:0}
+.hint-btn{display:block;width:100%;margin-top:1.25rem;padding:.8rem;background:var(--card);
+  border:1px solid var(--line);border-radius:4px;color:var(--dim);font-family:var(--mono);
+  font-size:.72rem;letter-spacing:.1em;text-transform:uppercase}
 .hint-btn:hover{border-color:var(--dim);color:var(--ink)}
+.hint-btn b{color:var(--ink);font-weight:400;letter-spacing:.04em}
 .sheet{position:fixed;inset:0;background:var(--paper);z-index:50;overflow-y:auto;
   padding:1.25rem 1rem calc(2rem + env(safe-area-inset-bottom))}
 .sheet-in{max-width:26rem;margin:0 auto}
@@ -172,7 +174,7 @@ button{font-family:inherit;cursor:pointer;border-radius:4px}
 <body>
 <div class="wrap">
   <div class="top">
-    <span class="eyebrow"><span id="mode-label">Polish</span> <button class="hint-btn" id="hint" aria-label="s, sz, ś — a reminder" hidden>?</button></span>
+    <span class="eyebrow" id="mode-label">Polish</span>
     <span class="eyebrow" id="count"></span>
   </div>
   <div id="bar"><i></i></div>
@@ -824,7 +826,6 @@ function renderCount(){
 }
 
 function renderDone(){
-  showHintBtn(false);
   countEl.textContent = "";
   barEl.className = "";
   renderWarning();
@@ -1042,7 +1043,6 @@ function side(n, type, which){
 }
 
 function renderCard(){
-  showHintBtn(false);
   revealed = false;
   current = queue[0];
   const n = NOTES[noteOf(current)];
@@ -1361,7 +1361,6 @@ function renderEarTrial(){
   earTrial = earQueue[earIdx];
   earAnswered = false;
   modeLabel.textContent = "Ear training";
-  showHintBtn(true);
   countEl.textContent = `${earIdx + 1} / ${earQueue.length}`;
   barEl.className = "on";
   barEl.firstElementChild.style.width = `${(earIdx / earQueue.length) * 100}%`;
@@ -1388,6 +1387,7 @@ function renderEarTrial(){
     b.addEventListener("click", () => answerEar(b.dataset.id)));
   $("#player").addEventListener("click", () => playRec(earTrial.rec));
   $("#ear-next").addEventListener("click", nextEarTrial);
+  addHintBtn();
   playRec(earTrial.rec);
   // Same round trip, one trial ahead. Clips are a few KB; the wait is not.
   for (const tr of earQueue.slice(earIdx + 1, earIdx + 1 + PRELOAD_AHEAD)) {
@@ -1444,7 +1444,6 @@ function nextEarTrial(){
 function renderEarDone(){
   markDone("ear");
   modeLabel.textContent = "Polish";
-  showHintBtn(true);
   countEl.textContent = "";
   barEl.className = "";
   renderWarning();
@@ -1466,6 +1465,7 @@ function renderEarDone(){
   if (cross) cross.addEventListener("click", () => startVocab(false));
   const home = $("#home");
   if (home) home.addEventListener("click", renderLanding);
+  addHintBtn();
 }
 
 /* ══ the sibilant reminder ═════════════════════════════════════════
@@ -1520,6 +1520,9 @@ function openHint(){
             "helder, dun en hoog")}
       ${row("sz", "begin met <b>sj</b>, tong naar achteren",
             "lager, donkerder en holler")}
+      <p style="color:var(--dim);font-size:.8rem;line-height:1.5">Bij <b>sz</b> staan
+      je lippen vaak iets naar voren, bij <b>ś</b> niet. Handig voor de spiegel als je
+      zelf oefent — maar je kunt er niet aan zien welke klank iemand anders zegt.</p>
       <h3>Alle drie naast elkaar — tik om te horen</h3>
       ${trio(HINT_SETS[0])}
       <h3>En het moeilijke paar</h3>
@@ -1534,11 +1537,17 @@ function openHint(){
   el.querySelector("#hint-close").addEventListener("click", () => el.remove());
 }
 
-const hintBtn = $("#hint");
-if (hintBtn) hintBtn.addEventListener("click", openHint);
-/* Only where the sounds exist to play. */
-function showHintBtn(on){
-  if (hintBtn) hintBtn.hidden = !(on && livePairs.length);
+/* Appended to the bottom of whatever was just rendered, rather than living in
+   the top bar. A `?` beside the eyebrow was easy to miss on a phone; this sits
+   where the thumb already is and says what it is for. */
+function addHintBtn(){
+  if (!livePairs.length) return;
+  const b = document.createElement("button");
+  b.className = "hint-btn";
+  b.id = "hint";
+  b.innerHTML = "Hint — <b>s · sz · ś</b>";
+  b.addEventListener("click", openHint);
+  appEl.appendChild(b);
 }
 
 /* ══ landing ═══════════════════════════════════════════════════════
@@ -1579,7 +1588,6 @@ function earIdleLabel(){
 
 function renderLanding(){
   modeLabel.textContent = "Polish";
-  showHintBtn(true);
   countEl.textContent = "";
   barEl.className = "";
   renderWarning();
@@ -1630,6 +1638,7 @@ function renderLanding(){
   if (gl) gl.addEventListener("click", () => startVocab(true));
   const ge = $("#go-ear");
   if (ge) ge.addEventListener("click", startEar);
+  addHintBtn();
 }
 
 /* ══ boot ══════════════════════════════════════════════════════════ */

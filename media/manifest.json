@@ -1,4 +1,25 @@
 {
+  "media/audio/autobus.mp3": {
+    "author": "Frizabela",
+    "commons_file": "Pl-autobus.ogg",
+    "fingerprint": "ad756fd265ca934d",
+    "gain_db": -1.0,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-autobus.ogg",
+    "seconds": 0.78,
+    "source": "commons",
+    "text": "autobus"
+  },
+  "media/audio/autobus__sentence.mp3": {
+    "fingerprint": "466e1d6146eda162",
+    "gain_db": -0.2,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.36,
+    "source": "tts",
+    "text": "Jadę autobusem do szkoły.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/bardzo.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-bardzo.ogg",
@@ -38,6 +59,27 @@
     "seconds": 1.07,
     "source": "tts",
     "text": "Boli mnie głowa.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/brac.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-brać.ogg",
+    "fingerprint": "34f77aaffecc840e",
+    "gain_db": 5.0,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-bra%C4%87.ogg",
+    "seconds": 0.76,
+    "source": "commons",
+    "text": "brać"
+  },
+  "media/audio/brac__sentence.mp3": {
+    "fingerprint": "0d2e2a637f2e6762",
+    "gain_db": -0.6,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.33,
+    "source": "tts",
+    "text": "Biorę książkę ze stołu.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -634,6 +676,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/drzwi.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-drzwi.ogg",
+    "fingerprint": "552e6f9a650db953",
+    "gain_db": 4.7,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-drzwi.ogg",
+    "seconds": 1.04,
+    "source": "commons",
+    "text": "drzwi"
+  },
+  "media/audio/drzwi__sentence.mp3": {
+    "fingerprint": "d615feacaed124f5",
+    "gain_db": -0.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.02,
+    "source": "tts",
+    "text": "To są nowe drzwi.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/duzy.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-duży.ogg",
@@ -715,6 +778,27 @@
     "seconds": 1.12,
     "source": "tts",
     "text": "To jest dziwny dzień.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/dzisiaj.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-dzisiaj.ogg",
+    "fingerprint": "a3de338db2ff4506",
+    "gain_db": 6.5,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-dzisiaj.ogg",
+    "seconds": 0.97,
+    "source": "commons",
+    "text": "dzisiaj"
+  },
+  "media/audio/dzisiaj__sentence.mp3": {
+    "fingerprint": "9129e88e802c62f3",
+    "gain_db": 1.0,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.23,
+    "source": "tts",
+    "text": "Dzisiaj kończę pracę.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1115,6 +1199,27 @@
     "seconds": 1.44,
     "source": "tts",
     "text": "Mały kot pije mleko.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/krzeslo.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-krzesło.ogg",
+    "fingerprint": "9b7131ad56866d5c",
+    "gain_db": -1.0,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-krzes%C5%82o.ogg",
+    "seconds": 0.91,
+    "source": "commons",
+    "text": "krzesło"
+  },
+  "media/audio/krzeslo__sentence.mp3": {
+    "fingerprint": "1d6d38be26151bc0",
+    "gain_db": 1.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.41,
+    "source": "tts",
+    "text": "Siedzę na krześle.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -2070,6 +2175,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/piekny.mp3": {
+    "fingerprint": "0efa0ea326e85140",
+    "gain_db": 3.4,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.65,
+    "source": "tts",
+    "text": "piękny",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/piekny__sentence.mp3": {
+    "fingerprint": "89248ff588bc6e13",
+    "gain_db": -0.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.31,
+    "source": "tts",
+    "text": "To jest piękny dzień.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/pieniadze.mp3": {
     "author": "tsca",
     "commons_file": "Pl-pieniądze.ogg",
@@ -2532,6 +2658,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/ser.mp3": {
+    "author": "Wyksztalcioch",
+    "commons_file": "Pl-ser.ogg",
+    "fingerprint": "0517a977e9b37cad",
+    "gain_db": 1.3,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-ser.ogg",
+    "seconds": 0.63,
+    "source": "commons",
+    "text": "ser"
+  },
+  "media/audio/ser__sentence.mp3": {
+    "fingerprint": "5ad76889ef787f60",
+    "gain_db": -0.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.18,
+    "source": "tts",
+    "text": "Na chlebie jest ser.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/siadac.mp3": {
     "fingerprint": "c1513975fbf08cb8",
     "gain_db": 0.1,
@@ -2743,6 +2890,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/snieg.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-śnieg.ogg",
+    "fingerprint": "03b6b455909923f4",
+    "gain_db": 4.9,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-%C5%9Bnieg.ogg",
+    "seconds": 0.99,
+    "source": "commons",
+    "text": "śnieg"
+  },
+  "media/audio/snieg__sentence.mp3": {
+    "fingerprint": "95e69bfe1f069eb3",
+    "gain_db": -1.2,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.1,
+    "source": "tts",
+    "text": "Zimą pada śnieg.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/sobota.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-sobota.ogg",
@@ -2803,6 +2971,27 @@
     "seconds": 1.23,
     "source": "tts",
     "text": "Ptak śpiewa w parku.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/spodnie.mp3": {
+    "author": "Frizabela",
+    "commons_file": "Pl-spodnie.ogg",
+    "fingerprint": "49531931b77b89f5",
+    "gain_db": 3.1,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-spodnie.ogg",
+    "seconds": 0.86,
+    "source": "commons",
+    "text": "spodnie"
+  },
+  "media/audio/spodnie__sentence.mp3": {
+    "fingerprint": "8327ab57516ac06a",
+    "gain_db": -0.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.36,
+    "source": "tts",
+    "text": "Moje spodnie są czarne.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -3349,6 +3538,27 @@
     "seconds": 1.49,
     "source": "tts",
     "text": "Muszę zacząć pracę.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/zamknac.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-zamknąć.ogg",
+    "fingerprint": "de5fce851ad94226",
+    "gain_db": 0.4,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-zamkn%C4%85%C4%87.ogg",
+    "seconds": 1.65,
+    "source": "commons",
+    "text": "zamknąć"
+  },
+  "media/audio/zamknac__sentence.mp3": {
+    "fingerprint": "79e5d631084e1ecd",
+    "gain_db": 1.6,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.15,
+    "source": "tts",
+    "text": "Muszę zamknąć okno.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -4632,20 +4842,15 @@
     "source": "generated"
   },
   "media/img/miesiac.webp": {
-    "bytes": 16198,
-    "check": {
-      "model": "gemini-flash-latest",
-      "problem": "",
-      "verdict": "ok",
-      "why": ""
-    },
-    "fingerprint": "208b137f442d44a1",
-    "model": "gemini-2.5-flash-image",
-    "original_size": "1024x1024",
+    "author": "supplied by user",
+    "bytes": 83164,
+    "fingerprint": "adf726d670895bb9",
+    "licence": "n/a",
+    "original": "miesiac-supplied.png",
+    "original_size": "1254x1254",
     "process_version": 1,
-    "prompt": "A single clean calendar page for one month, a plain grid of empty squares, hanging on a wall. No writing or marks on it. Square image.",
     "size": "800x800",
-    "source": "generated"
+    "source": "supplied"
   },
   "media/img/mieszkac.webp": {
     "bytes": 50412,
@@ -5544,6 +5749,17 @@
     "prompt": "A small bird perched on a tree branch singing, beak clearly open, in a green park in daylight. One bird only, no people, no text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
+  },
+  "media/img/spodnie.webp": {
+    "author": "supplied by user",
+    "bytes": 80840,
+    "fingerprint": "77fc981c6f4b243e",
+    "licence": "n/a",
+    "original": "spodnie-supplied.png",
+    "original_size": "1254x1254",
+    "process_version": 1,
+    "size": "800x800",
+    "source": "supplied"
   },
   "media/img/spotkac.webp": {
     "bytes": 34024,

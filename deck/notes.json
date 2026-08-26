@@ -3943,9 +3943,9 @@
       "ipa": "ˈmʲɛɕɔnt͡s",
       "note": null,
       "image": "media/img/miesiac.webp",
-      "image_alt": "a calendar page for one month",
+      "image_alt": "a Polish wall calendar for September with days crossed off",
       "image_basis": "sentence",
-      "image_prompt": "A single clean calendar page for one month, a plain grid of empty squares, hanging on a wall. No writing or marks on it. Square image.",
+      "image_prompt": "Supplied by the user, not generated. A worn Polish wall calendar for WRZESIEŃ with correct day abbreviations, the dates 1 to 30 in order, days crossed off and notes pencilled in. Deliberately lettered, and in Polish. Three generated attempts produced garbled dates and an English day header.",
       "audio": "media/audio/miesiac.mp3",
       "sentence": {
         "pl": "To jest trudny miesiąc.",
@@ -5371,6 +5371,332 @@
         "lemmas": [
           "kończyć",
           "praca"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "drzwi",
+      "word": "drzwi",
+      "gloss": "door",
+      "pos": "noun",
+      "ipa": "dʐvʲi",
+      "note": "always plural, like pieniądze — there is no singular",
+      "image": "media/img/drzwi.webp",
+      "image_alt": "a pair of new wooden double doors",
+      "image_basis": "sentence",
+      "image_prompt": "A pair of tall new wooden double doors, closed, seen straight on and filling the frame. Plain wall around them. No text or lettering. Square image.",
+      "audio": "media/audio/drzwi.mp3",
+      "sentence": {
+        "pl": "To są nowe drzwi.",
+        "en": "These are new doors.",
+        "gap": "To są nowe ___.",
+        "answer": "drzwi",
+        "answer_lemma": "drzwi",
+        "audio": "media/audio/drzwi__sentence.mp3",
+        "lemmas": [
+          "to",
+          "być",
+          "nowy",
+          "drzwi"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "autobus",
+      "word": "autobus",
+      "gloss": "bus",
+      "pos": "noun",
+      "ipa": "awˈtɔbus",
+      "note": null,
+      "image": "media/img/autobus.webp",
+      "image_alt": "a bus at a stop with its doors open",
+      "image_basis": "sentence",
+      "image_prompt": "A city bus pulled up at a stop with its doors open, seen from the pavement, school buildings behind. Daylight. No readable signage. Square image.",
+      "audio": "media/audio/autobus.mp3",
+      "sentence": {
+        "pl": "Jadę autobusem do szkoły.",
+        "en": "I travel to school by bus.",
+        "gap": "Jadę ___ do szkoły.",
+        "answer": "autobusem",
+        "answer_lemma": "autobus",
+        "audio": "media/audio/autobus__sentence.mp3",
+        "lemmas": [
+          "jechać",
+          "autobus",
+          "do",
+          "szkoła"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "ser",
+      "word": "ser",
+      "gloss": "cheese",
+      "pos": "noun",
+      "ipa": "sɛr",
+      "note": null,
+      "image": "media/img/ser.webp",
+      "image_alt": "a slice of bread with cheese on it",
+      "image_basis": "sentence",
+      "image_prompt": "A slice of bread on a plate with a thick slice of yellow cheese laid on it, close up. Kitchen daylight. No text or lettering. Square image.",
+      "audio": "media/audio/ser.mp3",
+      "sentence": {
+        "pl": "Na chlebie jest ser.",
+        "en": "There is cheese on the bread.",
+        "gap": "Na chlebie jest ___.",
+        "answer": "ser",
+        "answer_lemma": "ser",
+        "audio": "media/audio/ser__sentence.mp3",
+        "lemmas": [
+          "na",
+          "chleb",
+          "być",
+          "ser"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "snieg",
+      "word": "śnieg",
+      "gloss": "snow",
+      "pos": "noun",
+      "ipa": "ɕɲɛk",
+      "note": null,
+      "image": "media/img/snieg.webp",
+      "image_alt": "snow falling on a park",
+      "image_basis": "sentence",
+      "image_prompt": "Snow falling heavily on a park, the grass and the branches already white, nobody about. Grey winter daylight. No text or lettering. Square image.",
+      "audio": "media/audio/snieg.mp3",
+      "sentence": {
+        "pl": "Zimą pada śnieg.",
+        "en": "In winter it snows.",
+        "gap": "Zimą pada ___.",
+        "answer": "śnieg",
+        "answer_lemma": "śnieg",
+        "audio": "media/audio/snieg__sentence.mp3",
+        "lemmas": [
+          "zima",
+          "padać",
+          "śnieg"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "dzisiaj",
+      "word": "dzisiaj",
+      "gloss": "today",
+      "pos": "adverb",
+      "ipa": "ˈd͡ʑiɕaj",
+      "note": null,
+      "image": "media/img/dzisiaj.webp",
+      "image_alt": "a desk calendar showing today's date",
+      "image_basis": "sentence",
+      "image_prompt": "A desk calendar standing squarely on a desk showing one single date, the page flat and still, a pen laid beside it. No words, only the number. Daylight. Square image.",
+      "audio": "media/audio/dzisiaj.mp3",
+      "sentence": {
+        "pl": "Dzisiaj kończę pracę.",
+        "en": "Today I finish work.",
+        "gap": "___ kończę pracę.",
+        "answer": "Dzisiaj",
+        "answer_lemma": "dzisiaj",
+        "audio": "media/audio/dzisiaj__sentence.mp3",
+        "lemmas": [
+          "dzisiaj",
+          "kończyć",
+          "praca"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "brac",
+      "word": "brać",
+      "gloss": "to take",
+      "pos": "verb",
+      "ipa": "brat͡ɕ",
+      "note": null,
+      "image": "media/img/brac.webp",
+      "image_alt": "a hand reaching for a book on a table",
+      "image_basis": "sentence",
+      "image_prompt": "A hand reaching down towards a book lying on a wooden table, fingers almost touching the cover, about to pick it up. The book is flat on the table. Daylight indoors. No readable text. Square image.",
+      "audio": "media/audio/brac.mp3",
+      "sentence": {
+        "pl": "Biorę książkę ze stołu.",
+        "en": "I take the book from the table.",
+        "gap": "___ książkę ze stołu.",
+        "answer": "Biorę",
+        "answer_lemma": "brać",
+        "audio": "media/audio/brac__sentence.mp3",
+        "lemmas": [
+          "brać",
+          "książka",
+          "z",
+          "stół"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "zamknac",
+      "word": "zamknąć",
+      "gloss": "to close",
+      "pos": "verb",
+      "ipa": "ˈzamknɔɲt͡ɕ",
+      "note": "the other end from otworzyć",
+      "image": "media/img/zamknac.webp",
+      "image_alt": "a hand pulling a window shut",
+      "image_basis": "sentence",
+      "image_prompt": "A hand pulling a window shut by its handle, the frame almost closed, seen from inside a room. Daylight beyond. No text or lettering. Square image.",
+      "audio": "media/audio/zamknac.mp3",
+      "sentence": {
+        "pl": "Muszę zamknąć okno.",
+        "en": "I must close the window.",
+        "gap": "Muszę ___ okno.",
+        "answer": "zamknąć",
+        "answer_lemma": "zamknąć",
+        "audio": "media/audio/zamknac__sentence.mp3",
+        "lemmas": [
+          "musieć",
+          "zamknąć",
+          "okno"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "piekny",
+      "word": "piękny",
+      "gloss": "beautiful",
+      "pos": "adjective",
+      "ipa": "ˈpjɛŋknɨ",
+      "note": null,
+      "image": "media/img/piekny.webp",
+      "image_alt": "a sunlit valley with a river running through it",
+      "image_basis": "sentence",
+      "image_prompt": "A wide sunlit valley with a river running through it, low green hills and a clear sky, plainly a lovely view. No text or lettering. Square image.",
+      "audio": "media/audio/piekny.mp3",
+      "sentence": {
+        "pl": "To jest piękny dzień.",
+        "en": "It is a beautiful day.",
+        "gap": "To jest ___ dzień.",
+        "answer": "piękny",
+        "answer_lemma": "piękny",
+        "audio": "media/audio/piekny__sentence.mp3",
+        "lemmas": [
+          "to",
+          "być",
+          "piękny",
+          "dzień"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "spodnie",
+      "word": "spodnie",
+      "gloss": "trousers",
+      "pos": "noun",
+      "ipa": "ˈspɔdɲɛ",
+      "note": "always plural, like drzwi",
+      "image": "media/img/spodnie.webp",
+      "image_alt": "a man looking down at and pointing at the black trousers he is wearing",
+      "image_basis": "sentence",
+      "image_prompt": "Supplied by the user, not generated. A man in a bedroom looking down at the black trousers he is wearing and pointing at them. Generated attempts gave folded cloth, then legs with no context — neither read as trousers.",
+      "audio": "media/audio/spodnie.mp3",
+      "sentence": {
+        "pl": "Moje spodnie są czarne.",
+        "en": "My trousers are black.",
+        "gap": "Moje ___ są czarne.",
+        "answer": "spodnie",
+        "answer_lemma": "spodnie",
+        "audio": "media/audio/spodnie__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "spodnie",
+          "być",
+          "czarny"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "krzeslo",
+      "word": "krzesło",
+      "gloss": "chair",
+      "pos": "noun",
+      "ipa": "ˈkʂɛswɔ",
+      "note": null,
+      "image": "media/img/krzeslo.webp",
+      "image_alt": "a single wooden chair against a wall",
+      "image_basis": "sentence",
+      "image_prompt": "A single wooden chair standing alone against a plain painted wall indoors, seen slightly from the side. Daylight. No text or lettering. Square image.",
+      "audio": "media/audio/krzeslo.mp3",
+      "sentence": {
+        "pl": "Siedzę na krześle.",
+        "en": "I am sitting on the chair.",
+        "gap": "Siedzę na ___.",
+        "answer": "krześle",
+        "answer_lemma": "krzesło",
+        "audio": "media/audio/krzeslo__sentence.mp3",
+        "lemmas": [
+          "siedzieć",
+          "na",
+          "krzesło"
         ]
       },
       "cards": [

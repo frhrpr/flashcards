@@ -682,6 +682,13 @@ Deferred on purpose: 4 grades instead of 2, and a stats screen.
   `Pies je chleb.` is not. Prefer 1st and 2nd person for verbs, and reach for
   `deck/frequency.csv` when a sentence needs a noun the deck lacks — a
   natural sentence with one unmet common word beats a strange one.
+- **`tools/audio.py --tts-words` without `--only` rebuilds every word.** The
+  flag changes each clip's fingerprint, so a run meant to replace one poor
+  Commons recording re-synthesised all 166 of them, deleted `ATTRIBUTION.md`
+  and cleared `reviewed` on every note. Recoverable — `git checkout -- media/`
+  restored the audio, and the flags were rebuilt from `git show HEAD` — but
+  scope it: `--go --tts-words --only piekny`. The same applies to any flag
+  that alters the fingerprint.
 - **Audio is generated once and committed**, never fetched per review — a
   card is seen ~20 times, so on-demand would re-synthesise the same string
   every time and put a round-trip in front of every flip. `tools/tts.py`

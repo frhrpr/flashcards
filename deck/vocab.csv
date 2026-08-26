@@ -175,3 +175,16 @@ ucho,ucho,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-26,
 koszula,koszula,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-26,
 ciepły,cieply,adjective,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-26,
 kończyć,konczyc,verb,yes,carded,frequency rank 441,2026-08-26,
+drzwi,drzwi,noun,yes,carded,frequency rank 183,2026-08-26,
+autobus,autobus,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-26,
+ser,ser,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-26,
+śnieg,snieg,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-26,
+dzisiaj,dzisiaj,adverb,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-26,
+brać,brac,verb,yes,carded,frequency rank 159,2026-08-26,
+zamknąć,zamknac,verb,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-26,
+piękny,piekny,adjective,yes,carded,frequency rank 206,2026-08-26,
+spodnie,spodnie,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-26,
+krzesło,krzeslo,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-26,
+zima,zima,noun,yes,queued,sentence for śnieg,2026-08-26,"met in a sentence, not carded"
+czarny,czarny,adjective,yes,queued,sentence for spodnie,2026-08-26,"met in a sentence, not carded"
+z,z,preposition,no,known,sentence for brać; governs genitive or instrumental,2026-08-26,learned through the case it governs

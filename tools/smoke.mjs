@@ -75,10 +75,12 @@ const shuffle = a => { for (let i = a.length - 1; i > 0; i--) {
 const fetch = async () => ({ ok: true, json: async () => (${JSON.stringify(manifest)}) });
 let html = "";
 const appEl = { set innerHTML(v){ html = v; }, get innerHTML(){ return html; },
+  appendChild(el){ html += (el && el.innerHTML) || ''; },
   querySelectorAll: () => [], querySelector: () => ${"({ children: new Proxy({}, { get: () => ({ className: \"\" }) }) })"} };
 const countEl = { textContent: "" };
-const document = { createElement: () => ({ className: '', innerHTML: '',
-  querySelectorAll: () => [], querySelector: () => ({ addEventListener(){} }),
+const document = { createElement: () => ({ className: '', id: '', innerHTML: '',
+  addEventListener(){}, querySelectorAll: () => [],
+  querySelector: () => ({ addEventListener(){} }),
   remove(){}, appendChild(){} }), body: { appendChild(){} } };
 const _stub = ${el.toString()};
 const $ = sel => sel === "#bar" ? _barStub : _stub();
