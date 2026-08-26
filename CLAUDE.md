@@ -636,6 +636,15 @@ direction, or a spatial relation.
 Some words cannot be depicted at all — `być`, `teraz`. They keep their
 flagged image; the gloss and sentence carry the meaning.
 
+**Do not keep regenerating a bad image. Say what is wrong and stop.** Each
+attempt costs money and, more to the point, a second and third roll of the
+same dice usually fails the same way — the podium came back numbered 2, 2, 3
+and the lift panel had 10 on four buttons, both the same counting fault, and
+a reroll would not have fixed either. One regeneration after a prompt has
+genuinely been rethought is fine. After that, describe the fault and let the
+user supply a picture; he has done this several times and it is faster and
+better than another spin. Asked on 2026-08-26.
+
 **Do not revise an approved note to tidy something up.** Once `reviewed` is
 set, changing its sentence or regenerating its image spends money and, more
 to the point, spends the user's attention on re-reviewing a card he had

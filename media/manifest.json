@@ -584,12 +584,12 @@
     "text": "cztery"
   },
   "media/audio/cztery__sentence.mp3": {
-    "fingerprint": "1a0955597dd5d402",
-    "gain_db": 0.7,
+    "fingerprint": "fc8e3f8867929b0e",
+    "gain_db": 0.1,
     "model": "eleven_multilingual_v2",
-    "seconds": 1.18,
+    "seconds": 1.67,
     "source": "tts",
-    "text": "Mam cztery jajka.",
+    "text": "To jest kontener numer cztery.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1025,12 +1025,12 @@
     "text": "dziesięć"
   },
   "media/audio/dziesiec__sentence.mp3": {
-    "fingerprint": "55d65b8dcd4f3d05",
-    "gain_db": 0.0,
+    "fingerprint": "496fbacde00032b8",
+    "gain_db": 0.9,
     "model": "eleven_multilingual_v2",
-    "seconds": 1.75,
+    "seconds": 1.7,
     "source": "tts",
-    "text": "W pokoju jest dziesięć krzeseł.",
+    "text": "Zostało dziesięć kilometrów.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1046,12 +1046,12 @@
     "text": "dziewięć"
   },
   "media/audio/dziewiec__sentence.mp3": {
-    "fingerprint": "b47f759be69317cc",
-    "gain_db": -0.3,
+    "fingerprint": "ffa7062ac6856cb0",
+    "gain_db": -1.4,
     "model": "eleven_multilingual_v2",
-    "seconds": 1.46,
+    "seconds": 1.52,
     "source": "tts",
-    "text": "W parku jest dziewięć ławek.",
+    "text": "Mój pokój ma numer dziewięć.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1382,12 +1382,12 @@
     "text": "jeden"
   },
   "media/audio/jeden__sentence.mp3": {
-    "fingerprint": "f2c7ee8b8bc2d783",
-    "gain_db": -2.8,
+    "fingerprint": "30d3366232a88be4",
+    "gain_db": -1.6,
     "model": "eleven_multilingual_v2",
-    "seconds": 0.97,
+    "seconds": 1.2,
     "source": "tts",
-    "text": "Mam jeden klucz.",
+    "text": "To jest tor numer jeden.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -3049,12 +3049,12 @@
     "text": "pięć"
   },
   "media/audio/piec_5__sentence.mp3": {
-    "fingerprint": "a04ff81b5039cd9a",
-    "gain_db": 0.0,
+    "fingerprint": "0eca85dd3636e588",
+    "gain_db": 1.2,
     "model": "eleven_multilingual_v2",
-    "seconds": 1.1,
+    "seconds": 1.18,
     "source": "tts",
-    "text": "Mam pięć kluczy.",
+    "text": "Mój tor ma numer pięć.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -4310,12 +4310,12 @@
     "text": "sześć"
   },
   "media/audio/szesc__sentence.mp3": {
-    "fingerprint": "bc6daea4d15f4369",
-    "gain_db": 0.6,
+    "fingerprint": "0ac79d3f72c1cdb9",
+    "gain_db": 0.5,
     "model": "eleven_multilingual_v2",
-    "seconds": 1.67,
+    "seconds": 1.57,
     "source": "tts",
-    "text": "W domu jest sześć okien.",
+    "text": "Czekam na autobus numer sześć.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -4500,12 +4500,12 @@
     "text": "trzy"
   },
   "media/audio/trzy__sentence.mp3": {
-    "fingerprint": "0b6bb4049038b552",
-    "gain_db": 1.8,
+    "fingerprint": "e1cd93c438b63df4",
+    "gain_db": 0.3,
     "model": "eleven_multilingual_v2",
-    "seconds": 1.12,
+    "seconds": 1.1,
     "source": "tts",
-    "text": "Widzę trzy ptaki.",
+    "text": "To jest dom numer trzy.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },

@@ -7708,21 +7708,23 @@
       "ipa": "ˈjɛdɛn",
       "note": null,
       "image": "media/img/jeden.webp",
-      "image_alt": "one",
-      "image_basis": "word",
+      "image_alt": "the number 1 painted on a running track lane",
+      "image_basis": "sentence",
       "image_prompt": "A large white numeral 1 painted on the red surface of a running track lane, seen from directly above. No words, only the numbers. Square image.",
       "audio": "media/audio/jeden.mp3",
       "sentence": {
-        "pl": "Mam jeden klucz.",
-        "en": "I have one key.",
-        "gap": "Mam ___ klucz.",
+        "pl": "To jest tor numer jeden.",
+        "en": "This is lane number one.",
+        "gap": "To jest tor numer ___.",
         "answer": "jeden",
         "answer_lemma": "jeden",
         "audio": "media/audio/jeden__sentence.mp3",
         "lemmas": [
-          "mieć",
-          "jeden",
-          "klucz"
+          "to",
+          "być",
+          "tor",
+          "numer",
+          "jeden"
         ]
       },
       "cards": [
@@ -7740,7 +7742,7 @@
       "ipa": "dva",
       "note": null,
       "image": "media/img/dwa.webp",
-      "image_alt": "two",
+      "image_alt": "the number 2 on a locker door",
       "image_basis": "word",
       "image_prompt": "A metal numeral 2 screwed to a painted locker door, seen close. No words, only the numbers. Square image.",
       "audio": "media/audio/dwa.mp3",
@@ -7772,21 +7774,23 @@
       "ipa": "tʂɨ",
       "note": null,
       "image": "media/img/trzy.webp",
-      "image_alt": "three",
-      "image_basis": "word",
+      "image_alt": "the number 3 on a letterbox at a garden gate",
+      "image_basis": "sentence",
       "image_prompt": "A numeral 3 on the side of a green metal letterbox at a garden gate. No words, only the numbers. Square image.",
       "audio": "media/audio/trzy.mp3",
       "sentence": {
-        "pl": "Widzę trzy ptaki.",
-        "en": "I see three birds.",
-        "gap": "Widzę ___ ptaki.",
+        "pl": "To jest dom numer trzy.",
+        "en": "This is house number three.",
+        "gap": "To jest dom numer ___.",
         "answer": "trzy",
         "answer_lemma": "trzy",
         "audio": "media/audio/trzy__sentence.mp3",
         "lemmas": [
-          "widzieć",
-          "trzy",
-          "ptak"
+          "to",
+          "być",
+          "dom",
+          "numer",
+          "trzy"
         ]
       },
       "cards": [
@@ -7804,21 +7808,23 @@
       "ipa": "ˈt͡ʂtɛrɨ",
       "note": null,
       "image": "media/img/cztery.webp",
-      "image_alt": "four",
-      "image_basis": "word",
+      "image_alt": "the number 4 stencilled on a shipping container",
+      "image_basis": "sentence",
       "image_prompt": "A large white stencilled numeral 4 painted on the end of a rusty shipping container. No words, only the numbers. Square image.",
       "audio": "media/audio/cztery.mp3",
       "sentence": {
-        "pl": "Mam cztery jajka.",
-        "en": "I have four eggs.",
-        "gap": "Mam ___ jajka.",
+        "pl": "To jest kontener numer cztery.",
+        "en": "This is container number four.",
+        "gap": "To jest kontener numer ___.",
         "answer": "cztery",
         "answer_lemma": "cztery",
         "audio": "media/audio/cztery__sentence.mp3",
         "lemmas": [
-          "mieć",
-          "cztery",
-          "jajko"
+          "to",
+          "być",
+          "kontener",
+          "numer",
+          "cztery"
         ]
       },
       "cards": [
@@ -7836,21 +7842,23 @@
       "ipa": "pjɛɲt͡ɕ",
       "note": null,
       "image": "media/img/piec_5.webp",
-      "image_alt": "five",
-      "image_basis": "word",
+      "image_alt": "the number 5 on a swimming pool starting block",
+      "image_basis": "sentence",
       "image_prompt": "A large numeral 5 painted on a swimming pool starting block, seen from above. No words, only the numbers. Square image.",
       "audio": "media/audio/piec_5.mp3",
       "sentence": {
-        "pl": "Mam pięć kluczy.",
-        "en": "I have five keys.",
-        "gap": "Mam ___ kluczy.",
+        "pl": "Mój tor ma numer pięć.",
+        "en": "My lane is number five.",
+        "gap": "Mój tor ma numer ___.",
         "answer": "pięć",
         "answer_lemma": "pięć",
         "audio": "media/audio/piec_5__sentence.mp3",
         "lemmas": [
+          "mój",
+          "tor",
           "mieć",
-          "pięć",
-          "klucz"
+          "numer",
+          "pięć"
         ]
       },
       "cards": [
@@ -7868,23 +7876,23 @@
       "ipa": "ʂɛɕt͡ɕ",
       "note": null,
       "image": "media/img/szesc.webp",
-      "image_alt": "six",
-      "image_basis": "word",
+      "image_alt": "the number 6 on a bus stop sign",
+      "image_basis": "sentence",
       "image_prompt": "A numeral 6 on a round bus stop sign fixed to a pole against a grey sky. No words, only the numbers. Square image.",
       "audio": "media/audio/szesc.mp3",
       "sentence": {
-        "pl": "W domu jest sześć okien.",
-        "en": "There are six windows in the house.",
-        "gap": "W domu jest ___ okien.",
+        "pl": "Czekam na autobus numer sześć.",
+        "en": "I am waiting for the number six bus.",
+        "gap": "Czekam na autobus numer ___.",
         "answer": "sześć",
         "answer_lemma": "sześć",
         "audio": "media/audio/szesc__sentence.mp3",
         "lemmas": [
-          "w",
-          "dom",
-          "być",
-          "sześć",
-          "okno"
+          "czekać",
+          "na",
+          "autobus",
+          "numer",
+          "sześć"
         ]
       },
       "cards": [
@@ -7902,7 +7910,7 @@
       "ipa": "ˈɔɕɛm",
       "note": null,
       "image": "media/img/osiem.webp",
-      "image_alt": "eight",
+      "image_alt": "the number 8 on a black pool ball",
       "image_basis": "word",
       "image_prompt": "The black number 8 ball on the green baize of a pool table, seen close. No words, only the numbers. Square image.",
       "audio": "media/audio/osiem.mp3",
@@ -7934,23 +7942,23 @@
       "ipa": "ˈd͡ʑɛvjɛɲt͡ɕ",
       "note": null,
       "image": "media/img/dziewiec.webp",
-      "image_alt": "nine",
-      "image_basis": "word",
+      "image_alt": "the number 9 on a hotel key fob",
+      "image_basis": "sentence",
       "image_prompt": "A hotel key fob stamped with the numeral 9, lying on a wooden counter. No words, only the numbers. Square image.",
       "audio": "media/audio/dziewiec.mp3",
       "sentence": {
-        "pl": "W parku jest dziewięć ławek.",
-        "en": "There are nine benches in the park.",
-        "gap": "W parku jest ___ ławek.",
+        "pl": "Mój pokój ma numer dziewięć.",
+        "en": "My room is number nine.",
+        "gap": "Mój pokój ma numer ___.",
         "answer": "dziewięć",
         "answer_lemma": "dziewięć",
         "audio": "media/audio/dziewiec__sentence.mp3",
         "lemmas": [
-          "w",
-          "park",
-          "być",
-          "dziewięć",
-          "ławka"
+          "mój",
+          "pokój",
+          "mieć",
+          "numer",
+          "dziewięć"
         ]
       },
       "cards": [
@@ -7968,23 +7976,21 @@
       "ipa": "ˈd͡ʑɛɕɛɲt͡ɕ",
       "note": null,
       "image": "media/img/dziesiec.webp",
-      "image_alt": "ten",
-      "image_basis": "word",
+      "image_alt": "the number 10 on a roadside kilometre post",
+      "image_basis": "sentence",
       "image_prompt": "A white roadside kilometre marker post with the numeral 10 on it, grass behind. No words, only the numbers. Square image.",
       "audio": "media/audio/dziesiec.mp3",
       "sentence": {
-        "pl": "W pokoju jest dziesięć krzeseł.",
-        "en": "There are ten chairs in the room.",
-        "gap": "W pokoju jest ___ krzeseł.",
+        "pl": "Zostało dziesięć kilometrów.",
+        "en": "Ten kilometres left.",
+        "gap": "Zostało ___ kilometrów.",
         "answer": "dziesięć",
         "answer_lemma": "dziesięć",
         "audio": "media/audio/dziesiec__sentence.mp3",
         "lemmas": [
-          "w",
-          "pokój",
-          "być",
+          "zostać",
           "dziesięć",
-          "krzesło"
+          "kilometr"
         ]
       },
       "cards": [
@@ -8002,7 +8008,7 @@
       "ipa": "ˈdruɡi",
       "note": null,
       "image": "media/img/drugi.webp",
-      "image_alt": "second",
+      "image_alt": "a silver medal held up beside a running track",
       "image_basis": "sentence",
       "image_prompt": "A silver medal on a blue ribbon held up close in a person's hand, a running track blurred behind. No text or lettering. Square image.",
       "audio": "media/audio/drugi.mp3",
