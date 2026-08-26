@@ -11,12 +11,12 @@
     "text": "bardzo"
   },
   "media/audio/bardzo__sentence.mp3": {
-    "fingerprint": "fcb6e2d1b77973e9",
-    "gain_db": 0.1,
+    "fingerprint": "11a08288cc271b1c",
+    "gain_db": -1.1,
     "model": "eleven_multilingual_v2",
-    "seconds": 1.46,
+    "seconds": 1.33,
     "source": "tts",
-    "text": "Miasto jest bardzo duże.",
+    "text": "To coś jest bardzo duże!",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },

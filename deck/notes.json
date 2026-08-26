@@ -4645,14 +4645,15 @@
       "image_prompt": "A small figure seen from behind craning their head right back to look up at something enormous that runs out of the top of the frame. Daylight. No text or lettering. Square image.",
       "audio": "media/audio/bardzo.mp3",
       "sentence": {
-        "pl": "Miasto jest bardzo duże.",
-        "en": "The town is very big.",
-        "gap": "Miasto jest ___ duże.",
+        "pl": "To coś jest bardzo duże!",
+        "en": "That thing is very big!",
+        "gap": "To coś jest ___ duże!",
         "answer": "bardzo",
         "answer_lemma": "bardzo",
         "audio": "media/audio/bardzo__sentence.mp3",
         "lemmas": [
-          "miasto",
+          "to",
+          "coś",
           "być",
           "bardzo",
           "duży"
