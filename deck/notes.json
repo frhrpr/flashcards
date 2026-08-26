@@ -3999,7 +3999,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "polski",
@@ -4423,7 +4423,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "priority": true
     },
     {
@@ -4766,7 +4766,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "wtorek",
@@ -4797,7 +4797,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "sroda",
@@ -4828,7 +4828,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "czwartek",
@@ -4859,7 +4859,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "piatek",
@@ -4891,7 +4891,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "sobota",
@@ -4923,7 +4923,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "niedziela",
@@ -4953,7 +4953,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "cos",
@@ -4986,7 +4986,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "lekarz",
@@ -5020,7 +5020,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "siedem",
@@ -5054,7 +5054,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     }
   ]
 }
