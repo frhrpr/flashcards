@@ -614,6 +614,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/dlugi.mp3": {
+    "author": "Kajervi",
+    "commons_file": "Pl-długi.ogg",
+    "fingerprint": "ec4569141cf63aaa",
+    "gain_db": 2.5,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-d%C5%82ugi.ogg",
+    "seconds": 0.73,
+    "source": "commons",
+    "text": "długi"
+  },
+  "media/audio/dlugi__sentence.mp3": {
+    "fingerprint": "77dc17f30a690a59",
+    "gain_db": 0.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.23,
+    "source": "tts",
+    "text": "Droga jest długa.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/dobry.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-dobry.ogg",
@@ -779,6 +800,27 @@
     "seconds": 1.75,
     "source": "tts",
     "text": "Małe dziecko idzie do parku.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/dziekowac.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-dziękować.ogg",
+    "fingerprint": "f0b5bdcf0adeb8f7",
+    "gain_db": 0.0,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-dzi%C4%99kowa%C4%87.ogg",
+    "seconds": 1.23,
+    "source": "commons",
+    "text": "dziękować"
+  },
+  "media/audio/dziekowac__sentence.mp3": {
+    "fingerprint": "7e69ddea6cc57886",
+    "gain_db": 1.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.99,
+    "source": "tts",
+    "text": "Dziękuję ojcu.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1413,6 +1455,48 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/lato.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-lato.ogg",
+    "fingerprint": "8fbf2c7bc8b24388",
+    "gain_db": -1.0,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-lato.ogg",
+    "seconds": 0.81,
+    "source": "commons",
+    "text": "lato"
+  },
+  "media/audio/lato__sentence.mp3": {
+    "fingerprint": "90d12c8470ecc4e2",
+    "gain_db": -0.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.25,
+    "source": "tts",
+    "text": "Lato jest ciepłe.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/latwy.mp3": {
+    "author": "Kajervi",
+    "commons_file": "Pl-łatwy.ogg",
+    "fingerprint": "f0ad077219c04b93",
+    "gain_db": -4.8,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-%C5%82atwy.ogg",
+    "seconds": 0.81,
+    "source": "commons",
+    "text": "łatwy"
+  },
+  "media/audio/latwy__sentence.mp3": {
+    "fingerprint": "69235d4637ad093c",
+    "gain_db": -0.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.18,
+    "source": "tts",
+    "text": "To jest łatwe słowo.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/lawka.mp3": {
     "author": "Frizabela",
     "commons_file": "Pl-ławka.ogg",
@@ -1473,6 +1557,27 @@
     "seconds": 1.38,
     "source": "tts",
     "text": "Lekarz pyta, co mnie boli.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/list.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-list.ogg",
+    "fingerprint": "aa97b47dc8af4a64",
+    "gain_db": 0.3,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-list.ogg",
+    "seconds": 0.73,
+    "source": "commons",
+    "text": "list"
+  },
+  "media/audio/list__sentence.mp3": {
+    "fingerprint": "a601dce57675709d",
+    "gain_db": -0.2,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.28,
+    "source": "tts",
+    "text": "Piszę list do matki.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1965,6 +2070,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/myc.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-myć.ogg",
+    "fingerprint": "3c04e938f9846901",
+    "gain_db": -0.3,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-my%C4%87.ogg",
+    "seconds": 1.44,
+    "source": "commons",
+    "text": "myć"
+  },
+  "media/audio/myc__sentence.mp3": {
+    "fingerprint": "1c3da2f97a5eccbf",
+    "gain_db": 0.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.18,
+    "source": "tts",
+    "text": "Rano myję ręce.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/myslec.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-myśleć.ogg",
@@ -2070,6 +2196,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/nosic.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-nosić.ogg",
+    "fingerprint": "1f7c86f201267a20",
+    "gain_db": -1.3,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-nosi%C4%87.ogg",
+    "seconds": 1.15,
+    "source": "commons",
+    "text": "nosić"
+  },
+  "media/audio/nosic__sentence.mp3": {
+    "fingerprint": "8e8559f46c0872cc",
+    "gain_db": 0.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.54,
+    "source": "tts",
+    "text": "Chłopiec nosi czarne buty.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/nowy.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-nowy.ogg",
@@ -2109,6 +2256,27 @@
     "seconds": 1.65,
     "source": "tts",
     "text": "Nie pamiętam numeru telefonu.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/obiad.mp3": {
+    "author": "Wyksztalcioch",
+    "commons_file": "Pl-obiad.ogg",
+    "fingerprint": "edf825c3c1646049",
+    "gain_db": -2.8,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-obiad.ogg",
+    "seconds": 0.6,
+    "source": "commons",
+    "text": "obiad"
+  },
+  "media/audio/obiad__sentence.mp3": {
+    "fingerprint": "fd4be28ede9c9494",
+    "gain_db": 1.5,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.31,
+    "source": "tts",
+    "text": "Jem obiad w kuchni.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -2509,6 +2677,27 @@
     "seconds": 1.28,
     "source": "tts",
     "text": "Pociąg jedzie do miasta.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/pokoj.mp3": {
+    "author": "Wyksztalcioch",
+    "commons_file": "Pl-pokój.ogg",
+    "fingerprint": "d60bc5bd2791328f",
+    "gain_db": 0.4,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-pok%C3%B3j.ogg",
+    "seconds": 0.57,
+    "source": "commons",
+    "text": "pokój"
+  },
+  "media/audio/pokoj__sentence.mp3": {
+    "fingerprint": "a0275c7e154971fb",
+    "gain_db": -1.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.28,
+    "source": "tts",
+    "text": "W pokoju jest łóżko.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -3287,6 +3476,27 @@
     "seconds": 1.18,
     "source": "tts",
     "text": "Chcę zobaczyć świat.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/szalik.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-szalik.ogg",
+    "fingerprint": "03d73df01a07b824",
+    "gain_db": -0.2,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-szalik.ogg",
+    "seconds": 1.38,
+    "source": "commons",
+    "text": "szalik"
+  },
+  "media/audio/szalik__sentence.mp3": {
+    "fingerprint": "d3ad3c15c5539635",
+    "gain_db": 0.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.04,
+    "source": "tts",
+    "text": "Mam nowy szalik.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -4305,6 +4515,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/dlugi.webp": {
+    "bytes": 78204,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "5c9caaf01e187061",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A very long queue of people winding away from the viewer down a street and out of sight round a corner. Daylight. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/dobry.webp": {
     "bytes": 41954,
     "check": {
@@ -4414,6 +4640,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "One child of about seven standing and smiling, whole figure in frame. Plain simple background, no other people, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/dziekowac.webp": {
+    "bytes": 35704,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "The man appears to be the woman's peer rather than a father.",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "4782e8cfea07eae6",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "One person handing a small wrapped gift to another, the receiver smiling and putting a hand to their chest in thanks. Daylight indoors. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -4860,6 +5102,38 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/lato.webp": {
+    "bytes": 178432,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "9c615bb7f184af3d",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A meadow of tall grass and wildflowers under a hot blue sky, heat haze on the horizon, trees in full leaf. No people. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/latwy.webp": {
+    "bytes": 33366,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "The book pages contain visible text lines.",
+      "verdict": "flag",
+      "why": "contains text or lettering"
+    },
+    "fingerprint": "00bd0039d967a569",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A woman leaning back in a chair with a thin open book resting on one hand, relaxed and smiling faintly, plainly finding it no trouble. Warm indoor light. No readable text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/lawka.webp": {
     "bytes": 148064,
     "check": {
@@ -4905,6 +5179,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A doctor in a white coat with a stethoscope sitting facing a patient in a consulting room, listening to them. Daylight. No readable text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/list.webp": {
+    "bytes": 59686,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "The letter contains handwritten text and the envelope has a postmark with text.",
+      "verdict": "flag",
+      "why": "contains text or lettering"
+    },
+    "fingerprint": "da61401da7f81cfa",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A handwritten letter folded beside an open envelope on a table, a stamp on the envelope. The handwriting is indistinct. Daylight. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -5271,6 +5561,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/myc.webp": {
+    "bytes": 24084,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "6ec8e92e88f81d41",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Two hands being washed under a running tap, soap and water on them, close up. Bathroom daylight. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/myslec.webp": {
     "bytes": 26156,
     "check": {
@@ -5346,6 +5652,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/nosic.webp": {
+    "bytes": 168212,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "ed65ea07c84fece4",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A boy sitting on a doorstep pulling on a black boot, the other already on his foot. Daylight outdoors. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/nowy.webp": {
     "bytes": 15092,
     "check": {
@@ -5375,6 +5697,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A hand holding a phone, the screen showing a keypad of digits, seen over the shoulder. Daylight. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/obiad.webp": {
+    "bytes": 54578,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "6521523936e7027c",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A hot dinner on a plate at a kitchen table — meat, potatoes and vegetables — with cutlery beside it, seen from just above. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -5658,6 +5996,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A passenger train moving along a track towards the viewer, seen from the side of the line, town buildings in the distance. Daylight. No readable text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/pokoj.webp": {
+    "bytes": 31136,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "ce2b7701936bad50",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A tidy bedroom seen from the doorway with a made bed, a wardrobe and a window, nobody in it. Daylight. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -6188,6 +6542,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A person standing in front of a large world map on a wall, looking up at it. Seen from behind. Daylight. No readable text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/szalik.webp": {
+    "bytes": 168574,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "5466673f085b3e84",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A striped red and grey woollen scarf lying rolled on a wooden bench, fringed ends hanging over the edge. Daylight. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },

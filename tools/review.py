@@ -107,43 +107,48 @@ def build(notes, manifest, dest):
 </div>'''
 
     pending = [n["id"] for n in notes if not n.get("reviewed")]
-    html = f'''<!doctype html><meta charset=utf-8><title>Deck review</title><style>
+    html = f'''<!doctype html><meta charset=utf-8><title>Deck review</title>
+<meta name=color-scheme content="dark"><style>
+:root{{--bg:#15171a;--card:#1d2024;--ink:#e6e8e6;--dim:#9aa0a6;--line:#2e3339;
+--sunk:#101215;--bad:#e8796b;--ok:#7cc088;--badbg:#2a1d1c}}
 body{{font-family:system-ui,sans-serif;max-width:52rem;margin:2rem auto;padding:0 1rem;
-background:#E8EBE4;color:#181B18;line-height:1.5}}
-h1{{font-size:1.15rem;margin-bottom:.25rem}}
-.sum{{font-size:.85rem;color:#6C736B;margin-bottom:1.5rem}}
-.c{{background:#FCFDFB;border:1px solid #C9CFC4;border-left:3px solid #A32C22;
+background:var(--bg);color:var(--ink);line-height:1.5}}
+h1{{font-size:1.15rem;margin-bottom:.25rem;font-weight:500}}
+.sum{{font-size:.85rem;color:var(--dim);margin-bottom:1.5rem}}
+.c{{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--bad);
 padding:.9rem 1.1rem;margin:1rem 0;display:flex;gap:1.1rem;align-items:flex-start}}
 .pic{{flex:0 0 11rem}}
-.pic img{{width:11rem;height:11rem;object-fit:contain;background:#F2F4F0;
-border:1px solid #C9CFC4}}
+/* images are lit for a pale page, so give them their own light mount rather
+   than floating them on the dark one */
+.pic img{{width:11rem;height:11rem;object-fit:contain;background:#f4f5f2;
+border:1px solid var(--line);border-radius:2px}}
 .noimg{{width:11rem;height:11rem;display:flex;align-items:center;justify-content:center;
-background:#F2F4F0;color:#A32C22;font-size:.78rem;border:1px solid #C9CFC4}}
+background:var(--sunk);color:var(--bad);font-size:.78rem;border:1px solid var(--line)}}
 .body{{flex:1;min-width:0}}
 @media (max-width:38rem){{.c{{flex-direction:column}}.pic,.pic img,.noimg{{width:100%}}}}
-.c.ok{{border-left-color:#2F6B3E;opacity:.62}}
+.c.ok{{border-left-color:var(--ok);opacity:.55}}
 .h{{display:flex;align-items:baseline;gap:.6rem;flex-wrap:wrap;margin-bottom:.6rem}}
 .w{{font-size:1.5rem;font-weight:300}}
-.ipa,.pos{{font-family:ui-monospace,monospace;font-size:.75rem;color:#6C736B}}
-.gl{{color:#6C736B}}
+.ipa,.pos{{font-family:ui-monospace,monospace;font-size:.75rem;color:var(--dim)}}
+.gl{{color:var(--dim)}}
 .st{{margin-left:auto;font-family:ui-monospace,monospace;font-size:.65rem;
-letter-spacing:.1em;color:#A32C22}}
-.c.ok .st{{color:#2F6B3E}}
+letter-spacing:.1em;color:var(--bad)}}
+.c.ok .st{{color:var(--ok)}}
 .row{{display:flex;align-items:center;gap:.8rem;margin:.25rem 0}}
 .lab{{flex:0 0 11rem;font-size:.8rem}}
-.lab em{{display:block;font-style:normal;font-size:.68rem;color:#6C736B;
+.lab em{{display:block;font-style:normal;font-size:.68rem;color:var(--dim);
 font-family:ui-monospace,monospace}}
 audio{{flex:1;height:2rem}}
-.pl{{font-size:1.05rem;margin-top:.7rem}} .en{{font-size:.85rem;color:#6C736B}}
-.gap{{margin-top:.6rem;padding-top:.5rem;border-top:1px solid #E8EBE4;
-font-family:ui-monospace,monospace;font-size:.7rem;color:#6C736B}}
-.bad{{color:#A32C22}}
-.flag{{margin-top:.4rem;padding:.35rem .5rem;border-left:2px solid #A32C22;
-background:#F6EDEC;font-family:ui-monospace,monospace;font-size:.62rem;
-line-height:1.45;color:#A32C22}}
-.flag em{{display:block;font-style:normal;color:#6C736B;margin-top:.2rem}}
+.pl{{font-size:1.05rem;margin-top:.7rem}} .en{{font-size:.85rem;color:var(--dim)}}
+.gap{{margin-top:.6rem;padding-top:.5rem;border-top:1px solid var(--line);
+font-family:ui-monospace,monospace;font-size:.7rem;color:var(--dim)}}
+.bad{{color:var(--bad)}}
+.flag{{margin-top:.4rem;padding:.35rem .5rem;border-left:2px solid var(--bad);
+background:var(--badbg);font-family:ui-monospace,monospace;font-size:.62rem;
+line-height:1.45;color:var(--bad)}}
+.flag em{{display:block;font-style:normal;color:var(--dim);margin-top:.2rem}}
 .chk{{margin-top:.4rem;font-family:ui-monospace,monospace;font-size:.6rem;
-color:#6C736B}}</style>
+color:var(--dim)}}</style>
 <h1>Deck review — {len(notes)} notes, {len(pending)} awaiting approval</h1>
 <div class=sum>Everything for each note in one place — image, both recordings, sentence, gap.\nTell Claude which are wrong;
 anything you do not flag gets approved. Approved notes are dimmed and sink to the bottom.</div>

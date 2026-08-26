@@ -6031,6 +6031,330 @@
         "listening"
       ],
       "reviewed": true
+    },
+    {
+      "id": "obiad",
+      "word": "obiad",
+      "gloss": "dinner",
+      "pos": "noun",
+      "ipa": "ˈɔbjat",
+      "note": null,
+      "image": "media/img/obiad.webp",
+      "image_alt": "a plate of hot dinner on a kitchen table",
+      "image_basis": "sentence",
+      "image_prompt": "A hot dinner on a plate at a kitchen table — meat, potatoes and vegetables — with cutlery beside it, seen from just above. No text or lettering. Square image.",
+      "audio": "media/audio/obiad.mp3",
+      "sentence": {
+        "pl": "Jem obiad w kuchni.",
+        "en": "I eat dinner in the kitchen.",
+        "gap": "Jem ___ w kuchni.",
+        "answer": "obiad",
+        "answer_lemma": "obiad",
+        "audio": "media/audio/obiad__sentence.mp3",
+        "lemmas": [
+          "jeść",
+          "obiad",
+          "w",
+          "kuchnia"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "myc",
+      "word": "myć",
+      "gloss": "to wash",
+      "pos": "verb",
+      "ipa": "mɨt͡ɕ",
+      "note": null,
+      "image": "media/img/myc.webp",
+      "image_alt": "two hands being washed under a running tap",
+      "image_basis": "sentence",
+      "image_prompt": "Two hands being washed under a running tap, soap and water on them, close up. Bathroom daylight. No text or lettering. Square image.",
+      "audio": "media/audio/myc.mp3",
+      "sentence": {
+        "pl": "Rano myję ręce.",
+        "en": "In the morning I wash my hands.",
+        "gap": "Rano ___ ręce.",
+        "answer": "myję",
+        "answer_lemma": "myć",
+        "audio": "media/audio/myc__sentence.mp3",
+        "lemmas": [
+          "rano",
+          "myć",
+          "ręka"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "nosic",
+      "word": "nosić",
+      "gloss": "to wear",
+      "pos": "verb",
+      "ipa": "ˈnɔɕit͡ɕ",
+      "note": null,
+      "image": "media/img/nosic.webp",
+      "image_alt": "a boy pulling on his boots on a doorstep",
+      "image_basis": "sentence",
+      "image_prompt": "A boy sitting on a doorstep pulling on a black boot, the other already on his foot. Daylight outdoors. No text or lettering. Square image.",
+      "audio": "media/audio/nosic.mp3",
+      "sentence": {
+        "pl": "Chłopiec nosi czarne buty.",
+        "en": "The boy wears black shoes.",
+        "gap": "Chłopiec ___ czarne buty.",
+        "answer": "nosi",
+        "answer_lemma": "nosić",
+        "audio": "media/audio/nosic__sentence.mp3",
+        "lemmas": [
+          "chłopiec",
+          "nosić",
+          "czarny",
+          "buty"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "lato",
+      "word": "lato",
+      "gloss": "summer",
+      "pos": "noun",
+      "ipa": "ˈlatɔ",
+      "note": null,
+      "image": "media/img/lato.webp",
+      "image_alt": "a summer meadow under a hot blue sky",
+      "image_basis": "sentence",
+      "image_prompt": "A meadow of tall grass and wildflowers under a hot blue sky, heat haze on the horizon, trees in full leaf. No people. No text or lettering. Square image.",
+      "audio": "media/audio/lato.mp3",
+      "sentence": {
+        "pl": "Lato jest ciepłe.",
+        "en": "Summer is warm.",
+        "gap": "___ jest ciepłe.",
+        "answer": "Lato",
+        "answer_lemma": "lato",
+        "audio": "media/audio/lato__sentence.mp3",
+        "lemmas": [
+          "lato",
+          "być",
+          "ciepły"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "szalik",
+      "word": "szalik",
+      "gloss": "scarf",
+      "pos": "noun",
+      "ipa": "ˈʂalik",
+      "note": null,
+      "image": "media/img/szalik.webp",
+      "image_alt": "a striped red and grey woollen scarf on a bench",
+      "image_basis": "sentence",
+      "image_prompt": "A striped red and grey woollen scarf lying rolled on a wooden bench, fringed ends hanging over the edge. Daylight. No text or lettering. Square image.",
+      "audio": "media/audio/szalik.mp3",
+      "sentence": {
+        "pl": "Mam nowy szalik.",
+        "en": "I have a new scarf.",
+        "gap": "Mam nowy ___.",
+        "answer": "szalik",
+        "answer_lemma": "szalik",
+        "audio": "media/audio/szalik__sentence.mp3",
+        "lemmas": [
+          "mieć",
+          "nowy",
+          "szalik"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "pokoj",
+      "word": "pokój",
+      "gloss": "room",
+      "pos": "noun",
+      "ipa": "ˈpɔkuj",
+      "note": null,
+      "image": "media/img/pokoj.webp",
+      "image_alt": "a tidy bedroom seen from the doorway",
+      "image_basis": "sentence",
+      "image_prompt": "A tidy bedroom seen from the doorway with a made bed, a wardrobe and a window, nobody in it. Daylight. No text or lettering. Square image.",
+      "audio": "media/audio/pokoj.mp3",
+      "sentence": {
+        "pl": "W pokoju jest łóżko.",
+        "en": "There is a bed in the room.",
+        "gap": "W ___ jest łóżko.",
+        "answer": "pokoju",
+        "answer_lemma": "pokój",
+        "audio": "media/audio/pokoj__sentence.mp3",
+        "lemmas": [
+          "w",
+          "pokój",
+          "być",
+          "łóżko"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "list",
+      "word": "list",
+      "gloss": "letter",
+      "pos": "noun",
+      "ipa": "list",
+      "note": "the kind you post, not the kind in the alphabet",
+      "image": "media/img/list.webp",
+      "image_alt": "a folded letter beside an open envelope",
+      "image_basis": "sentence",
+      "image_prompt": "A handwritten letter folded beside an open envelope on a table, a stamp on the envelope. The handwriting is indistinct. Daylight. Square image.",
+      "audio": "media/audio/list.mp3",
+      "sentence": {
+        "pl": "Piszę list do matki.",
+        "en": "I am writing a letter to my mother.",
+        "gap": "Piszę ___ do matki.",
+        "answer": "list",
+        "answer_lemma": "list",
+        "audio": "media/audio/list__sentence.mp3",
+        "lemmas": [
+          "pisać",
+          "list",
+          "do",
+          "matka"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "dziekowac",
+      "word": "dziękować",
+      "gloss": "to thank",
+      "pos": "verb",
+      "ipa": "d͡ʑɛŋˈkɔvat͡ɕ",
+      "note": "dziękuję, the word you already know, is the first person of this",
+      "image": "media/img/dziekowac.webp",
+      "image_alt": "someone thanking another person for a gift",
+      "image_basis": "sentence",
+      "image_prompt": "One person handing a small wrapped gift to another, the receiver smiling and putting a hand to their chest in thanks. Daylight indoors. No text or lettering. Square image.",
+      "audio": "media/audio/dziekowac.mp3",
+      "sentence": {
+        "pl": "Dziękuję ojcu.",
+        "en": "I thank my father.",
+        "gap": "___ ojcu.",
+        "answer": "Dziękuję",
+        "answer_lemma": "dziękować",
+        "audio": "media/audio/dziekowac__sentence.mp3",
+        "lemmas": [
+          "dziękować",
+          "ojciec"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "latwy",
+      "word": "łatwy",
+      "gloss": "easy",
+      "pos": "adjective",
+      "ipa": "ˈwatfɨ",
+      "note": "the other end from trudny",
+      "image": "media/img/latwy.webp",
+      "image_alt": "a woman reading easily and relaxed in a chair",
+      "image_basis": "sentence",
+      "image_prompt": "A woman leaning back in a chair with a thin open book resting on one hand, relaxed and smiling faintly, plainly finding it no trouble. Warm indoor light. No readable text. Square image.",
+      "audio": "media/audio/latwy.mp3",
+      "sentence": {
+        "pl": "To jest łatwe słowo.",
+        "en": "This is an easy word.",
+        "gap": "To jest ___ słowo.",
+        "answer": "łatwe",
+        "answer_lemma": "łatwy",
+        "audio": "media/audio/latwy__sentence.mp3",
+        "lemmas": [
+          "to",
+          "być",
+          "łatwy",
+          "słowo"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "dlugi",
+      "word": "długi",
+      "gloss": "long",
+      "pos": "adjective",
+      "ipa": "ˈdwuɡi",
+      "note": null,
+      "image": "media/img/dlugi.webp",
+      "image_alt": "a very long queue winding down a street",
+      "image_basis": "sentence",
+      "image_prompt": "A very long queue of people winding away from the viewer down a street and out of sight round a corner. Daylight. No text or lettering. Square image.",
+      "audio": "media/audio/dlugi.mp3",
+      "sentence": {
+        "pl": "Droga jest długa.",
+        "en": "The road is long.",
+        "gap": "Droga jest ___.",
+        "answer": "długa",
+        "answer_lemma": "długi",
+        "audio": "media/audio/dlugi__sentence.mp3",
+        "lemmas": [
+          "droga",
+          "być",
+          "długi"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
     }
   ]
 }

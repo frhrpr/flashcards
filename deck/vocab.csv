@@ -73,7 +73,7 @@ co,co,particle,no,known,lesson 2026-07-28 Czerwona piłka,2026-07-28,given free 
 kto,kto,pronoun,no,known,lesson 2026-07-28 Czerwona piłka,2026-07-28,given free in the lesson
 czy,czy,particle,no,known,lesson 2026-07-28 Czerwona piłka,2026-07-28,given free in the lesson
 gdzie,gdzie,adverb,no,known,lesson 2026-07-28 Czerwona piłka,2026-07-28,given free in the lesson
-dziękuję,dziekuje,interjection,no,known,lesson 2026-07-28 Czerwona piłka,2026-07-28,given free in the lesson
+dziękuję,dziekuje,interjection,no,known,lesson 2026-07-28 Czerwona piłka,2026-07-28,"fixed phrase; the 1sg of dziękować, which is now carded"
 móc,moc,verb,yes,carded,lesson 2026-08-16 Gdzie jest pies?,2026-08-16,
 czas,czas,noun,yes,carded,lesson 2026-08-16 Gdzie jest pies?,2026-08-16,
 miejsce,miejsce,noun,yes,carded,lesson 2026-08-16 Gdzie jest pies?,2026-08-16,
@@ -196,9 +196,14 @@ kuchnia,kuchnia,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-0
 morze,morze,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-26,
 głodny,glodny,adjective,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-26,
 grać,grac,verb,yes,carded,frequency rank 362,2026-08-26,
-obiad,obiad,noun,yes,queued,sentence for gotować,2026-08-26,"met in a sentence, not carded"
-myć,myc,verb,yes,queued,sentence for twarz,2026-08-26,"met in a sentence, not carded"
-nosić,nosic,verb,yes,queued,sentence for kurtka,2026-08-26,"met in a sentence, not carded"
-lato,lato,noun,yes,queued,sentence for morze,2026-08-26,"met in a sentence, not carded"
+obiad,obiad,noun,yes,carded,sentence for gotować,2026-08-26,"borrowed into a sentence first, then carded"
+myć,myc,verb,yes,carded,sentence for twarz,2026-08-26,"borrowed into a sentence first, then carded"
+nosić,nosic,verb,yes,carded,sentence for kurtka,2026-08-26,"borrowed into a sentence first, then carded"
+lato,lato,noun,yes,carded,sentence for morze,2026-08-26,"borrowed into a sentence first, then carded"
 nad,nad,preposition,no,known,sentence for morze; nad morze = to the seaside,2026-08-26,learned through the case it governs
-szalik,szalik,noun,yes,queued,sentence for czarny,2026-08-26,"met in a sentence, not carded"
+szalik,szalik,noun,yes,carded,sentence for czarny,2026-08-26,"borrowed into a sentence first, then carded"
+pokój,pokoj,noun,yes,carded,frequency rank 241,2026-08-26,
+list,list,noun,yes,carded,frequency rank 494,2026-08-26,
+dziękować,dziekowac,verb,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-26,
+łatwy,latwy,adjective,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-26,
+długi,dlugi,adjective,yes,carded,frequency rank 108,2026-08-26,
