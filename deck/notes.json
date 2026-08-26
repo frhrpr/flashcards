@@ -2581,7 +2581,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "czlowiek",
@@ -2649,7 +2650,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "znalezc",
@@ -2750,7 +2752,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "myslec",
@@ -2786,7 +2789,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "mlody",
@@ -2854,7 +2858,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "godzina",
@@ -3051,7 +3056,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "pisac",
@@ -3182,7 +3188,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "wazny",
@@ -3349,7 +3356,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "noc",
@@ -3739,7 +3747,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "okno",
@@ -4095,7 +4104,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "pieniadze",
@@ -4160,7 +4170,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "pociag",
@@ -4193,7 +4204,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "spac",
@@ -4292,7 +4304,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "zimny",
@@ -4324,7 +4337,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "buty",
@@ -4389,7 +4403,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "mieszkac",
