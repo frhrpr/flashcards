@@ -803,6 +803,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/duzo.mp3": {
+    "author": "Wyksztalcioch",
+    "commons_file": "Pl-dużo.ogg",
+    "fingerprint": "c7d20efd6c2b4ca0",
+    "gain_db": 2.4,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-du%C5%BCo.ogg",
+    "seconds": 0.55,
+    "source": "commons",
+    "text": "dużo"
+  },
+  "media/audio/duzo__sentence.mp3": {
+    "fingerprint": "db362ba1122e4063",
+    "gain_db": -2.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.94,
+    "source": "tts",
+    "text": "Mam dużo pracy.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/duzy.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-duży.ogg",
@@ -842,6 +863,27 @@
     "seconds": 1.54,
     "source": "tts",
     "text": "Chłopiec ma numer dwanaście.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/dworzec.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-dworzec.ogg",
+    "fingerprint": "c0f0a69a7d02462c",
+    "gain_db": -0.1,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-dworzec.ogg",
+    "seconds": 1.54,
+    "source": "commons",
+    "text": "dworzec"
+  },
+  "media/audio/dworzec__sentence.mp3": {
+    "fingerprint": "43441a753875ae6c",
+    "gain_db": -0.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.04,
+    "source": "tts",
+    "text": "Idę na dworzec.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1118,6 +1160,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/hotel.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-hotel.ogg",
+    "fingerprint": "5dc19435125e0893",
+    "gain_db": -1.0,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-hotel.ogg",
+    "seconds": 0.71,
+    "source": "commons",
+    "text": "hotel"
+  },
+  "media/audio/hotel__sentence.mp3": {
+    "fingerprint": "67df74ecd34eebb4",
+    "gain_db": -0.5,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.2,
+    "source": "tts",
+    "text": "Ten hotel jest duży.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/imie.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-imię.ogg",
@@ -1347,6 +1410,27 @@
     "seconds": 0.94,
     "source": "tts",
     "text": "Rano piję kawę.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/klucz.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-klucz.ogg",
+    "fingerprint": "c5cc23d0efc56b8a",
+    "gain_db": -0.5,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-klucz.ogg",
+    "seconds": 0.73,
+    "source": "commons",
+    "text": "klucz"
+  },
+  "media/audio/klucz__sentence.mp3": {
+    "fingerprint": "fbcbee7df903bafa",
+    "gain_db": -3.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.12,
+    "source": "tts",
+    "text": "Mam klucz do domu.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -3205,6 +3289,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/przyjaciel.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-przyjaciel.ogg",
+    "fingerprint": "e065c31f1eef42c5",
+    "gain_db": -0.2,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-przyjaciel.ogg",
+    "seconds": 1.18,
+    "source": "commons",
+    "text": "przyjaciel"
+  },
+  "media/audio/przyjaciel__sentence.mp3": {
+    "fingerprint": "117aa4d53ae1dfab",
+    "gain_db": -0.6,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.1,
+    "source": "tts",
+    "text": "Czekam na przyjaciela.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/ptak.mp3": {
     "author": "Marcowy zając",
     "commons_file": "Pl-ptak.ogg",
@@ -3286,6 +3391,27 @@
     "seconds": 1.46,
     "source": "tts",
     "text": "Mam piłkę w ręce.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/restauracja.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-restauracja.ogg",
+    "fingerprint": "2a87e0873a1dddca",
+    "gain_db": -0.3,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-restauracja.ogg",
+    "seconds": 2.09,
+    "source": "commons",
+    "text": "restauracja"
+  },
+  "media/audio/restauracja__sentence.mp3": {
+    "fingerprint": "892dceb56b8e76a1",
+    "gain_db": -2.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.38,
+    "source": "tts",
+    "text": "Jemy obiad w restauracji.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -3475,6 +3601,27 @@
     "seconds": 1.18,
     "source": "tts",
     "text": "Na chlebie jest ser.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/serce.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-serce.ogg",
+    "fingerprint": "4682d488185a4721",
+    "gain_db": -0.2,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-serce.ogg",
+    "seconds": 1.59,
+    "source": "commons",
+    "text": "serce"
+  },
+  "media/audio/serce__sentence.mp3": {
+    "fingerprint": "18dcd3c081386458",
+    "gain_db": 1.6,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.65,
+    "source": "tts",
+    "text": "Serce jest w środku.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -3749,6 +3896,27 @@
     "seconds": 1.44,
     "source": "tts",
     "text": "W sobotę jadę do parku.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/sol.mp3": {
+    "author": "Frizabela",
+    "commons_file": "Pl-sól.ogg",
+    "fingerprint": "d87182e46e45724d",
+    "gain_db": -4.4,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-s%C3%B3l.ogg",
+    "seconds": 0.68,
+    "source": "commons",
+    "text": "sól"
+  },
+  "media/audio/sol__sentence.mp3": {
+    "fingerprint": "1489e23592fe7329",
+    "gain_db": -0.2,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.31,
+    "source": "tts",
+    "text": "Sól jest biała.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -4131,6 +4299,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/turysta.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-turysta.ogg",
+    "fingerprint": "b4c8e70188576d05",
+    "gain_db": 0.0,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-turysta.ogg",
+    "seconds": 1.7,
+    "source": "commons",
+    "text": "turysta"
+  },
+  "media/audio/turysta__sentence.mp3": {
+    "fingerprint": "78482c25e9386470",
+    "gain_db": -1.0,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.65,
+    "source": "tts",
+    "text": "Turysta pyta, gdzie jest hotel.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/tutaj.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-tutaj.ogg",
@@ -4212,6 +4401,28 @@
     "seconds": 1.04,
     "source": "tts",
     "text": "Pies ma duże uszy.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/uczyc_sie.mp3": {
+    "fingerprint": "81fd81b9c0d94054",
+    "gain_db": 3.9,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.73,
+    "source": "tts",
+    "text": "uczyć się",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/uczyc_sie__sentence.mp3": {
+    "fingerprint": "f3527b571c836883",
+    "gain_db": -2.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.07,
+    "source": "tts",
+    "text": "Uczę się polskiego.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -5296,6 +5507,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/duzo.webp": {
+    "bytes": 75504,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "be77eea5facc6139",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A desk with a very tall stack of paper files piled on it in a plain office. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/duzy.webp": {
     "bytes": 146414,
     "check": {
@@ -5325,6 +5552,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A boy of about ten seen from behind wearing a football shirt with the number 12 printed large across the back. Daylight on a pitch. No other lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/dworzec.webp": {
+    "bytes": 108826,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "003639ba3b071716",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "The front of a large old railway station building seen from the street, people walking in and out. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -5515,6 +5758,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/hotel.webp": {
+    "bytes": 110000,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "63ce55f6e41093c8",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "The front of a large hotel building with a canopy over its entrance and a doorman standing outside. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/imie.webp": {
     "bytes": 27706,
     "check": {
@@ -5688,6 +5947,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A white cup of black coffee on a saucer with steam rising, on a kitchen table in morning light. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/klucz.webp": {
+    "bytes": 32378,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "9a633b2d8d34984f",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A single brass door key lying on a dark wooden surface, seen from above. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -7042,6 +7317,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/przyjaciel.webp": {
+    "bytes": 49908,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "447edd4194c74dbb",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Two young men greeting each other with a hug outside a cafe, both smiling. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/ptak.webp": {
     "bytes": 38936,
     "check": {
@@ -7103,6 +7394,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "One open hand holding a small ball, close up, plain background, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/restauracja.webp": {
+    "bytes": 162124,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "d0bf2cf3064996aa",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "The outside of a small restaurant with a striped awning and tables set on the pavement. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -7231,6 +7538,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A close view of an old weathered red brick wall filling the entire frame, crumbling mortar between the bricks, strong daylight. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/serce.webp": {
+    "bytes": 14008,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "3f77464a1871dd50",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "An anatomical model of a human heart standing on a plain table. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -7415,6 +7738,22 @@
     "process_version": 1,
     "size": "357x376",
     "source": "supplied"
+  },
+  "media/img/sol.webp": {
+    "bytes": 35082,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "b38f9298a65e0a78",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A clear glass salt shaker on a wooden table, a little spilled salt beside it. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
   },
   "media/img/spac.webp": {
     "bytes": 22122,
@@ -7694,6 +8033,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/turysta.webp": {
+    "bytes": 102326,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "789107b0cb2ef4a2",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A man with a camera round his neck and a small backpack standing on a city street, looking around. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/tutaj.webp": {
     "bytes": 18528,
     "check": {
@@ -7750,6 +8105,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A close view of the head of a dog with large upright ears, seen from the side, the ears clearly the subject. Blurred garden behind. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/uczyc_sie.webp": {
+    "bytes": 43922,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "26f1834cb64d3d6d",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A woman sitting at a desk wearing headphones, an open notebook in front of her, writing. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },

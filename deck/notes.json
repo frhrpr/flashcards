@@ -7374,6 +7374,331 @@
         "listening"
       ],
       "reviewed": true
+    },
+    {
+      "id": "duzo",
+      "word": "dużo",
+      "gloss": "a lot, many",
+      "pos": "adverb",
+      "ipa": "ˈduʐɔ",
+      "note": "counts things, and what it counts goes into the genitive",
+      "image": "media/img/duzo.webp",
+      "image_alt": "a lot, many",
+      "image_basis": "sentence",
+      "image_prompt": "A desk with a very tall stack of paper files piled on it in a plain office. No text or lettering. Square image.",
+      "audio": "media/audio/duzo.mp3",
+      "sentence": {
+        "pl": "Mam dużo pracy.",
+        "en": "I have a lot of work.",
+        "gap": "Mam ___ pracy.",
+        "answer": "dużo",
+        "answer_lemma": "dużo",
+        "audio": "media/audio/duzo__sentence.mp3",
+        "lemmas": [
+          "mieć",
+          "dużo",
+          "praca"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "turysta",
+      "word": "turysta",
+      "gloss": "tourist",
+      "pos": "noun",
+      "ipa": "tuˈrɨsta",
+      "note": null,
+      "image": "media/img/turysta.webp",
+      "image_alt": "tourist",
+      "image_basis": "word",
+      "image_prompt": "A man with a camera round his neck and a small backpack standing on a city street, looking around. No text or lettering. Square image.",
+      "audio": "media/audio/turysta.mp3",
+      "sentence": {
+        "pl": "Turysta pyta, gdzie jest hotel.",
+        "en": "The tourist asks where the hotel is.",
+        "gap": "___ pyta, gdzie jest hotel.",
+        "answer": "Turysta",
+        "answer_lemma": "turysta",
+        "audio": "media/audio/turysta__sentence.mp3",
+        "lemmas": [
+          "turysta",
+          "pytać",
+          "gdzie",
+          "być",
+          "hotel"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "restauracja",
+      "word": "restauracja",
+      "gloss": "restaurant",
+      "pos": "noun",
+      "ipa": "rɛstawˈrat͡sja",
+      "note": null,
+      "image": "media/img/restauracja.webp",
+      "image_alt": "restaurant",
+      "image_basis": "sentence",
+      "image_prompt": "The outside of a small restaurant with a striped awning and tables set on the pavement. No text or lettering. Square image.",
+      "audio": "media/audio/restauracja.mp3",
+      "sentence": {
+        "pl": "Jemy obiad w restauracji.",
+        "en": "We are eating dinner at a restaurant.",
+        "gap": "Jemy obiad w ___.",
+        "answer": "restauracji",
+        "answer_lemma": "restauracja",
+        "audio": "media/audio/restauracja__sentence.mp3",
+        "lemmas": [
+          "jeść",
+          "obiad",
+          "w",
+          "restauracja"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "hotel",
+      "word": "hotel",
+      "gloss": "hotel",
+      "pos": "noun",
+      "ipa": "ˈxɔtɛl",
+      "note": null,
+      "image": "media/img/hotel.webp",
+      "image_alt": "hotel",
+      "image_basis": "sentence",
+      "image_prompt": "The front of a large hotel building with a canopy over its entrance and a doorman standing outside. No text or lettering. Square image.",
+      "audio": "media/audio/hotel.mp3",
+      "sentence": {
+        "pl": "Ten hotel jest duży.",
+        "en": "This hotel is big.",
+        "gap": "Ten ___ jest duży.",
+        "answer": "hotel",
+        "answer_lemma": "hotel",
+        "audio": "media/audio/hotel__sentence.mp3",
+        "lemmas": [
+          "ten",
+          "hotel",
+          "być",
+          "duży"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "sol",
+      "word": "sól",
+      "gloss": "salt",
+      "pos": "noun",
+      "ipa": "sul",
+      "note": null,
+      "image": "media/img/sol.webp",
+      "image_alt": "salt",
+      "image_basis": "word",
+      "image_prompt": "A clear glass salt shaker on a wooden table, a little spilled salt beside it. No text or lettering. Square image.",
+      "audio": "media/audio/sol.mp3",
+      "sentence": {
+        "pl": "Sól jest biała.",
+        "en": "Salt is white.",
+        "gap": "___ jest biała.",
+        "answer": "Sól",
+        "answer_lemma": "sól",
+        "audio": "media/audio/sol__sentence.mp3",
+        "lemmas": [
+          "sól",
+          "być",
+          "biały"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "serce",
+      "word": "serce",
+      "gloss": "heart",
+      "pos": "noun",
+      "ipa": "ˈsɛrt͡sɛ",
+      "note": null,
+      "image": "media/img/serce.webp",
+      "image_alt": "heart",
+      "image_basis": "word",
+      "image_prompt": "An anatomical model of a human heart standing on a plain table. No text or lettering. Square image.",
+      "audio": "media/audio/serce.mp3",
+      "sentence": {
+        "pl": "Serce jest w środku.",
+        "en": "The heart is inside.",
+        "gap": "___ jest w środku.",
+        "answer": "Serce",
+        "answer_lemma": "serce",
+        "audio": "media/audio/serce__sentence.mp3",
+        "lemmas": [
+          "serce",
+          "być",
+          "w",
+          "środek"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "przyjaciel",
+      "word": "przyjaciel",
+      "gloss": "friend",
+      "pos": "noun",
+      "ipa": "pʂɨˈjat͡ɕɛl",
+      "note": null,
+      "image": "media/img/przyjaciel.webp",
+      "image_alt": "friend",
+      "image_basis": "word",
+      "image_prompt": "Two young men greeting each other with a hug outside a cafe, both smiling. No text or lettering. Square image.",
+      "audio": "media/audio/przyjaciel.mp3",
+      "sentence": {
+        "pl": "Czekam na przyjaciela.",
+        "en": "I am waiting for a friend.",
+        "gap": "Czekam na ___.",
+        "answer": "przyjaciela",
+        "answer_lemma": "przyjaciel",
+        "audio": "media/audio/przyjaciel__sentence.mp3",
+        "lemmas": [
+          "czekać",
+          "na",
+          "przyjaciel"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "uczyc_sie",
+      "word": "uczyć się",
+      "gloss": "to learn, to study",
+      "pos": "verb",
+      "ipa": "ˈut͡ʂɨt͡ɕ ɕɛ",
+      "note": null,
+      "image": "media/img/uczyc_sie.webp",
+      "image_alt": "to learn, to study",
+      "image_basis": "sentence",
+      "image_prompt": "A woman sitting at a desk wearing headphones, an open notebook in front of her, writing. No text or lettering. Square image.",
+      "audio": "media/audio/uczyc_sie.mp3",
+      "sentence": {
+        "pl": "Uczę się polskiego.",
+        "en": "I am learning Polish.",
+        "gap": "___ się polskiego.",
+        "answer": "Uczę",
+        "answer_lemma": "uczyć się",
+        "audio": "media/audio/uczyc_sie__sentence.mp3",
+        "lemmas": [
+          "uczyć się",
+          "polski"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "klucz",
+      "word": "klucz",
+      "gloss": "key",
+      "pos": "noun",
+      "ipa": "klut͡ʂ",
+      "note": null,
+      "image": "media/img/klucz.webp",
+      "image_alt": "key",
+      "image_basis": "word",
+      "image_prompt": "A single brass door key lying on a dark wooden surface, seen from above. No text or lettering. Square image.",
+      "audio": "media/audio/klucz.mp3",
+      "sentence": {
+        "pl": "Mam klucz do domu.",
+        "en": "I have the key to the house.",
+        "gap": "Mam ___ do domu.",
+        "answer": "klucz",
+        "answer_lemma": "klucz",
+        "audio": "media/audio/klucz__sentence.mp3",
+        "lemmas": [
+          "mieć",
+          "klucz",
+          "do",
+          "dom"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "dworzec",
+      "word": "dworzec",
+      "gloss": "railway station",
+      "pos": "noun",
+      "ipa": "ˈdvɔʐɛt͡s",
+      "note": null,
+      "image": "media/img/dworzec.webp",
+      "image_alt": "railway station",
+      "image_basis": "sentence",
+      "image_prompt": "The front of a large old railway station building seen from the street, people walking in and out. No text or lettering. Square image.",
+      "audio": "media/audio/dworzec.mp3",
+      "sentence": {
+        "pl": "Idę na dworzec.",
+        "en": "I am going to the station.",
+        "gap": "Idę na ___.",
+        "answer": "dworzec",
+        "answer_lemma": "dworzec",
+        "audio": "media/audio/dworzec__sentence.mp3",
+        "lemmas": [
+          "iść",
+          "na",
+          "dworzec"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
     }
   ]
 }
