@@ -142,10 +142,10 @@ deszcz,deszcz,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-
 zimny,zimny,adjective,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-24,
 buty,buty,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-24,
 tydzień,tydzien,noun,yes,carded,frequency rank 130,2026-08-24,
-karta,karta,noun,yes,queued,sentence for płacić,2026-08-24,"met in a sentence, not carded"
-jechać,jechac,verb,yes,queued,sentence for pociąg,2026-08-24,"met in a sentence, not carded"
-łóżko,lozko,noun,yes,queued,sentence for spać,2026-08-24,"met in a sentence, not carded"
-padać,padac,verb,yes,queued,sentence for deszcz,2026-08-24,"met in a sentence, not carded"
+karta,karta,noun,yes,carded,sentence for płacić,2026-08-24,"borrowed into a sentence first, then carded"
+jechać,jechac,verb,yes,carded,sentence for pociąg,2026-08-24,"borrowed into a sentence first, then carded"
+łóżko,lozko,noun,yes,carded,sentence for spać,2026-08-24,"borrowed into a sentence first, then carded"
+padać,padac,verb,yes,carded,sentence for deszcz,2026-08-24,"borrowed into a sentence first, then carded"
 siedem,siedem,numeral,yes,queued,sentence for tydzień,2026-08-24,"met in a sentence, not carded"
 poniedziałek,poniedzialek,noun,yes,queued,on the tydzień card image,2026-08-24,"met on a card image, not in a sentence"
 wtorek,wtorek,noun,yes,queued,on the tydzień card image,2026-08-24,"met on a card image, not in a sentence"
@@ -154,3 +154,11 @@ czwartek,czwartek,noun,yes,queued,on the tydzień card image,2026-08-24,"met on 
 piątek,piatek,noun,yes,queued,on the tydzień card image,2026-08-24,"met on a card image, not in a sentence"
 sobota,sobota,noun,yes,queued,on the tydzień card image,2026-08-24,"met on a card image, not in a sentence"
 niedziela,niedziela,noun,yes,queued,on the tydzień card image,2026-08-24,"met on a card image, not in a sentence"
+mieszkać,mieszkac,verb,yes,carded,lesson 2026-08-26 Pierwszy tydzień,2026-08-26,
+śniadanie,sniadanie,noun,yes,carded,lesson 2026-08-26 Pierwszy tydzień,2026-08-26,
+ulica,ulica,noun,yes,carded,lesson 2026-08-26 Pierwszy tydzień,2026-08-26,
+ludzie,ludzie,noun,yes,carded,lesson 2026-08-26 Pierwszy tydzień,2026-08-26,
+bardzo,bardzo,adverb,yes,carded,lesson 2026-08-26 Pierwszy tydzień,2026-08-26,
+wieczór,wieczor,noun,yes,carded,lesson 2026-08-26 Pierwszy tydzień,2026-08-26,
+jego,jego,pronoun,no,known,lesson 2026-08-26 Pierwszy tydzień,2026-08-26,possessive; given free
+twój,twoj,pronoun,no,known,lesson 2026-08-26 Pierwszy tydzień,2026-08-26,possessive; given free

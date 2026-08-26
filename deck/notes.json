@@ -4387,6 +4387,351 @@
         "listening"
       ],
       "reviewed": true
+    },
+    {
+      "id": "mieszkac",
+      "word": "mieszkać",
+      "gloss": "to live",
+      "pos": "verb",
+      "ipa": "ˈmʲɛʂkat͡ɕ",
+      "note": null,
+      "image": "media/img/mieszkac.webp",
+      "image_alt": "a man at the window of his flat looking out over a city",
+      "image_basis": "sentence",
+      "image_prompt": "A man standing at the window of a flat looking out over a city, seen from inside the room, his back to us. Daylight. No text or lettering. Square image.",
+      "audio": "media/audio/mieszkac.mp3",
+      "sentence": {
+        "pl": "Marek mieszka w nowym mieście.",
+        "en": "Marek lives in a new town.",
+        "gap": "Marek ___ w nowym mieście.",
+        "answer": "mieszka",
+        "answer_lemma": "mieszkać",
+        "audio": "media/audio/mieszkac__sentence.mp3",
+        "lemmas": [
+          "Marek",
+          "mieszkać",
+          "w",
+          "nowy",
+          "miasto"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "padac",
+      "word": "padać",
+      "gloss": "to fall",
+      "pos": "verb",
+      "ipa": "ˈpadat͡ɕ",
+      "note": "of rain and snow — this is how Polish says it is raining",
+      "image": "media/img/padac.webp",
+      "image_alt": "raindrops running down a window pane",
+      "image_basis": "sentence",
+      "image_prompt": "Raindrops striking a window pane and running down the glass, seen from inside a room, the view beyond blurred. No text or lettering. Square image.",
+      "audio": "media/audio/padac.mp3",
+      "sentence": {
+        "pl": "Rano pada deszcz.",
+        "en": "It is raining in the morning.",
+        "gap": "Rano ___ deszcz.",
+        "answer": "pada",
+        "answer_lemma": "padać",
+        "audio": "media/audio/padac__sentence.mp3",
+        "lemmas": [
+          "rano",
+          "padać",
+          "deszcz"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "lozko",
+      "word": "łóżko",
+      "gloss": "bed",
+      "pos": "noun",
+      "ipa": "ˈwuʂkɔ",
+      "note": null,
+      "image": "media/img/lozko.webp",
+      "image_alt": "a man lying awake in bed in the morning",
+      "image_basis": "sentence",
+      "image_prompt": "A grown man lying awake in bed in the morning, eyes open, duvet pulled up, daylight through the curtains. No text or lettering. Square image.",
+      "audio": "media/audio/lozko.mp3",
+      "sentence": {
+        "pl": "Marek jest w łóżku.",
+        "en": "Marek is in bed.",
+        "gap": "Marek jest w ___.",
+        "answer": "łóżku",
+        "answer_lemma": "łóżko",
+        "audio": "media/audio/lozko__sentence.mp3",
+        "lemmas": [
+          "Marek",
+          "być",
+          "w",
+          "łóżko"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "sniadanie",
+      "word": "śniadanie",
+      "gloss": "breakfast",
+      "pos": "noun",
+      "ipa": "ɕɲaˈdaɲɛ",
+      "note": null,
+      "image": "media/img/sniadanie.webp",
+      "image_alt": "a breakfast of bread, butter and a boiled egg seen from above",
+      "image_basis": "sentence",
+      "image_prompt": "A breakfast laid out on a table seen from directly above: a plate with bread and butter and a boiled egg. No coffee cup. No text or lettering. Square image.",
+      "audio": "media/audio/sniadanie.mp3",
+      "sentence": {
+        "pl": "Rano je śniadanie i pije kawę.",
+        "en": "In the morning he eats breakfast and drinks coffee.",
+        "gap": "Rano je ___ i pije kawę.",
+        "answer": "śniadanie",
+        "answer_lemma": "śniadanie",
+        "audio": "media/audio/sniadanie__sentence.mp3",
+        "lemmas": [
+          "rano",
+          "jeść",
+          "śniadanie",
+          "i",
+          "pić",
+          "kawa"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "jechac",
+      "word": "jechać",
+      "gloss": "to travel",
+      "pos": "verb",
+      "ipa": "ˈjɛxat͡ɕ",
+      "note": "by vehicle — iść is on foot, this is not",
+      "image": "media/img/jechac.webp",
+      "image_alt": "the view from a seat inside a moving train",
+      "image_basis": "sentence",
+      "image_prompt": "The view from inside a moving train: a passenger window with fields and trees sweeping past, part of the seat in frame. Daylight. No text or lettering. Square image.",
+      "audio": "media/audio/jechac.mp3",
+      "sentence": {
+        "pl": "Potem jedzie pociągiem do miasta.",
+        "en": "Then he travels to town by train.",
+        "gap": "Potem ___ pociągiem do miasta.",
+        "answer": "jedzie",
+        "answer_lemma": "jechać",
+        "audio": "media/audio/jechac__sentence.mp3",
+        "lemmas": [
+          "potem",
+          "jechać",
+          "pociąg",
+          "do",
+          "miasto"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "ulica",
+      "word": "ulica",
+      "gloss": "street",
+      "pos": "noun",
+      "ipa": "uˈlit͡sa",
+      "note": null,
+      "image": "media/img/ulica.webp",
+      "image_alt": "a city street with cars parked along the kerb",
+      "image_basis": "sentence",
+      "image_prompt": "A city street seen from the pavement, cars parked along the kerb on both sides and buildings rising behind them, nobody in shot. Daylight. No readable signage. Square image.",
+      "audio": "media/audio/ulica.mp3",
+      "sentence": {
+        "pl": "Na ulicy są samochody.",
+        "en": "There are cars in the street.",
+        "gap": "Na ___ są samochody.",
+        "answer": "ulicy",
+        "answer_lemma": "ulica",
+        "audio": "media/audio/ulica__sentence.mp3",
+        "lemmas": [
+          "na",
+          "ulica",
+          "być",
+          "samochód"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "ludzie",
+      "word": "ludzie",
+      "gloss": "people",
+      "pos": "noun",
+      "ipa": "ˈlud͡ʑɛ",
+      "note": "the plural of człowiek — a different word, not a different ending",
+      "image": "media/img/ludzie.webp",
+      "image_alt": "a group of six people standing together talking",
+      "image_basis": "sentence",
+      "image_prompt": "Six colleagues of different ages standing together in an office talking, whole group in frame. Daylight. No text or lettering. Square image.",
+      "audio": "media/audio/ludzie.mp3",
+      "sentence": {
+        "pl": "W pracy Marek spotyka nowych ludzi.",
+        "en": "At work Marek meets new people.",
+        "gap": "W pracy Marek spotyka nowych ___.",
+        "answer": "ludzi",
+        "answer_lemma": "ludzie",
+        "audio": "media/audio/ludzie__sentence.mp3",
+        "lemmas": [
+          "w",
+          "praca",
+          "Marek",
+          "spotkać",
+          "nowy",
+          "ludzie"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "bardzo",
+      "word": "bardzo",
+      "gloss": "very",
+      "pos": "adverb",
+      "ipa": "ˈbard͡zɔ",
+      "note": null,
+      "image": "media/img/bardzo.webp",
+      "image_alt": "a tiny figure craning to look up at something enormous",
+      "image_basis": "sentence",
+      "image_prompt": "A small figure seen from behind craning their head right back to look up at something enormous that runs out of the top of the frame. Daylight. No text or lettering. Square image.",
+      "audio": "media/audio/bardzo.mp3",
+      "sentence": {
+        "pl": "Miasto jest bardzo duże.",
+        "en": "The town is very big.",
+        "gap": "Miasto jest ___ duże.",
+        "answer": "bardzo",
+        "answer_lemma": "bardzo",
+        "audio": "media/audio/bardzo__sentence.mp3",
+        "lemmas": [
+          "miasto",
+          "być",
+          "bardzo",
+          "duży"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "karta",
+      "word": "karta",
+      "gloss": "card",
+      "pos": "noun",
+      "ipa": "ˈkarta",
+      "note": null,
+      "image": "media/img/karta.webp",
+      "image_alt": "a bank card lying on a table",
+      "image_basis": "sentence",
+      "image_prompt": "A single bank card lying alone on a plain wooden table, seen from above. No readable numbers or name on it. Square image.",
+      "audio": "media/audio/karta.mp3",
+      "sentence": {
+        "pl": "Moja karta jest w domu.",
+        "en": "My card is at home.",
+        "gap": "Moja ___ jest w domu.",
+        "answer": "karta",
+        "answer_lemma": "karta",
+        "audio": "media/audio/karta__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "karta",
+          "być",
+          "w",
+          "dom"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "wieczor",
+      "word": "wieczór",
+      "gloss": "evening",
+      "pos": "noun",
+      "ipa": "ˈvjɛt͡ʂur",
+      "note": null,
+      "image": "media/img/wieczor.webp",
+      "image_alt": "town rooftops at dusk with lit windows",
+      "image_basis": "sentence",
+      "image_prompt": "Rooftops of a town at dusk, the sky deep orange fading to blue, a few windows lit from inside. No text or lettering. Square image.",
+      "audio": "media/audio/wieczor.mp3",
+      "sentence": {
+        "pl": "Jest zimny wieczór.",
+        "en": "It is a cold evening.",
+        "gap": "Jest zimny ___.",
+        "answer": "wieczór",
+        "answer_lemma": "wieczór",
+        "audio": "media/audio/wieczor__sentence.mp3",
+        "lemmas": [
+          "być",
+          "zimny",
+          "wieczór"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
     }
   ]
 }

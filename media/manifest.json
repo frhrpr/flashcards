@@ -1,4 +1,25 @@
 {
+  "media/audio/bardzo.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-bardzo.ogg",
+    "fingerprint": "fffee076e3dccef9",
+    "gain_db": -0.4,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-bardzo.ogg",
+    "seconds": 0.89,
+    "source": "commons",
+    "text": "bardzo"
+  },
+  "media/audio/bardzo__sentence.mp3": {
+    "fingerprint": "fcb6e2d1b77973e9",
+    "gain_db": 0.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.46,
+    "source": "tts",
+    "text": "Miasto jest bardzo duże.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/buty.mp3": {
     "fingerprint": "38d8fbee0636d8cf",
     "gain_db": 2.1,
@@ -739,6 +760,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/jechac.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-jechać.ogg",
+    "fingerprint": "811e57d997e70208",
+    "gain_db": -0.3,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-jecha%C4%87.ogg",
+    "seconds": 1.04,
+    "source": "commons",
+    "text": "jechać"
+  },
+  "media/audio/jechac__sentence.mp3": {
+    "fingerprint": "fae0776bf7e47073",
+    "gain_db": -0.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.93,
+    "source": "tts",
+    "text": "Potem jedzie pociągiem do miasta.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/jesc.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-jeść.ogg",
@@ -757,6 +799,28 @@
     "seconds": 0.84,
     "source": "tts",
     "text": "Rano jem chleb.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/karta.mp3": {
+    "fingerprint": "43705ca9695d7294",
+    "gain_db": 0.5,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.65,
+    "source": "tts",
+    "text": "karta",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/karta__sentence.mp3": {
+    "fingerprint": "651a53fcaaf05f11",
+    "gain_db": -1.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.28,
+    "source": "tts",
+    "text": "Moja karta jest w domu.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -970,6 +1034,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/lozko.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-łóżko.ogg",
+    "fingerprint": "8c80a92cb33e2269",
+    "gain_db": -1.6,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-%C5%82%C3%B3%C5%BCko.ogg",
+    "seconds": 0.78,
+    "source": "commons",
+    "text": "łóżko"
+  },
+  "media/audio/lozko__sentence.mp3": {
+    "fingerprint": "b60d3567dda3cbbb",
+    "gain_db": 0.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.15,
+    "source": "tts",
+    "text": "Marek jest w łóżku.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/lubic.mp3": {
     "author": "Frizabela",
     "commons_file": "Pl-lubić.ogg",
@@ -988,6 +1073,27 @@
     "seconds": 1.12,
     "source": "tts",
     "text": "Lubię mojego psa.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/ludzie.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-ludzie.ogg",
+    "fingerprint": "8842b3a955b4d78f",
+    "gain_db": -6.1,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-ludzie.ogg",
+    "seconds": 0.71,
+    "source": "commons",
+    "text": "ludzie"
+  },
+  "media/audio/ludzie__sentence.mp3": {
+    "fingerprint": "aaa85e9c7f46453f",
+    "gain_db": -0.8,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.96,
+    "source": "tts",
+    "text": "W pracy Marek spotyka nowych ludzi.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1270,6 +1376,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/mieszkac.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-mieszkać.ogg",
+    "fingerprint": "0753f0698f9c8849",
+    "gain_db": -4.3,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-mieszka%C4%87.ogg",
+    "seconds": 0.91,
+    "source": "commons",
+    "text": "mieszkać"
+  },
+  "media/audio/mieszkac__sentence.mp3": {
+    "fingerprint": "a330bf33851da89a",
+    "gain_db": -1.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.57,
+    "source": "tts",
+    "text": "Marek mieszka w nowym mieście.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/mleko.mp3": {
     "author": "Kajervi",
     "commons_file": "Pl-mleko.ogg",
@@ -1540,6 +1667,28 @@
     "seconds": 1.23,
     "source": "tts",
     "text": "Muszę otworzyć okno.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/padac.mp3": {
+    "fingerprint": "f2cdf0fdc91e606b",
+    "gain_db": -2.6,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.68,
+    "source": "tts",
+    "text": "padać",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/padac__sentence.mp3": {
+    "fingerprint": "347b01d57e7be035",
+    "gain_db": 1.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.2,
+    "source": "tts",
+    "text": "Rano pada deszcz.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -2237,6 +2386,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/sniadanie.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-śniadanie.ogg",
+    "fingerprint": "bf5904765a66ea6f",
+    "gain_db": -0.2,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-%C5%9Bniadanie.ogg",
+    "seconds": 1.04,
+    "source": "commons",
+    "text": "śniadanie"
+  },
+  "media/audio/sniadanie__sentence.mp3": {
+    "fingerprint": "4708eb05a6832480",
+    "gain_db": -0.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.93,
+    "source": "tts",
+    "text": "Rano je śniadanie i pije kawę.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/spac.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-spać.ogg",
@@ -2573,6 +2743,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/ulica.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-ulica.ogg",
+    "fingerprint": "44f5d9cc0e530723",
+    "gain_db": -0.8,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-ulica.ogg",
+    "seconds": 0.76,
+    "source": "commons",
+    "text": "ulica"
+  },
+  "media/audio/ulica__sentence.mp3": {
+    "fingerprint": "d7f3f9ad581bcf56",
+    "gain_db": 0.0,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.38,
+    "source": "tts",
+    "text": "Na ulicy są samochody.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/wazny.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-ważny.ogg",
@@ -2612,6 +2803,27 @@
     "seconds": 1.04,
     "source": "tts",
     "text": "Ty widzisz ptaka.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/wieczor.mp3": {
+    "author": "Kajervi",
+    "commons_file": "Pl-wieczór.ogg",
+    "fingerprint": "da83e633f845f225",
+    "gain_db": -2.5,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-wiecz%C3%B3r.ogg",
+    "seconds": 0.86,
+    "source": "commons",
+    "text": "wieczór"
+  },
+  "media/audio/wieczor__sentence.mp3": {
+    "fingerprint": "69ce2156b4853cde",
+    "gain_db": 0.0,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.15,
+    "source": "tts",
+    "text": "Jest zimny wieczór.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -2824,6 +3036,22 @@
     "text": "Ptak jest żółty.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
+  },
+  "media/img/bardzo.webp": {
+    "bytes": 52640,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "The sentence is about a town being very big, but the image depicts a natural rock formation with no town.",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "00141903029f0905",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A small figure seen from behind craning their head right back to look up at something enormous that runs out of the top of the frame. Daylight. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
   },
   "media/img/buty.webp": {
     "bytes": 20054,
@@ -3380,6 +3608,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/jechac.webp": {
+    "bytes": 31090,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "9ee42518b204dde0",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "The view from inside a moving train: a passenger window with fields and trees sweeping past, part of the seat in frame. Daylight. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/jesc.webp": {
     "bytes": 34286,
     "check": {
@@ -3393,6 +3637,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A dog eating a piece of bread from the ground, mouth on the bread, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/karta.webp": {
+    "bytes": 110396,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "5a4397b18c263149",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A single bank card lying alone on a plain wooden table, seen from above. No readable numbers or name on it. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -3556,6 +3816,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/lozko.webp": {
+    "bytes": 30008,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "af460e92ac8b5cff",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A grown man lying awake in bed in the morning, eyes open, duvet pulled up, daylight through the curtains. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/lubic.webp": {
     "bytes": 139016,
     "check": {
@@ -3569,6 +3845,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A child smiling broadly with both arms round a dog's neck, hugging it. Daylight outdoors. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/ludzie.webp": {
+    "bytes": 51626,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "ebc359aba6a76ab6",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Six colleagues of different ages standing together in an office talking, whole group in frame. Daylight. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -3780,6 +4072,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/mieszkac.webp": {
+    "bytes": 55380,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "f9d2a1cb61ec7ebe",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A man standing at the window of a flat looking out over a city, seen from inside the room, his back to us. Daylight. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/mleko.webp": {
     "bytes": 5586,
     "check": {
@@ -3985,6 +4293,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A close view of one hand pushing a window open by its handle, the frame swinging outward. Daylight beyond. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/padac.webp": {
+    "bytes": 185574,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "45361ee008894be9",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Raindrops striking a window pane and running down the glass, seen from inside a room, the view beyond blurred. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -4506,6 +4830,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/sniadanie.webp": {
+    "bytes": 93794,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "1445434bc1d4a34b",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A breakfast laid out on a table seen from directly above: a plate with bread and butter and a boiled egg. No coffee cup. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/spac.webp": {
     "bytes": 22122,
     "check": {
@@ -4757,6 +5097,22 @@
     "size": "800x800",
     "source": "supplied"
   },
+  "media/img/ulica.webp": {
+    "bytes": 109944,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "7dddf1f763daf19f",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A city street seen from the pavement, cars parked along the kerb on both sides and buildings rising behind them, nobody in shot. Daylight. No readable signage. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/wazny.webp": {
     "author": "supplied by user",
     "bytes": 45174,
@@ -4781,6 +5137,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A close view of a person's eyes looking straight ahead, sharp and clear, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/wieczor.webp": {
+    "bytes": 36350,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "d2522ff607c96324",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Rooftops of a town at dusk, the sky deep orange fading to blue, a few windows lit from inside. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
