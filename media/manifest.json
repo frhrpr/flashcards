@@ -75,9 +75,10 @@
   },
   "media/audio/brac__sentence.mp3": {
     "fingerprint": "0d2e2a637f2e6762",
-    "gain_db": -0.6,
+    "gain_db": 0.9,
     "model": "eleven_multilingual_v2",
-    "seconds": 1.33,
+    "seconds": 1.31,
+    "seed": 7,
     "source": "tts",
     "text": "Biorę książkę ze stołu.",
     "voice": "ErXwobaYiN019PkySvjV",
@@ -379,6 +380,27 @@
     "seconds": 1.07,
     "source": "tts",
     "text": "Widzę coś na drodze.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/czarny.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-czarny.ogg",
+    "fingerprint": "2a89beded17c6ab1",
+    "gain_db": -1.0,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-czarny.ogg",
+    "seconds": 0.81,
+    "source": "commons",
+    "text": "czarny"
+  },
+  "media/audio/czarny__sentence.mp3": {
+    "fingerprint": "928445ca7192c3f2",
+    "gain_db": 0.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.31,
+    "source": "tts",
+    "text": "Mój szalik jest czarny.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -823,6 +845,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/glodny.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-głodny.ogg",
+    "fingerprint": "9f72e4dcc64db08e",
+    "gain_db": -0.2,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-g%C5%82odny.ogg",
+    "seconds": 1.54,
+    "source": "commons",
+    "text": "głodny"
+  },
+  "media/audio/glodny__sentence.mp3": {
+    "fingerprint": "6889726641a4b2ad",
+    "gain_db": 0.8,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.89,
+    "source": "tts",
+    "text": "Jestem głodny.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/glos.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-głos.ogg",
@@ -883,6 +926,48 @@
     "seconds": 1.2,
     "source": "tts",
     "text": "Czekam godzinę w parku.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/gotowac.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-gotować.ogg",
+    "fingerprint": "84a41bd46c26712c",
+    "gain_db": -0.2,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-gotowa%C4%87.ogg",
+    "seconds": 1.49,
+    "source": "commons",
+    "text": "gotować"
+  },
+  "media/audio/gotowac__sentence.mp3": {
+    "fingerprint": "9a872a886b52d96d",
+    "gain_db": -0.5,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.2,
+    "source": "tts",
+    "text": "Matka gotuje obiad.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/grac.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-grać.ogg",
+    "fingerprint": "91d0bd2b211dc2d8",
+    "gain_db": -0.7,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-gra%C4%87.ogg",
+    "seconds": 0.78,
+    "source": "commons",
+    "text": "grać"
+  },
+  "media/audio/grac__sentence.mp3": {
+    "fingerprint": "a66f922a4a401def",
+    "gain_db": -1.0,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.2,
+    "source": "tts",
+    "text": "Chłopiec gra w piłkę.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1244,6 +1329,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/kuchnia.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-kuchnia.ogg",
+    "fingerprint": "205d41a153886531",
+    "gain_db": -3.3,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-kuchnia.ogg",
+    "seconds": 0.68,
+    "source": "commons",
+    "text": "kuchnia"
+  },
+  "media/audio/kuchnia__sentence.mp3": {
+    "fingerprint": "a639d8526e8f1ab8",
+    "gain_db": 0.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.49,
+    "source": "tts",
+    "text": "W kuchni jest stół.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/kupowac.mp3": {
     "author": "Wyksztalcioch",
     "commons_file": "Pl-kupować.ogg",
@@ -1262,6 +1368,27 @@
     "seconds": 1.31,
     "source": "tts",
     "text": "Ty kupujesz chleb.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/kurtka.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-kurtka.ogg",
+    "fingerprint": "8ff8d546f254e7e8",
+    "gain_db": -0.6,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-kurtka.ogg",
+    "seconds": 1.49,
+    "source": "commons",
+    "text": "kurtka"
+  },
+  "media/audio/kurtka__sentence.mp3": {
+    "fingerprint": "74dbc232baedb604",
+    "gain_db": -1.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.46,
+    "source": "tts",
+    "text": "Zimą noszę ciepłą kurtkę.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1775,6 +1902,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/morze.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-morze.ogg",
+    "fingerprint": "577dc5548cdcb4d2",
+    "gain_db": -1.5,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-morze.ogg",
+    "seconds": 1.18,
+    "source": "commons",
+    "text": "morze"
+  },
+  "media/audio/morze__sentence.mp3": {
+    "fingerprint": "e5290838508d02c2",
+    "gain_db": -3.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.2,
+    "source": "tts",
+    "text": "Latem jadę nad morze.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/mowic.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-mówić.ogg",
@@ -2048,6 +2196,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/owoc.mp3": {
+    "author": "Frizabela",
+    "commons_file": "Pl-owoc.ogg",
+    "fingerprint": "e7d7b4051a267ca1",
+    "gain_db": -4.4,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-owoc.ogg",
+    "seconds": 0.71,
+    "source": "commons",
+    "text": "owoc"
+  },
+  "media/audio/owoc__sentence.mp3": {
+    "fingerprint": "3bf9c351fe6b2eca",
+    "gain_db": -1.8,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.15,
+    "source": "tts",
+    "text": "Na stole są owoce.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/padac.mp3": {
     "fingerprint": "f2cdf0fdc91e606b",
     "gain_db": -2.6,
@@ -2177,10 +2346,10 @@
   },
   "media/audio/piekny.mp3": {
     "fingerprint": "0efa0ea326e85140",
-    "gain_db": 3.4,
+    "gain_db": 2.3,
     "language_code": "pl",
     "model": "eleven_turbo_v2_5",
-    "seconds": 0.65,
+    "seconds": 0.76,
     "source": "tts",
     "text": "piękny",
     "voice": "ErXwobaYiN019PkySvjV",
@@ -3289,6 +3458,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/twarz.mp3": {
+    "author": "Frizabela",
+    "commons_file": "Pl-twarz.ogg",
+    "fingerprint": "7137acc4d90ce6db",
+    "gain_db": -0.3,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-twarz.ogg",
+    "seconds": 0.65,
+    "source": "commons",
+    "text": "twarz"
+  },
+  "media/audio/twarz__sentence.mp3": {
+    "fingerprint": "a0789b8e8923a202",
+    "gain_db": 1.2,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.18,
+    "source": "tts",
+    "text": "Dziecko myje twarz.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/tydzien.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-tydzień.ogg",
@@ -3580,6 +3770,27 @@
     "seconds": 1.2,
     "source": "tts",
     "text": "To drzewo jest zielone.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/zima.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-zima.ogg",
+    "fingerprint": "1d1e3aef9966d718",
+    "gain_db": 8.6,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-zima.ogg",
+    "seconds": 0.71,
+    "source": "commons",
+    "text": "zima"
+  },
+  "media/audio/zima__sentence.mp3": {
+    "fingerprint": "3da1dd1994ad7e62",
+    "gain_db": -1.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.97,
+    "source": "tts",
+    "text": "Nie lubię zimy.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -3923,6 +4134,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/czarny.webp": {
+    "bytes": 4638,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "cdf84fd714e36e72",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A folded black wool scarf lying alone on a white surface, the black very plainly the subject. Seen from above. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/czas.webp": {
     "bytes": 14550,
     "check": {
@@ -4222,6 +4449,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/glodny.webp": {
+    "bytes": 37498,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "7a511e395f7960db",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A man sitting at an empty table looking down at a bare plate, one hand on his stomach, plainly waiting to eat. Daylight indoors. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/glos.webp": {
     "bytes": 181492,
     "check": {
@@ -4264,6 +4507,38 @@
     "process_version": 1,
     "size": "800x534",
     "source": "supplied"
+  },
+  "media/img/gotowac.webp": {
+    "bytes": 51184,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "ed2c653dc5209131",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A woman stirring a pot on a stove with a wooden spoon, steam rising, seen from the side. Kitchen daylight. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/grac.webp": {
+    "bytes": 69452,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "7a2a65c6ea5e0726",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A boy on a grass pitch kicking a football, mid-stride, the ball just leaving his foot. Daylight. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
   },
   "media/img/herbata.webp": {
     "bytes": 30852,
@@ -4521,6 +4796,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/kuchnia.webp": {
+    "bytes": 37400,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "7292939e64072ae0",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A small kitchen seen from the doorway: counter, hob, cupboards and a window, nobody in it. Daylight. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/kupowac.webp": {
     "bytes": 35512,
     "check": {
@@ -4534,6 +4825,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A customer at a shop counter handing coins to a shopkeeper with one hand and taking a loaf of bread with the other. Plain background. Absolutely no text, lettering, price tags, labels or signage anywhere in the image. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/kurtka.webp": {
+    "bytes": 46484,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "f9473adb9624e15e",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person outdoors in the snow wearing a thick padded winter jacket zipped up, seen from the front, the jacket filling most of the frame. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -4916,6 +5223,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/morze.webp": {
+    "bytes": 60640,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "49afa35ae67de93a",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "The open sea from a sandy beach in summer, waves coming in, blue sky and a clear horizon. No people. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/mowic.webp": {
     "bytes": 19140,
     "check": {
@@ -5116,6 +5439,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A close view of one hand pushing a window open by its handle, the frame swinging outward. Daylight beyond. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/owoc.webp": {
+    "bytes": 43518,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "317835bb6c9c32cb",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A wooden bowl of mixed fruit on a table — apples, pears and grapes — close up. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -5980,6 +6319,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/twarz.webp": {
+    "bytes": 30224,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "32db3b32d557d7e1",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A child bending over a basin and washing their face with both hands, water on the skin. Bathroom daylight. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/tydzien.webp": {
     "author": "supplied by user",
     "bytes": 99878,
@@ -6170,6 +6525,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "Four unrelated everyday objects that are all the same shade of green, arranged together on a plain white background: a green apple, a green leaf, a green mug, a green book. The only thing they have in common is the colour. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/zima.webp": {
+    "bytes": 49872,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "cf119221b2622dad",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A bare winter landscape under deep snow, low sun, frost on the branches, nothing falling. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },

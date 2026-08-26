@@ -126,10 +126,17 @@ def fetch_commons(word, dest_tmp):
     return {"source": "commons", "commons_file": name, **commons_meta(name)}
 
 
-def synthesise(key, text, model, lang=None):
+def synthesise(key, text, model, lang=None, seed=None):
     body = {"text": text, "model_id": model}
     if lang:
         body["language_code"] = lang
+    # Same text and voice give near-identical audio every time, so re-requesting
+    # a clip with odd prosody achieves nothing. A seed is the only handle on
+    # that: a different one is a genuinely different take of the same line.
+    # Deliberately NOT part of the fingerprint — putting it there would make
+    # every clip stale the moment the default changed.
+    if seed is not None:
+        body["seed"] = seed
     req = urllib.request.Request(TTS_API + VOICE_ID, data=json.dumps(body).encode(),
                                  headers={"xi-api-key": key, "Content-Type": "application/json",
                                           "Accept": "audio/mpeg"})
@@ -212,7 +219,11 @@ def plan(notes, only, tts_words):
     for n in notes:
         if only and n["id"] not in only:
             continue
-        want = "tts" if tts_words else "commons"
+        # A note can insist on TTS for its word. Without this the choice lives
+        # only in the --tts-words flag, so the next ordinary run recomputes the
+        # fingerprint expecting Commons, calls the clip stale and quietly
+        # rebuilds it from the recording we rejected. That happened to piękny.
+        want = "tts" if (tts_words or n.get("audio_tts")) else "commons"
         targets = [(n["word"], f"{n['id']}.mp3", n, "audio", "word", want)]
         s = n.get("sentence")
         if s and s.get("pl"):
@@ -240,6 +251,8 @@ def main():
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--go", action="store_true")
     ap.add_argument("--only", default="")
+    ap.add_argument("--seed", type=int, default=None,
+                    help="ask for a different take of the same line; use with --only")
     ap.add_argument("--tts-words", action="store_true",
                     help="skip Commons and synthesise words too")
     args = ap.parse_args()
@@ -291,15 +304,17 @@ def main():
                 prov = fetch_commons(j["text"], raw)
                 if prov is None:            # no recording exists — pin the language
                     fell_back = True
-                    raw.write_bytes(synthesise(key, j["text"], WORD_MODEL, WORD_LANG))
+                    raw.write_bytes(synthesise(key, j["text"], WORD_MODEL, WORD_LANG, args.seed))
                     prov = {"source": "tts", "voice": VOICE_ID, "voice_name": VOICE_NAME,
+                            **({"seed": args.seed} if args.seed is not None else {}),
                             "model": WORD_MODEL, "language_code": WORD_LANG,
                             "why": "no Commons recording for this word"}
             else:
                 model = SENTENCE_MODEL if j["kind"] == "sentence" else WORD_MODEL
                 lang = None if j["kind"] == "sentence" else WORD_LANG
-                raw.write_bytes(synthesise(key, j["text"], model, lang))
+                raw.write_bytes(synthesise(key, j["text"], model, lang, args.seed))
                 prov = {"source": "tts", "voice": VOICE_ID, "voice_name": VOICE_NAME,
+                            **({"seed": args.seed} if args.seed is not None else {}),
                         "model": model, **({"language_code": lang} if lang else {})}
             gain, before, after = postprocess(raw, tmp)
         except RuntimeError as e:

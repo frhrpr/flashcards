@@ -5639,7 +5639,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "audio_tts": true
     },
     {
       "id": "spodnie",
@@ -5697,6 +5698,331 @@
           "siedzieć",
           "na",
           "krzesło"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "zima",
+      "word": "zima",
+      "gloss": "winter",
+      "pos": "noun",
+      "ipa": "ˈʑima",
+      "note": null,
+      "image": "media/img/zima.webp",
+      "image_alt": "a snowy winter landscape under a low sun",
+      "image_basis": "sentence",
+      "image_prompt": "A bare winter landscape under deep snow, low sun, frost on the branches, nothing falling. No text or lettering. Square image.",
+      "audio": "media/audio/zima.mp3",
+      "sentence": {
+        "pl": "Nie lubię zimy.",
+        "en": "I don't like winter.",
+        "gap": "Nie lubię ___.",
+        "answer": "zimy",
+        "answer_lemma": "zima",
+        "audio": "media/audio/zima__sentence.mp3",
+        "lemmas": [
+          "nie",
+          "lubić",
+          "zima"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "czarny",
+      "word": "czarny",
+      "gloss": "black",
+      "pos": "adjective",
+      "ipa": "ˈt͡ʂarnɨ",
+      "note": null,
+      "image": "media/img/czarny.webp",
+      "image_alt": "a black scarf on a white surface",
+      "image_basis": "sentence",
+      "image_prompt": "A folded black wool scarf lying alone on a white surface, the black very plainly the subject. Seen from above. No text or lettering. Square image.",
+      "audio": "media/audio/czarny.mp3",
+      "sentence": {
+        "pl": "Mój szalik jest czarny.",
+        "en": "My scarf is black.",
+        "gap": "Mój szalik jest ___.",
+        "answer": "czarny",
+        "answer_lemma": "czarny",
+        "audio": "media/audio/czarny__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "szalik",
+          "być",
+          "czarny"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "gotowac",
+      "word": "gotować",
+      "gloss": "to cook",
+      "pos": "verb",
+      "ipa": "ɡɔˈtɔvat͡ɕ",
+      "note": null,
+      "image": "media/img/gotowac.webp",
+      "image_alt": "a woman stirring a pot on a stove",
+      "image_basis": "sentence",
+      "image_prompt": "A woman stirring a pot on a stove with a wooden spoon, steam rising, seen from the side. Kitchen daylight. No text or lettering. Square image.",
+      "audio": "media/audio/gotowac.mp3",
+      "sentence": {
+        "pl": "Matka gotuje obiad.",
+        "en": "Mother is cooking dinner.",
+        "gap": "Matka ___ obiad.",
+        "answer": "gotuje",
+        "answer_lemma": "gotować",
+        "audio": "media/audio/gotowac__sentence.mp3",
+        "lemmas": [
+          "matka",
+          "gotować",
+          "obiad"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "owoc",
+      "word": "owoc",
+      "gloss": "fruit",
+      "pos": "noun",
+      "ipa": "ˈɔvɔt͡s",
+      "note": null,
+      "image": "media/img/owoc.webp",
+      "image_alt": "a bowl of mixed fruit on a table",
+      "image_basis": "sentence",
+      "image_prompt": "A wooden bowl of mixed fruit on a table — apples, pears and grapes — close up. No text or lettering. Square image.",
+      "audio": "media/audio/owoc.mp3",
+      "sentence": {
+        "pl": "Na stole są owoce.",
+        "en": "There is fruit on the table.",
+        "gap": "Na stole są ___.",
+        "answer": "owoce",
+        "answer_lemma": "owoc",
+        "audio": "media/audio/owoc__sentence.mp3",
+        "lemmas": [
+          "na",
+          "stół",
+          "być",
+          "owoc"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "twarz",
+      "word": "twarz",
+      "gloss": "face",
+      "pos": "noun",
+      "ipa": "tfaʂ",
+      "note": null,
+      "image": "media/img/twarz.webp",
+      "image_alt": "a child washing their face over a basin",
+      "image_basis": "sentence",
+      "image_prompt": "A child bending over a basin and washing their face with both hands, water on the skin. Bathroom daylight. No text or lettering. Square image.",
+      "audio": "media/audio/twarz.mp3",
+      "sentence": {
+        "pl": "Dziecko myje twarz.",
+        "en": "The child washes their face.",
+        "gap": "Dziecko myje ___.",
+        "answer": "twarz",
+        "answer_lemma": "twarz",
+        "audio": "media/audio/twarz__sentence.mp3",
+        "lemmas": [
+          "dziecko",
+          "myć",
+          "twarz"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "kurtka",
+      "word": "kurtka",
+      "gloss": "jacket",
+      "pos": "noun",
+      "ipa": "ˈkurtka",
+      "note": null,
+      "image": "media/img/kurtka.webp",
+      "image_alt": "a person wearing a thick padded winter jacket",
+      "image_basis": "sentence",
+      "image_prompt": "A person outdoors in the snow wearing a thick padded winter jacket zipped up, seen from the front, the jacket filling most of the frame. No text or lettering. Square image.",
+      "audio": "media/audio/kurtka.mp3",
+      "sentence": {
+        "pl": "Zimą noszę ciepłą kurtkę.",
+        "en": "In winter I wear a warm jacket.",
+        "gap": "Zimą noszę ciepłą ___.",
+        "answer": "kurtkę",
+        "answer_lemma": "kurtka",
+        "audio": "media/audio/kurtka__sentence.mp3",
+        "lemmas": [
+          "zima",
+          "nosić",
+          "ciepły",
+          "kurtka"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "kuchnia",
+      "word": "kuchnia",
+      "gloss": "kitchen",
+      "pos": "noun",
+      "ipa": "ˈkuxɲa",
+      "note": null,
+      "image": "media/img/kuchnia.webp",
+      "image_alt": "a small kitchen seen from the doorway",
+      "image_basis": "sentence",
+      "image_prompt": "A small kitchen seen from the doorway: counter, hob, cupboards and a window, nobody in it. Daylight. No text or lettering. Square image.",
+      "audio": "media/audio/kuchnia.mp3",
+      "sentence": {
+        "pl": "W kuchni jest stół.",
+        "en": "There is a table in the kitchen.",
+        "gap": "W ___ jest stół.",
+        "answer": "kuchni",
+        "answer_lemma": "kuchnia",
+        "audio": "media/audio/kuchnia__sentence.mp3",
+        "lemmas": [
+          "w",
+          "kuchnia",
+          "być",
+          "stół"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "morze",
+      "word": "morze",
+      "gloss": "sea",
+      "pos": "noun",
+      "ipa": "ˈmɔʐɛ",
+      "note": null,
+      "image": "media/img/morze.webp",
+      "image_alt": "the open sea seen from a beach",
+      "image_basis": "sentence",
+      "image_prompt": "The open sea from a sandy beach in summer, waves coming in, blue sky and a clear horizon. No people. No text or lettering. Square image.",
+      "audio": "media/audio/morze.mp3",
+      "sentence": {
+        "pl": "Latem jadę nad morze.",
+        "en": "In summer I travel to the sea.",
+        "gap": "Latem jadę nad ___.",
+        "answer": "morze",
+        "answer_lemma": "morze",
+        "audio": "media/audio/morze__sentence.mp3",
+        "lemmas": [
+          "lato",
+          "jechać",
+          "nad",
+          "morze"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "glodny",
+      "word": "głodny",
+      "gloss": "hungry",
+      "pos": "adjective",
+      "ipa": "ˈɡwɔdnɨ",
+      "note": null,
+      "image": "media/img/glodny.webp",
+      "image_alt": "a man at an empty table with a bare plate, hungry",
+      "image_basis": "sentence",
+      "image_prompt": "A man sitting at an empty table looking down at a bare plate, one hand on his stomach, plainly waiting to eat. Daylight indoors. No text or lettering. Square image.",
+      "audio": "media/audio/glodny.mp3",
+      "sentence": {
+        "pl": "Jestem głodny.",
+        "en": "I am hungry.",
+        "gap": "Jestem ___.",
+        "answer": "głodny",
+        "answer_lemma": "głodny",
+        "audio": "media/audio/glodny__sentence.mp3",
+        "lemmas": [
+          "być",
+          "głodny"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "grac",
+      "word": "grać",
+      "gloss": "to play",
+      "pos": "verb",
+      "ipa": "ɡrat͡ɕ",
+      "note": null,
+      "image": "media/img/grac.webp",
+      "image_alt": "a boy kicking a football on a pitch",
+      "image_basis": "sentence",
+      "image_prompt": "A boy on a grass pitch kicking a football, mid-stride, the ball just leaving his foot. Daylight. No text or lettering. Square image.",
+      "audio": "media/audio/grac.mp3",
+      "sentence": {
+        "pl": "Chłopiec gra w piłkę.",
+        "en": "The boy is playing ball.",
+        "gap": "Chłopiec ___ w piłkę.",
+        "answer": "gra",
+        "answer_lemma": "grać",
+        "audio": "media/audio/grac__sentence.mp3",
+        "lemmas": [
+          "chłopiec",
+          "grać",
+          "w",
+          "piłka"
         ]
       },
       "cards": [

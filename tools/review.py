@@ -12,7 +12,7 @@ tools/audio.py clears the flag again whenever a clip changes.
 The page is written somewhere Windows can open it, because the repo lives in
 WSL and Explorer cannot reach WSL paths without the \\\\wsl$ prefix.
 """
-import argparse, json, shutil, sys
+import argparse, hashlib, json, shutil, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -62,15 +62,22 @@ def build(notes, manifest, dest):
             shutil.copy2(ROOT / n["image"], img_out / Path(n["image"]).name)
             copied += 1
 
+    def stamp(rel):
+        """Eight hex digits of the file's own contents, appended to its URL.
+        Same filename with new bytes is otherwise served from cache, which has
+        twice looked like a regeneration that never happened."""
+        return hashlib.blake2b((ROOT / rel).read_bytes(), digest_size=4).hexdigest()
+
     def player(rel):
-        return (f'<audio controls preload=none src="audio/{esc(Path(rel).name)}"></audio>'
+        return (f'<audio controls preload=none '
+                f'src="audio/{esc(Path(rel).name)}?v={stamp(rel)}"></audio>'
                 if rel else '<span class="bad">missing</span>')
 
     cards = ""
     for n in sorted(notes, key=lambda x: (x.get("reviewed", False), x["id"])):
         s = n.get("sentence") or {}
         done = n.get("reviewed", False)
-        pic = (f'<img src="img/{esc(Path(n["image"]).name)}" alt="">'
+        pic = (f'<img src="img/{esc(Path(n["image"]).name)}?v={stamp(n["image"])}" alt="">'
                if n.get("image") else '<div class="noimg">no image</div>')
         chk = (manifest.get(n.get("image") or "", {}) or {}).get("check") or {}
         if chk.get("verdict") == "flag":

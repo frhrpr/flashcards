@@ -185,6 +185,20 @@ zamknąć,zamknac,verb,yes,carded,everyday A1/A2 word; not in frequency.csv,2026
 piękny,piekny,adjective,yes,carded,frequency rank 206,2026-08-26,
 spodnie,spodnie,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-26,
 krzesło,krzeslo,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-26,
-zima,zima,noun,yes,queued,sentence for śnieg,2026-08-26,"met in a sentence, not carded"
-czarny,czarny,adjective,yes,queued,sentence for spodnie,2026-08-26,"met in a sentence, not carded"
+zima,zima,noun,yes,carded,sentence for śnieg,2026-08-26,"borrowed into a sentence first, then carded"
+czarny,czarny,adjective,yes,carded,sentence for spodnie,2026-08-26,"borrowed into a sentence first, then carded"
 z,z,preposition,no,known,sentence for brać; governs genitive or instrumental,2026-08-26,learned through the case it governs
+gotować,gotowac,verb,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-26,
+owoc,owoc,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-26,
+twarz,twarz,noun,yes,carded,frequency rank 143,2026-08-26,
+kurtka,kurtka,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-26,
+kuchnia,kuchnia,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-26,
+morze,morze,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-26,
+głodny,glodny,adjective,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-26,
+grać,grac,verb,yes,carded,frequency rank 362,2026-08-26,
+obiad,obiad,noun,yes,queued,sentence for gotować,2026-08-26,"met in a sentence, not carded"
+myć,myc,verb,yes,queued,sentence for twarz,2026-08-26,"met in a sentence, not carded"
+nosić,nosic,verb,yes,queued,sentence for kurtka,2026-08-26,"met in a sentence, not carded"
+lato,lato,noun,yes,queued,sentence for morze,2026-08-26,"met in a sentence, not carded"
+nad,nad,preposition,no,known,sentence for morze; nad morze = to the seaside,2026-08-26,learned through the case it governs
+szalik,szalik,noun,yes,queued,sentence for czarny,2026-08-26,"met in a sentence, not carded"
