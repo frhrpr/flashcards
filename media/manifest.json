@@ -1013,6 +1013,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/goracy.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-gorący.ogg",
+    "fingerprint": "c53a700cd12c8672",
+    "gain_db": -1.4,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-gor%C4%85cy.ogg",
+    "seconds": 1.54,
+    "source": "commons",
+    "text": "gorący"
+  },
+  "media/audio/goracy__sentence.mp3": {
+    "fingerprint": "1f59e457dd00c449",
+    "gain_db": -2.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.72,
+    "source": "tts",
+    "text": "Moja herbata jest gorąca.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/gotowac.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-gotować.ogg",
@@ -1560,6 +1581,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/lazienka.mp3": {
+    "author": "Marcowy zając",
+    "commons_file": "Pl-łazienka.ogg",
+    "fingerprint": "b5037363b65815fc",
+    "gain_db": 8.2,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-%C5%82azienka.ogg",
+    "seconds": 1.23,
+    "source": "commons",
+    "text": "łazienka"
+  },
+  "media/audio/lazienka__sentence.mp3": {
+    "fingerprint": "4e3eab469c230df5",
+    "gain_db": -0.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.31,
+    "source": "tts",
+    "text": "Myję ręce w łazience.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/leciec.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-lecieć.ogg",
@@ -1986,6 +2028,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/mieso.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-mięso.ogg",
+    "fingerprint": "2d5a58930489257d",
+    "gain_db": -1.3,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-mi%C4%99so.ogg",
+    "seconds": 1.7,
+    "source": "commons",
+    "text": "mięso"
+  },
+  "media/audio/mieso__sentence.mp3": {
+    "fingerprint": "276907391dceca1a",
+    "gain_db": 0.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.15,
+    "source": "tts",
+    "text": "Nie jem mięsa.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/mieszkac.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-mieszkać.ogg",
@@ -2298,6 +2361,27 @@
     "seconds": 1.44,
     "source": "tts",
     "text": "Dziecko ma nową piłkę.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/noz.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-nóż.ogg",
+    "fingerprint": "aed63beca5507ac2",
+    "gain_db": 3.4,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-n%C3%B3%C5%BC.ogg",
+    "seconds": 0.94,
+    "source": "commons",
+    "text": "nóż"
+  },
+  "media/audio/noz__sentence.mp3": {
+    "fingerprint": "e3164293335ae0ec",
+    "gain_db": -0.2,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.1,
+    "source": "tts",
+    "text": "Nóż jest na stole.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -2848,6 +2932,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/pomysl.mp3": {
+    "author": "Kajervi",
+    "commons_file": "Pl-pomysł.ogg",
+    "fingerprint": "06396b392f1f29b4",
+    "gain_db": -2.9,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-pomys%C5%82.ogg",
+    "seconds": 0.89,
+    "source": "commons",
+    "text": "pomysł"
+  },
+  "media/audio/pomysl__sentence.mp3": {
+    "fingerprint": "674a14c5327fa3a4",
+    "gain_db": -1.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.02,
+    "source": "tts",
+    "text": "Mam dobry pomysł.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/poniedzialek.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-poniedziałek.ogg",
@@ -2890,6 +2995,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/powiedziec.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-powiedzieć.ogg",
+    "fingerprint": "b72d59ff2a22ce5d",
+    "gain_db": -1.5,
+    "licence": "CC BY 2.5 pl",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-powiedzie%C4%87.ogg",
+    "seconds": 1.2,
+    "source": "commons",
+    "text": "powiedzieć"
+  },
+  "media/audio/powiedziec__sentence.mp3": {
+    "fingerprint": "c8a5c4804233fd94",
+    "gain_db": 4.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.2,
+    "source": "tts",
+    "text": "Chcę coś powiedzieć.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/praca.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-praca.ogg",
@@ -2908,6 +3034,27 @@
     "seconds": 1.23,
     "source": "tts",
     "text": "Rano idę do pracy.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/pracowac.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-pracować.ogg",
+    "fingerprint": "b02fde1d43fb3539",
+    "gain_db": 0.1,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-pracowa%C4%87.ogg",
+    "seconds": 0.91,
+    "source": "commons",
+    "text": "pracować"
+  },
+  "media/audio/pracowac__sentence.mp3": {
+    "fingerprint": "93f01d93f8a1ae93",
+    "gain_db": -0.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.57,
+    "source": "tts",
+    "text": "Mój ojciec pracuje w szkole.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -3160,6 +3307,27 @@
     "seconds": 1.88,
     "source": "tts",
     "text": "Czerwony samochód stoi na drodze.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/sciana.mp3": {
+    "author": "Frizabela",
+    "commons_file": "Pl-ściana.ogg",
+    "fingerprint": "2fd0641add4d03f9",
+    "gain_db": 1.3,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-%C5%9Bciana.ogg",
+    "seconds": 0.73,
+    "source": "commons",
+    "text": "ściana"
+  },
+  "media/audio/sciana__sentence.mp3": {
+    "fingerprint": "6e9dab39e157d627",
+    "gain_db": 0.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.46,
+    "source": "tts",
+    "text": "Ściana w kuchni jest żółta.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -3941,6 +4109,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/wiatr.mp3": {
+    "author": "Frizabela",
+    "commons_file": "Pl-wiatr.ogg",
+    "fingerprint": "e006a418ca0d8769",
+    "gain_db": -1.5,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-wiatr.ogg",
+    "seconds": 0.65,
+    "source": "commons",
+    "text": "wiatr"
+  },
+  "media/audio/wiatr__sentence.mp3": {
+    "fingerprint": "26b879068a03f28b",
+    "gain_db": -0.2,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.52,
+    "source": "tts",
+    "text": "Dzisiaj jest zimny wiatr.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/widziec.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-widzieć.ogg",
@@ -4316,6 +4505,27 @@
     "seconds": 1.25,
     "source": "tts",
     "text": "Moja żona lubi kawę.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/zupa.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-zupa.ogg",
+    "fingerprint": "f7ed9d2eee9c2359",
+    "gain_db": 1.6,
+    "licence": "CC BY 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-zupa.ogg",
+    "seconds": 0.89,
+    "source": "commons",
+    "text": "zupa"
+  },
+  "media/audio/zupa__sentence.mp3": {
+    "fingerprint": "09e90d0be847cfa3",
+    "gain_db": -1.6,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.18,
+    "source": "tts",
+    "text": "Jem zupę na obiad.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },

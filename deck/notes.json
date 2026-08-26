@@ -6720,6 +6720,315 @@
         "listening"
       ],
       "reviewed": true
+    },
+    {
+      "id": "sciana",
+      "word": "ściana",
+      "gloss": "wall",
+      "pos": "noun",
+      "ipa": "ˈɕt͡ɕana",
+      "note": null,
+      "image_basis": "sentence",
+      "image_prompt": "A yellow painted kitchen wall with a counter and cupboards in front of it. No text or lettering. Square image.",
+      "audio": "media/audio/sciana.mp3",
+      "sentence": {
+        "pl": "Ściana w kuchni jest żółta.",
+        "en": "The kitchen wall is yellow.",
+        "gap": "___ w kuchni jest żółta.",
+        "answer": "Ściana",
+        "answer_lemma": "ściana",
+        "audio": "media/audio/sciana__sentence.mp3",
+        "lemmas": [
+          "ściana",
+          "w",
+          "kuchnia",
+          "być",
+          "żółty"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "pomysl",
+      "word": "pomysł",
+      "gloss": "idea",
+      "pos": "noun",
+      "ipa": "ˈpɔmɨsw",
+      "note": null,
+      "image_basis": "word",
+      "image_prompt": "A woman sitting at a table looking up with a bright delighted expression, one index finger raised. No text or lettering. Square image.",
+      "audio": "media/audio/pomysl.mp3",
+      "sentence": {
+        "pl": "Mam dobry pomysł.",
+        "en": "I have a good idea.",
+        "gap": "Mam dobry ___.",
+        "answer": "pomysł",
+        "answer_lemma": "pomysł",
+        "audio": "media/audio/pomysl__sentence.mp3",
+        "lemmas": [
+          "mieć",
+          "dobry",
+          "pomysł"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "pracowac",
+      "word": "pracować",
+      "gloss": "to work",
+      "pos": "verb",
+      "ipa": "praˈt͡sɔvat͡ɕ",
+      "note": null,
+      "image_basis": "sentence",
+      "image_prompt": "A man standing at a whiteboard in a classroom, mid-explanation, facing the room. No text or lettering on the board. Square image.",
+      "audio": "media/audio/pracowac.mp3",
+      "sentence": {
+        "pl": "Mój ojciec pracuje w szkole.",
+        "en": "My father works at a school.",
+        "gap": "Mój ojciec ___ w szkole.",
+        "answer": "pracuje",
+        "answer_lemma": "pracować",
+        "audio": "media/audio/pracowac__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "ojciec",
+          "pracować",
+          "w",
+          "szkoła"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "powiedziec",
+      "word": "powiedzieć",
+      "gloss": "to say",
+      "pos": "verb",
+      "ipa": "pɔˈvjɛd͡ʑɛt͡ɕ",
+      "note": "the finished act — mówić is the speaking, this is getting it said",
+      "image_basis": "sentence",
+      "image_prompt": "Two men sitting at a table, one leaning forward with a hand slightly raised as if about to say something important, the other listening. No text. Square image.",
+      "audio": "media/audio/powiedziec.mp3",
+      "sentence": {
+        "pl": "Chcę coś powiedzieć.",
+        "en": "I want to say something.",
+        "gap": "Chcę coś ___.",
+        "answer": "powiedzieć",
+        "answer_lemma": "powiedzieć",
+        "audio": "media/audio/powiedziec__sentence.mp3",
+        "lemmas": [
+          "chcieć",
+          "coś",
+          "powiedzieć"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "lazienka",
+      "word": "łazienka",
+      "gloss": "bathroom",
+      "pos": "noun",
+      "ipa": "waˈʑɛnka",
+      "note": null,
+      "image_basis": "sentence",
+      "image_prompt": "A person washing their hands at a white bathroom sink, tiled wall and mirror behind. No text or lettering. Square image.",
+      "audio": "media/audio/lazienka.mp3",
+      "sentence": {
+        "pl": "Myję ręce w łazience.",
+        "en": "I wash my hands in the bathroom.",
+        "gap": "Myję ręce w ___.",
+        "answer": "łazience",
+        "answer_lemma": "łazienka",
+        "audio": "media/audio/lazienka__sentence.mp3",
+        "lemmas": [
+          "myć",
+          "ręka",
+          "w",
+          "łazienka"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "zupa",
+      "word": "zupa",
+      "gloss": "soup",
+      "pos": "noun",
+      "ipa": "ˈzupa",
+      "note": null,
+      "image_basis": "sentence",
+      "image_prompt": "A deep bowl of thick vegetable soup on a table with a spoon resting beside it. No text or lettering. Square image.",
+      "audio": "media/audio/zupa.mp3",
+      "sentence": {
+        "pl": "Jem zupę na obiad.",
+        "en": "I eat soup for dinner.",
+        "gap": "Jem ___ na obiad.",
+        "answer": "zupę",
+        "answer_lemma": "zupa",
+        "audio": "media/audio/zupa__sentence.mp3",
+        "lemmas": [
+          "jeść",
+          "zupa",
+          "na",
+          "obiad"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "goracy",
+      "word": "gorący",
+      "gloss": "hot",
+      "pos": "adjective",
+      "ipa": "ɡɔˈrɔnt͡sɨ",
+      "note": null,
+      "image_basis": "word",
+      "image_prompt": "A metal kettle on a stove with steam rising visibly from its spout. No text or lettering. Square image.",
+      "audio": "media/audio/goracy.mp3",
+      "sentence": {
+        "pl": "Moja herbata jest gorąca.",
+        "en": "My tea is hot.",
+        "gap": "Moja herbata jest ___.",
+        "answer": "gorąca",
+        "answer_lemma": "gorący",
+        "audio": "media/audio/goracy__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "herbata",
+          "być",
+          "gorący"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "wiatr",
+      "word": "wiatr",
+      "gloss": "wind",
+      "pos": "noun",
+      "ipa": "vjatr",
+      "note": null,
+      "image_basis": "sentence",
+      "image_prompt": "A woman walking on a street with her coat and hair blown hard sideways, trees bending behind her. No text or lettering. Square image.",
+      "audio": "media/audio/wiatr.mp3",
+      "sentence": {
+        "pl": "Dzisiaj jest zimny wiatr.",
+        "en": "There is a cold wind today.",
+        "gap": "Dzisiaj jest zimny ___.",
+        "answer": "wiatr",
+        "answer_lemma": "wiatr",
+        "audio": "media/audio/wiatr__sentence.mp3",
+        "lemmas": [
+          "dzisiaj",
+          "być",
+          "zimny",
+          "wiatr"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "mieso",
+      "word": "mięso",
+      "gloss": "meat",
+      "pos": "noun",
+      "ipa": "ˈmjɛ̃sɔ",
+      "note": null,
+      "image_basis": "word",
+      "image_prompt": "Two raw red steaks on a wooden chopping board. No text or lettering. Square image.",
+      "audio": "media/audio/mieso.mp3",
+      "sentence": {
+        "pl": "Nie jem mięsa.",
+        "en": "I don't eat meat.",
+        "gap": "Nie jem ___.",
+        "answer": "mięsa",
+        "answer_lemma": "mięso",
+        "audio": "media/audio/mieso__sentence.mp3",
+        "lemmas": [
+          "nie",
+          "jeść",
+          "mięso"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "noz",
+      "word": "nóż",
+      "gloss": "knife",
+      "pos": "noun",
+      "ipa": "nuʂ",
+      "note": null,
+      "image_basis": "word",
+      "image_prompt": "A single kitchen knife lying on a wooden board, seen from above. No text or lettering. Square image.",
+      "audio": "media/audio/noz.mp3",
+      "sentence": {
+        "pl": "Nóż jest na stole.",
+        "en": "The knife is on the table.",
+        "gap": "___ jest na stole.",
+        "answer": "Nóż",
+        "answer_lemma": "nóż",
+        "audio": "media/audio/noz__sentence.mp3",
+        "lemmas": [
+          "nóż",
+          "być",
+          "na",
+          "stół"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
     }
   ]
 }
