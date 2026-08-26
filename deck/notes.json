@@ -3192,9 +3192,9 @@
       "ipa": "ˈvaʐnɨ",
       "note": null,
       "image": "media/img/wazny.webp",
-      "image_alt": "a calendar grid with one day circled in red",
+      "image_alt": "a wall calendar with one day ringed in red",
       "image_basis": "sentence",
-      "image_prompt": "A grid of empty calendar squares with one single square ringed in thick red pen. Plain background, no lettering or numbers. Square image.",
+      "image_prompt": "Supplied by the user, not generated. A wall calendar with the 17th ringed in red pen and marked with exclamation marks. It carries English day names and handwriting, which was accepted deliberately. The generated version was a grid of blank squares with one ringed, which read as a diagram rather than a calendar.",
       "audio": "media/audio/wazny.mp3",
       "sentence": {
         "pl": "To jest ważny dzień.",
@@ -5047,6 +5047,330 @@
           "mieć",
           "numer",
           "siedem"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "bolec",
+      "word": "boleć",
+      "gloss": "to hurt",
+      "pos": "verb",
+      "ipa": "ˈbɔlɛt͡ɕ",
+      "note": "the part that hurts is the subject — Polish says 'the head hurts me'",
+      "image": "media/img/bolec.webp",
+      "image_alt": "a man wincing and holding his head",
+      "image_basis": "sentence",
+      "image_prompt": "A man sitting with both hands pressed to his temples, eyes shut, wincing with a headache. Plain indoor setting. No text or lettering. Square image.",
+      "audio": "media/audio/bolec.mp3",
+      "sentence": {
+        "pl": "Boli mnie głowa.",
+        "en": "My head hurts.",
+        "gap": "___ mnie głowa.",
+        "answer": "Boli",
+        "answer_lemma": "boleć",
+        "audio": "media/audio/bolec__sentence.mp3",
+        "lemmas": [
+          "boleć",
+          "mnie",
+          "głowa"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "numer",
+      "word": "numer",
+      "gloss": "number",
+      "pos": "noun",
+      "ipa": "ˈnumɛr",
+      "note": null,
+      "image": "media/img/numer.webp",
+      "image_alt": "a hand holding a phone showing a keypad",
+      "image_basis": "sentence",
+      "image_prompt": "A hand holding a phone, the screen showing a keypad of digits, seen over the shoulder. Daylight. Square image.",
+      "audio": "media/audio/numer.mp3",
+      "sentence": {
+        "pl": "Nie pamiętam numeru telefonu.",
+        "en": "I don't remember the phone number.",
+        "gap": "Nie pamiętam ___ telefonu.",
+        "answer": "numeru",
+        "answer_lemma": "numer",
+        "audio": "media/audio/numer__sentence.mp3",
+        "lemmas": [
+          "nie",
+          "pamiętać",
+          "numer",
+          "telefon"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "jutro",
+      "word": "jutro",
+      "gloss": "tomorrow",
+      "pos": "adverb",
+      "ipa": "ˈjutrɔ",
+      "note": null,
+      "image": "media/img/jutro.webp",
+      "image_alt": "a desk calendar turning from one date to the next",
+      "image_basis": "sentence",
+      "image_prompt": "A desk flip-calendar standing on a desk, the top page caught mid-turn to reveal the next day beneath it. Each page carries one large printed date number, clearly legible. No words, only the numbers. Morning light. Square image.",
+      "audio": "media/audio/jutro.mp3",
+      "sentence": {
+        "pl": "Jutro jadę do miasta.",
+        "en": "Tomorrow I travel to town.",
+        "gap": "___ jadę do miasta.",
+        "answer": "Jutro",
+        "answer_lemma": "jutro",
+        "audio": "media/audio/jutro__sentence.mp3",
+        "lemmas": [
+          "jutro",
+          "jechać",
+          "do",
+          "miasto"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "herbata",
+      "word": "herbata",
+      "gloss": "tea",
+      "pos": "noun",
+      "ipa": "xɛrˈbata",
+      "note": null,
+      "image": "media/img/herbata.webp",
+      "image_alt": "a glass of amber tea with a slice of lemon",
+      "image_basis": "sentence",
+      "image_prompt": "A tall glass of amber tea in a metal holder on a table, a slice of lemon beside it, evening lamplight. No text or lettering. Square image.",
+      "audio": "media/audio/herbata.mp3",
+      "sentence": {
+        "pl": "Wieczorem piję herbatę.",
+        "en": "In the evening I drink tea.",
+        "gap": "Wieczorem piję ___.",
+        "answer": "herbatę",
+        "answer_lemma": "herbata",
+        "audio": "media/audio/herbata__sentence.mp3",
+        "lemmas": [
+          "wieczór",
+          "pić",
+          "herbata"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "jajko",
+      "word": "jajko",
+      "gloss": "egg",
+      "pos": "noun",
+      "ipa": "ˈjajkɔ",
+      "note": null,
+      "image": "media/img/jajko.webp",
+      "image_alt": "brown eggs in a white bowl",
+      "image_basis": "sentence",
+      "image_prompt": "Four brown eggs in a white bowl on a kitchen counter, close up. No text or lettering. Square image.",
+      "audio": "media/audio/jajko.mp3",
+      "sentence": {
+        "pl": "Na śniadanie jem jajko.",
+        "en": "For breakfast I eat an egg.",
+        "gap": "Na śniadanie jem ___.",
+        "answer": "jajko",
+        "answer_lemma": "jajko",
+        "audio": "media/audio/jajko__sentence.mp3",
+        "lemmas": [
+          "na",
+          "śniadanie",
+          "jeść",
+          "jajko"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "noga",
+      "word": "noga",
+      "gloss": "leg",
+      "pos": "noun",
+      "ipa": "ˈnɔɡa",
+      "note": null,
+      "image": "media/img/noga.webp",
+      "image_alt": "a small child's legs dangling from a tall chair",
+      "image_basis": "sentence",
+      "image_prompt": "A small child's bare legs and feet dangling from a chair that is too tall for them, floor below. Daylight indoors. No text or lettering. Square image.",
+      "audio": "media/audio/noga.mp3",
+      "sentence": {
+        "pl": "Dziecko ma małe nogi.",
+        "en": "The child has small legs.",
+        "gap": "Dziecko ma małe ___.",
+        "answer": "nogi",
+        "answer_lemma": "noga",
+        "audio": "media/audio/noga__sentence.mp3",
+        "lemmas": [
+          "dziecko",
+          "mieć",
+          "mały",
+          "noga"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "ucho",
+      "word": "ucho",
+      "gloss": "ear",
+      "pos": "noun",
+      "ipa": "ˈuxɔ",
+      "note": "the plural is uszy, not ucha",
+      "image": "media/img/ucho.webp",
+      "image_alt": "a dog's head with large upright ears",
+      "image_basis": "sentence",
+      "image_prompt": "A close view of the head of a dog with large upright ears, seen from the side, the ears clearly the subject. Blurred garden behind. No text or lettering. Square image.",
+      "audio": "media/audio/ucho.mp3",
+      "sentence": {
+        "pl": "Pies ma duże uszy.",
+        "en": "The dog has big ears.",
+        "gap": "Pies ma duże ___.",
+        "answer": "uszy",
+        "answer_lemma": "ucho",
+        "audio": "media/audio/ucho__sentence.mp3",
+        "lemmas": [
+          "pies",
+          "mieć",
+          "duży",
+          "ucho"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "koszula",
+      "word": "koszula",
+      "gloss": "shirt",
+      "pos": "noun",
+      "ipa": "kɔˈʂula",
+      "note": null,
+      "image": "media/img/koszula.webp",
+      "image_alt": "a pale blue shirt on a hanger",
+      "image_basis": "sentence",
+      "image_prompt": "A single pale blue shirt on a wooden hanger against a plain wall, whole shirt in frame. No text or lettering. Square image.",
+      "audio": "media/audio/koszula.mp3",
+      "sentence": {
+        "pl": "Kupuję nową koszulę.",
+        "en": "I am buying a new shirt.",
+        "gap": "Kupuję nową ___.",
+        "answer": "koszulę",
+        "answer_lemma": "koszula",
+        "audio": "media/audio/koszula__sentence.mp3",
+        "lemmas": [
+          "kupować",
+          "nowy",
+          "koszula"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "cieply",
+      "word": "ciepły",
+      "gloss": "warm",
+      "pos": "adjective",
+      "ipa": "ˈt͡ɕɛpwɨ",
+      "note": null,
+      "image": "media/img/cieply.webp",
+      "image_alt": "two hands wrapped around a warm glass",
+      "image_basis": "sentence",
+      "image_prompt": "Two hands wrapped around a warm glass of tea, steam rising between them, close up. Soft indoor light. No text or lettering. Square image.",
+      "audio": "media/audio/cieply.mp3",
+      "sentence": {
+        "pl": "Herbata jest ciepła.",
+        "en": "The tea is warm.",
+        "gap": "Herbata jest ___.",
+        "answer": "ciepła",
+        "answer_lemma": "ciepły",
+        "audio": "media/audio/cieply__sentence.mp3",
+        "lemmas": [
+          "herbata",
+          "być",
+          "ciepły"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "konczyc",
+      "word": "kończyć",
+      "gloss": "to finish",
+      "pos": "verb",
+      "ipa": "ˈkɔɲt͡ʂɨt͡ɕ",
+      "note": "the other end from zacząć",
+      "image": "media/img/konczyc.webp",
+      "image_alt": "a person closing a laptop and leaving at the end of the day",
+      "image_basis": "sentence",
+      "image_prompt": "A person closing a laptop and pushing back their chair in an office at dusk, the room already half dark, coat over one arm. No text or lettering. Square image.",
+      "audio": "media/audio/konczyc.mp3",
+      "sentence": {
+        "pl": "Kończę pracę.",
+        "en": "I am finishing work.",
+        "gap": "___ pracę.",
+        "answer": "Kończę",
+        "answer_lemma": "kończyć",
+        "audio": "media/audio/konczyc__sentence.mp3",
+        "lemmas": [
+          "kończyć",
+          "praca"
         ]
       },
       "cards": [

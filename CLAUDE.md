@@ -568,6 +568,16 @@ fumble. Describe a position ("above the bench, about to land") rather than a
 direction, and drop any detail the word does not need. Two generated attempts
 at *walking into an office* both walked out.
 
+**Ban words in a picture, not numerals.** Prompts say "no text or lettering"
+so that a card does not carry English words, leak its own answer, or show the
+garbled type these models produce. A digit does none of those: `14` is not an
+English word, cannot give away a Polish one, and short numerals come out
+right first time. Taken literally the ban produces a calendar with no dates,
+which reads as a notepad — that is what happened to `jutro`, and `miesiąc`
+has the same fault. So say **"no words, only the numbers"** whenever the
+object *is* its numbers: a calendar, a clock face, a house number, a shirt, a
+platform sign, a keypad.
+
 **A number card shows the digit, not that many things.** A picture of twelve
 tulips is useless unless the learner counts them, and counting is exactly
 what these models get wrong — see below. A numeral in the world is read at a

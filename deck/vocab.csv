@@ -165,5 +165,13 @@ jak,jak,adverb,no,known,"question word, like co/kto/gdzie — given free",2026-0
 lekarz,lekarz,noun,yes,carded,"sentence for mieszkać, frequency rank 417",2026-08-26,"met first on a card, then carded"
 coś,cos,pronoun,yes,carded,sentence for bardzo,2026-08-26,"met first on a card, then carded"
 mnie,mnie,pronoun,no,known,sentence for lekarz,2026-08-26,
-boleć,bolec,verb,yes,queued,sentence for lekarz,2026-08-26,"met in a sentence, not carded"
-numer,numer,noun,yes,queued,"sentences for siedem and dwanaście, frequency rank 468",2026-08-26,"met in a sentence, not carded"
+boleć,bolec,verb,yes,carded,sentence for lekarz,2026-08-26,"borrowed into a sentence first, then carded"
+numer,numer,noun,yes,carded,"sentences for siedem and dwanaście, frequency rank 468",2026-08-26,"borrowed into a sentence first, then carded"
+jutro,jutro,adverb,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-26,
+herbata,herbata,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-26,
+jajko,jajko,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-26,
+noga,noga,noun,yes,carded,frequency rank 290,2026-08-26,
+ucho,ucho,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-26,
+koszula,koszula,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-26,
+ciepły,cieply,adjective,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-26,
+kończyć,konczyc,verb,yes,carded,frequency rank 441,2026-08-26,

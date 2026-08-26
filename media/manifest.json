@@ -20,6 +20,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/bolec.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-boleć.ogg",
+    "fingerprint": "657c67266989f236",
+    "gain_db": 0.0,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-bole%C4%87.ogg",
+    "seconds": 1.28,
+    "source": "commons",
+    "text": "boleć"
+  },
+  "media/audio/bolec__sentence.mp3": {
+    "fingerprint": "3246fb41e9623877",
+    "gain_db": -2.0,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.07,
+    "source": "tts",
+    "text": "Boli mnie głowa.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/buty.mp3": {
     "fingerprint": "38d8fbee0636d8cf",
     "gain_db": 2.1,
@@ -274,6 +295,27 @@
     "seconds": 1.15,
     "source": "tts",
     "text": "Rano chodzę do sklepu.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/cieply.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-ciepły.ogg",
+    "fingerprint": "68c65ea9b99a2a6f",
+    "gain_db": 6.1,
+    "licence": "CC BY 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-ciep%C5%82y.ogg",
+    "seconds": 0.86,
+    "source": "commons",
+    "text": "ciepły"
+  },
+  "media/audio/cieply__sentence.mp3": {
+    "fingerprint": "6abb477d0c7c4300",
+    "gain_db": 0.5,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.33,
+    "source": "tts",
+    "text": "Herbata jest ciepła.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -760,6 +802,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/herbata.mp3": {
+    "author": "Frizabela",
+    "commons_file": "Pl-herbata.ogg",
+    "fingerprint": "510d206186a88014",
+    "gain_db": -2.1,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-herbata.ogg",
+    "seconds": 0.99,
+    "source": "commons",
+    "text": "herbata"
+  },
+  "media/audio/herbata__sentence.mp3": {
+    "fingerprint": "bb49714bb6e9c546",
+    "gain_db": -0.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.28,
+    "source": "tts",
+    "text": "Wieczorem piję herbatę.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/imie.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-imię.ogg",
@@ -802,6 +865,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/jajko.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-jajko.ogg",
+    "fingerprint": "b06a452f11bd518b",
+    "gain_db": -0.6,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-jajko.ogg",
+    "seconds": 1.49,
+    "source": "commons",
+    "text": "jajko"
+  },
+  "media/audio/jajko__sentence.mp3": {
+    "fingerprint": "0971400fe56b48e1",
+    "gain_db": -1.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.23,
+    "source": "tts",
+    "text": "Na śniadanie jem jajko.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/jechac.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-jechać.ogg",
@@ -841,6 +925,27 @@
     "seconds": 0.84,
     "source": "tts",
     "text": "Rano jem chleb.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/jutro.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-jutro.ogg",
+    "fingerprint": "67ccc24526036c7a",
+    "gain_db": -2.6,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-jutro.ogg",
+    "seconds": 0.73,
+    "source": "commons",
+    "text": "jutro"
+  },
+  "media/audio/jutro__sentence.mp3": {
+    "fingerprint": "48a38d2944e4cc9c",
+    "gain_db": -1.8,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.31,
+    "source": "tts",
+    "text": "Jutro jadę do miasta.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -947,6 +1052,48 @@
     "seconds": 1.46,
     "source": "tts",
     "text": "Na ławce siedzi kobieta.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/konczyc.mp3": {
+    "author": "Kajervi",
+    "commons_file": "Pl-kończyć.ogg",
+    "fingerprint": "a1e179554977f534",
+    "gain_db": 2.2,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-ko%C5%84czy%C4%87.ogg",
+    "seconds": 0.81,
+    "source": "commons",
+    "text": "kończyć"
+  },
+  "media/audio/konczyc__sentence.mp3": {
+    "fingerprint": "d730f4a68f98b428",
+    "gain_db": 0.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.84,
+    "source": "tts",
+    "text": "Kończę pracę.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/koszula.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-koszula.ogg",
+    "fingerprint": "b55579ef56ff03be",
+    "gain_db": 0.0,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-koszula.ogg",
+    "seconds": 1.54,
+    "source": "commons",
+    "text": "koszula"
+  },
+  "media/audio/koszula__sentence.mp3": {
+    "fingerprint": "3a87a38672562e22",
+    "gain_db": -0.5,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.23,
+    "source": "tts",
+    "text": "Kupuję nową koszulę.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1649,6 +1796,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/noga.mp3": {
+    "author": "Halibutt",
+    "commons_file": "Pl-noga.ogg",
+    "fingerprint": "aec50645c4cb9aed",
+    "gain_db": 11.7,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-noga.ogg",
+    "seconds": 1.07,
+    "source": "commons",
+    "text": "noga"
+  },
+  "media/audio/noga__sentence.mp3": {
+    "fingerprint": "893d11c2ed6c2e2c",
+    "gain_db": -0.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.25,
+    "source": "tts",
+    "text": "Dziecko ma małe nogi.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/nowy.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-nowy.ogg",
@@ -1667,6 +1835,27 @@
     "seconds": 1.44,
     "source": "tts",
     "text": "Dziecko ma nową piłkę.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/numer.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-numer.ogg",
+    "fingerprint": "9fec9a537f814708",
+    "gain_db": 1.0,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-numer.ogg",
+    "seconds": 0.73,
+    "source": "commons",
+    "text": "numer"
+  },
+  "media/audio/numer__sentence.mp3": {
+    "fingerprint": "fb7136ec7382f425",
+    "gain_db": -2.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.65,
+    "source": "tts",
+    "text": "Nie pamiętam numeru telefonu.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -2932,6 +3121,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/ucho.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-ucho.ogg",
+    "fingerprint": "3f13ab5b7de0b1b4",
+    "gain_db": -4.1,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-ucho.ogg",
+    "seconds": 0.55,
+    "source": "commons",
+    "text": "ucho"
+  },
+  "media/audio/ucho__sentence.mp3": {
+    "fingerprint": "bb73d087a281f6e5",
+    "gain_db": -0.2,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.04,
+    "source": "tts",
+    "text": "Pies ma duże uszy.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/ulica.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-ulica.ogg",
@@ -3263,6 +3473,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/bolec.webp": {
+    "bytes": 26484,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "1572b59b83525cf3",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A man sitting with both hands pressed to his temples, eyes shut, wincing with a headache. Plain indoor setting. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/buty.webp": {
     "bytes": 20054,
     "check": {
@@ -3452,6 +3678,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A person walking along a park path, whole body in frame, side on, daylight, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/cieply.webp": {
+    "bytes": 22442,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "745b698bbd8f81fb",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Two hands wrapped around a warm glass of tea, steam rising between them, close up. Soft indoor light. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -3813,6 +4055,22 @@
     "size": "800x534",
     "source": "supplied"
   },
+  "media/img/herbata.webp": {
+    "bytes": 30852,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "c5f4bf26748ba424",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A tall glass of amber tea in a metal holder on a table, a slice of lemon beside it, evening lamplight. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/imie.webp": {
     "bytes": 27706,
     "check": {
@@ -3845,6 +4103,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/jajko.webp": {
+    "bytes": 21506,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "68e6f240097974b1",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Four brown eggs in a white bowl on a kitchen counter, close up. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/jechac.webp": {
     "bytes": 31090,
     "check": {
@@ -3874,6 +4148,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A dog eating a piece of bread from the ground, mouth on the bread, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/jutro.webp": {
+    "bytes": 19890,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "flag",
+      "why": "contains text or lettering"
+    },
+    "fingerprint": "655a903c3a5c9f3d",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A desk flip-calendar standing on a desk, the top page caught mid-turn to reveal the next day beneath it. Each page carries one large printed date number, clearly legible. No words, only the numbers. Morning light. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -3954,6 +4244,38 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A woman sitting on a wooden park bench, whole figure in frame, side on, daylight. One person only, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/konczyc.webp": {
+    "bytes": 18336,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "769e385bab42308d",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person closing a laptop and pushing back their chair in an office at dusk, the room already half dark, coat over one arm. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/koszula.webp": {
+    "bytes": 78620,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "f27bf85cb35d1540",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A single pale blue shirt on a wooden hanger against a plain wall, whole shirt in frame. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -4480,6 +4802,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/noga.webp": {
+    "bytes": 44074,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "d9a690fd7a70d1da",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A small child's bare legs and feet dangling from a chair that is too tall for them, floor below. Daylight indoors. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/nowy.webp": {
     "bytes": 15092,
     "check": {
@@ -4493,6 +4831,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "Two footballs side by side on a plain white background: one brand new, clean and bright, one old, scuffed and grey. The new one stands at the front and in focus. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/numer.webp": {
+    "bytes": 28418,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "flag",
+      "why": "contains text or lettering"
+    },
+    "fingerprint": "e930245c928571b0",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A hand holding a phone, the screen showing a keypad of digits, seen over the shoulder. Daylight. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -5420,6 +5774,22 @@
     "process_version": 1,
     "size": "800x800",
     "source": "supplied"
+  },
+  "media/img/ucho.webp": {
+    "bytes": 65498,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "a2b9a8e8b85eb3f3",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A close view of the head of a dog with large upright ears, seen from the side, the ears clearly the subject. Blurred garden behind. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
   },
   "media/img/ulica.webp": {
     "bytes": 109944,

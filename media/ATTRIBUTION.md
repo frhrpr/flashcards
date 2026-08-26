@@ -6,6 +6,7 @@ do not edit by hand.
 | File | Title | Author | Licence | Source |
 | --- | --- | --- | --- | --- |
 | `media/audio/bardzo.mp3` | [Pl-bardzo.ogg](https://commons.wikimedia.org/wiki/File:Pl-bardzo.ogg) | Derbeth | CC BY 2.5 | commons |
+| `media/audio/bolec.mp3` | [Pl-boleć.ogg](https://commons.wikimedia.org/wiki/File:Pl-bole%C4%87.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/byc.mp3` | [Pl-być.ogg](https://commons.wikimedia.org/wiki/File:Pl-by%C4%87.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/byc_jest.mp3` | [Pl-jest.ogg](https://commons.wikimedia.org/wiki/File:Pl-jest.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/byc_jestem.mp3` | [Pl-jestem.ogg](https://commons.wikimedia.org/wiki/File:Pl-jestem.ogg) | Derbeth | CC BY 2.5 | commons |
@@ -13,6 +14,7 @@ do not edit by hand.
 | `media/audio/chleb.mp3` | [Pl-chleb.ogg](https://commons.wikimedia.org/wiki/File:Pl-chleb.ogg) | user Equadus (inactive global account) | CC BY 2.5 | commons |
 | `media/audio/chlopiec.mp3` | [Pl-chłopiec.ogg](https://commons.wikimedia.org/wiki/File:Pl-ch%C5%82opiec.ogg) | Ewczy | CC BY-SA 3.0 | commons |
 | `media/audio/chodzic.mp3` | [Pl-chodzić.ogg](https://commons.wikimedia.org/wiki/File:Pl-chodzi%C4%87.ogg) | Derbeth | CC BY 2.5 | commons |
+| `media/audio/cieply.mp3` | [Pl-ciepły.ogg](https://commons.wikimedia.org/wiki/File:Pl-ciep%C5%82y.ogg) | Derbeth | CC BY 3.0 | commons |
 | `media/audio/cos.mp3` | [Pl-coś.ogg](https://commons.wikimedia.org/wiki/File:Pl-co%C5%9B.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/czas.mp3` | [Pl-czas.ogg](https://commons.wikimedia.org/wiki/File:Pl-czas.ogg) | user Equadus (inactive global account) | CC BY 2.5 | commons |
 | `media/audio/czekac.mp3` | [Pl-czekać.ogg](https://commons.wikimedia.org/wiki/File:Pl-czeka%C4%87.ogg) | Derbeth | CC BY 2.5 | commons |
@@ -36,14 +38,19 @@ do not edit by hand.
 | `media/audio/glos.mp3` | [Pl-głos.ogg](https://commons.wikimedia.org/wiki/File:Pl-g%C5%82os.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/glowa.mp3` | [Pl-głowa.ogg](https://commons.wikimedia.org/wiki/File:Pl-g%C5%82owa.ogg) | tsca | Public domain | commons |
 | `media/audio/godzina.mp3` | [Pl-godzina.ogg](https://commons.wikimedia.org/wiki/File:Pl-godzina.ogg) | Derbeth | CC BY 2.5 | commons |
+| `media/audio/herbata.mp3` | [Pl-herbata.ogg](https://commons.wikimedia.org/wiki/File:Pl-herbata.ogg) | Frizabela | CC BY 2.5 | commons |
 | `media/audio/imie.mp3` | [Pl-imię.ogg](https://commons.wikimedia.org/wiki/File:Pl-imi%C4%99.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/isc.mp3` | [Pl-iść.ogg](https://commons.wikimedia.org/wiki/File:Pl-i%C5%9B%C4%87.ogg) | Derbeth | CC BY 2.5 | commons |
+| `media/audio/jajko.mp3` | [Pl-jajko.ogg](https://commons.wikimedia.org/wiki/File:Pl-jajko.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/jechac.mp3` | [Pl-jechać.ogg](https://commons.wikimedia.org/wiki/File:Pl-jecha%C4%87.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/jesc.mp3` | [Pl-jeść.ogg](https://commons.wikimedia.org/wiki/File:Pl-je%C5%9B%C4%87.ogg) | Derbeth | CC BY 2.5 | commons |
+| `media/audio/jutro.mp3` | [Pl-jutro.ogg](https://commons.wikimedia.org/wiki/File:Pl-jutro.ogg) | user Equadus (inactive global account) | CC BY 2.5 | commons |
 | `media/audio/kasa.mp3` | [Pl-kasa.ogg](https://commons.wikimedia.org/wiki/File:Pl-kasa.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/kasza.mp3` | [Pl-kasza.ogg](https://commons.wikimedia.org/wiki/File:Pl-kasza.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/kawa.mp3` | [Pl-kawa.ogg](https://commons.wikimedia.org/wiki/File:Pl-kawa.ogg) | Frizabela | CC BY 2.5 | commons |
 | `media/audio/kobieta.mp3` | [Pl-kobieta.ogg](https://commons.wikimedia.org/wiki/File:Pl-kobieta.ogg) | Derbeth | CC BY 2.5 | commons |
+| `media/audio/konczyc.mp3` | [Pl-kończyć.ogg](https://commons.wikimedia.org/wiki/File:Pl-ko%C5%84czy%C4%87.ogg) | Kajervi | Public domain | commons |
+| `media/audio/koszula.mp3` | [Pl-koszula.ogg](https://commons.wikimedia.org/wiki/File:Pl-koszula.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/kot.mp3` | [Pl-kot.ogg](https://commons.wikimedia.org/wiki/File:Pl-kot.ogg) | Halibutt | CC BY-SA 3.0 | commons |
 | `media/audio/ksiazka.mp3` | [Pl-książka.ogg](https://commons.wikimedia.org/wiki/File:Pl-ksi%C4%85%C5%BCka.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/kupowac.mp3` | [Pl-kupować.ogg](https://commons.wikimedia.org/wiki/File:Pl-kupowa%C4%87.ogg) | Wyksztalcioch | Public domain | commons |
@@ -71,7 +78,9 @@ do not edit by hand.
 | `media/audio/nie.mp3` | [Pl-nie.ogg](https://commons.wikimedia.org/wiki/File:Pl-nie.ogg) | Tomasz "odder" Kozlowski | CC BY-SA 2.5 | commons |
 | `media/audio/niedziela.mp3` | [Pl-niedziela.ogg](https://commons.wikimedia.org/wiki/File:Pl-niedziela.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/noc.mp3` | [Pl-noc.ogg](https://commons.wikimedia.org/wiki/File:Pl-noc.ogg) | user Equadus (inactive global account) | CC BY 2.5 | commons |
+| `media/audio/noga.mp3` | [Pl-noga.ogg](https://commons.wikimedia.org/wiki/File:Pl-noga.ogg) | Halibutt | CC BY-SA 3.0 | commons |
 | `media/audio/nowy.mp3` | [Pl-nowy.ogg](https://commons.wikimedia.org/wiki/File:Pl-nowy.ogg) | user Equadus (inactive global account) | CC BY 2.5 | commons |
+| `media/audio/numer.mp3` | [Pl-numer.ogg](https://commons.wikimedia.org/wiki/File:Pl-numer.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/ojciec.mp3` | [Pl-ojciec.ogg](https://commons.wikimedia.org/wiki/File:Pl-ojciec.ogg) | user Equadus (inactive global account) | CC BY 2.5 | commons |
 | `media/audio/okno.mp3` | [Pl-okno.ogg](https://commons.wikimedia.org/wiki/File:Pl-okno.ogg) | Marcowy zając | CC BY 2.5 | commons |
 | `media/audio/oko.mp3` | [Pl-oko.ogg](https://commons.wikimedia.org/wiki/File:Pl-oko.ogg) | user Equadus (inactive global account) | CC BY 2.5 | commons |
@@ -130,6 +139,7 @@ do not edit by hand.
 | `media/audio/trudny.mp3` | [Pl-trudny.ogg](https://commons.wikimedia.org/wiki/File:Pl-trudny.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/tutaj.mp3` | [Pl-tutaj.ogg](https://commons.wikimedia.org/wiki/File:Pl-tutaj.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/tydzien.mp3` | [Pl-tydzień.ogg](https://commons.wikimedia.org/wiki/File:Pl-tydzie%C5%84.ogg) | Derbeth | CC BY 2.5 | commons |
+| `media/audio/ucho.mp3` | [Pl-ucho.ogg](https://commons.wikimedia.org/wiki/File:Pl-ucho.ogg) | user Equadus (inactive global account) | CC BY 2.5 | commons |
 | `media/audio/ulica.mp3` | [Pl-ulica.ogg](https://commons.wikimedia.org/wiki/File:Pl-ulica.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/wazny.mp3` | [Pl-ważny.ogg](https://commons.wikimedia.org/wiki/File:Pl-wa%C5%BCny.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/widziec.mp3` | [Pl-widzieć.ogg](https://commons.wikimedia.org/wiki/File:Pl-widzie%C4%87.ogg) | Derbeth | CC BY 2.5 | commons |
