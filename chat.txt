@@ -1,0 +1,45 @@
+No—not unchanged. It is visually clear and has a good exercise structure, but its central claim is too strong and may teach him to pronounce **ś** and **sz** as the same Dutch *sj*.
+
+The main problem is this:
+
+> **ś zoals de sj in meisje**
+> **sz zoals de sj in sjaal / sh in shoe**
+
+Dutch does not reliably provide that distinction. *Huisje/meisje* and *sjaal* are commonly realised with the same broad [ʃ]-type sound, although the precise pronunciation of Dutch *sj* varies between speakers. Neither Dutch/English [ʃ] nor *sh* is exactly Polish **ś** [ɕ] or **sz** [ʂ]. A standard Dutch phonetic description, for example, transcribes both *huisje* and *sjaal* with [ʃ]. [Polish explicitly contrasts three sibilants, /s ʂ ɕ/](https://www.cambridge.org/core/journals/journal-of-the-international-phonetic-association/article/articulatory-and-acoustic-characteristics-of-polish-sibilants-and-their-consequences-for-diachronic-change/C3580A9D98C659FE1D24AAF476C4CD3A); [Dutch descriptions treat *huisje* and *sjaal* as containing [ʃ]](https://www.dbnl.org/tekst/dona001dutc02_01/dona001dutc02_01_0008.php).
+
+Consequently, these claims should go:
+
+* “Je maakt ze alle drie al.”
+* “ś = de sj in *meisje*.”
+* The mirror test as a supposedly reliable way of identifying them.
+* “Kijk naar de lippen van de spreker.”
+
+Lip position can be a useful practice aid, but it does not reliably identify the consonant: it is also affected by the neighbouring vowels and varies between speakers.
+
+What is good:
+
+* **ś:** tongue tip down, tongue body raised toward the hard palate.
+* **sz:** tongue retracted, producing a lower, darker sound. “Tongpunt omhoog” is a reasonable learner cue, although actual Polish articulations vary.
+* The auditory description **ś higher/brighter, sz lower/darker** is useful.
+* Starting with **Kasia—kasza** and only later practising word-final **wieś—wiesz** is sensible. The following vowel provides important information about **ś**, so final contrasts can indeed be harder. [Experimental research supports the importance of both the friction and the following-vowel transition](https://www.cambridge.org/core/journals/journal-of-the-international-phonetic-association/article/articulatory-and-acoustic-characteristics-of-polish-sibilants-and-their-consequences-for-diachronic-change/C3580A9D98C659FE1D24AAF476C4CD3A).
+* The minimal pairs are memorable.
+
+I would replace the introduction with:
+
+> In het Pools zijn **s, ś en sz** drie verschillende klanken. De Nederlandse **s** is een bruikbaar begin voor Poolse **s**. De Nederlandse **sj**, zoals in *meisje* of *sjaal*, is geen exacte Poolse klank: hij ligt ongeveer in hetzelfde gebied, maar Pools maakt daar twee verschillende klanken van.
+
+And describe them like this:
+
+> **ś** — Begin met *sj*. Houd je tongpunt achter je ondertanden en breng het midden van je tong omhoog, richting je harde gehemelte. De klank wordt helder, dun en hoog.
+>
+> **sz** — Begin opnieuw met *sj*, maar trek je tong naar achteren en maak ruimte onder de tongpunt. De klank wordt lager, donkerder en holler. Een beetje rondere lippen kan helpen, maar is niet het belangrijkste verschil.
+
+I would also change:
+
+* **kasza: “gort”** → **“grutten / graanpap”**; *gort* is too specific.
+* **paś / pasz** → probably remove it. *Paś* can mean “laat grazen/voer!”, while *pasz* is an awkward isolated genitive plural of *pasza*. It is phonologically valid but poor A2 vocabulary.
+* Add the excellent three-way set **kasa – Kasia – kasza**, which demonstrates all three sounds in almost identical surroundings.
+* Replace “ze sissen allebei even hard” with “let niet vooral op volume; luister naar de toonhoogte en klankkleur.”
+* Add native recordings. Written articulatory instructions alone are insufficient for a contrast he cannot yet reliably hear.
+
+My verdict: **good presentation and practice design, but a significant phonetic misconception at its core**. With the Dutch-*sj* claim qualified, the mirror test downgraded to an optional training trick, and native audio added, I would endorse it.

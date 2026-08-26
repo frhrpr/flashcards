@@ -81,7 +81,7 @@ def load_remote(key, user):
     fields = {k: dec(v) for k, v in doc.get("fields", {}).items()}
     return (doc["name"].split("/")[-1], fields.get("cards") or {},
             fields.get("log") or [], fields.get("ear") or {},
-            fields.get("done") or {})
+            fields.get("done") or {}, fields.get("hints") or {})
 
 
 def intake_rate():
@@ -176,7 +176,7 @@ def sessions(log):
     return out
 
 
-def analyse(cards, log, notes, done):
+def analyse(cards, log, notes, done, hints):
     word = {n["id"]: n["word"] for n in notes}
     gloss = {n["id"]: n.get("gloss", "") for n in notes}
     note_of = lambda k: k.rsplit("__", 1)[0]
@@ -191,6 +191,9 @@ def analyse(cards, log, notes, done):
     # tired evening still happens, but if it becomes the default the deck
     # quietly stops growing while the streak and the accuracy look fine.
     light = {int(d) for d, modes in done.items() if "vocab-light" in modes}
+    # The sibilant reminder. Worth knowing whether he opens it at all — and
+    # then whether he stops, which would suggest it has done its job.
+    hint_days = {int(d): n for d, n in hints.items()}
 
     today = midnight(int(datetime.now().timestamp() * 1000))
     streak = 0
@@ -268,7 +271,7 @@ def analyse(cards, log, notes, done):
         usual_hour=hours.most_common(1)[0][0] if hours else None,
         last_seen=days[-1] if days else None, today=today,
         type_of=type_of, reviews=len(log), vocab_reviews=len(vocab), light=light,
-        unseen=len(unseen), runway=runway, rate=rate,
+        unseen=len(unseen), runway=runway, rate=rate, hints=hint_days,
         records=records, total_cards=sum(len(n.get("cards", [])) for n in notes),
     )
 
@@ -345,6 +348,11 @@ def report(uid, a, e):
         p(f"\n  reviews-only on {n_light} of his last {len(recent)} active day(s)"
           + ("  — no new words went in on those" if n_light < len(recent)
              else "  — ALL of them; nothing new has gone in"))
+    h = a["hints"]
+    if h:
+        recent = sorted(h)[-1]
+        p(f"\n  hint sheet    opened {sum(h.values())} time(s) on {len(h)} day(s), "
+          f"last {fmt_day(recent)}")
     if a["hard"]:
         p("\n  giving him trouble")
         for nid, miss, tot in a["hard"]:
@@ -523,10 +531,10 @@ def main():
                   f"{len(f.get('cards') or {}):>4} cards  {len(f.get('log') or []):>5} reviews")
         return 0
 
-    uid, cards, log, ear, done = load_remote(key, args.user)
+    uid, cards, log, ear, done, hints = load_remote(key, args.user)
     notes = json.loads((ROOT / "deck/notes.json").read_text(encoding="utf-8"))["notes"]
     spell, sound, label = ear_content()
-    a = analyse(cards, log, notes, done)
+    a = analyse(cards, log, notes, done, hints)
     e = analyse_ear(ear, log, spell, sound, label)
     report(uid, a, e)
     if a["days"]:

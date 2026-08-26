@@ -97,6 +97,34 @@ button{font-family:inherit;cursor:pointer;border-radius:4px}
   text-align:center;text-decoration:underline;text-underline-offset:3px}
 .lighter:hover{color:var(--ink)}
 
+
+/* ── the sibilant hint sheet ──────────────────────────────────────── */
+.hint-btn{background:none;border:1px solid var(--line);color:var(--dim);border-radius:50%;
+  width:1.6rem;height:1.6rem;font-family:var(--mono);font-size:.8rem;line-height:1;padding:0}
+.hint-btn:hover{border-color:var(--dim);color:var(--ink)}
+.sheet{position:fixed;inset:0;background:var(--paper);z-index:50;overflow-y:auto;
+  padding:1.25rem 1rem calc(2rem + env(safe-area-inset-bottom))}
+.sheet-in{max-width:26rem;margin:0 auto}
+.sheet h3{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--dim);font-weight:400;margin:1.6rem 0 .5rem}
+.sheet h3:first-of-type{margin-top:1rem}
+.sheet p{font-size:.9rem;line-height:1.6;margin:0 0 .7rem}
+.snd-row{display:flex;align-items:center;gap:.75rem;background:var(--card);
+  border:1px solid var(--line);padding:.7rem .9rem;margin-bottom:.5rem}
+.snd-row b{font-size:1.6rem;font-weight:300;min-width:2.2rem}
+.snd-row .d{flex:1;font-size:.82rem;line-height:1.45;color:var(--dim)}
+.snd-row .d em{font-style:normal;color:var(--ink)}
+.three-up{display:flex;gap:.4rem}
+.three-up button{flex:1;background:var(--card);border:1px solid var(--line);padding:.7rem .3rem;
+  font-family:inherit}
+.three-up button:hover{border-color:var(--dim)}
+.three-up .w{display:block;font-size:1.15rem;font-weight:300}
+.three-up .s{display:block;font-family:var(--mono);font-size:.6rem;color:var(--dim);
+  letter-spacing:.08em;margin-top:.2rem}
+.sheet .close{display:block;width:100%;margin-top:1.5rem;padding:.9rem;background:var(--ink);
+  color:var(--card);border:0;border-radius:4px;font-family:var(--mono);font-size:.75rem;
+  letter-spacing:.14em;text-transform:uppercase}
+
 /* ── ear training ─────────────────────────────────────────────────── */
 .ticks{display:flex;gap:3px;margin-bottom:1rem}
 .ticks i{flex:1;height:3px;background:var(--line)}
@@ -144,7 +172,7 @@ button{font-family:inherit;cursor:pointer;border-radius:4px}
 <body>
 <div class="wrap">
   <div class="top">
-    <span class="eyebrow" id="mode-label">Polish</span>
+    <span class="eyebrow"><span id="mode-label">Polish</span> <button class="hint-btn" id="hint" aria-label="s, sz, ś — a reminder" hidden>?</button></span>
     <span class="eyebrow" id="count"></span>
   </div>
   <div id="bar"><i></i></div>
@@ -493,6 +521,10 @@ let earStates = {};
    does not re-offer a session he has already done. Same reasoning as the
    `introduced` stamps on card state. */
 let doneDays = {};
+/* How often he opens the sibilant reminder, per day. Deliberately NOT in the
+   review log: progress.py buckets that by `grade` for the streak, the day
+   counts and the accuracy, and a non-review entry would corrupt all three. */
+let hintOpens = {};
 let docExists = false;
 try {
   const snap = await getDoc(docRef);
@@ -501,6 +533,7 @@ try {
   reviewLog = docExists ? (snap.data().log || []) : [];
   earStates = docExists ? (snap.data().ear || {}) : {};
   doneDays  = docExists ? (snap.data().done || {}) : {};
+  hintOpens = docExists ? (snap.data().hints || {}) : {};
 } catch (e) {
   showError("Couldn't reach Firestore.\n\n" + e.message +
     "\n\nCheck: the config is correct, Firestore is enabled, and the\n" +
@@ -672,7 +705,7 @@ let revealed = false;
 // updateDoc requires an existing document; first run has to create one.
 async function firstWrite(){
   await write.set(docRef, {
-    cards: cardStates, ear: earStates, done: doneDays,
+    cards: cardStates, ear: earStates, done: doneDays, hints: hintOpens,
     log: reviewLog, logBytes: logBytes(), updated: Date.now()
   });
   docExists = true;
@@ -791,6 +824,7 @@ function renderCount(){
 }
 
 function renderDone(){
+  showHintBtn(false);
   countEl.textContent = "";
   barEl.className = "";
   renderWarning();
@@ -1008,6 +1042,7 @@ function side(n, type, which){
 }
 
 function renderCard(){
+  showHintBtn(false);
   revealed = false;
   current = queue[0];
   const n = NOTES[noteOf(current)];
@@ -1326,6 +1361,7 @@ function renderEarTrial(){
   earTrial = earQueue[earIdx];
   earAnswered = false;
   modeLabel.textContent = "Ear training";
+  showHintBtn(true);
   countEl.textContent = `${earIdx + 1} / ${earQueue.length}`;
   barEl.className = "on";
   barEl.firstElementChild.style.width = `${(earIdx / earQueue.length) * 100}%`;
@@ -1408,6 +1444,7 @@ function nextEarTrial(){
 function renderEarDone(){
   markDone("ear");
   modeLabel.textContent = "Polish";
+  showHintBtn(true);
   countEl.textContent = "";
   barEl.className = "";
   renderWarning();
@@ -1429,6 +1466,79 @@ function renderEarDone(){
   if (cross) cross.addEventListener("click", () => startVocab(false));
   const home = $("#home");
   if (home) home.addEventListener("click", renderLanding);
+}
+
+/* ══ the sibilant reminder ═════════════════════════════════════════
+   Written articulatory instruction is thin for a contrast he cannot yet
+   hear, and the recordings are already here — so the reminder carries the
+   sounds rather than only describing them.
+
+   A `?` in the top bar rather than a sidebar: he uses this on a phone, where
+   there is no horizontal room and a persistent panel would compete with the
+   answer buttons. It opens over everything and is available *during* a trial,
+   not only between: it is reference, not an answer, and nothing in it says
+   which word was just played. */
+const HINT_SETS = [["kasa", "kasia", "kasza"], ["wies-acute", "wiesz"]];
+
+function hintClip(id){
+  const r = recsFor(id);
+  return r.length ? r[Math.floor(rand() * r.length)] : null;
+}
+
+function countHintOpen(){
+  const day = String(t);
+  hintOpens[day] = (hintOpens[day] || 0) + 1;
+  for (const d of Object.keys(hintOpens))
+    if (t - Number(d) > 90 * MS_DAY) delete hintOpens[d];
+  if (READ_ONLY) return;
+  writeChain = writeChain
+    .then(() => docExists
+      ? write.update(docRef, new FieldPath("hints", day), hintOpens[day],
+                     "updated", Date.now())
+      : firstWrite())
+    .then(() => { writeError = null; })
+    .catch(e => { writeError = e; console.error("save failed", e); })
+    .finally(renderWarning);
+}
+
+function openHint(){
+  countHintOpen();
+  const row = (sym, dutch, how) => `
+    <div class="snd-row"><b>${sym}</b><span class="d">${dutch}<br><em>${how}</em></span></div>`;
+  const trio = ids => `<div class="three-up">${ids.map(id => {
+      const W2 = WORDS[id];
+      return `<button data-w="${esc(id)}"><span class="w">${wordHtml(id)}</span>` +
+             `<span class="s">${esc(W2.g)}</span></button>`;
+    }).join("")}</div>`;
+  const el = document.createElement("div");
+  el.className = "sheet";
+  el.innerHTML = `
+    <div class="sheet-in">
+      <h3>Pools maakt twee klanken waar Nederlands er één heeft</h3>
+      ${row("s", "zoals <b>sok</b>, <b>huis</b>", "hoog en scherp — deze kun je al")}
+      ${row("ś", "begin met <b>sj</b>, tongpunt omlaag, tongmidden omhoog",
+            "helder, dun en hoog")}
+      ${row("sz", "begin met <b>sj</b>, tong naar achteren",
+            "lager, donkerder en holler")}
+      <h3>Alle drie naast elkaar — tik om te horen</h3>
+      ${trio(HINT_SETS[0])}
+      <h3>En het moeilijke paar</h3>
+      ${trio(HINT_SETS[1])}
+      <p style="margin-top:1rem;color:var(--dim);font-size:.82rem">Let niet op hoe hard
+      het sist — luister naar de toonhoogte en de klankkleur.</p>
+      <button class="close" id="hint-close">Terug</button>
+    </div>`;
+  document.body.appendChild(el);
+  el.querySelectorAll("[data-w]").forEach(b =>
+    b.addEventListener("click", () => playRec(hintClip(b.dataset.w))));
+  el.querySelector("#hint-close").addEventListener("click", () => el.remove());
+}
+
+const hintBtn = $("#hint");
+if (hintBtn) hintBtn.addEventListener("click", openHint);
+/* Only where the sounds exist to play. */
+function showHintBtn(on){
+  if (hintBtn) hintBtn.hidden = !(on && livePairs.length);
 }
 
 /* ══ landing ═══════════════════════════════════════════════════════
@@ -1469,6 +1579,7 @@ function earIdleLabel(){
 
 function renderLanding(){
   modeLabel.textContent = "Polish";
+  showHintBtn(true);
   countEl.textContent = "";
   barEl.className = "";
   renderWarning();

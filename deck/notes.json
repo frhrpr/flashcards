@@ -278,17 +278,17 @@
       "image_prompt": "A person pointing at their own chest with one hand while speaking, introducing themselves to someone off to the side. Plain background. Absolutely no text, lettering, badges or signage anywhere in the image. Square image.",
       "audio": "media/audio/imie.mp3",
       "sentence": {
-        "pl": "Mam na imię Marek.",
-        "en": "My name is Marek.",
-        "gap": "Mam na ___ Marek.",
+        "pl": "Jak masz na imię?",
+        "en": "What is your name?",
+        "gap": "Jak masz na ___?",
         "answer": "imię",
         "answer_lemma": "imię",
         "audio": "media/audio/imie__sentence.mp3",
         "lemmas": [
+          "jak",
           "mieć",
           "na",
-          "imię",
-          "Marek"
+          "imię"
         ]
       },
       "cards": [
@@ -296,7 +296,7 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": false
     },
     {
       "id": "woda",
@@ -2729,18 +2729,20 @@
       "image_prompt": "A town street with old buildings and a few people walking. Daylight, no text or lettering. Square image.",
       "audio": "media/audio/miasto.mp3",
       "sentence": {
-        "pl": "W mieście jest duży sklep.",
-        "en": "There is a big shop in town.",
-        "gap": "W ___ jest duży sklep.",
+        "pl": "W starym mieście są kwiaty i ludzie.",
+        "en": "There are flowers and people in the old town.",
+        "gap": "W starym ___ są kwiaty i ludzie.",
         "answer": "mieście",
         "answer_lemma": "miasto",
         "audio": "media/audio/miasto__sentence.mp3",
         "lemmas": [
           "w",
+          "stary",
           "miasto",
           "być",
-          "duży",
-          "sklep"
+          "kwiat",
+          "i",
+          "ludzie"
         ]
       },
       "cards": [
@@ -2748,7 +2750,7 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": false
     },
     {
       "id": "myslec",
@@ -4396,19 +4398,19 @@
       "ipa": "ˈmʲɛʂkat͡ɕ",
       "note": null,
       "image": "media/img/mieszkac.webp",
-      "image_alt": "a man at the window of his flat looking out over a city",
+      "image_alt": "a doctor standing at the window of a flat looking out over a city",
       "image_basis": "sentence",
-      "image_prompt": "A man standing at the window of a flat looking out over a city, seen from inside the room, his back to us. Daylight. No text or lettering. Square image.",
+      "image_prompt": "A doctor in a white coat standing at the window of a flat, looking out over a city, seen from inside the room. Daylight. No text or lettering. Square image.",
       "audio": "media/audio/mieszkac.mp3",
       "sentence": {
-        "pl": "Marek mieszka w nowym mieście.",
-        "en": "Marek lives in a new town.",
-        "gap": "Marek ___ w nowym mieście.",
+        "pl": "Lekarz mieszka w nowym mieście.",
+        "en": "The doctor lives in a new town.",
+        "gap": "Lekarz ___ w nowym mieście.",
         "answer": "mieszka",
         "answer_lemma": "mieszkać",
         "audio": "media/audio/mieszkac__sentence.mp3",
         "lemmas": [
-          "Marek",
+          "lekarz",
           "mieszkać",
           "w",
           "nowy",
@@ -4469,14 +4471,14 @@
       "image_prompt": "A grown man lying awake in bed in the morning, eyes open, duvet pulled up, daylight through the curtains. No text or lettering. Square image.",
       "audio": "media/audio/lozko.mp3",
       "sentence": {
-        "pl": "Marek jest w łóżku.",
-        "en": "Marek is in bed.",
-        "gap": "Marek jest w ___.",
+        "pl": "Mężczyzna jest w łóżku.",
+        "en": "The man is in bed.",
+        "gap": "Mężczyzna jest w ___.",
         "answer": "łóżku",
         "answer_lemma": "łóżko",
         "audio": "media/audio/lozko__sentence.mp3",
         "lemmas": [
-          "Marek",
+          "mężczyzna",
           "być",
           "w",
           "łóżko"
@@ -4608,16 +4610,15 @@
       "image_prompt": "Six colleagues of different ages standing together in an office talking, whole group in frame. Daylight. No text or lettering. Square image.",
       "audio": "media/audio/ludzie.mp3",
       "sentence": {
-        "pl": "W pracy Marek spotyka nowych ludzi.",
-        "en": "At work Marek meets new people.",
-        "gap": "W pracy Marek spotyka nowych ___.",
+        "pl": "W pracy spotykam nowych ludzi.",
+        "en": "At work I meet new people.",
+        "gap": "W pracy spotykam nowych ___.",
         "answer": "ludzi",
         "answer_lemma": "ludzie",
         "audio": "media/audio/ludzie__sentence.mp3",
         "lemmas": [
           "w",
           "praca",
-          "Marek",
           "spotkać",
           "nowy",
           "ludzie"

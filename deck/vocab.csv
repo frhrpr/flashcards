@@ -131,7 +131,6 @@ ja,ja,pronoun,no,known,used in sentences and the paradigm tables,2026-08-24,
 my,my,pronoun,no,known,used in sentences and the paradigm tables,2026-08-24,
 wy,wy,pronoun,no,known,used in sentences and the paradigm tables,2026-08-24,
 się,sie,particle,no,known,"reflexive, carried by śmiać się",2026-08-24,not a word on its own
-Marek,marek,noun,no,known,the name in imię's sentence,2026-08-24,"a given name, not vocabulary"
 kawa,kawa,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-24,
 pieniądze,pieniadze,noun,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-24,
 płacić,placic,verb,yes,carded,everyday A1/A2 word; not in frequency.csv,2026-08-24,
@@ -162,3 +161,5 @@ bardzo,bardzo,adverb,yes,carded,lesson 2026-08-26 Pierwszy tydzień,2026-08-26,
 wieczór,wieczor,noun,yes,carded,lesson 2026-08-26 Pierwszy tydzień,2026-08-26,
 jego,jego,pronoun,no,known,lesson 2026-08-26 Pierwszy tydzień,2026-08-26,possessive; given free
 twój,twoj,pronoun,no,known,lesson 2026-08-26 Pierwszy tydzień,2026-08-26,possessive; given free
+jak,jak,adverb,no,known,"question word, like co/kto/gdzie — given free",2026-08-26,
+lekarz,lekarz,noun,yes,queued,"sentence for mieszkać, frequency rank 417",2026-08-26,"met in a sentence, not carded"

@@ -730,12 +730,12 @@
     "text": "imię"
   },
   "media/audio/imie__sentence.mp3": {
-    "fingerprint": "2635ba483245fcb9",
-    "gain_db": -0.9,
+    "fingerprint": "1543ebb0fb073eda",
+    "gain_db": -3.5,
     "model": "eleven_multilingual_v2",
-    "seconds": 1.2,
+    "seconds": 1.04,
     "source": "tts",
-    "text": "Mam na imię Marek.",
+    "text": "Jak masz na imię?",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1046,12 +1046,12 @@
     "text": "łóżko"
   },
   "media/audio/lozko__sentence.mp3": {
-    "fingerprint": "b60d3567dda3cbbb",
-    "gain_db": 0.4,
+    "fingerprint": "d1e689d21d72e140",
+    "gain_db": 0.6,
     "model": "eleven_multilingual_v2",
     "seconds": 1.15,
     "source": "tts",
-    "text": "Marek jest w łóżku.",
+    "text": "Mężczyzna jest w łóżku.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1088,12 +1088,12 @@
     "text": "ludzie"
   },
   "media/audio/ludzie__sentence.mp3": {
-    "fingerprint": "aaa85e9c7f46453f",
-    "gain_db": -0.8,
+    "fingerprint": "f3f0aac8e54f0d30",
+    "gain_db": 1.0,
     "model": "eleven_multilingual_v2",
-    "seconds": 1.96,
+    "seconds": 1.72,
     "source": "tts",
-    "text": "W pracy Marek spotyka nowych ludzi.",
+    "text": "W pracy spotykam nowych ludzi.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1172,12 +1172,12 @@
     "text": "miasto"
   },
   "media/audio/miasto__sentence.mp3": {
-    "fingerprint": "56c69e3027b28944",
-    "gain_db": -0.8,
+    "fingerprint": "0eb4a06196a9fa80",
+    "gain_db": -1.1,
     "model": "eleven_multilingual_v2",
-    "seconds": 1.49,
+    "seconds": 2.35,
     "source": "tts",
-    "text": "W mieście jest duży sklep.",
+    "text": "W starym mieście są kwiaty i ludzie.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1388,12 +1388,12 @@
     "text": "mieszkać"
   },
   "media/audio/mieszkac__sentence.mp3": {
-    "fingerprint": "a330bf33851da89a",
-    "gain_db": -1.7,
+    "fingerprint": "3a54528e79489886",
+    "gain_db": -1.3,
     "model": "eleven_multilingual_v2",
-    "seconds": 1.57,
+    "seconds": 1.72,
     "source": "tts",
-    "text": "Marek mieszka w nowym mieście.",
+    "text": "Lekarz mieszka w nowym mieście.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -4073,18 +4073,18 @@
     "source": "generated"
   },
   "media/img/mieszkac.webp": {
-    "bytes": 55380,
+    "bytes": 70014,
     "check": {
       "model": "gemini-flash-latest",
       "problem": "",
       "verdict": "ok",
       "why": ""
     },
-    "fingerprint": "f9d2a1cb61ec7ebe",
+    "fingerprint": "e07ad6e91b2e7cbe",
     "model": "gemini-2.5-flash-image",
     "original_size": "1024x1024",
     "process_version": 1,
-    "prompt": "A man standing at the window of a flat looking out over a city, seen from inside the room, his back to us. Daylight. No text or lettering. Square image.",
+    "prompt": "A doctor in a white coat standing at the window of a flat, looking out over a city, seen from inside the room. Daylight. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },

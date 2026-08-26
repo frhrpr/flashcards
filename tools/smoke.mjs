@@ -58,7 +58,7 @@ const allCards = ${JSON.stringify(deck.notes.flatMap(n =>
 const noteOf = k => k.slice(0, k.lastIndexOf("__"));
 const typeOf = k => k.slice(k.lastIndexOf("__") + 2);
 let cardStates = {}, reviewLog = [], fresh = [], lockedCount = 0;
-let earStates = {}, doneDays = {};
+let earStates = {}, doneDays = {}, hintOpens = {};
 let queue = [], current = null, revealed = false, writeError = null, earLoadError = null;
 const dueCards = [];
 let vocabLight = false;
@@ -77,6 +77,9 @@ let html = "";
 const appEl = { set innerHTML(v){ html = v; }, get innerHTML(){ return html; },
   querySelectorAll: () => [], querySelector: () => ${"({ children: new Proxy({}, { get: () => ({ className: \"\" }) }) })"} };
 const countEl = { textContent: "" };
+const document = { createElement: () => ({ className: '', innerHTML: '',
+  querySelectorAll: () => [], querySelector: () => ({ addEventListener(){} }),
+  remove(){}, appendChild(){} }), body: { appendChild(){} } };
 const _stub = ${el.toString()};
 const $ = sel => sel === "#bar" ? _barStub : _stub();
 const _barStub = { className: "", firstElementChild: { style: {} } };
@@ -94,7 +97,7 @@ ${SLICES.map(cut).join("\n")}
 export { renderDone, renderLanding, startEar, earPlan, nextEarTrial, answerEar, startVocab, vocabPending , TASK, SUBTASK };
 export const state = () => ({ html, PAIRS, livePairs, earQueue, earIdx, earStates, queue, doneDays, vocabLight });
 export const requested = () => asked;
-export { bankOrder, NOTES };
+export { bankOrder, NOTES, openHint, hintOpens, HINT_SETS };
 export const forgetPreloads = () => { preloaded.clear(); asked.length = 0; };
 export const seed = (due, nw) => { dueCards.length = 0; dueCards.push(...due);
   fresh.length = 0; fresh.push(...nw); queue = [...due, ...nw]; };
@@ -246,6 +249,18 @@ try {
   check(two[0] === `${ids[1]}__recognition`,
         "and keep their relative order — the sort is stable");
   delete m.NOTES[ids[1]].priority; delete m.NOTES[ids[4]].priority;
+
+  // The hint sheet: every word it offers must actually have audio, or it
+  // shows a dead button on a card whose whole point is the sound.
+  const haveAudio = new Set(Object.keys(JSON.parse(
+    fs.readFileSync(path.join(ROOT, "ear/manifest.json"), "utf8")).words));
+  const hinted = m.HINT_SETS.flat();
+  check(hinted.every(w => haveAudio.has(w)),
+        `hint sheet only offers words with recordings (${hinted.length} words)`);
+  const before = Object.values(m.hintOpens).reduce((a, b) => a + b, 0);
+  m.openHint();
+  check(Object.values(m.hintOpens).reduce((a, b) => a + b, 0) === before + 1,
+        "opening the hint sheet is counted");
 
   m.renderDone();    check(true, "renderDone runs");
   m.renderLanding(); check(true, "renderLanding runs");

@@ -319,6 +319,34 @@ pairs: hear a word, tap which of two you heard.
   audio existed. Worse than useless now: for c/cz/ć before recordings exist
   it would drill him against a TTS voice that may not render the contrast at
   all. Skipping sets with no audio is the right fallback and already works.
+- **A `?` in the top bar opens the sibilant reminder.** Written articulatory
+  instruction is thin for a contrast he cannot yet hear, and 247 clips
+  already exist — so the sheet carries the sounds rather than only describing
+  them: `kasa · Kasia · kasza` and `wieś · wiesz`, tap to play.
+
+  A sheet over everything rather than a sidebar, because he uses this on a
+  phone: there is no horizontal room, and a persistent panel would compete
+  with the answer buttons. Available *during* a trial as well as between —
+  it is reference, not an answer, and nothing in it says which word was just
+  played. Hidden on vocab cards, where it would be an irrelevant control
+  next to Show answer, and hidden entirely when no pair has audio.
+
+  **Opens are counted in a new top-level field, `hints`, and deliberately
+  not in the log.** `progress.py` buckets the log by `grade` for the streak,
+  the day counts and the accuracy; a non-review entry would corrupt all
+  three. It reports "opened N times on M days, last …", which answers the
+  question worth asking — not only whether he uses it, but whether he stops,
+  which would mean it has done its job.
+
+  The Dutch on it deliberately does **not** claim he already has the
+  contrast. An earlier draft anchored `ś` to *meisje* and `sz` to *sjaal*;
+  standard descriptions transcribe both with [ʃ], so the anchor was
+  overclaimed and risked teaching him the two Polish sounds are one. It now
+  says Polish makes two sounds where Dutch makes one, and treats Dutch `sj`
+  as the right neighbourhood rather than the answer. Lip protrusion is a
+  practice aid, not an identification test — it varies with the neighbouring
+  vowel and the speaker.
+
 - **Pairs are not vocabulary.** Like `kind: "form"` notes they never enter
   `deck/vocab.csv`, so the word count stays honest. They live in `WORDS` and
   `SETS` in `index.html` rather than a JSON file because `ear_build.py` and
