@@ -215,3 +215,4 @@ do not edit by hand.
 | `media/audio/zolty.mp3` | [Pl-żółty.ogg](https://commons.wikimedia.org/wiki/File:Pl-%C5%BC%C3%B3%C5%82ty.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/zona.mp3` | [Pl-żona.ogg](https://commons.wikimedia.org/wiki/File:Pl-%C5%BCona.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/zupa.mp3` | [Pl-zupa.ogg](https://commons.wikimedia.org/wiki/File:Pl-zupa.ogg) | Derbeth | CC BY 3.0 | commons |
+| `media/img/zawsze.webp` | [Krakow rynek 01.jpg](https://commons.wikimedia.org/wiki/File:Krakow_rynek_01.jpg) | Pko | CC BY 2.5 | commons |

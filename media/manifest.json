@@ -4038,9 +4038,10 @@
   },
   "media/audio/tani__sentence.mp3": {
     "fingerprint": "d678f51547d61b2c",
-    "gain_db": -1.8,
+    "gain_db": 0.4,
     "model": "eleven_multilingual_v2",
-    "seconds": 1.28,
+    "seconds": 1.31,
+    "seed": 7,
     "source": "tts",
     "text": "Ten sklep jest tani.",
     "voice": "ErXwobaYiN019PkySvjV",
@@ -4520,12 +4521,13 @@
     "text": "zawsze"
   },
   "media/audio/zawsze__sentence.mp3": {
-    "fingerprint": "0076ff26dab6c793",
-    "gain_db": 0.2,
+    "fingerprint": "7017307193a5d5ad",
+    "gain_db": 1.4,
     "model": "eleven_multilingual_v2",
-    "seconds": 1.18,
+    "seconds": 1.7,
+    "seed": 7,
     "source": "tts",
-    "text": "Zawsze jem śniadanie.",
+    "text": "Tutaj zawsze jest dużo turystów.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -6421,18 +6423,18 @@
     "source": "generated"
   },
   "media/img/niebieski.webp": {
-    "bytes": 6202,
+    "bytes": 35094,
     "check": {
       "model": "gemini-flash-latest",
       "problem": "",
       "verdict": "ok",
       "why": ""
     },
-    "fingerprint": "16493d8532a2ba2f",
+    "fingerprint": "8da05364c349278f",
     "model": "gemini-2.5-flash-image",
     "original_size": "1024x1024",
     "process_version": 1,
-    "prompt": "A single plain blue ceramic mug on a white table, seen from above. No text or lettering. Square image.",
+    "prompt": "A woman standing outdoors wearing a bright blue padded jacket, zipped up, the jacket filling most of the frame. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -7950,20 +7952,16 @@
     "source": "generated"
   },
   "media/img/zawsze.webp": {
-    "bytes": 236942,
-    "check": {
-      "model": "gemini-flash-latest",
-      "problem": "The image shows a desire path across a lawn, which does not clearly convey the concept of 'always'.",
-      "verdict": "flag",
-      "why": "does not clearly show the word"
-    },
-    "fingerprint": "151a913b5b6c5b0e",
-    "model": "gemini-2.5-flash-image",
-    "original_size": "1024x1024",
+    "author": "Pko",
+    "bytes": 146974,
+    "commons_file": "Krakow rynek 01.jpg",
+    "fingerprint": "e98202dead574d75",
+    "licence": "CC BY 2.5",
+    "original_size": "840x840",
+    "page": "https://commons.wikimedia.org/wiki/File:Krakow_rynek_01.jpg",
     "process_version": 1,
-    "prompt": "A worn dirt track cut straight across a green lawn, made by people taking the same shortcut every day, buildings behind. No text or lettering. Square image.",
     "size": "800x800",
-    "source": "generated"
+    "source": "commons"
   },
   "media/img/zielony.webp": {
     "bytes": 11426,

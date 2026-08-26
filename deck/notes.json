@@ -7080,7 +7080,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "jesien",
@@ -7111,7 +7111,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "kolacja",
@@ -7144,7 +7144,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "cukier",
@@ -7176,7 +7176,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "maslo",
@@ -7209,7 +7209,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "rower",
@@ -7243,7 +7243,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "niebieski",
@@ -7254,8 +7254,8 @@
       "note": null,
       "image": "media/img/niebieski.webp",
       "image_alt": "blue",
-      "image_basis": "word",
-      "image_prompt": "A single plain blue ceramic mug on a white table, seen from above. No text or lettering. Square image.",
+      "image_basis": "sentence",
+      "image_prompt": "A woman standing outdoors wearing a bright blue padded jacket, zipped up, the jacket filling most of the frame. No text or lettering. Square image.",
       "audio": "media/audio/niebieski.mp3",
       "sentence": {
         "pl": "Moja kurtka jest niebieska.",
@@ -7319,21 +7319,22 @@
       "ipa": "ˈzafʂɛ",
       "note": null,
       "image": "media/img/zawsze.webp",
-      "image_alt": "always",
-      "image_basis": "word",
-      "image_prompt": "A worn dirt track cut straight across a green lawn, made by people taking the same shortcut every day, buildings behind. No text or lettering. Square image.",
+      "image_alt": "a crowded market square in Kraków, full of tourists",
+      "image_basis": "sentence",
       "audio": "media/audio/zawsze.mp3",
       "sentence": {
-        "pl": "Zawsze jem śniadanie.",
-        "en": "I always eat breakfast.",
-        "gap": "___ jem śniadanie.",
-        "answer": "Zawsze",
+        "pl": "Tutaj zawsze jest dużo turystów.",
+        "en": "There are always a lot of tourists here.",
+        "gap": "Tutaj ___ jest dużo turystów.",
+        "answer": "zawsze",
         "answer_lemma": "zawsze",
         "audio": "media/audio/zawsze__sentence.mp3",
         "lemmas": [
+          "tutaj",
           "zawsze",
-          "jeść",
-          "śniadanie"
+          "być",
+          "dużo",
+          "turysta"
         ]
       },
       "cards": [
@@ -7372,7 +7373,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     }
   ]
 }
