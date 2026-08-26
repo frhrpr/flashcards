@@ -8365,6 +8365,335 @@
         "listening"
       ],
       "reviewed": true
+    },
+    {
+      "id": "brudny",
+      "word": "brudny",
+      "gloss": "dirty",
+      "pos": "adjective",
+      "ipa": "ˈbrudnɨ",
+      "note": "the other end from czysty",
+      "image": "media/img/brudny.webp",
+      "image_alt": "a child's hands covered in wet brown mud",
+      "image_basis": "sentence",
+      "image_prompt": "A child's two hands held up to the camera, covered in wet brown mud. No text or lettering. Square image.",
+      "audio": "media/audio/brudny.mp3",
+      "sentence": {
+        "pl": "Mam brudne ręce.",
+        "en": "My hands are dirty.",
+        "gap": "Mam ___ ręce.",
+        "answer": "brudne",
+        "answer_lemma": "brudny",
+        "audio": "media/audio/brudny__sentence.mp3",
+        "lemmas": [
+          "mieć",
+          "brudny",
+          "ręka"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "kosciol",
+      "word": "kościół",
+      "gloss": "church",
+      "pos": "noun",
+      "ipa": "ˈkɔɕt͡ɕuw",
+      "note": null,
+      "image": "media/img/kosciol.webp",
+      "image_alt": "an old stone church with a steeple",
+      "image_basis": "sentence",
+      "image_prompt": "A tall old stone church with a steeple seen from the street on a clear day. No text or lettering. Square image.",
+      "audio": "media/audio/kosciol.mp3",
+      "sentence": {
+        "pl": "Kościół jest bardzo stary.",
+        "en": "The church is very old.",
+        "gap": "___ jest bardzo stary.",
+        "answer": "Kościół",
+        "answer_lemma": "kościół",
+        "audio": "media/audio/kosciol__sentence.mp3",
+        "lemmas": [
+          "kościół",
+          "być",
+          "bardzo",
+          "stary"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "poczta",
+      "word": "poczta",
+      "gloss": "post office",
+      "pos": "noun",
+      "ipa": "ˈpɔt͡ʂta",
+      "note": null,
+      "image": "media/img/poczta.webp",
+      "image_alt": "a yellow postbox outside a post office",
+      "image_basis": "sentence",
+      "image_prompt": "A yellow postbox standing on the pavement outside a post office building. No text or lettering. Square image.",
+      "audio": "media/audio/poczta.mp3",
+      "sentence": {
+        "pl": "Idę na pocztę.",
+        "en": "I am going to the post office.",
+        "gap": "Idę na ___.",
+        "answer": "pocztę",
+        "answer_lemma": "poczta",
+        "audio": "media/audio/poczta__sentence.mp3",
+        "lemmas": [
+          "iść",
+          "na",
+          "poczta"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "bank",
+      "word": "bank",
+      "gloss": "bank",
+      "pos": "noun",
+      "ipa": "bank",
+      "note": null,
+      "image": "media/img/bank.webp",
+      "image_alt": "the front of a bank building with stone columns",
+      "image_basis": "sentence",
+      "image_prompt": "The front of a bank building with stone columns and a revolving door. No text or lettering. Square image.",
+      "audio": "media/audio/bank.mp3",
+      "sentence": {
+        "pl": "Mam pieniądze w banku.",
+        "en": "I have money in the bank.",
+        "gap": "Mam pieniądze w ___.",
+        "answer": "banku",
+        "answer_lemma": "bank",
+        "audio": "media/audio/bank__sentence.mp3",
+        "lemmas": [
+          "mieć",
+          "pieniądze",
+          "w",
+          "bank"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "las",
+      "word": "las",
+      "gloss": "forest",
+      "pos": "noun",
+      "ipa": "las",
+      "note": null,
+      "image": "media/img/las.webp",
+      "image_alt": "a path between tall pine trees in a forest",
+      "image_basis": "sentence",
+      "image_prompt": "A path running between tall pine trees in a dense forest, light coming through the canopy. No text or lettering. Square image.",
+      "audio": "media/audio/las.mp3",
+      "sentence": {
+        "pl": "W lesie mieszkają ptaki.",
+        "en": "Birds live in the forest.",
+        "gap": "W ___ mieszkają ptaki.",
+        "answer": "lesie",
+        "answer_lemma": "las",
+        "audio": "media/audio/las__sentence.mp3",
+        "lemmas": [
+          "w",
+          "las",
+          "mieszkać",
+          "ptak"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "rzeka",
+      "word": "rzeka",
+      "gloss": "river",
+      "pos": "noun",
+      "ipa": "ˈʐɛka",
+      "note": null,
+      "image": "media/img/rzeka.webp",
+      "image_alt": "a wide river winding through green countryside",
+      "image_basis": "sentence",
+      "image_prompt": "A wide river winding through green countryside, seen from a low hill. No text or lettering. Square image.",
+      "audio": "media/audio/rzeka.mp3",
+      "sentence": {
+        "pl": "Ta rzeka jest bardzo długa.",
+        "en": "This river is very long.",
+        "gap": "Ta ___ jest bardzo długa.",
+        "answer": "rzeka",
+        "answer_lemma": "rzeka",
+        "audio": "media/audio/rzeka__sentence.mp3",
+        "lemmas": [
+          "ten",
+          "rzeka",
+          "być",
+          "bardzo",
+          "długi"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "lampa",
+      "word": "lampa",
+      "gloss": "lamp",
+      "pos": "noun",
+      "ipa": "ˈlampa",
+      "note": null,
+      "image": "media/img/lampa.webp",
+      "image_alt": "a lit table lamp on a wooden table",
+      "image_basis": "sentence",
+      "image_prompt": "A lit table lamp with a fabric shade standing on a wooden table in a dim room. No text or lettering. Square image.",
+      "audio": "media/audio/lampa.mp3",
+      "sentence": {
+        "pl": "Lampa stoi na stole.",
+        "en": "The lamp is standing on the table.",
+        "gap": "___ stoi na stole.",
+        "answer": "Lampa",
+        "answer_lemma": "lampa",
+        "audio": "media/audio/lampa__sentence.mp3",
+        "lemmas": [
+          "lampa",
+          "stać",
+          "na",
+          "stół"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "sprzedawac",
+      "word": "sprzedawać",
+      "gloss": "to sell",
+      "pos": "verb",
+      "ipa": "spʂɛdaˈvat͡ɕ",
+      "note": "the other end from kupować",
+      "image": "media/img/sprzedawac.webp",
+      "image_alt": "a greengrocer handing a bag of oranges to a customer",
+      "image_basis": "sentence",
+      "image_prompt": "A greengrocer in an apron handing a paper bag of oranges across a wooden shop counter to a customer, wooden crates of apples and oranges stacked behind. No text or lettering anywhere: no writing on bags, aprons or signs. Square image.",
+      "audio": "media/audio/sprzedawac.mp3",
+      "sentence": {
+        "pl": "Ten sklep sprzedaje owoce.",
+        "en": "This shop sells fruit.",
+        "gap": "Ten sklep ___ owoce.",
+        "answer": "sprzedaje",
+        "answer_lemma": "sprzedawać",
+        "audio": "media/audio/sprzedawac__sentence.mp3",
+        "lemmas": [
+          "ten",
+          "sklep",
+          "sprzedawać",
+          "owoc"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "szybki",
+      "word": "szybki",
+      "gloss": "fast",
+      "pos": "adjective",
+      "ipa": "ˈʂɨpki",
+      "note": null,
+      "image": "media/img/szybki.webp",
+      "image_alt": "a sports car speeding, the background motion-blurred",
+      "image_basis": "word",
+      "image_prompt": "A silver sports car speeding along a road, the background streaked with motion blur. No text or lettering. Square image.",
+      "audio": "media/audio/szybki.mp3",
+      "sentence": {
+        "pl": "Ten samochód jest bardzo szybki.",
+        "en": "This car is very fast.",
+        "gap": "Ten samochód jest bardzo ___.",
+        "answer": "szybki",
+        "answer_lemma": "szybki",
+        "audio": "media/audio/szybki__sentence.mp3",
+        "lemmas": [
+          "ten",
+          "samochód",
+          "być",
+          "bardzo",
+          "szybki"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "czapka",
+      "word": "czapka",
+      "gloss": "hat, cap",
+      "pos": "noun",
+      "ipa": "ˈt͡ʂapka",
+      "note": null,
+      "image": "media/img/czapka.webp",
+      "image_alt": "a grey knitted winter hat",
+      "image_basis": "word",
+      "image_prompt": "A grey knitted woollen winter hat with a folded brim, lying on a pale wooden surface. No text or lettering. Square image.",
+      "audio": "media/audio/czapka.mp3",
+      "sentence": {
+        "pl": "Zimą noszę czapkę.",
+        "en": "In winter I wear a hat.",
+        "gap": "Zimą noszę ___.",
+        "answer": "czapkę",
+        "answer_lemma": "czapka",
+        "audio": "media/audio/czapka__sentence.mp3",
+        "lemmas": [
+          "zima",
+          "nosić",
+          "czapka"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
     }
   ]
 }

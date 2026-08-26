@@ -41,6 +41,28 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/bank.mp3": {
+    "fingerprint": "4380afb0ad2ff890",
+    "gain_db": -0.7,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.65,
+    "source": "tts",
+    "text": "bank",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/bank__sentence.mp3": {
+    "fingerprint": "2f924fa685a39909",
+    "gain_db": -0.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.25,
+    "source": "tts",
+    "text": "Mam pieniądze w banku.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/bardzo.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-bardzo.ogg",
@@ -144,6 +166,27 @@
     "seconds": 1.33,
     "source": "tts",
     "text": "Mój brat mieszka w mieście.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/brudny.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-brudny.ogg",
+    "fingerprint": "02867765f25ebc61",
+    "gain_db": -1.0,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-brudny.ogg",
+    "seconds": 1.2,
+    "source": "commons",
+    "text": "brudny"
+  },
+  "media/audio/brudny__sentence.mp3": {
+    "fingerprint": "7c22d40292baaa31",
+    "gain_db": -0.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.15,
+    "source": "tts",
+    "text": "Mam brudne ręce.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -464,6 +507,27 @@
     "seconds": 1.02,
     "source": "tts",
     "text": "Nie lubię cukru.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/czapka.mp3": {
+    "author": "Rogra",
+    "commons_file": "Pl-czapka.ogg",
+    "fingerprint": "9f617aab0431b9b2",
+    "gain_db": -1.5,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-czapka.ogg",
+    "seconds": 0.6,
+    "source": "commons",
+    "text": "czapka"
+  },
+  "media/audio/czapka__sentence.mp3": {
+    "fingerprint": "545d3e872f220d78",
+    "gain_db": -1.0,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.18,
+    "source": "tts",
+    "text": "Zimą noszę czapkę.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1707,6 +1771,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/kosciol.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-kościół.ogg",
+    "fingerprint": "7127edeb8ce22ca1",
+    "gain_db": -0.2,
+    "licence": "CC BY 2.5 pl",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-ko%C5%9Bci%C3%B3%C5%82.ogg",
+    "seconds": 1.2,
+    "source": "commons",
+    "text": "kościół"
+  },
+  "media/audio/kosciol__sentence.mp3": {
+    "fingerprint": "48d3bc4c3409a140",
+    "gain_db": -1.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.44,
+    "source": "tts",
+    "text": "Kościół jest bardzo stary.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/koszula.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-koszula.ogg",
@@ -1872,6 +1957,48 @@
     "seconds": 1.36,
     "source": "tts",
     "text": "To jest żółty kwiat.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/lampa.mp3": {
+    "author": "Wyksztalcioch",
+    "commons_file": "Pl-lampa.ogg",
+    "fingerprint": "b5dff47f3e41c0df",
+    "gain_db": -0.2,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-lampa.ogg",
+    "seconds": 0.63,
+    "source": "commons",
+    "text": "lampa"
+  },
+  "media/audio/lampa__sentence.mp3": {
+    "fingerprint": "db547467cb799cbd",
+    "gain_db": -1.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.18,
+    "source": "tts",
+    "text": "Lampa stoi na stole.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/las.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-las.ogg",
+    "fingerprint": "bbc92413f4849b22",
+    "gain_db": -0.8,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-las.ogg",
+    "seconds": 0.63,
+    "source": "commons",
+    "text": "las"
+  },
+  "media/audio/las__sentence.mp3": {
+    "fingerprint": "c53054dcedf7924c",
+    "gain_db": -0.5,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.36,
+    "source": "tts",
+    "text": "W lesie mieszkają ptaki.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -3352,6 +3479,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/poczta.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-poczta.ogg",
+    "fingerprint": "a89f36da6cf7af69",
+    "gain_db": 0.1,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-poczta.ogg",
+    "seconds": 1.65,
+    "source": "commons",
+    "text": "poczta"
+  },
+  "media/audio/poczta__sentence.mp3": {
+    "fingerprint": "35ca1f147fe9887b",
+    "gain_db": -0.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.89,
+    "source": "tts",
+    "text": "Idę na pocztę.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/pokoj.mp3": {
     "author": "Wyksztalcioch",
     "commons_file": "Pl-pokój.ogg",
@@ -3832,6 +3980,27 @@
     "seconds": 1.2,
     "source": "tts",
     "text": "W wodzie jest ryba.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/rzeka.mp3": {
+    "author": "Frizabela",
+    "commons_file": "Pl-rzeka.ogg",
+    "fingerprint": "99a16bd39eaa0dc2",
+    "gain_db": -1.1,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-rzeka.ogg",
+    "seconds": 0.78,
+    "source": "commons",
+    "text": "rzeka"
+  },
+  "media/audio/rzeka__sentence.mp3": {
+    "fingerprint": "1c58e29862064c86",
+    "gain_db": 0.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.44,
+    "source": "tts",
+    "text": "Ta rzeka jest bardzo długa.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -4319,6 +4488,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/sprzedawac.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-sprzedawać.ogg",
+    "fingerprint": "3333b3e575e02c10",
+    "gain_db": 0.0,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-sprzedawa%C4%87.ogg",
+    "seconds": 1.83,
+    "source": "commons",
+    "text": "sprzedawać"
+  },
+  "media/audio/sprzedawac__sentence.mp3": {
+    "fingerprint": "06478fd2ecd6cb84",
+    "gain_db": -0.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.59,
+    "source": "tts",
+    "text": "Ten sklep sprzedaje owoce.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/sroda.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-środa.ogg",
@@ -4547,6 +4737,27 @@
     "seconds": 1.33,
     "source": "tts",
     "text": "Dziecko szuka piłki.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/szybki.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-szybki.ogg",
+    "fingerprint": "1b26f6000f8d3c18",
+    "gain_db": 0.1,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-szybki.ogg",
+    "seconds": 1.7,
+    "source": "commons",
+    "text": "szybki"
+  },
+  "media/audio/szybki__sentence.mp3": {
+    "fingerprint": "b5e367ffddd9ab26",
+    "gain_db": -0.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.67,
+    "source": "tts",
+    "text": "Ten samochód jest bardzo szybki.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -5388,6 +5599,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/bank.webp": {
+    "bytes": 88754,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "2904a989165fe743",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "The front of a bank building with stone columns and a revolving door. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/bardzo.webp": {
     "bytes": 52640,
     "check": {
@@ -5449,6 +5676,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "Two young men with similar faces standing side by side on a city street, one with an arm across the other's shoulders. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/brudny.webp": {
+    "bytes": 47200,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "3b2c510ffa9e9afa",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A child's two hands held up to the camera, covered in wet brown mud. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -5689,6 +5932,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A small stack of white sugar cubes on a dark saucer. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/czapka.webp": {
+    "bytes": 145850,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "cc4de0196031d44c",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A grey knitted woollen winter hat with a folded brim, lying on a pale wooden surface. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -6594,6 +6853,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/kosciol.webp": {
+    "bytes": 83492,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "14597ff012a941a8",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A tall old stone church with a steeple seen from the street on a clear day. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/koszula.webp": {
     "bytes": 78620,
     "check": {
@@ -6703,6 +6978,38 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "One flower with a stem, whole flower in frame, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/lampa.webp": {
+    "bytes": 18228,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "77a0ad02ed095f37",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A lit table lamp with a fabric shade standing on a wooden table in a dim room. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/las.webp": {
+    "bytes": 171614,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "770e4e024f7b0067",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A path running between tall pine trees in a dense forest, light coming through the canopy. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -7795,6 +8102,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/poczta.webp": {
+    "bytes": 139390,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "There is visible text on the postbox insert and on the wall plaque.",
+      "verdict": "flag",
+      "why": "contains text or lettering"
+    },
+    "fingerprint": "9f946c3c085388dc",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A yellow postbox standing on the pavement outside a post office building. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/pokoj.webp": {
     "bytes": 31136,
     "check": {
@@ -8153,6 +8476,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/rzeka.webp": {
+    "bytes": 106368,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "506dafca636aea3b",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A wide river winding through green countryside, seen from a low hill. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/samochod.webp": {
     "bytes": 53596,
     "check": {
@@ -8474,6 +8813,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/sprzedawac.webp": {
+    "bytes": 82064,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "f2cc6a537daf0cee",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A greengrocer in an apron handing a paper bag of oranges across a wooden shop counter to a customer, wooden crates of apples and oranges stacked behind. No text or lettering anywhere: no writing on bags, aprons or signs. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/sroda.webp": {
     "author": "supplied by user",
     "bytes": 13354,
@@ -8642,6 +8997,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A child crouching on grass and searching through it with both hands, clearly looking for something. Daylight, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/szybki.webp": {
+    "bytes": 39340,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "6170f51b4454d599",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A silver sports car speeding along a road, the background streaked with motion blur. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
