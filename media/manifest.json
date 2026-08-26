@@ -899,12 +899,12 @@
     "text": "dwa"
   },
   "media/audio/dwa__sentence.mp3": {
-    "fingerprint": "84d63a39068b066d",
-    "gain_db": -0.7,
+    "fingerprint": "242a3a158afaeed8",
+    "gain_db": -2.1,
     "model": "eleven_multilingual_v2",
-    "seconds": 0.97,
+    "seconds": 1.33,
     "source": "tts",
-    "text": "Mam dwa psy.",
+    "text": "To jest szafka numer dwa.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -2817,12 +2817,12 @@
     "text": "osiem"
   },
   "media/audio/osiem__sentence.mp3": {
-    "fingerprint": "a41257da22ba1a66",
-    "gain_db": -1.6,
+    "fingerprint": "47fdf40a461e37bb",
+    "gain_db": -0.7,
     "model": "eleven_multilingual_v2",
-    "seconds": 1.44,
+    "seconds": 1.46,
     "source": "tts",
-    "text": "Pracuję osiem godzin.",
+    "text": "To jest peron numer osiem.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -7191,18 +7191,18 @@
     "source": "generated"
   },
   "media/img/osiem.webp": {
-    "bytes": 21976,
+    "bytes": 53778,
     "check": {
       "model": "gemini-flash-latest",
       "problem": "",
       "verdict": "ok",
       "why": ""
     },
-    "fingerprint": "cad4bc397e361872",
+    "fingerprint": "ab211e7206acad22",
     "model": "gemini-2.5-flash-image",
     "original_size": "1024x1024",
     "process_version": 1,
-    "prompt": "The black number 8 ball on the green baize of a pool table, seen close. No words, only the numbers. Square image.",
+    "prompt": "A railway platform number sign showing 8 hanging from the canopy of a station, the platform below it. No words, only the numbers. Square image.",
     "size": "800x800",
     "source": "generated"
   },

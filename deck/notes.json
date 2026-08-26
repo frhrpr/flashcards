@@ -7732,7 +7732,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "dwa",
@@ -7743,20 +7743,22 @@
       "note": null,
       "image": "media/img/dwa.webp",
       "image_alt": "the number 2 on a locker door",
-      "image_basis": "word",
+      "image_basis": "sentence",
       "image_prompt": "A metal numeral 2 screwed to a painted locker door, seen close. No words, only the numbers. Square image.",
       "audio": "media/audio/dwa.mp3",
       "sentence": {
-        "pl": "Mam dwa psy.",
-        "en": "I have two dogs.",
-        "gap": "Mam ___ psy.",
+        "pl": "To jest szafka numer dwa.",
+        "en": "This is locker number two.",
+        "gap": "To jest szafka numer ___.",
         "answer": "dwa",
         "answer_lemma": "dwa",
         "audio": "media/audio/dwa__sentence.mp3",
         "lemmas": [
-          "mieć",
-          "dwa",
-          "pies"
+          "to",
+          "być",
+          "szafka",
+          "numer",
+          "dwa"
         ]
       },
       "cards": [
@@ -7798,7 +7800,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "cztery",
@@ -7832,7 +7834,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "piec_5",
@@ -7866,7 +7868,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "szesc",
@@ -7900,7 +7902,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "osiem",
@@ -7910,21 +7912,23 @@
       "ipa": "ˈɔɕɛm",
       "note": null,
       "image": "media/img/osiem.webp",
-      "image_alt": "the number 8 on a black pool ball",
-      "image_basis": "word",
-      "image_prompt": "The black number 8 ball on the green baize of a pool table, seen close. No words, only the numbers. Square image.",
+      "image_alt": "the number 8 on a sign hanging over a railway platform",
+      "image_basis": "sentence",
+      "image_prompt": "A railway platform number sign showing 8 hanging from the canopy of a station, the platform below it. No words, only the numbers. Square image.",
       "audio": "media/audio/osiem.mp3",
       "sentence": {
-        "pl": "Pracuję osiem godzin.",
-        "en": "I work eight hours.",
-        "gap": "Pracuję ___ godzin.",
+        "pl": "To jest peron numer osiem.",
+        "en": "This is platform number eight.",
+        "gap": "To jest peron numer ___.",
         "answer": "osiem",
         "answer_lemma": "osiem",
         "audio": "media/audio/osiem__sentence.mp3",
         "lemmas": [
-          "pracować",
-          "osiem",
-          "godzina"
+          "to",
+          "być",
+          "peron",
+          "numer",
+          "osiem"
         ]
       },
       "cards": [
@@ -7966,7 +7970,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "dziesiec",
@@ -7998,7 +8002,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "drugi",
@@ -8029,7 +8033,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     }
   ]
 }
