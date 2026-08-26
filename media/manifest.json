@@ -4135,18 +4135,18 @@
     "source": "generated"
   },
   "media/img/czarny.webp": {
-    "bytes": 4638,
+    "bytes": 44148,
     "check": {
       "model": "gemini-flash-latest",
       "problem": "",
       "verdict": "ok",
       "why": ""
     },
-    "fingerprint": "cdf84fd714e36e72",
+    "fingerprint": "fffb682226553580",
     "model": "gemini-2.5-flash-image",
     "original_size": "1024x1024",
     "process_version": 1,
-    "prompt": "A folded black wool scarf lying alone on a white surface, the black very plainly the subject. Seen from above. No text or lettering. Square image.",
+    "prompt": "A chunky black knitted scarf wound twice round a person's neck, the knit texture and the fringed ends clearly visible, seen from the chest up. Plain pale background, face out of frame. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
