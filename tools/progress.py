@@ -456,37 +456,40 @@ def html(uid, a, e, dest):
     when = "—" if gap is None else "today" if gap == 0 else \
            "yesterday" if gap == 1 else f"{gap} days ago"
     b = a["buckets"]
-    page = f"""<!doctype html><meta charset=utf-8><title>Progress — {esc(uid)}</title><style>
+    page = f"""<!doctype html><meta charset=utf-8><title>Progress — {esc(uid)}</title>
+<meta name=color-scheme content="dark"><style>
+:root{{--bg:#15171a;--card:#1d2024;--ink:#e6e8e6;--dim:#9aa0a6;--line:#2e3339;
+--ok:#7cc088;--bad:#e8796b;--badbg:#2a1d1c}}
 body{{font-family:system-ui,sans-serif;max-width:46rem;margin:2rem auto;padding:0 1rem;
-background:#E8EBE4;color:#181B18;line-height:1.5}}
+background:var(--bg);color:var(--ink);line-height:1.5}}
 h1{{font-size:1.15rem;margin-bottom:.2rem}}
 h2{{font-family:ui-monospace,monospace;font-size:.7rem;letter-spacing:.14em;
-text-transform:uppercase;color:#6C736B;margin:2rem 0 .6rem;font-weight:400}}
-.sub{{font-size:.8rem;color:#6C736B;font-family:ui-monospace,monospace}}
-.box{{background:#FCFDFB;border:1px solid #C9CFC4;padding:1rem 1.2rem}}
+text-transform:uppercase;color:var(--dim);margin:2rem 0 .6rem;font-weight:400}}
+.sub{{font-size:.8rem;color:var(--dim);font-family:ui-monospace,monospace}}
+.box{{background:var(--card);border:1px solid var(--line);padding:1rem 1.2rem}}
 .kv{{display:grid;grid-template-columns:auto 1fr;gap:.4rem 1.2rem}}
-.kv dt{{font-size:.85rem;color:#6C736B}}
+.kv dt{{font-size:.85rem;color:var(--dim)}}
 .kv dd{{margin:0;font-family:ui-monospace,monospace;font-size:.9rem;text-align:right}}
 table{{width:100%;border-collapse:collapse;font-size:.85rem}}
-td{{padding:.28rem .4rem;border-bottom:1px solid #E8EBE4}}
-td.d{{width:7.5rem;color:#6C736B;font-size:.78rem}}
+td{{padding:.28rem .4rem;border-bottom:1px solid var(--line)}}
+td.d{{width:7.5rem;color:var(--dim);font-size:.78rem}}
 td.n{{text-align:right;font-family:ui-monospace,monospace;width:4.5rem}}
-td.w{{font-size:1rem}} td.g{{color:#6C736B;font-size:.8rem}}
+td.w{{font-size:1rem}} td.g{{color:var(--dim);font-size:.8rem}}
 td.bar i,td.bar u{{display:inline-block;height:.7rem;vertical-align:middle}}
-td.bar i{{background:#2F6B3E}} td.bar u{{background:#A32C22}}
+td.bar i{{background:var(--ok)}} td.bar u{{background:var(--bad)}}
 table.cards th{{text-align:left;font-family:ui-monospace,monospace;font-size:.6rem;
-letter-spacing:.1em;text-transform:uppercase;color:#6C736B;font-weight:400;
-padding:.2rem .4rem;border-bottom:1px solid #C9CFC4}}
+letter-spacing:.1em;text-transform:uppercase;color:var(--dim);font-weight:400;
+padding:.2rem .4rem;border-bottom:1px solid var(--line)}}
 table.cards th:nth-child(n+3){{text-align:right}}
 table.cards th:last-child{{text-align:left}}
-tr.warn td{{background:#F9F1F0}}
-td.w em{{display:block;font-style:normal;color:#6C736B;font-size:.72rem}}
-td.ty{{font-family:ui-monospace,monospace;font-size:.68rem;color:#6C736B}}
-td.n.low{{color:#A32C22;font-weight:700}} dd.low{{color:#A32C22;font-weight:700}} td.n.late{{color:#A32C22}}
-td.n.diag{{color:#6C736B}} td.n.hot{{color:#A32C22;font-weight:700}}
+tr.warn td{{background:var(--badbg)}}
+td.w em{{display:block;font-style:normal;color:var(--dim);font-size:.72rem}}
+td.ty{{font-family:ui-monospace,monospace;font-size:.68rem;color:var(--dim)}}
+td.n.low{{color:var(--bad);font-weight:700}} dd.low{{color:var(--bad);font-weight:700}} td.n.late{{color:var(--bad)}}
+td.n.diag{{color:var(--dim)}} td.n.hot{{color:var(--bad);font-weight:700}}
 td.hist{{font-family:ui-monospace,monospace;letter-spacing:.08em;white-space:nowrap}}
 td.hist b{{font-weight:400;cursor:default}}
-td.hist b.g{{color:#2F6B3E}} td.hist b.a{{color:#A32C22}}
+td.hist b.g{{color:var(--ok)}} td.hist b.a{{color:var(--bad)}}
 </style>
 <h1>{esc(uid)}</h1>
 <div class=sub>last seen {esc(when)} · {a['streak']}-day streak · {a['reviews']} reviews all told</div>

@@ -372,24 +372,26 @@ def build_picker(notes, dest, index):
       <span class=id>{esc(n['id'])}</span></h2>
   <div class=sent>{esc(s.get('pl',''))}<em>{esc(s.get('en',''))}</em></div>
   <div class=row>{thumbs}</div></section>'''
-    html = f'''<!doctype html><meta charset=utf-8><title>Pick images</title><style>
+    html = f'''<!doctype html><meta charset=utf-8><title>Pick images</title>
+<meta name=color-scheme content="dark"><style>
+:root{{--bg:#15171a;--card:#1d2024;--ink:#e6e8e6;--dim:#9aa0a6;--line:#2e3339;--bad:#e8796b;--badbg:#2a1d1c;--mount:#f4f5f2}}
 body{{font-family:system-ui,sans-serif;max-width:60rem;margin:2rem auto;padding:0 1rem;
-background:#E8EBE4;color:#181B18}}
-h1{{font-size:1.15rem}} p.i{{font-size:.9rem;color:#6C736B;max-width:38rem}}
-section{{background:#FCFDFB;border:1px solid #C9CFC4;padding:1rem 1.2rem;margin:1.2rem 0}}
+background:var(--bg);color:var(--ink)}}
+h1{{font-size:1.15rem}} p.i{{font-size:.9rem;color:var(--dim);max-width:38rem}}
+section{{background:var(--card);border:1px solid var(--line);padding:1rem 1.2rem;margin:1.2rem 0}}
 h2{{font-size:1.5rem;font-weight:300;margin:0 0 .3rem}}
-.gl{{font-size:.9rem;color:#6C736B}}
-.id{{font-family:ui-monospace,monospace;font-size:.65rem;color:#6C736B;float:right}}
+.gl{{font-size:.9rem;color:var(--dim)}}
+.id{{font-family:ui-monospace,monospace;font-size:.65rem;color:var(--dim);float:right}}
 .sent{{font-size:1rem;margin-bottom:.8rem}}
-.sent em{{display:block;font-style:normal;font-size:.82rem;color:#6C736B}}
+.sent em{{display:block;font-style:normal;font-size:.82rem;color:var(--dim)}}
 .row{{display:flex;gap:.7rem;overflow-x:auto;padding-bottom:.3rem}}
 figure{{margin:0;flex:0 0 12rem}}
-figure img{{width:12rem;height:9rem;object-fit:contain;background:#F2F4F0;
-border:1px solid #C9CFC4}}
-figcaption{{font-family:ui-monospace,monospace;font-size:.6rem;color:#6C736B;
+figure img{{width:12rem;height:9rem;object-fit:contain;background:var(--mount);
+border:1px solid var(--line)}}
+figcaption{{font-family:ui-monospace,monospace;font-size:.6rem;color:var(--dim);
 margin-top:.25rem;line-height:1.4}}
-figcaption b{{font-size:.9rem;color:#181B18}}
-.none{{color:#A32C22;font-size:.85rem;padding:2rem 0}}</style>
+figcaption b{{font-size:.9rem;color:var(--ink)}}
+.none{{color:var(--bad);font-size:.85rem;padding:2rem 0}}</style>
 <h1>Pick an image for each word</h1>
 <p class=i>Candidates are CC-licensed, from Openverse and Wikipedia. Tell Claude the
 number you want for each word — e.g. <b>kot 3, dom 1</b>. If none are any good,
@@ -507,20 +509,22 @@ def cmd_sheet(notes, manifest, dest):
                   f'<div class=g>{esc(n.get("gloss", ""))}</div>'
                   f'<div class=s>{esc(s.get("pl", ""))}<em>{esc(s.get("en", ""))}</em></div>'
                   f'<div class=m>{meta}</div></div>')
-    html = f'''<!doctype html><meta charset=utf-8><title>Image check</title><style>
+    html = f'''<!doctype html><meta charset=utf-8><title>Image check</title>
+<meta name=color-scheme content="dark"><style>
+:root{{--bg:#15171a;--card:#1d2024;--ink:#e6e8e6;--dim:#9aa0a6;--line:#2e3339;--bad:#e8796b;--badbg:#2a1d1c;--mount:#f4f5f2}}
 body{{font-family:system-ui,sans-serif;max-width:54rem;margin:2rem auto;padding:0 1rem;
-background:#E8EBE4;color:#181B18}}
-h1{{font-size:1.15rem}} p{{font-size:.9rem;color:#6C736B}}
+background:var(--bg);color:var(--ink)}}
+h1{{font-size:1.15rem}} p{{font-size:.9rem;color:var(--dim)}}
 .grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(12rem,1fr));gap:1rem}}
-.c{{background:#FCFDFB;border:1px solid #C9CFC4;padding:.6rem;text-align:center}}
-.c img{{width:100%;height:8rem;object-fit:contain;background:#F2F4F0}}
+.c{{background:var(--card);border:1px solid var(--line);padding:.6rem;text-align:center}}
+.c img{{width:100%;height:8rem;object-fit:contain;background:var(--mount)}}
 .none{{height:8rem;display:flex;align-items:center;justify-content:center;
-background:#F2F4F0;color:#A32C22;font-size:.8rem}}
+background:var(--badbg);color:var(--bad);font-size:.8rem}}
 .w{{font-size:1.15rem;font-weight:300;margin-top:.4rem}}
-.g{{font-size:.8rem;color:#6C736B}}
+.g{{font-size:.8rem;color:var(--dim)}}
 .s{{font-size:.78rem;margin-top:.35rem}}
-.s em{{display:block;font-style:normal;color:#6C736B;font-size:.72rem}}
-.m{{font-family:ui-monospace,monospace;font-size:.6rem;color:#6C736B;margin-top:.35rem}}
+.s em{{display:block;font-style:normal;color:var(--dim);font-size:.72rem}}
+.m{{font-family:ui-monospace,monospace;font-size:.6rem;color:var(--dim);margin-top:.35rem}}
 </style><h1>Image check — does each picture match its word and sentence?</h1>
 <p>If any pairing is wrong, tell Claude which. This is the only place a
 mismatched image gets caught before Evert sees it.</p>

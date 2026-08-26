@@ -700,6 +700,30 @@ Deferred on purpose: 4 grades instead of 2, and a stats screen.
 - **Verify audio before adopting it.** A 256-byte JSON error page passes an
   existence check happily; `tts.py` writes to a temp file and only keeps it
   once ffprobe confirms real audio of non-zero length.
+- **Generated pages are dark by default.** Everything this repo emits as HTML
+  — the review page, the progress page, the audition pages, lesson and
+  homework sheets — uses the dark palette established in `tools/review.py`:
+  `--bg:#15171a`, `--card:#1d2024`, `--ink:#e6e8e6`, `--dim:#9aa0a6`,
+  `--line:#2e3339`. Asked on 2026-08-26; the user reads these on a screen at
+  night and a white page is the thing that hurts.
+
+  Three details carry over from doing it to the review page:
+
+  - **Declare `color-scheme`** in a meta tag or the native controls stay
+    light — an `<audio>` player on a dark card renders as a white pill.
+  - **Images need their own near-white mount** (`background:#f4f5f2`). These
+    are lit photographs of objects on pale grounds, and letting a dark page
+    show through the transparent edges makes them look broken.
+  - **Paper stays light.** A `@media print` block puts the light palette back
+    for any sheet that will be printed. Dark backgrounds print as either
+    nothing or a solid black rectangle depending on the browser, and the
+    lesson sheets exist to be printed. Screen is the default; paper is the
+    documented exception, not an oversight.
+
+  One class of page is exempt: anything sent to a **third party** rather than
+  to the user — the reading-order sheet volunteers read from, for instance.
+  They did not ask for dark and may well print it.
+
 - Auth is an SSH key; the remote is `git@github.com:frhrpr/flashcards.git`.
   Pushing and any non-allowlisted network call need
   `dangerouslyDisableSandbox` — the sandbox denies `~/.ssh` and allows only
