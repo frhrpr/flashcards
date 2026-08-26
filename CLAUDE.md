@@ -617,6 +617,15 @@ Two calibration lessons, both learned by getting 24 flags out of 43:
   "would a learner guess this word from the picture alone" flags every verb,
   because a bird in flight does also contain a bird.
 
+**The lettering question knows about numerals now.** It used to ask "is there
+any written text" flat, so every card whose whole point is a digit flagged —
+the numbers batch produced 8 flags of which 7 read "the image contains the
+digit 8" or similar. That is how a person learns to ignore flags. When a
+note's `image_prompt` contains "only the numbers", the check now asks about
+*words* instead and is told digits are expected. Re-running it on the same
+nine images left one flag, and that one was real: a letter B in "B2" on a
+lift panel.
+
 **The check is advisory and it misses things.** It waved through all three
 wrong clocks, including one whose red arc spanned six hours, and it passed
 `praca` walking out of the office twice. It reliably catches lettering and

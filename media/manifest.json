@@ -572,6 +572,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/cztery.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-cztery.ogg",
+    "fingerprint": "df8adaa248fb62fb",
+    "gain_db": -1.5,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-cztery.ogg",
+    "seconds": 0.71,
+    "source": "commons",
+    "text": "cztery"
+  },
+  "media/audio/cztery__sentence.mp3": {
+    "fingerprint": "1a0955597dd5d402",
+    "gain_db": 0.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.18,
+    "source": "tts",
+    "text": "Mam cztery jajka.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/czuc.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-czuć.ogg",
@@ -761,6 +782,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/drugi.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-drugi.ogg",
+    "fingerprint": "1e512c4096d8b5d9",
+    "gain_db": -1.0,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-drugi.ogg",
+    "seconds": 0.78,
+    "source": "commons",
+    "text": "drugi"
+  },
+  "media/audio/drugi__sentence.mp3": {
+    "fingerprint": "3099bdf3fdc0ddeb",
+    "gain_db": -0.6,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.81,
+    "source": "tts",
+    "text": "Jestem drugi.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/drzewo.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-drzewo.ogg",
@@ -842,6 +884,27 @@
     "seconds": 1.07,
     "source": "tts",
     "text": "To jest duży dom.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/dwa.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-dwa.ogg",
+    "fingerprint": "5ee3563ecab5c8d3",
+    "gain_db": -1.3,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-dwa.ogg",
+    "seconds": 0.71,
+    "source": "commons",
+    "text": "dwa"
+  },
+  "media/audio/dwa__sentence.mp3": {
+    "fingerprint": "84d63a39068b066d",
+    "gain_db": -0.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.97,
+    "source": "tts",
+    "text": "Mam dwa psy.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -947,6 +1010,48 @@
     "seconds": 1.12,
     "source": "tts",
     "text": "To jest dziwny dzień.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/dziesiec.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-dziesięć.ogg",
+    "fingerprint": "e3ab9fcaf0107d1e",
+    "gain_db": -0.8,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-dziesi%C4%99%C4%87.ogg",
+    "seconds": 1.15,
+    "source": "commons",
+    "text": "dziesięć"
+  },
+  "media/audio/dziesiec__sentence.mp3": {
+    "fingerprint": "55d65b8dcd4f3d05",
+    "gain_db": 0.0,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.75,
+    "source": "tts",
+    "text": "W pokoju jest dziesięć krzeseł.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/dziewiec.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-dziewięć.ogg",
+    "fingerprint": "0559e57ba15c68d0",
+    "gain_db": -0.3,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-dziewi%C4%99%C4%87.ogg",
+    "seconds": 1.04,
+    "source": "commons",
+    "text": "dziewięć"
+  },
+  "media/audio/dziewiec__sentence.mp3": {
+    "fingerprint": "b47f759be69317cc",
+    "gain_db": -0.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.46,
+    "source": "tts",
+    "text": "W parku jest dziewięć ławek.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1262,6 +1367,27 @@
     "seconds": 1.93,
     "source": "tts",
     "text": "Potem jedzie pociągiem do miasta.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/jeden.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-jeden.ogg",
+    "fingerprint": "5c8ef434794bcc1b",
+    "gain_db": 0.0,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-jeden.ogg",
+    "seconds": 0.71,
+    "source": "commons",
+    "text": "jeden"
+  },
+  "media/audio/jeden__sentence.mp3": {
+    "fingerprint": "f2c7ee8b8bc2d783",
+    "gain_db": -2.8,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.97,
+    "source": "tts",
+    "text": "Mam jeden klucz.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -2679,6 +2805,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/osiem.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-osiem.ogg",
+    "fingerprint": "1e1da06dc9c2a9b6",
+    "gain_db": 0.2,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-osiem.ogg",
+    "seconds": 1.12,
+    "source": "commons",
+    "text": "osiem"
+  },
+  "media/audio/osiem__sentence.mp3": {
+    "fingerprint": "a41257da22ba1a66",
+    "gain_db": -1.6,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.44,
+    "source": "tts",
+    "text": "Pracuję osiem godzin.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/otworzyc.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-otworzyć.ogg",
@@ -2887,6 +3034,27 @@
     "seconds": 1.02,
     "source": "tts",
     "text": "Ptak pije wodę.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/piec_5.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-pięć.ogg",
+    "fingerprint": "1eb5964d9d07f060",
+    "gain_db": 0.6,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-pi%C4%99%C4%87.ogg",
+    "seconds": 1.12,
+    "source": "commons",
+    "text": "pięć"
+  },
+  "media/audio/piec_5__sentence.mp3": {
+    "fingerprint": "a04ff81b5039cd9a",
+    "gain_db": 0.0,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.1,
+    "source": "tts",
+    "text": "Mam pięć kluczy.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -4130,6 +4298,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/szesc.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-sześć.ogg",
+    "fingerprint": "347735a6a67a1e55",
+    "gain_db": 2.6,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-sze%C5%9B%C4%87.ogg",
+    "seconds": 0.78,
+    "source": "commons",
+    "text": "sześć"
+  },
+  "media/audio/szesc__sentence.mp3": {
+    "fingerprint": "bc6daea4d15f4369",
+    "gain_db": 0.6,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.67,
+    "source": "tts",
+    "text": "W domu jest sześć okien.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/szkola.mp3": {
     "author": "Frizabela",
     "commons_file": "Pl-szkoła.ogg",
@@ -4296,6 +4485,27 @@
     "seconds": 1.15,
     "source": "tts",
     "text": "Polski jest trudny.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/trzy.mp3": {
+    "author": "Marcowy zając",
+    "commons_file": "Pl-trzy.ogg",
+    "fingerprint": "69cfced2bdf2cc21",
+    "gain_db": 4.4,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-trzy.ogg",
+    "seconds": 0.6,
+    "source": "commons",
+    "text": "trzy"
+  },
+  "media/audio/trzy__sentence.mp3": {
+    "fingerprint": "0b6bb4049038b552",
+    "gain_db": 1.8,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.12,
+    "source": "tts",
+    "text": "Widzę trzy ptaki.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -5352,6 +5562,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/cztery.webp": {
+    "bytes": 99648,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "6202be98bd99e2f6",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A large white stencilled numeral 4 painted on the end of a rusty shipping container. No words, only the numbers. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/czuc.webp": {
     "bytes": 13786,
     "check": {
@@ -5491,6 +5717,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/drugi.webp": {
+    "bytes": 24640,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "4b1c0198516e00c3",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A silver medal on a blue ribbon held up close in a person's hand, a running track blurred behind. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/drzewo.webp": {
     "bytes": 141042,
     "check": {
@@ -5536,6 +5778,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A very large house seen from the front, with one person standing at the door looking small against it so the size is obvious. Daylight. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/dwa.webp": {
+    "bytes": 26888,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "ed75b89133377033",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A metal numeral 2 screwed to a painted locker door, seen close. No words, only the numbers. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -5616,6 +5874,38 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A bright blue daytime sky with the sun high and a few small clouds, nothing else in frame, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/dziesiec.webp": {
+    "bytes": 66646,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "24bd418fe8e2fcb6",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A white roadside kilometre marker post with the numeral 10 on it, grass behind. No words, only the numbers. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/dziewiec.webp": {
+    "bytes": 38314,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "ff901de858fa1fe1",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A hotel key fob stamped with the numeral 9, lying on a wooden counter. No words, only the numbers. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -5835,6 +6125,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "The view from inside a moving train: a passenger window with fields and trees sweeping past, part of the seat in frame. Daylight. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/jeden.webp": {
+    "bytes": 250602,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "767cca508016a14e",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A large white numeral 1 painted on the red surface of a running track lane, seen from directly above. No words, only the numbers. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -6884,6 +7190,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/osiem.webp": {
+    "bytes": 21976,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "cad4bc397e361872",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "The black number 8 ball on the green baize of a pool table, seen close. No words, only the numbers. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/otworzyc.webp": {
     "bytes": 23712,
     "check": {
@@ -7036,6 +7358,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A small bird drinking from a shallow pool of water, beak touching the surface, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/piec_5.webp": {
+    "bytes": 125864,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "7f853b972e4b2453",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A large numeral 5 painted on a swimming pool starting block, seen from above. No words, only the numbers. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -7905,6 +8243,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/szesc.webp": {
+    "bytes": 9964,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "515b81c047ef82fd",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A numeral 6 on a round bus stop sign fixed to a pole against a grey sky. No words, only the numbers. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/szkola.webp": {
     "bytes": 88738,
     "check": {
@@ -8030,6 +8384,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A person at a desk with both hands pressed to their temples over a thick open book of dense text, frustrated. Warm indoor light. No readable text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/trzy.webp": {
+    "bytes": 115998,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "d70088d15c05041a",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A numeral 3 on the side of a green metal letterbox at a garden gate. No words, only the numbers. Square image.",
     "size": "800x800",
     "source": "generated"
   },

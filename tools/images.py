@@ -180,6 +180,10 @@ def check_image(key, path, n):
                f"The picture illustrates the word on its own. The card's example "
                f"sentence appears separately as text and audio, so do NOT judge "
                f"the picture against it.\n\n")
+    # A card whose whole point is a numeral will always contain digits, and
+    # the rule is that words are banned, not numerals. Without this every
+    # number card flags and the flags stop meaning anything.
+    numerals_ok = "only the numbers" in (n.get("image_prompt") or "")
     prompt = (
         f"This picture is the illustration on a vocabulary flashcard teaching an "
         f"adult beginner the Polish word \"{n['word']}\", meaning \"{n.get('gloss','')}\".\n"
@@ -196,7 +200,12 @@ def check_image(key, path, n):
         f"meaning to the word? Answer false only for that. A picture that is "
         f"merely insufficient on its own is fine, because the gloss and the "
         f"sentence are there too.\n"
-        f"- has_text: is there any written text, lettering or watermark anywhere?\n"
+        + (f"- has_text: are there any WORDS, lettering or a watermark anywhere? "
+           f"Digits alone are expected on this card and are not text — answer "
+           f"false for a picture whose only marking is numerals.\n"
+           if numerals_ok else
+           f"- has_text: is there any written text, lettering or watermark anywhere?\n")
+        +
         f"- problem: if anything is wrong, say so in one short sentence"
         + (", including any way the picture contradicts the sentence"
            if from_sentence else "") + ". Otherwise empty string.")
