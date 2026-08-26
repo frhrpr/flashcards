@@ -447,6 +447,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/ciasto.mp3": {
+    "author": "Frizabela",
+    "commons_file": "Pl-ciasto.ogg",
+    "fingerprint": "923779a917be9d0e",
+    "gain_db": -0.7,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-ciasto.ogg",
+    "seconds": 0.76,
+    "source": "commons",
+    "text": "ciasto"
+  },
+  "media/audio/ciasto__sentence.mp3": {
+    "fingerprint": "0720ea8745d45934",
+    "gain_db": -0.5,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.36,
+    "source": "tts",
+    "text": "To ciasto jest bardzo dobre.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/cieply.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-ciepły.ogg",
@@ -1581,6 +1602,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/jezioro.mp3": {
+    "author": "Frizabela",
+    "commons_file": "Pl-jezioro.ogg",
+    "fingerprint": "0037028f07dc3c71",
+    "gain_db": -5.9,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-jezioro.ogg",
+    "seconds": 0.78,
+    "source": "commons",
+    "text": "jezioro"
+  },
+  "media/audio/jezioro__sentence.mp3": {
+    "fingerprint": "7d16cf2830a6faf5",
+    "gain_db": -1.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.15,
+    "source": "tts",
+    "text": "W jeziorze są ryby.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/jutro.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-jutro.ogg",
@@ -1687,6 +1729,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/kino.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-kino.ogg",
+    "fingerprint": "7c4043160da2ece1",
+    "gain_db": -1.5,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-kino.ogg",
+    "seconds": 0.89,
+    "source": "commons",
+    "text": "kino"
+  },
+  "media/audio/kino__sentence.mp3": {
+    "fingerprint": "4e8d53401f7624a6",
+    "gain_db": -2.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.99,
+    "source": "tts",
+    "text": "Idziemy do kina.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/klucz.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-klucz.ogg",
@@ -1747,6 +1810,27 @@
     "seconds": 1.12,
     "source": "tts",
     "text": "Kolacja jest na stole.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/komputer.mp3": {
+    "author": "Wyksztalcioch",
+    "commons_file": "Pl-komputer.ogg",
+    "fingerprint": "ccafa70111995da1",
+    "gain_db": 2.1,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-komputer.ogg",
+    "seconds": 0.65,
+    "source": "commons",
+    "text": "komputer"
+  },
+  "media/audio/komputer__sentence.mp3": {
+    "fingerprint": "5f79354037dfd414",
+    "gain_db": -1.2,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.12,
+    "source": "tts",
+    "text": "Mam nowy komputer.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -4320,6 +4404,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/smutny.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-smutny.ogg",
+    "fingerprint": "201fdbfde8361c83",
+    "gain_db": 0.1,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-smutny.ogg",
+    "seconds": 1.75,
+    "source": "commons",
+    "text": "smutny"
+  },
+  "media/audio/smutny__sentence.mp3": {
+    "fingerprint": "030683c9591809eb",
+    "gain_db": 0.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.23,
+    "source": "tts",
+    "text": "Dziecko jest smutne.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/sniadanie.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-śniadanie.ogg",
@@ -4614,6 +4719,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/sukienka.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-sukienka.ogg",
+    "fingerprint": "5f78156178f010a6",
+    "gain_db": -0.4,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-sukienka.ogg",
+    "seconds": 1.59,
+    "source": "commons",
+    "text": "sukienka"
+  },
+  "media/audio/sukienka__sentence.mp3": {
+    "fingerprint": "6dfe49620b5c2b8c",
+    "gain_db": -2.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.36,
+    "source": "tts",
+    "text": "Ta sukienka jest zielona.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/swiat.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-świat.ogg",
@@ -4782,6 +4908,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/tam.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-tam.ogg",
+    "fingerprint": "9b89b3af1f30aef4",
+    "gain_db": 0.4,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-tam.ogg",
+    "seconds": 0.6,
+    "source": "commons",
+    "text": "tam"
+  },
+  "media/audio/tam__sentence.mp3": {
+    "fingerprint": "9d3181d34dfd2875",
+    "gain_db": 0.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.12,
+    "source": "tts",
+    "text": "Mój dom jest tam.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/tani.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-tani.ogg",
@@ -4822,6 +4969,27 @@
     "seconds": 1.07,
     "source": "tts",
     "text": "Mój telefon jest nowy.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/telewizor.mp3": {
+    "author": "Ewczy",
+    "commons_file": "Pl-telewizor.ogg",
+    "fingerprint": "c46bee3e000384bb",
+    "gain_db": -0.7,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-telewizor.ogg",
+    "seconds": 0.91,
+    "source": "commons",
+    "text": "telewizor"
+  },
+  "media/audio/telewizor__sentence.mp3": {
+    "fingerprint": "d592b3f18a842b93",
+    "gain_db": -1.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.41,
+    "source": "tts",
+    "text": "Telewizor stoi w pokoju.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -5057,6 +5225,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/warzywo.mp3": {
+    "author": "Marcowy zając",
+    "commons_file": "Pl-warzywo.ogg",
+    "fingerprint": "729e03d1f58c3f0f",
+    "gain_db": 16.7,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-warzywo.ogg",
+    "seconds": 1.49,
+    "source": "commons",
+    "text": "warzywo"
+  },
+  "media/audio/warzywo__sentence.mp3": {
+    "fingerprint": "4ff4ef84798f3cf3",
+    "gain_db": -1.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.44,
+    "source": "tts",
+    "text": "Kupuję warzywa na obiad.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/wazny.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-ważny.ogg",
@@ -5180,6 +5369,27 @@
     "seconds": 1.33,
     "source": "tts",
     "text": "Wiosna jest ciepła.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/wlosy.mp3": {
+    "author": "Frizabela",
+    "commons_file": "Pl-włosy.ogg",
+    "fingerprint": "04c47efaa4e06ba8",
+    "gain_db": -2.0,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-w%C5%82osy.ogg",
+    "seconds": 0.76,
+    "source": "commons",
+    "text": "włosy"
+  },
+  "media/audio/wlosy__sentence.mp3": {
+    "fingerprint": "188a3f116af83fdd",
+    "gain_db": -0.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.8,
+    "source": "tts",
+    "text": "Moja siostra ma długie włosy.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -5884,6 +6094,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A person walking along a park path, whole body in frame, side on, daylight, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/ciasto.webp": {
+    "bytes": 20872,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "257e64107ba72c4b",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A single slice of layered sponge cake on a white plate with a fork beside it. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -6709,6 +6935,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/jezioro.webp": {
+    "bytes": 35514,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "cdf0440408cb6955",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A still lake enclosed by dark pine forest, the far shore visible all the way round. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/jutro.webp": {
     "bytes": 19890,
     "check": {
@@ -6789,6 +7031,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/kino.webp": {
+    "bytes": 27054,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "57f5abdcc8c62945",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Rows of empty red seats in a dark cinema, facing a bright blank screen. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/klucz.webp": {
     "bytes": 32378,
     "check": {
@@ -6834,6 +7092,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A table set for an evening meal, warm lamplight above it, the window behind dark. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/komputer.webp": {
+    "bytes": 23746,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "10881b75086ddc1b",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "An open laptop on a bare wooden desk, screen dark, seen at an angle. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -8711,6 +8985,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/smutny.webp": {
+    "bytes": 23786,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "1e4f30cbba6810a7",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A close view of a small child's face with tears on both cheeks, mouth turned down. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/sniadanie.webp": {
     "bytes": 93794,
     "check": {
@@ -8904,6 +9194,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/sukienka.webp": {
+    "bytes": 41384,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "2f8873516354c56f",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A woman wearing a plain green summer dress, standing outdoors in daylight, shown from the shoulders down. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/swiat.webp": {
     "bytes": 63066,
     "check": {
@@ -9032,6 +9338,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/tam.webp": {
+    "bytes": 101932,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "fbc39cd8436b8557",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person's outstretched arm and pointing finger in the foreground, a small house standing far away across an open field. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/tani.webp": {
     "bytes": 84790,
     "check": {
@@ -9061,6 +9383,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "One modern smartphone lying face up on a plain wooden table, screen dark. Nothing else in frame. No readable text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/telewizor.webp": {
+    "bytes": 40624,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "6229a1c82f93d9e8",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A flat television on a low stand against a wall in a living room, screen dark. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -9235,6 +9573,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/warzywo.webp": {
+    "bytes": 61988,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "70457e3d94139077",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Carrots, red peppers and a cabbage lying together on a wooden board. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/wazny.webp": {
     "author": "supplied by user",
     "bytes": 45174,
@@ -9323,6 +9677,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A park path lined with trees in full pink blossom, bright fresh green grass on both sides. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/wlosy.webp": {
+    "bytes": 53392,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "58f88aab04a35546",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A woman seen from behind with long wavy brown hair falling down her back. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },

@@ -8709,6 +8709,345 @@
         "listening"
       ],
       "reviewed": true
+    },
+    {
+      "id": "tam",
+      "word": "tam",
+      "gloss": "there",
+      "pos": "adverb",
+      "ipa": "tam",
+      "note": "the far one — tutaj is where you are, this is not",
+      "image": "media/img/tam.webp",
+      "image_alt": "a hand pointing at a small house far away across a field",
+      "image_basis": "sentence",
+      "image_prompt": "A person's outstretched arm and pointing finger in the foreground, a small house standing far away across an open field. No text or lettering. Square image.",
+      "audio": "media/audio/tam.mp3",
+      "sentence": {
+        "pl": "Mój dom jest tam.",
+        "en": "My house is over there.",
+        "gap": "Mój dom jest ___.",
+        "answer": "tam",
+        "answer_lemma": "tam",
+        "audio": "media/audio/tam__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "dom",
+          "być",
+          "tam"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "telewizor",
+      "word": "telewizor",
+      "gloss": "television",
+      "pos": "noun",
+      "ipa": "tɛlɛˈvizɔr",
+      "note": null,
+      "image": "media/img/telewizor.webp",
+      "image_alt": "a flat television on a stand in a living room",
+      "image_basis": "sentence",
+      "image_prompt": "A flat television on a low stand against a wall in a living room, screen dark. No text or lettering. Square image.",
+      "audio": "media/audio/telewizor.mp3",
+      "sentence": {
+        "pl": "Telewizor stoi w pokoju.",
+        "en": "The television is in the room.",
+        "gap": "___ stoi w pokoju.",
+        "answer": "Telewizor",
+        "answer_lemma": "telewizor",
+        "audio": "media/audio/telewizor__sentence.mp3",
+        "lemmas": [
+          "telewizor",
+          "stać",
+          "w",
+          "pokój"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "komputer",
+      "word": "komputer",
+      "gloss": "computer",
+      "pos": "noun",
+      "ipa": "kɔmˈputɛr",
+      "note": null,
+      "image": "media/img/komputer.webp",
+      "image_alt": "an open laptop on a wooden desk",
+      "image_basis": "word",
+      "image_prompt": "An open laptop on a bare wooden desk, screen dark, seen at an angle. No text or lettering. Square image.",
+      "audio": "media/audio/komputer.mp3",
+      "sentence": {
+        "pl": "Mam nowy komputer.",
+        "en": "I have a new computer.",
+        "gap": "Mam nowy ___.",
+        "answer": "komputer",
+        "answer_lemma": "komputer",
+        "audio": "media/audio/komputer__sentence.mp3",
+        "lemmas": [
+          "mieć",
+          "nowy",
+          "komputer"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "wlosy",
+      "word": "włosy",
+      "gloss": "hair",
+      "pos": "noun",
+      "ipa": "ˈvwɔsɨ",
+      "note": "always plural, like drzwi and spodnie",
+      "image": "media/img/wlosy.webp",
+      "image_alt": "a woman seen from behind with long wavy hair",
+      "image_basis": "sentence",
+      "image_prompt": "A woman seen from behind with long wavy brown hair falling down her back. No text or lettering. Square image.",
+      "audio": "media/audio/wlosy.mp3",
+      "sentence": {
+        "pl": "Moja siostra ma długie włosy.",
+        "en": "My sister has long hair.",
+        "gap": "Moja siostra ma długie ___.",
+        "answer": "włosy",
+        "answer_lemma": "włosy",
+        "audio": "media/audio/wlosy__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "siostra",
+          "mieć",
+          "długi",
+          "włosy"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "sukienka",
+      "word": "sukienka",
+      "gloss": "dress",
+      "pos": "noun",
+      "ipa": "suˈkjɛnka",
+      "note": null,
+      "image": "media/img/sukienka.webp",
+      "image_alt": "a woman wearing a plain green summer dress",
+      "image_basis": "sentence",
+      "image_prompt": "A woman wearing a plain green summer dress, standing outdoors in daylight, shown from the shoulders down. No text or lettering. Square image.",
+      "audio": "media/audio/sukienka.mp3",
+      "sentence": {
+        "pl": "Ta sukienka jest zielona.",
+        "en": "This dress is green.",
+        "gap": "Ta ___ jest zielona.",
+        "answer": "sukienka",
+        "answer_lemma": "sukienka",
+        "audio": "media/audio/sukienka__sentence.mp3",
+        "lemmas": [
+          "ten",
+          "sukienka",
+          "być",
+          "zielony"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "jezioro",
+      "word": "jezioro",
+      "gloss": "lake",
+      "pos": "noun",
+      "ipa": "jɛˈʑɔrɔ",
+      "note": null,
+      "image": "media/img/jezioro.webp",
+      "image_alt": "a still lake enclosed by pine forest",
+      "image_basis": "sentence",
+      "image_prompt": "A still lake enclosed by dark pine forest, the far shore visible all the way round. No text or lettering. Square image.",
+      "audio": "media/audio/jezioro.mp3",
+      "sentence": {
+        "pl": "W jeziorze są ryby.",
+        "en": "There are fish in the lake.",
+        "gap": "W ___ są ryby.",
+        "answer": "jeziorze",
+        "answer_lemma": "jezioro",
+        "audio": "media/audio/jezioro__sentence.mp3",
+        "lemmas": [
+          "w",
+          "jezioro",
+          "być",
+          "ryba"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "warzywo",
+      "word": "warzywo",
+      "gloss": "vegetable",
+      "pos": "noun",
+      "ipa": "vaˈʐɨvɔ",
+      "note": null,
+      "image": "media/img/warzywo.webp",
+      "image_alt": "carrots, peppers and a cabbage on a wooden board",
+      "image_basis": "word",
+      "image_prompt": "Carrots, red peppers and a cabbage lying together on a wooden board. No text or lettering. Square image.",
+      "audio": "media/audio/warzywo.mp3",
+      "sentence": {
+        "pl": "Kupuję warzywa na obiad.",
+        "en": "I am buying vegetables for dinner.",
+        "gap": "Kupuję ___ na obiad.",
+        "answer": "warzywa",
+        "answer_lemma": "warzywo",
+        "audio": "media/audio/warzywo__sentence.mp3",
+        "lemmas": [
+          "kupować",
+          "warzywo",
+          "na",
+          "obiad"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "kino",
+      "word": "kino",
+      "gloss": "cinema",
+      "pos": "noun",
+      "ipa": "ˈkinɔ",
+      "note": null,
+      "image": "media/img/kino.webp",
+      "image_alt": "rows of red seats in a dark cinema facing the screen",
+      "image_basis": "sentence",
+      "image_prompt": "Rows of empty red seats in a dark cinema, facing a bright blank screen. No text or lettering. Square image.",
+      "audio": "media/audio/kino.mp3",
+      "sentence": {
+        "pl": "Idziemy do kina.",
+        "en": "We are going to the cinema.",
+        "gap": "Idziemy do ___.",
+        "answer": "kina",
+        "answer_lemma": "kino",
+        "audio": "media/audio/kino__sentence.mp3",
+        "lemmas": [
+          "iść",
+          "do",
+          "kino"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "smutny",
+      "word": "smutny",
+      "gloss": "sad",
+      "pos": "adjective",
+      "ipa": "ˈsmutnɨ",
+      "note": null,
+      "image": "media/img/smutny.webp",
+      "image_alt": "a small child's face with tears on both cheeks",
+      "image_basis": "sentence",
+      "image_prompt": "A close view of a small child's face with tears on both cheeks, mouth turned down. No text or lettering. Square image.",
+      "audio": "media/audio/smutny.mp3",
+      "sentence": {
+        "pl": "Dziecko jest smutne.",
+        "en": "The child is sad.",
+        "gap": "Dziecko jest ___.",
+        "answer": "smutne",
+        "answer_lemma": "smutny",
+        "audio": "media/audio/smutny__sentence.mp3",
+        "lemmas": [
+          "dziecko",
+          "być",
+          "smutny"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "ciasto",
+      "word": "ciasto",
+      "gloss": "cake",
+      "pos": "noun",
+      "ipa": "ˈt͡ɕastɔ",
+      "note": null,
+      "image": "media/img/ciasto.webp",
+      "image_alt": "a slice of layered sponge cake on a white plate",
+      "image_basis": "word",
+      "image_prompt": "A single slice of layered sponge cake on a white plate with a fork beside it. No text or lettering. Square image.",
+      "audio": "media/audio/ciasto.mp3",
+      "sentence": {
+        "pl": "To ciasto jest bardzo dobre.",
+        "en": "This cake is very good.",
+        "gap": "To ___ jest bardzo dobre.",
+        "answer": "ciasto",
+        "answer_lemma": "ciasto",
+        "audio": "media/audio/ciasto__sentence.mp3",
+        "lemmas": [
+          "to",
+          "ciasto",
+          "być",
+          "bardzo",
+          "dobry"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
     }
   ]
 }
