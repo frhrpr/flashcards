@@ -544,9 +544,14 @@ better order. Several notes here were fixed that way.
 **Check the neighbouring images before writing a prompt.** `teraz` was
 already a clock face and `czas` already an hourglass when `godzina` was given
 a clock too — a duplicate picture is worse than a weak one, because two cards
-then cue each other's word. This is the gloss-collision rule wearing a
-different hat: `kobieta` and `człowiek` are both people on park benches, so
-`mężczyzna` had to be standing indoors.
+then cue each other's word.
+
+**But the bar is "would cue the wrong word", not "shares an element".** Over
+150 images, roads and men and cups will recur, and that is fine. `duży` and
+`mały` had byte-identical prompts and `godzina` repeated `teraz`; those are
+duplicates. A doctor at a window and a doctor with a stethoscope are not, and
+regenerating one of them was churn. Ask before "fixing" a resemblance that
+only you have noticed.
 
 **"Plain background" is for objects, not people.** It suits a single concrete
 noun, where anything else in frame competes with the thing being named. Asked
@@ -562,6 +567,14 @@ a bench and got one jumping away — spatial relations are what these models
 fumble. Describe a position ("above the bench, about to land") rather than a
 direction, and drop any detail the word does not need. Two generated attempts
 at *walking into an office* both walked out.
+
+**A number card shows the digit, not that many things.** A picture of twelve
+tulips is useless unless the learner counts them, and counting is exactly
+what these models get wrong — see below. A numeral in the world is read at a
+glance and rendered reliably: a house number, a shirt, a platform sign, a
+segment display. `siedem` is a brass 7 on a front door, `dwanaście` a 12 on
+the back of a football shirt, and the sentences were rewritten to match
+(`Mój dom ma numer siedem.`) rather than the other way round.
 
 **These models cannot count.** Asked for one hour marked on a dial they drew
 a quarter, three times running, however the fraction was phrased. Asked for
@@ -594,6 +607,13 @@ direction, or a spatial relation.
 
 Some words cannot be depicted at all — `być`, `teraz`. They keep their
 flagged image; the gloss and sentence carry the meaning.
+
+**Do not revise an approved note to tidy something up.** Once `reviewed` is
+set, changing its sentence or regenerating its image spends money and, more
+to the point, spends the user's attention on re-reviewing a card he had
+already signed off. Raise the observation instead and let him decide. This
+applies to resemblances between images, wording you would now phrase
+differently, and anything else that is an improvement rather than a fault.
 
 **A `note` must never name its own word.** It is shown on the production
 *front*, where the word is the answer — so `musieć: "stronger than móc, musieć

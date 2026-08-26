@@ -277,6 +277,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/cos.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-coś.ogg",
+    "fingerprint": "ed65a389bbad6066",
+    "gain_db": 0.9,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-co%C5%9B.ogg",
+    "seconds": 0.99,
+    "source": "commons",
+    "text": "coś"
+  },
+  "media/audio/cos__sentence.mp3": {
+    "fingerprint": "112ce07008d097da",
+    "gain_db": 0.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.07,
+    "source": "tts",
+    "text": "Widzę coś na drodze.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/czas.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-czas.ogg",
@@ -400,6 +421,27 @@
     "seconds": 1.1,
     "source": "tts",
     "text": "Nie czuję ręki.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/czwartek.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-czwartek.ogg",
+    "fingerprint": "b652c5f20eacf824",
+    "gain_db": 1.4,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-czwartek.ogg",
+    "seconds": 0.91,
+    "source": "commons",
+    "text": "czwartek"
+  },
+  "media/audio/czwartek__sentence.mp3": {
+    "fingerprint": "bc2ec7cddccdd4e3",
+    "gain_db": 1.5,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.41,
+    "source": "tts",
+    "text": "W czwartek czytam książkę.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -583,12 +625,12 @@
     "text": "dwanaście"
   },
   "media/audio/dwanascie__sentence.mp3": {
-    "fingerprint": "c4db52b1c0777a44",
-    "gain_db": -0.1,
+    "fingerprint": "48f9742d564e163c",
+    "gain_db": 0.3,
     "model": "eleven_multilingual_v2",
-    "seconds": 1.31,
+    "seconds": 1.54,
     "source": "tts",
-    "text": "Mam dwanaście kwiatów.",
+    "text": "Chłopiec ma numer dwanaście.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1034,6 +1076,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/lekarz.mp3": {
+    "author": "Wyksztalcioch",
+    "commons_file": "Pl-lekarz.ogg",
+    "fingerprint": "7929879947465cea",
+    "gain_db": 2.6,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-lekarz.ogg",
+    "seconds": 0.63,
+    "source": "commons",
+    "text": "lekarz"
+  },
+  "media/audio/lekarz__sentence.mp3": {
+    "fingerprint": "391a7cd613e0dbf5",
+    "gain_db": -1.8,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.38,
+    "source": "tts",
+    "text": "Lekarz pyta, co mnie boli.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/lozko.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-łóżko.ogg",
@@ -1388,12 +1451,12 @@
     "text": "mieszkać"
   },
   "media/audio/mieszkac__sentence.mp3": {
-    "fingerprint": "3a54528e79489886",
-    "gain_db": -1.3,
+    "fingerprint": "b69ceac669ba4f9d",
+    "gain_db": -1.9,
     "model": "eleven_multilingual_v2",
-    "seconds": 1.72,
+    "seconds": 1.67,
     "source": "tts",
-    "text": "Lekarz mieszka w nowym mieście.",
+    "text": "Kobieta mieszka w nowym mieście.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1541,6 +1604,27 @@
     "seconds": 1.04,
     "source": "tts",
     "text": "To nie jest pies.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/niedziela.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-niedziela.ogg",
+    "fingerprint": "e6c376948b8534d4",
+    "gain_db": 3.7,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-niedziela.ogg",
+    "seconds": 0.76,
+    "source": "commons",
+    "text": "niedziela"
+  },
+  "media/audio/niedziela__sentence.mp3": {
+    "fingerprint": "b22447e4c864fbd8",
+    "gain_db": -0.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.99,
+    "source": "tts",
+    "text": "W niedzielę śpię.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1755,6 +1839,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/piatek.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-piątek.ogg",
+    "fingerprint": "7df395f6c98e968d",
+    "gain_db": 0.1,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-pi%C4%85tek.ogg",
+    "seconds": 0.94,
+    "source": "commons",
+    "text": "piątek"
+  },
+  "media/audio/piatek__sentence.mp3": {
+    "fingerprint": "f81d71da84a6cabc",
+    "gain_db": -1.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.23,
+    "source": "tts",
+    "text": "W piątek jem w domu.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/pic.mp3": {
     "author": "tsca",
     "commons_file": "Pl-pić.ogg",
@@ -1962,6 +2067,27 @@
     "seconds": 1.15,
     "source": "tts",
     "text": "Chcę pomóc matce.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/poniedzialek.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-poniedziałek.ogg",
+    "fingerprint": "2a8292f55dd1f015",
+    "gain_db": -0.2,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-poniedzia%C5%82ek.ogg",
+    "seconds": 0.94,
+    "source": "commons",
+    "text": "poniedziałek"
+  },
+  "media/audio/poniedzialek__sentence.mp3": {
+    "fingerprint": "b9c0353db862f203",
+    "gain_db": -0.8,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.36,
+    "source": "tts",
+    "text": "W poniedziałek idę do pracy.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -2239,6 +2365,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/siedem.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-siedem.ogg",
+    "fingerprint": "32a6fcb8126fd786",
+    "gain_db": 1.0,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-siedem.ogg",
+    "seconds": 0.84,
+    "source": "commons",
+    "text": "siedem"
+  },
+  "media/audio/siedem__sentence.mp3": {
+    "fingerprint": "8548df3e4a4455eb",
+    "gain_db": -2.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.54,
+    "source": "tts",
+    "text": "Mój dom ma numer siedem.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/siedziec.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-siedzieć.ogg",
@@ -2407,6 +2554,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/sobota.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-sobota.ogg",
+    "fingerprint": "0f3f1eeaff12e1bf",
+    "gain_db": 4.2,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-sobota.ogg",
+    "seconds": 0.81,
+    "source": "commons",
+    "text": "sobota"
+  },
+  "media/audio/sobota__sentence.mp3": {
+    "fingerprint": "dad7bd0506789451",
+    "gain_db": 1.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.44,
+    "source": "tts",
+    "text": "W sobotę jadę do parku.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/spac.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-spać.ogg",
@@ -2467,6 +2635,27 @@
     "seconds": 1.2,
     "source": "tts",
     "text": "Rano spotkam ojca.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/sroda.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-środa.ogg",
+    "fingerprint": "dfeb6efd28e66da6",
+    "gain_db": 6.6,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-%C5%9Broda.ogg",
+    "seconds": 0.65,
+    "source": "commons",
+    "text": "środa"
+  },
+  "media/audio/sroda__sentence.mp3": {
+    "fingerprint": "07b03d0f6ce78b5e",
+    "gain_db": -1.2,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.15,
+    "source": "tts",
+    "text": "W środę mam czas.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -2890,6 +3079,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/wtorek.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-wtorek.ogg",
+    "fingerprint": "5d384a3b47c5d6e5",
+    "gain_db": 3.8,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-wtorek.ogg",
+    "seconds": 0.68,
+    "source": "commons",
+    "text": "wtorek"
+  },
+  "media/audio/wtorek__sentence.mp3": {
+    "fingerprint": "daa18453f90a4c61",
+    "gain_db": -0.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.41,
+    "source": "tts",
+    "text": "We wtorek kupuję chleb.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/wysoki.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-wysoki.ogg",
@@ -3245,6 +3455,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/cos.webp": {
+    "bytes": 42404,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "e30b5dc121686678",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A country road in daylight with one small dark object lying in the middle distance, too far off to make out what it is. Nothing else in frame. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/czas.webp": {
     "bytes": 14550,
     "check": {
@@ -3340,6 +3566,17 @@
     "prompt": "A person gripping their own wrist with the other hand, the held hand hanging limp and unfeeling. Close up, plain indoor setting. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
+  },
+  "media/img/czwartek.webp": {
+    "author": "supplied by user",
+    "bytes": 16130,
+    "fingerprint": "8c6d2aac39332aa2",
+    "licence": "n/a",
+    "original": "day-czwartek.png",
+    "original_size": "263x349",
+    "process_version": 1,
+    "size": "263x350",
+    "source": "supplied"
   },
   "media/img/czytac.webp": {
     "bytes": 33042,
@@ -3470,18 +3707,18 @@
     "source": "generated"
   },
   "media/img/dwanascie.webp": {
-    "bytes": 14452,
+    "bytes": 39714,
     "check": {
       "model": "gemini-flash-latest",
       "problem": "",
       "verdict": "ok",
       "why": ""
     },
-    "fingerprint": "bfafdde2483873d7",
+    "fingerprint": "70f3fc9ddeec6d3d",
     "model": "gemini-2.5-flash-image",
     "original_size": "1024x1024",
     "process_version": 1,
-    "prompt": "Twelve tulips laid side by side in one single straight row on a plain white surface, evenly spaced, all stems pointing the same way. Count them: there must be twelve, no more and no fewer. Nothing else in the picture. Seen from directly above.",
+    "prompt": "A boy of about ten seen from behind wearing a football shirt with the number 12 printed large across the back. Daylight on a pitch. No other lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -3816,6 +4053,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/lekarz.webp": {
+    "bytes": 34952,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "9a4c86b300ec419a",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A doctor in a white coat with a stethoscope sitting facing a patient in a consulting room, listening to them. Daylight. No readable text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/lozko.webp": {
     "bytes": 30008,
     "check": {
@@ -4073,18 +4326,18 @@
     "source": "generated"
   },
   "media/img/mieszkac.webp": {
-    "bytes": 70014,
+    "bytes": 50412,
     "check": {
       "model": "gemini-flash-latest",
       "problem": "",
       "verdict": "ok",
       "why": ""
     },
-    "fingerprint": "e07ad6e91b2e7cbe",
+    "fingerprint": "1f5d35a6f7ddc641",
     "model": "gemini-2.5-flash-image",
     "original_size": "1024x1024",
     "process_version": 1,
-    "prompt": "A doctor in a white coat standing at the window of a flat, looking out over a city, seen from inside the room. Daylight. No text or lettering. Square image.",
+    "prompt": "A woman standing at the window of a flat looking out over a city, seen from inside the room, her back to us. Daylight. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -4199,6 +4452,17 @@
     "prompt": "A person holding up one flat palm in a clear stop gesture and shaking their head, plain background, no text. Square image.",
     "size": "800x800",
     "source": "generated"
+  },
+  "media/img/niedziela.webp": {
+    "author": "supplied by user",
+    "bytes": 25428,
+    "fingerprint": "f8c4f392e1fcc20c",
+    "licence": "n/a",
+    "original": "day-niedziela.png",
+    "original_size": "357x376",
+    "process_version": 1,
+    "size": "357x376",
+    "source": "supplied"
   },
   "media/img/noc.webp": {
     "bytes": 64700,
@@ -4360,6 +4624,17 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/piatek.webp": {
+    "author": "supplied by user",
+    "bytes": 24216,
+    "fingerprint": "5d743eab9540a5f5",
+    "licence": "n/a",
+    "original": "day-piatek.png",
+    "original_size": "357x376",
+    "process_version": 1,
+    "size": "357x376",
+    "source": "supplied"
+  },
   "media/img/pic.webp": {
     "bytes": 16950,
     "check": {
@@ -4519,6 +4794,17 @@
     "prompt": "A young man carrying two heavy shopping bags for an older woman walking beside him. Daylight on a street. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
+  },
+  "media/img/poniedzialek.webp": {
+    "author": "supplied by user",
+    "bytes": 14830,
+    "fingerprint": "ff19b1ec6290d357",
+    "licence": "n/a",
+    "original": "day-poniedzialek.png",
+    "original_size": "263x349",
+    "process_version": 1,
+    "size": "263x350",
+    "source": "supplied"
   },
   "media/img/potem.webp": {
     "bytes": 15640,
@@ -4723,6 +5009,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/siedem.webp": {
+    "bytes": 21096,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "d7a0eb8f673b7fe9",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A brass number 7 fixed to the front door of a house, seen close up, the door painted dark blue. Daylight. No other lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/siedziec.webp": {
     "bytes": 66156,
     "check": {
@@ -4846,6 +5148,17 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/sobota.webp": {
+    "author": "supplied by user",
+    "bytes": 32870,
+    "fingerprint": "2da0944257c1bbc6",
+    "licence": "n/a",
+    "original": "day-sobota.png",
+    "original_size": "357x376",
+    "process_version": 1,
+    "size": "357x376",
+    "source": "supplied"
+  },
   "media/img/spac.webp": {
     "bytes": 22122,
     "check": {
@@ -4893,6 +5206,17 @@
     "prompt": "Two men greeting each other on a street, shaking hands and smiling, having just met. Morning daylight. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
+  },
+  "media/img/sroda.webp": {
+    "author": "supplied by user",
+    "bytes": 13354,
+    "fingerprint": "5538ee7d66682752",
+    "licence": "n/a",
+    "original": "day-sroda.png",
+    "original_size": "263x349",
+    "process_version": 1,
+    "size": "263x350",
+    "source": "supplied"
   },
   "media/img/stac.webp": {
     "bytes": 186366,
@@ -5203,6 +5527,17 @@
     "prompt": "A person walking up to their own front door carrying a bag, seen from behind, daylight, no text. Square image.",
     "size": "800x800",
     "source": "generated"
+  },
+  "media/img/wtorek.webp": {
+    "author": "supplied by user",
+    "bytes": 20314,
+    "fingerprint": "48d9f04e9ccbd262",
+    "licence": "n/a",
+    "original": "day-wtorek.png",
+    "original_size": "263x349",
+    "process_version": 1,
+    "size": "263x350",
+    "source": "supplied"
   },
   "media/img/wysoki.webp": {
     "bytes": 140692,

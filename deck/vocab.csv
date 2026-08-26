@@ -145,14 +145,14 @@ karta,karta,noun,yes,carded,sentence for płacić,2026-08-24,"borrowed into a se
 jechać,jechac,verb,yes,carded,sentence for pociąg,2026-08-24,"borrowed into a sentence first, then carded"
 łóżko,lozko,noun,yes,carded,sentence for spać,2026-08-24,"borrowed into a sentence first, then carded"
 padać,padac,verb,yes,carded,sentence for deszcz,2026-08-24,"borrowed into a sentence first, then carded"
-siedem,siedem,numeral,yes,queued,sentence for tydzień,2026-08-24,"met in a sentence, not carded"
-poniedziałek,poniedzialek,noun,yes,queued,on the tydzień card image,2026-08-24,"met on a card image, not in a sentence"
-wtorek,wtorek,noun,yes,queued,on the tydzień card image,2026-08-24,"met on a card image, not in a sentence"
-środa,sroda,noun,yes,queued,on the tydzień card image,2026-08-24,"met on a card image, not in a sentence"
-czwartek,czwartek,noun,yes,queued,on the tydzień card image,2026-08-24,"met on a card image, not in a sentence"
-piątek,piatek,noun,yes,queued,on the tydzień card image,2026-08-24,"met on a card image, not in a sentence"
-sobota,sobota,noun,yes,queued,on the tydzień card image,2026-08-24,"met on a card image, not in a sentence"
-niedziela,niedziela,noun,yes,queued,on the tydzień card image,2026-08-24,"met on a card image, not in a sentence"
+siedem,siedem,numeral,yes,carded,sentence for tydzień,2026-08-24,"met first on a card, then carded"
+poniedziałek,poniedzialek,noun,yes,carded,on the tydzień card image,2026-08-24,"met first on a card, then carded"
+wtorek,wtorek,noun,yes,carded,on the tydzień card image,2026-08-24,"met first on a card, then carded"
+środa,sroda,noun,yes,carded,on the tydzień card image,2026-08-24,"met first on a card, then carded"
+czwartek,czwartek,noun,yes,carded,on the tydzień card image,2026-08-24,"met first on a card, then carded"
+piątek,piatek,noun,yes,carded,on the tydzień card image,2026-08-24,"met first on a card, then carded"
+sobota,sobota,noun,yes,carded,on the tydzień card image,2026-08-24,"met first on a card, then carded"
+niedziela,niedziela,noun,yes,carded,on the tydzień card image,2026-08-24,"met first on a card, then carded"
 mieszkać,mieszkac,verb,yes,carded,lesson 2026-08-26 Pierwszy tydzień,2026-08-26,
 śniadanie,sniadanie,noun,yes,carded,lesson 2026-08-26 Pierwszy tydzień,2026-08-26,
 ulica,ulica,noun,yes,carded,lesson 2026-08-26 Pierwszy tydzień,2026-08-26,
@@ -162,5 +162,8 @@ wieczór,wieczor,noun,yes,carded,lesson 2026-08-26 Pierwszy tydzień,2026-08-26,
 jego,jego,pronoun,no,known,lesson 2026-08-26 Pierwszy tydzień,2026-08-26,possessive; given free
 twój,twoj,pronoun,no,known,lesson 2026-08-26 Pierwszy tydzień,2026-08-26,possessive; given free
 jak,jak,adverb,no,known,"question word, like co/kto/gdzie — given free",2026-08-26,
-lekarz,lekarz,noun,yes,queued,"sentence for mieszkać, frequency rank 417",2026-08-26,"met in a sentence, not carded"
-coś,cos,pronoun,yes,queued,sentence for bardzo,2026-08-26,"met in a sentence, not carded"
+lekarz,lekarz,noun,yes,carded,"sentence for mieszkać, frequency rank 417",2026-08-26,"met first on a card, then carded"
+coś,cos,pronoun,yes,carded,sentence for bardzo,2026-08-26,"met first on a card, then carded"
+mnie,mnie,pronoun,no,known,sentence for lekarz,2026-08-26,
+boleć,bolec,verb,yes,queued,sentence for lekarz,2026-08-26,"met in a sentence, not carded"
+numer,numer,noun,yes,queued,"sentences for siedem and dwanaście, frequency rank 468",2026-08-26,"met in a sentence, not carded"

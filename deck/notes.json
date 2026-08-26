@@ -3976,21 +3976,22 @@
       "ipa": "dvaˈnaɕt͡ɕɛ",
       "note": null,
       "image": "media/img/dwanascie.webp",
-      "image_alt": "twelve flowers laid out in a grid",
+      "image_alt": "a boy in a football shirt numbered 12",
       "image_basis": "sentence",
-      "image_prompt": "Twelve tulips laid side by side in one single straight row on a plain white surface, evenly spaced, all stems pointing the same way. Count them: there must be twelve, no more and no fewer. Nothing else in the picture. Seen from directly above.",
+      "image_prompt": "A boy of about ten seen from behind wearing a football shirt with the number 12 printed large across the back. Daylight on a pitch. No other lettering. Square image.",
       "audio": "media/audio/dwanascie.mp3",
       "sentence": {
-        "pl": "Mam dwanaście kwiatów.",
-        "en": "I have twelve flowers.",
-        "gap": "Mam ___ kwiatów.",
+        "pl": "Chłopiec ma numer dwanaście.",
+        "en": "The boy has number twelve.",
+        "gap": "Chłopiec ma numer ___.",
         "answer": "dwanaście",
         "answer_lemma": "dwanaście",
         "audio": "media/audio/dwanascie__sentence.mp3",
         "lemmas": [
+          "chłopiec",
           "mieć",
-          "dwanaście",
-          "kwiat"
+          "numer",
+          "dwanaście"
         ]
       },
       "cards": [
@@ -3998,7 +3999,7 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": false
     },
     {
       "id": "polski",
@@ -4398,19 +4399,19 @@
       "ipa": "ˈmʲɛʂkat͡ɕ",
       "note": null,
       "image": "media/img/mieszkac.webp",
-      "image_alt": "a doctor standing at the window of a flat looking out over a city",
+      "image_alt": "a woman at the window of her flat looking out over a city",
       "image_basis": "sentence",
-      "image_prompt": "A doctor in a white coat standing at the window of a flat, looking out over a city, seen from inside the room. Daylight. No text or lettering. Square image.",
+      "image_prompt": "A woman standing at the window of a flat looking out over a city, seen from inside the room, her back to us. Daylight. No text or lettering. Square image.",
       "audio": "media/audio/mieszkac.mp3",
       "sentence": {
-        "pl": "Lekarz mieszka w nowym mieście.",
-        "en": "The doctor lives in a new town.",
-        "gap": "Lekarz ___ w nowym mieście.",
+        "pl": "Kobieta mieszka w nowym mieście.",
+        "en": "The woman lives in a new town.",
+        "gap": "Kobieta ___ w nowym mieście.",
         "answer": "mieszka",
         "answer_lemma": "mieszkać",
         "audio": "media/audio/mieszkac__sentence.mp3",
         "lemmas": [
-          "lekarz",
+          "kobieta",
           "mieszkać",
           "w",
           "nowy",
@@ -4422,7 +4423,7 @@
         "production",
         "listening"
       ],
-      "reviewed": true,
+      "reviewed": false,
       "priority": true
     },
     {
@@ -4734,6 +4735,326 @@
       ],
       "reviewed": true,
       "priority": true
+    },
+    {
+      "id": "poniedzialek",
+      "word": "poniedziałek",
+      "gloss": "Monday",
+      "pos": "noun",
+      "ipa": "pɔɲɛˈd͡ʑawɛk",
+      "note": "the first day of the week",
+      "image": "media/img/poniedzialek.webp",
+      "image_alt": "Monday",
+      "audio": "media/audio/poniedzialek.mp3",
+      "sentence": {
+        "pl": "W poniedziałek idę do pracy.",
+        "en": "On Monday I go to work.",
+        "gap": "W ___ idę do pracy.",
+        "answer": "poniedziałek",
+        "answer_lemma": "poniedziałek",
+        "audio": "media/audio/poniedzialek__sentence.mp3",
+        "lemmas": [
+          "w",
+          "poniedziałek",
+          "iść",
+          "do",
+          "praca"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "wtorek",
+      "word": "wtorek",
+      "gloss": "Tuesday",
+      "pos": "noun",
+      "ipa": "ˈftɔrɛk",
+      "note": null,
+      "image": "media/img/wtorek.webp",
+      "image_alt": "Tuesday",
+      "audio": "media/audio/wtorek.mp3",
+      "sentence": {
+        "pl": "We wtorek kupuję chleb.",
+        "en": "On Tuesday I buy bread.",
+        "gap": "We ___ kupuję chleb.",
+        "answer": "wtorek",
+        "answer_lemma": "wtorek",
+        "audio": "media/audio/wtorek__sentence.mp3",
+        "lemmas": [
+          "w",
+          "wtorek",
+          "kupować",
+          "chleb"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "sroda",
+      "word": "środa",
+      "gloss": "Wednesday",
+      "pos": "noun",
+      "ipa": "ˈɕrɔda",
+      "note": null,
+      "image": "media/img/sroda.webp",
+      "image_alt": "Wednesday",
+      "audio": "media/audio/sroda.mp3",
+      "sentence": {
+        "pl": "W środę mam czas.",
+        "en": "On Wednesday I have time.",
+        "gap": "W ___ mam czas.",
+        "answer": "środę",
+        "answer_lemma": "środa",
+        "audio": "media/audio/sroda__sentence.mp3",
+        "lemmas": [
+          "w",
+          "środa",
+          "mieć",
+          "czas"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "czwartek",
+      "word": "czwartek",
+      "gloss": "Thursday",
+      "pos": "noun",
+      "ipa": "ˈt͡ʂfartɛk",
+      "note": null,
+      "image": "media/img/czwartek.webp",
+      "image_alt": "Thursday",
+      "audio": "media/audio/czwartek.mp3",
+      "sentence": {
+        "pl": "W czwartek czytam książkę.",
+        "en": "On Thursday I read a book.",
+        "gap": "W ___ czytam książkę.",
+        "answer": "czwartek",
+        "answer_lemma": "czwartek",
+        "audio": "media/audio/czwartek__sentence.mp3",
+        "lemmas": [
+          "w",
+          "czwartek",
+          "czytać",
+          "książka"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "piatek",
+      "word": "piątek",
+      "gloss": "Friday",
+      "pos": "noun",
+      "ipa": "ˈpjɔntɛk",
+      "note": null,
+      "image": "media/img/piatek.webp",
+      "image_alt": "Friday",
+      "audio": "media/audio/piatek.mp3",
+      "sentence": {
+        "pl": "W piątek jem w domu.",
+        "en": "On Friday I eat at home.",
+        "gap": "W ___ jem w domu.",
+        "answer": "piątek",
+        "answer_lemma": "piątek",
+        "audio": "media/audio/piatek__sentence.mp3",
+        "lemmas": [
+          "w",
+          "piątek",
+          "jeść",
+          "w",
+          "dom"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "sobota",
+      "word": "sobota",
+      "gloss": "Saturday",
+      "pos": "noun",
+      "ipa": "sɔˈbɔta",
+      "note": null,
+      "image": "media/img/sobota.webp",
+      "image_alt": "Saturday",
+      "audio": "media/audio/sobota.mp3",
+      "sentence": {
+        "pl": "W sobotę jadę do parku.",
+        "en": "On Saturday I travel to the park.",
+        "gap": "W ___ jadę do parku.",
+        "answer": "sobotę",
+        "answer_lemma": "sobota",
+        "audio": "media/audio/sobota__sentence.mp3",
+        "lemmas": [
+          "w",
+          "sobota",
+          "jechać",
+          "do",
+          "park"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "niedziela",
+      "word": "niedziela",
+      "gloss": "Sunday",
+      "pos": "noun",
+      "ipa": "ɲɛˈd͡ʑɛla",
+      "note": "the last day of the week — and the word for 'no work'",
+      "image": "media/img/niedziela.webp",
+      "image_alt": "Sunday",
+      "audio": "media/audio/niedziela.mp3",
+      "sentence": {
+        "pl": "W niedzielę śpię.",
+        "en": "On Sunday I sleep.",
+        "gap": "W ___ śpię.",
+        "answer": "niedzielę",
+        "answer_lemma": "niedziela",
+        "audio": "media/audio/niedziela__sentence.mp3",
+        "lemmas": [
+          "w",
+          "niedziela",
+          "spać"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "cos",
+      "word": "coś",
+      "gloss": "something",
+      "pos": "pronoun",
+      "ipa": "t͡ɕɔɕ",
+      "note": null,
+      "image": "media/img/cos.webp",
+      "image_alt": "an unidentifiable object lying on a road",
+      "image_basis": "sentence",
+      "image_prompt": "A country road in daylight with one small dark object lying in the middle distance, too far off to make out what it is. Nothing else in frame. No text or lettering. Square image.",
+      "audio": "media/audio/cos.mp3",
+      "sentence": {
+        "pl": "Widzę coś na drodze.",
+        "en": "I see something on the road.",
+        "gap": "Widzę ___ na drodze.",
+        "answer": "coś",
+        "answer_lemma": "coś",
+        "audio": "media/audio/cos__sentence.mp3",
+        "lemmas": [
+          "widzieć",
+          "coś",
+          "na",
+          "droga"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "lekarz",
+      "word": "lekarz",
+      "gloss": "doctor",
+      "pos": "noun",
+      "ipa": "ˈlɛkaʂ",
+      "note": null,
+      "image": "media/img/lekarz.webp",
+      "image_alt": "a doctor with a stethoscope facing a patient",
+      "image_basis": "sentence",
+      "image_prompt": "A doctor in a white coat with a stethoscope sitting facing a patient in a consulting room, listening to them. Daylight. No readable text. Square image.",
+      "audio": "media/audio/lekarz.mp3",
+      "sentence": {
+        "pl": "Lekarz pyta, co mnie boli.",
+        "en": "The doctor asks what hurts.",
+        "gap": "___ pyta, co mnie boli.",
+        "answer": "Lekarz",
+        "answer_lemma": "lekarz",
+        "audio": "media/audio/lekarz__sentence.mp3",
+        "lemmas": [
+          "lekarz",
+          "pytać",
+          "co",
+          "mnie",
+          "boleć"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "siedem",
+      "word": "siedem",
+      "gloss": "seven",
+      "pos": "numeral",
+      "ipa": "ˈɕɛdɛm",
+      "note": null,
+      "image": "media/img/siedem.webp",
+      "image_alt": "the number 7 on a front door",
+      "image_basis": "sentence",
+      "image_prompt": "A brass number 7 fixed to the front door of a house, seen close up, the door painted dark blue. Daylight. No other lettering. Square image.",
+      "audio": "media/audio/siedem.mp3",
+      "sentence": {
+        "pl": "Mój dom ma numer siedem.",
+        "en": "My house is number seven.",
+        "gap": "Mój dom ma numer ___.",
+        "answer": "siedem",
+        "answer_lemma": "siedem",
+        "audio": "media/audio/siedem__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "dom",
+          "mieć",
+          "numer",
+          "siedem"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
     }
   ]
 }
