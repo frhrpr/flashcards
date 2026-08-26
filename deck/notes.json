@@ -7766,7 +7766,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "trzy",
@@ -7936,7 +7936,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "dziewiec",
