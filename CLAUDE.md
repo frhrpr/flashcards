@@ -487,6 +487,13 @@ turns up under `next` on the following run.
 
 ### `deck/frequency.csv` is half-blind — do not use it as a syllabus
 
+**It also holds only nouns, verbs and adjectives** — all 500 rows, checked.
+There is not one adverb or function word in it, so `bardzo`, `teraz`, `rano`,
+`zawsze`, `często` and `dzisiaj` all read as "absent" no matter how common
+they are. For any word outside those three classes the frequency test is not
+merely unreliable, it is inapplicable, and the ordinary-week test is the only
+one that can apply. Say so rather than reporting it as absent.
+
 It is a **written-corpus** list: the `ARF` column is Average Reduced
 Frequency, a corpus statistic, and `source_tags` holds Polish morphological
 tags. News, official prose and literature is what it counts, and those

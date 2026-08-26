@@ -425,6 +425,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/cukier.mp3": {
+    "author": "Frizabela",
+    "commons_file": "Pl-cukier.ogg",
+    "fingerprint": "99bf3db3d745063b",
+    "gain_db": -1.4,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-cukier.ogg",
+    "seconds": 0.52,
+    "source": "commons",
+    "text": "cukier"
+  },
+  "media/audio/cukier__sentence.mp3": {
+    "fingerprint": "9d8e663957bfb680",
+    "gain_db": 0.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.02,
+    "source": "tts",
+    "text": "Nie lubię cukru.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/czarny.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-czarny.ogg",
@@ -1202,6 +1223,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/jesien.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-jesień.ogg",
+    "fingerprint": "99925fc3b3c73287",
+    "gain_db": 5.3,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-jesie%C5%84.ogg",
+    "seconds": 1.15,
+    "source": "commons",
+    "text": "jesień"
+  },
+  "media/audio/jesien__sentence.mp3": {
+    "fingerprint": "0ae19212ffeafceb",
+    "gain_db": -1.8,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.91,
+    "source": "tts",
+    "text": "Lubię jesień.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/jutro.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-jutro.ogg",
@@ -1326,6 +1368,27 @@
     "seconds": 1.46,
     "source": "tts",
     "text": "Na ławce siedzi kobieta.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/kolacja.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-kolacja.ogg",
+    "fingerprint": "b78da9d335176046",
+    "gain_db": -0.3,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-kolacja.ogg",
+    "seconds": 1.59,
+    "source": "commons",
+    "text": "kolacja"
+  },
+  "media/audio/kolacja__sentence.mp3": {
+    "fingerprint": "97ffa9342823e274",
+    "gain_db": 0.2,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.12,
+    "source": "tts",
+    "text": "Kolacja jest na stole.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1746,6 +1809,27 @@
     "seconds": 1.1,
     "source": "tts",
     "text": "To jest mały ptak.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/maslo.mp3": {
+    "author": "Wyksztalcioch",
+    "commons_file": "Pl-masło.ogg",
+    "fingerprint": "e343f076fc8ed873",
+    "gain_db": -1.0,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-mas%C5%82o.ogg",
+    "seconds": 0.71,
+    "source": "commons",
+    "text": "masło"
+  },
+  "media/audio/maslo__sentence.mp3": {
+    "fingerprint": "61adfe5385f622db",
+    "gain_db": -0.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.18,
+    "source": "tts",
+    "text": "Mam chleb i masło.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -2256,6 +2340,27 @@
     "seconds": 1.04,
     "source": "tts",
     "text": "To nie jest pies.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/niebieski.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-niebieski.ogg",
+    "fingerprint": "d3ea0c71e384b1bd",
+    "gain_db": -2.3,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-niebieski.ogg",
+    "seconds": 0.94,
+    "source": "commons",
+    "text": "niebieski"
+  },
+  "media/audio/niebieski__sentence.mp3": {
+    "fingerprint": "a74d79a4ccb2bbaa",
+    "gain_db": -0.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.7,
+    "source": "tts",
+    "text": "Moja kurtka jest niebieska.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -3247,6 +3352,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/rower.mp3": {
+    "author": "Ewczy",
+    "commons_file": "Pl-rower.ogg",
+    "fingerprint": "e5b74310676c719f",
+    "gain_db": -3.4,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-rower.ogg",
+    "seconds": 1.12,
+    "source": "commons",
+    "text": "rower"
+  },
+  "media/audio/rower__sentence.mp3": {
+    "fingerprint": "a293dbefb3e1820a",
+    "gain_db": 0.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.25,
+    "source": "tts",
+    "text": "Mój brat ma nowy rower.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/rozumiec.mp3": {
     "author": "Kajervi",
     "commons_file": "Pl-rozumieć.ogg",
@@ -3899,6 +4025,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/tani.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-tani.ogg",
+    "fingerprint": "922f95d643363c94",
+    "gain_db": 0.4,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-tani.ogg",
+    "seconds": 1.49,
+    "source": "commons",
+    "text": "tani"
+  },
+  "media/audio/tani__sentence.mp3": {
+    "fingerprint": "d678f51547d61b2c",
+    "gain_db": -1.8,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.28,
+    "source": "tts",
+    "text": "Ten sklep jest tani.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/telefon.mp3": {
     "author": "unknown",
     "commons_file": "Pl-telefon.ogg",
@@ -4193,6 +4340,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/wiosna.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-wiosna.ogg",
+    "fingerprint": "4ee79e597289e7ca",
+    "gain_db": 4.1,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-wiosna.ogg",
+    "seconds": 0.84,
+    "source": "commons",
+    "text": "wiosna"
+  },
+  "media/audio/wiosna__sentence.mp3": {
+    "fingerprint": "df8daa67f70cdd78",
+    "gain_db": -1.2,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.33,
+    "source": "tts",
+    "text": "Wiosna jest ciepła.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/woda.mp3": {
     "author": "Frizabela",
     "commons_file": "Pl-woda.ogg",
@@ -4277,6 +4445,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/zab.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-ząb.ogg",
+    "fingerprint": "f8acce95757ca356",
+    "gain_db": 0.0,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-z%C4%85b.ogg",
+    "seconds": 1.33,
+    "source": "commons",
+    "text": "ząb"
+  },
+  "media/audio/zab__sentence.mp3": {
+    "fingerprint": "e02bb395f7195b70",
+    "gain_db": 3.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.84,
+    "source": "tts",
+    "text": "Myję zęby.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/zaczac.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-zacząć.ogg",
@@ -4316,6 +4505,27 @@
     "seconds": 1.15,
     "source": "tts",
     "text": "Muszę zamknąć okno.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/zawsze.mp3": {
+    "author": "Marcowy zając",
+    "commons_file": "Pl-zawsze.ogg",
+    "fingerprint": "4c96a9325c45c37c",
+    "gain_db": 5.6,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-zawsze.ogg",
+    "seconds": 0.81,
+    "source": "commons",
+    "text": "zawsze"
+  },
+  "media/audio/zawsze__sentence.mp3": {
+    "fingerprint": "0076ff26dab6c793",
+    "gain_db": 0.2,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.18,
+    "source": "tts",
+    "text": "Zawsze jem śniadanie.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -4814,6 +5024,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A country road in daylight with one small dark object lying in the middle distance, too far off to make out what it is. Nothing else in frame. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/cukier.webp": {
+    "bytes": 21760,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "7d7c72a154f72193",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A small stack of white sugar cubes on a dark saucer. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -5367,6 +5593,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/jesien.webp": {
+    "bytes": 246926,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "6c618f80494a7c89",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A woodland path completely covered in fallen orange and brown leaves. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/jutro.webp": {
     "bytes": 19890,
     "check": {
@@ -5460,6 +5702,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A woman sitting on a wooden park bench, whole figure in frame, side on, daylight. One person only, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/kolacja.webp": {
+    "bytes": 22866,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "87a136f7ccd1de73",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A table set for an evening meal, warm lamplight above it, the window behind dark. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -5764,6 +6022,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "Two balls of the same colour side by side on a plain white background, one very large and one very small, the small one at the front and in focus. No text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/maslo.webp": {
+    "bytes": 14816,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "577429e4832081f4",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A block of yellow butter on a white dish. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -6143,6 +6417,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A person holding up one flat palm in a clear stop gesture and shaking their head, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/niebieski.webp": {
+    "bytes": 6202,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "16493d8532a2ba2f",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A single plain blue ceramic mug on a white table, seen from above. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -6862,6 +7152,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/rower.webp": {
+    "bytes": 155124,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "f1e3228773900cbc",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A bicycle parked upright on a city street beside the kerb. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/rozumiec.webp": {
     "bytes": 51924,
     "check": {
@@ -7306,6 +7612,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/tani.webp": {
+    "bytes": 84790,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "The image contains visible numbers and text on the price tags.",
+      "verdict": "flag",
+      "why": "contains text or lettering"
+    },
+    "fingerprint": "975672cbe26a33a8",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A market stall of fruit and vegetables with small handwritten price tags propped in the crates. No words, only the numbers. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/telefon.webp": {
     "bytes": 22244,
     "check": {
@@ -7520,6 +7842,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/wiosna.webp": {
+    "bytes": 239980,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "c5c429dcd63e7996",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A park path lined with trees in full pink blossom, bright fresh green grass on both sides. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/woda.webp": {
     "bytes": 9362,
     "check": {
@@ -7579,6 +7917,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/zab.webp": {
+    "bytes": 18806,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "f08eee7581a6cfb8",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A close-up of a person smiling widely, showing clean white teeth. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/zaczac.webp": {
     "bytes": 26674,
     "check": {
@@ -7592,6 +7946,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A person sitting down at a desk and opening a notebook, pen not yet in hand, about to start. Morning light. No readable text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/zawsze.webp": {
+    "bytes": 236942,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "The image shows a desire path across a lawn, which does not clearly convey the concept of 'always'.",
+      "verdict": "flag",
+      "why": "does not clearly show the word"
+    },
+    "fingerprint": "151a913b5b6c5b0e",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A worn dirt track cut straight across a green lawn, made by people taking the same shortcut every day, buildings behind. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },

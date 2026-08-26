@@ -7049,6 +7049,330 @@
         "listening"
       ],
       "reviewed": true
+    },
+    {
+      "id": "wiosna",
+      "word": "wiosna",
+      "gloss": "spring",
+      "pos": "noun",
+      "ipa": "ˈvjɔsna",
+      "note": null,
+      "image": "media/img/wiosna.webp",
+      "image_alt": "spring",
+      "image_basis": "sentence",
+      "image_prompt": "A park path lined with trees in full pink blossom, bright fresh green grass on both sides. No text or lettering. Square image.",
+      "audio": "media/audio/wiosna.mp3",
+      "sentence": {
+        "pl": "Wiosna jest ciepła.",
+        "en": "Spring is warm.",
+        "gap": "___ jest ciepła.",
+        "answer": "Wiosna",
+        "answer_lemma": "wiosna",
+        "audio": "media/audio/wiosna__sentence.mp3",
+        "lemmas": [
+          "wiosna",
+          "być",
+          "ciepły"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "jesien",
+      "word": "jesień",
+      "gloss": "autumn",
+      "pos": "noun",
+      "ipa": "ˈjɛɕɛɲ",
+      "note": null,
+      "image": "media/img/jesien.webp",
+      "image_alt": "autumn",
+      "image_basis": "word",
+      "image_prompt": "A woodland path completely covered in fallen orange and brown leaves. No text or lettering. Square image.",
+      "audio": "media/audio/jesien.mp3",
+      "sentence": {
+        "pl": "Lubię jesień.",
+        "en": "I like autumn.",
+        "gap": "Lubię ___.",
+        "answer": "jesień",
+        "answer_lemma": "jesień",
+        "audio": "media/audio/jesien__sentence.mp3",
+        "lemmas": [
+          "lubić",
+          "jesień"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "kolacja",
+      "word": "kolacja",
+      "gloss": "supper, evening meal",
+      "pos": "noun",
+      "ipa": "kɔˈlat͡sja",
+      "note": null,
+      "image": "media/img/kolacja.webp",
+      "image_alt": "supper, evening meal",
+      "image_basis": "sentence",
+      "image_prompt": "A table set for an evening meal, warm lamplight above it, the window behind dark. No text or lettering. Square image.",
+      "audio": "media/audio/kolacja.mp3",
+      "sentence": {
+        "pl": "Kolacja jest na stole.",
+        "en": "Supper is on the table.",
+        "gap": "___ jest na stole.",
+        "answer": "Kolacja",
+        "answer_lemma": "kolacja",
+        "audio": "media/audio/kolacja__sentence.mp3",
+        "lemmas": [
+          "kolacja",
+          "być",
+          "na",
+          "stół"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "cukier",
+      "word": "cukier",
+      "gloss": "sugar",
+      "pos": "noun",
+      "ipa": "ˈt͡sukjɛr",
+      "note": null,
+      "image": "media/img/cukier.webp",
+      "image_alt": "sugar",
+      "image_basis": "word",
+      "image_prompt": "A small stack of white sugar cubes on a dark saucer. No text or lettering. Square image.",
+      "audio": "media/audio/cukier.mp3",
+      "sentence": {
+        "pl": "Nie lubię cukru.",
+        "en": "I don't like sugar.",
+        "gap": "Nie lubię ___.",
+        "answer": "cukru",
+        "answer_lemma": "cukier",
+        "audio": "media/audio/cukier__sentence.mp3",
+        "lemmas": [
+          "nie",
+          "lubić",
+          "cukier"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "maslo",
+      "word": "masło",
+      "gloss": "butter",
+      "pos": "noun",
+      "ipa": "ˈmaswɔ",
+      "note": null,
+      "image": "media/img/maslo.webp",
+      "image_alt": "butter",
+      "image_basis": "word",
+      "image_prompt": "A block of yellow butter on a white dish. No text or lettering. Square image.",
+      "audio": "media/audio/maslo.mp3",
+      "sentence": {
+        "pl": "Mam chleb i masło.",
+        "en": "I have bread and butter.",
+        "gap": "Mam chleb i ___.",
+        "answer": "masło",
+        "answer_lemma": "masło",
+        "audio": "media/audio/maslo__sentence.mp3",
+        "lemmas": [
+          "mieć",
+          "chleb",
+          "i",
+          "masło"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "rower",
+      "word": "rower",
+      "gloss": "bicycle",
+      "pos": "noun",
+      "ipa": "ˈrɔvɛr",
+      "note": null,
+      "image": "media/img/rower.webp",
+      "image_alt": "bicycle",
+      "image_basis": "sentence",
+      "image_prompt": "A bicycle parked upright on a city street beside the kerb. No text or lettering. Square image.",
+      "audio": "media/audio/rower.mp3",
+      "sentence": {
+        "pl": "Mój brat ma nowy rower.",
+        "en": "My brother has a new bicycle.",
+        "gap": "Mój brat ma nowy ___.",
+        "answer": "rower",
+        "answer_lemma": "rower",
+        "audio": "media/audio/rower__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "brat",
+          "mieć",
+          "nowy",
+          "rower"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "niebieski",
+      "word": "niebieski",
+      "gloss": "blue",
+      "pos": "adjective",
+      "ipa": "ɲɛˈbjɛski",
+      "note": null,
+      "image": "media/img/niebieski.webp",
+      "image_alt": "blue",
+      "image_basis": "word",
+      "image_prompt": "A single plain blue ceramic mug on a white table, seen from above. No text or lettering. Square image.",
+      "audio": "media/audio/niebieski.mp3",
+      "sentence": {
+        "pl": "Moja kurtka jest niebieska.",
+        "en": "My jacket is blue.",
+        "gap": "Moja kurtka jest ___.",
+        "answer": "niebieska",
+        "answer_lemma": "niebieski",
+        "audio": "media/audio/niebieski__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "kurtka",
+          "być",
+          "niebieski"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "tani",
+      "word": "tani",
+      "gloss": "cheap",
+      "pos": "adjective",
+      "ipa": "ˈtani",
+      "note": null,
+      "image": "media/img/tani.webp",
+      "image_alt": "cheap",
+      "image_basis": "sentence",
+      "image_prompt": "A market stall of fruit and vegetables with small handwritten price tags propped in the crates. No words, only the numbers. Square image.",
+      "audio": "media/audio/tani.mp3",
+      "sentence": {
+        "pl": "Ten sklep jest tani.",
+        "en": "This shop is cheap.",
+        "gap": "Ten sklep jest ___.",
+        "answer": "tani",
+        "answer_lemma": "tani",
+        "audio": "media/audio/tani__sentence.mp3",
+        "lemmas": [
+          "ten",
+          "sklep",
+          "być",
+          "tani"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "zawsze",
+      "word": "zawsze",
+      "gloss": "always",
+      "pos": "adverb",
+      "ipa": "ˈzafʂɛ",
+      "note": null,
+      "image": "media/img/zawsze.webp",
+      "image_alt": "always",
+      "image_basis": "word",
+      "image_prompt": "A worn dirt track cut straight across a green lawn, made by people taking the same shortcut every day, buildings behind. No text or lettering. Square image.",
+      "audio": "media/audio/zawsze.mp3",
+      "sentence": {
+        "pl": "Zawsze jem śniadanie.",
+        "en": "I always eat breakfast.",
+        "gap": "___ jem śniadanie.",
+        "answer": "Zawsze",
+        "answer_lemma": "zawsze",
+        "audio": "media/audio/zawsze__sentence.mp3",
+        "lemmas": [
+          "zawsze",
+          "jeść",
+          "śniadanie"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "zab",
+      "word": "ząb",
+      "gloss": "tooth",
+      "pos": "noun",
+      "ipa": "zɔmp",
+      "note": null,
+      "image": "media/img/zab.webp",
+      "image_alt": "tooth",
+      "image_basis": "word",
+      "image_prompt": "A close-up of a person smiling widely, showing clean white teeth. No text or lettering. Square image.",
+      "audio": "media/audio/zab.mp3",
+      "sentence": {
+        "pl": "Myję zęby.",
+        "en": "I brush my teeth.",
+        "gap": "Myję ___.",
+        "answer": "zęby",
+        "answer_lemma": "ząb",
+        "audio": "media/audio/zab__sentence.mp3",
+        "lemmas": [
+          "myć",
+          "ząb"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
     }
   ]
 }
