@@ -3322,12 +3322,12 @@
     "text": "ściana"
   },
   "media/audio/sciana__sentence.mp3": {
-    "fingerprint": "6e9dab39e157d627",
-    "gain_db": 0.7,
+    "fingerprint": "09b40242ad2acfd7",
+    "gain_db": 0.6,
     "model": "eleven_multilingual_v2",
-    "seconds": 1.46,
+    "seconds": 1.36,
     "source": "tts",
-    "text": "Ściana w kuchni jest żółta.",
+    "text": "Ta ściana jest bardzo stara.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -5223,6 +5223,22 @@
     "size": "800x534",
     "source": "supplied"
   },
+  "media/img/goracy.webp": {
+    "bytes": 34266,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "733ef4fc8d0d0cf4",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A metal kettle on a stove with steam rising visibly from its spout. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/gotowac.webp": {
     "bytes": 51184,
     "check": {
@@ -5623,6 +5639,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/lazienka.webp": {
+    "bytes": 19138,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "41b1d17fcae1a025",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person washing their hands at a white bathroom sink, tiled wall and mirror behind. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/leciec.webp": {
     "bytes": 11886,
     "check": {
@@ -5938,6 +5970,22 @@
     "size": "800x800",
     "source": "supplied"
   },
+  "media/img/mieso.webp": {
+    "bytes": 72146,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "7eecefdb2d746c8b",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Two raw red steaks on a wooden chopping board. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/mieszkac.webp": {
     "bytes": 50412,
     "check": {
@@ -6170,6 +6218,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "Two footballs side by side on a plain white background: one brand new, clean and bright, one old, scuffed and grey. The new one stands at the front and in focus. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/noz.webp": {
+    "bytes": 81282,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "6870ece84be70118",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A single kitchen knife lying on a wooden board, seen from above. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -6568,6 +6632,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/pomysl.webp": {
+    "bytes": 50660,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "4235b07d2c989e6d",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A woman sitting at a table looking up with a bright delighted expression, one index finger raised. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/poniedzialek.webp": {
     "author": "supplied by user",
     "bytes": 14830,
@@ -6595,6 +6675,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/powiedziec.webp": {
+    "bytes": 43174,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "ec2f73668cc2ec45",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Two men sitting at a table, one leaning forward with a hand slightly raised as if about to say something important, the other listening. No text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/praca.webp": {
     "author": "supplied by user",
     "bytes": 83614,
@@ -6605,6 +6701,22 @@
     "process_version": 1,
     "size": "800x800",
     "source": "supplied"
+  },
+  "media/img/pracowac.webp": {
+    "bytes": 25408,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "aeb03233084d9223",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A man standing at a whiteboard in a classroom, mid-explanation, facing the room. No text or lettering on the board. Square image.",
+    "size": "800x800",
+    "source": "generated"
   },
   "media/img/prosze.webp": {
     "bytes": 22810,
@@ -6795,6 +6907,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A red car parked on a road, seen from the side and filling most of the frame. Daylight, no people. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/sciana.webp": {
+    "bytes": 247446,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "ed929bee670da6ed",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A close view of an old weathered red brick wall filling the entire frame, crumbling mortar between the bricks, strong daylight. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -7328,6 +7456,22 @@
     "size": "800x800",
     "source": "supplied"
   },
+  "media/img/wiatr.webp": {
+    "bytes": 101390,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "0b39e49358865cd9",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A woman walking on a street with her coat and hair blown hard sideways, trees bending behind her. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/widziec.webp": {
     "bytes": 21940,
     "check": {
@@ -7592,6 +7736,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A man and a woman sitting together at a small cafe table, the woman holding a cup of coffee, both wearing wedding rings. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/zupa.webp": {
+    "bytes": 68118,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "ad967505d01de2d0",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A deep bowl of thick vegetable soup on a table with a spoon resting beside it. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   }
