@@ -1699,10 +1699,10 @@
     {
       "id": "wiedziec",
       "word": "wiedzieć",
-      "gloss": "to know",
+      "gloss": "to know (a fact)",
       "pos": "verb",
       "ipa": "ˈvjɛd͡ʑɛt͡ɕ",
-      "note": null,
+      "note": "facts and information — Dutch weten. For people and places it is znać",
       "image": "media/img/wiedziec.webp",
       "image_alt": "to know",
       "image_basis": "word",
@@ -6347,6 +6347,371 @@
           "droga",
           "być",
           "długi"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "prosze",
+      "word": "proszę",
+      "gloss": "please, here you are",
+      "pos": "interjection",
+      "ipa": "ˈprɔʂɛ",
+      "note": null,
+      "image": "media/img/prosze.webp",
+      "image_alt": "please, here you are",
+      "image_basis": "sentence",
+      "image_prompt": "Close-up of two hands: one extending a glass of tea across a wooden counter, the other reaching out to take it. Warm indoor light. No text or lettering. Square image.",
+      "audio": "media/audio/prosze.mp3",
+      "sentence": {
+        "pl": "Proszę, to jest twoja herbata.",
+        "en": "Here you are, this is your tea.",
+        "gap": "___, to jest twoja herbata.",
+        "answer": "Proszę",
+        "answer_lemma": "proszę",
+        "audio": "media/audio/prosze__sentence.mp3",
+        "lemmas": [
+          "proszę",
+          "to",
+          "być",
+          "twój",
+          "herbata"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "przepraszam",
+      "word": "przepraszam",
+      "gloss": "excuse me, sorry",
+      "pos": "interjection",
+      "ipa": "pʂɛˈpraʂam",
+      "note": null,
+      "image": "media/img/przepraszam.webp",
+      "image_alt": "excuse me, sorry",
+      "image_basis": "sentence",
+      "image_prompt": "A woman with both palms turned slightly upward and shoulders raised in a small apologetic shrug, looking at the viewer. No text or lettering. Square image.",
+      "audio": "media/audio/przepraszam.mp3",
+      "sentence": {
+        "pl": "Przepraszam, nie wiem.",
+        "en": "Sorry, I don't know.",
+        "gap": "___, nie wiem.",
+        "answer": "Przepraszam",
+        "answer_lemma": "przepraszam",
+        "audio": "media/audio/przepraszam__sentence.mp3",
+        "lemmas": [
+          "przepraszam",
+          "nie",
+          "wiedzieć"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "pan",
+      "word": "pan",
+      "gloss": "sir, Mr",
+      "pos": "noun",
+      "ipa": "pan",
+      "note": null,
+      "image": "media/img/pan.webp",
+      "image_alt": "sir, Mr",
+      "image_basis": "sentence",
+      "image_prompt": "A waiter in a white shirt leaning slightly forward, politely taking an order from a well-dressed older gentleman seated alone at a restaurant table. Contemporary setting, warm light. No clock anywhere in frame. No text or lettering. Square image.",
+      "audio": "media/audio/pan.mp3",
+      "sentence": {
+        "pl": "Czy pan tutaj czeka?",
+        "en": "Are you waiting here, sir?",
+        "gap": "Czy ___ tutaj czeka?",
+        "answer": "pan",
+        "answer_lemma": "pan",
+        "audio": "media/audio/pan__sentence.mp3",
+        "lemmas": [
+          "czy",
+          "pan",
+          "tutaj",
+          "czekać"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "pani",
+      "word": "pani",
+      "gloss": "madam, Mrs",
+      "pos": "noun",
+      "ipa": "ˈpani",
+      "note": null,
+      "image": "media/img/pani.webp",
+      "image_alt": "madam, Mrs",
+      "image_basis": "sentence",
+      "image_prompt": "A man speaking to a smartly dressed older woman standing in a doorway, mid-conversation. No text or lettering. Square image.",
+      "audio": "media/audio/pani.mp3",
+      "sentence": {
+        "pl": "Czy pani zna moją żonę?",
+        "en": "Do you know my wife, madam?",
+        "gap": "Czy ___ zna moją żonę?",
+        "answer": "pani",
+        "answer_lemma": "pani",
+        "audio": "media/audio/pani__sentence.mp3",
+        "lemmas": [
+          "czy",
+          "pani",
+          "znać",
+          "mój",
+          "żona"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "zona",
+      "word": "żona",
+      "gloss": "wife",
+      "pos": "noun",
+      "ipa": "ˈʐɔna",
+      "note": null,
+      "image": "media/img/zona.webp",
+      "image_alt": "wife",
+      "image_basis": "sentence",
+      "image_prompt": "A man and a woman sitting together at a small cafe table, the woman holding a cup of coffee, both wearing wedding rings. No text or lettering. Square image.",
+      "audio": "media/audio/zona.mp3",
+      "sentence": {
+        "pl": "Moja żona lubi kawę.",
+        "en": "My wife likes coffee.",
+        "gap": "Moja ___ lubi kawę.",
+        "answer": "żona",
+        "answer_lemma": "żona",
+        "audio": "media/audio/zona__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "żona",
+          "lubić",
+          "kawa"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "maz",
+      "word": "mąż",
+      "gloss": "husband",
+      "pos": "noun",
+      "ipa": "mɔw̃ʂ",
+      "note": null,
+      "image": "media/img/maz.webp",
+      "image_alt": "husband",
+      "image_basis": "sentence",
+      "image_prompt": "A man in an apron cooking at a stove, a woman standing beside him talking to him. No text or lettering. Square image.",
+      "audio": "media/audio/maz.mp3",
+      "sentence": {
+        "pl": "Mój mąż gotuje obiad.",
+        "en": "My husband is cooking dinner.",
+        "gap": "Mój ___ gotuje obiad.",
+        "answer": "mąż",
+        "answer_lemma": "mąż",
+        "audio": "media/audio/maz__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "mąż",
+          "gotować",
+          "obiad"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "siostra",
+      "word": "siostra",
+      "gloss": "sister",
+      "pos": "noun",
+      "ipa": "ˈɕɔstra",
+      "note": null,
+      "image": "media/img/siostra.webp",
+      "image_alt": "sister",
+      "image_basis": "sentence",
+      "image_prompt": "A young woman crouching beside a black dog in a park, one hand resting on its back. No text or lettering. Square image.",
+      "audio": "media/audio/siostra.mp3",
+      "sentence": {
+        "pl": "Moja siostra ma czarnego psa.",
+        "en": "My sister has a black dog.",
+        "gap": "Moja ___ ma czarnego psa.",
+        "answer": "siostra",
+        "answer_lemma": "siostra",
+        "audio": "media/audio/siostra__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "siostra",
+          "mieć",
+          "czarny",
+          "pies"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "brat",
+      "word": "brat",
+      "gloss": "brother",
+      "pos": "noun",
+      "ipa": "brat",
+      "note": null,
+      "image": "media/img/brat.webp",
+      "image_alt": "brother",
+      "image_basis": "sentence",
+      "image_prompt": "Two young men with similar faces standing side by side on a city street, one with an arm across the other's shoulders. No text or lettering. Square image.",
+      "audio": "media/audio/brat.mp3",
+      "sentence": {
+        "pl": "Mój brat mieszka w mieście.",
+        "en": "My brother lives in the city.",
+        "gap": "Mój ___ mieszka w mieście.",
+        "answer": "brat",
+        "answer_lemma": "brat",
+        "audio": "media/audio/brat__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "brat",
+          "mieszkać",
+          "w",
+          "miasto"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "bialy",
+      "word": "biały",
+      "gloss": "white",
+      "pos": "adjective",
+      "ipa": "ˈbjawɨ",
+      "note": null,
+      "image": "media/img/bialy.webp",
+      "image_alt": "white",
+      "image_basis": "sentence",
+      "image_prompt": "A plain white painted wall filling the frame, with a dark wooden floor along the bottom edge. No text or lettering. Square image.",
+      "audio": "media/audio/bialy.mp3",
+      "sentence": {
+        "pl": "Moja ściana jest biała.",
+        "en": "My wall is white.",
+        "gap": "Moja ściana jest ___.",
+        "answer": "biała",
+        "answer_lemma": "biały",
+        "audio": "media/audio/bialy__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "ściana",
+          "być",
+          "biały"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "zly",
+      "word": "zły",
+      "gloss": "bad",
+      "pos": "adjective",
+      "ipa": "zwɨ",
+      "note": null,
+      "image": "media/img/zly.webp",
+      "image_alt": "bad",
+      "image_basis": "word",
+      "image_prompt": "A man sitting alone on a city bench, shoulders slumped, staring at the ground. No text or lettering. Square image.",
+      "audio": "media/audio/zly.mp3",
+      "sentence": {
+        "pl": "To jest zły pomysł.",
+        "en": "That is a bad idea.",
+        "gap": "To jest ___ pomysł.",
+        "answer": "zły",
+        "answer_lemma": "zły",
+        "audio": "media/audio/zly__sentence.mp3",
+        "lemmas": [
+          "to",
+          "być",
+          "zły",
+          "pomysł"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "znac",
+      "word": "znać",
+      "gloss": "to know (a person, a place)",
+      "pos": "verb",
+      "ipa": "znat͡ɕ",
+      "note": "people and places — Dutch kennen. For facts it is wiedzieć",
+      "image": "media/img/znac.webp",
+      "image_alt": "to know (a person, a place)",
+      "image_basis": "word",
+      "image_prompt": "Two women greeting each other warmly on a street, shaking hands and smiling in recognition. No text or lettering. Square image.",
+      "audio": "media/audio/znac.mp3",
+      "sentence": {
+        "pl": "Znam twoją siostrę.",
+        "en": "I know your sister.",
+        "gap": "___ twoją siostrę.",
+        "answer": "Znam",
+        "answer_lemma": "znać",
+        "audio": "media/audio/znac__sentence.mp3",
+        "lemmas": [
+          "znać",
+          "twój",
+          "siostra"
         ]
       },
       "cards": [

@@ -43,7 +43,16 @@ def load():
     vocab = {}
     with VOCAB.open(encoding="utf-8") as f:
         for row in csv.DictReader(f):
-            vocab[row["note_id"]] = row
+            # Keyed by note_id, so a blank or repeated one silently drops the
+            # row and its word stops existing as far as the lemma check is
+            # concerned. Two blank ids once hid a word that was plainly there.
+            nid = row["note_id"]
+            if not nid:
+                sys.exit(f"deck/vocab.csv: {row['word']!r} has no note_id")
+            if nid in vocab:
+                sys.exit(f"deck/vocab.csv: note_id {nid!r} used by both "
+                         f"{vocab[nid]['word']!r} and {row['word']!r}")
+            vocab[nid] = row
     return data["notes"], vocab
 
 

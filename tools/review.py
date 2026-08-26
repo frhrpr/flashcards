@@ -186,7 +186,8 @@ def main():
                               encoding="utf-8")
         print(f"approved {len(ids)}: {', '.join(sorted(ids))}")
         print(f"{sum(1 for n in notes if not n.get('reviewed'))} still awaiting review")
-        return 0
+        # fall through and rebuild: approving without regenerating leaves a page
+        # still listing the notes just approved, which reads as work not done.
 
     dest = out_dir()
     copied, pending = build(notes, manifest, dest)

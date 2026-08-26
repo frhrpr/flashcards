@@ -41,6 +41,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/bialy.mp3": {
+    "author": "user:tsca",
+    "commons_file": "Pl-biały.ogg",
+    "fingerprint": "77eddf1237f5072c",
+    "gain_db": 10.9,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-bia%C5%82y.ogg",
+    "seconds": 0.67,
+    "source": "commons",
+    "text": "biały"
+  },
+  "media/audio/bialy__sentence.mp3": {
+    "fingerprint": "b43d9f071e4905b9",
+    "gain_db": -1.8,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.33,
+    "source": "tts",
+    "text": "Moja ściana jest biała.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/bolec.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-boleć.ogg",
@@ -81,6 +102,27 @@
     "seed": 7,
     "source": "tts",
     "text": "Biorę książkę ze stołu.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/brat.mp3": {
+    "author": "Wyksztalcioch",
+    "commons_file": "Pl-brat.ogg",
+    "fingerprint": "e88fcbc0cf2cb1ad",
+    "gain_db": 1.4,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-brat.ogg",
+    "seconds": 0.57,
+    "source": "commons",
+    "text": "brat"
+  },
+  "media/audio/brat__sentence.mp3": {
+    "fingerprint": "89ba4808051c6e8a",
+    "gain_db": 0.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.33,
+    "source": "tts",
+    "text": "Mój brat mieszka w mieście.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1686,6 +1728,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/maz.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-mąż.ogg",
+    "fingerprint": "b77931d8ea82e621",
+    "gain_db": 4.5,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-m%C4%85%C5%BC.ogg",
+    "seconds": 0.84,
+    "source": "commons",
+    "text": "mąż"
+  },
+  "media/audio/maz__sentence.mp3": {
+    "fingerprint": "853855dbf9ba5ca9",
+    "gain_db": -2.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.49,
+    "source": "tts",
+    "text": "Mój mąż gotuje obiad.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/mezczyzna.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-mężczyzna.ogg",
@@ -2428,6 +2491,48 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/pan.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-pan.ogg",
+    "fingerprint": "a0b39addc43a914a",
+    "gain_db": 1.2,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-pan.ogg",
+    "seconds": 0.55,
+    "source": "commons",
+    "text": "pan"
+  },
+  "media/audio/pan__sentence.mp3": {
+    "fingerprint": "35f70e2de9ca5b84",
+    "gain_db": -0.2,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.04,
+    "source": "tts",
+    "text": "Czy pan tutaj czeka?",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/pani.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-pani.ogg",
+    "fingerprint": "5256d274e6003662",
+    "gain_db": 1.6,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-pani.ogg",
+    "seconds": 0.55,
+    "source": "commons",
+    "text": "pani"
+  },
+  "media/audio/pani__sentence.mp3": {
+    "fingerprint": "453dd43a4a41fa36",
+    "gain_db": -2.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.25,
+    "source": "tts",
+    "text": "Czy pani zna moją żonę?",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/park.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-park.ogg",
@@ -2806,6 +2911,48 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/prosze.mp3": {
+    "author": "Tomasz \"odder\" Kozlowski",
+    "commons_file": "Pl-proszę.ogg",
+    "fingerprint": "5d51ba5a997ab3bb",
+    "gain_db": 8.0,
+    "licence": "CC BY-SA 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-prosz%C4%99.ogg",
+    "seconds": 0.63,
+    "source": "commons",
+    "text": "proszę"
+  },
+  "media/audio/prosze__sentence.mp3": {
+    "fingerprint": "9454a10fbc2ca3b4",
+    "gain_db": -1.6,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.75,
+    "source": "tts",
+    "text": "Proszę, to jest twoja herbata.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/przepraszam.mp3": {
+    "author": "odder",
+    "commons_file": "Pl-przepraszam.ogg",
+    "fingerprint": "83616420a44b9730",
+    "gain_db": 10.3,
+    "licence": "CC BY-SA 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-przepraszam.ogg",
+    "seconds": 1.54,
+    "source": "commons",
+    "text": "przepraszam"
+  },
+  "media/audio/przepraszam__sentence.mp3": {
+    "fingerprint": "86846a8a4e97f178",
+    "gain_db": 0.6,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.07,
+    "source": "tts",
+    "text": "Przepraszam, nie wiem.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/ptak.mp3": {
     "author": "Marcowy zając",
     "commons_file": "Pl-ptak.ogg",
@@ -3098,6 +3245,27 @@
     "seconds": 1.38,
     "source": "tts",
     "text": "Ty siedzisz w domu.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/siostra.mp3": {
+    "author": "Faselhase",
+    "commons_file": "Pl-siostra.ogg",
+    "fingerprint": "433b9597c6388d0c",
+    "gain_db": 3.3,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-siostra.ogg",
+    "seconds": 0.73,
+    "source": "commons",
+    "text": "siostra"
+  },
+  "media/audio/siostra__sentence.mp3": {
+    "fingerprint": "acabe7a6e5581d45",
+    "gain_db": -1.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.7,
+    "source": "tts",
+    "text": "Moja siostra ma czarnego psa.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -4025,6 +4193,48 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/zly.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-zły.ogg",
+    "fingerprint": "9395d29d40d274ba",
+    "gain_db": -5.3,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-z%C5%82y.ogg",
+    "seconds": 0.65,
+    "source": "commons",
+    "text": "zły"
+  },
+  "media/audio/zly__sentence.mp3": {
+    "fingerprint": "6efc182c6af07689",
+    "gain_db": -0.5,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.2,
+    "source": "tts",
+    "text": "To jest zły pomysł.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/znac.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-znać.ogg",
+    "fingerprint": "847d93f2249f3ded",
+    "gain_db": -0.6,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-zna%C4%87.ogg",
+    "seconds": 1.2,
+    "source": "commons",
+    "text": "znać"
+  },
+  "media/audio/znac__sentence.mp3": {
+    "fingerprint": "5770ab5aa1853c13",
+    "gain_db": 0.8,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.23,
+    "source": "tts",
+    "text": "Znam twoją siostrę.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/znalezc.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-znaleźć.ogg",
@@ -4088,6 +4298,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/zona.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-żona.ogg",
+    "fingerprint": "4d737c43583e7807",
+    "gain_db": 0.0,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-%C5%BCona.ogg",
+    "seconds": 0.76,
+    "source": "commons",
+    "text": "żona"
+  },
+  "media/audio/zona__sentence.mp3": {
+    "fingerprint": "05687fb3fd4f3c6d",
+    "gain_db": -1.0,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.25,
+    "source": "tts",
+    "text": "Moja żona lubi kawę.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/img/bardzo.webp": {
     "bytes": 52640,
     "check": {
@@ -4104,6 +4335,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/bialy.webp": {
+    "bytes": 13248,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "bc2b1264cb27be06",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A plain white painted wall filling the frame, with a dark wooden floor along the bottom edge. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/bolec.webp": {
     "bytes": 26484,
     "check": {
@@ -4117,6 +4364,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A man sitting with both hands pressed to his temples, eyes shut, wincing with a headache. Plain indoor setting. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/brat.webp": {
+    "bytes": 58224,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "ef7c076fa4fd625b",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Two young men with similar faces standing side by side on a city street, one with an arm across the other's shoulders. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -5278,6 +5541,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/maz.webp": {
+    "bytes": 51336,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "e00ab87c7d56173e",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A man in an apron cooking at a stove, a woman standing beside him talking to him. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/mezczyzna.webp": {
     "bytes": 98056,
     "check": {
@@ -5828,6 +6107,38 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/pan.webp": {
+    "bytes": 38856,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "692e1c81cc941d56",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A waiter in a white shirt leaning slightly forward, politely taking an order from a well-dressed older gentleman seated alone at a restaurant table. Contemporary setting, warm light. No clock anywhere in frame. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/pani.webp": {
+    "bytes": 25812,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "23e4358903bda50e",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A man speaking to a smartly dressed older woman standing in a doorway, mid-conversation. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/park.webp": {
     "bytes": 195656,
     "check": {
@@ -6085,6 +6396,38 @@
     "size": "800x800",
     "source": "supplied"
   },
+  "media/img/prosze.webp": {
+    "bytes": 22810,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "55111b707623ceb8",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Close-up of two hands: one extending a glass of tea across a wooden counter, the other reaching out to take it. Warm indoor light. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/przepraszam.webp": {
+    "bytes": 35712,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "f2d43a458ad12280",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A woman with both palms turned slightly upward and shoulders raised in a small apologetic shrug, looking at the viewer. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/ptak.webp": {
     "bytes": 38936,
     "check": {
@@ -6290,6 +6633,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A person sitting still in an armchair indoors, whole figure in frame, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/siostra.webp": {
+    "bytes": 72670,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "7aadb91c48bcb7e7",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A young woman crouching beside a black dog in a park, one hand resting on its back. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -6930,6 +7289,38 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/zly.webp": {
+    "bytes": 44858,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "208197c8be4801b8",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A man sitting alone on a city bench, shoulders slumped, staring at the ground. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/znac.webp": {
+    "bytes": 107094,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "2f901a0ad82cd378",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Two women greeting each other warmly on a street, shaking hands and smiling in recognition. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/znalezc.webp": {
     "bytes": 99766,
     "check": {
@@ -6975,6 +7366,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "Four unrelated everyday objects all the same shade of yellow on a plain white background: a lemon, a pencil, a mug and a folded shirt. The only thing they share is the colour. No text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/zona.webp": {
+    "bytes": 38968,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "885eb6f7b0072f93",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A man and a woman sitting together at a small cafe table, the woman holding a cup of coffee, both wearing wedding rings. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   }

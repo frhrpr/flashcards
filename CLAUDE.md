@@ -50,7 +50,7 @@ data; they do not build the app. Keep `index.html` a single static file.
 ```jsonc
 { "id": "kot",              // == a note_id in vocab.csv, [a-z0-9_]+
   "word": "kot", "gloss": "cat", "pos": "noun", "ipa": "kɔt",
-  "note": null,             // Polish, short, only when it earns its place
+  "note": null,             // English, short, only when it earns its place
   "image": "media/img/kot.webp",  // omit the key until the file exists
   "image_alt": "a cat",           // required whenever image is set
   "audio": "media/audio/kot.mp3", // omit the key until the file exists
@@ -624,6 +624,14 @@ to the point, spends the user's attention on re-reviewing a card he had
 already signed off. Raise the observation instead and let him decide. This
 applies to resemblances between images, wording you would now phrase
 differently, and anything else that is an improvement rather than a fault.
+
+**Notes are in English, and they exist to separate confusable pairs.** All 22
+of them do one job: `siadać`/`siedzieć`, `jechać`/`iść`, `zacząć`/`kończyć`,
+`otworzyć`/`zamknąć`, `łatwy`/`trudny`, `znać`/`wiedzieć` — each side names
+the other and says what distinguishes them. Where the student's own language
+already carries the distinction, say so: `znać`/`wiedzieć` cite Dutch
+*kennen*/*weten*, which is an exact match and does more than any English
+paraphrase can.
 
 **A `note` must never name its own word.** It is shown on the production
 *front*, where the word is the answer — so `musieć: "stronger than móc, musieć
