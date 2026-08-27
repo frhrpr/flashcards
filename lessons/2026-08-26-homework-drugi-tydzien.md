@@ -25,15 +25,15 @@ cannot ask and the distinction he actually gets wrong.
 
 ## Story
 
-Marek mieszka w nowym mieście. To (1) jego nowa praca.
+Marek mieszka w nowym mieście. To (1) jego drugi tydzień w pracy.
 
 Rano pada zimny deszcz. Marek (2) w łóżku i myśli.
 
 — Ja nie (3) czasu na śniadanie.
 
-Potem jedzie pociągiem do miasta. Miasto (4) bardzo duże.
+Potem jedzie pociągiem do miasta. Na ulicy (4) dużo ludzi i samochodów.
 
-W sklepie Marek (5) kartę. Płaci i kupuje kawę.
+W sklepie Marek kupuje kawę. Płaci kartą, ale nie (5) pieniędzy.
 
 W pracy Marek spotyka nowych ludzi.
 
@@ -43,7 +43,7 @@ W pracy Marek spotyka nowych ludzi.
 
 — Ewa. Czy ty (8) nowy w pracy?
 
-— Tak. To moja nowa praca. Czy ty (9) czas na kawę?
+— Tak. To mój drugi tydzień. Czy ty (9) czas na kawę?
 
 — Teraz nie (10) czasu. Praca jest nowa.
 
@@ -64,8 +64,8 @@ Marek siada na ławce. Ewa też siedzi w parku.
 | 1 | jest | być | to + a noun phrase; mieć is impossible here |
 | 2 | jest | być | noun subject, locative w łóżku, no object |
 | 3 | mam | mieć | explicit ja; genitive czasu after nie |
-| 4 | jest | być | noun subject Miasto, adjective complement |
-| 5 | ma | mieć | noun subject Marek, accusative object kartę |
+| 4 | jest | być | dużo takes the genitive and a singular verb |
+| 5 | ma | mieć | Marek is still the subject from Płaci; genitive after nie |
 | 6 | masz | mieć | explicit ty, and na imię is always mieć |
 | 7 | jestem | być | explicit ja, naming himself |
 | 8 | jesteś | być | explicit ty, adjective complement |
@@ -82,32 +82,39 @@ Eight `być`, seven `mieć`. Forms covered: `jest` ×5, `jestem`, `jesteś`, `s�
 `macie`, `mają` — second person plural needs a group to address, which a
 two-hander cannot supply, and the flashcards cover all six persons anyway.
 
-## Three words this nearly shipped with
-
-The first draft used `drugi`, `dużo` and `pieniądze`. All three are carded,
-and all three he has never seen — no card state, no priority flag. The draft
-had been checked against `deck/vocab.csv`, which is the sentence allowlist,
-not against what he has met, and those are different sets by more than a
-hundred words.
-
-`tools/storycheck.py` was written straight afterwards and caught them on its
-first run. The lines were rewritten: `jego nowa praca` for the second week,
-`Miasto jest bardzo duże` in place of the `dużo ludzi` clause, and Marek
-having a card rather than lacking money.
-
-The cost of the rewrite was the `dużo` construction — genitive plus a
-singular verb — which was the most interesting grammar on the sheet. It goes
-back in once he has met the word.
-
 ## What to watch
 
-**Gap 10 is the only one that depends on discourse.** `Teraz nie ___ czasu`
-answers a question put to him, so it is first person; nothing in the clause
-itself says so.
+**Gap 5 is the only one that depends on discourse.** `nie ___ pieniędzy` has
+no subject of its own; it carries over from `Płaci kartą` two clauses back.
+If he writes `mam` there he has lost the thread rather than the verb.
 
 **Gaps 1 and 14 are the same construction** — `to ___` plus a noun phrase.
 Getting one and missing the other is worth asking about.
 
-**Gap 5 has a noun subject and an object**, which is the clearest `mieć` on
-the sheet. If he writes `jest` there, the problem is the verb choice rather
-than the person, and that is the thing worth a lesson.
+**Gap 4 is the quiet one.** `dużo` takes the genitive and a singular verb, so
+`na ulicy jest dużo ludzi` even though the people are plural. If he writes
+`są` he has understood the sentence and not the rule, which is the better
+kind of mistake.
+
+## Postscript — three words he had not met
+
+Written 2026-08-26, after the sheet had already gone out.
+
+`drugi`, `dużo` and `pieniądze` are all carded, and at the time this was sent
+he had met none of them: no card state, no priority flag. The draft had been
+checked against `deck/vocab.csv`, which is the sentence allowlist, and not
+against what he has actually met — sets that differ by more than a hundred
+words.
+
+`tools/storycheck.py` was written straight afterwards and caught all three on
+its first run, which is also how it earned its place.
+
+All three are now `priority: true`, so they arrive within days rather than
+whenever the shuffle reaches them. The sheet was left exactly as sent; there
+is no point issuing a corrected one for homework already in his hands, and
+the words are on their way to him regardless.
+
+The `dużo` clause is worth keeping when this is reused: `dużo` takes the
+genitive and a singular verb, so `na ulicy jest dużo ludzi` even though the
+people are plural. That is the most interesting grammar on the sheet, and it
+only works once he knows the word.
