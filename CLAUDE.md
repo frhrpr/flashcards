@@ -706,6 +706,30 @@ Deferred on purpose: 4 grades instead of 2, and a stats screen.
   `lessons/` as the teaching record; a page for use during the lesson goes to
   `Downloads/flashcards/lessons/`. Cards are made **after** the lesson, so
   only words that actually landed get carded.
+- **Run `tools/storycheck.py` on every story before it goes out** — lesson
+  stories, homework, anything he reads. It is not optional and it is not a
+  reminder to be careful: the manual version of this check failed twice on
+  2026-08-26, both times the same way, and both times by checking the draft
+  against `deck/vocab.csv`.
+
+  That file is the *sentence allowlist*. What he has actually met is a set
+  less than half its size, and only the second one decides whether he can read
+  a story. A word can be carded, imaged, audioed and shippable and still be
+  one he has never once seen, because it is sitting unintroduced in the bank
+  where the shuffle has not reached it. Fifteen such words went into one
+  lesson story; three more went into the homework written to fix it.
+
+  The story file carries its own lemma map after a `--- lemmas ---` line, and
+  `--stub` writes the skeleton. Supplying that mapping by hand is deliberate.
+  An earlier version guessed with stem-matching and needed four patches in
+  twenty minutes — it missed every infinitive, read sentence-initial verbs as
+  proper nouns, and resolved `duże` to `dużo`. Whoever writes the story has
+  already made those judgements; what they cannot reliably do is check sixty
+  headwords against a database, which is the half the tool keeps.
+
+  An unmapped token is an error rather than a warning, because a token nobody
+  classified is a word nobody checked.
+
 - **The user spot-checks the Polish.** Generated sentences go to a real
   student, so build a review step rather than trusting generation. He caught
   `Czy mogę mieć wodę?` as a calque — Polish uses `mieć` to possess, never to
