@@ -8775,8 +8775,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
-      "priority": true
+      "reviewed": false
     },
     {
       "id": "komputer",
@@ -8808,8 +8807,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
-      "priority": true
+      "reviewed": false
     },
     {
       "id": "wlosy",
@@ -8843,8 +8841,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
-      "priority": true
+      "reviewed": false
     },
     {
       "id": "sukienka",
@@ -8877,8 +8874,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
-      "priority": true
+      "reviewed": false
     },
     {
       "id": "jezioro",
@@ -8911,8 +8907,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
-      "priority": true
+      "reviewed": false
     },
     {
       "id": "warzywo",
@@ -8945,8 +8940,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
-      "priority": true
+      "reviewed": false
     },
     {
       "id": "kino",
@@ -8978,8 +8972,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
-      "priority": true
+      "reviewed": false
     },
     {
       "id": "smutny",
@@ -9011,8 +9004,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
-      "priority": true
+      "reviewed": false
     },
     {
       "id": "ciasto",
@@ -9046,8 +9038,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
-      "priority": true
+      "reviewed": false
     }
   ]
 }

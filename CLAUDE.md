@@ -39,6 +39,7 @@ tools/review.py     builds the approval page; records approvals
 tools/progress.py   how the student is getting on; reads Firestore over REST
 tools/speaking.py   say-it-he-translates sheet; every word checked against
                     what he has met, not against the deck
+tools/storycheck.py checks a draft story against what he has actually met
 tools/deckio.py     shared loading, saving, attribution (not runnable)
 tools/ear_split.py  cuts one long take into ear/raw/<word>/; prints the read-aloud sheet
 tools/ear_build.py  ear/raw → ear/audio + ear/manifest.json (trim, level, encode)
