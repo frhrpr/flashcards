@@ -56,7 +56,6 @@ do not edit by hand.
 | `media/audio/dziesiec.mp3` | [Pl-dziesięć.ogg](https://commons.wikimedia.org/wiki/File:Pl-dziesi%C4%99%C4%87.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/dziewiec.mp3` | [Pl-dziewięć.ogg](https://commons.wikimedia.org/wiki/File:Pl-dziewi%C4%99%C4%87.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/dzisiaj.mp3` | [Pl-dzisiaj.ogg](https://commons.wikimedia.org/wiki/File:Pl-dzisiaj.ogg) | Derbeth | CC BY 2.5 | commons |
-| `media/audio/dziwny.mp3` | [Pl-dziwny.ogg](https://commons.wikimedia.org/wiki/File:Pl-dziwny.ogg) | Wyksztalcioch | Public domain | commons |
 | `media/audio/dzwonic.mp3` | [Pl-dzwonić.ogg](https://commons.wikimedia.org/wiki/File:Pl-dzwoni%C4%87.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/glodny.mp3` | [Pl-głodny.ogg](https://commons.wikimedia.org/wiki/File:Pl-g%C5%82odny.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/glos.mp3` | [Pl-głos.ogg](https://commons.wikimedia.org/wiki/File:Pl-g%C5%82os.ogg) | Derbeth | CC BY 2.5 | commons |

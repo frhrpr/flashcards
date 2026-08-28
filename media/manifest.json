@@ -1204,15 +1204,15 @@
     "voice_name": "Antoni"
   },
   "media/audio/dziwny.mp3": {
-    "author": "Wyksztalcioch",
-    "commons_file": "Pl-dziwny.ogg",
-    "fingerprint": "726c26b491232262",
-    "gain_db": -3.7,
-    "licence": "Public domain",
-    "page": "https://commons.wikimedia.org/wiki/File:Pl-dziwny.ogg",
-    "seconds": 0.89,
-    "source": "commons",
-    "text": "dziwny"
+    "fingerprint": "edcd8abf004bad7c",
+    "gain_db": 6.9,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.57,
+    "source": "tts",
+    "text": "dziwny",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
   },
   "media/audio/dziwny__sentence.mp3": {
     "fingerprint": "444401cb61309562",
@@ -6637,20 +6637,15 @@
     "source": "generated"
   },
   "media/img/dziwny.webp": {
-    "bytes": 168744,
-    "check": {
-      "model": "gemini-flash-latest",
-      "problem": "",
-      "verdict": "ok",
-      "why": ""
-    },
-    "fingerprint": "fea05dd07f4257bc",
-    "model": "gemini-2.5-flash-image",
-    "original_size": "1024x1024",
+    "author": "supplied by user",
+    "bytes": 100174,
+    "fingerprint": "dad48aa81854c18e",
+    "licence": "n/a",
+    "original": "weird-dog-pictures-1200-x-835-nmdyel55cue8lnk8-379991522.jpg",
+    "original_size": "835x835",
     "process_version": 1,
-    "prompt": "A dog with a distinctly odd appearance standing on grass in an ordinary garden: a very long body on short legs, one ear up and one ear down, and a patchy mismatched coat. It looks peculiar and comical, not frightening and not sad. Plain daylight, no people, no text or lettering anywhere. Square image.",
     "size": "800x800",
-    "source": "generated"
+    "source": "supplied"
   },
   "media/img/dzwonic.webp": {
     "bytes": 48104,

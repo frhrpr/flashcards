@@ -1379,9 +1379,8 @@
       "ipa": "ˈd͡ʑivnɨ",
       "note": null,
       "image": "media/img/dziwny.webp",
-      "image_alt": "strange",
+      "image_alt": "a dog's head on a tree frog's body, perched on a branch",
       "image_basis": "sentence",
-      "image_prompt": "A dog with a distinctly odd appearance standing on grass in an ordinary garden: a very long body on short legs, one ear up and one ear down, and a patchy mismatched coat. It looks peculiar and comical, not frightening and not sad. Plain daylight, no people, no text or lettering anywhere. Square image.",
       "audio": "media/audio/dziwny.mp3",
       "sentence": {
         "pl": "Pies jest dziwny.",
@@ -1401,7 +1400,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "audio_tts": true
     },
     {
       "id": "rano",
