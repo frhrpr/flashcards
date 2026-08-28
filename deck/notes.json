@@ -732,21 +732,22 @@
       "ipa": "bɨt͡ɕ",
       "note": null,
       "image": "media/img/byc.webp",
-      "image_alt": "to be",
-      "image_basis": "word",
-      "image_prompt": "A person standing in a doorway pointing at a small shop across the street, daylight, no readable text. Square image.",
+      "image_alt": "an actor as Hamlet holding up a skull",
+      "image_basis": "sentence",
       "audio": "media/audio/byc.mp3",
       "sentence": {
-        "pl": "Tutaj jest sklep.",
-        "en": "There is a shop here.",
-        "gap": "Tutaj ___ sklep.",
-        "answer": "jest",
+        "pl": "Być albo nie być, oto jest pytanie.",
+        "en": "To be or not to be, that is the question.",
+        "gap": "___ albo nie ___, oto jest pytanie.",
+        "answer": "być",
         "answer_lemma": "być",
         "audio": "media/audio/byc__sentence.mp3",
         "lemmas": [
-          "tutaj",
           "być",
-          "sklep"
+          "albo",
+          "nie",
+          "oto",
+          "pytanie"
         ]
       },
       "cards": [
@@ -1672,21 +1673,21 @@
       "ipa": "xt͡ɕɛt͡ɕ",
       "note": null,
       "image": "media/img/chciec.webp",
-      "image_alt": "to want",
+      "image_alt": "a hand holding an ice cream while a deer leans in wanting it",
       "image_basis": "sentence",
-      "image_prompt": "A person at a table reaching out towards a loaf of bread, clearly wanting it, eyes on the bread. Plain background, no text or lettering. Square image.",
       "audio": "media/audio/chciec.mp3",
       "sentence": {
-        "pl": "Teraz chcę chleb.",
-        "en": "Now I want bread.",
-        "gap": "Teraz ___ chleb.",
-        "answer": "chcę",
+        "pl": "Ona chce moje lody.",
+        "en": "She wants my ice cream.",
+        "gap": "Ona ___ moje lody.",
+        "answer": "chce",
         "answer_lemma": "chcieć",
         "audio": "media/audio/chciec__sentence.mp3",
         "lemmas": [
-          "teraz",
+          "ona",
           "chcieć",
-          "chleb"
+          "mój",
+          "lody"
         ]
       },
       "cards": [
@@ -1704,23 +1705,23 @@
       "ipa": "ˈvjɛd͡ʑɛt͡ɕ",
       "note": "facts and information — Dutch weten. For people and places it is znać",
       "image": "media/img/wiedziec.webp",
-      "image_alt": "to know",
-      "image_basis": "word",
-      "image_prompt": "A person tapping one finger to their temple with a confident, knowing expression. Plain background, no text or lettering. Square image.",
+      "image_alt": "a girl putting her hand up in class, 2 + 2 = ? on the blackboard",
+      "image_basis": "sentence",
       "audio": "media/audio/wiedziec.mp3",
       "sentence": {
-        "pl": "Ty wiesz, gdzie jest sklep.",
-        "en": "You know where the shop is.",
-        "gap": "Ty ___, gdzie jest sklep.",
-        "answer": "wiesz",
+        "pl": "Wiem, że dwa plus dwa to cztery!",
+        "en": "I know that two plus two is four!",
+        "gap": "___, że dwa plus dwa to cztery!",
+        "answer": "Wiem",
         "answer_lemma": "wiedzieć",
         "audio": "media/audio/wiedziec__sentence.mp3",
         "lemmas": [
-          "ty",
           "wiedzieć",
-          "gdzie",
-          "być",
-          "sklep"
+          "że",
+          "dwa",
+          "plus",
+          "to",
+          "cztery"
         ]
       },
       "cards": [

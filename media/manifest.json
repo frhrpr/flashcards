@@ -224,12 +224,12 @@
     "text": "być"
   },
   "media/audio/byc__sentence.mp3": {
-    "fingerprint": "1efbe493d5647486",
-    "gain_db": 0.3,
+    "fingerprint": "db0f1625234816a0",
+    "gain_db": 0.5,
     "model": "eleven_multilingual_v2",
-    "seconds": 1.23,
+    "seconds": 2.48,
     "source": "tts",
-    "text": "Tutaj jest sklep.",
+    "text": "Być albo nie być, oto jest pytanie.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -375,12 +375,12 @@
     "text": "chcieć"
   },
   "media/audio/chciec__sentence.mp3": {
-    "fingerprint": "f2e52f47d9fead69",
-    "gain_db": 0.8,
+    "fingerprint": "372e1d20f0941ffb",
+    "gain_db": -2.2,
     "model": "eleven_multilingual_v2",
-    "seconds": 1.07,
+    "seconds": 1.12,
     "source": "tts",
-    "text": "Teraz chcę chleb.",
+    "text": "Ona chce moje lody.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -5342,12 +5342,12 @@
     "text": "wiedzieć"
   },
   "media/audio/wiedziec__sentence.mp3": {
-    "fingerprint": "1d00435754780958",
-    "gain_db": -1.3,
+    "fingerprint": "867d24bf44b19357",
+    "gain_db": -2.2,
     "model": "eleven_multilingual_v2",
-    "seconds": 1.38,
+    "seconds": 1.65,
     "source": "tts",
-    "text": "Ty wiesz, gdzie jest sklep.",
+    "text": "Wiem, że dwa plus dwa to cztery!",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -5922,20 +5922,15 @@
     "source": "generated"
   },
   "media/img/byc.webp": {
-    "bytes": 72762,
-    "check": {
-      "model": "gemini-flash-latest",
-      "problem": "The image shows a person pointing, which suggests actions like pointing or looking rather than the verb 'to be'.",
-      "verdict": "flag",
-      "why": "does not clearly show the word; ambiguous — something else dominates"
-    },
-    "fingerprint": "a038dd172254ee84",
-    "model": "gemini-2.5-flash-image",
-    "original_size": "1024x1024",
+    "author": "supplied by user",
+    "bytes": 37448,
+    "fingerprint": "c5b3842cfed62c16",
+    "licence": "n/a",
+    "original": "to-be-or-not-to-be-meme-9-1986392386.jpg",
+    "original_size": "683x683",
     "process_version": 1,
-    "prompt": "A person standing in a doorway pointing at a small shop across the street, daylight, no readable text. Square image.",
-    "size": "800x800",
-    "source": "generated"
+    "size": "683x684",
+    "source": "supplied"
   },
   "media/img/byc_jest.webp": {
     "bytes": 141002,
@@ -6034,20 +6029,15 @@
     "source": "generated"
   },
   "media/img/chciec.webp": {
-    "bytes": 38274,
-    "check": {
-      "model": "gemini-flash-latest",
-      "problem": "",
-      "verdict": "ok",
-      "why": ""
-    },
-    "fingerprint": "e7b7483fced751e7",
-    "model": "gemini-2.5-flash-image",
-    "original_size": "1024x1024",
+    "author": "supplied by user",
+    "bytes": 54202,
+    "fingerprint": "3789ee59f2b32119",
+    "licence": "n/a",
+    "original": "i-want-ice-cream-cute-deer-wants-to-eat-ice-cream-116992766-1775410870.jpg",
+    "original_size": "674x674",
     "process_version": 1,
-    "prompt": "A person at a table reaching out towards a loaf of bread, clearly wanting it, eyes on the bread. Plain background, no text or lettering. Square image.",
-    "size": "800x800",
-    "source": "generated"
+    "size": "674x674",
+    "source": "supplied"
   },
   "media/img/chleb.webp": {
     "bytes": 86384,
@@ -9644,20 +9634,15 @@
     "source": "generated"
   },
   "media/img/wiedziec.webp": {
-    "bytes": 16540,
-    "check": {
-      "model": "gemini-flash-latest",
-      "problem": "",
-      "verdict": "ok",
-      "why": ""
-    },
-    "fingerprint": "0720bc4b11352be2",
-    "model": "gemini-2.5-flash-image",
-    "original_size": "1024x1024",
+    "author": "supplied by user",
+    "bytes": 128222,
+    "fingerprint": "9497a95e6b0d03b4",
+    "licence": "n/a",
+    "original": "2cb705ff-15c9-486b-a45b-bb478d96dac1.png",
+    "original_size": "1254x1254",
     "process_version": 1,
-    "prompt": "A person tapping one finger to their temple with a confident, knowing expression. Plain background, no text or lettering. Square image.",
     "size": "800x800",
-    "source": "generated"
+    "source": "supplied"
   },
   "media/img/wiosna.webp": {
     "bytes": 239980,

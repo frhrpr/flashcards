@@ -56,6 +56,20 @@ def load():
     return data["notes"], vocab
 
 
+def fill(gap, answer):
+    """Put the answer into every blank, capitalising one that opens the
+    sentence. Plain str.replace cannot do this: it would write Być into both
+    halves of `Być albo nie być`."""
+    parts = gap.split("___")
+    out = parts[0]
+    for seg in parts[1:]:
+        a = answer
+        if not out:                       # this blank starts the sentence
+            a = a[:1].upper() + a[1:]
+        out += a + seg
+    return out
+
+
 def check_sentence(nid, s, word, vocab, kind=None):
     for field in ("pl", "en", "gap", "answer", "answer_lemma"):
         if not s.get(field):
@@ -63,11 +77,20 @@ def check_sentence(nid, s, word, vocab, kind=None):
             return
     if "___" not in s["gap"]:
         err(nid, "sentence.gap has no ___ placeholder")
-    if s["gap"].count("___") > 1:
-        err(nid, "sentence.gap has more than one ___")
-    # The gap filled with the answer must reproduce the sentence exactly,
-    # or the student is shown one string and graded against another.
-    if s["gap"].replace("___", s["answer"]) != s["pl"]:
+    # More than one blank is allowed, but only when every blank takes the same
+    # word — `Być albo nie być` gaps both. Reconstruction is what enforces
+    # that: every ___ is filled with the one answer, so two blanks needing
+    # different words cannot rebuild the sentence and fail here instead.
+    #
+    # A blank that opens the sentence takes the sentence's capital. That is
+    # the same position-not-lexis argument that removed the sentence-initial
+    # warning below: the capital is a property of where the word sits, not of
+    # the word, and he writes the same thing either way. Without it the
+    # Hamlet line cannot be gapped in its own order, since Być and być differ
+    # only by that capital.
+    # The gap filled with the answer must reproduce the sentence exactly, or
+    # the student is shown one string and graded against another.
+    if fill(s["gap"], s["answer"]) != s["pl"]:
         err(nid, "sentence.gap + answer does not reconstruct sentence.pl")
     # A sentence-initial gap used to warn here, on the theory that the answer's
     # capital is ambiguous. It is not worth a warning: the blank hides the
