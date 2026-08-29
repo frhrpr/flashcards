@@ -730,6 +730,17 @@ Deferred on purpose: 4 grades instead of 2, and a stats screen.
   An unmapped token is an error rather than a warning, because a token nobody
   classified is a word nobody checked.
 
+- **`review.py --approve` refuses a note that changed after the page was
+  built.** Approving asserts a human looked at it; if the sentence or a clip
+  was replaced since the page was written, nobody has looked at the version
+  being approved. That is not hypothetical — three sentences and their audio
+  were rewritten and approved in one step on 2026-08-28, and those clips had
+  never appeared on any page. Rebuild, look, then approve. `--force` exists
+  and should be explained when used.
+
+  Note it cannot check that anyone *listened* — nothing can. It checks only
+  that what is being approved is what the page last showed.
+
 - **The user spot-checks the Polish.** Generated sentences go to a real
   student, so build a review step rather than trusting generation. He caught
   `Czy mogę mieć wodę?` as a calque — Polish uses `mieć` to possess, never to

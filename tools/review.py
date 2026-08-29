@@ -12,7 +12,7 @@ tools/audio.py clears the flag again whenever a clip changes.
 The page is written somewhere Windows can open it, because the repo lives in
 WSL and Explorer cannot reach WSL paths without the \\\\wsl$ prefix.
 """
-import argparse, hashlib, json, shutil, sys
+import argparse, hashlib, hashlib, json, shutil, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -44,6 +44,42 @@ def source_label(manifest, rel):
         why = " · no human recording" if m.get("why") else ""
         return f"synthetic · {esc(m.get('model', '?'))}{lang}{why}"
     return '<span class="bad">no manifest entry</span>'
+
+
+STATE = "review-state.json"
+
+
+def shown_hash(n, manifest):
+    """What a person would actually look at on the page: the words, and the
+    identity of each media file. Two notes with the same text but a different
+    recording must not hash alike, so the manifest fingerprints go in."""
+    s = n.get("sentence") or {}
+    parts = [n.get("word", ""), n.get("gloss", ""), n.get("note") or "",
+             s.get("pl", ""), s.get("en", ""), s.get("gap", ""),
+             s.get("answer", "")]
+    for rel in (n.get("image"), n.get("audio"), s.get("audio")):
+        parts.append(rel or "")
+        parts.append((manifest.get(rel) or {}).get("fingerprint", ""))
+    return hashlib.sha256("\x00".join(parts).encode("utf-8")).hexdigest()[:16]
+
+
+def stale(notes, manifest, dest, ids):
+    """Which of `ids` differ from what the page last showed. Approving is an
+    assertion that a human looked at this note; if it changed after the page
+    was written, nobody looked at what is being approved. That happened: a
+    sentence and its audio were both replaced and approved in one step, and
+    the new clip had never appeared on any page."""
+    path = dest / STATE
+    if not path.exists():
+        return sorted(ids), "no review page has been built"
+    try:
+        was = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return sorted(ids), f"{STATE} is not readable"
+    by = {n["id"]: n for n in notes}
+    bad = [i for i in ids
+           if i in by and was.get(i) != shown_hash(by[i], manifest)]
+    return sorted(bad), "changed since the page was built"
 
 
 def build(notes, manifest, dest):
@@ -154,6 +190,9 @@ color:var(--dim)}}</style>
 anything you do not flag gets approved. Approved notes are dimmed and sink to the bottom.</div>
 {cards}'''
     (dest / "review.html").write_text(html, encoding="utf-8")
+    (dest / STATE).write_text(
+        json.dumps({n["id"]: shown_hash(n, manifest) for n in notes},
+                   ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     return copied, pending
 
 
@@ -162,6 +201,9 @@ def main():
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--approve", default="", help="comma-separated note ids")
     ap.add_argument("--approve-all", action="store_true")
+    ap.add_argument("--force", action="store_true",
+                    help="approve even though the page never showed "
+                         "this version — say why in the commit")
     args = ap.parse_args()
 
     deck = json.loads(NOTES_PATH.read_text(encoding="utf-8"))
@@ -179,6 +221,14 @@ def main():
         if blocked:
             sys.exit("review: these have missing audio and cannot be approved: "
                      + ", ".join(blocked))
+        drifted, why = stale(notes, manifest, out_dir(), ids)
+        if drifted and not args.force:
+            sys.exit(
+                f"review: {', '.join(drifted)} — {why}.\n"
+                f"Approving says a human looked at this note, and nobody has "
+                f"looked at this version of it.\n"
+                f"Run tools/review.py with no arguments, look at the page, "
+                f"then approve. --force overrides.")
         for n in notes:
             if n["id"] in ids:
                 n["reviewed"] = True
