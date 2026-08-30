@@ -7359,7 +7359,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "zab",
@@ -9043,6 +9044,175 @@
         "listening"
       ],
       "reviewed": true
+    },
+    {
+      "id": "codziennie",
+      "word": "codziennie",
+      "gloss": "every day",
+      "pos": "adverb",
+      "ipa": "t͡sɔˈd͡ʑɛɲːɛ",
+      "note": "built on dzień — this is the habit, and it is what chodzić wants",
+      "image": "media/img/codziennie.webp",
+      "image_alt": "every day",
+      "image_basis": "sentence",
+      "image_prompt": "A man in a coat with a shoulder bag walking away down an ordinary pavement on a grey morning, seen from behind. No text or lettering. Square image.",
+      "audio": "media/audio/codziennie.mp3",
+      "sentence": {
+        "pl": "Codziennie chodzę do pracy.",
+        "en": "I go to work every day.",
+        "gap": "___ chodzę do pracy.",
+        "answer": "Codziennie",
+        "answer_lemma": "codziennie",
+        "audio": "media/audio/codziennie__sentence.mp3",
+        "lemmas": [
+          "codziennie",
+          "chodzić",
+          "do",
+          "praca"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "czesto",
+      "word": "często",
+      "gloss": "often",
+      "pos": "adverb",
+      "ipa": "ˈt͡ʂɛw̃stɔ",
+      "note": null,
+      "image": "media/img/czesto.webp",
+      "image_alt": "often",
+      "image_basis": "sentence",
+      "image_prompt": "A fishmonger's counter piled with fresh fish on crushed ice, a customer reaching towards it. No text or lettering. Square image.",
+      "audio": "media/audio/czesto.mp3",
+      "sentence": {
+        "pl": "Często kupuję ryby.",
+        "en": "I often buy fish.",
+        "gap": "___ kupuję ryby.",
+        "answer": "Często",
+        "answer_lemma": "często",
+        "audio": "media/audio/czesto__sentence.mp3",
+        "lemmas": [
+          "często",
+          "kupować",
+          "ryba"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "czasami",
+      "word": "czasami",
+      "gloss": "sometimes",
+      "pos": "adverb",
+      "ipa": "t͡ʂaˈsami",
+      "note": null,
+      "image": "media/img/czasami.webp",
+      "image_alt": "sometimes",
+      "image_basis": "sentence",
+      "image_prompt": "A house at dusk with one warm lit window, seen from the garden path. No text or lettering. Square image.",
+      "audio": "media/audio/czasami.mp3",
+      "sentence": {
+        "pl": "Czasami wracam do domu wieczorem.",
+        "en": "Sometimes I come home in the evening.",
+        "gap": "___ wracam do domu wieczorem.",
+        "answer": "Czasami",
+        "answer_lemma": "czasami",
+        "audio": "media/audio/czasami__sentence.mp3",
+        "lemmas": [
+          "czasami",
+          "wracać",
+          "do",
+          "dom",
+          "wieczór"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "zwykle",
+      "word": "zwykle",
+      "gloss": "usually",
+      "pos": "adverb",
+      "ipa": "ˈzvɨklɛ",
+      "note": null,
+      "image": "media/img/zwykle.webp",
+      "image_alt": "usually",
+      "image_basis": "sentence",
+      "image_prompt": "A hand holding a glass under a running kitchen tap, the glass half full. No text or lettering. Square image.",
+      "audio": "media/audio/zwykle.mp3",
+      "sentence": {
+        "pl": "Zwykle piję wodę.",
+        "en": "I usually drink water.",
+        "gap": "___ piję wodę.",
+        "answer": "Zwykle",
+        "answer_lemma": "zwykle",
+        "audio": "media/audio/zwykle__sentence.mp3",
+        "lemmas": [
+          "zwykle",
+          "pić",
+          "woda"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "nigdy",
+      "word": "nigdy",
+      "gloss": "never",
+      "pos": "adverb",
+      "ipa": "ˈɲiɡdɨ",
+      "note": "Polish doubles the negative: this always wants nie with it",
+      "image": "media/img/nigdy.webp",
+      "image_alt": "never",
+      "image_basis": "sentence",
+      "image_prompt": "A bowl of porridge pushed away across a wooden table, a person leaning back from it with a hand raised. No text or lettering. Square image.",
+      "audio": "media/audio/nigdy.mp3",
+      "sentence": {
+        "pl": "Nigdy nie jem kaszy.",
+        "en": "I never eat kasha.",
+        "gap": "___ nie jem kaszy.",
+        "answer": "Nigdy",
+        "answer_lemma": "nigdy",
+        "audio": "media/audio/nigdy__sentence.mp3",
+        "lemmas": [
+          "nigdy",
+          "nie",
+          "jeść",
+          "kasza"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
     }
   ]
 }

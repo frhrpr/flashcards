@@ -489,6 +489,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/codziennie.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-codziennie.ogg",
+    "fingerprint": "363eb2b6790ce90e",
+    "gain_db": -1.6,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-codziennie.ogg",
+    "seconds": 1.41,
+    "source": "commons",
+    "text": "codziennie"
+  },
+  "media/audio/codziennie__sentence.mp3": {
+    "fingerprint": "4dded26aeae2d2f6",
+    "gain_db": -1.5,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.41,
+    "source": "tts",
+    "text": "Codziennie chodzę do pracy.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/cos.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-coś.ogg",
@@ -594,6 +615,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/czasami.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-czasami.ogg",
+    "fingerprint": "f121f3b328ba08ff",
+    "gain_db": 0.1,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-czasami.ogg",
+    "seconds": 1.41,
+    "source": "commons",
+    "text": "czasami"
+  },
+  "media/audio/czasami__sentence.mp3": {
+    "fingerprint": "58644a65e2d763d8",
+    "gain_db": -0.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.96,
+    "source": "tts",
+    "text": "Czasami wracam do domu wieczorem.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/czekac.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-czekać.ogg",
@@ -654,6 +696,27 @@
     "seconds": 1.33,
     "source": "tts",
     "text": "Ty mówisz cześć.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/czesto.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-często.ogg",
+    "fingerprint": "abccb6537e759ceb",
+    "gain_db": 0.2,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-cz%C4%99sto.ogg",
+    "seconds": 1.31,
+    "source": "commons",
+    "text": "często"
+  },
+  "media/audio/czesto__sentence.mp3": {
+    "fingerprint": "8ac07f804328f75e",
+    "gain_db": 0.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.2,
+    "source": "tts",
+    "text": "Często kupuję ryby.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -2908,6 +2971,27 @@
     "seconds": 0.99,
     "source": "tts",
     "text": "W niedzielę śpię.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/nigdy.mp3": {
+    "author": "Wyksztalcioch",
+    "commons_file": "Pl-nigdy.ogg",
+    "fingerprint": "bb304a8c020667b3",
+    "gain_db": 7.2,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-nigdy.ogg",
+    "seconds": 0.68,
+    "source": "commons",
+    "text": "nigdy"
+  },
+  "media/audio/nigdy__sentence.mp3": {
+    "fingerprint": "384f59516bd15828",
+    "gain_db": -1.8,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.25,
+    "source": "tts",
+    "text": "Nigdy nie jem kaszy.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -5793,6 +5877,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/zwykle.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-zwykle.ogg",
+    "fingerprint": "c355368a5f78e57d",
+    "gain_db": -1.0,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-zwykle.ogg",
+    "seconds": 0.81,
+    "source": "commons",
+    "text": "zwykle"
+  },
+  "media/audio/zwykle__sentence.mp3": {
+    "fingerprint": "028fc14bee42b526",
+    "gain_db": 0.2,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.44,
+    "source": "tts",
+    "text": "Zwykle piję wodę.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/img/apteka.webp": {
     "bytes": 119090,
     "check": {
@@ -6119,6 +6224,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/codziennie.webp": {
+    "bytes": 138150,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "5d668f1547617f6b",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A man in a coat with a shoulder bag walking away down an ordinary pavement on a grey morning, seen from behind. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/cos.webp": {
     "bytes": 42404,
     "check": {
@@ -6199,6 +6320,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/czasami.webp": {
+    "bytes": 53616,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "The abstract adverb 'sometimes' is not depicted or clearly implied by a static image of a house in the evening.",
+      "verdict": "flag",
+      "why": "does not clearly show the word"
+    },
+    "fingerprint": "5cc3450f6a359622",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A house at dusk with one warm lit window, seen from the garden path. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/czekac.webp": {
     "bytes": 159590,
     "check": {
@@ -6244,6 +6381,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "Two people greeting each other with a friendly wave, both smiling, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/czesto.webp": {
+    "bytes": 106204,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "The image illustrates buying fish, but does not depict or imply the concept of frequency or 'often'.",
+      "verdict": "flag",
+      "why": "does not clearly show the word"
+    },
+    "fingerprint": "b591eac18ebd7e41",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A fishmonger's counter piled with fresh fish on crushed ice, a customer reaching towards it. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -7885,6 +8038,22 @@
     "process_version": 1,
     "size": "357x376",
     "source": "supplied"
+  },
+  "media/img/nigdy.webp": {
+    "bytes": 41760,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "641c49c5c0d7866a",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A bowl of porridge pushed away across a wooden table, a person leaning back from it with a hand raised. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
   },
   "media/img/noc.webp": {
     "bytes": 64700,
@@ -9952,6 +10121,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A deep bowl of thick vegetable soup on a table with a spoon resting beside it. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/zwykle.webp": {
+    "bytes": 37266,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "The image shows pouring water, which does not clearly depict or imply the frequency concept of 'usually'.",
+      "verdict": "flag",
+      "why": "does not clearly show the word"
+    },
+    "fingerprint": "d4486f4bc773a55b",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A hand holding a glass under a running kitchen tap, the glass half full. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   }

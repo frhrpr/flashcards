@@ -22,14 +22,17 @@ do not edit by hand.
 | `media/audio/chodzic.mp3` | [Pl-chodzić.ogg](https://commons.wikimedia.org/wiki/File:Pl-chodzi%C4%87.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/ciasto.mp3` | [Pl-ciasto.ogg](https://commons.wikimedia.org/wiki/File:Pl-ciasto.ogg) | Frizabela | CC BY 2.5 | commons |
 | `media/audio/cieply.mp3` | [Pl-ciepły.ogg](https://commons.wikimedia.org/wiki/File:Pl-ciep%C5%82y.ogg) | Derbeth | CC BY 3.0 | commons |
+| `media/audio/codziennie.mp3` | [Pl-codziennie.ogg](https://commons.wikimedia.org/wiki/File:Pl-codziennie.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/cos.mp3` | [Pl-coś.ogg](https://commons.wikimedia.org/wiki/File:Pl-co%C5%9B.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/cukier.mp3` | [Pl-cukier.ogg](https://commons.wikimedia.org/wiki/File:Pl-cukier.ogg) | Frizabela | CC BY 2.5 | commons |
 | `media/audio/czapka.mp3` | [Pl-czapka.ogg](https://commons.wikimedia.org/wiki/File:Pl-czapka.ogg) | Rogra | CC BY 2.5 | commons |
 | `media/audio/czarny.mp3` | [Pl-czarny.ogg](https://commons.wikimedia.org/wiki/File:Pl-czarny.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/czas.mp3` | [Pl-czas.ogg](https://commons.wikimedia.org/wiki/File:Pl-czas.ogg) | user Equadus (inactive global account) | CC BY 2.5 | commons |
+| `media/audio/czasami.mp3` | [Pl-czasami.ogg](https://commons.wikimedia.org/wiki/File:Pl-czasami.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/czekac.mp3` | [Pl-czekać.ogg](https://commons.wikimedia.org/wiki/File:Pl-czeka%C4%87.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/czerwony.mp3` | [Pl-czerwony.ogg](https://commons.wikimedia.org/wiki/File:Pl-czerwony.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/czesc.mp3` | [Pl-cześć.ogg](https://commons.wikimedia.org/wiki/File:Pl-cze%C5%9B%C4%87.ogg) | Tomasz "odder" Kozlowski | CC BY-SA 2.5 | commons |
+| `media/audio/czesto.mp3` | [Pl-często.ogg](https://commons.wikimedia.org/wiki/File:Pl-cz%C4%99sto.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/czlowiek.mp3` | [Pl-człowiek.ogg](https://commons.wikimedia.org/wiki/File:Pl-cz%C5%82owiek.ogg) | Tsca | Public domain | commons |
 | `media/audio/cztery.mp3` | [Pl-cztery.ogg](https://commons.wikimedia.org/wiki/File:Pl-cztery.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/czuc.mp3` | [Pl-czuć.ogg](https://commons.wikimedia.org/wiki/File:Pl-czu%C4%87.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
@@ -129,6 +132,7 @@ do not edit by hand.
 | `media/audio/nie.mp3` | [Pl-nie.ogg](https://commons.wikimedia.org/wiki/File:Pl-nie.ogg) | Tomasz "odder" Kozlowski | CC BY-SA 2.5 | commons |
 | `media/audio/niebieski.mp3` | [Pl-niebieski.ogg](https://commons.wikimedia.org/wiki/File:Pl-niebieski.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/niedziela.mp3` | [Pl-niedziela.ogg](https://commons.wikimedia.org/wiki/File:Pl-niedziela.ogg) | Derbeth | CC BY 2.5 | commons |
+| `media/audio/nigdy.mp3` | [Pl-nigdy.ogg](https://commons.wikimedia.org/wiki/File:Pl-nigdy.ogg) | Wyksztalcioch | Public domain | commons |
 | `media/audio/noc.mp3` | [Pl-noc.ogg](https://commons.wikimedia.org/wiki/File:Pl-noc.ogg) | user Equadus (inactive global account) | CC BY 2.5 | commons |
 | `media/audio/noga.mp3` | [Pl-noga.ogg](https://commons.wikimedia.org/wiki/File:Pl-noga.ogg) | Halibutt | CC BY-SA 3.0 | commons |
 | `media/audio/nosic.mp3` | [Pl-nosić.ogg](https://commons.wikimedia.org/wiki/File:Pl-nosi%C4%87.ogg) | user Equadus (inactive global account) | CC BY 2.5 | commons |
@@ -262,4 +266,5 @@ do not edit by hand.
 | `media/audio/zona.mp3` | [Pl-żona.ogg](https://commons.wikimedia.org/wiki/File:Pl-%C5%BCona.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/zostac.mp3` | [Pl-zostać.ogg](https://commons.wikimedia.org/wiki/File:Pl-zosta%C4%87.ogg) | user Equadus (inactive global account) | CC BY 2.5 | commons |
 | `media/audio/zupa.mp3` | [Pl-zupa.ogg](https://commons.wikimedia.org/wiki/File:Pl-zupa.ogg) | Derbeth | CC BY 3.0 | commons |
+| `media/audio/zwykle.mp3` | [Pl-zwykle.ogg](https://commons.wikimedia.org/wiki/File:Pl-zwykle.ogg) | user Equadus (inactive global account) | CC BY 2.5 | commons |
 | `media/img/zawsze.webp` | [Krakow rynek 01.jpg](https://commons.wikimedia.org/wiki/File:Krakow_rynek_01.jpg) | Pko | CC BY 2.5 | commons |
