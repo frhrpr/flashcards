@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>ś of sz — aan het eind van het woord</title>
+<style>
+:root{
+  --bg:#15171a; --card:#1d2024; --ink:#e6e8e6; --dim:#9aa0a6; --faint:#767c82;
+  --line:#2e3339; --ok:#7cc088; --bad:#e8796b; --hi:#e8c07c;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{
+  font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink);
+  display:flex;flex-direction:column;align-items:center;
+  padding:1rem 1rem calc(1rem + env(safe-area-inset-bottom));line-height:1.5;
+}
+main{width:100%;max-width:26rem;flex:1;display:flex;flex-direction:column}
+h1{font-size:1rem;font-weight:400;margin:0;color:var(--dim)}
+.sub{font-size:.78rem;color:var(--faint);margin-bottom:1.2rem}
+.tally{font-family:ui-monospace,monospace;font-size:.72rem;color:var(--dim);
+  display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:1.4rem}
+.tally b{font-weight:400;color:var(--ink)}
+.stage{flex:1;display:flex;flex-direction:column;justify-content:center;gap:.9rem}
+button{font:inherit;color:inherit;background:var(--card);border:1px solid var(--line);
+  border-radius:.6rem;padding:1.1rem;cursor:pointer;-webkit-tap-highlight-color:transparent}
+button:active{background:#242830}
+.big{font-size:1.6rem;font-weight:300;letter-spacing:.02em}
+.play{font-size:1.1rem;padding:1.4rem;color:var(--hi)}
+.choices{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
+.choices button.ok{border-color:var(--ok);color:var(--ok)}
+.choices button.no{border-color:var(--bad);color:var(--bad)}
+.verdict{min-height:1.6rem;text-align:center;font-size:.95rem}
+.verdict.ok{color:var(--ok)} .verdict.no{color:var(--bad)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
+.row button{padding:.7rem;font-size:.95rem;color:var(--dim)}
+.next{background:transparent;border-color:var(--hi);color:var(--hi)}
+.tip{font-size:.8rem;color:var(--faint);border-top:1px solid var(--line);
+  padding-top:.9rem;margin-top:1.4rem}
+.tip b{color:var(--dim);font-weight:400}
+.err{color:var(--bad);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+  <h1>ś of sz — aan het eind van het woord</h1>
+  <div class="sub">Je moeilijkste geval: geen klinker erna om je te helpen.</div>
+  <div class="tally" id="tally"></div>
+
+  <div class="stage" id="stage">
+    <button class="play" id="play">▶ luister</button>
+    <div class="choices" id="choices"></div>
+    <div class="verdict" id="verdict"></div>
+    <div class="row" id="after" hidden>
+      <button id="both">hoor beide</button>
+      <button class="next" id="next">volgende →</button>
+    </div>
+  </div>
+
+  <div class="tip">
+    <b>ś</b> — tongpunt omlaag, lippen normaal. Dun en hoog.<br>
+    <b>sz</b> — tongpunt omhoog en naar achter, lippen naar voren. Donker en hol.<br>
+    Niets wordt opgeslagen. Zo vaak als je wilt.
+  </div>
+</main>
+
+<script>
+/* A drill, not a trainer. It shares the ear trainer's clips and nothing else:
+   no Firestore, no state, no writes. That is deliberate — this exists to be
+   opened at home as often as he likes, and anything it recorded would either
+   pollute the real ear stats or invite him to treat it as homework.
+
+   Restricted to the three word-final ś~sz pairs because that is where the
+   errors actually are: 17 of 19 sibilant misses are sz↔ś, and koś/kosz and
+   paś/pasz are his two worst pairs of all. The trainer samples across 24
+   pairs, so these get a fraction of the volume they need. */
+const PAIRS = [
+  { a: "koś",  b: "kosz",  ka: "kos-acute",  kb: "kosz"  },
+  { a: "paś",  b: "pasz",  ka: "pas-acute",  kb: "pasz"  },
+  { a: "wieś", b: "wiesz", ka: "wies-acute", kb: "wiesz" },
+];
+
+const $ = s => document.querySelector(s);
+const stage = $("#stage");
+
+/* One element per file, reused. Creating a fresh Audio per play exhausts the
+   browser's media pool after a few dozen and playback dies silently until the
+   page is reloaded — the ear trainer caches for this reason and vocab does
+   not. A drill is all replays, so it would hit that wall fastest of all. */
+const cache = new Map();
+function sound(f){
+  let a = cache.get(f);
+  if (!a) { a = new Audio(f); a.preload = "auto"; cache.set(f, a); }
+  return a;
+}
+function play(f){
+  const a = sound(f);
+  try { a.pause(); a.currentTime = 0; } catch (e) {}
+  return a.play().catch(() => {});
+}
+
+const pick = xs => xs[Math.floor(Math.random() * xs.length)];
+let WORDS = {}, trial = null, seen = 0, right = 0;
+const per = new Map();                       // pair label -> [right, seen]
+
+function tally(){
+  const pct = seen ? Math.round(100 * right / seen) : 0;
+  const bits = [`<span><b>${right}</b>/${seen}${seen ? ` &middot; ${pct}%` : ""}</span>`];
+  for (const p of PAIRS) {
+    const [r, s] = per.get(p.a) || [0, 0];
+    if (s) bits.push(`<span>${p.a}/${p.b} <b>${r}/${s}</b></span>`);
+  }
+  $("#tally").innerHTML = bits.join("");
+}
+
+function nextTrial(){
+  const p = pick(PAIRS);
+  const playedA = Math.random() < 0.5;
+  const key = playedA ? p.ka : p.kb;
+  const clips = WORDS[key] || [];
+  if (!clips.length) { stage.innerHTML = `<div class=err>Geen geluid voor ${key}.</div>`; return; }
+  trial = { p, playedA, word: playedA ? p.a : p.b, file: pick(clips).f };
+
+  $("#verdict").textContent = ""; $("#verdict").className = "verdict";
+  $("#after").hidden = true;
+  const c = $("#choices"); c.innerHTML = "";
+  /* Sides swap at random, so the answer is never a position he can learn. */
+  for (const w of (Math.random() < 0.5 ? [p.a, p.b] : [p.b, p.a])) {
+    const btn = document.createElement("button");
+    btn.className = "big"; btn.textContent = w;
+    btn.addEventListener("click", () => answer(w, btn));
+    c.appendChild(btn);
+  }
+  play(trial.file);
+}
+
+function answer(w, btn){
+  if (!trial || $("#after").hidden === false) return;   // already answered
+  const ok = w === trial.word;
+  seen++; if (ok) right++;
+  const [r, s] = per.get(trial.p.a) || [0, 0];
+  per.set(trial.p.a, [r + (ok ? 1 : 0), s + 1]);
+  btn.classList.add(ok ? "ok" : "no");
+  const v = $("#verdict");
+  v.textContent = ok ? `ja — ${trial.word}` : `nee — het was ${trial.word}`;
+  v.className = "verdict " + (ok ? "ok" : "no");
+  $("#after").hidden = false;
+  tally();
+}
+
+$("#play").addEventListener("click", () => trial && play(trial.file));
+$("#next").addEventListener("click", nextTrial);
+$("#both").addEventListener("click", async () => {
+  const p = trial.p;
+  for (const k of [p.ka, p.kb]) {
+    const clips = WORDS[k] || [];
+    if (!clips.length) continue;
+    await play(pick(clips).f);
+    await new Promise(r => setTimeout(r, 900));
+  }
+});
+
+(async () => {
+  try {
+    const res = await fetch("ear/manifest.json", { cache: "no-cache" });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    WORDS = (await res.json()).words || {};
+  } catch (e) {
+    stage.innerHTML = `<div class=err>Kon het geluid niet laden (${e.message}).<br>
+      Open deze pagina via de gewone link, niet als bestand.</div>`;
+    return;
+  }
+  tally();
+  nextTrial();
+})();
+</script>
+</body>
+</html>
