@@ -96,6 +96,8 @@ button{font-family:inherit;cursor:pointer;border-radius:4px}
   border:0;color:var(--dim);font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;
   text-align:center;text-decoration:underline;text-underline-offset:3px}
 .lighter:hover{color:var(--ink)}
+/* The drill is an <a>, not a <button>, so it needs the type reset too. */
+.lighter.drill{text-decoration:none;text-align:center;margin-top:.6rem}
 
 
 /* ── the sibilant hint sheet ──────────────────────────────────────── */
@@ -536,6 +538,7 @@ try {
   earStates = docExists ? (snap.data().ear || {}) : {};
   doneDays  = docExists ? (snap.data().done || {}) : {};
   hintOpens = docExists ? (snap.data().hints || {}) : {};
+  extraRuns = docExists ? (snap.data().extra || {}) : {};
 } catch (e) {
   showError("Couldn't reach Firestore.\n\n" + e.message +
     "\n\nCheck: the config is correct, Firestore is enabled, and the\n" +
@@ -679,6 +682,24 @@ function bankOrder(cards){
 function introducible(k){
   return (NOTES[noteOf(k)] || {}).reviewed === true;
 }
+/* New cards used to be appended, so every one of them arrived at the end of
+   the session: the most effortful cards landing when he is most tired, and
+   the gapped production cards clustering worst of all, since they unlock
+   later than recognition and so are the ones most often still new. Spread
+   them through the reviews instead, after a short warm-up.
+
+   Due cards keep their own order — due date dominates, ties broken by the
+   day's shuffle — this only decides where the new ones are dropped in. */
+const WARMUP_REVIEWS = 3;
+function interleave(due, neu){
+  if (!neu.length || !due.length) return [...due, ...neu];
+  const out = [...due];
+  const start = Math.min(WARMUP_REVIEWS, out.length);
+  const step = (out.length - start) / neu.length;
+  // +i because each splice shifts every later position along by one.
+  neu.forEach((k, i) => out.splice(Math.round(start + step * i) + i, 0, k));
+  return out;
+}
 /* ── end of bank order ─────────────────────────────────────────────── */
 
 const freshSeen = new Set();
@@ -706,7 +727,7 @@ for (const k of bankOrder(shuffle([...allCards]))) {
 
 const dueCards = shuffle(allCards.filter(k => cardStates[k] && cardStates[k].due <= t))
   .sort((a, b) => cardStates[a].due - cardStates[b].due);
-let queue = [...dueCards, ...fresh];
+let queue = interleave(dueCards, fresh);
 /* A "just reviews" session drops the new cards. Skipping them creates no
    debt: the daily budget is counted from `introduced` stamps, so tomorrow
    is three again rather than six. A tired day must not buy a punishing one. */
@@ -724,6 +745,7 @@ let revealed = false;
 async function firstWrite(){
   await write.set(docRef, {
     cards: cardStates, ear: earStates, done: doneDays, hints: hintOpens,
+    extra: extraRuns,
     log: reviewLog, logBytes: logBytes(), updated: Date.now()
   });
   docExists = true;
@@ -799,6 +821,25 @@ function renderWarning(){
 const barEl = $("#bar");
 let sessionDone = 0;
 
+/* Extra study. He asked for a way to do more on a day he feels like it,
+   without it becoming a second obligation, so it appears only once the day is
+   already finished and it is never offered as something outstanding.
+
+   New cards save; practice reviews do not. The asymmetry is the whole design:
+   introducing a word is real progress and should stick, but grading a card
+   days before it is due corrupts the interval — a "Good" answered early was
+   measured at the wrong point and the scheduler cannot tell. Ear training has
+   no such problem, which is why an extra ear block would count normally.
+
+   `extraSaves` is fixed when the session opens rather than tested per grade,
+   so a card cannot start as practice and become savable by being answered
+   twice. */
+let extraMode = false;
+let extraSaves = new Set();
+let extraRuns = {};
+const EXTRA_NEW = 3;
+const EXTRA_PRACTICE = 12;
+
 function midnight(ms){ const d = new Date(ms); d.setHours(0,0,0,0); return d.getTime(); }
 
 /* Everything the two summary screens show, derived from state rather than
@@ -846,7 +887,7 @@ function renderDone(){
   barEl.className = "";
   renderWarning();
   const st = stats();
-  if (sessionDone) markDone(vocabLight ? "vocab-light" : "vocab");
+  if (sessionDone && !extraMode) markDone(vocabLight ? "vocab-light" : "vocab");
   const earLeft = earPending();
   // Vocab-only: an ear trial is not a card reviewed, and this screen is
   // reporting on the session he has just finished.
@@ -867,8 +908,11 @@ function renderDone(){
   appEl.innerHTML = `
     <div class="stats done">
       <p class="done-h">${!sessionDone ? "Nothing due right now"
+        : extraMode ? "Extra practice done"
         : earLeft ? "That's vocab done for today" : "That's everything for today"}</p>
-      ${sessionDone ? `<p class="done-sub">Nice work.</p>` : ""}
+      ${sessionDone ? `<p class="done-sub">${extraMode
+        ? "The new words are saved. The practice was just practice."
+        : "Nice work."}</p>` : ""}
       <p class="done-cta">${esc(back)}</p>
       ${today.length ? `
       <dl class="rows small">
@@ -883,11 +927,16 @@ function renderDone(){
     </div>
     ${earLeft
       ? `<button class="reveal" id="cross">Ear training · about ${earMins(earLeft)}</button>`
-      : `<button class="reveal alt" id="home">Back</button>`}`;
+      : `<button class="reveal alt" id="home">Back</button>`}
+    ${(!earLeft && !extraMode && extraAvailable())
+      ? `<button class="lighter" id="go-extra">Feel like more? ` +
+        `${EXTRA_NEW} new words and some practice</button>` : ""}`;
   const cross = $("#cross");
   if (cross) cross.addEventListener("click", startEar);
   const home = $("#home");
   if (home) home.addEventListener("click", renderLanding);
+  const gx = $("#go-extra");
+  if (gx) gx.addEventListener("click", startExtra);
 }
 
 /* ── rendering ──────────────────────────────────────────────────────
@@ -922,9 +971,45 @@ function playBtn(src, label, extra){
   return `<button class="play${extra ? " " + extra : ""}" id="${id}" ` +
          `aria-label="${esc(label)}">▶</button>`;
 }
+/* One Audio element per file, reused, and a bounded number of them.
+
+   A fresh `new Audio(src)` per play exhausts the browser's media pool after a
+   few dozen — WebKit is the strict one — and from then on playback fails
+   silently while already-created elements carry on working. That is exactly
+   the fault reported on 2026-08-30: sound fine at the start of a session,
+   dead halfway through, fixed by reloading the page, which is the one thing
+   that destroys every element. A 45-card session was creating well over a
+   hundred, and autoPlay swallowed the resulting error so nothing said so.
+
+   The ear trainer has always cached (earCache) and was never affected; vocab
+   did not, and vocab is where it broke. */
+const AUDIO_CACHE_MAX = 60;
+const audioCache = new Map();
+function sound(src){
+  let a = audioCache.get(src);
+  if (a) return a;
+  a = new Audio();
+  a.preload = "auto";
+  a.src = src;
+  audioCache.set(src, a);
+  // Map keeps insertion order, so the oldest entries are the first out.
+  for (const k of audioCache.keys()) {
+    if (audioCache.size <= AUDIO_CACHE_MAX) break;
+    const old = audioCache.get(k);
+    try { old.pause(); old.removeAttribute("src"); old.load(); } catch (e) {}
+    audioCache.delete(k);
+  }
+  return a;
+}
+function playSound(src){
+  if (!src) return Promise.resolve();
+  const a = sound(src);
+  try { a.pause(); a.currentTime = 0; } catch (e) {}
+  return a.play();
+}
 function autoPlay(src){
   if (!src) return;
-  new Audio(src).play().catch(() => {});   // blocked is fine, button remains
+  playSound(src).catch(() => {});   // blocked is fine, button remains
 }
 
 /* Media for the cards just behind this one. Without it every card fetches
@@ -939,9 +1024,7 @@ function preload(url){
   if (!url || preloaded.has(url)) return;
   preloaded.add(url);
   if (/\.(webp|png|jpe?g|gif)$/i.test(url)) { new Image().src = url; return; }
-  const a = new Audio();
-  a.preload = "auto";
-  a.src = url;
+  sound(url);          // same element the player will use, not a second one
 }
 function preloadAhead(){
   for (const key of queue.slice(0, PRELOAD_AHEAD + 1)) {
@@ -956,7 +1039,7 @@ function preloadAhead(){
 function wireAudio(){
   for (const { id, src } of audioBtns.splice(0)) {
     const el = $("#" + id);
-    if (el) el.addEventListener("click", () => new Audio(src).play().catch(e => {
+    if (el) el.addEventListener("click", () => playSound(src).catch(e => {
       // A rejection with no user gesture is routine; anything else is not.
       if (e.name !== "NotAllowedError") {
         writeError = new Error(`audio failed: ${src}`);
@@ -1109,9 +1192,15 @@ function grade(g){
   cardStates[key] = next;
 
   sessionDone++;
-  const entry = { card: key, grade: g, ts: Date.now() };
-  reviewLog.push(entry);
-  queueWrite(key, next, entry);
+  /* A practice review is not a review. It must not reach the log either:
+     progress.py buckets the log by grade for the streak, the day counts and
+     the accuracy, so a card answered out of turn would corrupt all three —
+     the same reason hint opens are counted in their own field. */
+  if (!extraMode || extraSaves.has(key)) {
+    const entry = { card: key, grade: g, ts: Date.now() };
+    reviewLog.push(entry);
+    queueWrite(key, next, entry);
+  }
 
   /* Bury siblings. A note's other cards test the same word from another
      angle, and having just seen the answer he would pass them on recall of
@@ -1573,9 +1662,61 @@ function addHintBtn(){
 
 function startVocab(light){
   vocabLight = !!light;
-  queue = light ? [...dueCards] : [...dueCards, ...fresh];
+  queue = light ? [...dueCards] : interleave(dueCards, fresh);
   modeLabel.textContent = "Vocab";
   renderCard();
+}
+
+/* Extra study — offered only once the day is already done, so "finished"
+   keeps meaning finished and this never reads as something outstanding.
+
+   Three genuinely new words, which save, plus practice on the cards he is
+   weakest at, which do not. Weakest rather than soonest-due: nothing is being
+   scheduled here, so the only question is where the repetition does most
+   good, and that is the low-ease cards. */
+function extraPlan(){
+  const fresh3 = bankOrder(shuffle([...allCards]))
+    .filter(k => !cardStates[k] && introducible(k) && unlocked(k))
+    .filter((k, i, all) => all.findIndex(j => noteOf(j) === noteOf(k)) === i)
+    .slice(0, EXTRA_NEW);
+  const practice = Object.keys(cardStates)
+    .filter(k => NOTES[noteOf(k)] && !fresh3.includes(k))
+    .sort((a, b) => (cardStates[a].ease || 2.5) - (cardStates[b].ease || 2.5))
+    .slice(0, EXTRA_PRACTICE);
+  return { fresh3, practice };
+}
+
+function extraAvailable(){
+  const { fresh3, practice } = extraPlan();
+  return fresh3.length + practice.length;
+}
+
+function startExtra(){
+  const { fresh3, practice } = extraPlan();
+  extraMode = true;
+  extraSaves = new Set(fresh3);       // fixed now, not re-tested per grade
+  sessionDone = 0;
+  vocabLight = false;
+  queue = interleave(shuffle(practice), fresh3);
+  countExtraRun();
+  modeLabel.textContent = "Extra";
+  renderCard();
+}
+
+function countExtraRun(){
+  const day = String(t);
+  extraRuns[day] = (extraRuns[day] || 0) + 1;
+  for (const d of Object.keys(extraRuns))
+    if (t - Number(d) > 90 * MS_DAY) delete extraRuns[d];
+  if (READ_ONLY) return;
+  writeChain = writeChain
+    .then(() => docExists
+      ? write.update(docRef, new FieldPath("extra", day), extraRuns[day],
+                     "updated", Date.now())
+      : firstWrite())
+    .then(() => { writeError = null; })
+    .catch(e => { writeError = e; console.error("save failed", e); })
+    .finally(renderWarning);
 }
 
 const vocabDone = () => {
@@ -1638,7 +1779,10 @@ function renderLanding(){
     ${(!v && !e) ? `<div class="stats done">
       <p class="done-h">All done for today</p>
       <p class="done-cta">${esc(back)}</p>
-    </div>` : ""}
+    </div>
+    ${extraAvailable() ? `<button class="lighter" id="go-extra">Feel like more? ` +
+      `${EXTRA_NEW} new words and some practice</button>` : ""}` : ""}
+    <a class="lighter drill" href="sz.html">ś of sz — oefenen</a>
     <div class="stats">
       <h2>So far</h2>
       <dl class="rows">
@@ -1654,6 +1798,8 @@ function renderLanding(){
   if (gl) gl.addEventListener("click", () => startVocab(true));
   const ge = $("#go-ear");
   if (ge) ge.addEventListener("click", startEar);
+  const gx = $("#go-extra");
+  if (gx) gx.addEventListener("click", startExtra);
   addHintBtn();
 }
 

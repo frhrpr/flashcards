@@ -37,6 +37,8 @@ button:active{background:#242830}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
 .row button{padding:.7rem;font-size:.95rem;color:var(--dim)}
 .next{background:transparent;border-color:var(--hi);color:var(--hi)}
+.wide{width:100%;margin-top:.7rem}
+.row button b{font-weight:400;color:var(--ink)}
 .tip{font-size:.8rem;color:var(--faint);border-top:1px solid var(--line);
   padding-top:.9rem;margin-top:1.4rem}
 .tip b{color:var(--dim);font-weight:400}
@@ -53,9 +55,9 @@ button:active{background:#242830}
     <button class="play" id="play">▶ luister</button>
     <div class="choices" id="choices"></div>
     <div class="verdict" id="verdict"></div>
-    <div class="row" id="after" hidden>
-      <button id="both">hoor beide</button>
-      <button class="next" id="next">volgende →</button>
+    <div id="after" hidden>
+      <div class="row" id="hear"></div>
+      <button class="next wide" id="next">volgende →</button>
     </div>
   </div>
 
@@ -146,21 +148,30 @@ function answer(w, btn){
   const v = $("#verdict");
   v.textContent = ok ? `ja — ${trial.word}` : `nee — het was ${trial.word}`;
   v.className = "verdict " + (ok ? "ok" : "no");
+  offerBoth();
   $("#after").hidden = false;
   tally();
 }
 
 $("#play").addEventListener("click", () => trial && play(trial.file));
 $("#next").addEventListener("click", nextTrial);
-$("#both").addEventListener("click", async () => {
-  const p = trial.p;
-  for (const k of [p.ka, p.kb]) {
-    const clips = WORDS[k] || [];
-    if (!clips.length) continue;
-    await play(pick(clips).f);
-    await new Promise(r => setTimeout(r, 900));
+
+/* One button per word rather than a single hear-both. Playing them back to
+   back sets the order for him; picking them himself lets him go back and
+   forth as many times as he likes, which is the comparison that teaches. */
+function offerBoth(){
+  const p = trial.p, hear = $("#hear");
+  hear.innerHTML = "";
+  for (const [label, key] of [[p.a, p.ka], [p.b, p.kb]]) {
+    const btn = document.createElement("button");
+    btn.innerHTML = `▶ <b>${label}</b>`;
+    btn.addEventListener("click", () => {
+      const clips = WORDS[key] || [];
+      if (clips.length) play(pick(clips).f);
+    });
+    hear.appendChild(btn);
   }
-});
+}
 
 (async () => {
   try {

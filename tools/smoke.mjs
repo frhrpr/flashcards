@@ -58,6 +58,10 @@ const allCards = ${JSON.stringify(deck.notes.flatMap(n =>
 const noteOf = k => k.slice(0, k.lastIndexOf("__"));
 const typeOf = k => k.slice(k.lastIndexOf("__") + 2);
 let cardStates = {}, reviewLog = [], fresh = [], lockedCount = 0;
+// extraPlan() consults the maturity gate; the real one lives outside
+// every slice, and an extra session must respect it exactly as the
+// daily bank does.
+const unlocked = () => true;
 let earStates = {}, doneDays = {}, hintOpens = {};
 let queue = [], current = null, revealed = false, writeError = null, earLoadError = null;
 const dueCards = [];
@@ -99,7 +103,7 @@ ${SLICES.map(cut).join("\n")}
 export { renderDone, renderLanding, startEar, earPlan, nextEarTrial, answerEar, startVocab, vocabPending , TASK, SUBTASK };
 export const state = () => ({ html, PAIRS, livePairs, earQueue, earIdx, earStates, queue, doneDays, vocabLight });
 export const requested = () => asked;
-export { bankOrder, introducible, NOTES, openHint, hintOpens, HINT_SETS };
+export { bankOrder, introducible, interleave, NOTES, openHint, hintOpens, HINT_SETS };
 export const forgetPreloads = () => { preloaded.clear(); asked.length = 0; };
 export const seed = (due, nw) => { dueCards.length = 0; dueCards.push(...due);
   fresh.length = 0; fresh.push(...nw); queue = [...due, ...nw]; };
@@ -219,6 +223,17 @@ try {
   m.renderLanding();
   check(m.state().html.includes("reviews only"), "landing says it was reviews only");
   delete m.state().doneDays[day];
+
+  /* The all-done landing is where the extra-study button lives, and it is a
+     branch nothing else here reaches: the template only evaluates
+     extraAvailable() when both modes are satisfied, so a fault in it would
+     ship unseen. */
+  m.seed([], []);
+  m.state().doneDays[day] = ["vocab", "ear"];
+  m.renderLanding();
+  check(m.state().html.includes("All done for today"), "the all-done landing renders");
+  check(m.state().html.includes("sz.html"), "and carries the sibilant drill link");
+  delete m.state().doneDays[day];
   // Preloading: the cards behind the current one must already have been
   // requested, or every flip waits on a round trip it could have started.
   const withImg = deck.notes.filter(n => n.image).slice(0, 5);
@@ -265,6 +280,25 @@ try {
   m.NOTES[nid].reviewed = true;
   check(deck.notes.every(n => typeof n.reviewed === "boolean"),
         "every note in the real deck carries a boolean reviewed flag");
+
+  /* New cards must not all land at the end: that put the gapped production
+     cards, which unlock latest and so are new most often, where he is most
+     tired. */
+  const rev = Array.from({ length: 40 }, (_, i) => `r${i}__recognition`);
+  const fresh8 = Array.from({ length: 8 }, (_, i) => `n${i}__production`);
+  const q = m.interleave(rev, fresh8);
+  check(q.length === 48, "interleave keeps every card");
+  check(new Set(q).size === 48, "and duplicates none");
+  check(q.filter(k => k.startsWith("r")).join() === rev.join(),
+        "due cards keep their order");
+  const at = q.map((k, i) => (k.startsWith("n") ? i : -1)).filter(i => i >= 0);
+  check(at.every(i => i >= 3), "no new card before the warm-up");
+  check(at[at.length - 1] < q.length - 3,
+        "and the last new card is not at the very end");
+  const gaps = at.slice(1).map((v, i) => v - at[i]);
+  check(Math.max(...gaps) - Math.min(...gaps) <= 2, "they are evenly spread");
+  check(m.interleave([], fresh8).length === 8 && m.interleave(rev, []).length === 40,
+        "an empty side on either hand is fine");
   delete m.NOTES[ids[1]].priority; delete m.NOTES[ids[4]].priority;
 
   // The hint sheet: every word it offers must actually have audio, or it
