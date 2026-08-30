@@ -529,6 +529,11 @@ let doneDays = {};
    review log: progress.py buckets that by `grade` for the streak, the day
    counts and the accuracy, and a non-review entry would corrupt all three. */
 let hintOpens = {};
+// Declared here, not with the rest of the extra-study state further down:
+// the loader below fills both, and a `let` assigned before its declaration
+// is evaluated throws. It did — the page failed to boot with
+// "can't access lexical declaration 'extraRuns' before initialization".
+let extraRuns = {};
 let docExists = false;
 try {
   const snap = await getDoc(docRef);
@@ -836,7 +841,6 @@ let sessionDone = 0;
    twice. */
 let extraMode = false;
 let extraSaves = new Set();
-let extraRuns = {};
 const EXTRA_NEW = 3;
 const EXTRA_PRACTICE = 12;
 

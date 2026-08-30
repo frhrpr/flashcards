@@ -224,6 +224,28 @@ try {
   check(m.state().html.includes("reviews only"), "landing says it was reviews only");
   delete m.state().doneDays[day];
 
+  /* Module-scope ordering. Everything above runs against slices with the
+     loader stubbed, so the real boot order — which top-level `let` is
+     evaluated before which assignment — is never exercised here. It broke:
+     extraRuns was declared with the session state and assigned by the loader
+     two hundred lines earlier, and the page died on load with "can't access
+     lexical declaration before initialization". Nothing caught it but the
+     student's browser. */
+  const raw = fs.readFileSync(path.join(ROOT, "index.html"), "utf8");
+  const lines = raw.split("\n");
+  const declaredAt = name => lines.findIndex(
+    l => new RegExp(`^\\s*(let|const|var)\\s+${name}\\b`).test(l));
+  let tdz = [];
+  lines.forEach((l, i) => {
+    const m = l.match(/^\s*([A-Za-z_$][\w$]*)\s*=\s*docExists\s*\?/);
+    if (!m) return;
+    const d = declaredAt(m[1]);
+    if (d < 0 || d > i) tdz.push(`${m[1]} (assigned line ${i + 1}, declared ${d + 1})`);
+  });
+  check(tdz.length === 0,
+        "loader globals are declared before the loader assigns them" +
+        (tdz.length ? ` — ${tdz.join("; ")}` : ""));
+
   /* The all-done landing is where the extra-study button lives, and it is a
      branch nothing else here reaches: the template only evaluates
      extraAvailable() when both modes are satisfied, so a fault in it would
