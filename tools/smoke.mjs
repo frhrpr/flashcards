@@ -242,6 +242,16 @@ try {
     const d = declaredAt(m[1]);
     if (d < 0 || d > i) tdz.push(`${m[1]} (assigned line ${i + 1}, declared ${d + 1})`);
   });
+  /* grade() is not inside any slice, so this is a text check rather than a
+     behavioural one — but the invariant is worth pinning: a practice answer
+     must not touch cardStates, or it becomes the base the next real answer is
+     scheduled from. */
+  const gradeBody = raw.slice(raw.indexOf("function grade(g){"),
+                              raw.indexOf("// resurface later this session"));
+  check(gradeBody.indexOf("extraSaves.has(key)") <
+        gradeBody.indexOf("cardStates[key] = next"),
+        "grade() only writes card state for cards that are being saved");
+
   check(tdz.length === 0,
         "loader globals are declared before the loader assigns them" +
         (tdz.length ? ` — ${tdz.join("; ")}` : ""));

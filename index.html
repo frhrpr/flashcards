@@ -1193,14 +1193,20 @@ function grade(g){
   const next = schedule(cardStates[key] || newCardState(), g);
   // Stamped whichever way it was graded — it was still introduced today.
   if (isNew) next.introduced = today();
-  cardStates[key] = next;
 
   sessionDone++;
-  /* A practice review is not a review. It must not reach the log either:
-     progress.py buckets the log by grade for the streak, the day counts and
-     the accuracy, so a card answered out of turn would corrupt all three —
-     the same reason hint opens are counted in their own field. */
+  /* A practice review is not a review. It changes nothing — not the stored
+     card, not the one in memory, and not the log.
+
+     Leaving it out of the log matters because progress.py buckets the log by
+     grade for the streak, the day counts and the accuracy, so a card answered
+     out of turn would corrupt all three; that is why hint opens have their own
+     field too. Leaving cardStates alone matters for a quieter reason: the
+     schedule is computed from the current state, so a practice answer that
+     moved it in memory would silently become the starting point for the next
+     real answer in the same page session. */
   if (!extraMode || extraSaves.has(key)) {
+    cardStates[key] = next;
     const entry = { card: key, grade: g, ts: Date.now() };
     reviewLog.push(entry);
     queueWrite(key, next, entry);
