@@ -769,13 +769,17 @@ Deferred on purpose: 4 grades instead of 2, and a stats screen.
   gitignored. Free-tier keys **cannot use Voice Library voices via the API**,
   only certain built-ins.
 
-  Isolated words therefore have an accent problem that sentences do not. All
-  21 usable voices are English built-ins, so a bare word comes out with
-  English vowels — `lody` was reported as sounding English on 2026-09-03, and
-  it did. The model is not the cause and is already right: word clips use
-  `eleven_turbo_v2_5` with `language_code: "pl"`, because `multilingual_v2`
-  cannot pin a language, and a sentence survives on context that a single
-  word does not have.
+  Synthesised **words** work, mostly. Nineteen of them are in the deck and
+  only one has ever been objected to. The model is already right and is not
+  the variable: word clips use `eleven_turbo_v2_5` with `language_code: "pl"`,
+  because `multilingual_v2` cannot pin a language for a word with no context.
+
+  What varies is the word. All 21 usable voices are English built-ins, so a
+  Polish word whose spelling also reads as English gets the English reading —
+  `lody` came back sounding like an English plural on 2026-09-03. `dziwny`,
+  `siadać` and `uczyć się` are fine, because no English word looks like that
+  and there is nothing to fall back on. So the question to ask of a new TTS
+  word is not "is it isolated" but "could an English speaker read this".
 
   The key *can see* one Polish voice — **Piotr**, `S1uaQ66tHSeCjgsWYpGI`,
   `standard/pl` — and requesting it returns HTTP 402 `paid_plan_required` on

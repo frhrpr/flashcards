@@ -9244,8 +9244,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
-      "audio_tts": true
+      "reviewed": true
     },
     {
       "id": "pytanie",

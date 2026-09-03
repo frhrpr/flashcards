@@ -2360,15 +2360,15 @@
     "voice_name": "Antoni"
   },
   "media/audio/lody.mp3": {
-    "fingerprint": "1dc472edd83f635d",
-    "gain_db": -0.2,
-    "language_code": "pl",
-    "model": "eleven_turbo_v2_5",
-    "seconds": 0.6,
-    "source": "tts",
-    "text": "lody",
-    "voice": "ErXwobaYiN019PkySvjV",
-    "voice_name": "Antoni"
+    "author": "recorded by the teacher",
+    "gain_db": 13.1,
+    "fingerprint": "70e5b0594aa0eaca",
+    "licence": "n/a",
+    "original": "untitled.wav",
+    "noise_floor_db": -40,
+    "seconds": 0.57,
+    "source": "supplied",
+    "text": "lody"
   },
   "media/audio/lody__sentence.mp3": {
     "fingerprint": "8d2ef9f4b136234a",
