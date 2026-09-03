@@ -9213,6 +9213,332 @@
       ],
       "reviewed": true,
       "priority": true
+    },
+    {
+      "id": "lody",
+      "word": "lody",
+      "gloss": "ice cream",
+      "pos": "noun",
+      "ipa": "ˈlɔdɨ",
+      "note": "always plural, like drzwi — and it is the same lód that lodówka is built on",
+      "image": "media/img/lody.webp",
+      "image_alt": "three scoops of ice cream in a glass bowl",
+      "image_basis": "sentence",
+      "image_prompt": "Three scoops of ice cream in a tall glass bowl on a table. No text or lettering. Square image.",
+      "audio": "media/audio/lody.mp3",
+      "sentence": {
+        "pl": "Bardzo lubię lody.",
+        "en": "I like ice cream very much.",
+        "gap": "Bardzo lubię ___.",
+        "answer": "lody",
+        "answer_lemma": "lody",
+        "audio": "media/audio/lody__sentence.mp3",
+        "lemmas": [
+          "bardzo",
+          "lubić",
+          "lody"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "pytanie",
+      "word": "pytanie",
+      "gloss": "question",
+      "pos": "noun",
+      "ipa": "pɨˈtaɲɛ",
+      "note": null,
+      "image": "media/img/pytanie.webp",
+      "image_alt": "a single raised hand in a full lecture hall",
+      "image_basis": "sentence",
+      "image_prompt": "A single raised hand in a full lecture hall of adults, seen from the back of the room. No text or lettering. Square image.",
+      "audio": "media/audio/pytanie.mp3",
+      "sentence": {
+        "pl": "Mam jedno pytanie.",
+        "en": "I have one question.",
+        "gap": "Mam jedno ___.",
+        "answer": "pytanie",
+        "answer_lemma": "pytanie",
+        "audio": "media/audio/pytanie__sentence.mp3",
+        "lemmas": [
+          "mieć",
+          "jeden",
+          "pytanie"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "sok",
+      "word": "sok",
+      "gloss": "juice",
+      "pos": "noun",
+      "ipa": "sɔk",
+      "note": null,
+      "image": "media/img/sok.webp",
+      "image_alt": "a glass of orange juice beside a halved orange",
+      "image_basis": "sentence",
+      "image_prompt": "A tall glass of orange juice on a kitchen counter with a halved orange beside it. No text or lettering. Square image.",
+      "audio": "media/audio/sok.mp3",
+      "sentence": {
+        "pl": "Rano piję sok.",
+        "en": "I drink juice in the morning.",
+        "gap": "Rano piję ___.",
+        "answer": "sok",
+        "answer_lemma": "sok",
+        "audio": "media/audio/sok__sentence.mp3",
+        "lemmas": [
+          "rano",
+          "pić",
+          "sok"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "piwo",
+      "word": "piwo",
+      "gloss": "beer",
+      "pos": "noun",
+      "ipa": "ˈpivɔ",
+      "note": null,
+      "image": "media/img/piwo.webp",
+      "image_alt": "a glass of beer with a thick head of foam",
+      "image_basis": "sentence",
+      "image_prompt": "A tall glass of golden beer with a thick head of foam on a bar counter. No text or lettering. Square image.",
+      "audio": "media/audio/piwo.mp3",
+      "sentence": {
+        "pl": "Mój mąż pije piwo.",
+        "en": "My husband drinks beer.",
+        "gap": "Mój mąż pije ___.",
+        "answer": "piwo",
+        "answer_lemma": "piwo",
+        "audio": "media/audio/piwo__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "mąż",
+          "pić",
+          "piwo"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "niebo",
+      "word": "niebo",
+      "gloss": "sky",
+      "pos": "noun",
+      "ipa": "ˈɲɛbɔ",
+      "note": "niebieski is built on this — the colour is named after it",
+      "image": "media/img/niebo.webp",
+      "image_alt": "a wide blue sky with a few white clouds",
+      "image_basis": "sentence",
+      "image_prompt": "A wide open blue sky filling the whole frame with a few small white clouds, no horizon. No text or lettering. Square image.",
+      "audio": "media/audio/niebo.mp3",
+      "sentence": {
+        "pl": "Niebo jest niebieskie.",
+        "en": "The sky is blue.",
+        "gap": "___ jest niebieskie.",
+        "answer": "Niebo",
+        "answer_lemma": "niebo",
+        "audio": "media/audio/niebo__sentence.mp3",
+        "lemmas": [
+          "niebo",
+          "być",
+          "niebieski"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "brzuch",
+      "word": "brzuch",
+      "gloss": "stomach, belly",
+      "pos": "noun",
+      "ipa": "bʐux",
+      "note": null,
+      "image": "media/img/brzuch.webp",
+      "image_alt": "a person leaning forward with both hands on their stomach",
+      "image_basis": "sentence",
+      "image_prompt": "A person sitting on a sofa with both hands pressed to their stomach, leaning forward. No text or lettering. Square image.",
+      "audio": "media/audio/brzuch.mp3",
+      "sentence": {
+        "pl": "Boli mnie brzuch.",
+        "en": "My stomach hurts.",
+        "gap": "Boli mnie ___.",
+        "answer": "brzuch",
+        "answer_lemma": "brzuch",
+        "audio": "media/audio/brzuch__sentence.mp3",
+        "lemmas": [
+          "boleć",
+          "ja",
+          "brzuch"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "palec",
+      "word": "palec",
+      "gloss": "finger",
+      "pos": "noun",
+      "ipa": "ˈpalɛt͡s",
+      "note": null,
+      "image": "media/img/palec.webp",
+      "image_alt": "a finger pressing a doorbell button",
+      "image_basis": "sentence",
+      "image_prompt": "A close-up of one index finger pressing a round doorbell button beside a door frame. No text or lettering. Square image.",
+      "audio": "media/audio/palec.mp3",
+      "sentence": {
+        "pl": "To jest mój palec.",
+        "en": "This is my finger.",
+        "gap": "To jest mój ___.",
+        "answer": "palec",
+        "answer_lemma": "palec",
+        "audio": "media/audio/palec__sentence.mp3",
+        "lemmas": [
+          "to",
+          "być",
+          "mój",
+          "palec"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "sweter",
+      "word": "sweter",
+      "gloss": "sweater",
+      "pos": "noun",
+      "ipa": "ˈsfɛtɛr",
+      "note": null,
+      "image": "media/img/sweter.webp",
+      "image_alt": "a thick red knitted sweater folded on a shelf",
+      "image_basis": "sentence",
+      "image_prompt": "A thick red knitted wool sweater folded neatly on a wooden shelf. No text or lettering. Square image.",
+      "audio": "media/audio/sweter.mp3",
+      "sentence": {
+        "pl": "Mój sweter jest czerwony.",
+        "en": "My sweater is red.",
+        "gap": "Mój ___ jest czerwony.",
+        "answer": "sweter",
+        "answer_lemma": "sweter",
+        "audio": "media/audio/sweter__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "sweter",
+          "być",
+          "czerwony"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "lodowka",
+      "word": "lodówka",
+      "gloss": "fridge",
+      "pos": "noun",
+      "ipa": "lɔˈdufka",
+      "note": null,
+      "image": "media/img/lodowka.webp",
+      "image_alt": "an open fridge stocked with food",
+      "image_basis": "sentence",
+      "image_prompt": "An open fridge seen straight on, shelves stocked with food, the kitchen dark around it. No text or lettering. Square image.",
+      "audio": "media/audio/lodowka.mp3",
+      "sentence": {
+        "pl": "Mleko jest w lodówce.",
+        "en": "The milk is in the fridge.",
+        "gap": "Mleko jest w ___.",
+        "answer": "lodówce",
+        "answer_lemma": "lodówka",
+        "audio": "media/audio/lodowka__sentence.mp3",
+        "lemmas": [
+          "mleko",
+          "być",
+          "w",
+          "lodówka"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ciezki",
+      "word": "ciężki",
+      "gloss": "heavy",
+      "pos": "adjective",
+      "ipa": "ˈt͡ɕɛw̃ʂki",
+      "note": null,
+      "image": "media/img/ciezki.webp",
+      "image_alt": "a man straining to lift one end of a heavy table",
+      "image_basis": "sentence",
+      "image_prompt": "A man straining with both hands to lift one end of a heavy wooden table, face tight with effort. No text or lettering. Square image.",
+      "audio": "media/audio/ciezki.mp3",
+      "sentence": {
+        "pl": "Ten stół jest bardzo ciężki.",
+        "en": "This table is very heavy.",
+        "gap": "Ten stół jest bardzo ___.",
+        "answer": "ciężki",
+        "answer_lemma": "ciężki",
+        "audio": "media/audio/ciezki__sentence.mp3",
+        "lemmas": [
+          "ten",
+          "stół",
+          "być",
+          "bardzo",
+          "ciężki"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
     }
   ]
 }

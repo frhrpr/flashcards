@@ -190,6 +190,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/brzuch.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-brzuch.ogg",
+    "fingerprint": "6700b5445dbaae5a",
+    "gain_db": -1.7,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-brzuch.ogg",
+    "seconds": 1.1,
+    "source": "commons",
+    "text": "brzuch"
+  },
+  "media/audio/brzuch__sentence.mp3": {
+    "fingerprint": "ce441fa03379bc73",
+    "gain_db": 1.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.91,
+    "source": "tts",
+    "text": "Boli mnie brzuch.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/buty.mp3": {
     "fingerprint": "38d8fbee0636d8cf",
     "gain_db": 2.1,
@@ -486,6 +507,27 @@
     "seconds": 1.33,
     "source": "tts",
     "text": "Herbata jest ciepła.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/ciezki.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-ciężki.ogg",
+    "fingerprint": "5f087c6ca3d2d5a3",
+    "gain_db": 0.3,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-ci%C4%99%C5%BCki.ogg",
+    "seconds": 1.33,
+    "source": "commons",
+    "text": "ciężki"
+  },
+  "media/audio/ciezki__sentence.mp3": {
+    "fingerprint": "96856d0938223992",
+    "gain_db": -1.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.36,
+    "source": "tts",
+    "text": "Ten stół jest bardzo ciężki.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -2296,6 +2338,48 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/lodowka.mp3": {
+    "author": "Frizabela",
+    "commons_file": "Pl-lodówka.ogg",
+    "fingerprint": "136c98780b10792f",
+    "gain_db": -1.5,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-lod%C3%B3wka.ogg",
+    "seconds": 1.02,
+    "source": "commons",
+    "text": "lodówka"
+  },
+  "media/audio/lodowka__sentence.mp3": {
+    "fingerprint": "abf3610550b7258c",
+    "gain_db": -0.5,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.2,
+    "source": "tts",
+    "text": "Mleko jest w lodówce.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/lody.mp3": {
+    "author": "Abraham",
+    "commons_file": "Pl-lody.ogg",
+    "fingerprint": "cfe438b737f80baf",
+    "gain_db": 2.1,
+    "licence": "CC0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-lody.ogg",
+    "seconds": 1.13,
+    "source": "commons",
+    "text": "lody"
+  },
+  "media/audio/lody__sentence.mp3": {
+    "fingerprint": "8d2ef9f4b136234a",
+    "gain_db": 0.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.99,
+    "source": "tts",
+    "text": "Bardzo lubię lody.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/lozko.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-łóżko.ogg",
@@ -2953,6 +3037,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/niebo.mp3": {
+    "author": "Frizabela",
+    "commons_file": "Pl-niebo.ogg",
+    "fingerprint": "21e53c68fdf4c5ae",
+    "gain_db": -0.4,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-niebo.ogg",
+    "seconds": 0.65,
+    "source": "commons",
+    "text": "niebo"
+  },
+  "media/audio/niebo__sentence.mp3": {
+    "fingerprint": "ed6ecb1694c53499",
+    "gain_db": -0.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.15,
+    "source": "tts",
+    "text": "Niebo jest niebieskie.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/niedziela.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-niedziela.ogg",
@@ -3290,6 +3395,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/palec.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-palec.ogg",
+    "fingerprint": "4f64acaeffbcac08",
+    "gain_db": -1.1,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-palec.ogg",
+    "seconds": 0.73,
+    "source": "commons",
+    "text": "palec"
+  },
+  "media/audio/palec__sentence.mp3": {
+    "fingerprint": "577acb5544a42395",
+    "gain_db": -0.8,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.12,
+    "source": "tts",
+    "text": "To jest mój palec.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/pamietac.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-pamiętać.ogg",
@@ -3602,6 +3728,27 @@
     "seconds": 1.49,
     "source": "tts",
     "text": "Dziecko pisze w domu.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/piwo.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-piwo.ogg",
+    "fingerprint": "7804e7d735c39835",
+    "gain_db": -1.0,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-piwo.ogg",
+    "seconds": 0.6,
+    "source": "commons",
+    "text": "piwo"
+  },
+  "media/audio/piwo__sentence.mp3": {
+    "fingerprint": "f862d1c654c143cd",
+    "gain_db": -2.5,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.18,
+    "source": "tts",
+    "text": "Mój mąż pije piwo.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -3959,6 +4106,27 @@
     "seconds": 1.67,
     "source": "tts",
     "text": "Rano pytam, gdzie jest sklep.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/pytanie.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-pytanie.ogg",
+    "fingerprint": "3a68ce06923ec666",
+    "gain_db": 1.0,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-pytanie.ogg",
+    "seconds": 0.81,
+    "source": "commons",
+    "text": "pytanie"
+  },
+  "media/audio/pytanie__sentence.mp3": {
+    "fingerprint": "061bd64873e3c1cd",
+    "gain_db": 1.2,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.15,
+    "source": "tts",
+    "text": "Mam jedno pytanie.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -4572,6 +4740,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/sok.mp3": {
+    "author": "Frizabela",
+    "commons_file": "Pl-sok.ogg",
+    "fingerprint": "b470c2934232acdf",
+    "gain_db": -1.2,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-sok.ogg",
+    "seconds": 0.73,
+    "source": "commons",
+    "text": "sok"
+  },
+  "media/audio/sok__sentence.mp3": {
+    "fingerprint": "4ccff6ac5bcaa8a0",
+    "gain_db": 0.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.36,
+    "source": "tts",
+    "text": "Rano piję sok.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/sol.mp3": {
     "author": "Frizabela",
     "commons_file": "Pl-sól.ogg",
@@ -4821,6 +5010,27 @@
     "seconds": 1.36,
     "source": "tts",
     "text": "Ta sukienka jest zielona.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/sweter.mp3": {
+    "author": "Kajervi",
+    "commons_file": "Pl-sweter.ogg",
+    "fingerprint": "82996fe62d4b00e3",
+    "gain_db": -0.4,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-sweter.ogg",
+    "seconds": 1.04,
+    "source": "commons",
+    "text": "sweter"
+  },
+  "media/audio/sweter__sentence.mp3": {
+    "fingerprint": "4a8ee2a288ec1603",
+    "gain_db": -1.5,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.38,
+    "source": "tts",
+    "text": "Mój sweter jest czerwony.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -6010,6 +6220,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/brzuch.webp": {
+    "bytes": 39350,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "ac414453a5507f5e",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person sitting on a sofa with both hands pressed to their stomach, leaning forward. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/buty.webp": {
     "bytes": 20054,
     "check": {
@@ -6221,6 +6447,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "Two hands wrapped around a warm glass of tea, steam rising between them, close up. Soft indoor light. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/ciezki.webp": {
+    "bytes": 65252,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "8ed70fe0ceb33a36",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A man straining with both hands to lift one end of a heavy wooden table, face tight with effort. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -7537,6 +7779,38 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/lodowka.webp": {
+    "bytes": 30032,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "flag",
+      "why": "contains text or lettering"
+    },
+    "fingerprint": "691221a36d3ed41e",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "An open fridge seen straight on, shelves stocked with food, the kitchen dark around it. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/lody.webp": {
+    "bytes": 34840,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "605db1075edfc016",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Three scoops of ice cream in a tall glass bowl on a table. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/lozko.webp": {
     "bytes": 30008,
     "check": {
@@ -8028,6 +8302,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/niebo.webp": {
+    "bytes": 11668,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "f748af8a250b0809",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A wide open blue sky filling the whole frame with a few small white clouds, no horizon. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/niedziela.webp": {
     "author": "supplied by user",
     "bytes": 25428,
@@ -8279,6 +8569,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/palec.webp": {
+    "bytes": 14266,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "dae70134b86db408",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A close-up of one index finger pressing a round doorbell button beside a door frame. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/pamietac.webp": {
     "bytes": 34936,
     "check": {
@@ -8495,6 +8801,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A hand holding a pen and writing on a sheet of paper on a wooden desk, close up. The writing is indistinct. Daylight. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/piwo.webp": {
+    "bytes": 31778,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "0e5e4804ca51ac1e",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A tall glass of golden beer with a thick head of foam on a bar counter. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -8757,6 +9079,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "One person on a street turning to another and asking a question, hands open in a questioning gesture. Daylight, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/pytanie.webp": {
+    "bytes": 38546,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "ae002a8d2e62ba80",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A single raised hand in a full lecture hall of adults, seen from the back of the room. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -9182,6 +9520,22 @@
     "size": "357x376",
     "source": "supplied"
   },
+  "media/img/sok.webp": {
+    "bytes": 24578,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "e1d6dea335f64847",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A tall glass of orange juice on a kitchen counter with a halved orange beside it. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/sol.webp": {
     "bytes": 35082,
     "check": {
@@ -9361,6 +9715,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A woman wearing a plain green summer dress, standing outdoors in daylight, shown from the shoulders down. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/sweter.webp": {
+    "bytes": 35904,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "da0a1078ff723a8f",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A thick red knitted wool sweater folded neatly on a wooden shelf. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
