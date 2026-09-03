@@ -768,6 +768,20 @@ Deferred on purpose: 4 grades instead of 2, and a stats screen.
   (`ErXwobaYiN019PkySvjV`), `eleven_multilingual_v2`. Key in `.env`,
   gitignored. Free-tier keys **cannot use Voice Library voices via the API**,
   only certain built-ins.
+
+  Isolated words therefore have an accent problem that sentences do not. All
+  21 usable voices are English built-ins, so a bare word comes out with
+  English vowels — `lody` was reported as sounding English on 2026-09-03, and
+  it did. The model is not the cause and is already right: word clips use
+  `eleven_turbo_v2_5` with `language_code: "pl"`, because `multilingual_v2`
+  cannot pin a language, and a sentence survives on context that a single
+  word does not have.
+
+  The key *can see* one Polish voice — **Piotr**, `S1uaQ66tHSeCjgsWYpGI`,
+  `standard/pl` — and requesting it returns HTTP 402 `paid_plan_required` on
+  both models. That is the fix if the plan is ever upgraded, and it would
+  improve every synthesised word clip rather than one. Until then, a word
+  that sounds wrong wants a human recording, not another generation.
 - **Verify audio before adopting it.** A 256-byte JSON error page passes an
   existence check happily; `tts.py` writes to a temp file and only keeps it
   once ffprobe confirms real audio of non-zero length.
