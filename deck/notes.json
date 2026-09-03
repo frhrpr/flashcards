@@ -9244,7 +9244,8 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": false,
+      "audio_tts": true
     },
     {
       "id": "pytanie",
@@ -9415,9 +9416,9 @@
       "ipa": "ˈpalɛt͡s",
       "note": null,
       "image": "media/img/palec.webp",
-      "image_alt": "a finger pressing a doorbell button",
+      "image_alt": "one index finger held up, the others folded in",
       "image_basis": "sentence",
-      "image_prompt": "A close-up of one index finger pressing a round doorbell button beside a door frame. No text or lettering. Square image.",
+      "image_prompt": "An extreme close-up of a single index finger held up, the other fingers folded into the palm, filling most of the frame against a plain pale background. No text or lettering. Square image.",
       "audio": "media/audio/palec.mp3",
       "sentence": {
         "pl": "To jest mój palec.",
@@ -9448,22 +9449,23 @@
       "ipa": "ˈsfɛtɛr",
       "note": null,
       "image": "media/img/sweter.webp",
-      "image_alt": "a thick red knitted sweater folded on a shelf",
+      "image_alt": "a woman wearing a chunky cream cable-knit sweater",
       "image_basis": "sentence",
-      "image_prompt": "A thick red knitted wool sweater folded neatly on a wooden shelf. No text or lettering. Square image.",
+      "image_prompt": "A woman wearing a chunky cream cable-knit wool sweater indoors, shown from the shoulders to the waist, no coat over it, the knit texture clearly visible. No text or lettering. Square image.",
       "audio": "media/audio/sweter.mp3",
       "sentence": {
-        "pl": "Mój sweter jest czerwony.",
-        "en": "My sweater is red.",
-        "gap": "Mój ___ jest czerwony.",
+        "pl": "Ten sweter jest bardzo ciepły.",
+        "en": "This sweater is very warm.",
+        "gap": "Ten ___ jest bardzo ciepły.",
         "answer": "sweter",
         "answer_lemma": "sweter",
         "audio": "media/audio/sweter__sentence.mp3",
         "lemmas": [
-          "mój",
+          "ten",
           "sweter",
           "być",
-          "czerwony"
+          "bardzo",
+          "ciepły"
         ]
       },
       "cards": [

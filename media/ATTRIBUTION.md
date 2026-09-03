@@ -109,7 +109,6 @@ do not edit by hand.
 | `media/audio/lekarz.mp3` | [Pl-lekarz.ogg](https://commons.wikimedia.org/wiki/File:Pl-lekarz.ogg) | Wyksztalcioch | Public domain | commons |
 | `media/audio/list.mp3` | [Pl-list.ogg](https://commons.wikimedia.org/wiki/File:Pl-list.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/lodowka.mp3` | [Pl-lodówka.ogg](https://commons.wikimedia.org/wiki/File:Pl-lod%C3%B3wka.ogg) | Frizabela | CC BY 2.5 | commons |
-| `media/audio/lody.mp3` | [Pl-lody.ogg](https://commons.wikimedia.org/wiki/File:Pl-lody.ogg) | Abraham | CC0 | commons |
 | `media/audio/lozko.mp3` | [Pl-łóżko.ogg](https://commons.wikimedia.org/wiki/File:Pl-%C5%82%C3%B3%C5%BCko.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/lubic.mp3` | [Pl-lubić.ogg](https://commons.wikimedia.org/wiki/File:Pl-lubi%C4%87.ogg) | Frizabela | CC BY 2.5 | commons |
 | `media/audio/ludzie.mp3` | [Pl-ludzie.ogg](https://commons.wikimedia.org/wiki/File:Pl-ludzie.ogg) | user Equadus (inactive global account) | CC BY 2.5 | commons |

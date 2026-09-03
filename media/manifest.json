@@ -2360,15 +2360,15 @@
     "voice_name": "Antoni"
   },
   "media/audio/lody.mp3": {
-    "author": "Abraham",
-    "commons_file": "Pl-lody.ogg",
-    "fingerprint": "cfe438b737f80baf",
-    "gain_db": 2.1,
-    "licence": "CC0",
-    "page": "https://commons.wikimedia.org/wiki/File:Pl-lody.ogg",
-    "seconds": 1.13,
-    "source": "commons",
-    "text": "lody"
+    "fingerprint": "1dc472edd83f635d",
+    "gain_db": -0.2,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.6,
+    "source": "tts",
+    "text": "lody",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
   },
   "media/audio/lody__sentence.mp3": {
     "fingerprint": "8d2ef9f4b136234a",
@@ -5025,12 +5025,12 @@
     "text": "sweter"
   },
   "media/audio/sweter__sentence.mp3": {
-    "fingerprint": "4a8ee2a288ec1603",
-    "gain_db": -1.5,
+    "fingerprint": "9842cf7cbc6c7a2c",
+    "gain_db": -1.2,
     "model": "eleven_multilingual_v2",
-    "seconds": 1.38,
+    "seconds": 1.72,
     "source": "tts",
-    "text": "Mój sweter jest czerwony.",
+    "text": "Ten sweter jest bardzo ciepły.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -8570,18 +8570,18 @@
     "source": "generated"
   },
   "media/img/palec.webp": {
-    "bytes": 14266,
+    "bytes": 10168,
     "check": {
       "model": "gemini-flash-latest",
       "problem": "",
       "verdict": "ok",
       "why": ""
     },
-    "fingerprint": "dae70134b86db408",
+    "fingerprint": "b553eea22a4e65b3",
     "model": "gemini-2.5-flash-image",
     "original_size": "1024x1024",
     "process_version": 1,
-    "prompt": "A close-up of one index finger pressing a round doorbell button beside a door frame. No text or lettering. Square image.",
+    "prompt": "An extreme close-up of a single index finger held up, the other fingers folded into the palm, filling most of the frame against a plain pale background. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -9719,18 +9719,18 @@
     "source": "generated"
   },
   "media/img/sweter.webp": {
-    "bytes": 35904,
+    "bytes": 76206,
     "check": {
       "model": "gemini-flash-latest",
-      "problem": "",
+      "problem": "The sweater shown is cream or white, directly contradicting the example sentence which says the sweater is red.",
       "verdict": "ok",
       "why": ""
     },
-    "fingerprint": "da0a1078ff723a8f",
+    "fingerprint": "3d646e5db7f4e2e0",
     "model": "gemini-2.5-flash-image",
     "original_size": "1024x1024",
     "process_version": 1,
-    "prompt": "A thick red knitted wool sweater folded neatly on a wooden shelf. No text or lettering. Square image.",
+    "prompt": "A woman wearing a chunky cream cable-knit wool sweater indoors, shown from the shoulders to the waist, no coat over it, the knit texture clearly visible. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
