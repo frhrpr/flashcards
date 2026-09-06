@@ -76,7 +76,9 @@ let rndSeed = 12345;
 const rand = () => (rndSeed = (rndSeed * 1103515245 + 12345) % 2147483648) / 2147483648;
 const shuffle = a => { for (let i = a.length - 1; i > 0; i--) {
   const j = Math.floor(rand() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
-const fetch = async () => ({ ok: true, json: async () => (${JSON.stringify(manifest)}) });
+// Also the preloader's cache-warming call, so preloads still register.
+const fetch = async (u) => { if (u) asked.push(u);
+  return { ok: true, json: async () => (${JSON.stringify(manifest)}) }; };
 let html = "";
 const appEl = { set innerHTML(v){ html = v; }, get innerHTML(){ return html; },
   appendChild(el){ html += (el && el.innerHTML) || ''; },
@@ -91,8 +93,11 @@ const $ = sel => sel === "#bar" ? _barStub : _stub();
 const _barStub = { className: "", firstElementChild: { style: {} } };
 const asked = [];
 const Image = function(){ return { set src(v){ asked.push(v); } }; };
-const Audio = function(){ return { play: () => Promise.resolve(), preload: "",
-  set src(v){ asked.push(v); } }; };
+const Audio = function(){ let _s = ""; return {
+  play: () => Promise.resolve(), pause: () => {}, preload: "", currentTime: 0,
+  set src(v){ _s = v; asked.push(v); }, get src(){ return _s; } }; };
+const location = { href: "https://example.test/" };
+const URL = globalThis.URL;
 const grade = () => {};
 const renderWarning = () => {};
 const renderCard_ = null;
@@ -251,6 +256,19 @@ try {
   check(gradeBody.indexOf("extraSaves.has(key)") <
         gradeBody.indexOf("cardStates[key] = next"),
         "grade() only writes card state for cards that are being saved");
+
+  /* Playback must never reuse an element the preloader made: one that has
+     never been played inside a user gesture is refused permission, which is
+     what silenced whole sessions. One player, made once, is the invariant. */
+  // Strip block comments first: the explanation above the player quotes the
+  // very expression this counts, and would fail its own test.
+  const code = raw.replace(/\/\*[\s\S]*?\*\//g, "");
+  const players = (code.match(/new Audio\(/g) || []).length;
+  check(players === 2,
+        `exactly two Audio elements are constructed — the player and the ear ` +
+        `cache (found ${players})`);
+  check(!/function preload\(url\)[\s\S]{0,400}new Audio/.test(raw),
+        "the preloader does not build media elements");
 
   check(tdz.length === 0,
         "loader globals are declared before the loader assigns them" +

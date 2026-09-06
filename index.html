@@ -987,29 +987,40 @@ function playBtn(src, label, extra){
 
    The ear trainer has always cached (earCache) and was never affected; vocab
    did not, and vocab is where it broke. */
-const AUDIO_CACHE_MAX = 60;
-const audioCache = new Map();
-function sound(src){
-  let a = audioCache.get(src);
-  if (a) return a;
-  a = new Audio();
-  a.preload = "auto";
-  a.src = src;
-  audioCache.set(src, a);
-  // Map keeps insertion order, so the oldest entries are the first out.
-  for (const k of audioCache.keys()) {
-    if (audioCache.size <= AUDIO_CACHE_MAX) break;
-    const old = audioCache.get(k);
-    try { old.pause(); old.removeAttribute("src"); old.load(); } catch (e) {}
-    audioCache.delete(k);
-  }
-  return a;
-}
+/* One player element for the whole session, its src swapped per clip.
+
+   There are two faults here and only the second explains why fixing the first
+   did not help. A fresh `new Audio()` per play leaks media elements, and past
+   the browser's cap new ones fail silently — that was the first diagnosis, and
+   caching fixed it. It did not fix the symptom, because of the second fault:
+
+   a media element may only play if `play()` has been called on it during a
+   user gesture at least once. The preloader creates elements outside any
+   gesture, so once caching made playback reuse a preloaded element, the tap
+   was refused. It broke after a card or two — precisely when the preloader
+   had got far enough ahead — rather than after sixty. Before caching, the
+   click handler built a new element inside the gesture every time, which is
+   always allowed, so the button had always worked.
+
+   One element fixes both. It cannot exhaust a pool, and the first play that
+   happens inside a tap unlocks it for the rest of the session. Preloading no
+   longer needs a media element at all: fetch warms the same HTTP cache, and
+   the player reads from it when it gets there. */
+const player = new Audio();
+player.preload = "auto";
+
 function playSound(src){
   if (!src) return Promise.resolve();
-  const a = sound(src);
-  try { a.pause(); a.currentTime = 0; } catch (e) {}
-  return a.play();
+  const abs = new URL(src, location.href).href;
+  try { player.pause(); } catch (e) {}
+  if (player.src !== abs) {
+    player.src = src;
+  } else {
+    // Rewinding an element whose metadata has not arrived throws; a fresh
+    // src does not need it anyway.
+    try { player.currentTime = 0; } catch (e) {}
+  }
+  return player.play();
 }
 function autoPlay(src){
   if (!src) return;
@@ -1028,7 +1039,9 @@ function preload(url){
   if (!url || preloaded.has(url)) return;
   preloaded.add(url);
   if (/\.(webp|png|jpe?g|gif)$/i.test(url)) { new Image().src = url; return; }
-  sound(url);          // same element the player will use, not a second one
+  // Warm the HTTP cache without creating a media element. An element made
+  // here could never be played anyway — see the player comment above.
+  fetch(url, { cache: "force-cache" }).catch(() => {});
 }
 function preloadAhead(){
   for (const key of queue.slice(0, PRELOAD_AHEAD + 1)) {
@@ -1044,9 +1057,15 @@ function wireAudio(){
   for (const { id, src } of audioBtns.splice(0)) {
     const el = $("#" + id);
     if (el) el.addEventListener("click", () => playSound(src).catch(e => {
-      // A rejection with no user gesture is routine; anything else is not.
-      if (e.name !== "NotAllowedError") {
-        writeError = new Error(`audio failed: ${src}`);
+      /* Every rejection here is worth reporting, NotAllowedError included.
+         That name means "no user gesture", and this *is* the user's tap — so
+         on this path it does not mean autoplay was blocked, it means the
+         element itself was refused. Ignoring it is why a whole session could
+         go silent with nothing on screen saying so: the student was told
+         nothing, and neither were we. Only an abort from a clip being
+         replaced is routine. */
+      if (e.name !== "AbortError") {
+        writeError = new Error(`audio failed (${e.name}): ${src}`);
         renderWarning();
       }
     }));
