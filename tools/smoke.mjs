@@ -23,6 +23,7 @@ const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, "ear/manifest.json")
 /* Each slice is [from, to); `to` is left out of the slice. */
 const SLICES = [
   ["const WORDS = {", "/* ── end of ear content ──"],
+  ["const FUZZ = 0.05;", "/* ── load, build today's queue ──"],
   ["function bankOrder(cards){", "/* ── end of bank order ──"],
   ['const barEl = $("#bar");', "function grade(g){"],
   ["/* ══ ear training ══", "/* ══ boot ══"],
@@ -50,6 +51,7 @@ const el = () => ({
 
 const stubs = `
 const MS_DAY = 86400000;
+const today = () => t;
 const t = (() => { const d = new Date(); d.setHours(0,0,0,0); return d.getTime(); })();
 const TEST_MODE = true;
 const NOTES = ${JSON.stringify(Object.fromEntries(deck.notes.map(n => [n.id, n])))};
@@ -110,6 +112,7 @@ export const state = () => ({ html, PAIRS, livePairs, earQueue, earIdx, earState
 export const requested = () => asked;
 export { bankOrder, introducible, interleave, NOTES, openHint, hintOpens, HINT_SETS };
 export { cardRetired, RETIRE_IVL, stats, cardStates };
+export { schedule, fuzzDays, FUZZ };
 export const forgetPreloads = () => { preloaded.clear(); asked.length = 0; };
 export const seed = (due, nw) => { dueCards.length = 0; dueCards.push(...due);
   fresh.length = 0; fresh.push(...nw); queue = [...due, ...nw]; };
@@ -353,6 +356,45 @@ try {
   m.NOTES[nid].reviewed = true;
   check(deck.notes.every(n => typeof n.reviewed === "boolean"),
         "every note in the real deck carries a boolean reviewed flag");
+
+  /* Jitter. It moves the due date and must never touch the interval, because
+     RETIRE_IVL, the maturity buckets and (until this was fixed) the unlock
+     gate all read `ivl` directly. */
+  const sixDay = { ivl: 6, ease: 2.5, reps: 2, due: 0 };
+  const sched = (st, k) => m.schedule(st, "good", k);
+  const inDays = ms => Math.round((ms - Date.now()) / 86400000);
+  check(m.fuzzDays("a__recognition", { ivl: 1, reps: 1 }) === 0 &&
+        m.fuzzDays("a__recognition", { ivl: 5, reps: 2 }) === 0,
+        "no jitter below a 6-day interval — reps 1 always means tomorrow");
+  const offsets = deck.notes.map(n => m.fuzzDays(`${n.id}__recognition`,
+                                                 { ivl: 38, reps: 4 }));
+  check(offsets.every(o => Math.abs(o) <= 2),
+        "at 38 days the offset stays inside ±2 (5%, floor 1)");
+  check(new Set(offsets).size > 1, "and different cards get different offsets");
+  check(m.fuzzDays("x__recognition", { ivl: 95, reps: 5 }) ===
+        m.fuzzDays("x__recognition", { ivl: 95, reps: 5 }),
+        "the same card in the same state always gets the same offset");
+  const grown = sched(sixDay, "kot__recognition");
+  check(grown.ivl === 15, "the interval itself is never jittered");
+  check(Math.abs(inDays(grown.due) - 15) <= 1,
+        "only the due date moves, and by at most the fuzz");
+  /* The cohort bug in miniature: nine cards, same state, same day. */
+  const dues = new Set(deck.notes.slice(0, 9).map(
+    n => sched({ ivl: 38, ease: 2.5, reps: 4, due: 0 }, `${n.id}__recognition`).due));
+  check(dues.size > 1, "nine identical cards no longer land on one day");
+  check(sched({ ivl: 6, ease: 2.5, reps: 2, due: 0 }, "z__x").ivl === 15 &&
+        m.schedule({ ivl: 38, ease: 2.5, reps: 4, due: 0 }, "again", "z__x").ivl === 1,
+        "a lapse still resets to a 1-day interval, unjittered");
+
+  /* The unlock gate counts reps. It read `ivl >= 15`, which only a card at the
+     full 2.5 ease ever hits exactly — 6 * 2.35 rounds to 14 — so any card that
+     had ever lapsed waited an extra step for its listening card. */
+  check(!/UNLOCK_IVL/.test(raw), "the interval-based unlock gate is gone");
+  const gate = raw.slice(raw.indexOf("function unlocked(key){"),
+                         raw.indexOf("/* At most one *new* card per note"));
+  check(!/\.ivl\s*>=/.test(gate), "unlocked() compares reps, not intervals");
+  check((gate.match(/\.reps\s*>=/g) || []).length === 2,
+        "both branches of it — ordinary notes and form drills");
 
   /* Retirement. Derived from the interval, so there is nothing to migrate and
      the constant can be moved either way; the tests pin the boundary and the

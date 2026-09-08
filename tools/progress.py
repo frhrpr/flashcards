@@ -100,6 +100,15 @@ def retire_ivl():
 RETIRE_IVL = None                # set from index.html on first use
 
 
+def unlock_thresholds():
+    """UNLOCK_REPS out of index.html — same reason as retire_ivl above."""
+    m = re.search(r"const UNLOCK_REPS\s*=\s*\{([^}]*)\}",
+                  (ROOT / "index.html").read_text(encoding="utf-8"))
+    if not m:
+        die("could not read UNLOCK_REPS out of index.html")
+    return {k: int(v) for k, v in re.findall(r"(\w+)\s*:\s*(\d+)", m.group(1))}
+
+
 def intake_rate():
     """NEW_WORDS_PER_DAY out of index.html, so this report cannot quietly
     disagree with the app about how fast the deck is consumed."""
@@ -265,16 +274,24 @@ def analyse(cards, log, notes, done, hints, withdrawn=None):
     unseen = [n for n in notes
               if n.get("kind") != "form" and n["id"] not in started_notes]
     runway = len(unseen) / rate if rate else 0
-    # A gated card is locked while its note's recognition card is immature.
-    locked = 0
+    # A gated card is locked while its note's recognition card has not been
+    # answered correctly enough times running. Per type, and counted in reps
+    # exactly as index.html does — this used to approximate the gate with one
+    # interval for both types, which is how the listening bug stayed invisible.
+    unlock_reps = unlock_thresholds()
+    locked, waiting = 0, []
     for n in notes:
         base = cards.get(f"{n['id']}__recognition")
-        mature = base and base.get("ivl", 0) >= YOUNG
+        reps = base.get("reps", 0) if base else -1
         for ty in n.get("cards", []):
             if ty == "recognition" or f"{n['id']}__{ty}" in cards:
                 continue
-            if not mature:
+            if reps < unlock_reps.get(ty, 0):
                 locked += 1
+            elif base:
+                # Unlocked, never introduced: it is behind the daily sibling
+                # allowance rather than behind his own progress.
+                waiting.append(f"{n['id']}__{ty}")
 
     # One row per card he has actually met. Unseen cards have no record, so
     # listing all 183 would bury the 22 that mean anything.
@@ -304,7 +321,7 @@ def analyse(cards, log, notes, done, hints, withdrawn=None):
 
     return dict(
         word=word, gloss=gloss, by_day=by_day, days=days, streak=streak, hard=hard,
-        withdrawn=withdrawn, gone=gone,
+        withdrawn=withdrawn, gone=gone, waiting=waiting,
         buckets=buckets,
         nearly=nearly, started=len(started_notes), total_notes=len(notes),
         locked=locked, cards_started=len(cards), sessions=sess,
@@ -366,6 +383,13 @@ def report(uid, a, e):
           f"{a['reviews'] - a['vocab_reviews']} ear trials")
     p(f"  deck          {a['started']}/{a['total_notes']} words started, "
       f"{a['cards_started']} cards, {a['locked']} still locked")
+    if a.get("waiting"):
+        w = a["waiting"]
+        kinds = Counter(k.rsplit("__", 1)[1] for k in w)
+        p(f"                {len(w)} more are unlocked and waiting behind the "
+          f"sibling allowance")
+        p("                (" + ", ".join(f"{n} {t}" for t, n in kinds.most_common())
+          + ") — this queue only drains if the allowance exceeds 2x the daily words")
     # Running out of new words is invisible from the review counts — they stay
     # healthy while the deck quietly stops growing — so it gets its own line.
     if a["runway"] < 4:

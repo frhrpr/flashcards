@@ -121,18 +121,64 @@ notes`. `status` is `queued` → `known` → `carded`.
   cards from today's queue, and the daily new-card budget takes at most one
   card per note. Without this he passes the second and third on ten-second
   recall rather than on knowing the word, and the scheduler believes it.
-- **Staged unlock, per type.** `UNLOCK_IVL` maps each gated type to the
-  recognition interval it waits for. Intervals run 1, 6, 15, 38, so the
-  thresholds land at real points: `production` at `ivl >= 6` opens the day
-  after the word is introduced, `listening` at `ivl >= 15` a week in. Note
-  that 6 is reached on day *one*, not after a week — two correct answers
-  happen on consecutive days. Listening is pushed back deliberately: reading
-  leaves him the spelling to lean on and the recording leaves him nothing.
-  The gate governs *introducing* only: a card that already has state stays in
-  rotation, so a later lapse on recognition cannot yank away work under way.
+- **Staged unlock, per type.** `UNLOCK_REPS` maps each gated type to the
+  number of consecutive correct answers the *recognition* card must have:
+  `production` at 2, which lands the day after the word is introduced, and
+  `listening` at 3, about a week in. Listening is pushed back deliberately:
+  reading leaves him the spelling to lean on and the recording leaves him
+  nothing. The gate governs *introducing* only: a card that already has state
+  stays in rotation, so a later lapse on recognition cannot yank away work
+  under way.
+
+  **It counts reps, and that replaced a real bug.** The thresholds were
+  `ivl >= 6` and `ivl >= 15`, on the reasoning that a clean card runs 1, 6,
+  15, 38. But only a card at the full 2.5 ease lands on exactly 15: one that
+  has ever lapsed computes `round(6 * 2.35) = 14` and misses, so listening
+  waited a whole extra step — 33 days instead of 15. On 2026-09-09 six cards
+  were stuck there and they were the six that needed it most: `być`,
+  `chcieć`, `wiedzieć`, `iść`, `płacić`, `ręka`. Switching to reps changed
+  those six and nothing else, checked against his live document first.
+
+  The lesson generalises: **do not express a "how well is this going" test as
+  an interval.** The interval is a product of ease and history and lands
+  wherever it lands; reps say what was meant. `RETIRE_IVL` is the deliberate
+  exception, because there the question really is about elapsed time.
 - **`note_id` must match `[a-z0-9_]+`** — it is used as a Firestore field
   path, where diacritics would need backtick quoting. `słońce` → `slonce`,
   `śmiać się` → `smiac_sie`.
+- **Due dates are jittered by 5%, and intervals are not.** `fuzzDays` in
+  `index.html` shifts the day a card comes back by up to `max(1, 5% of ivl)`,
+  derived from a hash of the card key and its state.
+
+  Nothing in the scheduler was random before this. Two cards answered
+  correctly on the same day had byte-identical intervals from then on, so a
+  batch marched in lockstep for ever: measured 2026-09-09, all 8 cards
+  introduced on 31 August were due on one day, and 10 of the 13 from
+  5 September. His next three weeks read 0, 12, 23, 2, 15, 3, 7, 8 …
+
+  That is two problems, and the second is the worse one. The load arrives in
+  spikes — but also **a cohort carded together stays together**, which is the
+  interference that took `często` to the ease floor. Jitter is the mechanical
+  half of the two-at-a-time rule under `withdraw.py`.
+
+  **The due date moves; the interval does not.** `ivl` is read directly by
+  `RETIRE_IVL`, by the maturity buckets in `progress.py`, and — until the same
+  day this was written — by the unlock gate. Fuzzing it would drag cards
+  across those boundaries for no reason. Moving only the day leaves them all
+  exact, and it still compounds, because he answers on the jittered day and
+  the next interval counts from there: a cohort's spread is a random walk
+  rather than a fixed offset.
+
+  **5%, floor one day**, measured rather than guessed. Over a cohort of nine
+  followed for 400 days the worst single day falls from 6.6 cards to 4.7; 10%
+  gives 4.6 and 25% gives 4.2, so almost all of it is bought by the first 5%
+  and the rest only distorts the schedule. Intervals under 6 are left alone —
+  reps 1 always means "tomorrow" and there is nothing to spread.
+
+  Derived from the card rather than `Math.random`, so it is a pure function of
+  state and `smoke.mjs` can test it. The scheduler is now sliced into smoke
+  for that reason.
+
 - **Order is shuffled, seeded on the day plus the user id.** Due date still
   dominates; the shuffle only breaks ties and orders the new-card pool. The
   seed makes a mid-session reload stable rather than reshuffling under him,
@@ -182,9 +228,9 @@ notes`. `status` is `queued` → `known` → `carded`.
 
   **The sibling allowance is currently binding, and that is unresolved.** Three
   words a day want six sibling cards a day and may have five, so one card a day
-  is deferred permanently rather than smoothed: measured 2026-09-08, 37 cards
-  were unlocked and never introduced (26 listening, 11 production), and the
-  simulation puts that at ~280 in a year. His real intake is therefore eight
+  is deferred permanently rather than smoothed: measured 2026-09-09 after the
+  gate fix, 43 cards were unlocked and never introduced (32 listening, 11
+  production), and the simulation puts that at ~280 more in a year. His real intake is therefore eight
   cards a day, not nine, and his listening and production cards fall steadily
   behind his recognition cards. A cap set at exactly mean demand never drains;
   raising it to 7 or 8 would. Not changed, because how much time that costs is

@@ -469,7 +469,46 @@ const WARN_AT   = 0.7;
 
 function today(){ const d = new Date(); d.setHours(0,0,0,0); return d.getTime(); }
 function newCardState(){ return { ivl: 0, ease: 2.5, reps: 0, due: today() }; }
-function schedule(state, grade){
+/* Jitter, so that words introduced together do not come back together for
+   ever. Nothing in the scheduler was random: two cards answered correctly on
+   the same day had byte-identical intervals from then on, so a batch marched
+   in lockstep. Measured on 2026-09-09, all 8 cards introduced on 31 August
+   were due on the same day, and 10 of the 13 from 5 September.
+
+   That is two problems. The load arrives in spikes — his next three weeks ran
+   0, 12, 23, 2, 15, 3 … — and, worse, a cohort carded together stays together,
+   which is the interference that took `często` to the ease floor.
+
+   **The due date is jittered; the interval is not.** `ivl` is load-bearing in
+   three other places — RETIRE_IVL, the maturity buckets in progress.py, and
+   until today the unlock gate — and fuzzing it would move a card across those
+   boundaries for no reason. Moving only the day it comes back leaves every
+   one of them exact.
+
+   It still compounds, which is the point: he answers on the jittered day, and
+   the next interval is counted from there, so a cohort's spread is a random
+   walk rather than a fixed offset.
+
+   5%, floor one day. Simulated over a cohort of nine for 400 days, the worst
+   single day falls from 6.6 cards to 4.7; 10% gives 4.6 and 25% gives 4.2, so
+   nearly all of it is bought by the first 5% and the rest distorts the
+   schedule for very little. Intervals below 6 are left alone — reps 1 always
+   means "tomorrow", and there is nothing to spread there.
+
+   Derived from the card and its state rather than Math.random, so it is a
+   pure function: the same card in the same state always gets the same offset,
+   which is what makes it testable. */
+const FUZZ = 0.05;
+function fuzzDays(key, s){
+  if (s.ivl < 6) return 0;
+  const f = Math.max(1, Math.round(s.ivl * FUZZ));
+  let h = 2166136261;
+  for (const ch of `${key}:${s.reps}:${s.ivl}`)
+    h = Math.imul(h ^ ch.charCodeAt(0), 16777619);
+  return ((h >>> 0) % (2 * f + 1)) - f;
+}
+
+function schedule(state, grade, key){
   const s = { ...state };
   if (grade === "again") {
     s.reps = 0;
@@ -489,7 +528,7 @@ function schedule(state, grade){
     if (s.reps === 1) s.ivl = 1;
     else if (s.reps === 2) s.ivl = 6;
     else s.ivl = Math.round(s.ivl * s.ease);
-    s.due = today() + s.ivl * MS_DAY;
+    s.due = today() + (s.ivl + fuzzDays(key, s)) * MS_DAY;
   }
   return s;
 }
@@ -613,22 +652,29 @@ function shuffle(arr){
 }
 
 /* Staged unlock, per type. Meeting a brand-new word in three directions at
-   once mostly generates failures, so the harder types wait on the recognition
-   card's interval. Because intervals go 1, 6, 15, 38, the thresholds land at
-   real points in the word's life:
+   once mostly generates failures, so the harder types wait until the
+   recognition card has been answered correctly a few times running:
 
-     production  ivl >= 6   the day after the word is introduced
-     listening   ivl >= 15  a week in, after three correct answers
+     production  2 in a row   the day after the word is introduced
+     listening   3 in a row   a week in
 
    Listening is pushed further back deliberately: reading gives him the
    spelling to lean on, and the recording gives him nothing, so ear training
    wants a firmer foundation than production does.
 
+   **Counted in reps, not in the interval, and that is a bug fix.** These were
+   `ivl >= 6` and `ivl >= 15`, chosen because a clean card runs 1, 6, 15, 38 —
+   but only a card at the full 2.5 ease lands on exactly 15. One that has ever
+   lapsed computes `round(6 * 2.35) = 14` and misses the gate, so listening
+   waited an entire extra step: 33 days instead of 15. On 2026-09-09 six of his
+   cards were sitting there, and they were his hardest — być, chcieć, wiedzieć,
+   iść, płacić, ręka — the words most in need of the card being withheld. Reps
+   say what was always meant and cannot be undershot.
+
    The gate only governs *introducing* a card. Once a card has state it stays
    in rotation, so a later lapse on recognition does not yank away work
    already under way. */
-const UNLOCK_IVL = { production: 6, listening: 15 };
-// The other end of the same ladder is RETIRE_IVL, below.
+const UNLOCK_REPS = { production: 2, listening: 3 };
 
 function unlocked(key){
   // A scratch session is for looking at the app, not for learning — waiting
@@ -640,15 +686,15 @@ function unlocked(key){
      it has no recognition card of its own to mature. */
   if (n0 && n0.kind === "form") {
     const base = cardStates[cardKey(n0.parent, "recognition")];
-    return !!base && base.ivl >= UNLOCK_IVL.production;
+    return !!base && base.reps >= UNLOCK_REPS.production;
   }
-  const need = UNLOCK_IVL[typeOf(key)];
+  const need = UNLOCK_REPS[typeOf(key)];
   if (need === undefined) return true;
   const note = NOTES[noteOf(key)];
   // A note that produces no recognition card has nothing to gate against.
   if (!typesFor(note).includes("recognition")) return true;
   const base = cardStates[cardKey(noteOf(key), "recognition")];
-  return !!base && base.ivl >= need;
+  return !!base && base.reps >= need;
 }
 
 /* At most one *new* card per note per day. A note's cards are siblings —
@@ -1257,7 +1303,7 @@ function showBack(){
 function grade(g){
   const key = queue.shift();
   const isNew = !cardStates[key];
-  const next = schedule(cardStates[key] || newCardState(), g);
+  const next = schedule(cardStates[key] || newCardState(), g, key);
   // Stamped whichever way it was graded — it was still introduced today.
   if (isNew) next.introduced = today();
 
