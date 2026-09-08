@@ -1,0 +1,181 @@
+Ryby mieszkają w wodzie. Ryby ___ nie chodzą do sklepu.
+Marek nie ma pieniędzy. W sklepie ___ płaci kartą.
+Mój pies chce iść do parku rano i wieczorem. Zawsze! ___ chodzę do parku.
+Słońce jest żółte. Słońce ___ nie jest zielone.
+Marek je chleb rano. Ale nie zawsze! ___ je kaszę.
+Marek bardzo lubi kawę. Kawa jest dobra rano, w pracy i wieczorem. Marek ___ chce kawę.
+Marek chodzi do pracy pociągiem. Ale nie zawsze pociągiem! ___ jedzie samochodem.
+Nowy dzień, nowa kawa. Marek ___ pije kawę.
+Marek nie lubi mleka. Mleko jest zimne i dziwne. Marek ___ nie pije mleka.
+Marek nie wie, gdzie jest sklep. Marek ___ pyta ludzi na ulicy.
+zawsze czasami nigdy codziennie
+
+Marek codziennie czyta książkę. To jest jego pierwsza polska książka.
+
+Rano czyta w domu. Wieczorem czyta w łóżku. Czasami czyta w pociągu.
+
+Marek zna dużo polskich słów. Ale książka ma dziwne słowa.
+
+— Nie wiem, co to jest — myśli Marek. — Nie znam tego słowa. Nie pamiętam.
+
+Marek zawsze ma pytanie. Codziennie ma nowe pytanie!
+
+Marek codziennie chodzi do pracy. W pracy pyta Ewę. Ewa zna polski i zna Marka.
+
+— Mam pytanie — mówi Marek. — Co robisz rano?
+
+— Rano piję kawę i czytam — mówi Ewa. — A ty?
+
+— Ja nigdy nie piję kawy rano. Zawsze piję wodę.
+
+— To dziwne! — śmieje się Ewa. — A co robisz wieczorem?
+
+— Czytam książkę. Ale czasami nie mogę czytać. Nie znam słowa i nie wiem, co robić.
+
+— To nie jest dziwne — mówi Ewa. — Ja też czasami nie wiem.
+
+— Czy znasz dobre miejsce? Chcę czytać i pić kawę.
+
+— Znam. Jest nowy sklep na mojej ulicy. Zawsze tam czytam.
+
+Wieczorem Marek chce iść tam. Ale nie zna drogi.
+
+— Gdzie jest nowy sklep? — pyta ludzi na ulicy.
+
+Ludzie mówią, gdzie jest droga. Marek idzie i patrzy: to jest dobre miejsce.
+
+Marek siada, czyta książkę i pije kawę. Kot skacze na stół i patrzy na Marka.
+
+— Znam tego kota — myśli Marek. — To jest kot Ewy.
+
+Teraz Marek zawsze tam czyta.
+
+— Codziennie mam nowe słowo i nowe pytanie — myśli Marek. — Czasami nie wiem, co robić. Ale nigdy nie chcę mówić: nie mogę.
+
+--- lemmas ---
+Ryby       = ryba
+mieszkają  = mieszkać
+w          = w
+wodzie     = woda
+nie        = nie
+chodzą     = chodzić
+do         = do
+sklepu     = sklep
+Marek      = -
+ma         = mieć
+pieniędzy  = pieniądze
+sklepie    = sklep
+płaci      = płacić
+kartą      = karta
+Mój        = mój
+pies       = pies
+chce       = chcieć
+iść        = iść
+parku      = park
+rano       = rano
+i          = i
+wieczorem  = wieczór
+Zawsze     = zawsze
+chodzę     = chodzić
+Słońce     = słońce
+jest       = być
+żółte      = żółty
+zielone    = zielony
+je         = jeść
+chleb      = chleb
+Ale        = ale
+kaszę      = kasza
+bardzo     = bardzo
+lubi       = lubić
+kawę       = kawa
+Kawa       = kawa
+dobra      = dobry
+pracy      = praca
+chodzi     = chodzić
+pociągiem  = pociąg
+jedzie     = jechać
+samochodem = samochód
+Nowy       = nowy
+dzień      = dzień
+nowa       = nowy
+pije       = pić
+mleka      = mleko
+Mleko      = mleko
+zimne      = zimny
+dziwne     = dziwny
+wie        = wiedzieć
+gdzie      = gdzie
+sklep      = sklep
+pyta       = pytać
+ludzi      = ludzie
+na         = na
+ulicy      = ulica
+czasami    = czasami
+nigdy      = nigdy
+codziennie = codziennie
+czyta      = czytać
+książkę    = książka
+To         = to
+jego       = jego
+pierwsza   = pierwszy
+polska     = polski
+książka    = książka
+domu       = dom
+łóżku      = łóżko
+pociągu    = pociąg
+zna        = znać
+dużo       = dużo
+polskich   = polski
+słów       = słowo
+słowa      = słowo
+wiem       = wiedzieć
+co         = co
+myśli      = myśleć
+znam       = znać
+tego       = ten
+pamiętam   = pamiętać
+pytanie    = pytanie
+nowe       = nowy
+Ewę        = -
+Ewa        = -
+polski     = polski
+Marka      = -
+Mam        = mieć
+mówi       = mówić
+robisz     = robić
+piję       = pić
+czytam     = czytać
+A          = a
+ty         = ty
+Ja         = ja
+kawy       = kawa
+wodę       = woda
+śmieje                          = śmiać się
+się        = się
+mogę       = móc
+czytać     = czytać
+robić      = robić
+też        = też
+Czy        = czy
+znasz      = znać
+dobre      = dobry
+miejsce    = miejsce
+Chcę       = chcieć
+pić        = pić
+mojej      = mój
+tam        = tam
+drogi      = droga
+Ludzie     = ludzie
+mówią      = mówić
+droga      = droga
+idzie      = iść
+patrzy     = patrzeć
+siada      = siadać
+Kot        = kot
+skacze     = skakać
+stół       = stół
+kota       = kot
+Ewy        = -
+Teraz      = teraz
+słowo      = słowo
+mówić      = mówić

@@ -2717,7 +2717,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "miasto",
@@ -3123,7 +3124,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "slyszec",
@@ -3619,7 +3621,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "glos",
@@ -3943,7 +3946,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "miesiac",
@@ -6736,7 +6740,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "sciana",
@@ -9109,8 +9114,7 @@
         "production",
         "listening"
       ],
-      "reviewed": true,
-      "priority": true
+      "reviewed": true
     },
     {
       "id": "czasami",
@@ -9177,8 +9181,7 @@
         "production",
         "listening"
       ],
-      "reviewed": true,
-      "priority": true
+      "reviewed": true
     },
     {
       "id": "nigdy",
@@ -9276,7 +9279,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "sok",

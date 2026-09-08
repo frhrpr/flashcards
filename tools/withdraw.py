@@ -29,6 +29,11 @@ a withdrawal when it works out which cards are failing — otherwise a word's
 old misses would follow it back into rotation and it would look broken on
 arrival.
 
+It also clears `priority` on the note. A prioritised word is pulled out of
+the bank *first*, so withdrawing one without clearing the flag hands it back
+the next morning — which is the opposite of a withdrawal and is exactly what
+happened to `często` and `zwykle` on 2026-09-08.
+
 Dry run by default. Deleting card state is not reversible from here: the
 history stays in the log, but the intervals and ease are gone.
 """
@@ -82,6 +87,22 @@ def patch(uid, key, fields, delete_paths, body_paths):
             return json.load(r)
     except urllib.error.HTTPError as e:
         die(f"write failed: HTTP {e.code} {e.read().decode('utf-8','replace')[:300]}")
+
+
+def clear_priority(ids, go):
+    """A withdrawn word must not be first out of the bank."""
+    deck = json.loads(NOTES.read_text(encoding="utf-8"))
+    hit = [n["word"] for n in deck["notes"]
+           if n["id"] in ids and n.get("priority")]
+    if not hit:
+        return []
+    if go:
+        for n in deck["notes"]:
+            if n["id"] in ids:
+                n.pop("priority", None)
+        NOTES.write_text(json.dumps(deck, ensure_ascii=False, indent=2) + "\n",
+                         encoding="utf-8")
+    return hit
 
 
 def main():
@@ -161,6 +182,11 @@ def main():
             d = cards[k]["mapValue"]["fields"]
             print(f"      {k.rsplit('__',1)[1]:<12} ivl {num(d.get('ivl',{})) or 0:>3}"
                   f"  ease {num(d.get('ease',{})) or 0:.2f}")
+    prio = clear_priority(set(ids), False)
+    if prio:
+        print(f"\n  priority flag cleared: {', '.join(prio)}")
+        print("  (a prioritised word comes out of the bank first — leaving the")
+        print("   flag would hand it straight back tomorrow)")
     print(f"\n  reason recorded: {args.why!r}")
     print("  the review log is untouched — the streak and accuracy do not move")
 
@@ -168,6 +194,7 @@ def main():
         print("\ndry run. Re-run with --go.")
         return 0
 
+    clear_priority(set(ids), True)
     now = int(time.time() * 1000)
     rec = dict(out)
     for nid in ids:
