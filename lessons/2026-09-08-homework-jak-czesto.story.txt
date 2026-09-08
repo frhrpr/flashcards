@@ -1,56 +1,48 @@
 Ryby mieszkają w wodzie. Ryby ___ nie chodzą do sklepu.
-Marek chce kawę rano, w pracy i wieczorem. Nie czasami! Marek ___ chce kawę.
-Marek je chleb rano. Ale nie zawsze! Marek ___ je kaszę.
-Marek je śniadanie rano. Nie czasami! Marek ___ je śniadanie.
+Piotr chce kawę rano, w pracy i wieczorem. Nie czasami! Piotr ___ chce kawę.
+Ola je chleb rano. Ale nie zawsze! Ola ___ je kaszę.
+Adam zawsze je śniadanie rano. Adam ___ je śniadanie.
 Słońce jest żółte. Słońce ___ nie jest zielone.
-Marek jedzie do pracy pociągiem. Ale nie zawsze pociągiem! Marek ___ jedzie samochodem.
-Dzień pierwszy - praca. Dzień drugi - praca. Nie czasami! Marek ___ jest w pracy.
-Marek nie lubi mleka. Nie pije mleka rano. Nie pije mleka wieczorem. Marek ___ nie pije mleka.
-Marek ma psa. Rano chodzi do parku, wieczorem chodzi do parku. W deszczu też! Nie czasami. Marek ___ chce iść do parku.
-Marek chodzi do sklepu. Ale nie codziennie! Marek ___ chodzi do sklepu.
+Ania jedzie do pracy pociągiem. Ale nie zawsze pociągiem! Ania ___ jedzie samochodem.
+Dzień pierwszy - praca. Dzień drugi - praca. Nie czasami! Michał ___ jest w pracy.
+Zosia nie lubi mleka. Nie pije mleka rano. Nie pije mleka wieczorem. Zosia ___ nie pije mleka.
+Pies Jurka chodzi do parku rano. Wieczorem też. W deszczu też! Nie czasami. Pies Jurka ___ chce iść do parku.
+Dzień pierwszy - sklep. Dzień drugi - dom. Marta ___ chodzi do sklepu.
 zawsze czasami nigdy codziennie
 
-Marek codziennie czyta książkę. To jest jego pierwsza polska książka.
+Sven chce czytać polskie książki. Teraz czyta pierwszą polską książkę.
 
-Rano czyta w domu. Wieczorem czyta w łóżku. Czasami czyta w pociągu.
+Codziennie czyta. Wieczorem czyta w łóżku — to jest dobre miejsce. Czasami czyta w pociągu.
 
-Marek zna dużo polskich słów. Ale książka ma dziwne słowa.
+Sven zna dużo polskich słów. Ale książka ma dziwne słowa. Czasami nie zna słowa. Czasami nie pamięta słowa.
 
-— Nie wiem, co to jest — myśli Marek. — Nie znam tego słowa. Nie pamiętam.
+— Nie wiem, co to jest — myśli Sven.
 
-Marek zawsze ma pytanie. Codziennie ma nowe pytanie!
+Codziennie ma nowe pytanie.
 
-Marek codziennie chodzi do pracy. W pracy pyta Ewę. Ewa zna polski i zna Marka.
+Sven codziennie chodzi do pracy. W pracy pyta Ewę — Ewa zna dużo słów.
 
-— Mam pytanie — mówi Marek. — Co robisz rano?
+— Mam pytanie — mówi Sven. — Co to jest "ptak"?
 
-— Rano piję kawę i czytam — mówi Ewa. — A ty?
+— Ptak? — Ewa patrzy na książkę. — Ptak jest w parku. Ptak śpiewa i leci.
 
-— Ja nigdy nie piję kawy rano. Zawsze piję wodę.
+— Teraz wiem. Dziękuję!
 
-— To dziwne! — śmieje się Ewa. — A co robisz wieczorem?
+— Czytasz codziennie? — pyta Ewa.
 
-— Czytam książkę. Ale czasami nie mogę czytać. Nie znam słowa i nie wiem, co robić.
+— Tak. Ale rano nigdy nie czytam — rano piję kawę i jadę do pracy.
 
-— To nie jest dziwne — mówi Ewa. — Ja też czasami nie wiem.
+— A co robisz wieczorem?
 
-— Czy znasz dobre miejsce? Chcę czytać i pić kawę.
+— Zawsze czytam. Czasami nie wiem, co to jest, ale chcę czytać.
 
-— Znam. Jest nowy sklep na mojej ulicy. Zawsze tam czytam.
+— Ja też codziennie czytam — mówi Ewa.
 
-Wieczorem Marek chce iść tam. Ale nie zna drogi.
+Teraz Sven codziennie ma nowe słowo. I nowe pytanie.
 
-— Gdzie jest nowy sklep? — pyta ludzi na ulicy.
+— Czy zawsze mogę pytać? — mówi Sven.
 
-Ludzie mówią, gdzie jest droga. Marek idzie i patrzy: to jest dobre miejsce.
-
-Marek siada, czyta książkę i pije kawę. Kot skacze na stół i patrzy na Marka.
-
-— Znam tego kota — myśli Marek. — To jest kot Ewy.
-
-Teraz Marek zawsze tam czyta.
-
-— Codziennie mam nowe słowo i nowe pytanie — myśli Marek. — Czasami nie wiem, co robić. Ale nigdy nie chcę mówić: nie mogę.
+— Zawsze! — mówi Ewa. — Ja też czasami nie wiem.
 
 --- lemmas ---
 Ryby       = ryba
@@ -61,7 +53,7 @@ nie        = nie
 chodzą     = chodzić
 do         = do
 sklepu     = sklep
-Marek      = -
+Piotr      = -
 chce       = chcieć
 kawę       = kawa
 rano       = rano
@@ -69,16 +61,19 @@ pracy      = praca
 i          = i
 wieczorem  = wieczór
 czasami    = czasami
+Ola        = -
 je         = jeść
 chleb      = chleb
 Ale        = ale
 zawsze     = zawsze
 kaszę      = kasza
+Adam       = -
 śniadanie  = śniadanie
 Słońce     = słońce
 jest       = być
 żółte      = żółty
 zielone    = zielony
+Ania       = -
 jedzie     = jechać
 pociągiem  = pociąg
 samochodem = samochód
@@ -86,88 +81,72 @@ Dzień      = dzień
 pierwszy   = pierwszy
 praca      = praca
 drugi      = drugi
+Michał     = -
+Zosia      = -
 lubi       = lubić
 mleka      = mleko
 pije       = pić
-ma         = mieć
-psa        = pies
+Pies       = pies
+Jurka      = -
 chodzi     = chodzić
 parku      = park
-deszczu    = deszcz
 też        = też
+deszczu    = deszcz
 iść        = iść
-codziennie = codziennie
+sklep      = sklep
+dom        = dom
+Marta      = -
 nigdy      = nigdy
+codziennie = codziennie
+Sven       = -
+czytać     = czytać
+polskie    = polski
+książki    = książka
+Teraz      = teraz
 czyta      = czytać
+pierwszą   = pierwszy
+polską     = polski
 książkę    = książka
-To         = to
-jego       = jego
-pierwsza   = pierwszy
-polska     = polski
-książka    = książka
-domu       = dom
 łóżku      = łóżko
+to         = to
+dobre      = dobry
+miejsce    = miejsce
 pociągu    = pociąg
 zna        = znać
 dużo       = dużo
 polskich   = polski
 słów       = słowo
+książka    = książka
+ma         = mieć
 dziwne     = dziwny
 słowa      = słowo
+pamięta    = pamiętać
 wiem       = wiedzieć
 co         = co
 myśli      = myśleć
-znam       = znać
-tego       = ten
-pamiętam   = pamiętać
-pytanie    = pytanie
 nowe       = nowy
+pytanie    = pytanie
 pyta       = pytać
 Ewę        = -
 Ewa        = -
-polski     = polski
-Marka      = -
 Mam        = mieć
 mówi       = mówić
-robisz     = robić
-piję       = pić
-czytam     = czytać
-A          = a
-ty         = ty
-Ja         = ja
-kawy       = kawa
-wodę       = woda
-śmieje     = śmiać się
-się        = się
-mogę       = móc
-czytać     = czytać
-robić      = robić
-Czy        = czy
-znasz      = znać
-dobre      = dobry
-miejsce    = miejsce
-Chcę       = chcieć
-pić        = pić
-nowy       = nowy
-sklep      = sklep
-na         = na
-mojej      = mój
-ulicy      = ulica
-tam        = tam
-drogi      = droga
-Gdzie      = gdzie
-ludzi      = ludzie
-Ludzie     = ludzie
-mówią      = mówić
-droga      = droga
-idzie      = iść
+ptak       = ptak
 patrzy     = patrzeć
-siada      = siadać
-Kot        = kot
-skacze     = skakać
-stół       = stół
-kota       = kot
-Ewy        = -
-Teraz      = teraz
+na         = na
+śpiewa     = śpiewać
+leci       = lecieć
+Dziękuję   = dziękuję
+czytasz    = czytać
+Tak        = tak
+czytam     = czytać
+piję       = pić
+jadę       = jechać
+A          = a
+robisz     = robić
+chcę       = chcieć
+Ja         = ja
 słowo      = słowo
-mówić      = mówić
+Czy        = czy
+mogę       = móc
+pytać      = pytać
