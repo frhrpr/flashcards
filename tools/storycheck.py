@@ -44,6 +44,26 @@ the mapping cannot.
 
 Anything unmapped is an error, not a warning. A token nobody classified is a
 word nobody checked, and that must never look like a pass.
+
+## `-` is checked too
+
+`-` is the one mapping this tool cannot verify — it says "trust me, that is
+not a Polish word" and everything downstream then ignores the token. So it is
+the obvious way to silence the check by accident, and on 2026-09-09 it was:
+a draft said `Jak często czytasz?` with `często = -`, and `często` is a word
+withdrawn from the student's deck four days earlier. The sheet passed clean
+because the map had told the tool not to look.
+
+So a `-` whose token is spelled like a word in `vocab.csv` or `frequency.csv`
+is an error. Names do not collide with either — checked against every `-`
+ever written here, 41 of them across every draft, and all fourteen distinct
+tokens were personal names with no collision at all.
+
+There is deliberately **no escape hatch** for a proper noun that really does
+share a spelling with a deck word. One would be used, and this repo has
+already watched an optional label become the quiet path of least resistance
+(see `image_basis` in CLAUDE.md). Rename the character instead — we choose
+the names, and it costs nothing.
 """
 import argparse, csv, json, re, sys, urllib.request
 from pathlib import Path
@@ -51,6 +71,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 NOTES = ROOT / "deck" / "notes.json"
 VOCAB = ROOT / "deck" / "vocab.csv"
+FREQ = ROOT / "deck" / "frequency.csv"
 APP = ROOT / "index.html"
 
 SEP = re.compile(r"^\s*-{2,}\s*lemmas\s*-{2,}\s*$", re.I | re.M)
@@ -90,6 +111,23 @@ def parse_map(block, path):
     if not out:
         die(f"{path}: the lemma block is empty")
     return out
+
+
+def check_skips(lemmas, words, path):
+    """`-` claims a token is not vocabulary. Verify the claim where we can."""
+    bad = sorted(t for t, head in lemmas.items() if head == SKIP and t in words)
+    if not bad:
+        return
+    print(f"{path}: {len(bad)} token(s) mapped to '{SKIP}' are real Polish "
+          f"words:\n")
+    for t in bad:
+        print(f"    {t}")
+    print("\n'-' means 'not vocabulary', and everything after it stops "
+          "checking that\ntoken — so this is how a word he has not met "
+          "reaches him unnoticed.\nMap it to its headword instead. If it "
+          "genuinely is a name, rename the\ncharacter; there is no escape "
+          "hatch here on purpose.")
+    sys.exit(1)
 
 
 def met_notes(uid):
@@ -146,6 +184,10 @@ def main():
     lemmas = parse_map(block, path)
     vocab = {r["word"]: r for r in
              csv.DictReader(VOCAB.read_text(encoding="utf-8").splitlines())}
+    known = {w.lower() for w in vocab}
+    known |= {r["lemma"].lower() for r in
+              csv.DictReader(FREQ.read_text(encoding="utf-8").splitlines())}
+    check_skips(lemmas, known, path)
     notes = {n["word"]: n for n in
              json.loads(NOTES.read_text(encoding="utf-8"))["notes"]}
 

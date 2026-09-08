@@ -861,6 +861,22 @@ Deferred on purpose: 4 grades instead of 2, and a stats screen.
   An unmapped token is an error rather than a warning, because a token nobody
   classified is a word nobody checked.
 
+  **`-` is checked too, because it is the one mapping the tool cannot
+  verify.** It says "trust me, that is not a Polish word", and everything
+  downstream then ignores the token — so it is the obvious way to silence the
+  check by accident, and on 2026-09-09 it was. A homework draft said `Jak
+  często czytasz?` with `często = -`, and `często` had been withdrawn from his
+  deck four days earlier. The sheet passed clean because the map had told the
+  tool not to look. A `-` whose token is spelled like a word in `vocab.csv` or
+  `frequency.csv` is now an error.
+
+  There is deliberately **no escape hatch** for a name that really does share
+  a spelling with a deck word. One would get used, and this repo has already
+  watched an optional label become the path of least resistance — see
+  `image_basis` above. Rename the character instead; we choose the names.
+  Checked against all 41 `-` mappings ever written here: fourteen distinct
+  tokens, every one a personal name, no collision with either list.
+
 - **`review.py --approve` refuses a note that changed after the page was
   built.** Approving asserts a human looked at it; if the sentence or a clip
   was replaced since the page was written, nobody has looked at the version
