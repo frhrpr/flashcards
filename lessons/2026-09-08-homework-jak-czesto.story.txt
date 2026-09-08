@@ -1,13 +1,13 @@
 Ryby mieszkają w wodzie. Ryby ___ nie chodzą do sklepu.
-Marek nie ma pieniędzy. W sklepie ___ płaci kartą.
-Mój pies chce iść do parku rano i wieczorem. Zawsze! ___ chodzę do parku.
+Marek chce kawę rano, w pracy i wieczorem. Nie czasami! Marek ___ chce kawę.
+Marek je chleb rano. Ale nie zawsze! Marek ___ je kaszę.
+Marek je śniadanie rano. Nie czasami! Marek ___ je śniadanie.
 Słońce jest żółte. Słońce ___ nie jest zielone.
-Marek je chleb rano. Ale nie zawsze! ___ je kaszę.
-Marek bardzo lubi kawę. Kawa jest dobra rano, w pracy i wieczorem. Marek ___ chce kawę.
-Marek chodzi do pracy pociągiem. Ale nie zawsze pociągiem! ___ jedzie samochodem.
-Nowy dzień, nowa kawa. Marek ___ pije kawę.
-Marek nie lubi mleka. Mleko jest zimne i dziwne. Marek ___ nie pije mleka.
-Marek nie wie, gdzie jest sklep. Marek ___ pyta ludzi na ulicy.
+Marek jedzie do pracy pociągiem. Ale nie zawsze pociągiem! Marek ___ jedzie samochodem.
+Dzień pierwszy - praca. Dzień drugi - praca. Nie czasami! Marek ___ jest w pracy.
+Marek nie lubi mleka. Nie pije mleka rano. Nie pije mleka wieczorem. Marek ___ nie pije mleka.
+Marek ma psa. Rano chodzi do parku, wieczorem chodzi do parku. W deszczu też! Nie czasami. Marek ___ chce iść do parku.
+Marek chodzi do sklepu. Ale nie codziennie! Marek ___ chodzi do sklepu.
 zawsze czasami nigdy codziennie
 
 Marek codziennie czyta książkę. To jest jego pierwsza polska książka.
@@ -62,57 +62,42 @@ chodzą     = chodzić
 do         = do
 sklepu     = sklep
 Marek      = -
-ma         = mieć
-pieniędzy  = pieniądze
-sklepie    = sklep
-płaci      = płacić
-kartą      = karta
-Mój        = mój
-pies       = pies
 chce       = chcieć
-iść        = iść
-parku      = park
+kawę       = kawa
 rano       = rano
+pracy      = praca
 i          = i
 wieczorem  = wieczór
-Zawsze     = zawsze
-chodzę     = chodzić
+czasami    = czasami
+je         = jeść
+chleb      = chleb
+Ale        = ale
+zawsze     = zawsze
+kaszę      = kasza
+śniadanie  = śniadanie
 Słońce     = słońce
 jest       = być
 żółte      = żółty
 zielone    = zielony
-je         = jeść
-chleb      = chleb
-Ale        = ale
-kaszę      = kasza
-bardzo     = bardzo
-lubi       = lubić
-kawę       = kawa
-Kawa       = kawa
-dobra      = dobry
-pracy      = praca
-chodzi     = chodzić
-pociągiem  = pociąg
 jedzie     = jechać
+pociągiem  = pociąg
 samochodem = samochód
-Nowy       = nowy
-dzień      = dzień
-nowa       = nowy
-pije       = pić
+Dzień      = dzień
+pierwszy   = pierwszy
+praca      = praca
+drugi      = drugi
+lubi       = lubić
 mleka      = mleko
-Mleko      = mleko
-zimne      = zimny
-dziwne     = dziwny
-wie        = wiedzieć
-gdzie      = gdzie
-sklep      = sklep
-pyta       = pytać
-ludzi      = ludzie
-na         = na
-ulicy      = ulica
-czasami    = czasami
-nigdy      = nigdy
+pije       = pić
+ma         = mieć
+psa        = pies
+chodzi     = chodzić
+parku      = park
+deszczu    = deszcz
+też        = też
+iść        = iść
 codziennie = codziennie
+nigdy      = nigdy
 czyta      = czytać
 książkę    = książka
 To         = to
@@ -127,6 +112,7 @@ zna        = znać
 dużo       = dużo
 polskich   = polski
 słów       = słowo
+dziwne     = dziwny
 słowa      = słowo
 wiem       = wiedzieć
 co         = co
@@ -136,6 +122,7 @@ tego       = ten
 pamiętam   = pamiętać
 pytanie    = pytanie
 nowe       = nowy
+pyta       = pytać
 Ewę        = -
 Ewa        = -
 polski     = polski
@@ -150,21 +137,26 @@ ty         = ty
 Ja         = ja
 kawy       = kawa
 wodę       = woda
-śmieje                          = śmiać się
+śmieje     = śmiać się
 się        = się
 mogę       = móc
 czytać     = czytać
 robić      = robić
-też        = też
 Czy        = czy
 znasz      = znać
 dobre      = dobry
 miejsce    = miejsce
 Chcę       = chcieć
 pić        = pić
+nowy       = nowy
+sklep      = sklep
+na         = na
 mojej      = mój
+ulicy      = ulica
 tam        = tam
 drogi      = droga
+Gdzie      = gdzie
+ludzi      = ludzie
 Ludzie     = ludzie
 mówią      = mówić
 droga      = droga
