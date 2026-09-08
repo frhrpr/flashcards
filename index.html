@@ -628,6 +628,7 @@ function shuffle(arr){
    in rotation, so a later lapse on recognition does not yank away work
    already under way. */
 const UNLOCK_IVL = { production: 6, listening: 15 };
+// The other end of the same ladder is RETIRE_IVL, below.
 
 function unlocked(key){
   // A scratch session is for looking at the app, not for learning — waiting
@@ -687,6 +688,46 @@ function bankOrder(cards){
 function introducible(k){
   return (NOTES[noteOf(k)] || {}).reviewed === true;
 }
+
+/* Retirement. A card whose interval has reached RETIRE_IVL leaves rotation
+   for good and is never shown again.
+
+   It is needed because intervals grow but the deck grows too, and the deck
+   wins. `ivl * ease` is unbounded — a card answered right forever runs 1, 6,
+   15, 38, 95, 238, 595 days — so each card's cost does decay, just not fast
+   enough to offset a word a day arriving behind it. Without retirement the
+   daily session grows without limit: simulated on his real numbers, three
+   words a day reaches 13 minutes at one year and 20 at five, and is still
+   climbing. With retirement it flattens.
+
+   180 days rather than a rounder number because the thresholds are not
+   continuous. The interval ladder above means every threshold from 96 to 238
+   retires a card at exactly the same moment — the sixth consecutive correct
+   answer, about eight months in. 180 is the middle of that band and says what
+   it means: six in a row, and we stop asking. 365 would sit in the *next*
+   band and cost a quarter more reviews per card for one extra look every
+   twenty months.
+
+   Derived, never stored. There is no `retired` flag on card state, no
+   migration and no write: lowering or raising this constant brings cards back
+   or sends them away on the next load. A stored flag would make the decision
+   irreversible, which is the wrong shape for a number chosen by simulation.
+
+   The consequence to be honest about: a retired card is never shown, so its
+   interval never changes, so nothing can un-retire it. This is a claim that
+   six correct answers spread over eight months means the word is his. If that
+   turns out to be wrong, the evidence will be indirect — a retired word
+   failing inside a sentence on another card — and the remedy is to lower this
+   number, or to withdraw the note and let it come round again. */
+const RETIRE_IVL = 180;
+/* `cardRetired`, not `retired`: the ear trainer already owns that name for
+   pair retirement, and index.html is one module scope shared by both halves,
+   so the clash is a SyntaxError that kills the whole app on load. smoke.mjs
+   caught it. */
+function cardRetired(k){
+  const st = cardStates[k];
+  return !!st && st.ivl >= RETIRE_IVL;
+}
 /* New cards used to be appended, so every one of them arrived at the end of
    the session: the most effortful cards landing when he is most tired, and
    the gapped production cards clustering worst of all, since they unlock
@@ -730,7 +771,8 @@ for (const k of bankOrder(shuffle([...allCards]))) {
   fresh.push(k);
 }
 
-const dueCards = shuffle(allCards.filter(k => cardStates[k] && cardStates[k].due <= t))
+const dueCards = shuffle(allCards.filter(
+    k => cardStates[k] && cardStates[k].due <= t && !cardRetired(k)))
   .sort((a, b) => cardStates[a].due - cardStates[b].due);
 let queue = interleave(dueCards, fresh);
 /* A "just reviews" session drops the new cards. Skipping them creates no
@@ -850,7 +892,11 @@ function midnight(ms){ const d = new Date(ms); d.setHours(0,0,0,0); return d.get
    tracked separately, so it cannot drift from what the queue actually does. */
 function stats(){
   const withState = allCards.filter(k => cardStates[k]);
-  const future = withState.filter(k => cardStates[k].due > t).map(k => cardStates[k].due);
+  /* A retired card keeps its state and still counts as started — he did
+     learn it — but it is not due, and it must not be what `nextDue` points
+     at, or the closing screen would tell him to come back in eight months. */
+  const live = withState.filter(k => !cardRetired(k));
+  const future = live.filter(k => cardStates[k].due > t).map(k => cardStates[k].due);
   const days = [...new Set(reviewLog.map(e => midnight(e.ts)))].sort((a, b) => b - a);
   let streak = 0;
   if (days.length && (days[0] === t || days[0] === t - MS_DAY)) {
@@ -861,13 +907,14 @@ function stats(){
     }
   }
   return {
-    due: withState.filter(k => cardStates[k].due <= t).length,
+    due: live.filter(k => cardStates[k].due <= t).length,
     fresh: fresh.length,
     locked: lockedCount,
     started: withState.length,
     total: allCards.length,
     notes: Object.keys(NOTES).length,
     startedNotes: new Set(withState.map(noteOf)).size,
+    retired: withState.length - live.length,
     todayReviews: reviewLog.filter(e => e.ts >= t).length,
     nextDue: future.length ? Math.min(...future) : null,
     streak,
@@ -924,6 +971,7 @@ function renderDone(){
         ${rate !== null ? row("Got it first time", rate + "%") : ""}
         ${st.streak > 1 ? row("Days in a row", st.streak) : ""}
         ${row("Words started", `${st.startedNotes} of ${st.notes}`)}
+        ${st.retired ? row("Finished for good", st.retired) : ""}
       </dl>` : ""}
       ${st.locked ? `<p class="aside">${st.locked} card${st.locked === 1 ? "" : "s"} ` +
         `waiting in the wings (nothing to do about those — they turn up on ` +
@@ -1709,7 +1757,7 @@ function extraPlan(){
     .filter((k, i, all) => all.findIndex(j => noteOf(j) === noteOf(k)) === i)
     .slice(0, EXTRA_NEW);
   const practice = Object.keys(cardStates)
-    .filter(k => NOTES[noteOf(k)] && !fresh3.includes(k))
+    .filter(k => NOTES[noteOf(k)] && !fresh3.includes(k) && !cardRetired(k))
     .sort((a, b) => (cardStates[a].ease || 2.5) - (cardStates[b].ease || 2.5))
     .slice(0, EXTRA_PRACTICE);
   return { fresh3, practice };

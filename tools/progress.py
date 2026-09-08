@@ -86,6 +86,20 @@ def load_remote(key, user):
             fields.get("done") or {}, fields.get("hints") or {}, withdrawn)
 
 
+def retire_ivl():
+    """RETIRE_IVL out of index.html, for the same reason as intake_rate below:
+    it is a number chosen by simulation and likely to be moved again, and a
+    copy here would report cards as retired that the app still shows."""
+    m = re.search(r"const RETIRE_IVL\s*=\s*(\d+)",
+                  (ROOT / "index.html").read_text(encoding="utf-8"))
+    if not m:
+        die("could not read RETIRE_IVL out of index.html")
+    return int(m.group(1))
+
+
+RETIRE_IVL = None                # set from index.html on first use
+
+
 def intake_rate():
     """NEW_WORDS_PER_DAY out of index.html, so this report cannot quietly
     disagree with the app about how fast the deck is consumed."""
@@ -179,6 +193,8 @@ def sessions(log):
 
 
 def analyse(cards, log, notes, done, hints, withdrawn=None):
+    global RETIRE_IVL
+    RETIRE_IVL = retire_ivl()
     withdrawn = withdrawn or {}
     word = {n["id"]: n["word"] for n in notes}
     gloss = {n["id"]: n.get("gloss", "") for n in notes}
@@ -223,10 +239,23 @@ def analyse(cards, log, notes, done, hints, withdrawn=None):
     hard = sorted(((nid, lapses[nid], seen[nid]) for nid in lapses),
                   key=lambda r: (-r[1], -(r[1] / max(r[2], 1))))[:12]
 
-    buckets = {"learning": 0, "young": 0, "mature": 0}
+    buckets = {"learning": 0, "young": 0, "mature": 0, "retired": 0}
     for st in cards.values():
         ivl = st.get("ivl", 0)
+        if ivl >= RETIRE_IVL:
+            buckets["retired"] += 1
+            continue
         buckets["learning" if ivl < YOUNG else "young" if ivl < MATURE else "mature"] += 1
+
+    # Cards one clean answer away from leaving. Worth seeing before they go,
+    # because retirement is a claim rather than an observation: the app stops
+    # asking, so nothing after this point will ever tell us it was wrong.
+    nearly = sorted(
+        ((k, st.get("ivl", 0)) for k, st in cards.items()
+         if RETIRE_IVL > st.get("ivl", 0) >= RETIRE_IVL / 2.5),
+        key=lambda r: -r[1])
+    gone = sorted({note_of(k) for k, st in cards.items()
+                   if st.get("ivl", 0) >= RETIRE_IVL})
 
     started_notes = {note_of(k) for k in cards}
     # How much new vocabulary is left. Conjugation drills are not new words —
@@ -275,8 +304,9 @@ def analyse(cards, log, notes, done, hints, withdrawn=None):
 
     return dict(
         word=word, gloss=gloss, by_day=by_day, days=days, streak=streak, hard=hard,
-        withdrawn=withdrawn,
-        buckets=buckets, started=len(started_notes), total_notes=len(notes),
+        withdrawn=withdrawn, gone=gone,
+        buckets=buckets,
+        nearly=nearly, started=len(started_notes), total_notes=len(notes),
         locked=locked, cards_started=len(cards), sessions=sess,
         median_minutes=sorted(lengths)[len(lengths) // 2] if lengths else 0,
         usual_hour=hours.most_common(1)[0][0] if hours else None,
@@ -345,7 +375,8 @@ def report(uid, a, e):
     else:
         p(f"  new words     {a['unseen']} left, about {a['runway']:.0f} days at {a['rate']}/day")
     b = a["buckets"]
-    p(f"  maturity      {b['learning']} learning, {b['young']} young, {b['mature']} mature")
+    p(f"  maturity      {b['learning']} learning, {b['young']} young, {b['mature']} mature"
+      + (f", {b['retired']} retired" if b["retired"] else ""))
     p("\n  recent days")
     for d in a["days"][-10:]:
         v = a["by_day"][d]
@@ -371,6 +402,22 @@ def report(uid, a, e):
                    else "in the bank"
             p(f"    {a['word'].get(nid, nid):<14} {fmt_day(d.get('at', 0)):<13}"
               f"{back:<18}{d.get('why','')[:44]}")
+    if a["buckets"]["retired"] or a.get("nearly"):
+        b_ret = a["buckets"]["retired"]
+        p(f"\n  retired at {RETIRE_IVL}+ days — never shown again")
+        if b_ret:
+            g = a["gone"]
+            p(f"    {b_ret} card(s) across {len(g)} word(s): "
+              + ", ".join(a["word"].get(n, n) for n in g[:10])
+              + (" …" if len(g) > 10 else ""))
+        else:
+            p("    none yet")
+        if a.get("nearly"):
+            p("    one or two answers away:")
+            for k, ivl in a["nearly"][:8]:
+                nid = k.rsplit("__", 1)[0]
+                p(f"      {a['word'].get(nid, nid):<14} "
+                  f"{k.rsplit('__', 1)[1]:<12} {ivl:>4} d")
     if a["hard"]:
         p("\n  giving him trouble")
         for nid, miss, tot in a["hard"]:
@@ -518,6 +565,7 @@ td.hist b.g{{color:var(--ok)}} td.hist b.a{{color:var(--bad)}}
 <dt>Still locked</dt><dd>{a['locked']}</dd>
 <dt>New words left</dt><dd{' class=low' if a['runway'] < 4 else ''}>{a['unseen']}</dd>
 <dt>Learning / young / mature</dt><dd>{b['learning']} / {b['young']} / {b['mature']}</dd>
+<dt>Retired ({RETIRE_IVL}+ days)</dt><dd>{b['retired']}</dd>
 <dt>Median sitting</dt><dd>{a['median_minutes']:.0f} min</dd>
 </dl></div>
 <h2>Turning up</h2>

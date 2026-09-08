@@ -109,6 +109,7 @@ export { renderDone, renderLanding, startEar, earPlan, nextEarTrial, answerEar, 
 export const state = () => ({ html, PAIRS, livePairs, earQueue, earIdx, earStates, queue, doneDays, vocabLight });
 export const requested = () => asked;
 export { bankOrder, introducible, interleave, NOTES, openHint, hintOpens, HINT_SETS };
+export { cardRetired, RETIRE_IVL, stats, cardStates };
 export const forgetPreloads = () => { preloaded.clear(); asked.length = 0; };
 export const seed = (due, nw) => { dueCards.length = 0; dueCards.push(...due);
   fresh.length = 0; fresh.push(...nw); queue = [...due, ...nw]; };
@@ -247,6 +248,28 @@ try {
     const d = declaredAt(m[1]);
     if (d < 0 || d > i) tdz.push(`${m[1]} (assigned line ${i + 1}, declared ${d + 1})`);
   });
+  /* One module scope, two halves. `retired` already meant pair retirement in
+     the ear trainer when card retirement wanted the same name, and a repeat
+     top-level declaration is a SyntaxError that kills the page on load — not
+     a shadowed variable, the whole app.
+
+     Where two clashing functions both land in a slice, importing the module
+     above throws first and this never runs. It earns its place on the rest:
+     grade(), stats(), the queue build and the loader are in no slice at all,
+     so a duplicate there would reach the browser and nothing else here would
+     see it. */
+  const topFns = [...raw.matchAll(/^function\s+([A-Za-z_$][\w$]*)\s*\(/gm)]
+    .map(m2 => m2[1]);
+  const dupes = topFns.filter((n, i) => topFns.indexOf(n) !== i);
+  check(dupes.length === 0,
+        `no top-level function is declared twice${dupes.length ? ": " + [...new Set(dupes)].join(", ") : ""}`);
+
+  /* Retired cards leave rotation entirely. The dueCards build sits outside
+     every slice, so this half is a text check; the behaviour is exercised
+     against stats() below. */
+  check(/dueCards = shuffle\(allCards\.filter\([\s\S]{0,120}!cardRetired\(k\)/.test(raw),
+        "the due queue excludes retired cards");
+
   /* grade() is not inside any slice, so this is a text check rather than a
      behavioural one — but the invariant is worth pinning: a practice answer
      must not touch cardStates, or it becomes the base the next real answer is
@@ -330,6 +353,28 @@ try {
   m.NOTES[nid].reviewed = true;
   check(deck.notes.every(n => typeof n.reviewed === "boolean"),
         "every note in the real deck carries a boolean reviewed flag");
+
+  /* Retirement. Derived from the interval, so there is nothing to migrate and
+     the constant can be moved either way; the tests pin the boundary and the
+     effect on the two summary screens. */
+  const rk = `${ids[2]}__recognition`, lk = `${ids[3]}__recognition`;
+  check(m.cardRetired(rk) === false, "a card with no state is not retired");
+  m.cardStates[rk] = { ivl: m.RETIRE_IVL - 1, ease: 2.5, reps: 6, due: 0 };
+  check(m.cardRetired(rk) === false, "one interval short of the threshold is not");
+  m.cardStates[rk] = { ivl: m.RETIRE_IVL, ease: 2.5, reps: 6, due: 0 };
+  check(m.cardRetired(rk) === true, "exactly at the threshold is");
+  m.cardStates[lk] = { ivl: 6, ease: 2.5, reps: 2, due: 0 };
+  const sr = m.stats();
+  check(sr.due === 1, "a retired card is not due, an ordinary overdue one is");
+  check(sr.retired === 1, "and it is counted as retired");
+  check(sr.started === 2, "but it still counts as started — he did learn it");
+  /* The bug this guards: nextDue reading a retired card's due date and the
+     closing screen saying "come back in eight months". */
+  m.cardStates[lk] = { ivl: 6, ease: 2.5, reps: 2, due: Date.now() + 3 * 86400000 };
+  m.cardStates[rk] = { ivl: 400, ease: 2.5, reps: 8, due: Date.now() + 400 * 86400000 };
+  check(m.stats().nextDue === m.cardStates[lk].due,
+        "nextDue ignores retired cards");
+  delete m.cardStates[rk]; delete m.cardStates[lk];
 
   /* New cards must not all land at the end: that put the gapped production
      cards, which unlock latest and so are new most often, where he is most

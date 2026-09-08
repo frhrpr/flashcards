@@ -179,6 +179,16 @@ notes`. `status` is `queued` → `known` → `carded`.
   reads as broken; that is a day-one problem, not a reason to top up every
   quiet day. All counted from `introduced` stamps on card state, so the
   numbers survive a reload and a second device.
+
+  **The sibling allowance is currently binding, and that is unresolved.** Three
+  words a day want six sibling cards a day and may have five, so one card a day
+  is deferred permanently rather than smoothed: measured 2026-09-08, 37 cards
+  were unlocked and never introduced (26 listening, 11 production), and the
+  simulation puts that at ~280 in a year. His real intake is therefore eight
+  cards a day, not nine, and his listening and production cards fall steadily
+  behind his recognition cards. A cap set at exactly mean demand never drains;
+  raising it to 7 or 8 would. Not changed, because how much time that costs is
+  the user's call.
 - **Conjugation drills are notes with `kind: "form"`.** `być` and `mieć` are
   his worst cards precisely because the deck teaches a headword he will never
   utter — he says *jestem*, *jest*, *są*. Each form is therefore its own note
@@ -249,6 +259,46 @@ notes`. `status` is `queued` → `known` → `carded`.
   than a withdrawal** when working out which cards are failing — otherwise a
   word's abandoned run follows it back and it looks broken on the day it
   returns. Dry run by default; deleting card state is not reversible.
+
+- **Cards retire at 180 days — `RETIRE_IVL` in `index.html`.** A card whose
+  interval reaches it leaves rotation for good and is never shown again.
+
+  It is needed because intervals grow but the deck grows too, and the deck
+  wins. `ivl * ease` is unbounded — a clean card runs 1, 6, 15, 38, 95, 238,
+  595 days — so each card's cost decays, just not fast enough to offset a word
+  a day arriving behind it. Simulated against his real numbers (calibrated at
+  day 44: 48 answers / 100 words / 246 cards against an actual 55 / 113 / 247),
+  three words a day with no retirement reaches 13 minutes at one year and 20 at
+  five and is still climbing. With retirement it flattens at about 15.
+
+  **180 rather than a rounder number because the thresholds are not
+  continuous.** The interval ladder means every threshold from 96 to 238 days
+  retires a card at the identical moment — the sixth consecutive correct
+  answer, about eight months in. 120 and 180 are the same rule; 365 sits in the
+  next band and costs a quarter more reviews per card for one extra look every
+  twenty months. Say which *band* you mean, not which number.
+
+  **Derived, never stored.** There is no flag on card state, no migration and
+  no write: moving the constant brings cards back or sends them away on the
+  next load. A stored flag would make a number chosen by simulation
+  irreversible. `progress.py` parses the constant out of `index.html` for the
+  same reason `intake_rate()` does, and lists what has retired and what is one
+  answer away — retirement is a claim rather than an observation, so the last
+  look at a card before it goes is the only look there will be.
+
+  The honest consequence: a retired card is never shown, so its interval never
+  changes, so nothing can un-retire it. If the claim turns out to be wrong the
+  evidence will be indirect — a retired word failing inside another card's
+  sentence — and the remedy is to lower the constant or withdraw the note.
+
+  Nothing was affected when this shipped: his longest interval was 38 days, so
+  the first retirements land around January 2027.
+
+  It is `cardRetired`, not `retired`: the ear trainer already owns that name
+  for pair retirement, `index.html` is one module scope shared by both halves,
+  and the duplicate is a `SyntaxError` that kills the whole page on load.
+  `smoke.mjs` caught it, and now checks that no top-level function name is
+  declared twice.
 
 - **A "just reviews" session exists, and is deliberately a lesser option.**
   A small grey link under the Vocab tile, not a third mode: it drops `fresh`
