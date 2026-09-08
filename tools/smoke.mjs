@@ -267,6 +267,23 @@ try {
   check(dupes.length === 0,
         `no top-level function is declared twice${dupes.length ? ": " + [...new Set(dupes)].join(", ") : ""}`);
 
+  /* Intake. The loop sits outside every slice, so these are text checks; the
+     behaviour was verified by simulation. The invariant that matters is the
+     ordering — new words claim their reservation before siblings are offered
+     anything, or a backlog spends the whole day's budget before the loop ever
+     reaches a new word. */
+  check(!/NEW_SIBLINGS_PER_DAY/.test(raw),
+        "the separate sibling pool is gone — one total, one reservation");
+  const intake = raw.slice(raw.indexOf("const ordered = bankOrder("),
+                           raw.indexOf("const dueCards = shuffle("));
+  check(/for \(const wantWords of \[true, false\]\)/.test(intake),
+        "new words are offered before siblings");
+  check(intake.indexOf("words + siblings >= cardBudget") <
+        intake.indexOf("isNewWord && words >= wordBudget"),
+        "the day's total is checked before the word reservation");
+  check(/fresh\.sort\(/.test(intake),
+        "and the two passes are put back into bank order, not left as blocks");
+
   /* Retired cards leave rotation entirely. The dueCards build sits outside
      every slice, so this half is a text check; the behaviour is exercised
      against stats() below. */

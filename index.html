@@ -447,20 +447,36 @@ function typesFor(note){
   return (note.cards || ["recognition"]).filter(t => !NEEDS[t] || NEEDS[t](note));
 }
 
-/* Daily intake, counted in *words* rather than cards. A word's second and
-   third card types are not new vocabulary, and if they competed for the same
-   budget an unlocking backlog could starve new words entirely.
+/* Daily intake: a total in *cards*, with a reservation for new *words* inside
+   it. Two numbers, and they answer two different questions.
 
-   Three a day is matched to what he actually meets in lessons. The first
-   session gets a larger allowance because there is nothing to review yet and
-   finishing after two cards feels like the app is broken — and that is a
-   day-one problem, not a reason to top up every quiet day afterwards.
+   `NEW_CARDS_PER_DAY` is the time knob. Cards are what cost minutes, and the
+   plateau of the whole system is (cards introduced per day) x (answers a card
+   costs before it retires), so this is the number that decides how long a
+   session eventually takes.
 
-   Sibling cards get their own smaller budget so that a batch of words all
-   maturing at once does not arrive as a cliff. */
+   `NEW_WORDS_PER_DAY` is the teaching knob — three a day, matched to what he
+   meets in a lesson. It is a *reservation*, not a second pool: new words are
+   taken first so that an unlocking backlog can never crowd vocabulary out
+   entirely, which is the failure this budget has always existed to prevent.
+
+   **Ten, because the sibling arrival rate is not a free parameter.** Measured
+   over the deck, a word note carries 1.99 siblings, so three words a day
+   generate six sibling cards a day, for ever. The old design capped siblings
+   separately at five — below the arrival rate — so one card a day was
+   deferred permanently rather than smoothed, and 43 cards had piled up behind
+   it by 2026-09-09, listening worst. A queue served at its arrival rate never
+   empties; it has to be served faster. Nine is the steady state, so ten leaves
+   exactly enough headroom to drain a backlog at one a day, and to absorb a
+   lump without one forming.
+
+   The first session gets a larger allowance because there is nothing to review
+   yet and finishing after two cards feels like the app is broken — a day-one
+   problem, not a reason to top up every quiet day afterwards. No siblings can
+   exist that day, so one number covers it. */
 const NEW_WORDS_PER_DAY = 3;
+const NEW_CARDS_PER_DAY = 10;
 const FIRST_SESSION_WORDS = 10;
-const NEW_SIBLINGS_PER_DAY = 5;
 
 /* Firestore caps a document at 1 MiB. We warn well before that; see
    logBytes() for why the estimate errs high. */
@@ -621,7 +637,9 @@ const siblingsToday = Object.entries(cardStates)
 const everStudied = reviewLog.length > 0;
 const wordBudget = Math.max(0,
   (everStudied ? NEW_WORDS_PER_DAY : FIRST_SESSION_WORDS) - wordsToday);
-const siblingBudget = Math.max(0, NEW_SIBLINGS_PER_DAY - siblingsToday);
+const cardBudget = Math.max(0,
+  (everStudied ? NEW_CARDS_PER_DAY : FIRST_SESSION_WORDS)
+  - wordsToday - siblingsToday);
 
 /* Order. Sorting by due date alone left the sequence identical every
    session and introduced new words in file order, so the last notes in the
@@ -794,28 +812,40 @@ function interleave(due, neu){
 }
 /* ── end of bank order ─────────────────────────────────────────────── */
 
+const ordered = bankOrder(shuffle([...allCards]));
+const rank = new Map(ordered.map((k, i) => [k, i]));
 const freshSeen = new Set();
 const fresh = [];
 let lockedCount = 0, words = 0, siblings = 0;
-for (const k of bankOrder(shuffle([...allCards]))) {
-  if (cardStates[k]) continue;
-  /* Sits after the state check, so it can only ever withhold a card never
-     seen — a flag cleared by accident (audio.py did exactly that once)
-     cannot yank back work under way, the rule the maturity gate follows too.
-     Not counted as locked: locked means waiting on his own progress, and
-     this is waiting on the teacher. */
-  if (!introducible(k)) continue;
-  if (!unlocked(k)) { lockedCount++; continue; }
-  if (freshSeen.has(noteOf(k))) continue;          // one card per note per day
-  /* A conjugation drill is not new vocabulary — the form was taught in the
-     lesson — so it draws on the sibling allowance rather than the daily word
-     budget, and trickles in like any other card. */
-  const isNewWord = !isForm(k) && !started.has(noteOf(k));
-  if (isNewWord ? words >= wordBudget : siblings >= siblingBudget) continue;
-  isNewWord ? words++ : siblings++;
-  freshSeen.add(noteOf(k));
-  fresh.push(k);
+/* Two passes over the same list. New words claim their reservation first,
+   then siblings take whatever is left of the day's total — that ordering is
+   the whole point of having a word budget at all, and a single pass could
+   spend the day's cards on a sibling backlog before reaching any new word. */
+for (const wantWords of [true, false]) {
+  for (const k of ordered) {
+    if (cardStates[k]) continue;
+    /* Sits after the state check, so it can only ever withhold a card never
+       seen — a flag cleared by accident (audio.py did exactly that once)
+       cannot yank back work under way, the rule the maturity gate follows too.
+       Not counted as locked: locked means waiting on his own progress, and
+       this is waiting on the teacher. */
+    if (!introducible(k)) continue;
+    if (!unlocked(k)) { if (wantWords) lockedCount++; continue; }
+    if (freshSeen.has(noteOf(k))) continue;        // one card per note per day
+    /* A conjugation drill is not new vocabulary — the form was taught in the
+       lesson — so it counts as a sibling rather than against the word
+       reservation, and trickles in like any other card. */
+    const isNewWord = !isForm(k) && !started.has(noteOf(k));
+    if (isNewWord !== wantWords) continue;
+    if (words + siblings >= cardBudget) break;
+    if (isNewWord && words >= wordBudget) continue;
+    isNewWord ? words++ : siblings++;
+    freshSeen.add(noteOf(k));
+    fresh.push(k);
+  }
 }
+// Back into bank order, so the two passes do not arrive as two blocks.
+fresh.sort((a, b) => rank.get(a) - rank.get(b));
 
 const dueCards = shuffle(allCards.filter(
     k => cardStates[k] && cardStates[k].due <= t && !cardRetired(k)))

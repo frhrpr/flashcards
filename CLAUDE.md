@@ -217,24 +217,33 @@ notes`. `status` is `queued` → `known` → `carded`.
   you are finished, well done, come back on this day. Locked cards are last,
   small and grey, with a line saying there is nothing to do about them — a
   count he cannot act on reads as a backlog and discourages.
-- **Intake is capped in words, not cards** — 3 a day, matched to what he
-  meets in lessons. A word's other card types are not new vocabulary, and on
-  a shared budget an unlocking backlog would starve new words entirely, so
-  siblings get their own smaller allowance (5). The first ever session gets
-  10, because there is nothing to review yet and finishing after two cards
-  reads as broken; that is a day-one problem, not a reason to top up every
-  quiet day. All counted from `introduced` stamps on card state, so the
-  numbers survive a reload and a second device.
+- **Intake is a total in cards, with a reservation for words inside it** —
+  `NEW_CARDS_PER_DAY = 10`, `NEW_WORDS_PER_DAY = 3`. Two numbers answering two
+  questions: cards are what cost minutes, words are what a lesson teaches.
+  New words are taken in a first pass and siblings get whatever is left, so an
+  unlocking backlog can never crowd vocabulary out — the failure this budget
+  has always existed to prevent. The first ever session gets 10 flat, because
+  nothing can be unlocked yet and finishing after two cards reads as broken.
+  All counted from `introduced` stamps on card state, so the numbers survive a
+  reload and a second device.
 
-  **The sibling allowance is currently binding, and that is unresolved.** Three
-  words a day want six sibling cards a day and may have five, so one card a day
-  is deferred permanently rather than smoothed: measured 2026-09-09 after the
-  gate fix, 43 cards were unlocked and never introduced (32 listening, 11
-  production), and the simulation puts that at ~280 more in a year. His real intake is therefore eight
-  cards a day, not nine, and his listening and production cards fall steadily
-  behind his recognition cards. A cap set at exactly mean demand never drains;
-  raising it to 7 or 8 would. Not changed, because how much time that costs is
-  the user's call.
+  **Ten, because the sibling arrival rate is not a free parameter.** A word
+  note carries 1.99 siblings (measured over the deck: 830 cards, 278 word
+  notes, four with no production card), so three words a day generate six
+  sibling cards a day for ever, and the steady state is nine cards a day
+  whatever you set. The previous design gave siblings a separate pool of five —
+  *below* the arrival rate — so one card a day was deferred permanently rather
+  than smoothed. By 2026-09-09 that had piled up 43 unlocked-but-never-shown
+  cards, 32 of them listening, and the simulation had it reaching 302 within a
+  year. **A queue served at its arrival rate never empties.** Ten leaves enough
+  headroom to absorb a lump and drain what is behind: simulated from his real
+  position it holds flat at ~26 in flight instead of growing, and 11 buys
+  nothing further.
+
+  The cost is real and was accepted deliberately: his true intake goes from
+  eight cards a day to nine, which moves the one-year load from ~13.8 to
+  ~16.7 min/day. The lever for spending less is `NEW_WORDS_PER_DAY`, not the
+  sibling headroom — cutting the headroom only hides the shortfall again.
 - **Conjugation drills are notes with `kind: "form"`.** `być` and `mieć` are
   his worst cards precisely because the deck teaches a headword he will never
   utter — he says *jestem*, *jest*, *są*. Each form is therefore its own note
