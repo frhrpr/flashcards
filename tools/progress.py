@@ -79,9 +79,11 @@ def load_remote(key, user):
             die(f"{len(docs)} decks exist; pass --user to choose: {names}")
         doc = docs[0]
     fields = {k: dec(v) for k, v in doc.get("fields", {}).items()}
+    # {noteId: {at, why}} — see tools/withdraw.py
+    withdrawn = fields.get("withdrawn") or {}
     return (doc["name"].split("/")[-1], fields.get("cards") or {},
             fields.get("log") or [], fields.get("ear") or {},
-            fields.get("done") or {}, fields.get("hints") or {})
+            fields.get("done") or {}, fields.get("hints") or {}, withdrawn)
 
 
 def intake_rate():
@@ -176,7 +178,8 @@ def sessions(log):
     return out
 
 
-def analyse(cards, log, notes, done, hints):
+def analyse(cards, log, notes, done, hints, withdrawn=None):
+    withdrawn = withdrawn or {}
     word = {n["id"]: n["word"] for n in notes}
     gloss = {n["id"]: n.get("gloss", "") for n in notes}
     note_of = lambda k: k.rsplit("__", 1)[0]
@@ -208,6 +211,13 @@ def analyse(cards, log, notes, done, hints):
     # vocabulary cards, so ear trials are filtered out explicitly rather than
     # left to fall through into a table of words.
     vocab = [e for e in log if not is_ear(e)]
+    # A withdrawn word's old answers must not follow it back into rotation.
+    # The log is never edited — what he answered, he answered — so the cut is
+    # made here at read time: entries from before a withdrawal describe a run
+    # that has been abandoned, and counting them would report a word as
+    # failing on the day it is reintroduced.
+    vocab = [e for e in vocab
+             if e["ts"] >= withdrawn.get(note_of(e["card"]), {}).get("at", 0)]
     lapses = Counter(note_of(e["card"]) for e in vocab if e["grade"] == "again")
     seen = Counter(note_of(e["card"]) for e in vocab)
     hard = sorted(((nid, lapses[nid], seen[nid]) for nid in lapses),
@@ -265,6 +275,7 @@ def analyse(cards, log, notes, done, hints):
 
     return dict(
         word=word, gloss=gloss, by_day=by_day, days=days, streak=streak, hard=hard,
+        withdrawn=withdrawn,
         buckets=buckets, started=len(started_notes), total_notes=len(notes),
         locked=locked, cards_started=len(cards), sessions=sess,
         median_minutes=sorted(lengths)[len(lengths) // 2] if lengths else 0,
@@ -353,6 +364,13 @@ def report(uid, a, e):
         recent = sorted(h)[-1]
         p(f"\n  hint sheet    opened {sum(h.values())} time(s) on {len(h)} day(s), "
           f"last {fmt_day(recent)}")
+    if a.get("withdrawn"):
+        p("\n  taken out of rotation")
+        for nid, d in sorted(a["withdrawn"].items()):
+            back = "back in rotation" if nid in {r["note"] for r in a["records"]} \
+                   else "in the bank"
+            p(f"    {a['word'].get(nid, nid):<14} {fmt_day(d.get('at', 0)):<13}"
+              f"{back:<18}{d.get('why','')[:44]}")
     if a["hard"]:
         p("\n  giving him trouble")
         for nid, miss, tot in a["hard"]:
@@ -534,10 +552,10 @@ def main():
                   f"{len(f.get('cards') or {}):>4} cards  {len(f.get('log') or []):>5} reviews")
         return 0
 
-    uid, cards, log, ear, done, hints = load_remote(key, args.user)
+    uid, cards, log, ear, done, hints, withdrawn = load_remote(key, args.user)
     notes = json.loads((ROOT / "deck/notes.json").read_text(encoding="utf-8"))["notes"]
     spell, sound, label = ear_content()
-    a = analyse(cards, log, notes, done, hints)
+    a = analyse(cards, log, notes, done, hints, withdrawn)
     e = analyse_ear(ear, log, spell, sound, label)
     report(uid, a, e)
     if a["days"]:

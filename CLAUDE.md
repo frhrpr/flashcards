@@ -37,6 +37,7 @@ tools/audio.py      Commons recordings for words, TTS for sentences
 tools/images.py     generate / fetch / assign images, and --check them
 tools/review.py     builds the approval page; records approvals
 tools/progress.py   how the student is getting on; reads Firestore over REST
+tools/withdraw.py   takes a word out of rotation, with a reason and a date
 tools/speaking.py   say-it-he-translates sheet; every word checked against
                     what he has met, not against the deck
 tools/storycheck.py checks a draft story against what he has actually met
@@ -223,6 +224,31 @@ notes`. `status` is `queued` → `known` → `carded`.
   `validate.py` lists the marked notes anyway, because a flag nobody can see
   is one nobody clears, and "prioritised" would drift into meaning
   "everything".
+
+- **A word can be withdrawn from rotation — `tools/withdraw.py`.** It deletes
+  that note's card states, so the word returns to the bank as unseen and is
+  reintroduced later by the ordinary shuffle. The review log is never touched:
+  what he answered, he answered, and the streak, the day counts and the
+  accuracy must not move because of a scheduling decision.
+
+  It exists because a word is sometimes not hard, it is *competing*. Six
+  frequency adverbs were carded and prioritised together on 2026-08-29 and
+  arrived within days of each other; `często` fell to the ease floor at 1 of 8
+  and `czasami` and `zawsze` to 1.70, while `lubić`, `ulica`, `karta` and
+  `samochód` — introduced the same week but unrelated to each other — sat at
+  2.5 on clean `vvv`. Nothing about `często` is difficult. It had five rivals.
+
+  **So do not card a semantic set in one batch.** Two at a time, with the
+  extremes first: `zawsze`/`nigdy` are easy to separate and give the middle of
+  the scale something to hang on. Colours, days and numbers got away with it
+  because their members are not confusable; near-synonyms are not.
+
+  A withdrawal is a teaching decision, so it carries a date and a reason in
+  `withdrawn: {"<noteId>": {at, why}}` on the student's document, and `--why`
+  is required. `progress.py` lists what is out and **ignores log entries older
+  than a withdrawal** when working out which cards are failing — otherwise a
+  word's abandoned run follows it back and it looks broken on the day it
+  returns. Dry run by default; deleting card state is not reversible.
 
 - **A "just reviews" session exists, and is deliberately a lesser option.**
   A small grey link under the Vocab tile, not a third mode: it drops `fresh`
