@@ -179,6 +179,20 @@ notes`. `status` is `queued` → `known` → `carded`.
   state and `smoke.mjs` can test it. The scheduler is now sliced into smoke
   for that reason.
 
+- **`smoke.mjs` runs the real maturity gate, not a stub.** It used to define
+  `const unlocked = () => true`, because the real one sat outside every slice.
+  That left extra study's use of the gate untested — and a card offered before
+  its recognition card is solid is not a visible failure, it just looks like a
+  hard card. The gate, `cardKey`/`noteOf`/`typeOf` and `typesFor` are sliced in
+  now and the stubs are gone. `TEST_MODE` is therefore **false** in smoke,
+  because `unlocked` opens with `if (TEST_MODE) return true` and leaving it on
+  would stub the gate out under another name; `TEST_MODE` appears nowhere else
+  inside any slice, so nothing else moved.
+
+  One trap worth knowing: the stubs block is a template literal, so a backtick
+  in a comment inside it ends the string and the error points at the wrong
+  line entirely.
+
 - **Order is shuffled, seeded on the day plus the user id.** Due date still
   dominates; the shuffle only breaks ties and orders the new-card pool. The
   seed makes a mid-session reload stable rather than reshuffling under him,

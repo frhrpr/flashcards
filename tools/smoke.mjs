@@ -23,6 +23,8 @@ const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, "ear/manifest.json")
 /* Each slice is [from, to); `to` is left out of the slice. */
 const SLICES = [
   ["const WORDS = {", "/* ── end of ear content ──"],
+  ["const cardKey = (noteId, type) =>", "/* Daily intake:"],
+  ["const UNLOCK_REPS = ", "/* At most one *new* card per note per day."],
   ["const FUZZ = 0.05;", "/* ── load, build today's queue ──"],
   ["function bankOrder(cards){", "/* ── end of bank order ──"],
   ['const barEl = $("#bar");', "function grade(g){"],
@@ -53,17 +55,16 @@ const stubs = `
 const MS_DAY = 86400000;
 const today = () => t;
 const t = (() => { const d = new Date(); d.setHours(0,0,0,0); return d.getTime(); })();
-const TEST_MODE = true;
+/* False, because unlocked() is now sliced in for real and its first line is
+   an early return on TEST_MODE — with it on, the maturity gate would be
+   stubbed out by another name. TEST_MODE appears nowhere else inside any
+   slice, so nothing else changes. (No backticks in here: this whole block
+   is a template literal.) */
+const TEST_MODE = false;
 const NOTES = ${JSON.stringify(Object.fromEntries(deck.notes.map(n => [n.id, n])))};
 const allCards = ${JSON.stringify(deck.notes.flatMap(n =>
   (n.cards || []).map(c => `${n.id}__${c}`)))};
-const noteOf = k => k.slice(0, k.lastIndexOf("__"));
-const typeOf = k => k.slice(k.lastIndexOf("__") + 2);
 let cardStates = {}, reviewLog = [], fresh = [], lockedCount = 0;
-// extraPlan() consults the maturity gate; the real one lives outside
-// every slice, and an extra session must respect it exactly as the
-// daily bank does.
-const unlocked = () => true;
 let earStates = {}, doneDays = {}, hintOpens = {};
 let queue = [], current = null, revealed = false, writeError = null, earLoadError = null;
 const dueCards = [];
@@ -113,6 +114,7 @@ export const requested = () => asked;
 export { bankOrder, introducible, interleave, NOTES, openHint, hintOpens, HINT_SETS };
 export { cardRetired, RETIRE_IVL, stats, cardStates };
 export { schedule, fuzzDays, FUZZ };
+export { unlocked, UNLOCK_REPS, extraPlan };
 export const forgetPreloads = () => { preloaded.clear(); asked.length = 0; };
 export const seed = (due, nw) => { dueCards.length = 0; dueCards.push(...due);
   fresh.length = 0; fresh.push(...nw); queue = [...due, ...nw]; };
@@ -266,6 +268,36 @@ try {
   const dupes = topFns.filter((n, i) => topFns.indexOf(n) !== i);
   check(dupes.length === 0,
         `no top-level function is declared twice${dupes.length ? ": " + [...new Set(dupes)].join(", ") : ""}`);
+
+  /* The maturity gate, for real. It used to be stubbed to always-true here,
+     which meant extra study's use of it was never exercised — and the gate is
+     exactly what changed on 2026-09-09. A card offered before its recognition
+     card is solid is not a visible failure: it just looks like a hard card. */
+  const g0 = deck.notes.find(n => n.cards.length === 3 && n.kind !== "form");
+  const rec = `${g0.id}__recognition`;
+  const wants = { production: 2, listening: 3 };
+  check(m.unlocked(`${g0.id}__production`) === false,
+        "with no recognition state at all, nothing else unlocks");
+  for (const [type, need] of Object.entries(wants)) {
+    for (const reps of [need - 1, need]) {
+      m.cardStates[rec] = { ivl: 1, ease: 1.3, reps, due: 0 };
+      check(m.unlocked(`${g0.id}__${type}`) === (reps >= need),
+            `${type} ${reps >= need ? "unlocks at" : "waits below"} ${need} reps`);
+    }
+  }
+  /* The bug that prompted this: a low ease made the interval undershoot, so
+     the card waited an extra step. Reps do not care about ease. */
+  m.cardStates[rec] = { ivl: 14, ease: 1.3, reps: 4, due: 0 };
+  check(m.unlocked(`${g0.id}__listening`) === true,
+        "and a card at the ease floor unlocks on reps like any other");
+
+  /* Composition: everything extra study offers must pass that gate. */
+  const offered = m.extraPlan().fresh3;
+  check(offered.length > 0 && offered.every(k => m.unlocked(k)),
+        `extra study only offers unlocked cards (${offered.length} offered)`);
+  check(new Set(offered.map(k => k.slice(0, k.lastIndexOf("__")))).size
+        === offered.length, "and at most one card per note");
+  delete m.cardStates[rec];
 
   /* Intake. The loop sits outside every slice, so these are text checks; the
      behaviour was verified by simulation. The invariant that matters is the
