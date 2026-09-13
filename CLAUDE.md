@@ -902,6 +902,13 @@ Deferred on purpose: 4 grades instead of 2, and a stats screen.
   Note it cannot check that anyone *listened* — nothing can. It checks only
   that what is being approved is what the page last showed.
 
+  **`review.py --show id,id` builds `problems.html`** — just those notes, in
+  the order given, never dimmed, with every answer he has given each card
+  type underneath. It is for looking at cards that are going wrong. It
+  deliberately does **not** write `review-state.json`: that file records what
+  the *approval* page showed, and a page built for another purpose must not
+  change what `--approve` will accept.
+
 - **The user spot-checks the Polish.** Generated sentences go to a real
   student, so build a review step rather than trusting generation. He caught
   `Czy mogę mieć wodę?` as a calque — Polish uses `mieć` to possess, never to

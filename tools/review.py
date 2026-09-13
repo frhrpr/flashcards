@@ -4,6 +4,12 @@
     python3 tools/review.py                    # build the page, open-able in Windows
     python3 tools/review.py --approve kot,dom  # mark those notes reviewed
     python3 tools/review.py --approve-all      # mark every note reviewed
+    python3 tools/review.py --show chciec,slowo  # just these, with his history
+
+`--show` is for looking at cards that are going wrong, not for approving. It
+writes `problems.html` beside the review page and deliberately does not touch
+review-state.json: that file records what the *approval* page showed, and a
+page built for a different purpose must not change what `--approve` accepts.
 
 Nothing reaches the student on the strength of generation alone. A note is
 `reviewed: false` until a human has read the Polish and heard the audio;
@@ -82,7 +88,34 @@ def stale(notes, manifest, dest, ids):
     return sorted(bad), "changed since the page was built"
 
 
-def build(notes, manifest, dest):
+def history(notes, user):
+    """Per-note HTML: each card type's answer strip, interval and ease, read
+    from the live document. Oldest answer on the left, as in progress.py."""
+    import progress
+    _, cards, log, *_ = progress.load_remote(progress.api_key(), user)
+    by = {}
+    for e in sorted(log, key=lambda e: e["ts"]):
+        by.setdefault(e["card"], []).append(e["grade"] == "good")
+    out = {}
+    for n in notes:
+        rows = ""
+        for t in n.get("cards", []):
+            k = f"{n['id']}__{t}"
+            st, h = cards.get(k), by.get(k, [])
+            strip = "".join(f'<i class="{"v" if g else "x"}"></i>' for g in h)
+            miss = sum(1 for g in h if not g)
+            meta = (f"ivl {st.get('ivl', 0):.0f} · ease {st.get('ease', 2.5):.2f}"
+                    if st else "not started")
+            rows += (f'<div class="hr"><span class="ht">{esc(t)}</span>'
+                     f'<span class="hs">{strip or "—"}</span>'
+                     f'<span class="hm">{f"{miss}/{len(h)} missed · " if h else ""}'
+                     f'{meta}</span></div>')
+        out[n["id"]] = f'<div class="hist">{rows}</div>'
+    return out
+
+
+def build(notes, manifest, dest, name="review.html", write_state=True,
+          extra=None, heading=None):
     dest.mkdir(parents=True, exist_ok=True)
     audio_out = dest / "audio"
     audio_out.mkdir(exist_ok=True)
@@ -110,9 +143,12 @@ def build(notes, manifest, dest):
                 if rel else '<span class="bad">missing</span>')
 
     cards = ""
-    for n in sorted(notes, key=lambda x: (x.get("reviewed", False), x["id"])):
+    # The approval page sorts by status; a chosen set keeps the order given.
+    order = notes if extra is not None else \
+        sorted(notes, key=lambda x: (x.get("reviewed", False), x["id"]))
+    for n in order:
         s = n.get("sentence") or {}
-        done = n.get("reviewed", False)
+        done = n.get("reviewed", False) and extra is None   # never dim a chosen set
         pic = (f'<img src="img/{esc(Path(n["image"]).name)}?v={stamp(n["image"])}" alt="">'
                if n.get("image") else '<div class="noimg">no image</div>')
         chk = (manifest.get(n.get("image") or "", {}) or {}).get("check") or {}
@@ -138,7 +174,7 @@ def build(notes, manifest, dest):
   <div class="pl">{esc(s.get('pl',''))}</div>
   <div class="en">{esc(s.get('en',''))}</div>
   <div class="gap">gap: {esc(s.get('gap',''))} &nbsp;→&nbsp; <b>{esc(s.get('answer',''))}</b>
-</div>
+</div>{(extra or {}).get(n["id"], "")}
   </div>
 </div>'''
 
@@ -184,15 +220,24 @@ background:var(--badbg);font-family:ui-monospace,monospace;font-size:.62rem;
 line-height:1.45;color:var(--bad)}}
 .flag em{{display:block;font-style:normal;color:var(--dim);margin-top:.2rem}}
 .chk{{margin-top:.4rem;font-family:ui-monospace,monospace;font-size:.6rem;
-color:var(--dim)}}</style>
-<h1>Deck review — {len(notes)} notes, {len(pending)} awaiting approval</h1>
-<div class=sum>Everything for each note in one place — image, both recordings, sentence, gap.\nTell Claude which are wrong;
-anything you do not flag gets approved. Approved notes are dimmed and sink to the bottom.</div>
+color:var(--dim)}}
+.hist{{margin-top:.6rem;padding-top:.5rem;border-top:1px solid var(--line)}}
+.hr{{display:flex;align-items:center;gap:.6rem;margin:.15rem 0;
+font-family:ui-monospace,monospace;font-size:.68rem;color:var(--dim)}}
+.ht{{flex:0 0 6.5rem}}
+.hs{{display:flex;flex-wrap:wrap;gap:2px;flex:1}}
+.hs i{{display:inline-block;width:.55rem;height:.9rem;border-radius:1px}}
+.hs i.v{{background:var(--ok)}} .hs i.x{{background:var(--bad)}}
+.hm{{flex:0 0 auto;white-space:nowrap}}</style>
+{heading or f"<h1>Deck review — {len(notes)} notes, {len(pending)} awaiting approval</h1>"}
+{"" if heading else """<div class=sum>Everything for each note in one place — image, both recordings, sentence, gap. Tell Claude which are wrong;
+anything you do not flag gets approved. Approved notes are dimmed and sink to the bottom.</div>"""}
 {cards}'''
-    (dest / "review.html").write_text(html, encoding="utf-8")
-    (dest / STATE).write_text(
-        json.dumps({n["id"]: shown_hash(n, manifest) for n in notes},
-                   ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    (dest / name).write_text(html, encoding="utf-8")
+    if write_state:
+        (dest / STATE).write_text(
+            json.dumps({n["id"]: shown_hash(n, manifest) for n in notes},
+                       ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     return copied, pending
 
 
@@ -204,11 +249,33 @@ def main():
     ap.add_argument("--force", action="store_true",
                     help="approve even though the page never showed "
                          "this version — say why in the commit")
+    ap.add_argument("--show", default="",
+                    help="comma-separated note ids: a page of just these, with "
+                         "the student's history; does not affect approval")
+    ap.add_argument("--user", default="evert", help="whose history --show reads")
     args = ap.parse_args()
 
     deck = json.loads(NOTES_PATH.read_text(encoding="utf-8"))
     notes = deck["notes"]
     manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8")) if MANIFEST_PATH.exists() else {}
+
+    if args.show:
+        if args.approve or args.approve_all:
+            sys.exit("review: --show is for looking, not approving; run them separately")
+        ids = [x.strip() for x in args.show.split(",") if x.strip()]
+        by = {n["id"]: n for n in notes}
+        unknown = [i for i in ids if i not in by]
+        if unknown:
+            sys.exit(f"review: unknown note id(s): {', '.join(unknown)}")
+        chosen = [by[i] for i in ids]
+        dest = out_dir()
+        head = (f"<h1>Cards giving {esc(args.user)} trouble — {len(chosen)} notes</h1>"
+                f"<div class=sum>Worst first. Under each card: every answer he has "
+                f"given it, oldest on the left, green right and red wrong.</div>")
+        build(chosen, manifest, dest, name="problems.html", write_state=False,
+              extra=history(chosen, args.user), heading=head)
+        print(f"wrote {dest / 'problems.html'}  (review-state.json untouched)")
+        return 0
 
     if args.approve or args.approve_all:
         ids = {n["id"] for n in notes} if args.approve_all else \
