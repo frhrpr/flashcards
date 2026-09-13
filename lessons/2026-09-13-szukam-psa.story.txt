@@ -1,0 +1,169 @@
+Sven czeka na pociąg. Ale pociągu nie ma.
+
+Sven siada na ławce i czyta książkę.
+
+Ewa też czeka na pociąg.
+
+— Cześć, Sven! Co czytasz? — pyta Ewa.
+
+— Polską książkę. A ty? Też czekasz?
+
+— Tak, czekam. Wracam do domu.
+
+— Gdzie mieszkasz? — pyta Sven.
+
+— W małym mieście. Nie pamiętasz?
+
+— Nie, nie pamiętam.
+
+Ludzie czekają. Małe dziecko patrzy na ludzi.
+
+— Czekacie na pociąg? — pyta dziecko.
+
+— Tak, czekamy — mówi Ewa. — A ty?
+
+— Ja szukam psa. Mam małego psa. Znacie mojego psa?
+
+— Nie znamy — mówi Sven. — Ale szukamy!
+
+— Jak ma na imię twój pies? — pyta Ewa.
+
+— Kot!
+
+Sven i Ewa szukają psa. Ludzie też szukają.
+
+— Kot! Kot! — mówią ludzie.
+
+Sven patrzy pod ławkę. Tam jest mały pies! Pies ma czerwoną piłkę.
+
+Dziecko śpiewa: — Mój Kot! Mój Kot!
+
+Pociąg jedzie.
+
+Sven, Ewa, dziecko i pies siadają w pociągu.
+
+— Wracacie do domu? — pyta dziecko.
+
+— Tak, wracamy — mówi Ewa.
+
+— Ja też! I Kot też!
+
+Dziecko (mieszkać) w małym mieście.
+— Znasz Ewę? — Tak, (znać)!
+Sven i Ewa (znać) dobre miejsce.
+— Sven, Adam, (pytać) Ewę? — Tak.
+Sven i ja (czytać) polskie książki.
+— Ewa, (wracać) do domu? — Tak, wracam.
+Ludzie w pociągu (czytać).
+Pies nie (pamiętać), gdzie jest piłka.
+— Czy wy (śpiewać), dzieci?
+— Siadacie? — Tak, (siadać) — mówią Sven i Ewa.
+— Sven, czego (szukać)? — Mojej książki.
+Dziecko i pies (wracać) do domu.
+— Gdzie wy (mieszkać)? — pyta Sven.
+— Co robisz rano? — (śpiewać)!
+
+--- lemmas ---
+Sven      = -
+czeka     = czekać
+na        = na
+pociąg    = pociąg
+Ale       = ale
+pociągu   = pociąg
+nie       = nie
+ma        = mieć
+siada     = siadać
+ławce     = ławka
+i         = i
+czyta     = czytać
+książkę   = książka
+Ewa       = -
+też       = też
+Cześć     = cześć
+Co        = co
+czytasz   = czytać
+pyta      = pytać
+Polską    = polski
+A         = a
+ty        = ty
+Też       = też
+czekasz   = czekać
+Tak       = tak
+czekam    = czekać
+Wracam    = wracać
+do        = do
+domu      = dom
+Gdzie     = gdzie
+mieszkasz = mieszkać
+W         = w
+małym     = mały
+mieście   = miasto
+pamiętasz = pamiętać
+Nie       = nie
+pamiętam  = pamiętać
+Ludzie    = ludzie
+czekają   = czekać
+Małe      = mały
+dziecko   = dziecko
+patrzy    = patrzeć
+ludzi     = ludzie
+Czekacie  = czekać
+czekamy   = czekać
+mówi      = mówić
+Ja        = ja
+szukam    = szukać
+psa       = pies
+Mam       = mieć
+małego    = mały
+Znacie    = znać
+mojego    = mój
+znamy     = znać
+szukamy   = szukać
+Jak       = jak
+imię      = imię
+twój      = twój
+pies      = pies
+Kot       = kot
+I         = i
+szukają   = szukać
+mówią     = mówić
+pod       = pod
+ławkę     = ławka
+Tam       = tam
+jest      = być
+mały      = mały
+czerwoną  = czerwony
+piłkę     = piłka
+Dziecko   = dziecko
+śpiewa    = śpiewać
+Mój       = mój
+Pociąg    = pociąg
+jedzie    = jechać
+siadają   = siadać
+Wracacie  = wracać
+wracamy   = wracać
+mieszkać  = mieszkać
+Znasz     = znać
+Ewę       = -
+znać      = znać
+dobre     = dobry
+miejsce   = miejsce
+Adam      = -
+pytać     = pytać
+czytać    = czytać
+polskie   = polski
+książki   = książka
+wracać    = wracać
+pamiętać  = pamiętać
+piłka     = piłka
+Czy       = czy
+wy        = wy
+śpiewać   = śpiewać
+dzieci    = dziecko
+Siadacie  = siadać
+siadać    = siadać
+czego     = co
+szukać    = szukać
+Mojej     = mój
+robisz    = robić
+rano      = rano
