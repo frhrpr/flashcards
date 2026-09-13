@@ -41,6 +41,7 @@ tools/withdraw.py   takes a word out of rotation, with a reason and a date
 tools/speaking.py   say-it-he-translates sheet; every word checked against
                     what he has met, not against the deck
 tools/storycheck.py checks a draft story against what he has actually met
+tools/earquiz.py    say-it-he-guesses sheet of every ear word, worst set first
 tools/deckio.py     shared loading, saving, attribution (not runnable)
 tools/ear_split.py  cuts one long take into ear/raw/<word>/; prints the read-aloud sheet
 tools/ear_build.py  ear/raw → ear/audio + ear/manifest.json (trim, level, encode)
