@@ -4,6 +4,13 @@ Sheet: `Downloads/flashcards/lessons/2026-09-13-szukam-psa.html` — ending
 table at the top, the story, then the exercise. No instructions and no
 questions on it; the teacher gives those.
 
+**Not reached in the lesson; sent as homework** on 2026-09-14 as
+`2026-09-13-szukam-psa.pdf`, printed with headless Edge from the Windows side
+(no PDF renderer exists in WSL). Two pages by design: table and story on the
+first, the whole exercise on the second — the print stylesheet tightens the
+spacing and breaks before the exercise, so no item is stranded on a page of
+its own. The screen version is unchanged.
+
 ## Why this, and why this group first
 
 The first of three present-tense lessons, one conjugation group each. The
