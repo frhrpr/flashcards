@@ -96,6 +96,11 @@ button{font-family:inherit;cursor:pointer;border-radius:4px}
   border:0;color:var(--dim);font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;
   text-align:center;text-decoration:underline;text-underline-offset:3px}
 .lighter:hover{color:var(--ink)}
+/* Normally this link is deliberately quiet — it is the lesser option. On a
+   catch-up night it is the one worth seeing, so it stops being grey. */
+.lighter.urge{color:var(--ok);text-decoration-thickness:2px}
+.urge-note{margin:.7rem 0 .2rem;padding:.6rem .8rem;background:var(--card);
+  border-left:2px solid var(--ok);color:var(--dim);font-size:.8rem;line-height:1.5}
 /* The drill is an <a>, not a <button>, so it needs the type reset too. */
 .lighter.drill{text-decoration:none;text-align:center;margin-top:.6rem}
 
@@ -995,6 +1000,42 @@ function stats(){
     nextDue: future.length ? Math.min(...future) : null,
     streak,
   };
+}
+
+/* Is tonight much bigger than his ordinary evening? Measured against his own
+   median rather than a fixed number, because the right answer changes as the
+   deck grows: 40 cards was a heavy night in August and is a normal one now.
+
+   Counted in distinct cards, matching what the queue holds — reviewLog also
+   carries the "again" retries, and a bad night would otherwise look like a
+   big one. Today is excluded, or a long session would raise the bar it is
+   being judged against. Fewer than five days of history means no opinion;
+   the first fortnight is all unusual. */
+const CATCHUP_RATIO = 1.5;   // fires on 9 of his 37 sessions, both real catch-ups
+const CATCHUP_MIN = 25;      // and never on a deck too small for it to matter
+const TYPICAL_DAYS = 14;
+
+function typicalSession(){
+  const byDay = new Map();
+  for (const e of reviewLog) {
+    if (e.card.endsWith("__ear")) continue;
+    const d = midnight(e.ts);
+    if (d === t) continue;
+    let seen = byDay.get(d);
+    if (!seen) byDay.set(d, seen = new Set());
+    seen.add(e.card);
+  }
+  const sizes = [...byDay.entries()]
+    .sort((a, b) => b[0] - a[0]).slice(0, TYPICAL_DAYS)
+    .map(([, seen]) => seen.size).sort((a, b) => a - b);
+  if (sizes.length < 5) return null;
+  return sizes[Math.floor(sizes.length / 2)];
+}
+
+/* Only when there is something new to drop, or the advice is empty. */
+function catchUp(size){
+  const typical = typicalSession();
+  return !!typical && size >= CATCHUP_MIN && size >= typical * CATCHUP_RATIO;
 }
 
 function row(label, value, cls){
@@ -1904,6 +1945,9 @@ function renderLanding(){
   const s = stats();
   const v = vocabPending(), e = earPending();
   const light = v && dueCards.length && fresh.length;
+  /* Judged on the whole session, not the backlog alone: what he is deciding
+     about is how long tonight looks. */
+  const heavy = light && catchUp(queue.length);
   // When both are open, ear training leads: it is short, it is a warm-up,
   // and there is no did-I-remember-this pressure in it.
   const tile = (id, name, sub, lead) =>
@@ -1924,7 +1968,11 @@ function renderLanding(){
           : idle("Vocab", vocabDone() === "full" ? "✓ done today"
                         : vocabDone() === "light" ? "✓ reviews only"
                         : "nothing due")}
-      ${light ? `<button class="lighter" id="go-light">Tired? Just the ` +
+      ${light && heavy ? `<p class="urge-note">More due than usual — you have ` +
+        `been away. If you are tired, take just the reviews: nothing new goes ` +
+        `in tonight, and tomorrow's new words are not lost.</p>` : ""}
+      ${light ? `<button class="lighter${heavy ? " urge" : ""}" id="go-light">` +
+        `Tired? Just the ` +
         `${dueCards.length} review${dueCards.length === 1 ? "" : "s"}, no new words</button>` : ""}
       ${e ? tile("go-ear", "Ear training", `${e} trials · about ${earMins(e)}`, !!v)
           : idle("Ear training", earIdleLabel())}

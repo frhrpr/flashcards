@@ -379,6 +379,26 @@ notes`. `status` is `queued` → `known` → `carded`.
   Offered only when there is both something due and something new to skip,
   or it is an empty session or identical to the full one.
 
+  **On a catch-up night the link stops being quiet.** When the session is at
+  least `CATCHUP_RATIO` (1.5) times his own median evening, the landing says
+  so in a sentence and the link is coloured instead of grey. Measured against
+  **his own median rather than a fixed count**, because the right number moves
+  as the deck grows — 40 cards was a heavy night in August and is an ordinary
+  one now. Counted in distinct cards over his last 14 active days, excluding
+  today and excluding ear trials, with no opinion at all under five days of
+  history.
+
+  1.5 was calibrated on his real log: it fires on 9 of 37 sessions and catches
+  both genuine catch-ups, including 18 September (66 cards against a median of
+  41). 1.75 would have missed that one; 1.3 fires on 16 of 37, and a link that
+  shouts most nights is one he stops reading.
+
+  **Be honest about what it buys.** On a catch-up night the backlog is reviews,
+  so dropping the ten new cards saves barely a minute. The point is that the
+  deck does not grow while he is behind, and that the hardest cards in the
+  session — the new ones — are not added to a tired evening. The wording says
+  that rather than promising a short session.
+
   It records `done: {"<day>": ["vocab-light"]}` rather than `"vocab"`, for
   one reason: without it the escape hatch is a trapdoor. Taken most evenings
   it would silently stop the deck growing while the streak, the review counts

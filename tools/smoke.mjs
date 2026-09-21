@@ -115,6 +115,7 @@ export { bankOrder, introducible, interleave, NOTES, openHint, hintOpens, HINT_S
 export { cardRetired, RETIRE_IVL, stats, cardStates };
 export { schedule, fuzzDays, FUZZ };
 export { unlocked, UNLOCK_REPS, extraPlan };
+export { typicalSession, catchUp, CATCHUP_RATIO, reviewLog };
 export const forgetPreloads = () => { preloaded.clear(); asked.length = 0; };
 export const seed = (due, nw) => { dueCards.length = 0; dueCards.push(...due);
   fresh.length = 0; fresh.push(...nw); queue = [...due, ...nw]; };
@@ -498,6 +499,60 @@ try {
   m.openHint();
   check(Object.values(m.hintOpens).reduce((a, b) => a + b, 0) === before + 1,
         "opening the hint sheet is counted");
+
+  /* The catch-up nudge. It judges tonight against his own median, so it has
+     to stay quiet on an ordinary evening and speak up after a gap — a link
+     that shouts every night is one he stops reading. */
+  const logDay = (d, n) => { for (let i = 0; i < n; i++)
+    m.reviewLog.push({ card: `d${d}c${i}__recognition`, grade: "good",
+                       ts: Date.now() - d * 86400000 }); };
+  for (let d = 1; d <= 10; d++) logDay(d, 40);          // ten ordinary evenings
+  check(m.typicalSession() === 40, "typical session is his own median");
+  check(m.catchUp(40) === false, "an ordinary night says nothing");
+  check(m.catchUp(59) === false, "nor does a slightly bigger one");
+  check(m.catchUp(60) === true, `${m.CATCHUP_RATIO}x his median does`);
+  m.reviewLog.length = 0;
+  /* Three days is not enough to have an opinion: the first fortnight of any
+     deck is all unusual. */
+  logDay(1, 40); logDay(2, 40); logDay(3, 40);
+  check(m.typicalSession() === null && m.catchUp(999) === false,
+        "with three days of history it has no opinion yet");
+  /* Ear trials sit in the same log. An ear-only evening is not a vocab
+     evening, so it must not count as one of the days that make a median —
+     ten of them beside four vocab days is still too little history. */
+  m.reviewLog.length = 0;
+  logDay(1, 40); logDay(2, 40); logDay(3, 40); logDay(4, 40);
+  for (let d = 5; d <= 14; d++)
+    m.reviewLog.push({ card: "kos__ear", grade: "good", ts: Date.now() - d * 86400000 });
+  check(m.typicalSession() === null, "ear-only days are not vocab evenings");
+  /* Today is excluded. With four earlier days it is the difference between
+     having an opinion and not having one. */
+  logDay(0, 200);
+  check(m.typicalSession() === null, "and today is not one either, however long");
+  m.reviewLog.length = 0;
+  for (let d = 1; d <= 10; d++) logDay(d, 4);
+  check(m.catchUp(20) === false,
+        "and it stays quiet on a deck too small for the advice to matter");
+  m.reviewLog.length = 0;
+
+  /* And the landing itself: the note and the highlight appear together, or
+     the link is left looking like the lesser option it usually is. */
+  const rid = deck.notes.slice(0, 70).map(n => `${n.id}__recognition`);
+  m.reviewLog.length = 0;
+  for (let d = 1; d <= 10; d++) logDay(d, 40);
+  m.seed(rid.slice(0, 30), rid.slice(60, 63));        // 33 cards: an ordinary night
+  m.renderLanding();
+  check(!m.state().html.includes("urge"),
+        "an ordinary night leaves the reviews-only link quiet");
+  check(m.state().html.includes("go-light"), "but still offers it");
+  m.seed(rid.slice(0, 57), rid.slice(60, 63));        // 60 cards: 1.5x his median
+  m.renderLanding();
+  const html = m.state().html;
+  check(html.includes("urge-note") && html.includes("More due than usual"),
+        "a catch-up night explains itself");
+  check(html.includes('class="lighter urge"'), "and highlights the link");
+  check(html.includes("57 reviews"), "naming the number of reviews waiting");
+  m.reviewLog.length = 0;
 
   m.renderDone();    check(true, "renderDone runs");
   m.renderLanding(); check(true, "renderLanding runs");
