@@ -32,21 +32,17 @@ Wieczorem Sven jest w łóżku. Ale co to jest? Głos! Głos śpiewa!
 
 Rano Sven pamięta dwa ważne słowa: trzeba i można.
 
-W hotelu trzeba (pamiętać) numer pokoju.
-— Czy (trzeba/można) płacić kartą? — Tak, ale nie trzeba.
-Sven i Ewa (czytać) w pokoju.
-Mam klucz. Nie (trzeba/można) (szukać).
-— Sven, Ewa, (pamiętać) numer pokoju? — Tak: pięć.
-Sven pamięta numer. Nie (trzeba/można) pytać.
-Tutaj można (czytać) książki.
-— Co robisz? — (czytać) książkę.
-— Czy (trzeba/można) czekać? — Nie, ale można.
-Kobieta (mieszkać) w hotelu.
-— Czekacie na pociąg? — Tak, (czekać).
-W pociągu nie ma miejsca. Nie (trzeba/można) siedzieć.
-— Gdzie (mieszkać), Sven? — W hotelu.
-Dzisiaj nie ma pociągu. Nie (trzeba/można) (jechać) do domu.
-Wieczorem ludzie (wracać) do domu.
+— Czy (…) kartą? — Tak, ale nie trzeba.
+— Czy (…) na pociąg? — Nie, ale można.
+Mam klucz. Nie (…) klucza.
+W pociągu nie ma miejsca. Nie (…) — trzeba stać.
+To nie jest trudne. Nie (…)!
+— Czy (…) numer pokoju? — Nie, ale można.
+Dzisiaj jest sobota. Nie (…) w pracy.
+W hotelu nie można śpiewać, ale (…) kawę w pokoju.
+Dzisiaj nie ma pociągu. Nie (…) do domu.
+— Czy (…) śniadanie w hotelu? — Tak, ale nie trzeba.
+płacić czekać szukać siedzieć myśleć pamiętać być pić jechać jeść
 
 --- lemmas ---
 Sven      = -
@@ -90,9 +86,7 @@ Rano      = rano
 można     = można
 jeść      = jeść
 w         = w
-pokoju    = pokój
 I         = i
-hotelu    = hotel
 śpiewać   = śpiewać
 Dobrze    = dobry
 śpiewam   = śpiewać
@@ -123,26 +117,24 @@ pięć      = pięć
 Wieczorem = wieczór
 co        = co
 to        = to
-Głos      = głos
 W         = w
-Ewa      = -
 kartą    = karta
 ale      = ale
 Mam      = mieć
-Nie      = nie
-pytać    = pytać
-książki  = książka
-robisz   = robić
 czekać   = czekać
 Kobieta  = kobieta
-mieszkać = mieszkać
-Czekacie = czekać
-Gdzie    = gdzie
 jechać   = jechać
 do       = do
 domu     = dom
-wracać   = wracać
-ludzie   = ludzie
-pociągu  = pociąg
 miejsca  = miejsce
 siedzieć = siedzieć
+stać = stać
+pracy = praca
+kawę = kawa
+myśleć = myśleć
+być = być
+pić = pić
+klucza = klucz
+sobota = sobota
+trudne = trudny
+śniadanie = śniadanie

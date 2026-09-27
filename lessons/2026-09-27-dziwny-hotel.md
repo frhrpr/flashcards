@@ -2,7 +2,8 @@
 
 Sheet: `Downloads/flashcards/lessons/2026-09-27-dziwny-hotel.html`, and
 `.pdf` beside it (two pages: tables and story, then the exercise). The -am
-table and a gloss at the top, then the story, then the exercise. No
+table and a gloss at the top, then the story, then the exercise: a verb
+box and ten gapped sentences. No
 instructions and no questions on it; the teacher gives those.
 
 ## Why this
@@ -81,62 +82,82 @@ Rano Sven pamięta dwa ważne słowa: trzeba i można.
 
 ## Exercise — answers
 
-Two kinds of gap: an infinitive in brackets (inflect it, or leave it alone
-after *trzeba*/*można*), and **(trzeba / można)**, chosen from context.
+A box of ten verbs above ten gapped sentences. Each gap takes **trzeba or
+można plus one verb from the box**, in the infinitive; every verb is used
+exactly once and he crosses it off. The teacher's design, 2026-09-27: it
+moves the whole weight onto meaning — which of the two, and which verb — and
+the box makes it self-checking, because a verb left over at the end means a
+wrong choice somewhere.
+
+Box: być, czekać, jechać, jeść, myśleć, pamiętać, pić, płacić, siedzieć, szukać
 
 | | item | answer |
 | --- | --- | --- |
-| 1 | W hotelu trzeba ___ (pamiętać) numer pokoju. | **pamiętać** |
-| 2 | — Czy ___ płacić kartą? — Tak, ale nie trzeba. | **można** |
-| 3 | Sven i Ewa ___ (czytać) w pokoju. | **czytają** |
-| 4 | Mam klucz. Nie ___ ___ (szukać). | **trzeba szukać** |
-| 5 | — Sven, Ewa, ___ (pamiętać) numer pokoju? — Tak: pięć. | **pamiętacie** |
-| 6 | Sven pamięta numer. Nie ___ pytać. | **trzeba** |
-| 7 | Tutaj można ___ (czytać) książki. | **czytać** |
-| 8 | — Co robisz? — ___ (czytać) książkę. | **czytam** |
-| 9 | — Czy ___ czekać? — Nie, ale można. | **trzeba** |
-| 10 | Kobieta ___ (mieszkać) w hotelu. | **mieszka** |
-| 11 | — Czekacie na pociąg? — Tak, ___ (czekać). | **czekamy** |
-| 12 | W pociągu nie ma miejsca. Nie ___ siedzieć. | **można** |
-| 13 | — Gdzie ___ (mieszkać), Sven? — W hotelu. | **mieszkasz** |
-| 14 | Dzisiaj nie ma pociągu. Nie ___ ___ (jechać) do domu. | **można jechać** |
-| 15 | Wieczorem ludzie ___ (wracać) do domu. | **wracają** |
+| 1 | — Czy ___ kartą? — Tak, ale nie trzeba. | **można płacić** |
+| 2 | — Czy ___ na pociąg? — Nie, ale można. | **trzeba czekać** |
+| 3 | Mam klucz. Nie ___ klucza. | **trzeba szukać** |
+| 4 | W pociągu nie ma miejsca. Nie ___ — trzeba stać. | **można siedzieć** |
+| 5 | To nie jest trudne. Nie ___! | **trzeba myśleć** |
+| 6 | — Czy ___ numer pokoju? — Nie, ale można. | **trzeba pamiętać** |
+| 7 | Dzisiaj jest sobota. Nie ___ w pracy. | **trzeba być** |
+| 8 | W hotelu nie można śpiewać, ale ___ kawę w pokoju. | **można pić** |
+| 9 | Dzisiaj nie ma pociągu. Nie ___ do domu. | **można jechać** |
+| 10 | — Czy ___ śniadanie w hotelu? — Tak, ale nie trzeba. | **można jeść** |
 
-Six choices, three each way; eleven verb gaps, four of them infinitives.
+trzeba 2, nie trzeba 3, można 3, nie można 2. Trouble cards in the box:
+`być`, `myśleć`, `pamiętać`, `płacić`. `chcieć` and `móc` cannot follow
+trzeba/można; `czuć` and `wiedzieć` were tried and did not sit naturally
+after them (*czy można wiedzieć…* is also a set phrase that would muddy
+item 6's contradiction).
 
-### How the trzeba/można items are forced
+**The -am review is no longer in the exercise.** Every verb here stays an
+infinitive, so the conjugation lives in the story and the table only; drill
+it orally from the story if wanted.
+
+### How the modal is forced
 
 Anything obligatory is also permitted, so plausibility alone cannot force
-*trzeba* over *można* — the lesson of the first frequency sheet. Each item
-uses one of two mechanisms only:
+*trzeba* over *można* — the lesson of the first frequency sheet. Two
+mechanisms only:
 
-- **The answer contradicts the wrong one.** *Czy ___ czekać? — Nie, ale
-  można* (2, 9): "may I? — no, but you may" is a contradiction, so it must be
-  *trzeba*; "is it needed? — yes, but not needed" likewise forces *można*.
-- **The context gives the reason.** *Mam klucz* makes the search unnecessary
-  (4); *Sven pamięta numer* makes asking unnecessary (6); *nie ma miejsca*
-  and *nie ma pociągu* make it impossible (12, 14). The wrong word there is a
-  non-sequitur, not merely a less likely reading.
+- **The reply contradicts the wrong one** (1, 2, 6, 10). *Czy ___ czekać? —
+  Nie, ale można*: "may I? — no, but you may" contradicts itself, so it is
+  *trzeba*. *Tak, ale nie trzeba* forces *można* the same way.
+- **The context gives the reason** (3, 4, 5, 7, 9). A key in hand, a Saturday,
+  something not hard make it unnecessary — *nie trzeba*; no seat, no train
+  make it impossible — *nie można*. The wrong word is a non-sequitur there,
+  not a less likely reading. Item 8 is the one absurd-obligation item: *trzeba
+  pić kawę* as a hotel rule is nonsense.
 
-A prohibition item (*W kinie nie ___ mówić*) was considered and dropped: *nie
-trzeba mówić* is odd there but not nonsense.
+### How the verb is forced
+
+Each sentence's complement selects one verb in the box: *kartą* → płacić,
+*na pociąg* → czekać, *klucza* → szukać, *trzeba stać* → siedzieć (its
+opposite), *numer pokoju* → pamiętać, *w pracy* → być, *kawę* → pić, *do
+domu* → jechać (the only motion verb), *śniadanie* → jeść. Item 5 (*to nie
+jest trudne* → myśleć) leans most on elimination; item 7 could be read as
+*siedzieć w pracy* until item 4 has used it.
+
+**No genitive of negation to produce.** The only negated object is *klucza*,
+and *szukać* takes the genitive anyway; it is printed, not written.
 
 ### Checked
 
-- No -am answer appears in the story or in another item's clue (mechanical).
-- Every item fixes its person: pronoun, noun subject, direct address or Q/A.
-- `tools/storycheck.py` on story and clues together: 62 headwords, 46 met,
-  13 grammar words; three unseen and all intended — `trzeba`, `można` (new,
-  on the gloss, added to `vocab.csv` as `queued`) and `hotel` (carded but
-  unintroduced; same word in Dutch and English, and on the gloss).
+`tools/storycheck.py` on story, clues and box together: every word met
+except the three intended — `trzeba`, `można` (new, on the gloss, `queued`
+in `vocab.csv`) and `hotel` (carded but unintroduced; on the gloss). First
+drafts of the items used `autobus`, `niedziela`, `łatwy` and *po polsku*,
+none of which he has met; swapped for `pociąg`, `sobota`, `trudny` and an
+item on `jeść`.
 
 ## What to watch
 
-- **Items 4 and 14 have two gaps.** Writing *szukam* after *trzeba* means the
-  point hasn't landed: after trzeba/można the verb never changes.
-- **Item 11 is the *wy → my* trap** from last time's item 10, on purpose.
-- **Nie trzeba vs nie można** (4, 6 vs 12, 14) is the real content. If he
-  swaps those, *je hoeft niet* / *het mag niet* is the fastest fix.
+- **nie trzeba vs nie można** is the real content (3, 5, 7 vs 4, 9). If he
+  swaps them, *je hoeft niet* / *het mag niet* on the gloss is the fastest fix.
+- **The contradiction items** (1, 2, 6, 10) test whether he reads the reply.
+  Getting them by pattern — *Tak, ale nie trzeba* always means *można* — is
+  still understanding; that pattern *is* the meaning.
+- A verb left in the box at the end points straight at the error.
 
 ## After the lesson
 
