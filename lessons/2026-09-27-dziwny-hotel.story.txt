@@ -1,0 +1,148 @@
+Sven czeka na pociąg. Ale dzisiaj nie ma pociągu!
+
+— Co teraz? — pyta Sven. — Trzeba szukać hotelu.
+
+Sven szuka hotelu. Tam jest mały hotel. To jest dziwny hotel.
+
+— Dzień dobry — mówi kobieta. — Pokój?
+
+— Tak, szukam pokoju.
+
+— Pokój numer pięć. Tutaj jest klucz. Trzeba pamiętać numer!
+
+— Pamiętam: pięć. Czy trzeba płacić teraz?
+
+— Nie, nie trzeba. Rano.
+
+— Czy można jeść w pokoju?
+
+— Nie, w pokoju nie można jeść. I w hotelu nie można śpiewać!
+
+— Dobrze. Nie śpiewam. A czy można czytać?
+
+— Tak, można.
+
+Sven siada na łóżku i czyta książkę. Łóżko jest duże i dobre.
+
+Wieczorem Sven jest w łóżku. Ale co to jest? Głos! Głos śpiewa!
+
+— Kto śpiewa? — pyta Sven. — W hotelu nie można śpiewać!
+
+— Ja śpiewam — mówi kobieta. — Ja tutaj mieszkam. To mój hotel!
+
+Rano Sven pamięta dwa ważne słowa: trzeba i można.
+
+W hotelu trzeba (pamiętać) numer pokoju.
+— Czy (trzeba/można) płacić kartą? — Tak, ale nie trzeba.
+Sven i Ewa (czytać) w pokoju.
+Mam klucz. Nie (trzeba/można) (szukać).
+— Sven, Ewa, (pamiętać) numer pokoju? — Tak: pięć.
+Sven pamięta numer. Nie (trzeba/można) pytać.
+Tutaj można (czytać) książki.
+— Co robisz? — (czytać) książkę.
+— Czy (trzeba/można) czekać? — Nie, ale można.
+Kobieta (mieszkać) w hotelu.
+— Czekacie na pociąg? — Tak, (czekać).
+W pociągu nie ma miejsca. Nie (trzeba/można) siedzieć.
+— Gdzie (mieszkać), Sven? — W hotelu.
+Dzisiaj nie ma pociągu. Nie (trzeba/można) (jechać) do domu.
+Wieczorem ludzie (wracać) do domu.
+
+--- lemmas ---
+Sven      = -
+czeka     = czekać
+na        = na
+pociąg    = pociąg
+Ale       = ale
+dzisiaj   = dzisiaj
+nie       = nie
+ma        = mieć
+pociągu   = pociąg
+Co        = co
+teraz     = teraz
+pyta      = pytać
+Trzeba    = trzeba
+szukać    = szukać
+hotelu    = hotel
+szuka     = szukać
+Tam       = tam
+jest      = być
+mały      = mały
+hotel     = hotel
+To        = to
+dziwny    = dziwny
+Dzień     = dzień
+dobry     = dobry
+mówi      = mówić
+pokoju    = pokój
+Tak       = tak
+szukam    = szukać
+Pokój     = pokój
+numer     = numer
+Tutaj     = tutaj
+klucz     = klucz
+pamiętać  = pamiętać
+Pamiętam  = pamiętać
+Czy       = czy
+płacić    = płacić
+Nie       = nie
+Rano      = rano
+można     = można
+jeść      = jeść
+w         = w
+pokoju    = pokój
+I         = i
+hotelu    = hotel
+śpiewać   = śpiewać
+Dobrze    = dobry
+śpiewam   = śpiewać
+A         = a
+czytać    = czytać
+siada     = siadać
+łóżku     = łóżko
+i         = i
+czyta     = czytać
+książkę   = książka
+Łóżko     = łóżko
+duże      = duży
+dobre     = dobry
+głos      = głos
+Głos      = głos
+śpiewa    = śpiewać
+Kto       = kto
+Ja        = ja
+tutaj     = tutaj
+mieszkam  = mieszkać
+mój       = mój
+pamięta   = pamiętać
+dwa       = dwa
+ważne     = ważny
+słowa     = słowo
+kobieta   = kobieta
+pięć      = pięć
+Wieczorem = wieczór
+co        = co
+to        = to
+Głos      = głos
+W         = w
+Ewa      = -
+kartą    = karta
+ale      = ale
+Mam      = mieć
+Nie      = nie
+pytać    = pytać
+książki  = książka
+robisz   = robić
+czekać   = czekać
+Kobieta  = kobieta
+mieszkać = mieszkać
+Czekacie = czekać
+Gdzie    = gdzie
+jechać   = jechać
+do       = do
+domu     = dom
+wracać   = wracać
+ludzie   = ludzie
+pociągu  = pociąg
+miejsca  = miejsce
+siedzieć = siedzieć
