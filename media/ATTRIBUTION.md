@@ -129,6 +129,7 @@ do not edit by hand.
 | `media/audio/moc.mp3` | [Pl-móc.ogg](https://commons.wikimedia.org/wiki/File:Pl-m%C3%B3c.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/morze.mp3` | [Pl-morze.ogg](https://commons.wikimedia.org/wiki/File:Pl-morze.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/mowic.mp3` | [Pl-mówić.ogg](https://commons.wikimedia.org/wiki/File:Pl-m%C3%B3wi%C4%87.ogg) | Derbeth | CC BY 2.5 | commons |
+| `media/audio/mozna.mp3` | [Pl-można.ogg](https://commons.wikimedia.org/wiki/File:Pl-mo%C5%BCna.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/musiec.mp3` | [Pl-musieć.ogg](https://commons.wikimedia.org/wiki/File:Pl-musie%C4%87.ogg) | Frizabela | CC BY 2.5 | commons |
 | `media/audio/myc.mp3` | [Pl-myć.ogg](https://commons.wikimedia.org/wiki/File:Pl-my%C4%87.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/myslec.mp3` | [Pl-myśleć.ogg](https://commons.wikimedia.org/wiki/File:Pl-my%C5%9Ble%C4%87.ogg) | Derbeth | CC BY 2.5 | commons |
@@ -241,6 +242,7 @@ do not edit by hand.
 | `media/audio/teraz.mp3` | [Pl-teraz.ogg](https://commons.wikimedia.org/wiki/File:Pl-teraz.ogg) | Wyksztalcioch | Public domain | commons |
 | `media/audio/tez.mp3` | [Pl-też.ogg](https://commons.wikimedia.org/wiki/File:Pl-te%C5%BC.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/trudny.mp3` | [Pl-trudny.ogg](https://commons.wikimedia.org/wiki/File:Pl-trudny.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
+| `media/audio/trzeba.mp3` | [Pl-trzeba.ogg](https://commons.wikimedia.org/wiki/File:Pl-trzeba.ogg) | Wyksztalcioch | Public domain | commons |
 | `media/audio/trzy.mp3` | [Pl-trzy.ogg](https://commons.wikimedia.org/wiki/File:Pl-trzy.ogg) | Marcowy zając | CC BY 2.5 | commons |
 | `media/audio/turysta.mp3` | [Pl-turysta.ogg](https://commons.wikimedia.org/wiki/File:Pl-turysta.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/tutaj.mp3` | [Pl-tutaj.ogg](https://commons.wikimedia.org/wiki/File:Pl-tutaj.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |

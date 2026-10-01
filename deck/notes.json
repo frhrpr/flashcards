@@ -9548,6 +9548,75 @@
         "listening"
       ],
       "reviewed": true
+    },
+    {
+      "id": "trzeba",
+      "word": "trzeba",
+      "gloss": "one has to, it is necessary",
+      "pos": "adverb",
+      "ipa": "ˈtʂɛba",
+      "note": "nobody in particular, and it never changes: Dutch het moet, and with nie, je hoeft niet. For a person it is musieć: muszę, musisz",
+      "image": "media/img/trzeba.webp",
+      "image_alt": "one has to, it is necessary",
+      "image_basis": "sentence",
+      "image_prompt": "Several travellers with bags standing on an empty railway platform, all looking down the track for a train that has not come yet. Overcast daylight. No text or lettering. Square image.",
+      "audio": "media/audio/trzeba.mp3",
+      "sentence": {
+        "pl": "Trzeba czekać na pociąg.",
+        "en": "You have to wait for the train.",
+        "gap": "___ czekać na pociąg.",
+        "answer": "Trzeba",
+        "answer_lemma": "trzeba",
+        "audio": "media/audio/trzeba__sentence.mp3",
+        "lemmas": [
+          "trzeba",
+          "czekać",
+          "na",
+          "pociąg"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "mozna",
+      "word": "można",
+      "gloss": "one may, it is allowed",
+      "pos": "adverb",
+      "ipa": "ˈmɔʐna",
+      "note": "nobody in particular, and it never changes: Dutch het mag, and with nie, het mag niet. For a person it is móc: mogę, możesz",
+      "image": "media/img/mozna.webp",
+      "image_alt": "one may, it is allowed",
+      "image_basis": "sentence",
+      "image_prompt": "A woman in a dressing gown singing loudly with her mouth wide open and arms spread, standing in a dim hotel corridor at night. No text or lettering. Square image.",
+      "audio": "media/audio/mozna.mp3",
+      "sentence": {
+        "pl": "W hotelu nie można śpiewać.",
+        "en": "Singing is not allowed in the hotel.",
+        "gap": "W hotelu nie ___ śpiewać.",
+        "answer": "można",
+        "answer_lemma": "można",
+        "audio": "media/audio/mozna__sentence.mp3",
+        "lemmas": [
+          "w",
+          "hotel",
+          "nie",
+          "można",
+          "śpiewać"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
     }
   ]
 }

@@ -2361,11 +2361,11 @@
   },
   "media/audio/lody.mp3": {
     "author": "recorded by the teacher",
-    "gain_db": 13.1,
     "fingerprint": "70e5b0594aa0eaca",
+    "gain_db": 13.1,
     "licence": "n/a",
-    "original": "untitled.wav",
     "noise_floor_db": -40,
+    "original": "untitled.wav",
     "seconds": 0.57,
     "source": "supplied",
     "text": "lody"
@@ -2929,6 +2929,27 @@
     "seconds": 0.94,
     "source": "tts",
     "text": "Rano mówię cześć.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/mozna.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-można.ogg",
+    "fingerprint": "9df6f4e5dc3c0d28",
+    "gain_db": -0.1,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-mo%C5%BCna.ogg",
+    "seconds": 1.7,
+    "source": "commons",
+    "text": "można"
+  },
+  "media/audio/mozna__sentence.mp3": {
+    "fingerprint": "eeda863f493f854b",
+    "gain_db": -1.0,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.38,
+    "source": "tts",
+    "text": "W hotelu nie można śpiewać.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -5347,6 +5368,27 @@
     "seconds": 1.15,
     "source": "tts",
     "text": "Polski jest trudny.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/trzeba.mp3": {
+    "author": "Wyksztalcioch",
+    "commons_file": "Pl-trzeba.ogg",
+    "fingerprint": "071c18b4c83c79be",
+    "gain_db": -3.6,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-trzeba.ogg",
+    "seconds": 0.73,
+    "source": "commons",
+    "text": "trzeba"
+  },
+  "media/audio/trzeba__sentence.mp3": {
+    "fingerprint": "d6cdfcd45066f203",
+    "gain_db": 1.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.28,
+    "source": "tts",
+    "text": "Trzeba czekać na pociąg.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -8222,6 +8264,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/mozna.webp": {
+    "bytes": 34680,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "The image shows a woman singing in a hotel hallway, but does not depict or imply permission or rules (można).",
+      "verdict": "flag",
+      "why": "does not clearly show the word"
+    },
+    "fingerprint": "02208dd5a25a6934",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A woman in a dressing gown singing loudly with her mouth wide open and arms spread, standing in a dim hotel corridor at night. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/musiec.webp": {
     "bytes": 29486,
     "check": {
@@ -9971,6 +10029,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A person at a desk with both hands pressed to their temples over a thick open book of dense text, frustrated. Warm indoor light. No readable text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/trzeba.webp": {
+    "bytes": 71232,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "9b86334844cc5cbe",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Several travellers with bags standing on an empty railway platform, all looking down the track for a train that has not come yet. Overcast daylight. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
