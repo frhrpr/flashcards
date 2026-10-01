@@ -1,0 +1,136 @@
+Kobieta w hotelu śpiewa w nocy. Sven nie śpi.
+
+Rano Sven płaci i czeka na pociąg.
+
+— Boli mnie głowa — myśli Sven. — I brzuch. Trzeba szukać apteki. Ale gdzie jest apteka? Nie wiem.
+
+Sven pyta ludzi i szuka. Tam jest apteka!
+
+W aptece jest Ewa.
+
+— Cześć, Sven! Jak się czujesz?
+
+— Boli mnie głowa i brzuch. W hotelu kobieta śpiewa w nocy. Nie śpię!
+
+— Trzeba spać! To jest ważne. I trzeba pić wodę.
+
+— A kawa? Można pić kawę?
+
+— Nie, nie można.
+
+— A mleko?
+
+— Mleko można.
+
+— Czy trzeba być w pracy?
+
+— Nie, dzisiaj nie trzeba. Trzeba być w łóżku.
+
+— Ale w hotelu nie można spać!
+
+— Mam duży dom. Tam można spać.
+
+— A ty śpiewasz?
+
+— Nie. Nigdy nie śpiewam! — mówi Ewa.
+
+Wieczorem Sven jest w łóżku. Ewa nie śpiewa. Sven śpi.
+
+— Czy w aptece (…) kartą? — Tak, ale nie trzeba.
+Pies Kot śpiewa w nocy. Nie (…)!
+— Ewa, czy (…) dzisiaj w aptece? — Nie, ale można.
+Sven pamięta, gdzie jest apteka. Nie (…) ludzi.
+Boli mnie brzuch. Nie (…), ale można pić wodę.
+— Czy w pociągu w nocy (…)? — Tak, ale nie trzeba.
+W łóżku nie można śpiewać, ale (…) książki.
+Sven jest w domu. Nie (…) do domu.
+— Czy (…) mleko? — Nie, ale można.
+Dziecko śpi. Nie (…)!
+spać×2 pić jeść być pytać czytać iść mówić płacić
+
+--- lemmas ---
+Kobieta = kobieta
+w = w
+hotelu = hotel
+śpiewa = śpiewać
+nocy = noc
+Sven = -
+nie = nie
+śpi = spać
+Rano = rano
+płaci = płacić
+i = i
+czeka = czekać
+na = na
+pociąg = pociąg
+Boli = boleć
+mnie = mnie
+głowa = głowa
+myśli = myśleć
+I = i
+brzuch = brzuch
+Trzeba = trzeba
+szukać = szukać
+apteki = apteka
+Ale = ale
+gdzie = gdzie
+jest = być
+apteka = apteka
+Nie = nie
+wiem = wiedzieć
+pyta = pytać
+ludzi = ludzie
+szuka = szukać
+Tam = tam
+W = w
+aptece = apteka
+Ewa = -
+Cześć = cześć
+Jak = jak
+się = się
+czujesz = czuć
+śpię = spać
+spać = spać
+To = to
+ważne = ważny
+trzeba = trzeba
+pić = pić
+wodę = woda
+A = a
+kawa = kawa
+Można = można
+kawę = kawa
+można = można
+mleko = mleko
+Mleko = mleko
+Czy = czy
+być = być
+pracy = praca
+dzisiaj = dzisiaj
+łóżku = łóżko
+Mam = mieć
+duży = duży
+dom = dom
+ty = ty
+śpiewasz = śpiewać
+Nigdy = nigdy
+śpiewam = śpiewać
+mówi = mówić
+Wieczorem = wieczór
+Tak = tak
+pamięta = pamiętać
+jeść = jeść
+książki = książka
+domu = dom
+do = do
+pociągu = pociąg
+Dziecko = dziecko
+czytać = czytać
+iść = iść
+mówić = mówić
+pytać = pytać
+kartą = karta
+Pies = pies
+Kot = kot
+płacić = płacić
+śpiewać = śpiewać
