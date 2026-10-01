@@ -2002,7 +2002,7 @@
       "gloss": "can, to be able to",
       "pos": "verb",
       "ipa": "mut͡s",
-      "note": null,
+      "note": "Dutch kunnen. It says who can; for nobody in particular, it is allowed, it is można",
       "image": "media/img/moc.webp",
       "image_alt": "can, to be able to",
       "image_basis": "sentence",
@@ -2625,7 +2625,7 @@
       "gloss": "must",
       "pos": "verb",
       "ipa": "ˈmuɕɛt͡ɕ",
-      "note": "the stronger one — móc is can, this is have to",
+      "note": "the stronger one — móc is can, this is have to. It says who has to; for nobody in particular it is trzeba",
       "image": "media/img/musiec.webp",
       "image_alt": "someone checking a watch and turning to leave",
       "image_basis": "sentence",
@@ -9580,7 +9580,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "priority": true
     },
     {
@@ -9615,7 +9615,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "priority": true
     }
   ]
