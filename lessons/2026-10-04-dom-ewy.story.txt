@@ -1,0 +1,184 @@
+Rano głowa nie boli. Sven jest w domu Ewy.
+
+— Dzień dobry! Jak się czujesz? — pyta Ewa.
+
+— Dobrze, dziękuję!
+
+— To jest mój dom. Dom jest stary, ale duży.
+
+Ewa i Sven są w kuchni. Kuchnia jest mała, ale czysta. Stół jest czerwony. Lampa jest żółta.
+
+— Kawa jest ciepła? — pyta Sven.
+
+— Nie, kawa jest zimna. Ale mleko jest dobre.
+
+Potem Ewa i Sven wracają do pokoju. Pokój jest mały. Ściana jest niebieska. Okno jest stare. Ale łóżko jest nowe, duże i ciepłe.
+
+— Na łóżku coś jest!
+
+— To jest mój kot. Ma na imię Pies.
+
+— Pies? To jest dziwne imię! Kot jest zły?
+
+— Nie, kot nie jest zły. Kot jest głodny.
+
+Kot jest duży i czarny. Kot skacze na Svena.
+
+— Twój kot jest bardzo ciężki!
+
+Ewa się śmieje.
+
+— Tak, Pies jest ciężki! A to jest klucz do domu. Klucz jest mały, ale ważny.
+
+— Dziękuję!
+
+Wieczorem Pies śpi w łóżku. A Sven? Sven śpi w kuchni.
+
+Dom jest duży, ale lampa jest (…).
+Słońce jest (…).
+«Dzień dobry» to jest (…) słowo.
+Woda jest zimna, ale chleb jest (…).
+Sven myje rękę. Teraz ręka jest (…).
+Książka jest bardzo (…): 3 kg!
+Ryba śpiewa? To jest (…) ryba!
+To pytanie jest bardzo (…). Sven nie wie.
+Mój rower jest (…) jak drzewo.
+Kuchnia jest stara, ale stół jest (…).
+Sklep jest mały, ale miasto jest (…).
+Pies je mój chleb! To jest (…) pies!
+— Chcę jeść! Teraz! — mówi dziecko. Dziecko jest bardzo (…).
+Moja karta jest bardzo (…). To są moje pieniądze!
+mały żółty polski ciepły czysty ciężki dziwny trudny zielony nowy duży zły głodny ważny
+
+--- lemmas ---
+Rano = rano
+głowa = głowa
+nie = nie
+boli = boleć
+Sven = -
+jest = być
+w = w
+domu = dom
+Ewy = -
+Dzień = dzień
+dobry = dobry
+Jak = jak
+się = się
+czujesz = czuć
+pyta = pytać
+Ewa = -
+Dobrze = dobry
+dziękuję = dziękować
+To = to
+mój = mój
+dom = dom
+Dom = dom
+stary = stary
+ale = ale
+duży = duży
+i = i
+są = być
+kuchni = kuchnia
+Kuchnia = kuchnia
+mała = mały
+czysta = czysty
+Stół = stół
+czerwony = czerwony
+Lampa = lampa
+żółta = żółty
+Kawa = kawa
+ciepła = ciepły
+Nie = nie
+kawa = kawa
+zimna = zimny
+Ale = ale
+mleko = mleko
+dobre = dobry
+A = a
+pokój = pokój
+Pokój = pokój
+mały = mały
+Ściana = ściana
+niebieska = niebieski
+Okno = okno
+stare = stary
+łóżko = łóżko
+nowe = nowy
+duże = duży
+ciepłe = ciepły
+Na = na
+łóżku = łóżko
+coś = coś
+kot = kot
+Ma = mieć
+na = na
+imię = imię
+Pies = pies
+dziwne = dziwny
+Kot = kot
+zły = zły
+głodny = głodny
+czarny = czarny
+skacze = skakać
+Svena = -
+Twój = twój
+bardzo = bardzo
+ciężki = ciężki
+śmieje = śmiać się
+Tak = tak
+a = a
+to = to
+klucz = klucz
+do = do
+Klucz = klucz
+ważny = ważny
+Dziękuję = dziękować
+Wieczorem = wieczór
+śpi = spać
+Potem = potem
+wracają = wracać
+lampa = lampa
+jak = jak
+słońce = słońce
+słowo = słowo
+Woda = woda
+chleb = chleb
+myje = myć
+rękę = ręka
+Teraz = teraz
+ręka = ręka
+Książka = książka
+kg = -
+Ryba = ryba
+śpiewa = śpiewać
+ryba = ryba
+pytanie = pytanie
+wie = wiedzieć
+Mój = mój
+rower = rower
+drzewo = drzewo
+stara = stary
+stół = stół
+Sklep = sklep
+miasto = miasto
+je = jeść
+pies = pies
+Chcę = chcieć
+jeść = jeść
+mówi = mówić
+dziecko = dziecko
+Dziecko = dziecko
+Moja = mój
+karta = karta
+moje = mój
+pieniądze = pieniądze
+żółty = żółty
+polski = polski
+ciepły = ciepły
+czysty = czysty
+dziwny = dziwny
+trudny = trudny
+zielony = zielony
+nowy = nowy
+pokoju = pokój
+Słońce = słońce
