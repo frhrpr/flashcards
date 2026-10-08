@@ -35,17 +35,16 @@ Kot skacze do kuchni. A na łóżku jest mały, ważny klucz!
 Mleko jest (…), a kawa jest czarna.
 Na stole jest kawa. Kawa jest bardzo (…): nie można pić teraz!
 Kot jest na ulicy, potem skacze na łóżko. Teraz łóżko jest (…)!
-Brat Svena ma 2 m. Brat jest bardzo (…).
+Brat Svena ma 2 metry. Brat jest bardzo (…).
 Lodówka jest bardzo (…): 80 kg!
 Sven nie ma karty i nie może płacić. Karta jest bardzo (…).
 Lampa w łazience śpiewa! To jest (…) lampa.
 Ewa myje stół. Teraz stół jest (…).
 Dom jest stary, ale krzesło jest (…).
-Okno w pokoju ma 3 m. Okno jest bardzo (…).
 Pokój jest duży, ale łazienka jest (…).
 Kot chce rybę, teraz! Kot jest bardzo (…).
 Sven ma nowy rower, ale samochód Ewy jest bardzo (…).
-biały brudny ciężki czysty dziwny głodny gorący mały nowy stary ważny wysoki×2
+biały brudny ciężki czysty dziwny głodny gorący mały nowy stary ważny wysoki
 
 --- lemmas ---
 Rano = rano
@@ -144,7 +143,7 @@ ulicy = ulica
 łóżko = łóżko
 Brat = brat
 Svena = -
-m = -
+metry = metr
 Lodówka = lodówka
 kg = -
 karty = karta
@@ -157,7 +156,6 @@ stół = stół
 Dom = dom
 stary = stary
 krzesło = krzesło
-Okno = okno
 rybę = ryba
 nowy = nowy
 rower = rower

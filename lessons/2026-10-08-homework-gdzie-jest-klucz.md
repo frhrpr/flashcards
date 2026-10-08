@@ -76,7 +76,8 @@ Kot skacze do kuchni. A na łóżku jest mały, ważny klucz!
 
 ### New words
 
-`bo` (grammar word, `flashcard: no`), `nigdzie` (`queued` in vocab.csv),
+`bo` (grammar word, `flashcard: no`), `nigdzie` and `metr` (*2 metry*, item 4;
+both `queued` in vocab.csv),
 and `drzwi`, `otworzyć`, `kurtka` (carded, in the bank). All glossed, with
 the lesson's words alongside.
 
@@ -87,35 +88,35 @@ about four days of intake.
 
 ## Exercise — answers
 
-Adjectives only, the lesson's box format; `wysoki` is in the box ×2.
+Adjectives only, the lesson's box format, twelve items.
 
 | | item | answer | noun |
 | --- | --- | --- | --- |
 | 1 | Mleko jest ___, a kawa jest czarna. | **białe** | ono |
 | 2 | Na stole jest kawa. Kawa jest bardzo ___: nie można pić teraz! | **gorąca** | ona |
 | 3 | Kot jest na ulicy, potem skacze na łóżko. Teraz łóżko jest ___! | **brudne** | ono |
-| 4 | Brat Svena ma 2 m. Brat jest bardzo ___. | **wysoki** | on |
+| 4 | Brat Svena ma 2 metry. Brat jest bardzo ___. | **wysoki** | on |
 | 5 | Lodówka jest bardzo ___: 80 kg! | **ciężka** | ona |
 | 6 | Sven nie ma karty i nie może płacić. Karta jest bardzo ___. | **ważna** | ona |
 | 7 | Lampa w łazience śpiewa! To jest ___ lampa. | **dziwna** | ona |
 | 8 | Ewa myje stół. Teraz stół jest ___. | **czysty** | on |
 | 9 | Dom jest stary, ale krzesło jest ___. | **nowe** | ono |
-| 10 | Okno w pokoju ma 3 m. Okno jest bardzo ___. | **wysokie** | ono |
-| 11 | Pokój jest duży, ale łazienka jest ___. | **mała** | ona |
-| 12 | Kot chce rybę, teraz! Kot jest bardzo ___. | **głodny** | on |
-| 13 | Sven ma nowy rower, ale samochód Ewy jest bardzo ___. | **stary** | on |
+| 10 | Pokój jest duży, ale łazienka jest ___. | **mała** | ona |
+| 11 | Kot chce rybę, teraz! Kot jest bardzo ___. | **głodny** | on |
+| 12 | Sven ma nowy rower, ale samochód Ewy jest bardzo ___. | **stary** | on |
 
-5 ona, 4 ono, 4 on. **Items 4 and 10 are the pair**: the same adjective,
-*wysoki* / *wysokie*, on a man and a window — and 10 is the k-stem *-ie*.
+5 ona, 3 ono, 4 on. A first draft had a second *wysoki* (*Okno ma 3 m. Okno
+jest bardzo wysokie*); the teacher cut it — *wysokie* is not the adjective
+anyone reaches for about a window — and asked for *2 metry* rather than *2 m*.
 
 **The nouns are mostly ones he met four days ago** (*lodówka, łazienka,
-krzesło, okno*), so their gender can only come from the ending — which is
+krzesło*), so their gender can only come from the ending — which is
 the skill.
 
 Meaning is forced by a colour contrast (1), a reason stated in the same
 line (2 can't drink it yet, 3 straight off the street, 5 80 kg, 6 can't
-pay, 8 just washed, 12 wants fish now), a height in metres (4, 10), a
-cross-gender contrast (9, 11, 13), or an exclamation (7, a singing lamp).
+pay, 8 just washed, 11 wants fish now), a height in metres (4), a
+cross-gender contrast (9, 10, 12), or an exclamation (7, a singing lamp).
 
 ### Checked mechanically
 
