@@ -1,0 +1,172 @@
+Rano Sven chce iść do sklepu, bo w lodówce nie ma mleka. Trzeba otworzyć drzwi, ale Sven nie ma klucza. Ewa jest w kuchni i myje ręce.
+
+— Ewa, muszę coś powiedzieć — mówi Sven. — Nie mam klucza.
+
+— Nie masz klucza? Ale to jest bardzo ważny klucz!
+
+— Wiem, wiem. Pamiętam, że jest mały, ale nie wiem, gdzie jest.
+
+— Trzeba znaleźć klucz! — mówi Ewa.
+
+Ewa i Sven szukają. Sven szuka w kurtce, ale tam nie ma klucza. Ewa szuka pod stołem i pod krzesłem.
+
+— A w lodówce? — pyta Sven.
+
+— W lodówce? To jest dziwne miejsce na klucz!
+
+Ale Ewa patrzy do lodówki. Jest tam woda i kasza, ale nie ma klucza. Potem szukają w łazience. Łazienka jest teraz czysta, ale klucza tam też nie ma.
+
+— Klucza nie ma nigdzie! — mówi Sven. — Nie mogę iść do sklepu.
+
+Sven siada na krześle w kuchni. Jest zły.
+
+— Czuję, że klucz jest w domu — mówi Ewa. — Chcę zobaczyć twój pokój.
+
+W pokoju Pies śpi na łóżku: duży, czarny, ciężki kot.
+
+— Pies, co tam masz? — pyta Ewa. Ale kot nie chce iść. — Pies! Ryba!
+
+Kot skacze do kuchni. A na łóżku jest mały, ważny klucz!
+
+— Mam klucz! — mówi Sven. — Teraz mogę iść do sklepu. Mleko i ryba, tak?
+
+— Tak! — mówi Ewa. — Pies wie, co jest ważne.
+
+Mleko jest (…), a kawa jest czarna.
+Na stole jest kawa. Kawa jest bardzo (…): nie można pić teraz!
+Kot jest na ulicy, potem skacze na łóżko. Teraz łóżko jest (…)!
+Brat Svena ma 2 m. Brat jest bardzo (…).
+Lodówka jest bardzo (…): 80 kg!
+Sven nie ma karty i nie może płacić. Karta jest bardzo (…).
+Lampa w łazience śpiewa! To jest (…) lampa.
+Ewa myje stół. Teraz stół jest (…).
+Dom jest stary, ale krzesło jest (…).
+Okno w pokoju ma 3 m. Okno jest bardzo (…).
+Pokój jest duży, ale łazienka jest (…).
+Kot chce rybę, teraz! Kot jest bardzo (…).
+Sven ma nowy rower, ale samochód Ewy jest bardzo (…).
+biały brudny ciężki czysty dziwny głodny gorący mały nowy stary ważny wysoki×2
+
+--- lemmas ---
+Rano = rano
+Sven = -
+chce = chcieć
+iść = iść
+do = do
+sklepu = sklep
+bo = bo
+w = w
+lodówce = lodówka
+nie = nie
+ma = mieć
+mleka = mleko
+Trzeba = trzeba
+otworzyć = otworzyć
+drzwi = drzwi
+ale = ale
+klucza = klucz
+Ewa = -
+jest = być
+kuchni = kuchnia
+i = i
+myje = myć
+ręce = ręka
+muszę = musieć
+coś = coś
+powiedzieć = powiedzieć
+mówi = mówić
+mam = mieć
+masz = mieć
+to = to
+bardzo = bardzo
+ważny = ważny
+klucz = klucz
+Wiem = wiedzieć
+Pamiętam = pamiętać
+że = że
+mały = mały
+gdzie = gdzie
+znaleźć = znaleźć
+szukają = szukać
+szuka = szukać
+kurtce = kurtka
+tam = tam
+pod = pod
+stołem = stół
+krzesłem = krzesło
+A = a
+pyta = pytać
+dziwne = dziwny
+miejsce = miejsce
+na = na
+patrzy = patrzeć
+lodówki = lodówka
+woda = woda
+kasza = kasza
+Potem = potem
+łazience = łazienka
+Łazienka = łazienka
+teraz = teraz
+czysta = czysty
+też = też
+nigdzie = nigdzie
+mogę = móc
+siada = siadać
+krześle = krzesło
+zły = zły
+Czuję = czuć
+domu = dom
+Chcę = chcieć
+zobaczyć = zobaczyć
+twój = twój
+pokój = pokój
+pokoju = pokój
+Pies = pies
+śpi = spać
+łóżku = łóżko
+duży = duży
+czarny = czarny
+ciężki = ciężki
+kot = kot
+co = co
+Ryba = ryba
+skacze = skakać
+Mleko = mleko
+tak = tak
+wie = wiedzieć
+ważne = ważny
+kawa = kawa
+czarna = czarny
+stole = stół
+można = można
+pić = pić
+ulicy = ulica
+łóżko = łóżko
+Brat = brat
+Svena = -
+m = -
+Lodówka = lodówka
+kg = -
+karty = karta
+może = móc
+płacić = płacić
+Karta = karta
+Lampa = lampa
+śpiewa = śpiewać
+stół = stół
+Dom = dom
+stary = stary
+krzesło = krzesło
+Okno = okno
+rybę = ryba
+nowy = nowy
+rower = rower
+samochód = samochód
+Ewy = -
+biały = biały
+brudny = brudny
+czysty = czysty
+głodny = głodny
+gorący = gorący
+wysoki = wysoki
+dziwny = dziwny

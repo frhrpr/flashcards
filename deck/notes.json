@@ -3493,7 +3493,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "trudny",
@@ -3787,7 +3788,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "otworzyc",
@@ -3819,7 +3821,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "stol",
@@ -5209,7 +5212,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "jajko",
@@ -5436,7 +5440,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "autobus",
@@ -5730,7 +5735,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "zima",
@@ -5925,7 +5931,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "kuchnia",
@@ -5958,7 +5965,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "morze",
@@ -6022,7 +6030,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "grac",
@@ -6445,7 +6454,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "pan",
@@ -6910,7 +6920,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "zupa",
@@ -6976,7 +6987,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "wiatr",
@@ -9513,7 +9525,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "ciezki",
