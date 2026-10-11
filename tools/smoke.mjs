@@ -550,7 +550,9 @@ try {
   const html = m.state().html;
   check(html.includes("urge-note") && html.includes("More due than usual"),
         "a catch-up night explains itself");
-  check(html.includes('class="lighter urge"'), "and highlights the link");
+  check(html.includes('class="mode urge"'), "and turns the link into a tile");
+  check(html.indexOf('id="go-light"') < html.indexOf("urge-note"),
+        "with the explanation under it");
   check(html.includes("57 reviews"), "naming the number of reviews waiting");
   m.reviewLog.length = 0;
 

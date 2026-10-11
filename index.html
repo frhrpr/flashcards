@@ -97,9 +97,13 @@ button{font-family:inherit;cursor:pointer;border-radius:4px}
   text-align:center;text-decoration:underline;text-underline-offset:3px}
 .lighter:hover{color:var(--ink)}
 /* Normally this link is deliberately quiet — it is the lesser option. On a
-   catch-up night it is the one worth seeing, so it stops being grey. */
-.lighter.urge{color:var(--ok);text-decoration-thickness:2px}
-.urge-note{margin:.7rem 0 .2rem;padding:.6rem .8rem;background:var(--card);
+   catch-up night it is the one worth seeing, so it becomes a full tile beside
+   Vocab, in green, with the explanation under it. A green link alone went
+   unnoticed — he had never taken it. */
+.mode.urge{background:#E3EFE6;border-color:var(--ok);color:var(--ok)}
+.mode.urge:hover{border-color:var(--ink)}
+.mode.urge .mode-sub{color:var(--ok)}
+.urge-note{margin:0 0 .2rem;padding:.6rem .8rem;background:var(--card);
   border-left:2px solid var(--ok);color:var(--dim);font-size:.8rem;line-height:1.5}
 /* The drill is an <a>, not a <button>, so it needs the type reset too. */
 .lighter.drill{text-decoration:none;text-align:center;margin-top:.6rem}
@@ -1968,12 +1972,15 @@ function renderLanding(){
           : idle("Vocab", vocabDone() === "full" ? "✓ done today"
                         : vocabDone() === "light" ? "✓ reviews only"
                         : "nothing due")}
-      ${light && heavy ? `<p class="urge-note">More due than usual — you have ` +
-        `been away. If you are tired, take just the reviews: nothing new goes ` +
-        `in tonight, and tomorrow's new words are not lost.</p>` : ""}
-      ${light ? `<button class="lighter${heavy ? " urge" : ""}" id="go-light">` +
-        `Tired? Just the ` +
-        `${dueCards.length} review${dueCards.length === 1 ? "" : "s"}, no new words</button>` : ""}
+      ${light && heavy
+        ? `<button class="mode urge" id="go-light">` +
+          `<span class="mode-n">Vocab — just reviews</span><span class="mode-sub">` +
+          `${dueCards.length} review${dueCards.length === 1 ? "" : "s"}, no new words</span></button>` +
+          `<p class="urge-note">More due than usual — you have ` +
+          `been away. If you are tired, take just the reviews: nothing new goes ` +
+          `in tonight, and tomorrow's new words are not lost.</p>`
+        : light ? `<button class="lighter" id="go-light">Tired? Just the ` +
+          `${dueCards.length} review${dueCards.length === 1 ? "" : "s"}, no new words</button>` : ""}
       ${e ? tile("go-ear", "Ear training", `${e} trials · about ${earMins(e)}`, !!v)
           : idle("Ear training", earIdleLabel())}
     </div>
