@@ -105,6 +105,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/blisko.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-blisko.ogg",
+    "fingerprint": "cff1253fe2442542",
+    "gain_db": -0.2,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-blisko.ogg",
+    "seconds": 1.41,
+    "source": "commons",
+    "text": "blisko"
+  },
+  "media/audio/blisko__sentence.mp3": {
+    "fingerprint": "99e5cb44ba0a0498",
+    "gain_db": -1.0,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.15,
+    "source": "tts",
+    "text": "Apteka jest blisko.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/bolec.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-boleć.ogg",
@@ -486,6 +507,27 @@
     "seconds": 1.15,
     "source": "tts",
     "text": "Rano chodzę do sklepu.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/chyba.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-chyba.ogg",
+    "fingerprint": "a84d716031b1ff31",
+    "gain_db": -0.8,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-chyba.ogg",
+    "seconds": 0.99,
+    "source": "commons",
+    "text": "chyba"
+  },
+  "media/audio/chyba__sentence.mp3": {
+    "fingerprint": "3d5ebbb6d440edce",
+    "gain_db": 1.0,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.02,
+    "source": "tts",
+    "text": "Ewa chyba śpi.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -975,6 +1017,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/daleko.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-daleko.ogg",
+    "fingerprint": "a38b8adebe6bdcc3",
+    "gain_db": 0.7,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-daleko.ogg",
+    "seconds": 1.25,
+    "source": "commons",
+    "text": "daleko"
+  },
+  "media/audio/daleko__sentence.mp3": {
+    "fingerprint": "b7ae70ff6a703b73",
+    "gain_db": 2.0,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.15,
+    "source": "tts",
+    "text": "Sklep jest daleko.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/dawac.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-dawać.ogg",
@@ -1098,6 +1161,27 @@
     "seconds": 1.23,
     "source": "tts",
     "text": "Idę drogą do parku.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/drogi.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-drogi.ogg",
+    "fingerprint": "7e2424de680b14c7",
+    "gain_db": -0.2,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-drogi.ogg",
+    "seconds": 1.33,
+    "source": "commons",
+    "text": "drogi"
+  },
+  "media/audio/drogi__sentence.mp3": {
+    "fingerprint": "218ae5fa86e86cd7",
+    "gain_db": -0.6,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.52,
+    "source": "tts",
+    "text": "Ten samochód jest bardzo drogi.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1459,6 +1543,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/film.mp3": {
+    "author": "Kajervi",
+    "commons_file": "Pl-film.ogg",
+    "fingerprint": "3063b0b741b1eb0f",
+    "gain_db": 0.8,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-film.ogg",
+    "seconds": 0.6,
+    "source": "commons",
+    "text": "film"
+  },
+  "media/audio/film__sentence.mp3": {
+    "fingerprint": "4388ef9eaec6a48d",
+    "gain_db": -0.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.44,
+    "source": "tts",
+    "text": "Wieczorem oglądam film.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/glodny.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-głodny.ogg",
@@ -1813,6 +1918,27 @@
     "seconds": 0.91,
     "source": "tts",
     "text": "Lubię jesień.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/jeszcze.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-jeszcze.ogg",
+    "fingerprint": "4dd22f8822f88ef8",
+    "gain_db": -1.0,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-jeszcze.ogg",
+    "seconds": 0.71,
+    "source": "commons",
+    "text": "jeszcze"
+  },
+  "media/audio/jeszcze__sentence.mp3": {
+    "fingerprint": "5b87d7bd527a0c03",
+    "gain_db": 0.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.2,
+    "source": "tts",
+    "text": "Dziecko jeszcze śpi.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -2302,6 +2428,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/ladny.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-ładny.ogg",
+    "fingerprint": "5e851117dce858f1",
+    "gain_db": 1.7,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-%C5%82adny.ogg",
+    "seconds": 0.78,
+    "source": "commons",
+    "text": "ładny"
+  },
+  "media/audio/ladny__sentence.mp3": {
+    "fingerprint": "d81ba2fb9e607987",
+    "gain_db": -2.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.18,
+    "source": "tts",
+    "text": "Masz bardzo ładny dom.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/lampa.mp3": {
     "author": "Wyksztalcioch",
     "commons_file": "Pl-lampa.ogg",
@@ -2698,6 +2845,27 @@
     "seconds": 1.49,
     "source": "tts",
     "text": "Mój mąż gotuje obiad.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/metr.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-metr.ogg",
+    "fingerprint": "a8375741d41d304e",
+    "gain_db": 0.0,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-metr.ogg",
+    "seconds": 1.59,
+    "source": "commons",
+    "text": "metr"
+  },
+  "media/audio/metr__sentence.mp3": {
+    "fingerprint": "6ff482a31891c5f9",
+    "gain_db": 1.0,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.15,
+    "source": "tts",
+    "text": "Stół ma dwa metry.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -3233,6 +3401,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/mysz.mp3": {
+    "author": "Tsca",
+    "commons_file": "Pl-mysz.ogg",
+    "fingerprint": "e891ecd5e4a8df8f",
+    "gain_db": 7.8,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-mysz.ogg",
+    "seconds": 1.07,
+    "source": "commons",
+    "text": "mysz"
+  },
+  "media/audio/mysz__sentence.mp3": {
+    "fingerprint": "f9fd470a4a9798e9",
+    "gain_db": -0.5,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.91,
+    "source": "tts",
+    "text": "Mysz je ser.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/nie.mp3": {
     "author": "Tomasz \"odder\" Kozlowski",
     "commons_file": "Pl-nie.ogg",
@@ -3335,6 +3524,27 @@
     "seconds": 1.25,
     "source": "tts",
     "text": "Nigdy nie jem kaszy.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/nigdzie.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-nigdzie.ogg",
+    "fingerprint": "95e0fc48b42706a2",
+    "gain_db": -3.8,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-nigdzie.ogg",
+    "seconds": 1.25,
+    "source": "commons",
+    "text": "nigdzie"
+  },
+  "media/audio/nigdzie__sentence.mp3": {
+    "fingerprint": "cc2a7db6540b253f",
+    "gain_db": -1.2,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.78,
+    "source": "tts",
+    "text": "Nie mogę nigdzie znaleźć klucza.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -3717,6 +3927,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/parasol.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-parasol.ogg",
+    "fingerprint": "170ef567c394773f",
+    "gain_db": -0.1,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-parasol.ogg",
+    "seconds": 1.75,
+    "source": "commons",
+    "text": "parasol"
+  },
+  "media/audio/parasol__sentence.mp3": {
+    "fingerprint": "1de47bcbd22151f6",
+    "gain_db": 1.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.67,
+    "source": "tts",
+    "text": "Pada deszcz. Mam parasol.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/park.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-park.ogg",
@@ -4053,6 +4284,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/podobny.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-podobny.ogg",
+    "fingerprint": "4e3bd00831aa037b",
+    "gain_db": 0.5,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-podobny.ogg",
+    "seconds": 0.91,
+    "source": "commons",
+    "text": "podobny"
+  },
+  "media/audio/podobny__sentence.mp3": {
+    "fingerprint": "e99bfc12061280dd",
+    "gain_db": -0.8,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.72,
+    "source": "tts",
+    "text": "Te dwa klucze są bardzo podobne.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/pokoj.mp3": {
     "author": "Wyksztalcioch",
     "commons_file": "Pl-pokój.ogg",
@@ -4158,6 +4410,28 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/poprosze.mp3": {
+    "fingerprint": "a4f899f0457604a4",
+    "gain_db": 1.7,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.6,
+    "source": "tts",
+    "text": "poproszę",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/poprosze__sentence.mp3": {
+    "fingerprint": "232d7ab6300efdb2",
+    "gain_db": 0.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.89,
+    "source": "tts",
+    "text": "Poproszę kawę.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/potem.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-potem.ogg",
@@ -4239,6 +4513,27 @@
     "seconds": 1.57,
     "source": "tts",
     "text": "Mój ojciec pracuje w szkole.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/prezent.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-prezent.ogg",
+    "fingerprint": "e910a89b4ab1d502",
+    "gain_db": -0.2,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-prezent.ogg",
+    "seconds": 1.59,
+    "source": "commons",
+    "text": "prezent"
+  },
+  "media/audio/prezent__sentence.mp3": {
+    "fingerprint": "8d36de1eb503b0d8",
+    "gain_db": -0.6,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.2,
+    "source": "tts",
+    "text": "Mam dla ciebie prezent.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -4639,6 +4934,27 @@
     "seconds": 1.65,
     "source": "tts",
     "text": "Ten samolot jest bardzo duży.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/sasiad.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-sąsiad.ogg",
+    "fingerprint": "c13dd94b397a443c",
+    "gain_db": -0.2,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-s%C4%85siad.ogg",
+    "seconds": 1.49,
+    "source": "commons",
+    "text": "sąsiad"
+  },
+  "media/audio/sasiad__sentence.mp3": {
+    "fingerprint": "dd39c1b54acae42d",
+    "gain_db": -0.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.23,
+    "source": "tts",
+    "text": "Mój sąsiad ma psa.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -5063,6 +5379,28 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/spacer.mp3": {
+    "fingerprint": "cd99fdcec6940596",
+    "gain_db": -0.2,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.81,
+    "source": "tts",
+    "text": "spacer",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/spacer__sentence.mp3": {
+    "fingerprint": "72ab2155da187755",
+    "gain_db": -1.6,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.62,
+    "source": "tts",
+    "text": "Wieczorem idę na spacer z psem.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/spiewac.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-śpiewać.ogg",
@@ -5441,6 +5779,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/szybko.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-szybko.ogg",
+    "fingerprint": "2d998df7a62bc111",
+    "gain_db": 0.7,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-szybko.ogg",
+    "seconds": 0.99,
+    "source": "commons",
+    "text": "szybko"
+  },
+  "media/audio/szybko__sentence.mp3": {
+    "fingerprint": "65e1affde0b7f5bc",
+    "gain_db": -0.8,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.41,
+    "source": "tts",
+    "text": "Rano jem bardzo szybko.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/tak.mp3": {
     "author": "odder",
     "commons_file": "Pl-tak.ogg",
@@ -5586,6 +5945,27 @@
     "seconds": 0.91,
     "source": "tts",
     "text": "Ty też masz psa.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/torba.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-torba.ogg",
+    "fingerprint": "8fa6636ccc985f26",
+    "gain_db": -0.1,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-torba.ogg",
+    "seconds": 1.54,
+    "source": "commons",
+    "text": "torba"
+  },
+  "media/audio/torba__sentence.mp3": {
+    "fingerprint": "797de3199560e69f",
+    "gain_db": 0.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.52,
+    "source": "tts",
+    "text": "Ta torba jest bardzo ciężka.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -5800,6 +6180,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/urodziny.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-urodziny.ogg",
+    "fingerprint": "1f6fcb8284600254",
+    "gain_db": -0.2,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-urodziny.ogg",
+    "seconds": 1.75,
+    "source": "commons",
+    "text": "urodziny"
+  },
+  "media/audio/urodziny__sentence.mp3": {
+    "fingerprint": "3827d9094936e049",
+    "gain_db": -0.2,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.36,
+    "source": "tts",
+    "text": "Dzisiaj są moje urodziny.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/warzywo.mp3": {
     "author": "Marcowy zając",
     "commons_file": "Pl-warzywo.ogg",
@@ -5947,6 +6348,28 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/wlaczyc.mp3": {
+    "fingerprint": "3a737aba6a7c4398",
+    "gain_db": 2.2,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.86,
+    "source": "tts",
+    "text": "włączyć",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/wlaczyc__sentence.mp3": {
+    "fingerprint": "effede5d9b64a317",
+    "gain_db": -3.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.72,
+    "source": "tts",
+    "text": "Czy możesz włączyć telewizor?",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/wlosy.mp3": {
     "author": "Frizabela",
     "commons_file": "Pl-włosy.ogg",
@@ -6007,6 +6430,48 @@
     "seconds": 1.15,
     "source": "tts",
     "text": "Ptak wraca do parku.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/wstawac.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-wstawać.ogg",
+    "fingerprint": "7bd5deacd5163b7c",
+    "gain_db": 0.4,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-wstawa%C4%87.ogg",
+    "seconds": 0.94,
+    "source": "commons",
+    "text": "wstawać"
+  },
+  "media/audio/wstawac__sentence.mp3": {
+    "fingerprint": "6672f6f8da3c3abf",
+    "gain_db": -0.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.41,
+    "source": "tts",
+    "text": "Rano wstaję i piję kawę.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/wszystko.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-wszystko.ogg",
+    "fingerprint": "121491ac6c927222",
+    "gain_db": -0.8,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-wszystko.ogg",
+    "seconds": 0.78,
+    "source": "commons",
+    "text": "wszystko"
+  },
+  "media/audio/wszystko__sentence.mp3": {
+    "fingerprint": "fc06ac22590a57e4",
+    "gain_db": -0.8,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.1,
+    "source": "tts",
+    "text": "Wszystko jest na stole.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -6134,6 +6599,28 @@
     "seed": 7,
     "source": "tts",
     "text": "Tutaj zawsze jest dużo turystów.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/zgubic.mp3": {
+    "fingerprint": "51c9ed90e6d8027d",
+    "gain_db": -2.5,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.73,
+    "source": "tts",
+    "text": "zgubić",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/zgubic__sentence.mp3": {
+    "fingerprint": "aff9c1606332b2d9",
+    "gain_db": 1.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.25,
+    "source": "tts",
+    "text": "Nie chcę zgubić klucza.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -6285,6 +6772,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/znowu.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-znowu.ogg",
+    "fingerprint": "732a6827ddd2a69c",
+    "gain_db": -0.1,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-znowu.ogg",
+    "seconds": 0.84,
+    "source": "commons",
+    "text": "znowu"
+  },
+  "media/audio/znowu__sentence.mp3": {
+    "fingerprint": "6dc8946a8105c3cf",
+    "gain_db": -3.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.18,
+    "source": "tts",
+    "text": "Znowu pada deszcz.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/zobaczyc.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-zobaczyć.ogg",
@@ -6366,6 +6874,28 @@
     "seconds": 1.12,
     "source": "tts",
     "text": "Chcę zostać w domu.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/zostawiac.mp3": {
+    "fingerprint": "996ac5c7cbd3d671",
+    "gain_db": -2.6,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.94,
+    "source": "tts",
+    "text": "zostawiać",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/zostawiac__sentence.mp3": {
+    "fingerprint": "5a4d4564285c9b3a",
+    "gain_db": 0.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.59,
+    "source": "tts",
+    "text": "Zawsze zostawiam klucz w domu.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -6472,6 +7002,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A plain white painted wall filling the frame, with a dark wooden floor along the bottom edge. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/blisko.webp": {
+    "bytes": 113944,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "9178cc3249f88c9c",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person stepping out of the front door of a house, and right next door, a few steps away, a small pharmacy with a green cross. Daylight. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -6734,6 +7280,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A person walking along a park path, whole body in frame, side on, daylight, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/chyba.webp": {
+    "bytes": 14102,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "50691f0915f764e4",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person standing outside a closed bedroom door, ear close to it, finger to their lips, the hallway dim. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -7100,6 +7662,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/daleko.webp": {
+    "bytes": 66698,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "897698f076f7a32b",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person standing at the start of a long, straight, empty country road, a tiny shop visible far away at its very end. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/dawac.webp": {
     "bytes": 22634,
     "check": {
@@ -7193,6 +7771,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "An empty country road running away from the viewer into the distance, daylight, no cars, no people, no signs or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/drogi.webp": {
+    "bytes": 67488,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "4ca489178b86f1f5",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A shiny red luxury sports car under bright lights in a car showroom. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -7428,6 +8022,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A woman standing outdoors holding a phone to her ear, mid-conversation. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/film.webp": {
+    "bytes": 24660,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "a95da2b4023bb2ae",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Two people on a sofa in a dark living room, faces lit by the glow of a television, a bowl of popcorn between them. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -7695,6 +8305,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A woodland path completely covered in fallen orange and brown leaves. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/jeszcze.webp": {
+    "bytes": 23956,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "5609cf67fe8caa00",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A young child fast asleep in bed, morning sunlight coming through the curtains. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -8050,6 +8676,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/ladny.webp": {
+    "bytes": 196170,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "f8f871413f9d627a",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A pretty little house with white walls, blue shutters and flowers in front, in sunshine. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/lampa.webp": {
     "bytes": 18228,
     "check": {
@@ -8351,6 +8993,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A man in an apron cooking at a stove, a woman standing beside him talking to him. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/metr.webp": {
+    "bytes": 111526,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "814d69723501324a",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A yellow tape measure stretched along the full length of a long wooden table. No words, only the numbers on the tape. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -8749,6 +9407,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/mysz.webp": {
+    "bytes": 25634,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "78671583669ff3bc",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A small grey mouse nibbling a wedge of yellow cheese on a wooden kitchen floor. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/nie.webp": {
     "bytes": 32602,
     "check": {
@@ -8821,6 +9495,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A bowl of porridge pushed away across a wooden table, a person leaning back from it with a hand raised. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/nigdzie.webp": {
+    "bytes": 120024,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "There is visible text on the snack bags, magazine cover, and pizza box.",
+      "verdict": "flag",
+      "why": "contains text or lettering"
+    },
+    "fingerprint": "0019b1a1ed30071e",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A frustrated person lifting the cushions of a sofa, searching underneath, the living room in mild disorder. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -9112,6 +9802,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/parasol.webp": {
+    "bytes": 65492,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "flag",
+      "why": "contains text or lettering"
+    },
+    "fingerprint": "ab4e2b2a7adc93dd",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person walking down a city street in the rain under a big open umbrella. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/park.webp": {
     "bytes": 195656,
     "check": {
@@ -9347,6 +10053,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/podobny.webp": {
+    "bytes": 114684,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "91608b81cd926741",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Two nearly identical metal house keys lying side by side on a wooden table, close-up. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/pokoj.webp": {
     "bytes": 31136,
     "check": {
@@ -9422,6 +10144,22 @@
     "size": "263x350",
     "source": "supplied"
   },
+  "media/img/poprosze.webp": {
+    "bytes": 42944,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "The scene depicts barista training or coffee preparation rather than a customer ordering.",
+      "verdict": "flag",
+      "why": "does not clearly show the word; ambiguous — something else dominates"
+    },
+    "fingerprint": "5c59765165e9c7cc",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A customer at a café counter pointing at the coffee machine while the barista listens. Daylight. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/potem.webp": {
     "bytes": 15640,
     "check": {
@@ -9478,6 +10216,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A man standing at a whiteboard in a classroom, mid-explanation, facing the room. No text or lettering on the board. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/prezent.webp": {
+    "bytes": 38466,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "342db31a0d4ce5c6",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A smiling person holding out a gift wrapped in paper with a ribbon towards the viewer. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -9785,6 +10539,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/sasiad.webp": {
+    "bytes": 120522,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "b9694ed2957fbdaf",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A friendly middle-aged man waving over a low garden fence between two houses, his dog beside him. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/sciana.webp": {
     "bytes": 247446,
     "check": {
@@ -10060,6 +10830,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A young child asleep in bed under a duvet, eyes closed, head on the pillow. Dim night light. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/spacer.webp": {
+    "bytes": 151168,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "1b55a65f78ed8827",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person walking a dog on a lead along a path in a park at dusk. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -10341,6 +11127,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/szybko.webp": {
+    "bytes": 28622,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "843e51654dfbfba7",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person in a coat standing at a kitchen counter hurriedly stuffing toast into their mouth while glancing at a wristwatch. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/tak.webp": {
     "bytes": 20018,
     "check": {
@@ -10450,6 +11252,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "Two people standing side by side, each holding an identical red umbrella, plain background, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/torba.webp": {
+    "bytes": 68870,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "7111f4e2f5ba0d7d",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person on a street leaning to one side, straining to carry one very heavy, full shopping bag. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -10608,6 +11426,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/urodziny.webp": {
+    "bytes": 46880,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "aa294ee67d25b7d5",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person smiling at a birthday cake with lit candles on a table, friends around them. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/warzywo.webp": {
     "bytes": 61988,
     "check": {
@@ -10710,6 +11544,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/wlaczyc.webp": {
+    "bytes": 24414,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "e931f5aa8a8c138c",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A hand pointing a remote control at a television that is just lighting up, in a living room in the evening. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/wlosy.webp": {
     "bytes": 53392,
     "check": {
@@ -10755,6 +11605,38 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A person walking up to their own front door carrying a bag, seen from behind, daylight, no text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/wstawac.webp": {
+    "bytes": 29652,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "8fe4eac15531e5f9",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person sitting up and swinging their legs out of bed in the morning, an alarm clock on the bedside table showing 7:00. No words, only the numbers. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/wszystko.webp": {
+    "bytes": 47696,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "e566901178b9a1e8",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A kitchen table fully laid for breakfast: bread, cheese, eggs, fruit, coffee, juice, plates and cups. Morning light. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -10828,6 +11710,22 @@
     "process_version": 1,
     "size": "800x800",
     "source": "commons"
+  },
+  "media/img/zgubic.webp": {
+    "bytes": 55448,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "7c571547fff60691",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A key falling out of the coat pocket of a person walking along a pavement, about to land, the person not noticing. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
   },
   "media/img/zielony.webp": {
     "bytes": 11426,
@@ -10941,6 +11839,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/znowu.webp": {
+    "bytes": 58392,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "a5ae8d9bb36408f7",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person leaning on a windowsill with their chin in their hand, looking out at heavy rain with a fed-up expression. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/zobaczyc.webp": {
     "bytes": 56218,
     "check": {
@@ -11002,6 +11916,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A man sitting alone on a sofa at home in the evening with a lamp lit and his coat still hanging by the door. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/zostawiac.webp": {
+    "bytes": 23444,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "1563d866ad7e416f",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A set of house keys lying on a small hallway table, the front door behind it swinging shut. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },

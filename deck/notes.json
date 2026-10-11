@@ -10035,6 +10035,843 @@
       "reviewed": true,
       "kind": "form",
       "parent": "pytac"
+    },
+    {
+      "id": "poprosze",
+      "word": "poproszę",
+      "gloss": "I would like (in a shop)",
+      "pos": "interjection",
+      "ipa": "pɔˈprɔʂɛ",
+      "note": "asking for something in a shop or café; plain please is proszę",
+      "image": "media/img/poprosze.webp",
+      "image_alt": "ordering at a café counter",
+      "image_basis": "sentence",
+      "image_prompt": "A customer at a café counter pointing at the coffee machine while the barista listens. Daylight. No text or lettering. Square image.",
+      "audio": "media/audio/poprosze.mp3",
+      "sentence": {
+        "pl": "Poproszę kawę.",
+        "en": "A coffee, please.",
+        "gap": "___ kawę.",
+        "answer": "Poproszę",
+        "answer_lemma": "poproszę",
+        "audio": "media/audio/poprosze__sentence.mp3",
+        "lemmas": [
+          "poproszę",
+          "kawa"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "wlaczyc",
+      "word": "włączyć",
+      "gloss": "to switch on",
+      "pos": "verb",
+      "ipa": "ˈvwɔnt͡ʂɨt͡ɕ",
+      "note": null,
+      "image": "media/img/wlaczyc.webp",
+      "image_alt": "a hand pointing a remote at a television",
+      "image_basis": "sentence",
+      "image_prompt": "A hand pointing a remote control at a television that is just lighting up, in a living room in the evening. No text or lettering. Square image.",
+      "audio": "media/audio/wlaczyc.mp3",
+      "sentence": {
+        "pl": "Czy możesz włączyć telewizor?",
+        "en": "Can you switch on the TV?",
+        "gap": "Czy możesz ___ telewizor?",
+        "answer": "włączyć",
+        "answer_lemma": "włączyć",
+        "audio": "media/audio/wlaczyc__sentence.mp3",
+        "lemmas": [
+          "czy",
+          "móc",
+          "włączyć",
+          "telewizor"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "mysz",
+      "word": "mysz",
+      "gloss": "mouse",
+      "pos": "noun",
+      "ipa": "mɨʂ",
+      "note": null,
+      "image": "media/img/mysz.webp",
+      "image_alt": "a mouse nibbling cheese",
+      "image_basis": "sentence",
+      "image_prompt": "A small grey mouse nibbling a wedge of yellow cheese on a wooden kitchen floor. No text or lettering. Square image.",
+      "audio": "media/audio/mysz.mp3",
+      "sentence": {
+        "pl": "Mysz je ser.",
+        "en": "The mouse is eating cheese.",
+        "gap": "___ je ser.",
+        "answer": "Mysz",
+        "answer_lemma": "mysz",
+        "audio": "media/audio/mysz__sentence.mp3",
+        "lemmas": [
+          "mysz",
+          "jeść",
+          "ser"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "metr",
+      "word": "metr",
+      "gloss": "metre",
+      "pos": "noun",
+      "ipa": "mɛtr",
+      "note": null,
+      "image": "media/img/metr.webp",
+      "image_alt": "a tape measure along a table",
+      "image_basis": "sentence",
+      "image_prompt": "A yellow tape measure stretched along the full length of a long wooden table. No words, only the numbers on the tape. Square image.",
+      "audio": "media/audio/metr.mp3",
+      "sentence": {
+        "pl": "Stół ma dwa metry.",
+        "en": "The table is two metres long.",
+        "gap": "Stół ma dwa ___.",
+        "answer": "metry",
+        "answer_lemma": "metr",
+        "audio": "media/audio/metr__sentence.mp3",
+        "lemmas": [
+          "stół",
+          "mieć",
+          "dwa",
+          "metr"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "nigdzie",
+      "word": "nigdzie",
+      "gloss": "nowhere",
+      "pos": "adverb",
+      "ipa": "ˈɲiɡd͡ʑɛ",
+      "note": "about place: gdzie is inside it. Not nigdy, which is about time. Always with nie",
+      "image": "media/img/nigdzie.webp",
+      "image_alt": "someone searching under sofa cushions",
+      "image_basis": "sentence",
+      "image_prompt": "A frustrated person lifting the cushions of a sofa, searching underneath, the living room in mild disorder. No text or lettering. Square image.",
+      "audio": "media/audio/nigdzie.mp3",
+      "sentence": {
+        "pl": "Nie mogę nigdzie znaleźć klucza.",
+        "en": "I can't find the key anywhere.",
+        "gap": "Nie mogę ___ znaleźć klucza.",
+        "answer": "nigdzie",
+        "answer_lemma": "nigdzie",
+        "audio": "media/audio/nigdzie__sentence.mp3",
+        "lemmas": [
+          "nie",
+          "móc",
+          "nigdzie",
+          "znaleźć",
+          "klucz"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "jeszcze",
+      "word": "jeszcze",
+      "gloss": "still, yet",
+      "pos": "adverb",
+      "ipa": "ˈjɛʂt͡ʂɛ",
+      "note": null,
+      "image": "media/img/jeszcze.webp",
+      "image_alt": "a child asleep in bed in the morning",
+      "image_basis": "sentence",
+      "image_prompt": "A young child fast asleep in bed, morning sunlight coming through the curtains. No text or lettering. Square image.",
+      "audio": "media/audio/jeszcze.mp3",
+      "sentence": {
+        "pl": "Dziecko jeszcze śpi.",
+        "en": "The child is still asleep.",
+        "gap": "Dziecko ___ śpi.",
+        "answer": "jeszcze",
+        "answer_lemma": "jeszcze",
+        "audio": "media/audio/jeszcze__sentence.mp3",
+        "lemmas": [
+          "dziecko",
+          "jeszcze",
+          "spać"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "znowu",
+      "word": "znowu",
+      "gloss": "again",
+      "pos": "adverb",
+      "ipa": "ˈznɔvu",
+      "note": null,
+      "image": "media/img/znowu.webp",
+      "image_alt": "someone at a rainy window, fed up",
+      "image_basis": "sentence",
+      "image_prompt": "A person leaning on a windowsill with their chin in their hand, looking out at heavy rain with a fed-up expression. No text or lettering. Square image.",
+      "audio": "media/audio/znowu.mp3",
+      "sentence": {
+        "pl": "Znowu pada deszcz.",
+        "en": "It's raining again.",
+        "gap": "___ pada deszcz.",
+        "answer": "Znowu",
+        "answer_lemma": "znowu",
+        "audio": "media/audio/znowu__sentence.mp3",
+        "lemmas": [
+          "znowu",
+          "padać",
+          "deszcz"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "wszystko",
+      "word": "wszystko",
+      "gloss": "everything",
+      "pos": "pronoun",
+      "ipa": "ˈfʂɨstkɔ",
+      "note": null,
+      "image": "media/img/wszystko.webp",
+      "image_alt": "a table laid with a full breakfast",
+      "image_basis": "sentence",
+      "image_prompt": "A kitchen table fully laid for breakfast: bread, cheese, eggs, fruit, coffee, juice, plates and cups. Morning light. No text or lettering. Square image.",
+      "audio": "media/audio/wszystko.mp3",
+      "sentence": {
+        "pl": "Wszystko jest na stole.",
+        "en": "Everything is on the table.",
+        "gap": "___ jest na stole.",
+        "answer": "Wszystko",
+        "answer_lemma": "wszystko",
+        "audio": "media/audio/wszystko__sentence.mp3",
+        "lemmas": [
+          "wszystko",
+          "być",
+          "na",
+          "stół"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "zostawiac",
+      "word": "zostawiać",
+      "gloss": "to leave (behind)",
+      "pos": "verb",
+      "ipa": "zɔˈstavjat͡ɕ",
+      "note": "for a one-off: zostawić",
+      "image": "media/img/zostawiac.webp",
+      "image_alt": "keys left on a hall table as the door closes",
+      "image_basis": "sentence",
+      "image_prompt": "A set of house keys lying on a small hallway table, the front door behind it swinging shut. No text or lettering. Square image.",
+      "audio": "media/audio/zostawiac.mp3",
+      "sentence": {
+        "pl": "Zawsze zostawiam klucz w domu.",
+        "en": "I always leave my key at home.",
+        "gap": "Zawsze ___ klucz w domu.",
+        "answer": "zostawiam",
+        "answer_lemma": "zostawiać",
+        "audio": "media/audio/zostawiac__sentence.mp3",
+        "lemmas": [
+          "zawsze",
+          "zostawiać",
+          "klucz",
+          "w",
+          "dom"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "film",
+      "word": "film",
+      "gloss": "film",
+      "pos": "noun",
+      "ipa": "fʲilm",
+      "note": null,
+      "image": "media/img/film.webp",
+      "image_alt": "two people on a sofa watching TV",
+      "image_basis": "sentence",
+      "image_prompt": "Two people on a sofa in a dark living room, faces lit by the glow of a television, a bowl of popcorn between them. No text or lettering. Square image.",
+      "audio": "media/audio/film.mp3",
+      "sentence": {
+        "pl": "Wieczorem oglądam film.",
+        "en": "In the evening I watch a film.",
+        "gap": "Wieczorem oglądam ___.",
+        "answer": "film",
+        "answer_lemma": "film",
+        "audio": "media/audio/film__sentence.mp3",
+        "lemmas": [
+          "wieczór",
+          "oglądać",
+          "film"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "chyba",
+      "word": "chyba",
+      "gloss": "probably, I think",
+      "pos": "particle",
+      "ipa": "ˈxɨba",
+      "note": null,
+      "image": "media/img/chyba.webp",
+      "image_alt": "someone listening at a closed bedroom door",
+      "image_basis": "sentence",
+      "image_prompt": "A person standing outside a closed bedroom door, ear close to it, finger to their lips, the hallway dim. No text or lettering. Square image.",
+      "audio": "media/audio/chyba.mp3",
+      "sentence": {
+        "pl": "Ewa chyba śpi.",
+        "en": "Ewa is asleep, I think.",
+        "gap": "Ewa ___ śpi.",
+        "answer": "chyba",
+        "answer_lemma": "chyba",
+        "audio": "media/audio/chyba__sentence.mp3",
+        "lemmas": [
+          "chyba",
+          "spać"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "podobny",
+      "word": "podobny",
+      "gloss": "similar",
+      "pos": "adjective",
+      "ipa": "pɔˈdɔbnɨ",
+      "note": null,
+      "image": "media/img/podobny.webp",
+      "image_alt": "two nearly identical keys",
+      "image_basis": "sentence",
+      "image_prompt": "Two nearly identical metal house keys lying side by side on a wooden table, close-up. No text or lettering. Square image.",
+      "audio": "media/audio/podobny.mp3",
+      "sentence": {
+        "pl": "Te dwa klucze są bardzo podobne.",
+        "en": "These two keys are very alike.",
+        "gap": "Te dwa klucze są bardzo ___.",
+        "answer": "podobne",
+        "answer_lemma": "podobny",
+        "audio": "media/audio/podobny__sentence.mp3",
+        "lemmas": [
+          "ten",
+          "dwa",
+          "klucz",
+          "być",
+          "bardzo",
+          "podobny"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "daleko",
+      "word": "daleko",
+      "gloss": "far",
+      "pos": "adverb",
+      "ipa": "daˈlɛkɔ",
+      "note": null,
+      "image": "media/img/daleko.webp",
+      "image_alt": "a tiny shop at the end of a long road",
+      "image_basis": "sentence",
+      "image_prompt": "A person standing at the start of a long, straight, empty country road, a tiny shop visible far away at its very end. No text or lettering. Square image.",
+      "audio": "media/audio/daleko.mp3",
+      "sentence": {
+        "pl": "Sklep jest daleko.",
+        "en": "The shop is far away.",
+        "gap": "Sklep jest ___.",
+        "answer": "daleko",
+        "answer_lemma": "daleko",
+        "audio": "media/audio/daleko__sentence.mp3",
+        "lemmas": [
+          "sklep",
+          "być",
+          "daleko"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "blisko",
+      "word": "blisko",
+      "gloss": "near, close by",
+      "pos": "adverb",
+      "ipa": "ˈbliskɔ",
+      "note": null,
+      "image": "media/img/blisko.webp",
+      "image_alt": "a pharmacy right next to a front door",
+      "image_basis": "sentence",
+      "image_prompt": "A person stepping out of the front door of a house, and right next door, a few steps away, a small pharmacy with a green cross. Daylight. No text or lettering. Square image.",
+      "audio": "media/audio/blisko.mp3",
+      "sentence": {
+        "pl": "Apteka jest blisko.",
+        "en": "The pharmacy is close by.",
+        "gap": "Apteka jest ___.",
+        "answer": "blisko",
+        "answer_lemma": "blisko",
+        "audio": "media/audio/blisko__sentence.mp3",
+        "lemmas": [
+          "apteka",
+          "być",
+          "blisko"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "zgubic",
+      "word": "zgubić",
+      "gloss": "to lose",
+      "pos": "verb",
+      "ipa": "ˈzɡubʲit͡ɕ",
+      "note": null,
+      "image": "media/img/zgubic.webp",
+      "image_alt": "a key slipping out of a coat pocket",
+      "image_basis": "sentence",
+      "image_prompt": "A key falling out of the coat pocket of a person walking along a pavement, about to land, the person not noticing. No text or lettering. Square image.",
+      "audio": "media/audio/zgubic.mp3",
+      "sentence": {
+        "pl": "Nie chcę zgubić klucza.",
+        "en": "I don't want to lose the key.",
+        "gap": "Nie chcę ___ klucza.",
+        "answer": "zgubić",
+        "answer_lemma": "zgubić",
+        "audio": "media/audio/zgubic__sentence.mp3",
+        "lemmas": [
+          "nie",
+          "chcieć",
+          "zgubić",
+          "klucz"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "sasiad",
+      "word": "sąsiad",
+      "gloss": "neighbour",
+      "pos": "noun",
+      "ipa": "ˈsɔ̃ɕat",
+      "note": null,
+      "image": "media/img/sasiad.webp",
+      "image_alt": "a neighbour with a dog at the garden fence",
+      "image_basis": "sentence",
+      "image_prompt": "A friendly middle-aged man waving over a low garden fence between two houses, his dog beside him. No text or lettering. Square image.",
+      "audio": "media/audio/sasiad.mp3",
+      "sentence": {
+        "pl": "Mój sąsiad ma psa.",
+        "en": "My neighbour has a dog.",
+        "gap": "Mój ___ ma psa.",
+        "answer": "sąsiad",
+        "answer_lemma": "sąsiad",
+        "audio": "media/audio/sasiad__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "sąsiad",
+          "mieć",
+          "pies"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "torba",
+      "word": "torba",
+      "gloss": "bag",
+      "pos": "noun",
+      "ipa": "ˈtɔrba",
+      "note": null,
+      "image": "media/img/torba.webp",
+      "image_alt": "someone straining with a heavy shopping bag",
+      "image_basis": "sentence",
+      "image_prompt": "A person on a street leaning to one side, straining to carry one very heavy, full shopping bag. No text or lettering. Square image.",
+      "audio": "media/audio/torba.mp3",
+      "sentence": {
+        "pl": "Ta torba jest bardzo ciężka.",
+        "en": "This bag is very heavy.",
+        "gap": "Ta ___ jest bardzo ciężka.",
+        "answer": "torba",
+        "answer_lemma": "torba",
+        "audio": "media/audio/torba__sentence.mp3",
+        "lemmas": [
+          "ten",
+          "torba",
+          "być",
+          "bardzo",
+          "ciężki"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "parasol",
+      "word": "parasol",
+      "gloss": "umbrella",
+      "pos": "noun",
+      "ipa": "paˈrasɔl",
+      "note": null,
+      "image": "media/img/parasol.webp",
+      "image_alt": "someone with an umbrella in the rain",
+      "image_basis": "sentence",
+      "image_prompt": "A person walking down a city street in the rain under a big open umbrella. No text or lettering. Square image.",
+      "audio": "media/audio/parasol.mp3",
+      "sentence": {
+        "pl": "Pada deszcz. Mam parasol.",
+        "en": "It's raining. I have an umbrella.",
+        "gap": "Pada deszcz. Mam ___.",
+        "answer": "parasol",
+        "answer_lemma": "parasol",
+        "audio": "media/audio/parasol__sentence.mp3",
+        "lemmas": [
+          "padać",
+          "deszcz",
+          "mieć",
+          "parasol"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "spacer",
+      "word": "spacer",
+      "gloss": "walk, stroll",
+      "pos": "noun",
+      "ipa": "ˈspat͡sɛr",
+      "note": null,
+      "image": "media/img/spacer.webp",
+      "image_alt": "walking a dog in the park at dusk",
+      "image_basis": "sentence",
+      "image_prompt": "A person walking a dog on a lead along a path in a park at dusk. No text or lettering. Square image.",
+      "audio": "media/audio/spacer.mp3",
+      "sentence": {
+        "pl": "Wieczorem idę na spacer z psem.",
+        "en": "In the evening I go for a walk with the dog.",
+        "gap": "Wieczorem idę na ___ z psem.",
+        "answer": "spacer",
+        "answer_lemma": "spacer",
+        "audio": "media/audio/spacer__sentence.mp3",
+        "lemmas": [
+          "wieczór",
+          "iść",
+          "na",
+          "spacer",
+          "z",
+          "pies"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "wstawac",
+      "word": "wstawać",
+      "gloss": "to get up",
+      "pos": "verb",
+      "ipa": "ˈfstavat͡ɕ",
+      "note": null,
+      "image": "media/img/wstawac.webp",
+      "image_alt": "someone getting out of bed, alarm clock beside",
+      "image_basis": "sentence",
+      "image_prompt": "A person sitting up and swinging their legs out of bed in the morning, an alarm clock on the bedside table showing 7:00. No words, only the numbers. Square image.",
+      "audio": "media/audio/wstawac.mp3",
+      "sentence": {
+        "pl": "Rano wstaję i piję kawę.",
+        "en": "In the morning I get up and drink coffee.",
+        "gap": "Rano ___ i piję kawę.",
+        "answer": "wstaję",
+        "answer_lemma": "wstawać",
+        "audio": "media/audio/wstawac__sentence.mp3",
+        "lemmas": [
+          "rano",
+          "wstawać",
+          "i",
+          "pić",
+          "kawa"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "szybko",
+      "word": "szybko",
+      "gloss": "quickly, fast",
+      "pos": "adverb",
+      "ipa": "ˈʂɨpkɔ",
+      "note": null,
+      "image": "media/img/szybko.webp",
+      "image_alt": "someone gulping breakfast in a hurry",
+      "image_basis": "sentence",
+      "image_prompt": "A person in a coat standing at a kitchen counter hurriedly stuffing toast into their mouth while glancing at a wristwatch. No text or lettering. Square image.",
+      "audio": "media/audio/szybko.mp3",
+      "sentence": {
+        "pl": "Rano jem bardzo szybko.",
+        "en": "In the morning I eat very fast.",
+        "gap": "Rano jem bardzo ___.",
+        "answer": "szybko",
+        "answer_lemma": "szybko",
+        "audio": "media/audio/szybko__sentence.mp3",
+        "lemmas": [
+          "rano",
+          "jeść",
+          "bardzo",
+          "szybko"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ladny",
+      "word": "ładny",
+      "gloss": "pretty, nice",
+      "pos": "adjective",
+      "ipa": "ˈwadnɨ",
+      "note": null,
+      "image": "media/img/ladny.webp",
+      "image_alt": "a pretty cottage with flowers",
+      "image_basis": "sentence",
+      "image_prompt": "A pretty little house with white walls, blue shutters and flowers in front, in sunshine. No text or lettering. Square image.",
+      "audio": "media/audio/ladny.mp3",
+      "sentence": {
+        "pl": "Masz bardzo ładny dom.",
+        "en": "You have a very nice house.",
+        "gap": "Masz bardzo ___ dom.",
+        "answer": "ładny",
+        "answer_lemma": "ładny",
+        "audio": "media/audio/ladny__sentence.mp3",
+        "lemmas": [
+          "mieć",
+          "bardzo",
+          "ładny",
+          "dom"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "drogi",
+      "word": "drogi",
+      "gloss": "expensive",
+      "pos": "adjective",
+      "ipa": "ˈdrɔɡʲi",
+      "note": null,
+      "image": "media/img/drogi.webp",
+      "image_alt": "a luxury car in a showroom",
+      "image_basis": "sentence",
+      "image_prompt": "A shiny red luxury sports car under bright lights in a car showroom. No text or lettering. Square image.",
+      "audio": "media/audio/drogi.mp3",
+      "sentence": {
+        "pl": "Ten samochód jest bardzo drogi.",
+        "en": "This car is very expensive.",
+        "gap": "Ten samochód jest bardzo ___.",
+        "answer": "drogi",
+        "answer_lemma": "drogi",
+        "audio": "media/audio/drogi__sentence.mp3",
+        "lemmas": [
+          "ten",
+          "samochód",
+          "być",
+          "bardzo",
+          "drogi"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "prezent",
+      "word": "prezent",
+      "gloss": "present, gift",
+      "pos": "noun",
+      "ipa": "ˈprɛzɛnt",
+      "note": null,
+      "image": "media/img/prezent.webp",
+      "image_alt": "someone holding out a wrapped gift",
+      "image_basis": "sentence",
+      "image_prompt": "A smiling person holding out a gift wrapped in paper with a ribbon towards the viewer. No text or lettering. Square image.",
+      "audio": "media/audio/prezent.mp3",
+      "sentence": {
+        "pl": "Mam dla ciebie prezent.",
+        "en": "I have a present for you.",
+        "gap": "Mam dla ciebie ___.",
+        "answer": "prezent",
+        "answer_lemma": "prezent",
+        "audio": "media/audio/prezent__sentence.mp3",
+        "lemmas": [
+          "mieć",
+          "dla",
+          "ty",
+          "prezent"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "urodziny",
+      "word": "urodziny",
+      "gloss": "birthday",
+      "pos": "noun",
+      "ipa": "urɔˈd͡ʑinɨ",
+      "note": null,
+      "image": "media/img/urodziny.webp",
+      "image_alt": "a birthday cake with candles",
+      "image_basis": "sentence",
+      "image_prompt": "A person smiling at a birthday cake with lit candles on a table, friends around them. No text or lettering. Square image.",
+      "audio": "media/audio/urodziny.mp3",
+      "sentence": {
+        "pl": "Dzisiaj są moje urodziny.",
+        "en": "Today is my birthday.",
+        "gap": "Dzisiaj są moje ___.",
+        "answer": "urodziny",
+        "answer_lemma": "urodziny",
+        "audio": "media/audio/urodziny__sentence.mp3",
+        "lemmas": [
+          "dzisiaj",
+          "być",
+          "mój",
+          "urodziny"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
     }
   ]
 }
