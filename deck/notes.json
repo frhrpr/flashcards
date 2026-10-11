@@ -9667,7 +9667,7 @@
       "cards": [
         "form"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "kind": "form",
       "parent": "kawa"
     },
@@ -9702,7 +9702,7 @@
       "cards": [
         "form"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "kind": "form",
       "parent": "kot"
     },
@@ -9736,7 +9736,7 @@
       "cards": [
         "form"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "kind": "form",
       "parent": "chleb"
     },
@@ -9768,7 +9768,7 @@
       "cards": [
         "form"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "kind": "form",
       "parent": "mleko"
     },
@@ -9800,7 +9800,7 @@
       "cards": [
         "form"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "kind": "form",
       "parent": "zimny"
     },
@@ -9834,7 +9834,7 @@
       "cards": [
         "form"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "kind": "form",
       "parent": "duzy"
     },
@@ -9866,7 +9866,7 @@
       "cards": [
         "form"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "kind": "form",
       "parent": "maly"
     },
@@ -9899,7 +9899,7 @@
       "cards": [
         "form"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "kind": "form",
       "parent": "ciezki"
     },
@@ -9931,7 +9931,7 @@
       "cards": [
         "form"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "kind": "form",
       "parent": "czytac"
     },
@@ -9965,7 +9965,7 @@
       "cards": [
         "form"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "kind": "form",
       "parent": "czekac"
     },
@@ -9998,7 +9998,7 @@
       "cards": [
         "form"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "kind": "form",
       "parent": "mieszkac"
     },
@@ -10032,7 +10032,7 @@
       "cards": [
         "form"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "kind": "form",
       "parent": "pytac"
     }
