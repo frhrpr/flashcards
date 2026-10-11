@@ -48,7 +48,7 @@ Ewa ma siostrę, a Sven ma (…).
 Sven ma brudne włosy. Myje (…).
 Rano Ewa robi (…): chleb, ser i kawę.
 Sven chce zobaczyć film. Trzeba włączyć (…).
-Wieczorem Sven jest zmęczony. Widzi (…) i idzie spać.
+Wieczorem Pies skacze na (…) i śpi z Ewą.
 W parku Sven i Ewa siadają na (…) i jedzą lody.
 Kot patrzy na (…) na drzewie.
 Sven mieszka w Krakowie i dobrze zna (…).
@@ -160,10 +160,7 @@ zobaczyć = zobaczyć
 film = film
 włączyć = włączyć
 Wieczorem = wieczór
-zmęczony = zmęczony
-Widzi = widzieć
 idzie = iść
-spać = spać
 parku = park
 siadają = siadać
 jedzą = jeść
@@ -204,3 +201,6 @@ Pan = pan
 Kot = kot
 Pada = padać
 sklep = sklep
+skacze = skakać
+z = z
+Ewą = -

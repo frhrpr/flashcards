@@ -82,7 +82,7 @@ Box: okno woda brat głowa śniadanie telewizor łóżko ławka ptak miasto poci
 | 4 | ona | głowę | Sven ma brudne włosy. Myje (…). |
 | 5 | ono | śniadanie | Rano Ewa robi (…): chleb, ser i kawę. |
 | 6 | on, thing | telewizor | Sven chce zobaczyć film. Trzeba włączyć (…). |
-| 7 | ono | łóżko | Wieczorem Sven jest zmęczony. Widzi (…) i idzie spać. |
+| 7 | ono | łóżko | Wieczorem Pies skacze na (…) i śpi z Ewą. |
 | 8 | ona | ławkę | W parku Sven i Ewa siadają na (…) i jedzą lody. |
 | 9 | on, alive | ptaka | Kot patrzy na (…) na drzewie. |
 | 10 | ono | miasto | Sven mieszka w Krakowie i dobrze zna (…). |
@@ -91,7 +91,7 @@ Box: okno woda brat głowa śniadanie telewizor łóżko ławka ptak miasto poci
 
 Each answer is forced by one thing in its sentence: heat → open the window,
 a sister → a brother, dirty hair → wash your head, a film → the TV, the park
-→ sit on a bench, the platform → the train. Only one noun in the box can be
+→ sit on a bench, sleeping with Ewa → the bed, the platform → the train. Only one noun in the box can be
 drunk, opened, switched on or ridden, and there is only one person, animal,
 place, vehicle and seat in it. Prepositions that take the accusative
 (*czekać na*, *patrzeć na*, *siadać na*) are in the table header.
@@ -101,7 +101,7 @@ alive but *ono*, so it stays the same, unlike *kot → kota*.
 
 ## New words (queued for carding)
 
-jeszcze, znowu, wszystko, zostawiać, otwierać, zmęczony, film, chyba,
+jeszcze, znowu, wszystko, zostawiać, otwierać, film, chyba,
 podobny, daleko, plus
 *który* (a grammar word, no card). Also unseen, and glossed: siostra
 (carded, now priority), poproszę and włączyć (from the lesson, to card),
