@@ -1,9 +1,13 @@
 # Homework 2026-10-11 — Nie ten klucz (the accusative, nouns only)
 
 Sheet: `Downloads/flashcards/lessons/2026-10-11-homework-nie-ten-klucz.pdf`
-(two pages) and `-opowiadanie.pdf` (story alone, one page). Same table as
-the lesson, with different example nouns (kawa/ryba, dom/stół, kot/pies,
-mleko/dziecko) so no answer appears on it.
+(two pages) and `-opowiadanie.pdf` (story alone, one page). Page 1 is the
+gloss and the story. Page 2 holds the exercise with both grammar tables above
+it: the gender-from-ending table (*on*: consonant, *ona*: -a, *ono*: -o/-e;
+but *noc, mysz* are *ona* and *mężczyzna* is *on*), and the accusative table
+from the lesson, with different example nouns (kawa/ryba, dom/stół, kot/pies,
+mleko/dziecko) so no answer appears on it. Asked for on 2026-10-11: the
+rules belong next to the place he uses them.
 
 ## Why this
 
