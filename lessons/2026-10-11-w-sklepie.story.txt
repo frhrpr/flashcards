@@ -1,0 +1,122 @@
+Sven idzie do sklepu, bo Ewa chce mleko, a Pies chce rybę. Ma kartę i klucz.
+
+Na ulicy Sven widzi kobietę i psa. Pies ma piłkę. Kobieta czyta książkę, a pies czeka.
+
+W sklepie jest pani. Mężczyzna kupuje wodę i chleb.
+
+— Dzień dobry. Co pan chce? — pyta pani.
+
+— Dzień dobry. Poproszę mleko i chleb.
+
+— Mleko jest tutaj. Chleb też. Mamy też dobry ser.
+
+— Dobrze, poproszę ser. I kawę.
+
+— Kawę? Mamy kawę i herbatę.
+
+— Kawę, proszę. Wiem, że Ewa lubi kawę. Ja lubię herbatę.
+
+— Herbatę też?
+
+— Nie, dziękuję. Ale poproszę rybę. W domu mamy kota.
+
+— Kota? Ja też mam kota! I psa. Mój kot też lubi rybę. Płaci pan kartą?
+
+— Tak, mam kartę. Można?
+
+— Tak, można.
+
+Sven płaci i wraca do domu.
+
+W domu Ewa pyta:
+
+— Masz mleko?
+
+— Mam.
+
+— A rybę?
+
+— Mam.
+
+— A kawę?
+
+— Mam!
+
+Ewa robi kawę i herbatę. Ewa pije kawę, Sven pije herbatę, a Pies je rybę.
+
+— A klucz? — pyta Ewa.
+
+Sven patrzy na Ewę. Klucz jest w sklepie.
+
+--- lemmas ---
+Sven = -
+idzie = iść
+do = do
+sklepu = sklep
+bo = bo
+Ewa = -
+chce = chcieć
+mleko = mleko
+a = a
+Pies = pies
+rybę = ryba
+W = w
+sklepie = sklep
+jest = być
+pani = pani
+Dzień = dzień
+dobry = dobry
+Co = co
+pan = pan
+pyta = pytać
+Poproszę = poproszę
+i = i
+chleb = chleb
+tutaj = tutaj
+też = też
+Mamy = mieć
+ser = ser
+Dobrze = dobry
+kawę = kawa
+herbatę = herbata
+proszę = proszę
+lubi = lubić
+Ja = ja
+lubię = lubić
+Nie = nie
+dziękuję = dziękować
+Ale = ale
+domu = dom
+kota = kot
+mam = mieć
+psa = pies
+Mój = mój
+kot = kot
+Płaci = płacić
+kartą = karta
+Tak = tak
+kartę = karta
+Masz = mieć
+klucz = klucz
+patrzy = patrzeć
+na = na
+Ewę = -
+Ma = mieć
+ulicy = ulica
+widzi = widzieć
+kobietę = kobieta
+piłkę = piłka
+Kobieta = kobieta
+czyta = czytać
+czeka = czekać
+Wiem = wiedzieć
+że = że
+można = można
+wraca = wracać
+robi = robić
+pije = pić
+je = jeść
+książkę = książka
+Mężczyzna = mężczyzna
+kupuje = kupować
+wodę = woda
