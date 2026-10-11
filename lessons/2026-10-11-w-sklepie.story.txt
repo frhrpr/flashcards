@@ -48,6 +48,21 @@ Ewa robi kawę i herbatę. Ewa pije kawę, Sven pije herbatę, a Pies je rybę.
 
 Sven patrzy na Ewę. Klucz jest w sklepie.
 
+Na śniadanie Sven je chleb i (…).
+Rano Ewa pije (…) z mlekiem.
+Boli mnie brzuch. Trzeba pić (…).
+Sven ma brudny palec. Myje (…).
+Sven chce mleko. Trzeba otworzyć (…).
+Sven siedzi na łóżku i czyta (…).
+Pies ma (…) i skacze.
+W sklepie Sven płaci, bo ma (…).
+Rano jem (…) z mlekiem.
+Ewa ma (…). Ma na imię Pies.
+Na ulicy Sven widzi (…): hau, hau!
+Kot pije (…).
+W sklepie Sven kupuje (…). Jest ciepły i dobry.
+kawa woda ręka lodówka książka piłka karta kasza kot pies mleko chleb ser
+
 --- lemmas ---
 Sven = -
 idzie = iść
@@ -120,3 +135,31 @@ książkę = książka
 Mężczyzna = mężczyzna
 kupuje = kupować
 wodę = woda
+śniadanie = śniadanie
+Rano = rano
+z = z
+mlekiem = mleko
+Boli = boleć
+mnie = mnie
+brzuch = brzuch
+Trzeba = trzeba
+pić = pić
+brudny = brudny
+palec = palec
+Myje = myć
+otworzyć = otworzyć
+siedzi = siedzieć
+łóżku = łóżko
+skacze = skakać
+jem = jeść
+imię = imię
+hau = -
+ciepły = ciepły
+kawa = kawa
+woda = woda
+ręka = ręka
+lodówka = lodówka
+książka = książka
+piłka = piłka
+karta = karta
+kasza = kasza
