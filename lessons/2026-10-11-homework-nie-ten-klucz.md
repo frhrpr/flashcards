@@ -17,21 +17,28 @@ several in a row. This one is balanced and shuffled: **4 ona, 4 ono, 4 on**
 other**. So half the answers change and half stay as they are, and he has
 to decide each time.
 
-The story follows on from *W sklepie*: Sven goes back for his key, takes
-the wrong one of two black keys, and Ewa sends him back again. It is a bit
+The story follows on from *W sklepie*: Sven goes back for his key in the
+rain, picks the wrong one of two keys that look alike, and Ewa sends him
+back again. Revised the same day: the first draft had the cat staring at
+the fridge and the keys described as black, which read as odd, and it
+looked short on the page. Now 197 words. It is a bit
 harder to read: *który*, *Myślę, że…*, *Dobrze, że…*, *chce…, ale nie może*.
 
 ## Story
 
-Rano Sven wraca do sklepu, bo jego klucz jest tam. Ewa jeszcze śpi, a Pies siedzi w kuchni i patrzy na lodówkę.
+Rano Sven idzie do sklepu, bo jego klucz jest tam. Ewa jeszcze śpi, a Pies jest głodny i patrzy na Svena.
+
+Na ulicy pada deszcz i jest zimno, ale sklep nie jest daleko.
 
 W sklepie jest pani. Na stole śpi kot.
 
 — Dzień dobry! Myślę, że mój klucz jest tutaj — mówi Sven.
 
-— Klucz? Ludzie zostawiają tutaj wszystko: kurtkę, list, książkę… Mam dwa czarne klucze. Ten czy ten?
+— Klucz? Ludzie zostawiają tutaj wszystko: kurtkę, list, książkę… Mam dwa klucze. Ten czy ten?
 
-— Hmm… ten. Dziękuję!
+Sven patrzy na klucze. Są bardzo podobne.
+
+— Hmm… chyba ten. Dziękuję!
 
 — Proszę. A co pan dzisiaj kupuje?
 
@@ -43,9 +50,11 @@ W sklepie jest pani. Na stole śpi kot.
 
 Pani się śmieje.
 
+— A mój kot ma na imię Pan Kot!
+
 Sven płaci kartą i wraca do domu. Chce otworzyć drzwi, ale nie może. Sven patrzy na klucz. To nie jest jego klucz!
 
-Sven stoi pod drzwiami i czeka. Potem Ewa otwiera drzwi.
+Sven stoi pod drzwiami i czeka. Pada deszcz. Potem Ewa otwiera drzwi.
 
 — Gdzie jest twój klucz? — pyta Ewa.
 
@@ -55,9 +64,11 @@ Ewa się śmieje.
 
 — Dobrze, że ja mam klucz! Ale to jest klucz pani, a twój klucz jest w sklepie. Trzeba iść do sklepu.
 
-— Teraz? — pyta Sven.
+— Teraz? Pada deszcz!
 
 — Teraz. Pani też chce otworzyć drzwi!
+
+Sven idzie do sklepu. Znowu.
 
 ## Exercise
 
@@ -90,7 +101,8 @@ alive but *ono*, so it stays the same, unlike *kot → kota*.
 
 ## New words (queued for carding)
 
-jeszcze, znowu, wszystko, zostawiać, otwierać, zmęczony, film, plus
+jeszcze, znowu, wszystko, zostawiać, otwierać, zmęczony, film, chyba,
+podobny, daleko, plus
 *który* (a grammar word, no card). Also unseen, and glossed: siostra
 (carded, now priority), poproszę and włączyć (from the lesson, to card),
 głodny and gorąco (priority, arriving within days).

@@ -188,8 +188,11 @@ def main():
     known |= {r["lemma"].lower() for r in
               csv.DictReader(FREQ.read_text(encoding="utf-8").splitlines())}
     check_skips(lemmas, known, path)
+    # Form drills are skipped: chleb_chleb and maly_maly share their parent's
+    # spelling, and letting them win the key made "chleb" read as unseen.
     notes = {n["word"]: n for n in
-             json.loads(NOTES.read_text(encoding="utf-8"))["notes"]}
+             json.loads(NOTES.read_text(encoding="utf-8"))["notes"]
+             if n.get("kind") != "form"}
 
     tokens, unmapped = [], []
     for tok in TOKEN.findall(body):
