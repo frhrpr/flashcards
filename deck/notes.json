@@ -10065,7 +10065,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "priority": true
     },
     {
@@ -10099,7 +10099,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "priority": true
     },
     {
@@ -10132,7 +10132,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "priority": true
     },
     {
@@ -10166,7 +10166,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "priority": true
     },
     {
@@ -10201,7 +10201,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "priority": true
     },
     {
@@ -10234,7 +10234,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "priority": true
     },
     {
@@ -10267,7 +10267,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "priority": true
     },
     {
@@ -10301,7 +10301,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "priority": true
     },
     {
@@ -10336,7 +10336,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "priority": true
     },
     {
@@ -10369,7 +10369,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "priority": true
     },
     {
@@ -10401,7 +10401,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "priority": true
     },
     {
@@ -10437,7 +10437,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "priority": true
     },
     {
@@ -10470,7 +10470,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "priority": true
     },
     {
@@ -10503,7 +10503,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "zgubic",
@@ -10513,7 +10513,7 @@
       "ipa": "ˈzɡubʲit͡ɕ",
       "note": null,
       "image": "media/img/zgubic.webp",
-      "image_alt": "a key slipping out of a coat pocket",
+      "image_alt": "a woman searching her bag, her keys lying behind her on the pavement",
       "image_basis": "sentence",
       "image_prompt": "A key falling out of the coat pocket of a person walking along a pavement, about to land, the person not noticing. No text or lettering. Square image.",
       "audio": "media/audio/zgubic.mp3",
@@ -10536,7 +10536,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "sasiad",
@@ -10569,7 +10569,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "torba",
@@ -10603,7 +10603,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "parasol",
@@ -10636,7 +10636,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "spacer",
@@ -10671,7 +10671,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "wstawac",
@@ -10705,7 +10705,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "szybko",
@@ -10738,7 +10738,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "ladny",
@@ -10771,7 +10771,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "drogi",
@@ -10805,7 +10805,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "prezent",
@@ -10838,7 +10838,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "urodziny",
@@ -10871,7 +10871,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false
+      "reviewed": true
     }
   ]
 }

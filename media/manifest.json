@@ -11712,20 +11712,15 @@
     "source": "commons"
   },
   "media/img/zgubic.webp": {
-    "bytes": 55448,
-    "check": {
-      "model": "gemini-flash-latest",
-      "problem": "",
-      "verdict": "ok",
-      "why": ""
-    },
-    "fingerprint": "7c571547fff60691",
-    "model": "gemini-2.5-flash-image",
-    "original_size": "1024x1024",
+    "author": "supplied by user",
+    "bytes": 68970,
+    "fingerprint": "89067ff9c89a5145",
+    "licence": "n/a",
+    "original": "/tmp/claude-1000/-home-frhrpr-projects-flashcards/b0ab5f07-9db1-4d11-a788-5143bfbf096e/scratchpad/inbox/lostkeys.png",
+    "original_size": "1254x1254",
     "process_version": 1,
-    "prompt": "A key falling out of the coat pocket of a person walking along a pavement, about to land, the person not noticing. No text or lettering. Square image.",
     "size": "800x800",
-    "source": "generated"
+    "source": "supplied"
   },
   "media/img/zielony.webp": {
     "bytes": 11426,
