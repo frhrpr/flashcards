@@ -19,6 +19,7 @@ do not edit by hand.
 | `media/audio/byc_jestem.mp3` | [Pl-jestem.ogg](https://commons.wikimedia.org/wiki/File:Pl-jestem.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/chciec.mp3` | [Pl-chcieć.ogg](https://commons.wikimedia.org/wiki/File:Pl-chcie%C4%87.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/chleb.mp3` | [Pl-chleb.ogg](https://commons.wikimedia.org/wiki/File:Pl-chleb.ogg) | user Equadus (inactive global account) | CC BY 2.5 | commons |
+| `media/audio/chleb_chleb.mp3` | [Pl-chleb.ogg](https://commons.wikimedia.org/wiki/File:Pl-chleb.ogg) | user Equadus (inactive global account) | CC BY 2.5 | commons |
 | `media/audio/chlopiec.mp3` | [Pl-chłopiec.ogg](https://commons.wikimedia.org/wiki/File:Pl-ch%C5%82opiec.ogg) | Ewczy | CC BY-SA 3.0 | commons |
 | `media/audio/chodzic.mp3` | [Pl-chodzić.ogg](https://commons.wikimedia.org/wiki/File:Pl-chodzi%C4%87.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/ciasto.mp3` | [Pl-ciasto.ogg](https://commons.wikimedia.org/wiki/File:Pl-ciasto.ogg) | Frizabela | CC BY 2.5 | commons |
@@ -113,6 +114,7 @@ do not edit by hand.
 | `media/audio/lubic.mp3` | [Pl-lubić.ogg](https://commons.wikimedia.org/wiki/File:Pl-lubi%C4%87.ogg) | Frizabela | CC BY 2.5 | commons |
 | `media/audio/ludzie.mp3` | [Pl-ludzie.ogg](https://commons.wikimedia.org/wiki/File:Pl-ludzie.ogg) | user Equadus (inactive global account) | CC BY 2.5 | commons |
 | `media/audio/maly.mp3` | [Pl-mały.ogg](https://commons.wikimedia.org/wiki/File:Pl-ma%C5%82y.ogg) | Derbeth | CC BY 2.5 | commons |
+| `media/audio/maly_maly.mp3` | [Pl-mały.ogg](https://commons.wikimedia.org/wiki/File:Pl-ma%C5%82y.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/maslo.mp3` | [Pl-masło.ogg](https://commons.wikimedia.org/wiki/File:Pl-mas%C5%82o.ogg) | Wyksztalcioch | Public domain | commons |
 | `media/audio/matka.mp3` | [Pl-matka.ogg](https://commons.wikimedia.org/wiki/File:Pl-matka.ogg) | user Equadus (inactive global account) | CC BY 2.5 | commons |
 | `media/audio/maz.mp3` | [Pl-mąż.ogg](https://commons.wikimedia.org/wiki/File:Pl-m%C4%85%C5%BC.ogg) | Derbeth | CC BY 2.5 | commons |
@@ -125,6 +127,7 @@ do not edit by hand.
 | `media/audio/mieszkac.mp3` | [Pl-mieszkać.ogg](https://commons.wikimedia.org/wiki/File:Pl-mieszka%C4%87.ogg) | user Equadus (inactive global account) | CC BY 2.5 | commons |
 | `media/audio/minuta.mp3` | [Pl-minuta.ogg](https://commons.wikimedia.org/wiki/File:Pl-minuta.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/mleko.mp3` | [Pl-mleko.ogg](https://commons.wikimedia.org/wiki/File:Pl-mleko.ogg) | Kajervi | Public domain | commons |
+| `media/audio/mleko_mleko.mp3` | [Pl-mleko.ogg](https://commons.wikimedia.org/wiki/File:Pl-mleko.ogg) | Kajervi | Public domain | commons |
 | `media/audio/mlody.mp3` | [Pl-młody.ogg](https://commons.wikimedia.org/wiki/File:Pl-m%C5%82ody.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/moc.mp3` | [Pl-móc.ogg](https://commons.wikimedia.org/wiki/File:Pl-m%C3%B3c.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/morze.mp3` | [Pl-morze.ogg](https://commons.wikimedia.org/wiki/File:Pl-morze.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |

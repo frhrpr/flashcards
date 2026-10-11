@@ -426,6 +426,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/chleb_chleb.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-chleb.ogg",
+    "fingerprint": "8a97a3fc46a3a445",
+    "gain_db": -3.8,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-chleb.ogg",
+    "seconds": 0.71,
+    "source": "commons",
+    "text": "chleb"
+  },
+  "media/audio/chleb_chleb__sentence.mp3": {
+    "fingerprint": "22270b3acb227de7",
+    "gain_db": 1.5,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.65,
+    "source": "tts",
+    "text": "Codziennie jem chleb z serem.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/chlopiec.mp3": {
     "author": "Ewczy",
     "commons_file": "Pl-chłopiec.ogg",
@@ -528,6 +549,28 @@
     "seconds": 1.36,
     "source": "tts",
     "text": "Ten stół jest bardzo ciężki.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/ciezki_ciezkie.mp3": {
+    "fingerprint": "4d7c0a851b334598",
+    "gain_db": 0.4,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.65,
+    "source": "tts",
+    "text": "ciężkie",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/ciezki_ciezkie__sentence.mp3": {
+    "fingerprint": "6323a42c334511a1",
+    "gain_db": 1.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.31,
+    "source": "tts",
+    "text": "Łóżko jest bardzo ciężkie.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -696,6 +739,28 @@
     "seconds": 1.46,
     "source": "tts",
     "text": "Pies czeka pod drzewem.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/czekac_czekasz.mp3": {
+    "fingerprint": "b1ebb0194994179d",
+    "gain_db": 0.0,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.76,
+    "source": "tts",
+    "text": "czekasz",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/czekac_czekasz__sentence.mp3": {
+    "fingerprint": "fc3e8e28d018fe8a",
+    "gain_db": 1.0,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.18,
+    "source": "tts",
+    "text": "Czy ty czekasz na pociąg?",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -885,6 +950,28 @@
     "seconds": 1.28,
     "source": "tts",
     "text": "Chłopiec czyta książkę.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/czytac_czytam.mp3": {
+    "fingerprint": "4a86307aef006c44",
+    "gain_db": 0.5,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.63,
+    "source": "tts",
+    "text": "czytam",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/czytac_czytam__sentence.mp3": {
+    "fingerprint": "85f6762f97799b08",
+    "gain_db": -0.5,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.36,
+    "source": "tts",
+    "text": "Wieczorem czytam książkę.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1116,6 +1203,28 @@
     "seconds": 1.07,
     "source": "tts",
     "text": "To jest duży dom.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/duzy_duze.mp3": {
+    "fingerprint": "d14630aabab0b682",
+    "gain_db": 0.4,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.63,
+    "source": "tts",
+    "text": "duże",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/duzy_duze__sentence.mp3": {
+    "fingerprint": "765a4fc751f981ed",
+    "gain_db": -2.6,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.62,
+    "source": "tts",
+    "text": "To okno jest bardzo duże.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -1834,6 +1943,28 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/kawa_kawe.mp3": {
+    "fingerprint": "07b850330dd5da69",
+    "gain_db": 0.1,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.52,
+    "source": "tts",
+    "text": "kawę",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/kawa_kawe__sentence.mp3": {
+    "fingerprint": "d68c869e0435f521",
+    "gain_db": -1.0,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.49,
+    "source": "tts",
+    "text": "Rano piję kawę z mlekiem.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/kino.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-kino.ogg",
@@ -2020,6 +2151,28 @@
     "seconds": 1.44,
     "source": "tts",
     "text": "Mały kot pije mleko.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/kot_kota.mp3": {
+    "fingerprint": "72da5bdf5ca134b2",
+    "gain_db": 0.3,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.65,
+    "source": "tts",
+    "text": "kota",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/kot_kota__sentence.mp3": {
+    "fingerprint": "f7963b908317a3cf",
+    "gain_db": -2.6,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.88,
+    "source": "tts",
+    "text": "W domu mamy kota. Lubi ryby.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -2464,6 +2617,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/maly_maly.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-mały.ogg",
+    "fingerprint": "e0103404cdaaf90c",
+    "gain_db": -2.0,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-ma%C5%82y.ogg",
+    "seconds": 0.84,
+    "source": "commons",
+    "text": "mały"
+  },
+  "media/audio/maly_maly__sentence.mp3": {
+    "fingerprint": "2cfe10609d82f10b",
+    "gain_db": -0.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.99,
+    "source": "tts",
+    "text": "Pokój jest mały.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/maslo.mp3": {
     "author": "Wyksztalcioch",
     "commons_file": "Pl-masło.ogg",
@@ -2806,6 +2980,28 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/mieszkac_mieszka.mp3": {
+    "fingerprint": "aa6c1f2cb80a43e1",
+    "gain_db": -0.1,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.63,
+    "source": "tts",
+    "text": "mieszka",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/mieszkac_mieszka__sentence.mp3": {
+    "fingerprint": "107e3664f5bd1532",
+    "gain_db": -1.0,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.52,
+    "source": "tts",
+    "text": "Ewa mieszka w dużym mieście.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/minuta.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-minuta.ogg",
@@ -2845,6 +3041,27 @@
     "seconds": 1.2,
     "source": "tts",
     "text": "Kupuję mleko w sklepie.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/mleko_mleko.mp3": {
+    "author": "Kajervi",
+    "commons_file": "Pl-mleko.ogg",
+    "fingerprint": "cf7ac271c2852dca",
+    "gain_db": 4.8,
+    "licence": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-mleko.ogg",
+    "seconds": 1.12,
+    "source": "commons",
+    "text": "mleko"
+  },
+  "media/audio/mleko_mleko__sentence.mp3": {
+    "fingerprint": "28a17629ce1d083f",
+    "gain_db": 0.5,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.04,
+    "source": "tts",
+    "text": "Kot pije mleko.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -4127,6 +4344,28 @@
     "seconds": 1.67,
     "source": "tts",
     "text": "Rano pytam, gdzie jest sklep.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/pytac_pytaja.mp3": {
+    "fingerprint": "7bf8a4b3bee2f4e8",
+    "gain_db": 4.6,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.63,
+    "source": "tts",
+    "text": "pytają",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/pytac_pytaja__sentence.mp3": {
+    "fingerprint": "f313119090928197",
+    "gain_db": -0.8,
+    "model": "eleven_multilingual_v2",
+    "seconds": 2.04,
+    "source": "tts",
+    "text": "Ludzie pytają, gdzie jest sklep.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -5961,6 +6200,28 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/zimny_zimna.mp3": {
+    "fingerprint": "749e497d6d59c945",
+    "gain_db": 2.3,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.63,
+    "source": "tts",
+    "text": "zimna",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/zimny_zimna__sentence.mp3": {
+    "fingerprint": "0880ea7fb3d89bf3",
+    "gain_db": 2.4,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.44,
+    "source": "tts",
+    "text": "Kawa jest zimna.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/zly.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-zły.ogg",
@@ -6428,6 +6689,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/chleb_chleb.webp": {
+    "bytes": 46140,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "c3006eafdb7fd37a",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person at a table eating a slice of bread topped with cheese, holding it halfway to the mouth. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/chlopiec.webp": {
     "bytes": 88390,
     "check": {
@@ -6505,6 +6782,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A man straining with both hands to lift one end of a heavy wooden table, face tight with effort. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/ciezki_ciezkie.webp": {
+    "bytes": 28848,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "9e16e99f18e81428",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Two people straining to carry a large wooden bed frame through a doorway, faces tight with effort. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -6633,6 +6926,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A dog sitting patiently under a tree, ears up, looking off into the distance as if waiting for someone. Daylight, no people, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/czekac_czekasz.webp": {
+    "bytes": 57532,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "eb84d9b4aca5ca4e",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person standing on an empty railway platform with a bag, looking down the track for the train. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -6772,6 +7081,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A boy of about eight sitting cross-legged and reading an open book held in both hands, absorbed in it. Warm indoor light. No readable text. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/czytac_czytam.webp": {
+    "bytes": 24990,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "d06887a375578f09",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "An adult sitting in an armchair in the evening reading a book under a warm lamp, dark window behind. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -6932,6 +7257,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A very large house seen from the front, with one person standing at the door looking small against it so the size is obvious. Daylight. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/duzy_duze.webp": {
+    "bytes": 47104,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "0897128ff6f79e34",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A living room with one enormous floor-to-ceiling window, a person standing next to it looking small beside it. Daylight. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -7453,6 +7794,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/kawa_kawe.webp": {
+    "bytes": 48222,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "20d4a4839b1f31d2",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person at a kitchen table in the morning pouring milk into a cup of coffee. Morning light. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/kino.webp": {
     "bytes": 27054,
     "check": {
@@ -7594,6 +7951,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "One domestic cat, full body, standing on a plain light surface against a plain background. Clear and simple, no people, no other objects competing for attention, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/kot_kota.webp": {
+    "bytes": 46836,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "9d014d791200923f",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A tabby cat at home on a kitchen floor, eating a small whole fish from a plate. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -7917,6 +8290,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/maly_maly.webp": {
+    "bytes": 66154,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "cd111d9ddabc6996",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A tiny, narrow bedroom with just a single bed squeezed between two walls, almost no floor space. Daylight. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/maslo.webp": {
     "bytes": 14816,
     "check": {
@@ -8168,6 +8557,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/mieszkac_mieszka.webp": {
+    "bytes": 167666,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "68956728868410bf",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A woman standing on the balcony of a tall apartment block, a big city of many buildings spread out below. Daylight. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/minuta.webp": {
     "bytes": 22188,
     "check": {
@@ -8197,6 +8602,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A glass of milk on a plain light surface, plain background, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/mleko_mleko.webp": {
+    "bytes": 40642,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "54a15c984ebd09d4",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A black cat lapping milk from a white saucer on a wooden floor, seen from the side. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -9137,6 +9558,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "One person on a street turning to another and asking a question, hands open in a questioning gesture. Daylight, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/pytac_pytaja.webp": {
+    "bytes": 112988,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "dc37e609f848b134",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Two tourists with a backpack on a street asking an older local man for directions, one of them pointing questioningly. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -10437,6 +10874,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A glass of iced water beaded with condensation, ice cubes clearly visible in it, on a plain surface. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/zimny_zimna.webp": {
+    "bytes": 35578,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "The image shows a man making a disgusted face, which does not clearly depict or imply that the coffee is cold.",
+      "verdict": "flag",
+      "why": "does not clearly show the word"
+    },
+    "fingerprint": "e6d5cf758e890453",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A person at a table who has just sipped from a cup of coffee and is pulling a face because it has gone cold; the cup has no steam. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },

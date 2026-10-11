@@ -284,6 +284,20 @@ notes`. `status` is `queued` → `known` → `carded`.
   This is a deliberate, bounded exception to the no-morphology rule. It
   applies to two irregular verbs whose forms *are* the vocabulary. Do not let
   it grow into declension tables.
+
+  **Extended on 2026-10-11 to the grammar taught in lessons, still
+  bounded.** The user asked for gap-sentence cards on the rules the lessons
+  introduce, and the same shape fits unchanged: the cue is the parent word,
+  the answer is the form. The bound is **a handful per rule, not a
+  paradigm**: four accusative cards (one per row of the lesson table: `kawę`,
+  `kota`, `chleb`, `mleko`), four adjective-agreement cards and four for the
+  -am verbs, one person each. The job is to practise *choosing* the ending,
+  so the set deliberately includes forms identical to their cue (`chleb`,
+  `mleko`, `mały`). Without those, every card changes the word, and he would
+  learn that it always changes. A new rule gets its own handful when it is
+  taught; a rule never gets a card per noun or per person.
+  Their pictures are generated fresh rather than reused from the parent, at
+  the user's request.
 - **`priority: true` on a note pulls it out of the bank first.** For the
   words from a lesson, so the story he has just been told is what turns up
   next rather than whatever the day's shuffle happened to surface.

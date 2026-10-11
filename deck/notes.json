@@ -9636,6 +9636,405 @@
       ],
       "reviewed": true,
       "priority": true
+    },
+    {
+      "id": "kawa_kawe",
+      "word": "kawę",
+      "gloss": "coffee, as the object",
+      "pos": "noun",
+      "ipa": "ˈkavɛ",
+      "note": null,
+      "image": "media/img/kawa_kawe.webp",
+      "image_alt": "coffee, as the object",
+      "image_basis": "sentence",
+      "image_prompt": "A person at a kitchen table in the morning pouring milk into a cup of coffee. Morning light. No text or lettering. Square image.",
+      "audio": "media/audio/kawa_kawe.mp3",
+      "sentence": {
+        "pl": "Rano piję kawę z mlekiem.",
+        "en": "In the morning I drink coffee with milk.",
+        "gap": "Rano piję ___ z mlekiem.",
+        "answer": "kawę",
+        "answer_lemma": "kawę",
+        "audio": "media/audio/kawa_kawe__sentence.mp3",
+        "lemmas": [
+          "rano",
+          "pić",
+          "kawa",
+          "z",
+          "mleko"
+        ]
+      },
+      "cards": [
+        "form"
+      ],
+      "reviewed": false,
+      "kind": "form",
+      "parent": "kawa"
+    },
+    {
+      "id": "kot_kota",
+      "word": "kota",
+      "gloss": "cat, as the object",
+      "pos": "noun",
+      "ipa": "ˈkɔta",
+      "note": null,
+      "image": "media/img/kot_kota.webp",
+      "image_alt": "cat, as the object",
+      "image_basis": "sentence",
+      "image_prompt": "A tabby cat at home on a kitchen floor, eating a small whole fish from a plate. No text or lettering. Square image.",
+      "audio": "media/audio/kot_kota.mp3",
+      "sentence": {
+        "pl": "W domu mamy kota. Lubi ryby.",
+        "en": "We have a cat at home. It likes fish.",
+        "gap": "W domu mamy ___. Lubi ryby.",
+        "answer": "kota",
+        "answer_lemma": "kota",
+        "audio": "media/audio/kot_kota__sentence.mp3",
+        "lemmas": [
+          "w",
+          "dom",
+          "mieć",
+          "kot",
+          "lubić",
+          "ryba"
+        ]
+      },
+      "cards": [
+        "form"
+      ],
+      "reviewed": false,
+      "kind": "form",
+      "parent": "kot"
+    },
+    {
+      "id": "chleb_chleb",
+      "word": "chleb",
+      "gloss": "bread, as the object",
+      "pos": "noun",
+      "ipa": "xlɛp",
+      "note": null,
+      "image": "media/img/chleb_chleb.webp",
+      "image_alt": "bread, as the object",
+      "image_basis": "sentence",
+      "image_prompt": "A person at a table eating a slice of bread topped with cheese, holding it halfway to the mouth. No text or lettering. Square image.",
+      "audio": "media/audio/chleb_chleb.mp3",
+      "sentence": {
+        "pl": "Codziennie jem chleb z serem.",
+        "en": "Every day I eat bread with cheese.",
+        "gap": "Codziennie jem ___ z serem.",
+        "answer": "chleb",
+        "answer_lemma": "chleb",
+        "audio": "media/audio/chleb_chleb__sentence.mp3",
+        "lemmas": [
+          "codziennie",
+          "jeść",
+          "chleb",
+          "z",
+          "ser"
+        ]
+      },
+      "cards": [
+        "form"
+      ],
+      "reviewed": false,
+      "kind": "form",
+      "parent": "chleb"
+    },
+    {
+      "id": "mleko_mleko",
+      "word": "mleko",
+      "gloss": "milk, as the object",
+      "pos": "noun",
+      "ipa": "ˈmlɛkɔ",
+      "note": null,
+      "image": "media/img/mleko_mleko.webp",
+      "image_alt": "milk, as the object",
+      "image_basis": "sentence",
+      "image_prompt": "A black cat lapping milk from a white saucer on a wooden floor, seen from the side. No text or lettering. Square image.",
+      "audio": "media/audio/mleko_mleko.mp3",
+      "sentence": {
+        "pl": "Kot pije mleko.",
+        "en": "The cat is drinking milk.",
+        "gap": "Kot pije ___.",
+        "answer": "mleko",
+        "answer_lemma": "mleko",
+        "audio": "media/audio/mleko_mleko__sentence.mp3",
+        "lemmas": [
+          "kot",
+          "pić",
+          "mleko"
+        ]
+      },
+      "cards": [
+        "form"
+      ],
+      "reviewed": false,
+      "kind": "form",
+      "parent": "mleko"
+    },
+    {
+      "id": "zimny_zimna",
+      "word": "zimna",
+      "gloss": "cold, for an ona noun",
+      "pos": "adjective",
+      "ipa": "ˈʑimna",
+      "note": null,
+      "image": "media/img/zimny_zimna.webp",
+      "image_alt": "cold, for an ona noun",
+      "image_basis": "sentence",
+      "image_prompt": "A person at a table who has just sipped from a cup of coffee and is pulling a face because it has gone cold; the cup has no steam. No text or lettering. Square image.",
+      "audio": "media/audio/zimny_zimna.mp3",
+      "sentence": {
+        "pl": "Kawa jest zimna.",
+        "en": "The coffee is cold.",
+        "gap": "Kawa jest ___.",
+        "answer": "zimna",
+        "answer_lemma": "zimna",
+        "audio": "media/audio/zimny_zimna__sentence.mp3",
+        "lemmas": [
+          "kawa",
+          "być",
+          "zimny"
+        ]
+      },
+      "cards": [
+        "form"
+      ],
+      "reviewed": false,
+      "kind": "form",
+      "parent": "zimny"
+    },
+    {
+      "id": "duzy_duze",
+      "word": "duże",
+      "gloss": "big, for an ono noun",
+      "pos": "adjective",
+      "ipa": "ˈduʐɛ",
+      "note": null,
+      "image": "media/img/duzy_duze.webp",
+      "image_alt": "big, for an ono noun",
+      "image_basis": "sentence",
+      "image_prompt": "A living room with one enormous floor-to-ceiling window, a person standing next to it looking small beside it. Daylight. No text or lettering. Square image.",
+      "audio": "media/audio/duzy_duze.mp3",
+      "sentence": {
+        "pl": "To okno jest bardzo duże.",
+        "en": "This window is very big.",
+        "gap": "To okno jest bardzo ___.",
+        "answer": "duże",
+        "answer_lemma": "duże",
+        "audio": "media/audio/duzy_duze__sentence.mp3",
+        "lemmas": [
+          "to",
+          "okno",
+          "być",
+          "bardzo",
+          "duży"
+        ]
+      },
+      "cards": [
+        "form"
+      ],
+      "reviewed": false,
+      "kind": "form",
+      "parent": "duzy"
+    },
+    {
+      "id": "maly_maly",
+      "word": "mały",
+      "gloss": "small, for an on noun",
+      "pos": "adjective",
+      "ipa": "ˈmawɨ",
+      "note": null,
+      "image": "media/img/maly_maly.webp",
+      "image_alt": "small, for an on noun",
+      "image_basis": "sentence",
+      "image_prompt": "A tiny, narrow bedroom with just a single bed squeezed between two walls, almost no floor space. Daylight. No text or lettering. Square image.",
+      "audio": "media/audio/maly_maly.mp3",
+      "sentence": {
+        "pl": "Pokój jest mały.",
+        "en": "The room is small.",
+        "gap": "Pokój jest ___.",
+        "answer": "mały",
+        "answer_lemma": "mały",
+        "audio": "media/audio/maly_maly__sentence.mp3",
+        "lemmas": [
+          "pokój",
+          "być",
+          "mały"
+        ]
+      },
+      "cards": [
+        "form"
+      ],
+      "reviewed": false,
+      "kind": "form",
+      "parent": "maly"
+    },
+    {
+      "id": "ciezki_ciezkie",
+      "word": "ciężkie",
+      "gloss": "heavy, for an ono noun",
+      "pos": "adjective",
+      "ipa": "ˈt͡ɕɛ̃ʂkʲɛ",
+      "note": null,
+      "image": "media/img/ciezki_ciezkie.webp",
+      "image_alt": "heavy, for an ono noun",
+      "image_basis": "sentence",
+      "image_prompt": "Two people straining to carry a large wooden bed frame through a doorway, faces tight with effort. No text or lettering. Square image.",
+      "audio": "media/audio/ciezki_ciezkie.mp3",
+      "sentence": {
+        "pl": "Łóżko jest bardzo ciężkie.",
+        "en": "The bed is very heavy.",
+        "gap": "Łóżko jest bardzo ___.",
+        "answer": "ciężkie",
+        "answer_lemma": "ciężkie",
+        "audio": "media/audio/ciezki_ciezkie__sentence.mp3",
+        "lemmas": [
+          "łóżko",
+          "być",
+          "bardzo",
+          "ciężki"
+        ]
+      },
+      "cards": [
+        "form"
+      ],
+      "reviewed": false,
+      "kind": "form",
+      "parent": "ciezki"
+    },
+    {
+      "id": "czytac_czytam",
+      "word": "czytam",
+      "gloss": "I read",
+      "pos": "verb",
+      "ipa": "ˈt͡ʂɨtam",
+      "note": null,
+      "image": "media/img/czytac_czytam.webp",
+      "image_alt": "I read",
+      "image_basis": "sentence",
+      "image_prompt": "An adult sitting in an armchair in the evening reading a book under a warm lamp, dark window behind. No text or lettering. Square image.",
+      "audio": "media/audio/czytac_czytam.mp3",
+      "sentence": {
+        "pl": "Wieczorem czytam książkę.",
+        "en": "In the evening I read a book.",
+        "gap": "Wieczorem ___ książkę.",
+        "answer": "czytam",
+        "answer_lemma": "czytam",
+        "audio": "media/audio/czytac_czytam__sentence.mp3",
+        "lemmas": [
+          "wieczór",
+          "czytać",
+          "książka"
+        ]
+      },
+      "cards": [
+        "form"
+      ],
+      "reviewed": false,
+      "kind": "form",
+      "parent": "czytac"
+    },
+    {
+      "id": "czekac_czekasz",
+      "word": "czekasz",
+      "gloss": "you wait",
+      "pos": "verb",
+      "ipa": "ˈt͡ʂɛkaʂ",
+      "note": null,
+      "image": "media/img/czekac_czekasz.webp",
+      "image_alt": "you wait",
+      "image_basis": "sentence",
+      "image_prompt": "A person standing on an empty railway platform with a bag, looking down the track for the train. No text or lettering. Square image.",
+      "audio": "media/audio/czekac_czekasz.mp3",
+      "sentence": {
+        "pl": "Czy ty czekasz na pociąg?",
+        "en": "Are you waiting for the train?",
+        "gap": "Czy ty ___ na pociąg?",
+        "answer": "czekasz",
+        "answer_lemma": "czekasz",
+        "audio": "media/audio/czekac_czekasz__sentence.mp3",
+        "lemmas": [
+          "czy",
+          "ty",
+          "czekać",
+          "na",
+          "pociąg"
+        ]
+      },
+      "cards": [
+        "form"
+      ],
+      "reviewed": false,
+      "kind": "form",
+      "parent": "czekac"
+    },
+    {
+      "id": "mieszkac_mieszka",
+      "word": "mieszka",
+      "gloss": "she lives",
+      "pos": "verb",
+      "ipa": "ˈmʲɛʂka",
+      "note": null,
+      "image": "media/img/mieszkac_mieszka.webp",
+      "image_alt": "she lives",
+      "image_basis": "sentence",
+      "image_prompt": "A woman standing on the balcony of a tall apartment block, a big city of many buildings spread out below. Daylight. No text or lettering. Square image.",
+      "audio": "media/audio/mieszkac_mieszka.mp3",
+      "sentence": {
+        "pl": "Ewa mieszka w dużym mieście.",
+        "en": "Ewa lives in a big city.",
+        "gap": "Ewa ___ w dużym mieście.",
+        "answer": "mieszka",
+        "answer_lemma": "mieszka",
+        "audio": "media/audio/mieszkac_mieszka__sentence.mp3",
+        "lemmas": [
+          "mieszkać",
+          "w",
+          "duży",
+          "miasto"
+        ]
+      },
+      "cards": [
+        "form"
+      ],
+      "reviewed": false,
+      "kind": "form",
+      "parent": "mieszkac"
+    },
+    {
+      "id": "pytac_pytaja",
+      "word": "pytają",
+      "gloss": "they ask",
+      "pos": "verb",
+      "ipa": "pɨˈtajɔ̃",
+      "note": null,
+      "image": "media/img/pytac_pytaja.webp",
+      "image_alt": "they ask",
+      "image_basis": "sentence",
+      "image_prompt": "Two tourists with a backpack on a street asking an older local man for directions, one of them pointing questioningly. No text or lettering. Square image.",
+      "audio": "media/audio/pytac_pytaja.mp3",
+      "sentence": {
+        "pl": "Ludzie pytają, gdzie jest sklep.",
+        "en": "People ask where the shop is.",
+        "gap": "Ludzie ___, gdzie jest sklep.",
+        "answer": "pytają",
+        "answer_lemma": "pytają",
+        "audio": "media/audio/pytac_pytaja__sentence.mp3",
+        "lemmas": [
+          "ludzie",
+          "pytać",
+          "gdzie",
+          "być",
+          "sklep"
+        ]
+      },
+      "cards": [
+        "form"
+      ],
+      "reviewed": false,
+      "kind": "form",
+      "parent": "pytac"
     }
   ]
 }
