@@ -1,0 +1,187 @@
+Rano Sven wraca do sklepu, bo jego klucz jest tam. Ewa jeszcze śpi, a Pies siedzi w kuchni i patrzy na lodówkę.
+
+W sklepie jest pani. Na stole śpi kot.
+
+— Dzień dobry! Myślę, że mój klucz jest tutaj — mówi Sven.
+
+— Klucz? Ludzie zostawiają tutaj wszystko: kurtkę, list, książkę… Mam dwa czarne klucze. Ten czy ten?
+
+— Hmm… ten. Dziękuję!
+
+— Proszę. A co pan dzisiaj kupuje?
+
+— Poproszę chleb i ser. I rybę, bo Pies jest głodny.
+
+— Pies je rybę? — pyta pani.
+
+— Tak. Ewa ma kota, który ma na imię Pies.
+
+Pani się śmieje.
+
+Sven płaci kartą i wraca do domu. Chce otworzyć drzwi, ale nie może. Sven patrzy na klucz. To nie jest jego klucz!
+
+Sven stoi pod drzwiami i czeka. Potem Ewa otwiera drzwi.
+
+— Gdzie jest twój klucz? — pyta Ewa.
+
+— W sklepie. Znowu.
+
+Ewa się śmieje.
+
+— Dobrze, że ja mam klucz! Ale to jest klucz pani, a twój klucz jest w sklepie. Trzeba iść do sklepu.
+
+— Teraz? — pyta Sven.
+
+— Teraz. Pani też chce otworzyć drzwi!
+
+W pokoju jest bardzo gorąco. Trzeba otworzyć (…).
+Kwiaty piją (…).
+Ewa ma siostrę, a Sven ma (…).
+Sven ma brudne włosy. Myje (…).
+Rano Ewa robi (…): chleb, ser i kawę.
+Sven chce zobaczyć film. Trzeba włączyć (…).
+Wieczorem Sven jest zmęczony. Widzi (…) i idzie spać.
+W parku Sven i Ewa siadają na (…) i jedzą lody.
+Kot patrzy na (…) na drzewie.
+Sven mieszka w Krakowie i dobrze zna (…).
+Sven stoi na peronie i czeka na (…).
+Codziennie rano Ewa jedzie do banku, bo tam ma (…).
+okno woda brat głowa śniadanie telewizor łóżko ławka ptak miasto pociąg praca
+
+--- lemmas ---
+Rano = rano
+Sven = -
+wraca = wracać
+do = do
+sklepu = sklep
+bo = bo
+jego = jego
+klucz = klucz
+jest = być
+tam = tam
+Ewa = -
+jeszcze = jeszcze
+śpi = spać
+a = a
+Pies = pies
+siedzi = siedzieć
+w = w
+kuchni = kuchnia
+i = i
+patrzy = patrzeć
+na = na
+lodówkę = lodówka
+sklepie = sklep
+pani = pani
+stole = stół
+kot = kot
+Dzień = dzień
+dobry = dobry
+Myślę = myśleć
+że = że
+mój = mój
+tutaj = tutaj
+mówi = mówić
+Ludzie = ludzie
+zostawiają = zostawiać
+wszystko = wszystko
+kurtkę = kurtka
+list = list
+książkę = książka
+Mam = mieć
+dwa = dwa
+czarne = czarny
+klucze = klucz
+Ten = ten
+czy = czy
+Hmm = -
+Dziękuję = dziękuję
+Proszę = proszę
+co = co
+pan = pan
+dzisiaj = dzisiaj
+kupuje = kupować
+Poproszę = poproszę
+chleb = chleb
+ser = ser
+rybę = ryba
+głodny = głodny
+je = jeść
+pyta = pytać
+Tak = tak
+ma = mieć
+kota = kot
+który = który
+imię = imię
+się = się
+śmieje = śmiać się
+płaci = płacić
+kartą = karta
+domu = dom
+Chce = chcieć
+otworzyć = otworzyć
+drzwi = drzwi
+ale = ale
+nie = nie
+może = móc
+To = to
+stoi = stać
+pod = pod
+drzwiami = drzwi
+czeka = czekać
+Potem = potem
+otwiera = otwierać
+Gdzie = gdzie
+twój = twój
+Znowu = znowu
+Dobrze = dobry
+Ale = ale
+teraz = teraz
+Teraz = teraz
+iść = iść
+ja = ja
+pokoju = pokój
+bardzo = bardzo
+gorąco = gorący
+Trzeba = trzeba
+Kwiaty = kwiat
+piją = pić
+siostrę = siostra
+brudne = brudny
+włosy = włosy
+Myje = myć
+robi = robić
+kawę = kawa
+zobaczyć = zobaczyć
+film = film
+włączyć = włączyć
+Wieczorem = wieczór
+zmęczony = zmęczony
+Widzi = widzieć
+idzie = iść
+spać = spać
+parku = park
+siadają = siadać
+jedzą = jeść
+lody = lody
+drzewie = drzewo
+mieszka = mieszkać
+Krakowie = -
+zna = znać
+peronie = peron
+Codziennie = codziennie
+jedzie = jechać
+banku = bank
+okno = okno
+woda = woda
+brat = brat
+głowa = głowa
+śniadanie = śniadanie
+telewizor = telewizor
+łóżko = łóżko
+ławka = ławka
+ptak = ptak
+miasto = miasto
+pociąg = pociąg
+praca = praca
+też = też
