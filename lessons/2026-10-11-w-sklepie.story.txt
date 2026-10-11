@@ -56,7 +56,7 @@ Sven chce mleko. Trzeba otworzyć (…).
 Sven siedzi na łóżku i czyta (…).
 Pies i dziecko grają w (…) w parku.
 W sklepie Sven płaci, bo ma (…).
-Ewa ma w kuchni (…). Jest żółta.
+Wieczorem Ewa chce czytać. Trzeba włączyć (…).
 Ewa ma (…). Ma na imię Pies.
 Kot widzi (…) i skacze na drzewo.
 Kot pije (…).
@@ -159,9 +159,10 @@ rzeki = rzeka
 dziecko = dziecko
 grają = grać
 parku = park
-kuchni = kuchnia
-żółta = żółty
 drzewo = drzewo
 ptaki = ptak
 jedzą = jeść
 lampa = lampa
+Wieczorem = wieczór
+czytać = czytać
+włączyć = włączyć
