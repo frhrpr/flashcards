@@ -1,32 +1,32 @@
-Jest sobota. Jest rano. Sven i Ewa są w domu.
+Jest sobota. Jest rano. Marek i Ania są w domu.
 
-Sven pije kawę. Ewa je chleb z serem. Pies je rybę.
+Marek pije kawę. Ania je chleb z serem. Kot je rybę.
 
 Jest słońce. Jest ciepło.
 
-— Idziemy do parku? — pyta Ewa.
+— Idziemy do parku? — pyta Ania.
 
-— Tak! — mówi Sven.
+— Tak! — mówi Marek.
 
-Pies nie idzie. Pies śpi na łóżku.
+Kot nie idzie. Kot śpi na łóżku.
 
 W parku są ludzie. Dzieci grają w piłkę. Pod drzewem siedzi kobieta.
 
-Sven i Ewa siedzą na ławce. Ewa czyta książkę. Sven patrzy na ptaki.
+Marek i Ania siedzą na ławce. Ania czyta książkę. Marek patrzy na ptaki.
 
-Potem Sven i Ewa idą do sklepu. On kupuje lody. Ewa kupuje wodę.
+Potem Marek i Ania idą do sklepu. Marek kupuje lody. Ania kupuje wodę.
 
-Wieczorem Sven i Ewa są w domu. Pies nie śpi. Pies patrzy na Ewę.
+Wieczorem Marek i Ania są w domu. Kot nie śpi. Kot patrzy na Anię.
 
-— Pies chce rybę! — mówi Ewa.
+— Kot chce rybę! — mówi Ania.
 
 --- lemmas ---
 Jest = być
 sobota = sobota
 rano = rano
-Sven = -
+Marek = -
 i = i
-Ewa = -
+Ania = -
 są = być
 w = w
 domu = dom
@@ -36,7 +36,7 @@ je = jeść
 chleb = chleb
 z = z
 serem = ser
-Pies = pies
+Kot = kot
 rybę = ryba
 słońce = słońce
 ciepło = ciepły
@@ -74,6 +74,5 @@ kupuje = kupować
 lody = lody
 wodę = woda
 Wieczorem = wieczór
-Ewę = -
+Anię = -
 chce = chcieć
-On = on
