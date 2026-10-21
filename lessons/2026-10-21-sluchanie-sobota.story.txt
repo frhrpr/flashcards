@@ -1,0 +1,78 @@
+Jest sobota. Jest rano. Sven i Ewa są w domu.
+
+Sven pije kawę. Ewa je chleb z serem. Pies je rybę.
+
+Jest słońce. Jest ciepło.
+
+— Idziemy do parku? — pyta Ewa.
+
+— Tak! — mówi Sven.
+
+Pies nie idzie. Pies śpi na łóżku.
+
+W parku są ludzie. Dzieci grają w piłkę. Pod drzewem siedzi kobieta.
+
+Sven i Ewa siedzą na ławce. Ewa czyta książkę. Sven patrzy na ptaki.
+
+Potem Sven i Ewa idą do sklepu. Sven kupuje lody. Ewa kupuje wodę.
+
+Wieczorem Sven i Ewa są w domu. Pies nie śpi. Pies patrzy na Ewę.
+
+— Pies chce rybę! — mówi Ewa.
+
+--- lemmas ---
+Jest = być
+sobota = sobota
+rano = rano
+Sven = -
+i = i
+Ewa = -
+są = być
+w = w
+domu = dom
+pije = pić
+kawę = kawa
+je = jeść
+chleb = chleb
+z = z
+serem = ser
+Pies = pies
+rybę = ryba
+słońce = słońce
+ciepło = ciepły
+Idziemy = iść
+do = do
+parku = park
+pyta = pytać
+Tak = tak
+mówi = mówić
+nie = nie
+idzie = iść
+śpi = spać
+na = na
+łóżku = łóżko
+W = w
+ludzie = ludzie
+Dzieci = dziecko
+grają = grać
+piłkę = piłka
+kobieta = kobieta
+siedzą = siedzieć
+siedzi = siedzieć
+Pod = pod
+pod = pod
+drzewem = drzewo
+ławce = ławka
+czyta = czytać
+książkę = książka
+patrzy = patrzeć
+ptaki = ptak
+Potem = potem
+idą = iść
+sklepu = sklep
+kupuje = kupować
+lody = lody
+wodę = woda
+Wieczorem = wieczór
+Ewę = -
+chce = chcieć
