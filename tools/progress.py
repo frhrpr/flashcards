@@ -83,7 +83,8 @@ def load_remote(key, user):
     withdrawn = fields.get("withdrawn") or {}
     return (doc["name"].split("/")[-1], fields.get("cards") or {},
             fields.get("log") or [], fields.get("ear") or {},
-            fields.get("done") or {}, fields.get("hints") or {}, withdrawn)
+            fields.get("done") or {}, fields.get("hints") or {}, withdrawn,
+            fields.get("listen") or {})
 
 
 def retire_ivl():
@@ -607,6 +608,33 @@ td.hist b.g{{color:var(--ok)}} td.hist b.a{{color:var(--bad)}}
     return dest / "progress.html"
 
 
+def report_listen(listen):
+    """Listening episodes, from listen/episodes.json and the `listen` field.
+    First answers only: he can retry until right, so later answers say
+    nothing about whether he understood."""
+    path = ROOT / "listen/episodes.json"
+    if not path.exists():
+        return
+    eps = json.loads(path.read_text(encoding="utf-8"))["episodes"]
+    if not eps:
+        return
+    print("\n  listening (first answers only)")
+    for ep in eps:
+        st = listen.get(ep["id"]) or {}
+        first = [x for x in (st.get("first") or []) if x is not None]
+        if not st:
+            line = "not opened"
+        elif not st.get("heard"):
+            line = "opened, not heard to the end"
+        else:
+            line = f"heard {fmt_day(st['heard'])}"
+            if first:
+                line += f", {sum(1 for x in first if x)} of {len(ep['questions'])} right first time"
+            line += ", finished" if st.get("done") else (", questions not started" if not first else "")
+        print(f"    {ep['title']:<14} {line}")
+    print()
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -624,12 +652,13 @@ def main():
                   f"{len(f.get('cards') or {}):>4} cards  {len(f.get('log') or []):>5} reviews")
         return 0
 
-    uid, cards, log, ear, done, hints, withdrawn = load_remote(key, args.user)
+    uid, cards, log, ear, done, hints, withdrawn, listen = load_remote(key, args.user)
     notes = json.loads((ROOT / "deck/notes.json").read_text(encoding="utf-8"))["notes"]
     spell, sound, label = ear_content()
     a = analyse(cards, log, notes, done, hints, withdrawn)
     e = analyse_ear(ear, log, spell, sound, label)
     report(uid, a, e)
+    report_listen(listen)
     if a["days"]:
         print(f"  wrote {html(uid, a, e, out_dir('progress'))}\n")
     return 0

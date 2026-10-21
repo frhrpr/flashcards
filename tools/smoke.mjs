@@ -65,7 +65,7 @@ const NOTES = ${JSON.stringify(Object.fromEntries(deck.notes.map(n => [n.id, n])
 const allCards = ${JSON.stringify(deck.notes.flatMap(n =>
   (n.cards || []).map(c => `${n.id}__${c}`)))};
 let cardStates = {}, reviewLog = [], fresh = [], lockedCount = 0;
-let earStates = {}, doneDays = {}, hintOpens = {};
+let earStates = {}, doneDays = {}, hintOpens = {}, listenStates = {};
 let queue = [], current = null, revealed = false, writeError = null, earLoadError = null;
 const dueCards = [];
 let vocabLight = false;
@@ -114,6 +114,8 @@ export const requested = () => asked;
 export { bankOrder, introducible, interleave, NOTES, openHint, hintOpens, HINT_SETS };
 export { cardRetired, RETIRE_IVL, stats, cardStates };
 export { schedule, fuzzDays, FUZZ };
+export { renderEpisode, renderListenList, questionsHtml, newStories, listenStates };
+export const setEpisodes = e => { EPISODES = e; };
 export { unlocked, UNLOCK_REPS, extraPlan };
 export { typicalSession, catchUp, CATCHUP_RATIO, reviewLog };
 export const forgetPreloads = () => { preloaded.clear(); asked.length = 0; };
@@ -359,6 +361,38 @@ try {
   m.renderLanding();
   check(m.state().html.includes("All done for today"), "the all-done landing renders");
   check(m.state().html.includes("sz.html"), "and carries the sibilant drill link");
+
+  // ── listening ───────────────────────────────────────────────────
+  /* Against the real generated list, so a malformed episodes.json fails
+     here rather than on his phone. */
+  const eps = JSON.parse(fs.readFileSync(path.join(ROOT, "listen/episodes.json"), "utf8")).episodes;
+  check(eps.length > 0 && eps.every(e => e.questions.every(q =>
+          q.options.length >= 2 && q.answer >= 0 && q.answer < q.options.length)),
+        "every episode question has options and an answer inside them");
+  check(eps.every(e => fs.existsSync(path.join(ROOT, e.audio))), "every episode's mp3 exists");
+  m.setEpisodes(eps);
+  m.renderLanding();
+  check(m.state().html.includes("go-listen") && m.state().html.includes("1 nowe opowiadanie"),
+        "landing offers a new listening episode as a tile");
+  m.renderEpisode(eps[0].id);
+  const ep0 = m.state().html;
+  check(ep0.includes("<audio") && ep0.includes("lq-gate") && !ep0.includes("lq-opt"),
+        "an episode opens on the player, with no questions before he has listened");
+  const q0 = m.questionsHtml(eps[0], new Set(), {});
+  check((q0.match(/class="lq-q"/g) || []).length === eps[0].questions.length &&
+        !q0.includes(" correct"), "questions render, none marked before answering");
+  const q1 = m.questionsHtml(eps[0], new Set([0]), { 1: [0] });
+  check((q1.match(/lq-opt correct/g) || []).length === 1 && q1.includes("lq-opt wrong"),
+        "a solved question shows its answer; a wrong try is marked");
+  check([1, 2, 5, 12, 22].map(m.newStories).join("|") ===
+        "1 nowe opowiadanie|2 nowe opowiadania|5 nowych opowiadań|12 nowych opowiadań|22 nowe opowiadania",
+        "Polish plural for new stories");
+  for (const e of eps) m.listenStates[e.id] = { heard: 1, done: 1 };
+  m.renderLanding();
+  check(m.state().html.includes("Słuchaj — opowiadania") && !m.state().html.includes("nowe opowiadanie"),
+        "with everything heard, listening drops to a quiet link");
+  for (const e of eps) delete m.listenStates[e.id];
+  m.setEpisodes([]);
   delete m.state().doneDays[day];
   // Preloading: the cards behind the current one must already have been
   // requested, or every flip waits on a round trip it could have started.

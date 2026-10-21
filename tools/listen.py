@@ -1,11 +1,29 @@
 #!/usr/bin/env python3
-"""Turn a listening story into one evenly paced mp3.
+"""Listening episodes: one evenly paced mp3 per story, and the list the app reads.
 
     python3 tools/listen.py lessons/<date>-sluchanie-<slug>.story.txt          # dry run
     python3 tools/listen.py lessons/<date>-sluchanie-<slug>.story.txt --go     # synthesise
+    python3 tools/listen.py --index                                            # rebuild the list only
 
-Writes Downloads/flashcards/sluchanie/<slug>.mp3. The story file is the usual
-storycheck format (paragraphs, then `--- lemmas ---`); run storycheck first.
+Writes `listen/<slug>.mp3` (served by the site), a copy in
+Downloads/flashcards/sluchanie/ for sending by hand, and rebuilds
+`listen/episodes.json` from every story whose mp3 exists. The list is
+generated, never edited: the story file is the one source for the text and
+the questions.
+
+The story file is the usual storycheck format, with the questions in their
+own section so storycheck covers their words too:
+
+    Jest sobota. Jest rano. ...
+
+    --- pytania ---
+
+    Co pije Marek rano? | wodę | *kawę | lody      (* marks the right answer)
+
+    --- lemmas ---
+    ...
+
+Run storycheck first.
 
 Every choice here was made by ear on 2026-10-21, on the first episode:
 
@@ -30,7 +48,7 @@ Every choice here was made by ear on 2026-10-21, on the first episode:
 - A dialogue tag stays with its line ("Idziemy do parku? pyta Ania.") so it
   is read as one utterance; dashes are dropped because they are not spoken.
 """
-import argparse, json, re, subprocess, sys, tempfile, urllib.request
+import argparse, json, re, shutil, subprocess, sys, tempfile, urllib.request
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -46,7 +64,8 @@ OUT = Path("/mnt/c/Users/frhrpr/Downloads/flashcards/sluchanie")
 
 
 def sentences(path):
-    body = path.read_text(encoding="utf-8").split("--- lemmas ---")[0].strip()
+    body = path.read_text(encoding="utf-8").split("--- lemmas ---")[0]
+    body = body.split("--- pytania ---")[0].strip()
     paras = []
     for p in body.split("\n\n"):
         p = re.sub(r"\s*—\s*", " ", p).strip()
@@ -59,6 +78,55 @@ def sentences(path):
                 out.append(s)
         paras.append(out)
     return paras
+
+REPO = Path(__file__).resolve().parent.parent
+LISTEN = REPO / "listen"
+
+
+def slug_of(path):
+    return re.sub(r"^\d{4}-\d{2}-\d{2}-sluchanie-", "", path.name.replace(".story.txt", ""))
+
+
+def questions(path):
+    """One per line: question | option | *right option | option. Exactly one
+    star per line, at least two options, or this refuses."""
+    body = path.read_text(encoding="utf-8").split("--- lemmas ---")[0]
+    if "--- pytania ---" not in body:
+        return []
+    out = []
+    for line in body.split("--- pytania ---")[1].strip().splitlines():
+        if not line.strip():
+            continue
+        q, *opts = [x.strip() for x in line.split("|")]
+        stars = [i for i, o in enumerate(opts) if o.startswith("*")]
+        if len(opts) < 2 or len(stars) != 1:
+            sys.exit(f"listen: {path.name}: needs 2+ options and exactly one *: {line}")
+        out.append({"q": q, "options": [o.lstrip("*").strip() for o in opts],
+                    "answer": stars[0]})
+    return out
+
+
+def write_index():
+    """listen/episodes.json from every story whose mp3 is in listen/. Newest first."""
+    eps = []
+    for story in sorted((REPO / "lessons").glob("*-sluchanie-*.story.txt")):
+        slug = slug_of(story)
+        mp3 = LISTEN / f"{slug}.mp3"
+        if not mp3.exists():
+            continue
+        dur = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                              "-of", "csv=p=0", mp3], capture_output=True, text=True).stdout.strip()
+        title = re.sub(r"^\d+-", "", slug).replace("-", " ").capitalize()
+        body = story.read_text(encoding="utf-8").split("--- lemmas ---")[0]
+        text = [p.strip() for p in body.split("--- pytania ---")[0].strip().split("\n\n")]
+        eps.append({"id": slug, "title": title, "date": story.name[:10],
+                    "audio": f"listen/{slug}.mp3", "seconds": round(float(dur)),
+                    "text": text, "questions": questions(story)})
+    eps.sort(key=lambda e: (e["date"], e["id"]), reverse=True)
+    (LISTEN / "episodes.json").write_text(
+        json.dumps({"schema": 1, "episodes": eps}, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8")
+    print(f"wrote listen/episodes.json ({len(eps)} episode(s))")
 
 
 def synth(key, text, prev, nxt):
@@ -81,16 +149,24 @@ def ff(*args):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("story", type=Path)
+    ap.add_argument("story", type=Path, nargs="?")
     ap.add_argument("--go", action="store_true")
+    ap.add_argument("--index", action="store_true", help="rebuild listen/episodes.json only")
     a = ap.parse_args()
+    if a.index:
+        write_index()
+        return 0
+    if not a.story:
+        ap.error("give a story file, or --index")
     paras = sentences(a.story)
+    qs = questions(a.story)
     flat = [s for p in paras for s in p]
-    slug = re.sub(r"^\d{4}-\d{2}-\d{2}-sluchanie-", "", a.story.name.replace(".story.txt", ""))
-    dest = OUT / f"{slug}.mp3"
+    slug = slug_of(a.story)
+    dest = LISTEN / f"{slug}.mp3"
     print(f"{len(flat)} sentences, {sum(map(len, flat))} characters spoken")
     for p in paras:
         print("  " + " | ".join(p))
+    print(f"{len(qs)} question(s)")
     if not a.go:
         print(f"\ndry run. Re-run with --go to write {dest}")
         return 0
@@ -122,6 +198,11 @@ def main():
     dur = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
                           "-of", "csv=p=0", dest], capture_output=True, text=True).stdout.strip()
     print(f"wrote {dest}  ({float(dur):.0f} s)")
+    if OUT.parent.is_dir():
+        OUT.mkdir(exist_ok=True)
+        shutil.copy(dest, OUT / dest.name)
+        print(f"copied to {OUT / dest.name}")
+    write_index()
     return 0
 
 

@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "episodes": [
+    {
+      "id": "01-sobota",
+      "title": "Sobota",
+      "date": "2026-10-21",
+      "audio": "listen/01-sobota.mp3",
+      "seconds": 60,
+      "text": [
+        "Jest sobota. Jest rano. Marek i Ania są w domu.",
+        "Marek pije kawę. Ania je chleb z serem. Kot je rybę.",
+        "Jest słońce. Jest ciepło.",
+        "— Idziemy do parku? — pyta Ania.",
+        "— Tak! — mówi Marek.",
+        "Kot nie idzie. Kot śpi na łóżku.",
+        "W parku są ludzie. Dzieci grają w piłkę. Pod drzewem siedzi kobieta.",
+        "Marek i Ania siedzą na ławce. Ania czyta książkę. Marek patrzy na ptaki.",
+        "Potem Marek i Ania idą do sklepu. Marek kupuje lody. Ania kupuje wodę.",
+        "Wieczorem Marek i Ania są w domu. Kot nie śpi. Kot patrzy na Anię.",
+        "— Kot chce rybę! — mówi Ania."
+      ],
+      "questions": [
+        {
+          "q": "Co pije Marek rano?",
+          "options": [
+            "wodę",
+            "kawę",
+            "lody"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Jest słońce czy pada deszcz?",
+          "options": [
+            "jest słońce",
+            "pada deszcz"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Kto idzie do parku?",
+          "options": [
+            "Marek, Ania i kot",
+            "Ania i kot",
+            "Marek i Ania"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Marek i Ania są w parku. Gdzie jest kot?",
+          "options": [
+            "pod drzewem",
+            "na łóżku",
+            "na ławce"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Co robi Ania w parku?",
+          "options": [
+            "czyta książkę",
+            "gra w piłkę",
+            "patrzy na ptaki"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Co kupuje Marek?",
+          "options": [
+            "chleb",
+            "wodę",
+            "lody"
+          ],
+          "answer": 2
+        },
+        {
+          "q": "Czy wieczorem kot śpi?",
+          "options": [
+            "tak",
+            "nie"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Co chce kot?",
+          "options": [
+            "lody",
+            "rybę",
+            "kawę"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}

@@ -45,6 +45,8 @@ tools/earquiz.py    say-it-he-guesses sheet of every ear word, worst set first
 tools/deckio.py     shared loading, saving, attribution (not runnable)
 tools/ear_split.py  cuts one long take into ear/raw/<word>/; prints the read-aloud sheet
 tools/ear_build.py  ear/raw → ear/audio + ear/manifest.json (trim, level, encode)
+tools/listen.py     listening episodes: story file → listen/<slug>.mp3 + listen/episodes.json
+listen/             episode mp3s and episodes.json — generated, do not edit
 ```
 
 The app has deliberately **no build pipeline**. Tools under `tools/` generate
@@ -432,6 +434,48 @@ notes`. `status` is `queued` → `known` → `carded`.
   conjunctions and similar `flashcard: no`. They still count as known and
   stay in the sentence allowlist — `na` is learned through the case it
   governs, not from a card saying "na = on".
+
+## Listening episodes
+
+Added 2026-10-21. Short stories read by TTS, about a minute each, with
+multiple-choice questions, on a **Słuchaj** page in the app. The skill is
+following spoken Polish at all, so the vocabulary is deliberately easy (only
+words he knows well) and the sentences short; difficulty comes from the
+audio, not the words.
+
+- **Source is a story file**, `lessons/<date>-sluchanie-<NN>-<slug>.story.txt`:
+  paragraphs, then `--- pytania ---` with one question per line
+  (`Co pije Marek rano? | wodę | *kawę | lody`, star on the answer), then the
+  lemma block. Questions sit before the lemmas so **storycheck covers their
+  words too**. `tools/listen.py <story> --go` makes the mp3 and regenerates
+  `listen/episodes.json`; the list is never edited by hand.
+- **How the audio is made, all decided by ear** — see the docstring of
+  `tools/listen.py`. In short: voice River, not Antoni (aggressive over a
+  minute); one request per sentence with silence added here (0.7 s / 1.5 s),
+  because whole paragraphs ran the first sentences together; each request
+  pinned to Polish and given its neighbours as context, because a bare
+  four-word sentence came back read as English.
+- **Own cast: Marek, Ania and their cat.** Not Sven and Ewa. A foreign name
+  makes the model switch to English even when pinned to Polish — "Swen" got
+  an English W. Reading stories keep their cast; a name on paper is harmless.
+- **Questions only after he has heard it to the end once** (the `ended`
+  event, stored as `heard`). Questions read first turn listening into
+  keyword-spotting. The player stays above them, sticky, so he can go back.
+- **Every wrong option occurs somewhere in the story**, so recognising a word
+  is not enough to pick it. Who did what, where, and negation (*kot nie
+  śpi*) are what the questions test.
+- **Retry until right, but only the first answer is stored.** An episode
+  always ends on a success; the first answer is what says whether he
+  understood. Then "Pokaż tekst" shows the story.
+- **Firestore: one top-level field, `listen: {"<episode id>": {heard, first:
+  [true|false|null…], done}}`**, written with `FieldPath` because ids carry
+  "-". Not in the log — `progress.py` buckets the log by `grade`. The report
+  lists each episode with first-time answers.
+- **On the landing**: a tile ("1 nowe opowiadanie") while any episode is
+  unfinished; afterwards a quiet link, because episodes can be re-listened
+  and a greyed, untappable tile would hide them.
+- ElevenLabs free tier is 10,000 characters a month, shared with card
+  sentences; a one-minute episode is about 500.
 
 ## Ear training
 

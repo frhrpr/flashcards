@@ -20,6 +20,17 @@ Wieczorem Marek i Ania są w domu. Kot nie śpi. Kot patrzy na Anię.
 
 — Kot chce rybę! — mówi Ania.
 
+--- pytania ---
+
+Co pije Marek rano? | wodę | *kawę | lody
+Jest słońce czy pada deszcz? | *jest słońce | pada deszcz
+Kto idzie do parku? | Marek, Ania i kot | Ania i kot | *Marek i Ania
+Marek i Ania są w parku. Gdzie jest kot? | pod drzewem | *na łóżku | na ławce
+Co robi Ania w parku? | *czyta książkę | gra w piłkę | patrzy na ptaki
+Co kupuje Marek? | chleb | wodę | *lody
+Czy wieczorem kot śpi? | tak | *nie
+Co chce kot? | lody | *rybę | kawę
+
 --- lemmas ---
 Jest = być
 sobota = sobota
@@ -76,3 +87,21 @@ wodę = woda
 Wieczorem = wieczór
 Anię = -
 chce = chcieć
+pytania = pytanie
+Co = co
+rano = rano
+czy = czy
+pada = padać
+deszcz = deszcz
+jest = być
+Kto = kto
+kot = kot
+Gdzie = gdzie
+robi = robić
+gra = grać
+patrzy = patrzeć
+chleb = chleb
+Czy = czy
+wieczorem = wieczór
+nie = nie
+kawę = kawa
