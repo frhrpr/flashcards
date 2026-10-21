@@ -1,0 +1,145 @@
+Jest wieczór i znowu pada deszcz. Na ulicy jest zimno, ale w domu jest ciepło. Pies śpi na łóżku.
+
+— Jestem głodny — mówi Sven i otwiera lodówkę. Jeszcze jest tam ryba, ser i mleko.
+
+— Ryba jest dla Psa! — mówi Ewa. — Ale ser możesz jeść.
+
+Sven je chleb z serem, a Ewa pije herbatę. Potem Sven chce zobaczyć film. Musi włączyć lampę, a potem telewizor.
+
+Ale co to jest? Sven słyszy dziwny głos.
+
+— Słyszysz to? — pyta Sven.
+
+— Tak. To chyba telewizor.
+
+— Nie. Głos jest na ulicy.
+
+Ewa chce zobaczyć, co to jest. Otwiera okno. Na ulicy stoi mężczyzna i jest bardzo smutny.
+
+— Przepraszam! Szukam psa. Mój pies jest mały i czarny, podobny do kota.
+
+— Tutaj jest tylko kot — mówi Ewa. — Kot ma na imię Pies, ale to jest kot.
+
+— Chyba wiem, gdzie on jest — mówi Sven. — Codziennie rano w parku jest mały, czarny pies. Park jest blisko!
+
+Sven i mężczyzna idą do parku. Park jest blisko, ale psa tam nie ma.
+
+— Chyba jest nad rzeką — mówi mężczyzna.
+
+Ale rzeka jest daleko. Idą i idą. Nad rzeką, pod drzewem, siedzi mały, czarny pies. Jest brudny i bardzo zimny. Mężczyzna się śmieje i mówi: — Dziękuję! Dziękuję!
+
+Sven wraca do domu. Ewa otwiera drzwi.
+
+— Znowu jesteś brudny! Musisz umyć ręce.
+
+Sven myje ręce. Teraz jest czysty. Ewa chce włączyć telewizor, ale Sven już śpi. Pies jeszcze śpi na łóżku. A na ulicy znowu pada deszcz.
+
+--- lemmas ---
+Jest = być
+wieczór = wieczór
+i = i
+znowu = znowu
+pada = padać
+deszcz = deszcz
+Na = na
+ulicy = ulica
+zimno = zimny
+ale = ale
+w = w
+domu = dom
+ciepło = ciepły
+Pies = pies
+śpi = spać
+na = na
+łóżku = łóżko
+Jestem = być
+głodny = głodny
+mówi = mówić
+Sven = -
+otwiera = otwierać
+lodówkę = lodówka
+Jeszcze = jeszcze
+jest = być
+tam = tam
+ryba = ryba
+ser = ser
+mleko = mleko
+dla = dla
+Psa = pies
+Ewa = -
+możesz = móc
+jeść = jeść
+je = jeść
+chleb = chleb
+z = z
+serem = ser
+a = a
+pije = pić
+herbatę = herbata
+Potem = potem
+chce = chcieć
+zobaczyć = zobaczyć
+film = film
+Musi = musieć
+włączyć = włączyć
+lampę = lampa
+telewizor = telewizor
+co = co
+to = to
+słyszy = słyszeć
+dziwny = dziwny
+głos = głos
+Słyszysz = słyszeć
+pyta = pytać
+Tak = tak
+chyba = chyba
+Nie = nie
+okno = okno
+stoi = stać
+mężczyzna = mężczyzna
+bardzo = bardzo
+smutny = smutny
+Przepraszam = przepraszam
+Szukam = szukać
+Mój = mój
+mały = mały
+czarny = czarny
+podobny = podobny
+do = do
+kota = kot
+Tutaj = tutaj
+tylko = tylko
+kot = kot
+ma = mieć
+imię = imię
+wiem = wiedzieć
+gdzie = gdzie
+on = on
+Codziennie = codziennie
+rano = rano
+parku = park
+Park = park
+blisko = blisko
+idą = iść
+nad = nad
+rzeką = rzeka
+rzeka = rzeka
+daleko = daleko
+pod = pod
+drzewem = drzewo
+siedzi = siedzieć
+brudny = brudny
+się = się
+śmieje = śmiać się
+Dziękuję = dziękuję
+wraca = wracać
+drzwi = drzwi
+jesteś = być
+Musisz = musieć
+umyć = myć
+ręce = ręka
+myje = myć
+Teraz = teraz
+czysty = czysty
+już = już
+zimny = zimny
