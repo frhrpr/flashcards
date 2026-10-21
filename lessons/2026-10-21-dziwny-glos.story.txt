@@ -34,6 +34,37 @@ Sven wraca do domu. Ewa otwiera drzwi.
 
 Sven myje ręce. Teraz jest czysty. Ewa chce włączyć telewizor, ale Sven już śpi. Pies jeszcze śpi na łóżku. A na ulicy znowu pada deszcz.
 
+Jest 11:00, a Ewa (…) śpi.
+Wieczorem w kuchni jest ciemno. Sven chce (…) lampę.
+Ewa jedzie do Krakowa pociągiem. Kraków jest (…).
+Pies jest głodny. Ewa musi (…) lodówkę.
+Sven jest brudny. Myje ręce. Potem gra w piłkę i jest (…) brudny.
+Nie wiem, ale Pies (…) jest w kuchni.
+Sven chce pracować. Musi (…) komputer.
+Apteka jest 100 metrów od domu. Jest (…).
+Jest słońce i dzień jest (…).
+Pod drzwiami stoi mężczyzna. Ewa musi (…) drzwi.
+Herbata jest (…) gorąca. Trzeba czekać.
+Sven lubi filmy. Wieczorem chce (…) telewizor.
+Sven nie chce iść do sklepu, bo sklep jest (…).
+Kto to jest? — Nie wiem. To (…) Ewa.
+W poniedziałek pada deszcz, we wtorek jest słońce, a w środę (…) pada deszcz.
+Sven czuje, że w pokoju jest bardzo gorąco. Musi (…) okno.
+Sven nie może nieść stołu, bo stół jest (…).
+Sven mieszka nad rzeką. Rzeka jest bardzo (…).
+włączyć×3 otworzyć×3 jeszcze×2 znowu×2 daleko×2 blisko×2 chyba×2 ciepły ciężki
+
+Ewa czyta (…). [książka]
+Sven myje (…). [rower]
+Sven ma (…). [pytanie]
+Pies patrzy na (…). [ptak]
+Sven pije (…). [woda]
+Sven pyta (…), gdzie jest park. [dziecko]
+Ewa ma (…). [samochód]
+Rano Sven je (…) w kuchni. [śniadanie]
+W parku Sven widzi (…). [przyjaciel]
+Sven kupuje (…) dla Ewy. [sukienka]
+
 --- lemmas ---
 Jest = być
 wieczór = wieczór
@@ -143,3 +174,64 @@ Teraz = teraz
 czysty = czysty
 już = już
 zimny = zimny
+Apteka = apteka
+Ewy = -
+Herbata = herbata
+Krakowa = -
+Kraków = -
+Kto = kto
+Trzeba = trzeba
+Wieczorem = wieczór
+bo = bo
+ciemno = ciemno
+ciepły = ciepły
+ciężki = ciężki
+czekać = czekać
+czuje = czuć
+czyta = czytać
+drzwiami = drzwi
+dziecko = dziecko
+dzień = dzień
+filmy = film
+gorąca = gorący
+gorąco = gorący
+gra = grać
+jechać = jechać
+komputer = komputer
+książka = książka
+kuchni = kuchnia
+kupuje = kupować
+lubi = lubić
+metrów = metr
+może = móc
+nieść = nieść
+od = od
+otworzyć = otworzyć
+patrzy = patrzeć
+piłkę = piłka
+pociągiem = pociąg
+pokoju = pokój
+poniedziałek = poniedziałek
+pracować = pracować
+przyjaciel = przyjaciel
+ptak = ptak
+pytanie = pytanie
+rower = rower
+samochód = samochód
+stołu = stół
+stół = stół
+sukienka = sukienka
+słońce = słońce
+trzeba = trzeba
+we = w
+widzi = widzieć
+woda = woda
+wtorek = wtorek
+śniadanie = śniadanie
+środę = środa
+że = że
+jedzie = jechać
+mieszka = mieszkać
+sklep = sklep
+sklepu = sklep
+iść = iść
