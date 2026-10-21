@@ -14,7 +14,7 @@ W parku są ludzie. Dzieci grają w piłkę. Pod drzewem siedzi kobieta.
 
 Sven i Ewa siedzą na ławce. Ewa czyta książkę. Sven patrzy na ptaki.
 
-Potem Sven i Ewa idą do sklepu. Sven kupuje lody. Ewa kupuje wodę.
+Potem Sven i Ewa idą do sklepu. On kupuje lody. Ewa kupuje wodę.
 
 Wieczorem Sven i Ewa są w domu. Pies nie śpi. Pies patrzy na Ewę.
 
@@ -76,3 +76,4 @@ wodę = woda
 Wieczorem = wieczór
 Ewę = -
 chce = chcieć
+On = on
