@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""A say-it-and-he-guesses sheet of every ear-training word, worst first.
+"""A say-it-and-he-guesses sheet of every ear-training word, hard ones spread out.
 
     python3 tools/earquiz.py            # writes Downloads/.../lessons/<today>-sybilanty.html
 
@@ -10,13 +10,19 @@ The spec, which was lost once and had to be reverse-engineered from a sheet:
 
 - Every word in `SETS` in index.html, whether or not it has audio — the
   teacher's voice is the recording here.
-- Ordered by band, worst first: a set is **hard** if its worst pair is under
-  60% correct over every trial in the log, **mid** under 85%, else **easy**.
-  The whole set shares its worst pair's band, because the words of one set
-  are only hard in relation to each other. Stop anywhere and the time went on
-  the pairs he fails.
-- Shuffled inside each band, with **no two neighbours from the same set** —
-  hearing a minimal pair back to back lets the contrast do the work for him.
+- Banded by the set's worst pair: **hard** under 60% correct, **mid** under
+  85%, else **easy**. The whole set shares its worst pair's band, because the
+  words of one set are only hard in relation to each other.
+- Judged on each pair's **last 20 trials**, not on everything in the log.
+  All-time figures kept kos/kosz/koś and nic/nić in "hard" long after he had
+  stopped missing them, and proszę/prosię looked better than it was.
+- **Interleaved, not worst-first** (asked 2026-10-21): one easy item as a
+  warm-up, then hard, mid, easy in turn, so a hard item comes every third row
+  and is always followed by one he can get. A sheet that opened with three
+  sets he fails was discouraging and taught nothing extra. Stopping early
+  still means the hard items were covered, because they run out first.
+- **No two neighbours from the same set** — hearing a minimal pair back to
+  back lets the contrast do the work for him.
 - Each row: number (coloured by band), the word with its gloss, the set's
   alternatives, an empty tick box.
 
@@ -33,6 +39,7 @@ import progress  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 HARD, MID = 0.60, 0.85
+WINDOW = 20   # trials per pair that decide its band
 
 
 def content():
@@ -51,16 +58,15 @@ def content():
 
 
 def bands(sets, log):
-    pair = defaultdict(lambda: [0, 0])
-    for e in log:
+    hist = defaultdict(list)
+    for e in sorted(log, key=lambda e: e["ts"]):
         if not e["card"].endswith("__ear") or not e.get("vs"):
             continue
-        k = "|".join(sorted([e["card"][:-5], e["vs"]]))
-        pair[k][1] += 1
-        pair[k][0] += e["grade"] == "good"
+        hist["|".join(sorted([e["card"][:-5], e["vs"]]))].append(e["grade"] == "good")
     out = []
     for s in sets:
-        rates = [c / n for k, (c, n) in pair.items() if set(k.split("|")) <= set(s) and n]
+        rates = [sum(h[-WINDOW:]) / len(h[-WINDOW:]) for k, h in hist.items()
+                 if set(k.split("|")) <= set(s) and h]
         worst = min(rates) if rates else None
         band = "mid" if worst is None else "hard" if worst < HARD else "mid" if worst < MID else "easy"
         out.append((band, worst))
@@ -68,14 +74,20 @@ def bands(sets, log):
 
 
 def order(items, seed):
-    """Shuffle within bands; no neighbours from the same set. Retry until it fits."""
+    """Easy warm-up, then hard/mid/easy in turn; no neighbours from one set.
+
+    A band that runs out is skipped, so the tail is mid and easy. Retried with
+    a fresh shuffle until no two neighbours share a set."""
     rng = random.Random(seed)
     for _ in range(5000):
-        seq = []
-        for b in ("hard", "mid", "easy"):
-            chunk = [i for i in items if i["band"] == b]
+        pools = {b: [i for i in items if i["band"] == b] for b in ("hard", "mid", "easy")}
+        for chunk in pools.values():
             rng.shuffle(chunk)
-            seq += chunk
+        seq = [pools["easy"].pop()] if pools["easy"] else []
+        while any(pools.values()):
+            for b in ("hard", "mid", "easy"):
+                if pools[b]:
+                    seq.append(pools[b].pop())
         if all(a["set"] != b["set"] for a, b in zip(seq, seq[1:])):
             return seq
     sys.exit("earquiz: could not separate neighbours — a band is dominated by one set")
@@ -128,13 +140,14 @@ body{{margin:0;max-width:none;font-size:10.5pt}}
 .intro{{border-color:#999}}}}
 </style>
 <h1>Sybilanty — powiedz, niech zgadnie</h1>
-<div class=meta>{len(seq)} pozycji &middot; najtrudniejsze na górze</div>
+<div class=meta>{len(seq)} pozycji &middot; trudne co trzecie</div>
 <div class=intro>
 <p>Say the bold word. He says which of the alternatives he heard. Then help
 him with that one — mirror, lips, tongue — before moving on.</p>
-<p>Ordered worst-first from his trainer data, then shuffled inside each band,
-so <b>stop wherever you like</b> and you will have spent the time on the pairs
-he actually fails. Red numbers are the pairs under 60%, amber under 85%.</p>
+<p>Mixed from his trainer data (last 20 tries per pair): an easy one to
+start, then a hard one every third row, each followed by something he can
+get. Red numbers are under 60%, amber under 85%. The hard ones run out first,
+so <b>stop wherever you like</b> after the first third and they are covered.</p>
 <p>No two neighbouring items come from the same set, so he never hears a
 minimal pair back to back — that would let the contrast do the work for him.</p>
 </div>
