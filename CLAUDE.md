@@ -42,11 +42,12 @@ tools/speaking.py   say-it-he-translates sheet; every word checked against
                     what he has met, not against the deck
 tools/storycheck.py checks a draft story against what he has actually met
 tools/earquiz.py    say-it-he-guesses sheet of every ear word, worst set first
-tools/deckio.py     shared loading, saving, attribution (not runnable)
+tools/deckio.py     shared loading, saving, attribution, out_dir (not runnable)
 tools/ear_split.py  cuts one long take into ear/raw/<word>/; prints the read-aloud sheet
 tools/ear_build.py  ear/raw → ear/audio + ear/manifest.json (trim, level, encode)
 tools/listen.py     listening episodes: story file → listen/<slug>.mp3 + listen/episodes.json
 listen/             episode mp3s and episodes.json — generated, do not edit
+out/                sheets, PDFs, review/progress pages, image inbox — gitignored
 ```
 
 The app has deliberately **no build pipeline**. Tools under `tools/` generate
@@ -929,7 +930,7 @@ Deferred on purpose: 4 grades instead of 2, and a stats screen.
   written round them — utility first, coherence second. Ten a week sits under
   the 3-a-day intake cap, so a lesson is absorbed without backing up. Kept in
   `lessons/` as the teaching record; a page for use during the lesson goes to
-  `Downloads/flashcards/lessons/`. Cards are made **after** the lesson, so
+  `out/lessons/`. Cards are made **after** the lesson, so
   only words that actually landed get carded.
 - **Run `tools/storycheck.py` on every story before it goes out** — lesson
   stories, homework, anything he reads. It is not optional and it is not a
@@ -1064,8 +1065,16 @@ Deferred on purpose: 4 grades instead of 2, and a stats screen.
 - Auth is an SSH key; the remote is `git@github.com:frhrpr/flashcards.git`.
   Pushing and any non-allowlisted network call need
   `dangerouslyDisableSandbox` — the sandbox denies `~/.ssh` and allows only
-  github/npm/pypi. Writing to `/mnt/c/...` (to put files somewhere Windows
-  can open them) needs it too.
+  github/npm/pypi. Running a Windows program (Edge, to print a sheet to PDF)
+  needs it too.
+- **Everything the tools write for a person to open goes in `out/`** —
+  sheets, PDFs, the review and progress pages, the image inbox. Gitignored,
+  one root, `deckio.out_dir()`. Windows reaches it as
+  `\\wsl.localhost\Ubuntu\home\frhrpr\projects\flashcards\out`; give links
+  as `file://wsl.localhost/Ubuntu/home/frhrpr/projects/flashcards/out/...`.
+  It was `Downloads\flashcards` until 2026-10-24: project files outside the
+  project, and every write needing the sandbox lifted. Edge prints from the
+  WSL path fine (`--print-to-pdf='\\wsl.localhost\...'`).
 - **The Google Drive connector is read-and-create only** — no update, no
   delete, so nothing there can be maintained in place. The repo is the only
   store both sides can write to. Superseded in practice: the user works

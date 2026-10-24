@@ -5,9 +5,8 @@
     python3 tools/listen.py lessons/<date>-sluchanie-<slug>.story.txt --go     # synthesise
     python3 tools/listen.py --index                                            # rebuild the list only
 
-Writes `listen/<slug>.mp3` (served by the site), a copy in
-Downloads/flashcards/sluchanie/ for sending by hand, and rebuilds
-`listen/episodes.json` from every story whose mp3 exists. The list is
+Writes `listen/<slug>.mp3` (served by the site, and the file to send by hand)
+and rebuilds `listen/episodes.json` from every story whose mp3 exists. The list is
 generated, never edited: the story file is the one source for the text and
 the questions.
 
@@ -48,7 +47,7 @@ Every choice here was made by ear on 2026-10-21, on the first episode:
 - A dialogue tag stays with its line ("Idziemy do parku? pyta Ania.") so it
   is read as one utterance; dashes are dropped because they are not spoken.
 """
-import argparse, json, re, shutil, subprocess, sys, tempfile, urllib.request
+import argparse, json, re, subprocess, sys, tempfile, urllib.request
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -60,7 +59,6 @@ SETTINGS = {"stability": 0.6, "similarity_boost": 0.75, "speed": 0.85}
 SENT_GAP, PARA_GAP = 0.7, 1.5
 TRIM = ("silenceremove=start_periods=1:start_threshold=-50dB,areverse,"
         "silenceremove=start_periods=1:start_threshold=-50dB,areverse")
-OUT = Path("/mnt/c/Users/frhrpr/Downloads/flashcards/sluchanie")
 
 
 def sentences(path):
@@ -198,10 +196,6 @@ def main():
     dur = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
                           "-of", "csv=p=0", dest], capture_output=True, text=True).stdout.strip()
     print(f"wrote {dest}  ({float(dur):.0f} s)")
-    if OUT.parent.is_dir():
-        OUT.mkdir(exist_ok=True)
-        shutil.copy(dest, OUT / dest.name)
-        print(f"copied to {OUT / dest.name}")
     write_index()
     return 0
 

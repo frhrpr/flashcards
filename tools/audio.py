@@ -236,6 +236,12 @@ def plan(notes, only, tts_words):
                              model if want == "tts" else "-",
                              PROCESS_VERSION, NORM_MEAN_DB, NORM_PEAK_DB, TRIM_DB)
             entry = manifest.get(rel)
+            # A recording supplied by hand is never regenerated: its fingerprint
+            # cannot match anything computed here, so without this every full
+            # run called it stale. That replaced the teacher's lody with the
+            # Commons clip on 2026-10-24. Delete the manifest entry to retire one.
+            if entry and entry.get("source") == "supplied" and (ROOT / rel).exists():
+                continue
             if entry and entry.get("fingerprint") == fp and (ROOT / rel).exists():
                 if holder.get(key) != rel:
                     jobs.append(dict(rel=rel, text=text, holder=holder, key=key, kind=kind,

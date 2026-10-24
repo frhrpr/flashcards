@@ -29,7 +29,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 NOTES = ROOT / "deck" / "notes.json"
 APP = ROOT / "index.html"
-OUT = Path("/mnt/c/Users/frhrpr/Downloads/flashcards/lessons")
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from deckio import out_dir  # noqa: E402
+OUT = out_dir("lessons")
 
 # Tiers order nothing on the page — they are mixed in — but they keep the
 # spread honest: without them the optimiser is free to stack every hard item

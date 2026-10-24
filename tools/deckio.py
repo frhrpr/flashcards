@@ -15,15 +15,16 @@ KEY_ORDER = ["id", "word", "gloss", "pos", "ipa", "note", "image", "image_alt",
              "image_basis", "image_prompt", "audio", "sentence", "cards", "reviewed"]
 SENT_KEY_ORDER = ["pl", "en", "gap", "answer", "answer_lemma", "audio"]
 
-# Everything the project puts where Windows can open it goes under one root.
-OUT_ROOT = "flashcards"
+# Everything the tools write for a person to open goes under one gitignored
+# root inside the repo. Windows reaches it as \\wsl.localhost\Ubuntu\home\
+# frhrpr\projects\flashcards\out. It was Downloads\flashcards until
+# 2026-10-24, which put project files outside the project and made every
+# write need the sandbox lifted.
+OUT = ROOT / "out"
 
 
 def out_dir(sub):
-    for d in sorted(Path("/mnt/c/Users").glob("*/Downloads")):
-        if d.is_dir() and not d.parent.name.startswith(("Default", "All Users", "Public")):
-            return d / OUT_ROOT / sub
-    return ROOT / ".out" / sub          # gitignored fallback when not on WSL
+    return OUT / sub
 
 
 def load_key(name):

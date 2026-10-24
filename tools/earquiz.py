@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """A say-it-and-he-guesses sheet of every ear-training word, hard ones spread out.
 
-    python3 tools/earquiz.py            # writes Downloads/.../lessons/<today>-sybilanty.html
+    python3 tools/earquiz.py            # writes out/lessons/<today>-sybilanty.html
 
 For the teacher to read aloud: say the bold word, he names which of the
 alternatives he heard, then work on that one before moving on.
@@ -153,10 +153,8 @@ minimal pair back to back — that would let the contrast do the work for him.</
 </div>
 <table>{rows}</table>
 """
-    dest = Path("/mnt/c/Users/frhrpr/Downloads/flashcards/lessons")
-    if not dest.is_dir():
-        dest = ROOT / ".out"
-        dest.mkdir(exist_ok=True)
+    dest = progress.out_dir("lessons")
+    dest.mkdir(parents=True, exist_ok=True)
     path = dest / f"{date.today().isoformat()}-sybilanty.html"
     path.write_text(page, encoding="utf-8")
     print(f"wrote {path}")
