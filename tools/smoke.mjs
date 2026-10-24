@@ -100,6 +100,8 @@ const Audio = function(){ let _s = ""; return {
   play: () => Promise.resolve(), pause: () => {}, preload: "", currentTime: 0,
   set src(v){ _s = v; asked.push(v); }, get src(){ return _s; } }; };
 const location = { href: "https://example.test/" };
+const history = { state: null, pushState(st){ this.state = st; }, back(){ this.state = null; }, replaceState(){} };
+const addEventListener = () => {};
 const URL = globalThis.URL;
 const grade = () => {};
 const renderWarning = () => {};

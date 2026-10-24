@@ -1704,6 +1704,7 @@ let earMarks = [], earLog = [];
 function startEar(){
   const plan = earPlan();
   if (!plan) return renderLanding();
+  nav(renderLanding);
   earQueue = buildEarQueue(plan);
   earIdx = 0; earMarks = []; earLog = [];
   renderEarTrial();
@@ -1947,6 +1948,7 @@ function setListen(id, patch){
 }
 
 function renderListenList(){
+  nav(renderLanding);
   modeLabel.textContent = "Listening";
   countEl.textContent = "";
   appEl.innerHTML = `
@@ -1968,6 +1970,7 @@ function renderListenList(){
 function renderEpisode(id){
   const ep = EPISODES.find(e => e.id === id);
   if (!ep) return renderListenList();
+  nav(renderListenList);
   modeLabel.textContent = "Listening";
   appEl.innerHTML = `
     <div class="lq-player">
@@ -2084,6 +2087,7 @@ function setReading(id, patch){
 }
 
 function renderReadList(){
+  nav(renderLanding);
   modeLabel.textContent = "Reading";
   countEl.textContent = "";
   appEl.innerHTML = `
@@ -2120,6 +2124,7 @@ function wordPopHtml(st, h){
 function renderStory(id){
   const st = STORIES.find(s => s.id === id);
   if (!st) return renderReadList();
+  nav(renderReadList);
   modeLabel.textContent = "Reading";
   appEl.innerHTML = `
     <h2 class="lq-title">${esc(st.title)}</h2>
@@ -2164,6 +2169,7 @@ function renderStory(id){
    and landing on "nothing due" reads as broken rather than finished. */
 
 function startVocab(light){
+  nav(renderLanding);
   vocabLight = !!light;
   queue = light ? [...dueCards] : interleave(dueCards, fresh);
   modeLabel.textContent = "Vocab";
@@ -2196,6 +2202,7 @@ function extraAvailable(){
 
 function startExtra(){
   const { fresh3, practice } = extraPlan();
+  nav(renderLanding);
   extraMode = true;
   extraSaves = new Set(fresh3);       // fixed now, not re-tested per grade
   sessionDone = 0;
@@ -2246,7 +2253,33 @@ function earIdleLabel(){
   return "✓ settled";
 }
 
+/* ══ the browser's Back button ════════════════════════════════════════
+   The app is one page, so Back used to leave the site altogether (reported
+   2026-10-24). Now every screen past the landing sits on one extra history
+   entry, and Back runs whatever that screen said Back means: a story or an
+   episode goes to its list, everything else to the landing.
+
+   One entry, not a stack. Screens are at most two deep, and a stack holding
+   every card shown would make Back step backwards through the session. The
+   landing takes the entry back off, so Back from the landing still leaves —
+   which is what Back on a home page should do. */
+let backTo = null;
+function nav(back){
+  backTo = back;
+  if (!(history.state && history.state.inApp)) history.pushState({ inApp: 1 }, "");
+}
+addEventListener("popstate", () => {
+  const b = backTo || renderLanding;
+  backTo = null;
+  b();
+});
+
 function renderLanding(){
+  backTo = null;
+  // Reached by an in-app button rather than by Back: drop the extra entry,
+  // or the next Back would land on this same screen. The popstate this
+  // fires renders the landing again, harmlessly.
+  if (history.state && history.state.inApp) history.back();
   modeLabel.textContent = "Polish";
   countEl.textContent = "";
   barEl.className = "";

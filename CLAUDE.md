@@ -526,8 +526,10 @@ questions, so a story without them silently stays off the app.
   gloss, and the card's picture and recording when it has an approved card.
   The token → headword mapping is the storycheck lemma block, so the app
   needs no Polish morphology. Names (`-`) are not tappable. Words with no
-  card take their gloss from vocab.csv's `notes` column or `FUNCTION_GLOSS`
-  in the tool; a headword with no gloss anywhere fails the build.
+  card take their gloss from `FUNCTION_GLOSS` in the tool — never from
+  vocab.csv's `notes` column, which records why a word has no card and once
+  showed him "possessive; given free" for *mój*. A headword with no gloss
+  fails the build.
 - **Taps are counted per headword** (`reading: {"<id>": {read, first, done,
   taps}}`, outside the log like `listen`). The words he looks up are the
   words he does not know, and no card score shows that; `progress.py` lists

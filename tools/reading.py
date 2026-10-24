@@ -16,14 +16,18 @@ What goes in:
   at the first paragraph with a `(…)` gap — lesson stories carry their gap
   exercises after the text, and those are for paper.
 - **A gloss for every headword**: the card's gloss and note id where there is
-  a card (the app then shows its picture and plays its recording), else the
-  `notes` column of vocab.csv, else FUNCTION_GLOSS below. A headword with no
-  gloss anywhere is an error: a tap that shows nothing is worse than no tap.
+  an approved card (the app then shows its picture and plays its recording),
+  else FUNCTION_GLOSS below. A headword with no gloss is an error: a tap
+  that shows nothing is worse than no tap.
+
+  Not vocab.csv's `notes` column. That is a record of why a word has no
+  card ("possessive; given free"), not a definition, and the first version
+  showed it to him as one: tapping *mój* said "possessive; given free".
 - **The questions**, in the listening format (see tools/listen.py).
 
 Run storycheck on the story first; this trusts the lemma block it checked.
 """
-import csv, json, re, sys
+import json, re, sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -34,9 +38,9 @@ OUT = ROOT / "read" / "stories.json"
 FIRST = "2026-10-21"
 WORD = re.compile(r"[^\W\d_]+", re.U)
 
-# Words that are learned through grammar and so have no card and no gloss
-# anywhere else. Only what a story actually needs; the tool says when one is
-# missing.
+# Glosses for words with no card: grammar words, and the odd word kept off
+# the cards on purpose. Written for him to read when he taps the word, so
+# plain English, no bookkeeping. The tool says when a story needs a new one.
 FUNCTION_GLOSS = {
     "a": "and, while", "ale": "but", "i": "and", "albo": "or", "bo": "because",
     "że": "that", "więc": "so", "czy": "whether; or (question word)",
@@ -47,6 +51,7 @@ FUNCTION_GLOSS = {
     "ja": "I", "ty": "you", "on": "he", "ona": "she", "my": "we", "wy": "you (all)",
     "oni": "they", "mój": "my", "twój": "your", "jego": "his", "jej": "her",
     "nie": "no, not", "tak": "yes",
+    "dziękuję": "thank you", "otwierać": "to open (is opening, opens often)",
 }
 
 
@@ -62,13 +67,10 @@ def title_of(story):
 def glosses():
     notes = json.loads((ROOT / "deck/notes.json").read_text(encoding="utf-8"))["notes"]
     cards = {n["word"]: n for n in notes if n.get("kind") != "form" and n.get("reviewed")}
-    vocab = {r["word"]: r for r in csv.DictReader(open(ROOT / "deck/vocab.csv", encoding="utf-8"))}
 
     def look(head):
         if head in cards:
             return {"gloss": cards[head]["gloss"], "note": cards[head]["id"]}
-        if (vocab.get(head) or {}).get("notes"):
-            return {"gloss": vocab[head]["notes"]}
         if head in FUNCTION_GLOSS:
             return {"gloss": FUNCTION_GLOSS[head]}
         return None
@@ -111,7 +113,7 @@ def build(story, look):
             missing.append(h)
     if missing:
         sys.exit(f"reading: {story.name}: no gloss for {', '.join(missing)} — "
-                 "add it to FUNCTION_GLOSS or vocab.csv's notes column")
+                 "add it to FUNCTION_GLOSS")
     qs = questions(story)
     if not qs:
         sys.exit(f"reading: {story.name}: no questions")

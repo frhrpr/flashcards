@@ -1641,7 +1641,7 @@
      "note": "daleko"
     },
     "dla": {
-     "gloss": "for; + genitive: dla ciebie"
+     "gloss": "for"
     },
     "do": {
      "gloss": "to"
@@ -1675,7 +1675,7 @@
      "note": "dziekowac"
     },
     "dziękuję": {
-     "gloss": "fixed phrase; the 1sg of dziękować, which is now carded"
+     "gloss": "thank you"
     },
     "gorący": {
      "gloss": "hot",
@@ -1701,7 +1701,7 @@
      "note": "jeden"
     },
     "jego": {
-     "gloss": "possessive; given free"
+     "gloss": "his"
     },
     "jeszcze": {
      "gloss": "still, yet",
@@ -1716,7 +1716,7 @@
      "note": "kot"
     },
     "kto": {
-     "gloss": "given free in the lesson"
+     "gloss": "who"
     },
     "kuchnia": {
      "gloss": "kitchen",
@@ -1763,7 +1763,7 @@
      "note": "myslec"
     },
     "mój": {
-     "gloss": "possessive; given free"
+     "gloss": "my"
     },
     "mówić": {
      "gloss": "to speak",
@@ -1773,7 +1773,7 @@
      "gloss": "on, onto"
     },
     "nad": {
-     "gloss": "learned through the case it governs"
+     "gloss": "above, by (a river)"
     },
     "nie": {
      "gloss": "no, not",
@@ -1784,7 +1784,7 @@
      "note": "okno"
     },
     "otwierać": {
-     "gloss": "to open, ongoing; gloss collides with otworzyć, so no card"
+     "gloss": "to open (is opening, opens often)"
     },
     "pan": {
      "gloss": "sir, Mr",
@@ -1834,7 +1834,7 @@
      "note": "rzeka"
     },
     "się": {
-     "gloss": "not a word on its own"
+     "gloss": "oneself (with some verbs)"
     },
     "spodnie": {
      "gloss": "trousers",
@@ -1857,7 +1857,7 @@
      "note": "tez"
     },
     "to": {
-     "gloss": "demonstrative + copula"
+     "gloss": "this, it"
     },
     "tutaj": {
      "gloss": "here",
@@ -1868,7 +1868,7 @@
      "note": "twarz"
     },
     "twój": {
-     "gloss": "possessive; given free"
+     "gloss": "your"
     },
     "tylko": {
      "gloss": "only",
@@ -1890,7 +1890,7 @@
      "note": "wiedziec"
     },
     "więc": {
-     "gloss": "so, therefore"
+     "gloss": "so"
     },
     "wracać": {
      "gloss": "to come back",
@@ -1909,7 +1909,7 @@
      "note": "wlaczyc"
     },
     "z": {
-     "gloss": "learned through the case it governs"
+     "gloss": "with; from"
     },
     "znaleźć": {
      "gloss": "to find",
@@ -1936,7 +1936,7 @@
      "note": "smiac_sie"
     },
     "że": {
-     "gloss": "given free with myśleć"
+     "gloss": "that"
     }
    },
    "questions": [
@@ -3719,7 +3719,7 @@
      "note": "cieply"
     },
     "co": {
-     "gloss": "given free in the lesson"
+     "gloss": "what"
     },
     "codziennie": {
      "gloss": "every day",
@@ -3742,7 +3742,7 @@
      "note": "deszcz"
     },
     "dla": {
-     "gloss": "for; + genitive: dla ciebie"
+     "gloss": "for"
     },
     "do": {
      "gloss": "to"
@@ -3764,14 +3764,14 @@
      "note": "dziwny"
     },
     "dziękuję": {
-     "gloss": "fixed phrase; the 1sg of dziękować, which is now carded"
+     "gloss": "thank you"
     },
     "film": {
      "gloss": "film",
      "note": "film"
     },
     "gdzie": {
-     "gloss": "given free in the lesson"
+     "gloss": "where"
     },
     "głodny": {
      "gloss": "hungry",
@@ -3845,7 +3845,7 @@
      "note": "moc"
     },
     "mój": {
-     "gloss": "possessive; given free"
+     "gloss": "my"
     },
     "mówić": {
      "gloss": "to speak",
@@ -3859,7 +3859,7 @@
      "gloss": "on, onto"
     },
     "nad": {
-     "gloss": "learned through the case it governs"
+     "gloss": "above, by (a river)"
     },
     "nie": {
      "gloss": "no, not",
@@ -3870,10 +3870,10 @@
      "note": "okno"
     },
     "on": {
-     "gloss": "personal pronoun, like ja and ty"
+     "gloss": "he"
     },
     "otwierać": {
-     "gloss": "to open, ongoing; gloss collides with otworzyć, so no card"
+     "gloss": "to open (is opening, opens often)"
     },
     "padać": {
      "gloss": "to fall",
@@ -3935,7 +3935,7 @@
      "note": "siedziec"
     },
     "się": {
-     "gloss": "not a word on its own"
+     "gloss": "oneself (with some verbs)"
     },
     "smutny": {
      "gloss": "sad",
@@ -3974,7 +3974,7 @@
      "note": "teraz"
     },
     "to": {
-     "gloss": "demonstrative + copula"
+     "gloss": "this, it"
     },
     "tutaj": {
      "gloss": "here",
@@ -4008,7 +4008,7 @@
      "note": "wlaczyc"
     },
     "z": {
-     "gloss": "learned through the case it governs"
+     "gloss": "with; from"
     },
     "zimny": {
      "gloss": "cold",
