@@ -438,7 +438,8 @@ notes`. `status` is `queued` → `known` → `carded`.
 ## Listening episodes
 
 Added 2026-10-21. Short stories read by TTS, about a minute each, with
-multiple-choice questions, on a **Słuchaj** page in the app. The skill is
+multiple-choice questions, on a **Listening** page in the app. Its labels
+are English like the rest of the app; the stories and questions are Polish. The skill is
 following spoken Polish at all, so the vocabulary is deliberately easy (only
 words he knows well) and the sentences short; difficulty comes from the
 audio, not the words.
@@ -466,12 +467,12 @@ audio, not the words.
   śpi*) are what the questions test.
 - **Retry until right, but only the first answer is stored.** An episode
   always ends on a success; the first answer is what says whether he
-  understood. Then "Pokaż tekst" shows the story.
+  understood. Then "Show the text" shows the story.
 - **Firestore: one top-level field, `listen: {"<episode id>": {heard, first:
   [true|false|null…], done}}`**, written with `FieldPath` because ids carry
   "-". Not in the log — `progress.py` buckets the log by `grade`. The report
   lists each episode with first-time answers.
-- **On the landing**: a tile ("1 nowe opowiadanie") while any episode is
+- **On the landing**: a tile ("1 new story") while any episode is
   unfinished; afterwards a quiet link, because episodes can be re-listened
   and a greyed, untappable tile would hide them.
 - ElevenLabs free tier is 10,000 characters a month, shared with card

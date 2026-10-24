@@ -1905,12 +1905,9 @@ const epState = id => listenStates[id] || {};
 const epNew = ep => !epState(ep.id).done;
 const mmss = s => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
 
-// 1 nowe opowiadanie · 2–4 nowe opowiadania · 5+ (and 12–14) nowych opowiadań
-function newStories(n){
-  if (n === 1) return "1 nowe opowiadanie";
-  const few = n % 10 >= 2 && n % 10 <= 4 && !(n % 100 >= 12 && n % 100 <= 14);
-  return few ? `${n} nowe opowiadania` : `${n} nowych opowiadań`;
-}
+// The app's own labels are English, like the rest of it; only the stories
+// and the questions are Polish.
+const newStories = n => `${n} new ${n === 1 ? "story" : "stories"}`;
 
 function setListen(id, patch){
   listenStates[id] = { ...epState(id), ...patch };
@@ -1927,19 +1924,19 @@ function setListen(id, patch){
 }
 
 function renderListenList(){
-  modeLabel.textContent = "Słuchaj";
+  modeLabel.textContent = "Listening";
   countEl.textContent = "";
   appEl.innerHTML = `
     <div class="modes">${EPISODES.map(ep => {
       const st = epState(ep.id);
       const right = (st.first || []).filter(x => x === true).length;
-      const sub = st.done ? `✓ ${right} z ${ep.questions.length} od razu`
-                : st.heard ? "pytania czekają" : `nowe · ${mmss(ep.seconds)}`;
+      const sub = st.done ? `✓ ${right} of ${ep.questions.length} first time`
+                : st.heard ? "questions waiting" : `new · ${mmss(ep.seconds)}`;
       return `<button class="mode" data-ep="${esc(ep.id)}">` +
              `<span class="mode-n">${esc(ep.title)}</span>` +
              `<span class="mode-sub">${esc(sub)}</span></button>`;
     }).join("")}</div>
-    <button class="lighter" id="lq-back">← wróć</button>`;
+    <button class="lighter" id="lq-back">← back</button>`;
   appEl.querySelectorAll("[data-ep]").forEach(b =>
     b.addEventListener("click", () => renderEpisode(b.dataset.ep)));
   $("#lq-back").addEventListener("click", renderLanding);
@@ -1948,7 +1945,7 @@ function renderListenList(){
 function renderEpisode(id){
   const ep = EPISODES.find(e => e.id === id);
   if (!ep) return renderListenList();
-  modeLabel.textContent = "Słuchaj";
+  modeLabel.textContent = "Listening";
   appEl.innerHTML = `
     <div class="lq-player">
       <h2 class="lq-title">${esc(ep.title)}</h2>
@@ -1957,15 +1954,15 @@ function renderEpisode(id){
     <div id="lq-gate"></div>
     <div id="lq-qs"></div>
     <div id="lq-text"></div>
-    <button class="lighter" id="lq-back">← opowiadania</button>`;
+    <button class="lighter" id="lq-back">← all stories</button>`;
   const gate = $("#lq-gate");
   const showGo = () => {
-    gate.innerHTML = `<button class="reveal" id="lq-go">Sprawdź się</button>`;
+    gate.innerHTML = `<button class="reveal" id="lq-go">Questions</button>`;
     $("#lq-go").addEventListener("click", () => { gate.innerHTML = ""; askQuestions(ep); });
   };
   if (epState(id).heard) showGo();
   else {
-    gate.innerHTML = `<p class="lq-hint">Posłuchaj do końca. Potem są pytania.</p>`;
+    gate.innerHTML = `<p class="lq-hint">Listen to the end first. Then the questions.</p>`;
     $("#lq-audio").addEventListener("ended", () => {
       if (!epState(id).heard) setListen(id, { heard: Date.now() });
       if (!$("#lq-go") && !$("#lq-qs").innerHTML) showGo();
@@ -2001,8 +1998,8 @@ function askQuestions(ep){
     const all = solved.size === ep.questions.length;
     const right = first.filter(x => x === true).length;
     box.innerHTML = questionsHtml(ep, solved, tried) + (all
-      ? `<p class="lq-done">Gotowe! Od razu dobrze: ${right} z ${ep.questions.length}.</p>` +
-        `<button class="reveal" id="lq-show">Pokaż tekst</button>`
+      ? `<p class="lq-done">Done! Right first time: ${right} of ${ep.questions.length}.</p>` +
+        `<button class="reveal" id="lq-show">Show the text</button>`
       : "");
     box.querySelectorAll("[data-q]").forEach(b =>
       b.addEventListener("click", () => pick(+b.dataset.q, +b.dataset.o)));
@@ -2154,8 +2151,8 @@ function renderLanding(){
       ${e ? tile("go-ear", "Ear training", `${e} trials · about ${earMins(e)}`, !!v)
           : idle("Ear training", earIdleLabel())}
       ${!EPISODES.length ? ""
-        : EPISODES.some(epNew) ? tile("go-listen", "Słuchaj", newStories(EPISODES.filter(epNew).length), false)
-        : `<button class="lighter" id="go-listen">Słuchaj — opowiadania</button>`}
+        : EPISODES.some(epNew) ? tile("go-listen", "Listening", newStories(EPISODES.filter(epNew).length), false)
+        : `<button class="lighter" id="go-listen">Listening — all stories</button>`}
     </div>
     ${(!v && !e) ? `<div class="stats done">
       <p class="done-h">All done for today</p>

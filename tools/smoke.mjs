@@ -372,7 +372,7 @@ try {
   check(eps.every(e => fs.existsSync(path.join(ROOT, e.audio))), "every episode's mp3 exists");
   m.setEpisodes(eps);
   m.renderLanding();
-  check(m.state().html.includes("go-listen") && m.state().html.includes("1 nowe opowiadanie"),
+  check(m.state().html.includes("go-listen") && m.state().html.includes("1 new story"),
         "landing offers a new listening episode as a tile");
   m.renderEpisode(eps[0].id);
   const ep0 = m.state().html;
@@ -384,12 +384,11 @@ try {
   const q1 = m.questionsHtml(eps[0], new Set([0]), { 1: [0] });
   check((q1.match(/lq-opt correct/g) || []).length === 1 && q1.includes("lq-opt wrong"),
         "a solved question shows its answer; a wrong try is marked");
-  check([1, 2, 5, 12, 22].map(m.newStories).join("|") ===
-        "1 nowe opowiadanie|2 nowe opowiadania|5 nowych opowiadań|12 nowych opowiadań|22 nowe opowiadania",
-        "Polish plural for new stories");
+  check([1, 2].map(m.newStories).join("|") === "1 new story|2 new stories",
+        "singular and plural for new stories");
   for (const e of eps) m.listenStates[e.id] = { heard: 1, done: 1 };
   m.renderLanding();
-  check(m.state().html.includes("Słuchaj — opowiadania") && !m.state().html.includes("nowe opowiadanie"),
+  check(m.state().html.includes("Listening — all stories") && !m.state().html.includes("new story"),
         "with everything heard, listening drops to a quiet link");
   for (const e of eps) delete m.listenStates[e.id];
   m.setEpisodes([]);
