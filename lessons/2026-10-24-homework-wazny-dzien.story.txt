@@ -1,0 +1,187 @@
+Dzisiaj jest ważny dzień. Brat Ewy mieszka daleko i jest tutaj tylko jeden miesiąc. Wieczorem chce zobaczyć Ewę i Svena.
+
+Ewa mówi, że dom musi być czysty. Sven myje okna, a Ewa myje kuchnię.
+
+— Myć okna? To łatwe! — mówi Sven.
+
+— Sven, twoje spodnie są brudne! — mówi Ewa.
+
+— Wiem, wiem.
+
+Sven musi znaleźć czyste spodnie. Potem czuje, że w domu jest bardzo gorąco, więc otwiera okno. Ewa gotuje zupę. Twarz Ewy jest czerwona, bo w kuchni jest gorąco. Pies jest głodny i patrzy na lodówkę.
+
+Wieczorem jest ciemno. Sven chce włączyć lampę, ale wtedy słyszy głos pod drzwiami.
+
+— Chyba to twój brat! — mówi Sven.
+
+Ale to nie jest brat Ewy. Pod drzwiami stoi człowiek z parku. Jego mały, czarny pies też tu jest.
+
+— Dobry wieczór! Chcę powiedzieć dziękuję — mówi człowiek. — Mam coś dla pana i dla pani: lody! Teraz mój pies nie chodzi nad rzekę.
+
+— Dziękujemy! — mówi Ewa i się śmieje.
+
+Człowiek wraca do domu. Potem Sven znowu słyszy głos.
+
+— Dziwne. Kto to jest? — pyta Ewa.
+
+Teraz to jest brat Ewy. Jest bardzo wysoki i bardzo podobny do Ewy.
+
+— Cześć! Jestem bardzo głodny! — mówi brat.
+
+— Zupa jest jeszcze gorąca. Ale mamy też lody!
+
+Ewa, Sven i brat jedzą lody. Pies też chce lody, ale lody nie są dla kota. Pies je rybę.
+
+To jest dobry dzień, myśli Sven.
+
+--- pytania ---
+
+Kto chce zobaczyć Ewę i Svena? | człowiek z parku | *brat Ewy | pies
+Co myje Sven? | *okna | kuchnię | spodnie
+Sven otwiera okno, bo… | jest ciemno | *w domu jest gorąco | Pies jest głodny
+Kto pierwszy stoi pod drzwiami? | brat Ewy | *człowiek z parku | Ewa
+Co ma człowiek dla Ewy i Svena? | zupę | rybę | *lody
+Czy brat Ewy jest mały? | tak | *nie
+Zupa jest… | zimna | *gorąca | czerwona
+Co je Pies? | lody | zupę | *rybę
+
+--- lemmas ---
+Dzisiaj = dzisiaj
+jest = być
+ważny = ważny
+dzień = dzień
+Brat = brat
+Ewy = -
+mieszka = mieszkać
+daleko = daleko
+i = i
+tutaj = tutaj
+tylko = tylko
+jeden = jeden
+miesiąc = miesiąc
+Wieczorem = wieczór
+chce = chcieć
+zobaczyć = zobaczyć
+Ewę = -
+Svena = -
+Ewa = -
+mówi = mówić
+że = że
+dom = dom
+musi = musieć
+być = być
+czysty = czysty
+Sven = -
+myje = myć
+okna = okno
+a = a
+kuchnię = kuchnia
+Myć = myć
+To = to
+łatwe = łatwy
+twoje = twój
+spodnie = spodnie
+są = być
+brudne = brudny
+Wiem = wiedzieć
+znaleźć = znaleźć
+czyste = czysty
+Potem = potem
+czuje = czuć
+w = w
+domu = dom
+bardzo = bardzo
+gorąco = gorący
+więc = więc
+otwiera = otwierać
+okno = okno
+gotuje = gotować
+zupę = zupa
+Twarz = twarz
+czerwona = czerwony
+bo = bo
+kuchni = kuchnia
+Pies = pies
+głodny = głodny
+patrzy = patrzeć
+na = na
+lodówkę = lodówka
+ciemno = ciemno
+włączyć = włączyć
+lampę = lampa
+ale = ale
+wtedy = wtedy
+słyszy = słyszeć
+głos = głos
+pod = pod
+drzwiami = drzwi
+Chyba = chyba
+twój = twój
+nie = nie
+stoi = stać
+człowiek = człowiek
+z = z
+parku = park
+Jego = jego
+mały = mały
+czarny = czarny
+pies = pies
+też = też
+tu = tutaj
+Dobry = dobry
+wieczór = wieczór
+Chcę = chcieć
+powiedzieć = powiedzieć
+dziękuję = dziękuję
+Mam = mieć
+coś = coś
+dla = dla
+pana = pan
+pani = pani
+lody = lody
+Teraz = teraz
+mój = mój
+chodzi = chodzić
+nad = nad
+rzekę = rzeka
+Dziękujemy = dziękować
+się = się
+śmieje = śmiać się
+wraca = wracać
+do = do
+znowu = znowu
+Dziwne = dziwny
+Kto = kto
+pyta = pytać
+brat = brat
+wysoki = wysoki
+podobny = podobny
+Cześć = cześć
+Jestem = być
+Zupa = zupa
+jeszcze = jeszcze
+gorąca = gorący
+mamy = mieć
+jedzą = jeść
+kota = kot
+je = jeść
+rybę = ryba
+myśli = myśleć
+pytania = pytanie
+Kto = kto
+Co = co
+okna = okno
+spodnie = spodnie
+Pies = pies
+Czy = czy
+mały = mały
+tak = tak
+nie = nie
+pierwszy = pierwszy
+Zupa = zupa
+zimna = zimny
+czerwona = czerwony
+zupę = zupa
+rybę = ryba
+gorąca = gorący
+ma = mieć
