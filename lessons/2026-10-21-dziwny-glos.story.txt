@@ -65,6 +65,17 @@ Rano Sven je (…) w kuchni. [śniadanie]
 W parku Sven widzi (…). [przyjaciel]
 Sven kupuje (…) dla Ewy. [sukienka]
 
+--- pytania ---
+
+Wieczorem pada deszcz czy jest słońce? | *pada deszcz | jest słońce
+Co jest dla Psa? | ser | *ryba | mleko
+Co Sven chce zobaczyć? | *film | rzekę | park
+Gdzie jest dziwny głos? | w telewizorze | *na ulicy | w kuchni
+Kogo szuka mężczyzna? | kota | *psa | Ewy
+Gdzie jest mały, czarny pies? | w parku | *nad rzeką | na ulicy
+Rzeka jest… | blisko | *daleko
+Ewa chce włączyć telewizor, a Sven… | *śpi | je ser | myje ręce
+
 --- lemmas ---
 Jest = być
 wieczór = wieczór
@@ -235,3 +246,9 @@ mieszka = mieszkać
 sklep = sklep
 sklepu = sklep
 iść = iść
+Kogo = kto
+czy = czy
+pytania = pytanie
+rzekę = rzeka
+szuka = szukać
+telewizorze = telewizor

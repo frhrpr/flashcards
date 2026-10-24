@@ -65,7 +65,7 @@ const NOTES = ${JSON.stringify(Object.fromEntries(deck.notes.map(n => [n.id, n])
 const allCards = ${JSON.stringify(deck.notes.flatMap(n =>
   (n.cards || []).map(c => `${n.id}__${c}`)))};
 let cardStates = {}, reviewLog = [], fresh = [], lockedCount = 0;
-let earStates = {}, doneDays = {}, hintOpens = {}, listenStates = {};
+let earStates = {}, doneDays = {}, hintOpens = {}, listenStates = {}, readingStates = {};
 let queue = [], current = null, revealed = false, writeError = null, earLoadError = null;
 const dueCards = [];
 let vocabLight = false;
@@ -116,6 +116,8 @@ export { cardRetired, RETIRE_IVL, stats, cardStates };
 export { schedule, fuzzDays, FUZZ };
 export { renderEpisode, renderListenList, questionsHtml, newStories, listenStates };
 export const setEpisodes = e => { EPISODES = e; };
+export { renderStory, renderReadList, storyHtml, wordPopHtml, readingStates };
+export const setStories = s => { STORIES = s; };
 export { unlocked, UNLOCK_REPS, extraPlan };
 export { typicalSession, catchUp, CATCHUP_RATIO, reviewLog };
 export const forgetPreloads = () => { preloaded.clear(); asked.length = 0; };
@@ -402,6 +404,37 @@ try {
         "with everything heard, listening drops to a quiet link");
   for (const e of eps) delete m.listenStates[e.id];
   m.setEpisodes([]);
+
+  // ── reading ─────────────────────────────────────────────────────
+  // Against the real read/stories.json, like listening.
+  const sts = JSON.parse(fs.readFileSync(path.join(ROOT, "read/stories.json"), "utf8")).stories;
+  check(sts.length > 0 && sts.every(st => st.questions.length && st.questions.every(q =>
+          q.options.length >= 2 && q.answer >= 0 && q.answer < q.options.length)),
+        "every reading story has questions with answers inside their options");
+  check(sts.every(st => st.paras.every(p => p.every(([, h]) => !h || (st.words[h] && st.words[h].gloss)))),
+        "every tappable word has a gloss");
+  check(sts.every(st => Object.values(st.words).every(w => !w.note || (m.NOTES[w.note] && m.NOTES[w.note].reviewed))),
+        "every word linked to a card links to an approved one");
+  m.setStories(sts);
+  m.renderLanding();
+  check(m.state().html.includes("go-read") && m.state().html.includes("2 new stories"),
+        "landing offers new reading stories as a tile");
+  m.renderStory(sts[0].id);
+  const rd0 = m.state().html;
+  check(rd0.includes("lq-gate") && rd0.includes('class="rw"') && !rd0.includes("lq-opt"),
+        "a story opens tappable, with its questions behind I've read it");
+  const nTaps = sts[0].paras.flat().filter(([, h]) => h).length;
+  check((m.storyHtml(sts[0]).match(/class="rw"/g) || []).length === nTaps,
+        "one tappable span per word, names left plain");
+  const carded = Object.keys(sts[0].words).find(h => sts[0].words[h].note && m.NOTES[sts[0].words[h].note].image);
+  const pop = m.wordPopHtml(sts[0], carded);
+  check(pop.includes("<img") && pop.includes(sts[0].words[carded].gloss),
+        "a tapped carded word shows its picture and gloss");
+  for (const st of sts) m.readingStates[st.id] = { read: 1, done: 1 };
+  m.renderLanding();
+  check(m.state().html.includes("Reading — all stories"), "with everything done, reading drops to a quiet link");
+  for (const st of sts) delete m.readingStates[st.id];
+  m.setStories([]);
   delete m.state().doneDays[day];
   // Preloading: the cards behind the current one must already have been
   // requested, or every flip waits on a round trip it could have started.

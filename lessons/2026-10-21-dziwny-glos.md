@@ -121,3 +121,8 @@ use kawa/ryba, dom/stół, kot/pies, mleko/okno so nothing is copyable.
 
 New in the exercises, glossed: ciemno, nieść, od, komputer and pracować
 (both carded, now priority).
+
+## In the app (added 2026-10-24)
+
+On the Reading page with eight comprehension questions written for it, in the
+listening format; they are in the story file's `--- pytania ---` section.

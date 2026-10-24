@@ -46,7 +46,9 @@ tools/deckio.py     shared loading, saving, attribution, out_dir (not runnable)
 tools/ear_split.py  cuts one long take into ear/raw/<word>/; prints the read-aloud sheet
 tools/ear_build.py  ear/raw → ear/audio + ear/manifest.json (trim, level, encode)
 tools/listen.py     listening episodes: story file → listen/<slug>.mp3 + listen/episodes.json
+tools/reading.py    reading stories: story files → read/stories.json
 listen/             episode mp3s and episodes.json — generated, do not edit
+read/stories.json   reading stories for the app — generated, do not edit
 out/                sheets, PDFs, review/progress pages, image inbox — gitignored
 ```
 
@@ -510,6 +512,32 @@ audio, not the words.
   and a greyed, untappable tile would hide them.
 - ElevenLabs free tier is 10,000 characters a month, shared with card
   sentences; a one-minute episode is about 500.
+
+## Reading stories
+
+Added 2026-10-24. Every homework or lesson story from 2026-10-21 on is also
+on a **Reading** page in the app; earlier ones stay paper-only, by request.
+So **every new story gets a `--- pytania ---` section** (same format as
+listening, every wrong option taken from the story) and then
+`python3 tools/reading.py`. The tool includes a story only when it has
+questions, so a story without them silently stays off the app.
+
+- **Any word can be tapped**: a sheet at the bottom shows the headword, its
+  gloss, and the card's picture and recording when it has an approved card.
+  The token → headword mapping is the storycheck lemma block, so the app
+  needs no Polish morphology. Names (`-`) are not tappable. Words with no
+  card take their gloss from vocab.csv's `notes` column or `FUNCTION_GLOSS`
+  in the tool; a headword with no gloss anywhere fails the build.
+- **Taps are counted per headword** (`reading: {"<id>": {read, first, done,
+  taps}}`, outside the log like `listen`). The words he looks up are the
+  words he does not know, and no card score shows that; `progress.py` lists
+  them per story.
+- **Questions wait behind "I've read it"**, as listening's wait for the end
+  of the audio, and behave the same: retry until right, first answer kept.
+  The story stays above them.
+- The story on screen ends at the questions or at the first paragraph with
+  a `(…)` gap: lesson files carry their gap exercises after the text, and
+  those are for paper.
 
 ## Ear training
 
