@@ -8400,20 +8400,17 @@
     "source": "generated"
   },
   "media/img/corka.webp": {
-    "bytes": 30864,
-    "check": {
-      "model": "gemini-flash-latest",
-      "problem": "",
-      "verdict": "ok",
-      "why": ""
-    },
-    "fingerprint": "8a4479acd0bec443",
-    "model": "gemini-2.5-flash-image",
-    "original_size": "1024x1024",
+    "author": "supplied by user",
+    "bytes": 44848,
+    "fingerprint": "307725480f8c73e3",
+    "licence": "Pexels licence",
+    "note": "Pexels photo 3764491 found by the teacher, cropped square, red arrow drawn on in ffmpeg",
+    "original": "corka-arrow.png",
+    "original_size": "800x800",
+    "page": "https://www.pexels.com/photo/3764491/",
     "process_version": 1,
-    "prompt": "A mother sitting on the edge of a bed reading a book to her young daughter at bedtime. No text or lettering. Square image.",
     "size": "800x800",
-    "source": "generated"
+    "source": "supplied"
   },
   "media/img/cos.webp": {
     "bytes": 42404,
@@ -9633,20 +9630,16 @@
     "source": "generated"
   },
   "media/img/klasc.webp": {
-    "bytes": 30166,
-    "check": {
-      "model": "gemini-flash-latest",
-      "problem": "",
-      "verdict": "ok",
-      "why": ""
-    },
-    "fingerprint": "29a1f3cb35e608dd",
-    "model": "gemini-2.5-flash-image",
-    "original_size": "1024x1024",
+    "author": "supplied by user",
+    "bytes": 20266,
+    "fingerprint": "ae0ae41ad43ff13e",
+    "licence": "n/a",
+    "note": "made by the teacher",
+    "original": "klasc-user.png",
+    "original_size": "1254x1254",
     "process_version": 1,
-    "prompt": "A house key lying flat on a wooden table, a hand just above it with the fingers opening, having just let go of it. Close-up. No text or lettering. Square image.",
     "size": "800x800",
-    "source": "generated"
+    "source": "supplied"
   },
   "media/img/klucz.webp": {
     "bytes": 32378,
@@ -9681,20 +9674,16 @@
     "source": "generated"
   },
   "media/img/kochac.webp": {
-    "bytes": 110674,
-    "check": {
-      "model": "gemini-flash-latest",
-      "problem": "",
-      "verdict": "ok",
-      "why": ""
-    },
-    "fingerprint": "00a260e3175fb3fb",
-    "model": "gemini-2.5-flash-image",
-    "original_size": "1024x1024",
+    "author": "supplied by user",
+    "bytes": 105900,
+    "fingerprint": "90ad2c782dc167ba",
+    "licence": "n/a",
+    "note": "generated image with a red heart drawn on in ffmpeg",
+    "original": "kochac-heart.png",
+    "original_size": "800x800",
     "process_version": 1,
-    "prompt": "An elderly couple sitting on a park bench holding hands and smiling at each other. No text or lettering. Square image.",
     "size": "800x800",
-    "source": "generated"
+    "source": "supplied"
   },
   "media/img/kolacja.webp": {
     "bytes": 22866,
@@ -11011,20 +11000,16 @@
     "source": "generated"
   },
   "media/img/okulary.webp": {
-    "bytes": 42748,
-    "check": {
-      "model": "gemini-flash-latest",
-      "problem": "",
-      "verdict": "ok",
-      "why": ""
-    },
-    "fingerprint": "2c1fb86d375759f6",
-    "model": "gemini-2.5-flash-image",
-    "original_size": "1024x1024",
+    "author": "supplied by user",
+    "bytes": 68164,
+    "fingerprint": "8f0e1d172e0b41bf",
+    "licence": "n/a",
+    "note": "made by the teacher",
+    "original": "okulary-user.png",
+    "original_size": "1254x1254",
     "process_version": 1,
-    "prompt": "A person squinting and patting their pockets, searching, while their glasses are pushed up on top of their head. No text or lettering. Square image.",
     "size": "800x800",
-    "source": "generated"
+    "source": "supplied"
   },
   "media/img/osiem.webp": {
     "bytes": 53778,
@@ -11406,20 +11391,16 @@
     "source": "generated"
   },
   "media/img/plakac.webp": {
-    "bytes": 19818,
-    "check": {
-      "model": "gemini-flash-latest",
-      "problem": "",
-      "verdict": "flag",
-      "why": "contains text or lettering"
-    },
-    "fingerprint": "3933b7f69d6bda26",
-    "model": "gemini-2.5-flash-image",
-    "original_size": "1024x1024",
+    "author": "supplied by user",
+    "bytes": 45468,
+    "fingerprint": "5010b4ba548aed6e",
+    "licence": "n/a",
+    "note": "made by the teacher",
+    "original": "plakac-user.png",
+    "original_size": "1254x1254",
     "process_version": 1,
-    "prompt": "A man sitting in a dark cinema with tears on his face, holding a tissue, lit by the screen. No text or lettering. Square image.",
     "size": "800x800",
-    "source": "generated"
+    "source": "supplied"
   },
   "media/img/pociag.webp": {
     "bytes": 152644,
