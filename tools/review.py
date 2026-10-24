@@ -56,7 +56,7 @@ def shown_hash(n, manifest):
     identity of each media file. Two notes with the same text but a different
     recording must not hash alike, so the manifest fingerprints go in."""
     s = n.get("sentence") or {}
-    parts = [n.get("word", ""), n.get("gloss", ""), n.get("note") or "",
+    parts = [n.get("word", ""), n.get("gloss", ""), n.get("note") or "", n.get("parts") or "",
              s.get("pl", ""), s.get("en", ""), s.get("gap", ""),
              s.get("answer", "")]
     for rel in (n.get("image"), n.get("audio"), s.get("audio")):
@@ -170,7 +170,7 @@ def build(notes, manifest, dest, name="review.html", write_state=True,
   <div class="pl">{esc(s.get('pl',''))}</div>
   <div class="en">{esc(s.get('en',''))}</div>
   <div class="gap">gap: {esc(s.get('gap',''))} &nbsp;→&nbsp; <b>{esc(s.get('answer',''))}</b>
-</div>{(extra or {}).get(n["id"], "")}
+</div>{f'<div class="en">note: {esc(n["note"])}</div>' if n.get("note") else ""}{f'<div class="en">parts: {esc(n["parts"])}</div>' if n.get("parts") else ""}{(extra or {}).get(n["id"], "")}
   </div>
 </div>'''
 

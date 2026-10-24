@@ -9084,6 +9084,7 @@
       "pos": "adverb",
       "ipa": "t͡sɔˈd͡ʑɛɲːɛ",
       "note": "built on dzień — this is the habit, and it is what chodzić wants",
+      "parts": "co + dzień: 'every day'",
       "image": "media/img/codziennie.webp",
       "image_alt": "every day",
       "image_basis": "sentence",
@@ -10048,6 +10049,7 @@
       "pos": "interjection",
       "ipa": "pɔˈprɔʂɛ",
       "note": "asking for something in a shop or café; plain please is proszę",
+      "parts": "po + proszę",
       "image": "media/img/poprosze.webp",
       "image_alt": "ordering at a café counter",
       "image_basis": "sentence",
@@ -10181,6 +10183,7 @@
       "pos": "adverb",
       "ipa": "ˈɲiɡd͡ʑɛ",
       "note": "about place: gdzie is inside it. Not nigdy, which is about time. Always with nie",
+      "parts": "ni + gdzie: 'not where'",
       "image": "media/img/nigdzie.webp",
       "image_alt": "someone searching under sofa cushions",
       "image_basis": "sentence",
@@ -10885,6 +10888,7 @@
       "pos": "verb",
       "ipa": "pʂɨˈxɔd͡ʑit͡ɕ",
       "note": "coming to a place; the opposite is wychodzić. Coming back is wracać",
+      "parts": "przy- (arriving) + chodzić",
       "image": "media/img/przychodzic.webp",
       "image_alt": "a young man arriving at a front door in the evening",
       "image_basis": "sentence",
@@ -10919,6 +10923,7 @@
       "pos": "verb",
       "ipa": "vɨˈxɔd͡ʑit͡ɕ",
       "note": "going out of a place; the opposite is przychodzić. Leaving a thing behind is zostawiać",
+      "parts": "wy- (out) + chodzić",
       "image": "media/img/wychodzic.webp",
       "image_alt": "a person walking out of an office building at dusk",
       "image_basis": "sentence",
@@ -11503,6 +11508,7 @@
       "pos": "adverb",
       "ipa": "dlaˈt͡ʂɛɡɔ",
       "note": null,
+      "parts": "dla + czego: 'for what'",
       "image": "media/img/dlaczego.webp",
       "image_alt": "a dog asleep in a bed and a puzzled owner",
       "image_basis": "sentence",
@@ -11768,6 +11774,599 @@
       ],
       "reviewed": true,
       "priority": true
+    },
+    {
+      "id": "zdjecie",
+      "word": "zdjęcie",
+      "gloss": "photo",
+      "pos": "noun",
+      "ipa": "ˈzdjɛɲt͡ɕɛ",
+      "note": null,
+      "image": "media/img/zdjecie.webp",
+      "image_alt": "someone photographing a dog with a phone",
+      "image_basis": "sentence",
+      "image_prompt": "A person crouching down to take a photo of a dog with a phone. No text or lettering. Square image.",
+      "audio": "media/audio/zdjecie.mp3",
+      "sentence": {
+        "pl": "Robię zdjęcie psa.",
+        "en": "I'm taking a photo of the dog.",
+        "gap": "Robię ___ psa.",
+        "answer": "zdjęcie",
+        "answer_lemma": "zdjęcie",
+        "audio": "media/audio/zdjecie__sentence.mp3",
+        "lemmas": [
+          "robić",
+          "zdjęcie",
+          "pies"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "zapominac",
+      "word": "zapominać",
+      "gloss": "to forget",
+      "pos": "verb",
+      "ipa": "zapɔˈminat͡ɕ",
+      "note": "the opposite of pamiętać",
+      "image": "media/img/zapominac.webp",
+      "image_alt": "a person soaked in the rain, hand to forehead",
+      "image_basis": "sentence",
+      "image_prompt": "A person standing in heavy rain without an umbrella, soaking wet, slapping a hand to their forehead. No text or lettering. Square image.",
+      "audio": "media/audio/zapominac.mp3",
+      "sentence": {
+        "pl": "Zawsze zapominam parasola.",
+        "en": "I always forget my umbrella.",
+        "gap": "Zawsze ___ parasola.",
+        "answer": "zapominam",
+        "answer_lemma": "zapominać",
+        "audio": "media/audio/zapominac__sentence.mp3",
+        "lemmas": [
+          "zawsze",
+          "zapominać",
+          "parasol"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "klasc",
+      "word": "kłaść",
+      "gloss": "to put (down)",
+      "pos": "verb",
+      "ipa": "kwaɕt͡ɕ",
+      "note": null,
+      "image": "media/img/klasc.webp",
+      "image_alt": "a hand putting a key down on a table",
+      "image_basis": "sentence",
+      "image_prompt": "A house key lying flat on a wooden table, a hand just above it with the fingers opening, having just let go of it. Close-up. No text or lettering. Square image.",
+      "audio": "media/audio/klasc.mp3",
+      "sentence": {
+        "pl": "Kładę klucz na stole.",
+        "en": "I put the key on the table.",
+        "gap": "___ klucz na stole.",
+        "answer": "Kładę",
+        "answer_lemma": "kłaść",
+        "audio": "media/audio/klasc__sentence.mp3",
+        "lemmas": [
+          "kłaść",
+          "klucz",
+          "na",
+          "stół"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "trzymac",
+      "word": "trzymać",
+      "gloss": "to hold",
+      "pos": "verb",
+      "ipa": "ˈtʂɨmat͡ɕ",
+      "note": null,
+      "image": "media/img/trzymac.webp",
+      "image_alt": "a woman holding a takeaway coffee in both hands",
+      "image_basis": "sentence",
+      "image_prompt": "A woman holding a takeaway coffee cup in both hands, outdoors on a cold morning. No text or lettering. Square image.",
+      "audio": "media/audio/trzymac.mp3",
+      "sentence": {
+        "pl": "Ona trzyma kawę.",
+        "en": "She's holding a coffee.",
+        "gap": "Ona ___ kawę.",
+        "answer": "trzyma",
+        "answer_lemma": "trzymać",
+        "audio": "media/audio/trzymac__sentence.mp3",
+        "lemmas": [
+          "ona",
+          "trzymać",
+          "kawa"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "dostac",
+      "word": "dostać",
+      "gloss": "to get, receive",
+      "pos": "verb",
+      "ipa": "ˈdɔstat͡ɕ",
+      "note": null,
+      "image": "media/img/dostac.webp",
+      "image_alt": "a person taking a letter from the postman",
+      "image_basis": "sentence",
+      "image_prompt": "A person at their front door taking a letter from a postman, smiling. No text or lettering. Square image.",
+      "audio": "media/audio/dostac.mp3",
+      "sentence": {
+        "pl": "Dzisiaj chcę dostać list.",
+        "en": "Today I want to get a letter.",
+        "gap": "Dzisiaj chcę ___ list.",
+        "answer": "dostać",
+        "answer_lemma": "dostać",
+        "audio": "media/audio/dostac__sentence.mp3",
+        "lemmas": [
+          "dzisiaj",
+          "chcieć",
+          "dostać",
+          "list"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "plakac",
+      "word": "płakać",
+      "gloss": "to cry",
+      "pos": "verb",
+      "ipa": "ˈpwakat͡ɕ",
+      "note": null,
+      "image": "media/img/plakac.webp",
+      "image_alt": "a man crying in a dark cinema",
+      "image_basis": "sentence",
+      "image_prompt": "A man sitting in a dark cinema with tears on his face, holding a tissue, lit by the screen. No text or lettering. Square image.",
+      "audio": "media/audio/plakac.mp3",
+      "sentence": {
+        "pl": "Mężczyzna płacze w kinie.",
+        "en": "A man is crying at the cinema.",
+        "gap": "Mężczyzna ___ w kinie.",
+        "answer": "płacze",
+        "answer_lemma": "płakać",
+        "audio": "media/audio/plakac__sentence.mp3",
+        "lemmas": [
+          "mężczyzna",
+          "płakać",
+          "w",
+          "kino"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "kochac",
+      "word": "kochać",
+      "gloss": "to love",
+      "pos": "verb",
+      "ipa": "ˈkɔxat͡ɕ",
+      "note": "stronger than lubić",
+      "image": "media/img/kochac.webp",
+      "image_alt": "an elderly couple holding hands on a bench",
+      "image_basis": "sentence",
+      "image_prompt": "An elderly couple sitting on a park bench holding hands and smiling at each other. No text or lettering. Square image.",
+      "audio": "media/audio/kochac.mp3",
+      "sentence": {
+        "pl": "Babcia kocha dziadka.",
+        "en": "Grandma loves Grandpa.",
+        "gap": "Babcia ___ dziadka.",
+        "answer": "kocha",
+        "answer_lemma": "kochać",
+        "audio": "media/audio/kochac__sentence.mp3",
+        "lemmas": [
+          "babcia",
+          "kochać",
+          "dziadek"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "pusty",
+      "word": "pusty",
+      "gloss": "empty",
+      "pos": "adjective",
+      "ipa": "ˈpustɨ",
+      "note": null,
+      "image": "media/img/pusty.webp",
+      "image_alt": "an open fridge with empty shelves",
+      "image_basis": "sentence",
+      "image_prompt": "An open fridge seen straight on, its shelves completely empty. No text or lettering. Square image.",
+      "audio": "media/audio/pusty.mp3",
+      "sentence": {
+        "pl": "Lodówka jest pusta.",
+        "en": "The fridge is empty.",
+        "gap": "Lodówka jest ___.",
+        "answer": "pusta",
+        "answer_lemma": "pusty",
+        "audio": "media/audio/pusty__sentence.mp3",
+        "lemmas": [
+          "lodówka",
+          "być",
+          "pusty"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "pelny",
+      "word": "pełny",
+      "gloss": "full",
+      "pos": "adjective",
+      "ipa": "ˈpɛwnɨ",
+      "note": null,
+      "image": "media/img/pelny.webp",
+      "image_alt": "a bus packed with standing passengers",
+      "image_basis": "sentence",
+      "image_prompt": "The inside of a city bus packed full of standing passengers holding the rails. No text or lettering. Square image.",
+      "audio": "media/audio/pelny.mp3",
+      "sentence": {
+        "pl": "Autobus jest pełny.",
+        "en": "The bus is full.",
+        "gap": "Autobus jest ___.",
+        "answer": "pełny",
+        "answer_lemma": "pełny",
+        "audio": "media/audio/pelny__sentence.mp3",
+        "lemmas": [
+          "autobus",
+          "być",
+          "pełny"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "otwarty",
+      "word": "otwarty",
+      "gloss": "open",
+      "pos": "adjective",
+      "ipa": "ɔtˈfartɨ",
+      "note": null,
+      "image": "media/img/otwarty.webp",
+      "image_alt": "a front door standing wide open",
+      "image_basis": "sentence",
+      "image_prompt": "A front door standing wide open, sunlight streaming in onto the hallway floor. No text or lettering. Square image.",
+      "audio": "media/audio/otwarty.mp3",
+      "sentence": {
+        "pl": "Drzwi są otwarte.",
+        "en": "The door is open.",
+        "gap": "Drzwi są ___.",
+        "answer": "otwarte",
+        "answer_lemma": "otwarty",
+        "audio": "media/audio/otwarty__sentence.mp3",
+        "lemmas": [
+          "drzwi",
+          "być",
+          "otwarty"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "zamkniety",
+      "word": "zamknięty",
+      "gloss": "closed",
+      "pos": "adjective",
+      "ipa": "zamˈkɲɛntɨ",
+      "note": null,
+      "image": "media/img/zamkniety.webp",
+      "image_alt": "a shop with its shutter down and a disappointed customer",
+      "image_basis": "sentence",
+      "image_prompt": "A small shop with its metal shutter pulled down, a disappointed person standing outside with an empty bag. No text or lettering. Square image.",
+      "audio": "media/audio/zamkniety.mp3",
+      "sentence": {
+        "pl": "W niedzielę sklep jest zamknięty.",
+        "en": "On Sunday the shop is closed.",
+        "gap": "W niedzielę sklep jest ___.",
+        "answer": "zamknięty",
+        "answer_lemma": "zamknięty",
+        "audio": "media/audio/zamkniety__sentence.mp3",
+        "lemmas": [
+          "w",
+          "niedziela",
+          "sklep",
+          "być",
+          "zamknięty"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "chory",
+      "word": "chory",
+      "gloss": "ill, sick",
+      "pos": "adjective",
+      "ipa": "ˈxɔrɨ",
+      "note": null,
+      "image": "media/img/chory.webp",
+      "image_alt": "a sick man in bed with a thermometer",
+      "image_basis": "sentence",
+      "image_prompt": "A man lying in bed with a thermometer in his mouth, looking unwell, tissues on the bedside table. No text or lettering. Square image.",
+      "audio": "media/audio/chory.mp3",
+      "sentence": {
+        "pl": "Jestem chory. Muszę iść do lekarza.",
+        "en": "I'm ill. I have to go to the doctor.",
+        "gap": "Jestem ___. Muszę iść do lekarza.",
+        "answer": "chory",
+        "answer_lemma": "chory",
+        "audio": "media/audio/chory__sentence.mp3",
+        "lemmas": [
+          "być",
+          "chory",
+          "musieć",
+          "iść",
+          "do",
+          "lekarz"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "ile",
+      "word": "ile",
+      "gloss": "how much, how many",
+      "pos": "adverb",
+      "ipa": "ˈilɛ",
+      "note": null,
+      "image": "media/img/ile.webp",
+      "image_alt": "a customer at a bakery counter pointing at a loaf",
+      "image_basis": "sentence",
+      "image_prompt": "A customer at a bakery counter pointing at a loaf of bread, asking the baker. No text or lettering. Square image.",
+      "audio": "media/audio/ile.mp3",
+      "sentence": {
+        "pl": "Ile kosztuje chleb?",
+        "en": "How much is the bread?",
+        "gap": "___ kosztuje chleb?",
+        "answer": "Ile",
+        "answer_lemma": "ile",
+        "audio": "media/audio/ile__sentence.mp3",
+        "lemmas": [
+          "ile",
+          "kosztować",
+          "chleb"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "kosztowac",
+      "word": "kosztować",
+      "gloss": "to cost",
+      "pos": "verb",
+      "ipa": "kɔʂˈtɔvat͡ɕ",
+      "note": null,
+      "image": "media/img/kosztowac.webp",
+      "image_alt": "a woman shocked by a dress's price tag",
+      "image_basis": "sentence",
+      "image_prompt": "A woman in a clothes shop holding up the price tag of a dress, looking shocked. No words, only the numbers on the tag. Square image.",
+      "audio": "media/audio/kosztowac.mp3",
+      "sentence": {
+        "pl": "Ta sukienka dużo kosztuje.",
+        "en": "This dress costs a lot.",
+        "gap": "Ta sukienka dużo ___.",
+        "answer": "kosztuje",
+        "answer_lemma": "kosztować",
+        "audio": "media/audio/kosztowac__sentence.mp3",
+        "lemmas": [
+          "ten",
+          "sukienka",
+          "dużo",
+          "kosztować"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "naprawde",
+      "word": "naprawdę",
+      "gloss": "really",
+      "pos": "adverb",
+      "ipa": "naˈpravdɛ",
+      "note": null,
+      "parts": "na + prawda (truth): 'in truth'",
+      "image": "media/img/naprawde.webp",
+      "image_alt": "someone tasting soup with delight",
+      "image_basis": "sentence",
+      "image_prompt": "A person tasting soup from a spoon at the table, eyes closed in delight. No text or lettering. Square image.",
+      "audio": "media/audio/naprawde.mp3",
+      "sentence": {
+        "pl": "To jest naprawdę dobra zupa.",
+        "en": "This is really good soup.",
+        "gap": "To jest ___ dobra zupa.",
+        "answer": "naprawdę",
+        "answer_lemma": "naprawdę",
+        "audio": "media/audio/naprawde__sentence.mp3",
+        "lemmas": [
+          "to",
+          "być",
+          "naprawdę",
+          "dobry",
+          "zupa"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "okulary",
+      "word": "okulary",
+      "gloss": "glasses",
+      "pos": "noun",
+      "ipa": "ɔkuˈlarɨ",
+      "note": null,
+      "image": "media/img/okulary.webp",
+      "image_alt": "someone searching for the glasses on their head",
+      "image_basis": "sentence",
+      "image_prompt": "A person squinting and patting their pockets, searching, while their glasses are pushed up on top of their head. No text or lettering. Square image.",
+      "audio": "media/audio/okulary.mp3",
+      "sentence": {
+        "pl": "Nie mogę znaleźć okularów.",
+        "en": "I can't find my glasses.",
+        "gap": "Nie mogę znaleźć ___.",
+        "answer": "okularów",
+        "answer_lemma": "okulary",
+        "audio": "media/audio/okulary__sentence.mp3",
+        "lemmas": [
+          "nie",
+          "móc",
+          "znaleźć",
+          "okulary"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "syn",
+      "word": "syn",
+      "gloss": "son",
+      "pos": "noun",
+      "ipa": "sɨn",
+      "note": null,
+      "image": "media/img/syn.webp",
+      "image_alt": "a father and young son playing football",
+      "image_basis": "sentence",
+      "image_prompt": "A father and his young son kicking a football to each other in a garden. No text or lettering. Square image.",
+      "audio": "media/audio/syn.mp3",
+      "sentence": {
+        "pl": "Ojciec i syn grają w piłkę.",
+        "en": "A father and son are playing football.",
+        "gap": "Ojciec i ___ grają w piłkę.",
+        "answer": "syn",
+        "answer_lemma": "syn",
+        "audio": "media/audio/syn__sentence.mp3",
+        "lemmas": [
+          "ojciec",
+          "i",
+          "syn",
+          "grać",
+          "w",
+          "piłka"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
+    },
+    {
+      "id": "corka",
+      "word": "córka",
+      "gloss": "daughter",
+      "pos": "noun",
+      "ipa": "ˈt͡surka",
+      "note": null,
+      "image": "media/img/corka.webp",
+      "image_alt": "a mother reading to her daughter at bedtime",
+      "image_basis": "sentence",
+      "image_prompt": "A mother sitting on the edge of a bed reading a book to her young daughter at bedtime. No text or lettering. Square image.",
+      "audio": "media/audio/corka.mp3",
+      "sentence": {
+        "pl": "Matka czyta córce książkę.",
+        "en": "A mother is reading her daughter a book.",
+        "gap": "Matka czyta ___ książkę.",
+        "answer": "córce",
+        "answer_lemma": "córka",
+        "audio": "media/audio/corka__sentence.mp3",
+        "lemmas": [
+          "matka",
+          "czytać",
+          "córka",
+          "książka"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false
     }
   ]
 }

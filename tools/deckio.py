@@ -11,7 +11,7 @@ NOTES_PATH = ROOT / "deck/notes.json"
 MANIFEST_PATH = ROOT / "media/manifest.json"
 ATTRIB_PATH = ROOT / "media/ATTRIBUTION.md"
 
-KEY_ORDER = ["id", "word", "gloss", "pos", "ipa", "note", "image", "image_alt",
+KEY_ORDER = ["id", "word", "gloss", "pos", "ipa", "note", "parts", "image", "image_alt",
              "image_basis", "image_prompt", "audio", "sentence", "cards", "reviewed"]
 SENT_KEY_ORDER = ["pl", "en", "gap", "answer", "answer_lemma", "audio"]
 

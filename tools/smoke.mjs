@@ -168,6 +168,16 @@ try {
     return want.length > 0 &&
       hay.some((_, i) => want.every((w, j) => hay[i + j] === w));
   };
+  // parts (na + prawda) are back-only on every type, and must reach the back.
+  for (const n of deck.notes.filter(n => n.parts)) {
+    for (const t of n.cards || []) {
+      check(!m.face(`${n.id}__${t}`, "front").includes('class="parts"'),
+            `${n.id} ${t} front hides parts`);
+      if (t !== "form")
+        check(m.face(`${n.id}__${t}`, "back").includes('class="parts"'),
+              `${n.id} ${t} back shows parts`);
+    }
+  }
   for (const n of deck.notes) {
     // Skipped where the English gloss IS the Polish word (park, park) — the
     // card is fine, the string check simply cannot tell them apart.

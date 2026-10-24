@@ -67,6 +67,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--sans);padding:1.
 .sent-en{font-size:.85rem;color:var(--dim);margin-top:.35rem}
 .gram{margin-top:1rem;padding-top:.75rem;border-top:1px solid var(--line);width:100%;font-family:var(--mono);font-size:.68rem;letter-spacing:.06em;color:var(--dim)}
 .note{margin-top:.5rem;font-size:.8rem;color:var(--dim);font-style:italic}
+.parts{margin-top:.5rem;font-size:.85rem;color:var(--dim)}
 .play{background:none;border:1px solid var(--line);border-radius:50%;width:2.5rem;height:2.5rem;font-size:1rem;cursor:pointer;color:var(--ink)}
 .play:hover{border-color:var(--dim)}
 
@@ -1285,6 +1286,9 @@ const pieces = {
   image:   n => n.image
     ? `<img src="${esc(n.image)}" alt="${esc(n.image_alt || "")}">` : "",
   note:    n => n.note ? `<div class="note">${esc(n.note)}</div>` : "",
+  // How the word is built (na + prawda). Backs only, every type: on any
+  // front it would hand over the meaning, the word, or its spelling.
+  parts:   n => n.parts ? `<div class="parts">${esc(n.parts)}</div>` : "",
   audio:   n => playBtn(n.audio, `play ${n.word}`),
   sentenceEn: n => (n.sentence && n.sentence.en)
     ? `<div class="sent-en">${esc(n.sentence.en)}</div>` : "",
@@ -1308,15 +1312,15 @@ const LAYOUT = {
   },
   recognition: {
     front: ["word", "audio", "ipa"],
-    back:  ["word", "audio", "ipa", "gloss", "image", "sentence", "note"],
+    back:  ["word", "audio", "ipa", "gloss", "image", "sentence", "note", "parts"],
   },
   production: {
     front: ["image", "gloss", "note", "gapped"],
-    back:  ["word", "audio", "ipa", "image", "gloss", "sentence", "note"],
+    back:  ["word", "audio", "ipa", "image", "gloss", "sentence", "note", "parts"],
   },
   listening: {
     front: ["audioOnly"],
-    back:  ["word", "audio", "ipa", "gloss", "image", "sentence", "note"],
+    back:  ["word", "audio", "ipa", "gloss", "image", "sentence", "note", "parts"],
   },
 };
 

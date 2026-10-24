@@ -59,6 +59,7 @@ data; they do not build the app. Keep `index.html` a single static file.
 { "id": "kot",              // == a note_id in vocab.csv, [a-z0-9_]+
   "word": "kot", "gloss": "cat", "pos": "noun", "ipa": "kɔt",
   "note": null,             // English, short, only when it earns its place
+  "parts": "na + prawda (truth): 'in truth'",  // optional; how the word is built
   "image": "media/img/kot.webp",  // omit the key until the file exists
   "image_alt": "a cat",           // required whenever image is set
   "audio": "media/audio/kot.mp3", // omit the key until the file exists
@@ -450,6 +451,18 @@ notes`. `status` is `queued` → `known` → `carded`.
   on a fair cue (`włączyć`, `wysoki`, `ciężki`) is memory or interference,
   and removing the card only hides it. The question is whether the front is
   answerable, never whether he is answering it.
+- **`parts` says how a word is built, on the back of every card only.**
+  `naprawdę` is *na + prawda*, `wychodzić` is *wy- (out) + chodzić*. Added
+  2026-10-24 at the user's suggestion. It is a separate field rather than
+  part of `note` because `note` sits on the production front, and parts
+  would give the game away on any front: the meaning on recognition, the
+  word on production, the spelling on listening. `smoke.mjs` asserts it is
+  on no front and on every back.
+
+  Only where the split is transparent and the parts are words he knows or
+  can take in at a glance. A strained etymology is worse than none. Prefixes
+  are where it pays most, because they are a system: once *wy-* means out,
+  *wynosić* comes nearly free.
 - **Grammar words don't get cards.** `deck/vocab.csv` marks prepositions,
   conjunctions and similar `flashcard: no`. They still count as known and
   stay in the sentence allowlist — `na` is learned through the case it
