@@ -435,7 +435,8 @@ notes`. `status` is `queued` → `known` → `carded`.
   **The same applies to a word with no stable English cue.** `już` is
   "already" in one sentence and "right away" in the next (`Już idę!`), and
   English "already" is often not `już` at all — so it has recognition and
-  listening only (2026-10-24, the user's call). The test: would the English
+  listening only (2026-10-24, the user's call). `chyba` went the same way the
+  same day: "probably" is *prawdopodobnie* and "I think" is *myślę*. The test: would the English
   gloss alone make a fair production front? Particles and discourse words
   often fail it even when they have no rival in the deck.
 
