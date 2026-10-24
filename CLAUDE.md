@@ -438,6 +438,17 @@ notes`. `status` is `queued` → `known` → `carded`.
   listening only (2026-10-24, the user's call). The test: would the English
   gloss alone make a fair production front? Particles and discourse words
   often fail it even when they have no rival in the deck.
+
+  **Standing rule (asked 2026-10-24): every word proposed for carding is put
+  to that test, and the proposal says which card types each word gets.** Not
+  a footnote for the odd case — a line per batch, naming any word that loses
+  production and why. Both failures count: two Polish answers to one gloss,
+  and one Polish word with no reliable English cue.
+
+  **Do not drop production because a card is hard.** A low production score
+  on a fair cue (`włączyć`, `wysoki`, `ciężki`) is memory or interference,
+  and removing the card only hides it. The question is whether the front is
+  answerable, never whether he is answering it.
 - **Grammar words don't get cards.** `deck/vocab.csv` marks prepositions,
   conjunctions and similar `flashcard: no`. They still count as known and
   stay in the sentence allowlist — `na` is learned through the case it
