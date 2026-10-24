@@ -431,6 +431,13 @@ notes`. `status` is `queued` → `known` → `carded`.
   The distinction is real Polish and is taught in the `note` field and in
   lessons — it is just not something a flashcard can grade. Check
   `deck/notes.json` glosses for collisions before adding a word.
+
+  **The same applies to a word with no stable English cue.** `już` is
+  "already" in one sentence and "right away" in the next (`Już idę!`), and
+  English "already" is often not `już` at all — so it has recognition and
+  listening only (2026-10-24, the user's call). The test: would the English
+  gloss alone make a fair production front? Particles and discourse words
+  often fail it even when they have no rival in the deck.
 - **Grammar words don't get cards.** `deck/vocab.csv` marks prepositions,
   conjunctions and similar `flashcard: no`. They still count as known and
   stay in the sentence allowlist — `na` is learned through the case it

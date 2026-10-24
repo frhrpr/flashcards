@@ -10878,6 +10878,897 @@
         "listening"
       ],
       "reviewed": true
+    },
+    {
+      "id": "przychodzic",
+      "word": "przychodzić",
+      "gloss": "to come, arrive",
+      "pos": "verb",
+      "ipa": "pʂɨˈxɔd͡ʑit͡ɕ",
+      "note": "coming to a place; the opposite is wychodzić. Coming back is wracać",
+      "image": "media/img/przychodzic.webp",
+      "image_alt": "a young man arriving at a front door in the evening",
+      "image_basis": "sentence",
+      "image_prompt": "A young man arriving at the open front door of a house in the evening, being greeted with a hug by the person inside. No text or lettering. Square image.",
+      "audio": "media/audio/przychodzic.mp3",
+      "sentence": {
+        "pl": "Wieczorem przychodzi mój brat.",
+        "en": "My brother comes in the evening.",
+        "gap": "Wieczorem ___ mój brat.",
+        "answer": "przychodzi",
+        "answer_lemma": "przychodzić",
+        "audio": "media/audio/przychodzic__sentence.mp3",
+        "lemmas": [
+          "wieczór",
+          "przychodzić",
+          "mój",
+          "brat"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "wychodzic",
+      "word": "wychodzić",
+      "gloss": "to go out, leave",
+      "pos": "verb",
+      "ipa": "vɨˈxɔd͡ʑit͡ɕ",
+      "note": "going out of a place; the opposite is przychodzić. Leaving a thing behind is zostawiać",
+      "image": "media/img/wychodzic.webp",
+      "image_alt": "a person walking out of an office building at dusk",
+      "image_basis": "sentence",
+      "image_prompt": "A person in a coat walking out through the glass doors of an office building at dusk, bag over the shoulder. No text or lettering. Square image.",
+      "audio": "media/audio/wychodzic.mp3",
+      "sentence": {
+        "pl": "Wieczorem wychodzę z pracy.",
+        "en": "In the evening I leave work.",
+        "gap": "Wieczorem ___ z pracy.",
+        "answer": "wychodzę",
+        "answer_lemma": "wychodzić",
+        "audio": "media/audio/wychodzic__sentence.mp3",
+        "lemmas": [
+          "wieczór",
+          "wychodzić",
+          "z",
+          "praca"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "ktos",
+      "word": "ktoś",
+      "gloss": "someone",
+      "pos": "pronoun",
+      "ipa": "ktɔɕ",
+      "note": null,
+      "image": "media/img/ktos.webp",
+      "image_alt": "a silhouette behind a frosted-glass front door",
+      "image_basis": "sentence",
+      "image_prompt": "Inside a hallway: a front door with frosted glass, the blurred silhouette of a person standing outside behind it, a cat in the hallway looking at the door. No text or lettering. Square image.",
+      "audio": "media/audio/ktos.mp3",
+      "sentence": {
+        "pl": "Ktoś dzwoni do drzwi.",
+        "en": "Someone is ringing at the door.",
+        "gap": "___ dzwoni do drzwi.",
+        "answer": "Ktoś",
+        "answer_lemma": "ktoś",
+        "audio": "media/audio/ktos__sentence.mp3",
+        "lemmas": [
+          "ktoś",
+          "dzwonić",
+          "do",
+          "drzwi"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "nic",
+      "word": "nic",
+      "gloss": "nothing",
+      "pos": "pronoun",
+      "ipa": "ɲit͡s",
+      "note": "always with nie. The opposite of coś",
+      "image": "media/img/nic.webp",
+      "image_alt": "a dog turning away from a full bowl",
+      "image_basis": "sentence",
+      "image_prompt": "A dog lying on a kitchen floor with its head turned away from a full bowl of food, refusing to eat. No text or lettering. Square image.",
+      "audio": "media/audio/nic.mp3",
+      "sentence": {
+        "pl": "Pies nic nie je.",
+        "en": "The dog isn't eating anything.",
+        "gap": "Pies ___ nie je.",
+        "answer": "nic",
+        "answer_lemma": "nic",
+        "audio": "media/audio/nic__sentence.mp3",
+        "lemmas": [
+          "pies",
+          "nic",
+          "nie",
+          "jeść"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "nagle",
+      "word": "nagle",
+      "gloss": "suddenly",
+      "pos": "adverb",
+      "ipa": "ˈnaɡlɛ",
+      "note": null,
+      "image": "media/img/nagle.webp",
+      "image_alt": "a reader startled by a phone lighting up",
+      "image_basis": "sentence",
+      "image_prompt": "A person reading a book at a desk, jumping in surprise as the phone on the desk beside them suddenly lights up. No text or lettering. Square image.",
+      "audio": "media/audio/nagle.mp3",
+      "sentence": {
+        "pl": "Nagle dzwoni telefon.",
+        "en": "Suddenly the phone rings.",
+        "gap": "___ dzwoni telefon.",
+        "answer": "Nagle",
+        "answer_lemma": "nagle",
+        "audio": "media/audio/nagle__sentence.mp3",
+        "lemmas": [
+          "nagle",
+          "dzwonić",
+          "telefon"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "razem",
+      "word": "razem",
+      "gloss": "together",
+      "pos": "adverb",
+      "ipa": "ˈrazɛm",
+      "note": null,
+      "image": "media/img/razem.webp",
+      "image_alt": "two children walking hand in hand",
+      "image_basis": "sentence",
+      "image_prompt": "Two young children with backpacks walking side by side along a pavement, holding hands. Morning. No text or lettering. Square image.",
+      "audio": "media/audio/razem.mp3",
+      "sentence": {
+        "pl": "Dzieci idą razem do szkoły.",
+        "en": "The children walk to school together.",
+        "gap": "Dzieci idą ___ do szkoły.",
+        "answer": "razem",
+        "answer_lemma": "razem",
+        "audio": "media/audio/razem__sentence.mp3",
+        "lemmas": [
+          "dziecko",
+          "iść",
+          "razem",
+          "do",
+          "szkoła"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "szczesliwy",
+      "word": "szczęśliwy",
+      "gloss": "happy",
+      "pos": "adjective",
+      "ipa": "ʂt͡ʂɛ̃ɕˈlʲivɨ",
+      "note": null,
+      "image": "media/img/szczesliwy.webp",
+      "image_alt": "a laughing child hugging a puppy",
+      "image_basis": "sentence",
+      "image_prompt": "A laughing child hugging a puppy on the grass in a garden, sunshine. No text or lettering. Square image.",
+      "audio": "media/audio/szczesliwy.mp3",
+      "sentence": {
+        "pl": "Dziecko jest bardzo szczęśliwe.",
+        "en": "The child is very happy.",
+        "gap": "Dziecko jest bardzo ___.",
+        "answer": "szczęśliwe",
+        "answer_lemma": "szczęśliwy",
+        "audio": "media/audio/szczesliwy__sentence.mp3",
+        "lemmas": [
+          "dziecko",
+          "być",
+          "bardzo",
+          "szczęśliwy"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "zmeczony",
+      "word": "zmęczony",
+      "gloss": "tired",
+      "pos": "adjective",
+      "ipa": "zmɛnˈt͡ʂɔnɨ",
+      "note": null,
+      "image": "media/img/zmeczony.webp",
+      "image_alt": "a man slumped on a sofa after work",
+      "image_basis": "sentence",
+      "image_prompt": "A man slumped on a sofa in the evening after work, eyes half closed, still in his work clothes and shoes. No text or lettering. Square image.",
+      "audio": "media/audio/zmeczony.mp3",
+      "sentence": {
+        "pl": "Wieczorem jestem bardzo zmęczony.",
+        "en": "In the evening I'm very tired.",
+        "gap": "Wieczorem jestem bardzo ___.",
+        "answer": "zmęczony",
+        "answer_lemma": "zmęczony",
+        "audio": "media/audio/zmeczony__sentence.mp3",
+        "lemmas": [
+          "wieczór",
+          "być",
+          "bardzo",
+          "zmęczony"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "bac_sie",
+      "word": "bać się",
+      "gloss": "to be afraid",
+      "pos": "verb",
+      "ipa": "ˈbat͡ɕ ɕɛ",
+      "note": null,
+      "image": "media/img/bac_sie.webp",
+      "image_alt": "a cat arching its back at a big dog",
+      "image_basis": "sentence",
+      "image_prompt": "A small cat with its back arched and fur standing up, hissing at a big friendly-looking dog. No text or lettering. Square image.",
+      "audio": "media/audio/bac_sie.mp3",
+      "sentence": {
+        "pl": "Mój kot boi się psa.",
+        "en": "My cat is afraid of the dog.",
+        "gap": "Mój kot ___ się psa.",
+        "answer": "boi",
+        "answer_lemma": "bać się",
+        "audio": "media/audio/bac_sie__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "kot",
+          "bać się",
+          "się",
+          "pies"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "cicho",
+      "word": "cicho",
+      "gloss": "quietly",
+      "pos": "adverb",
+      "ipa": "ˈt͡ɕixɔ",
+      "note": null,
+      "image": "media/img/cicho.webp",
+      "image_alt": "a woman whispering into a friend's ear",
+      "image_basis": "sentence",
+      "image_prompt": "A woman whispering into another woman's ear, one hand cupped round her mouth. No text or lettering. Square image.",
+      "audio": "media/audio/cicho.mp3",
+      "sentence": {
+        "pl": "Ona mówi bardzo cicho.",
+        "en": "She speaks very quietly.",
+        "gap": "Ona mówi bardzo ___.",
+        "answer": "cicho",
+        "answer_lemma": "cicho",
+        "audio": "media/audio/cicho__sentence.mp3",
+        "lemmas": [
+          "ona",
+          "mówić",
+          "bardzo",
+          "cicho"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "glosno",
+      "word": "głośno",
+      "gloss": "loudly",
+      "pos": "adverb",
+      "ipa": "ˈɡwɔɕnɔ",
+      "note": null,
+      "image": "media/img/glosno.webp",
+      "image_alt": "a man shouting into his phone on a balcony",
+      "image_basis": "sentence",
+      "image_prompt": "A man on a balcony shouting into his phone, while the person on the next balcony covers their ears. No text or lettering. Square image.",
+      "audio": "media/audio/glosno.mp3",
+      "sentence": {
+        "pl": "Mój sąsiad mówi bardzo głośno.",
+        "en": "My neighbour talks very loudly.",
+        "gap": "Mój sąsiad mówi bardzo ___.",
+        "answer": "głośno",
+        "answer_lemma": "głośno",
+        "audio": "media/audio/glosno__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "sąsiad",
+          "mówić",
+          "bardzo",
+          "głośno"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "pozno",
+      "word": "późno",
+      "gloss": "late",
+      "pos": "adverb",
+      "ipa": "ˈpuʑnɔ",
+      "note": null,
+      "image": "media/img/pozno.webp",
+      "image_alt": "a person yawning and switching off a bedside lamp",
+      "image_basis": "sentence",
+      "image_prompt": "A person yawning and switching off a bedside lamp, deep night outside the window. No text or lettering. Square image.",
+      "audio": "media/audio/pozno.mp3",
+      "sentence": {
+        "pl": "Jest późno. Idę spać.",
+        "en": "It's late. I'm going to bed.",
+        "gap": "Jest ___. Idę spać.",
+        "answer": "późno",
+        "answer_lemma": "późno",
+        "audio": "media/audio/pozno__sentence.mp3",
+        "lemmas": [
+          "być",
+          "późno",
+          "iść",
+          "spać"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "biec",
+      "word": "biec",
+      "gloss": "to run",
+      "pos": "verb",
+      "ipa": "bʲjɛt͡s",
+      "note": "running right now, to somewhere, as iść is for walking",
+      "image": "media/img/biec.webp",
+      "image_alt": "a dog running fast across grass",
+      "image_basis": "sentence",
+      "image_prompt": "A dog running fast across the grass of a park, ears flying, all four paws off the ground. No text or lettering. Square image.",
+      "audio": "media/audio/biec.mp3",
+      "sentence": {
+        "pl": "Pies biegnie do parku.",
+        "en": "The dog runs to the park.",
+        "gap": "Pies ___ do parku.",
+        "answer": "biegnie",
+        "answer_lemma": "biec",
+        "audio": "media/audio/biec__sentence.mp3",
+        "lemmas": [
+          "pies",
+          "biec",
+          "do",
+          "park"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "odpowiadac",
+      "word": "odpowiadać",
+      "gloss": "to answer",
+      "pos": "verb",
+      "ipa": "ɔtpɔˈvʲjadat͡ɕ",
+      "note": null,
+      "image": "media/img/odpowiadac.webp",
+      "image_alt": "a child answering in class",
+      "image_basis": "sentence",
+      "image_prompt": "A child standing up at their desk in a classroom and answering, the teacher listening and nodding. No text or lettering. Square image.",
+      "audio": "media/audio/odpowiadac.mp3",
+      "sentence": {
+        "pl": "W szkole dziecko odpowiada na pytanie.",
+        "en": "At school the child answers a question.",
+        "gap": "W szkole dziecko ___ na pytanie.",
+        "answer": "odpowiada",
+        "answer_lemma": "odpowiadać",
+        "audio": "media/audio/odpowiadac__sentence.mp3",
+        "lemmas": [
+          "w",
+          "szkoła",
+          "dziecko",
+          "odpowiadać",
+          "na",
+          "pytanie"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "babcia",
+      "word": "babcia",
+      "gloss": "grandmother",
+      "pos": "noun",
+      "ipa": "ˈbapt͡ɕa",
+      "note": null,
+      "image": "media/img/babcia.webp",
+      "image_alt": "a grandmother rolling out dough",
+      "image_basis": "sentence",
+      "image_prompt": "A grandmother rolling out dough at a kitchen table, flour on the table and on her hands. No text or lettering. Square image.",
+      "audio": "media/audio/babcia.mp3",
+      "sentence": {
+        "pl": "Babcia robi ciasto.",
+        "en": "Grandma is making a cake.",
+        "gap": "___ robi ciasto.",
+        "answer": "Babcia",
+        "answer_lemma": "babcia",
+        "audio": "media/audio/babcia__sentence.mp3",
+        "lemmas": [
+          "babcia",
+          "robić",
+          "ciasto"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "dziadek",
+      "word": "dziadek",
+      "gloss": "grandfather",
+      "pos": "noun",
+      "ipa": "ˈd͡ʑadɛk",
+      "note": null,
+      "image": "media/img/dziadek.webp",
+      "image_alt": "a grandfather leaning on an old car",
+      "image_basis": "sentence",
+      "image_prompt": "A smiling grey-haired grandfather leaning on an old but well-kept green car. No text or lettering. Square image.",
+      "audio": "media/audio/dziadek.mp3",
+      "sentence": {
+        "pl": "Mój dziadek ma stary samochód.",
+        "en": "My grandfather has an old car.",
+        "gap": "Mój ___ ma stary samochód.",
+        "answer": "dziadek",
+        "answer_lemma": "dziadek",
+        "audio": "media/audio/dziadek__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "dziadek",
+          "mieć",
+          "stary",
+          "samochód"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "dobrze",
+      "word": "dobrze",
+      "gloss": "well; okay",
+      "pos": "adverb",
+      "ipa": "ˈdɔbʐɛ",
+      "note": "the adverb from dobry; also \"okay!\" as a reply",
+      "image": "media/img/dobrze.webp",
+      "image_alt": "a young man juggling a football",
+      "image_basis": "sentence",
+      "image_prompt": "A young man skilfully juggling a football on one foot in a park. No text or lettering. Square image.",
+      "audio": "media/audio/dobrze.mp3",
+      "sentence": {
+        "pl": "Mój brat dobrze gra w piłkę.",
+        "en": "My brother plays football well.",
+        "gap": "Mój brat ___ gra w piłkę.",
+        "answer": "dobrze",
+        "answer_lemma": "dobrze",
+        "audio": "media/audio/dobrze__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "brat",
+          "dobrze",
+          "grać",
+          "w",
+          "piłka"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "inny",
+      "word": "inny",
+      "gloss": "other, different",
+      "pos": "adjective",
+      "ipa": "ˈinnɨ",
+      "note": null,
+      "image": "media/img/inny.webp",
+      "image_alt": "black birds on a wire and one yellow bird",
+      "image_basis": "sentence",
+      "image_prompt": "A row of black birds sitting on a wire, with one bright yellow bird among them. No text or lettering. Square image.",
+      "audio": "media/audio/inny.mp3",
+      "sentence": {
+        "pl": "Jeden ptak jest inny.",
+        "en": "One bird is different.",
+        "gap": "Jeden ptak jest ___.",
+        "answer": "inny",
+        "answer_lemma": "inny",
+        "audio": "media/audio/inny__sentence.mp3",
+        "lemmas": [
+          "jeden",
+          "ptak",
+          "być",
+          "inny"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "dlaczego",
+      "word": "dlaczego",
+      "gloss": "why",
+      "pos": "adverb",
+      "ipa": "dlaˈt͡ʂɛɡɔ",
+      "note": null,
+      "image": "media/img/dlaczego.webp",
+      "image_alt": "a dog asleep in a bed and a puzzled owner",
+      "image_basis": "sentence",
+      "image_prompt": "A dog asleep in a double bed with its head on the pillow; a person standing by the bed, hands on hips, puzzled. No text or lettering. Square image.",
+      "audio": "media/audio/dlaczego.mp3",
+      "sentence": {
+        "pl": "Dlaczego pies śpi w moim łóżku?",
+        "en": "Why is the dog sleeping in my bed?",
+        "gap": "___ pies śpi w moim łóżku?",
+        "answer": "Dlaczego",
+        "answer_lemma": "dlaczego",
+        "audio": "media/audio/dlaczego__sentence.mp3",
+        "lemmas": [
+          "dlaczego",
+          "pies",
+          "spać",
+          "w",
+          "mój",
+          "łóżko"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "kiedy",
+      "word": "kiedy",
+      "gloss": "when",
+      "pos": "adverb",
+      "ipa": "ˈcɛdɨ",
+      "note": null,
+      "image": "media/img/kiedy.webp",
+      "image_alt": "a hungry child at an empty table looking up at the clock",
+      "image_basis": "sentence",
+      "image_prompt": "A hungry child sitting at an empty dining table with a fork and a spoon, looking up at a round wall clock, waiting for lunch. No words, only the numbers on the clock. Square image.",
+      "audio": "media/audio/kiedy.mp3",
+      "sentence": {
+        "pl": "Kiedy jest obiad?",
+        "en": "When is lunch?",
+        "gap": "___ jest obiad?",
+        "answer": "Kiedy",
+        "answer_lemma": "kiedy",
+        "audio": "media/audio/kiedy__sentence.mp3",
+        "lemmas": [
+          "kiedy",
+          "być",
+          "obiad"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "ciemno",
+      "word": "ciemno",
+      "gloss": "dark (it is dark)",
+      "pos": "adverb",
+      "ipa": "ˈt͡ɕɛmnɔ",
+      "note": null,
+      "image": "media/img/ciemno.webp",
+      "image_alt": "a bedroom at night lit only by moonlight",
+      "image_basis": "sentence",
+      "image_prompt": "A bedroom at night, almost completely dark, only faint moonlight coming through the window. No text or lettering. Square image.",
+      "audio": "media/audio/ciemno.mp3",
+      "sentence": {
+        "pl": "W nocy w pokoju jest ciemno.",
+        "en": "At night it is dark in the room.",
+        "gap": "W nocy w pokoju jest ___.",
+        "answer": "ciemno",
+        "answer_lemma": "ciemno",
+        "audio": "media/audio/ciemno__sentence.mp3",
+        "lemmas": [
+          "w",
+          "noc",
+          "w",
+          "pokój",
+          "być",
+          "ciemno"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "juz",
+      "word": "już",
+      "gloss": "already; right away",
+      "pos": "adverb",
+      "ipa": "juʂ",
+      "note": null,
+      "image": "media/img/juz.webp",
+      "image_alt": "someone hurrying into their shoes by the door",
+      "image_basis": "sentence",
+      "image_prompt": "A person hurrying to put on their shoes by the front door, calling out over their shoulder. No text or lettering. Square image.",
+      "audio": "media/audio/juz.mp3",
+      "sentence": {
+        "pl": "Już idę!",
+        "en": "I'm coming!",
+        "gap": "___ idę!",
+        "answer": "Już",
+        "answer_lemma": "już",
+        "audio": "media/audio/juz__sentence.mp3",
+        "lemmas": [
+          "już",
+          "iść"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "tylko",
+      "word": "tylko",
+      "gloss": "only",
+      "pos": "particle",
+      "ipa": "ˈtɨlkɔ",
+      "note": null,
+      "image": "media/img/tylko.webp",
+      "image_alt": "an empty shop shelf with one loaf",
+      "image_basis": "sentence",
+      "image_prompt": "A long, empty shop shelf with just one single loaf of bread on it. No text or lettering. Square image.",
+      "audio": "media/audio/tylko.mp3",
+      "sentence": {
+        "pl": "W sklepie jest tylko chleb.",
+        "en": "There is only bread in the shop.",
+        "gap": "W sklepie jest ___ chleb.",
+        "answer": "tylko",
+        "answer_lemma": "tylko",
+        "audio": "media/audio/tylko__sentence.mp3",
+        "lemmas": [
+          "w",
+          "sklep",
+          "być",
+          "tylko",
+          "chleb"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "niesc",
+      "word": "nieść",
+      "gloss": "to carry",
+      "pos": "verb",
+      "ipa": "ɲɛɕt͡ɕ",
+      "note": "carrying right now, to somewhere. To wear is nosić",
+      "image": "media/img/niesc.webp",
+      "image_alt": "a father carrying a child on his shoulders",
+      "image_basis": "sentence",
+      "image_prompt": "A father carrying a small child on his shoulders along a park path. No text or lettering. Square image.",
+      "audio": "media/audio/niesc.mp3",
+      "sentence": {
+        "pl": "Ojciec niesie dziecko.",
+        "en": "The father is carrying the child.",
+        "gap": "Ojciec ___ dziecko.",
+        "answer": "niesie",
+        "answer_lemma": "nieść",
+        "audio": "media/audio/niesc__sentence.mp3",
+        "lemmas": [
+          "ojciec",
+          "nieść",
+          "dziecko"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "wtedy",
+      "word": "wtedy",
+      "gloss": "then, at that time",
+      "pos": "adverb",
+      "ipa": "ˈftɛdɨ",
+      "note": "at that moment, not afterwards; afterwards is potem",
+      "image": "media/img/wtedy.webp",
+      "image_alt": "a mother resting while her child sleeps",
+      "image_basis": "sentence",
+      "image_prompt": "A mother resting on a sofa with a cup of tea, eyes closed in relief, a small child asleep on the other end of the sofa. No text or lettering. Square image.",
+      "audio": "media/audio/wtedy.mp3",
+      "sentence": {
+        "pl": "Kiedy dziecko śpi, wtedy jest cicho.",
+        "en": "When the child is asleep, then it is quiet.",
+        "gap": "Kiedy dziecko śpi, ___ jest cicho.",
+        "answer": "wtedy",
+        "answer_lemma": "wtedy",
+        "audio": "media/audio/wtedy__sentence.mp3",
+        "lemmas": [
+          "kiedy",
+          "dziecko",
+          "spać",
+          "wtedy",
+          "być",
+          "cicho"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "ogladac",
+      "word": "oglądać",
+      "gloss": "to watch, look at",
+      "pos": "verb",
+      "ipa": "ɔˈɡlɔndat͡ɕ",
+      "note": "looking through something: a film, photos. Just looking is patrzeć",
+      "image": "media/img/ogladac.webp",
+      "image_alt": "a person on a sofa with a photo album",
+      "image_basis": "sentence",
+      "image_prompt": "A person on a sofa in the evening, turning the pages of a photo album on their lap. No text or lettering. Square image.",
+      "audio": "media/audio/ogladac.mp3",
+      "sentence": {
+        "pl": "Wieczorem oglądam zdjęcia.",
+        "en": "In the evening I look at photos.",
+        "gap": "Wieczorem ___ zdjęcia.",
+        "answer": "oglądam",
+        "answer_lemma": "oglądać",
+        "audio": "media/audio/ogladac__sentence.mp3",
+        "lemmas": [
+          "wieczór",
+          "oglądać",
+          "zdjęcie"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
     }
   ]
 }

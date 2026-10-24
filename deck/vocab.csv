@@ -343,12 +343,35 @@ szybko,szybko,adverb,yes,carded,carding 2026-10-11,2026-10-11,
 drogi,drogi,adjective,yes,carded,carding 2026-10-11,2026-10-11,
 prezent,prezent,noun,yes,carded,carding 2026-10-11,2026-10-11,
 urodziny,urodziny,noun,yes,carded,carding 2026-10-11,2026-10-11,
-oglądać,ogladac,verb,yes,queued,"sentence for film, 2026-10-11",2026-10-11,"to watch (TV, a film)"
-dla,dla,preposition,no,known,sentence for prezent 2026-10-11,2026-10-11,"for; + genitive: dla ciebie"
-już,juz,adverb,yes,queued,lesson 2026-10-21 Dziwny głos,2026-10-21,"already; the partner of jeszcze (still)"
-tylko,tylko,particle,yes,queued,lesson 2026-10-21 Dziwny głos,2026-10-21,only
-od,od,preposition,no,known,lesson 2026-10-21 Dziwny głos,2026-10-21,"from; + genitive: 100 metrów od domu"
-ciemno,ciemno,adverb,yes,queued,lesson 2026-10-21 Dziwny głos,2026-10-21,"dark (it is dark): jest ciemno"
-nieść,niesc,verb,yes,queued,lesson 2026-10-21 Dziwny głos,2026-10-21,to carry
+oglądać,ogladac,verb,yes,carded,"sentence for film, 2026-10-11",2026-10-11,"to watch (TV, a film)"
+dla,dla,preposition,no,known,sentence for prezent 2026-10-11,2026-10-11,for; + genitive: dla ciebie
+już,juz,adverb,yes,carded,lesson 2026-10-21 Dziwny głos,2026-10-21,already; the partner of jeszcze (still)
+tylko,tylko,particle,yes,carded,lesson 2026-10-21 Dziwny głos,2026-10-21,only
+od,od,preposition,no,known,lesson 2026-10-21 Dziwny głos,2026-10-21,from; + genitive: 100 metrów od domu
+ciemno,ciemno,adverb,yes,carded,lesson 2026-10-21 Dziwny głos,2026-10-21,dark (it is dark): jest ciemno
+nieść,niesc,verb,yes,carded,lesson 2026-10-21 Dziwny głos,2026-10-21,to carry
 więc,wiec,conjunction,no,known,homework 2026-10-24 Ważny dzień,2026-10-24,"so, therefore"
-wtedy,wtedy,adverb,yes,queued,homework 2026-10-24 Ważny dzień,2026-10-24,"then, at that moment"
+wtedy,wtedy,adverb,yes,carded,homework 2026-10-24 Ważny dzień,2026-10-24,"then, at that moment"
+przychodzić,przychodzic,verb,yes,carded,carding 2026-10-24,2026-10-24,
+wychodzić,wychodzic,verb,yes,carded,carding 2026-10-24,2026-10-24,
+ktoś,ktos,pronoun,yes,carded,carding 2026-10-24,2026-10-24,
+nic,nic,pronoun,yes,carded,carding 2026-10-24,2026-10-24,
+nagle,nagle,adverb,yes,carded,carding 2026-10-24,2026-10-24,
+razem,razem,adverb,yes,carded,carding 2026-10-24,2026-10-24,
+szczęśliwy,szczesliwy,adjective,yes,carded,carding 2026-10-24,2026-10-24,
+zmęczony,zmeczony,adjective,yes,carded,carding 2026-10-24,2026-10-24,
+bać się,bac_sie,verb,yes,carded,carding 2026-10-24,2026-10-24,
+cicho,cicho,adverb,yes,carded,carding 2026-10-24,2026-10-24,
+głośno,glosno,adverb,yes,carded,carding 2026-10-24,2026-10-24,
+późno,pozno,adverb,yes,carded,carding 2026-10-24,2026-10-24,
+biec,biec,verb,yes,carded,carding 2026-10-24,2026-10-24,
+odpowiadać,odpowiadac,verb,yes,carded,carding 2026-10-24,2026-10-24,
+babcia,babcia,noun,yes,carded,carding 2026-10-24,2026-10-24,
+dziadek,dziadek,noun,yes,carded,carding 2026-10-24,2026-10-24,
+dobrze,dobrze,adverb,yes,carded,carding 2026-10-24,2026-10-24,
+inny,inny,adjective,yes,carded,carding 2026-10-24,2026-10-24,
+dlaczego,dlaczego,adverb,yes,carded,carding 2026-10-24,2026-10-24,
+kiedy,kiedy,adverb,yes,carded,carding 2026-10-24,2026-10-24,
+oni,oni,pronoun,no,known,known before the deck; tutor 2026-10-24,2026-10-24,they
+jej,jej,pronoun,no,known,known before the deck; tutor 2026-10-24,2026-10-24,her
+zdjęcie,zdjecie,noun,yes,queued,"sentence for oglądać, 2026-10-24",2026-10-24,photo
