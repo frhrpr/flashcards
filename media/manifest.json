@@ -7521,20 +7521,17 @@
     "source": "generated"
   },
   "media/img/bac_sie.webp": {
-    "bytes": 41906,
-    "check": {
-      "model": "gemini-flash-latest",
-      "problem": "",
-      "verdict": "ok",
-      "why": ""
-    },
-    "fingerprint": "f1247f9147e1f114",
-    "model": "gemini-2.5-flash-image",
-    "original_size": "1024x1024",
+    "author": "supplied by user",
+    "bytes": 81746,
+    "fingerprint": "b2cc8d317a3f94ff",
+    "licence": "n/a",
+    "note": "found by the teacher via image search; licence unknown; cropped square",
+    "original": "bac_sie-cat.png",
+    "original_size": "749x749",
+    "page": "https://cdn.prod.website-files.com/652ca14a705e04da4e297536/664ebddc9221642813284dbe_1.png",
     "process_version": 1,
-    "prompt": "A small cat with its back arched and fur standing up, hissing at a big friendly-looking dog. No text or lettering. Square image.",
-    "size": "800x800",
-    "source": "generated"
+    "size": "749x750",
+    "source": "supplied"
   },
   "media/img/bank.webp": {
     "bytes": 88754,
@@ -10199,6 +10196,7 @@
     "bytes": 37334,
     "fingerprint": "fa821d191c2810cc",
     "licence": "n/a",
+    "note": "generated image with a red X drawn over the bowl in ffmpeg",
     "original": "nic-x.png",
     "original_size": "800x800",
     "process_version": 1,
@@ -12578,20 +12576,16 @@
     "source": "supplied"
   },
   "media/img/wychodzic.webp": {
-    "bytes": 27812,
-    "check": {
-      "model": "gemini-flash-latest",
-      "problem": "",
-      "verdict": "ok",
-      "why": ""
-    },
-    "fingerprint": "366f55cf55f8885a",
-    "model": "gemini-2.5-flash-image",
-    "original_size": "1024x1024",
+    "author": "supplied by user",
+    "bytes": 26720,
+    "fingerprint": "5f462354b06d7e97",
+    "licence": "n/a",
+    "note": "generated image with a red exit arrow drawn on in ffmpeg",
+    "original": "wychodzic-arrow.png",
+    "original_size": "800x800",
     "process_version": 1,
-    "prompt": "A person in a coat walking out through the glass doors of an office building at dusk, bag over the shoulder. No text or lettering. Square image.",
     "size": "800x800",
-    "source": "generated"
+    "source": "supplied"
   },
   "media/img/wysoki.webp": {
     "bytes": 140692,
