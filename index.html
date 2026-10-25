@@ -92,6 +92,11 @@ button{font-family:inherit;cursor:pointer;border-radius:4px}
 .mode.is-done{background:none;border-style:dashed;color:var(--dim);cursor:default}
 .mode.is-done:hover{border-color:var(--line)}
 .mode.is-done .mode-n{font-weight:400}
+/* Finished, but still worth opening: stories can be re-read and re-heard.
+   Looks like the other finished tiles so the landing reads as one set,
+   and stays tappable, which those do not. */
+.mode.is-done.reopen{cursor:pointer}
+.mode.is-done.reopen:hover{border-color:var(--dim)}
 
 .lighter{display:block;width:100%;margin:-.2rem 0 0;padding:.6rem;background:none;
   border:0;color:var(--dim);font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;
@@ -2295,6 +2300,10 @@ function renderLanding(){
   const tile = (id, name, sub, lead) =>
     `<button class="mode${lead ? " lead" : ""}" id="${id}">` +
     `<span class="mode-n">${name}</span><span class="mode-sub">${esc(sub)}</span></button>`;
+  const reopen = (id, name, sub) =>
+    `<button class="mode is-done reopen" id="${id}"><span class="mode-n">${name}</span>` +
+    `<span class="mode-sub">${esc(sub)}</span></button>`;
+  const doneStories = n => `✓ ${n} ${n === 1 ? "story" : "stories"} done`;
   const idle = (name, sub) =>
     `<div class="mode is-done"><span class="mode-n">${name}</span>` +
     `<span class="mode-sub">${esc(sub)}</span></div>`;
@@ -2323,10 +2332,10 @@ function renderLanding(){
           : idle("Ear training", earIdleLabel())}
       ${!EPISODES.length ? ""
         : EPISODES.some(epNew) ? tile("go-listen", "Listening", newStories(EPISODES.filter(epNew).length), false)
-        : `<button class="lighter" id="go-listen">Listening — all stories</button>`}
+        : reopen("go-listen", "Listening", doneStories(EPISODES.length))}
       ${!STORIES.length ? ""
         : STORIES.some(rdNew) ? tile("go-read", "Reading", newStories(STORIES.filter(rdNew).length), false)
-        : `<button class="lighter" id="go-read">Reading — all stories</button>`}
+        : reopen("go-read", "Reading", doneStories(STORIES.length))}
     </div>
     ${(!v && !e) ? `<div class="stats done">
       <p class="done-h">All done for today</p>

@@ -508,8 +508,10 @@ audio, not the words.
   "-". Not in the log — `progress.py` buckets the log by `grade`. The report
   lists each episode with first-time answers.
 - **On the landing**: a tile ("1 new story") while any episode is
-  unfinished; afterwards a quiet link, because episodes can be re-listened
-  and a greyed, untappable tile would hide them.
+  unfinished; afterwards the same tile in the finished style ("✓ 1 story
+  done", dashed like a finished Vocab), but still tappable, because episodes
+  can be re-listened. It was a quiet grey link until 2026-10-25, when the
+  teacher could not find it; the Reading tile does the same.
 - ElevenLabs free tier is 10,000 characters a month, shared with card
   sentences; a one-minute episode is about 500.
 

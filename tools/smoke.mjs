@@ -402,8 +402,8 @@ try {
         "singular and plural for new stories");
   for (const e of eps) m.listenStates[e.id] = { heard: 1, done: 1 };
   m.renderLanding();
-  check(m.state().html.includes("Listening — all stories") && !m.state().html.includes("new story"),
-        "with everything heard, listening drops to a quiet link");
+  check(m.state().html.includes('is-done reopen" id="go-listen"') && !m.state().html.includes("new story"),
+        "with everything heard, listening stays a tile, finished-looking but tappable");
   for (const e of eps) delete m.listenStates[e.id];
   m.setEpisodes([]);
 
@@ -434,7 +434,8 @@ try {
         "a tapped carded word shows its picture and gloss");
   for (const st of sts) m.readingStates[st.id] = { read: 1, done: 1 };
   m.renderLanding();
-  check(m.state().html.includes("Reading — all stories"), "with everything done, reading drops to a quiet link");
+  check(m.state().html.includes('is-done reopen" id="go-read"') && m.state().html.includes("stories done"),
+        "with everything done, reading stays a tile, finished-looking but tappable");
   for (const st of sts) delete m.readingStates[st.id];
   m.setStories([]);
   delete m.state().doneDays[day];
