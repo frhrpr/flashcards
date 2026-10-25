@@ -65,3 +65,9 @@ reason, and *kosztuje dużo, ale babcia płaci* with no contrast to justify
 
 See `2026-10-25-kawa-z-mlekiem.story.txt` — the story, the exercise, the
 questions and the lemma map.
+
+## Next, suggested by the teacher 2026-10-25
+
+A lesson that sets the instrumental against the accusative — *jem rybę*
+versus *chleb z rybą* — once both feel safe on their own. Not before the
+homework *Przyjaciel Svena* is back.

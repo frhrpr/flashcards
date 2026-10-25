@@ -14,7 +14,7 @@ Adam ma czerwoną twarz. W lodówce nic nie ma, a Ewa jest jeszcze w pracy. Sven
 
 — Tak! Przychodzę potem.
 
-W restauracji Adam je pierogi z mięsem, a Sven je rybę z ryżem. Adam pije wodę, a Sven pije herbatę z cytryną.
+W restauracji Adam je pierogi z mięsem, a Sven je naleśniki z serem. Adam pije wodę, a Sven pije herbatę z cytryną.
 
 — Smacznego! — mówi kelner.
 
@@ -24,15 +24,17 @@ Potem przychodzi Ewa. Ewa nie zna Adama.
 
 — Miło mi! — mówi Ewa.
 
-Ewa je lody z czekoladą. Adam mówi dużo i głośno, a Ewa i Sven się śmieją. Nagle Adam słyszy deszcz.
+Ewa je tylko zupę. Adam mówi dużo i głośno, a Ewa i Sven się śmieją. Nagle Adam słyszy deszcz.
 
-— Mój rower! Jest na ulicy!
+— Pada deszcz! — mówi Adam.
+
+— Dzisiaj śpisz u nas, a rano jedziesz do Krakowa — mówi Ewa.
 
 — Poproszę rachunek! — mówi Sven.
 
 — Ile to kosztuje? — pyta Adam.
 
-— To nic, ja płacę! — mówi Sven.
+— Dzisiaj ja płacę! — mówi Sven.
 
 W nocy Adam śpi w pokoju. Rano Pies śpi razem z Adamem. Ewa się śmieje.
 
@@ -53,9 +55,9 @@ Ewa idzie do domu z (…). [dziecko]
 Kto dzwoni do drzwi? | kelner | *Adam | Ewa
 Jak Adam jedzie do Krakowa? | *rowerem | z Ewą | z kelnerem
 Gdzie jest Ewa wieczorem? | w domu | *w pracy | w restauracji
-Co je Adam? | rybę z ryżem | *pierogi z mięsem | lody z czekoladą
-Z czym Sven pije herbatę? | *z cytryną | z czekoladą | z mięsem
-Dlaczego Adam mówi: „Mój rower!”? | Ewa przychodzi | *pada deszcz | Sven płaci
+Co je Adam? | naleśniki z serem | *pierogi z mięsem | zupę
+Z czym Sven pije herbatę? | *z cytryną | z serem | z mięsem
+Co nagle słyszy Adam? | kelnera | *deszcz | Ewę
 Kto płaci? | Adam | *Sven | Ewa
 Z kim rano śpi Pies? | z Ewą | *z Adamem | z kelnerem
 
@@ -120,8 +122,6 @@ potem = potem
 je = jeść
 pierogi = pierogi
 mięsem = mięso
-rybę = ryba
-ryżem = ryż
 pije = pić
 herbatę = herbata
 cytryną = cytryna
@@ -131,17 +131,11 @@ Potem = potem
 przychodzi = przychodzić
 zna = znać
 mój = mój
-lody = lody
-czekoladą = czekolada
 dużo = dużo
 się = się
 Nagle = nagle
 słyszy = słyszeć
 deszcz = deszcz
-Mój = mój
-rower = rower
-na = na
-ulicy = ulica
 Poproszę = poproszę
 rachunek = rachunek
 Ile = ile
@@ -165,7 +159,6 @@ klucz = klucz
 kot = kot
 lampa = lampa
 czeka = czekać
-Ewę = -
 śniadanie = śniadanie
 Pani = pani
 kawę = kawa
@@ -179,7 +172,6 @@ pytania = pytanie
 Kto = kto
 Jak = jak
 jedzie = jechać
-Ewą = -
 Gdzie = gdzie
 wieczorem = wieczór
 Co = co
@@ -205,3 +197,19 @@ płacę = płacić
 nowego = nowy
 przyjaciela = przyjaciel
 kelnerem = kelner
+naleśniki = naleśniki
+serem = ser
+tylko = tylko
+zupę = zupa
+Pada = padać
+śpisz = spać
+u = u
+nas = my
+rano = rano
+jedziesz = jechać
+Dzisiaj = dzisiaj
+kelnera = kelner
+Ewę = -
+Ewą = -
+Mój = mój
+na = na
