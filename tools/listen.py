@@ -4,6 +4,7 @@
     python3 tools/listen.py lessons/<date>-sluchanie-<slug>.story.txt          # dry run
     python3 tools/listen.py lessons/<date>-sluchanie-<slug>.story.txt --go     # synthesise
     python3 tools/listen.py --index                                            # rebuild the list only
+    python3 tools/listen.py <story> --go --redo 3,7    # new takes of sentences 3 and 7 only
 
 Writes `listen/<slug>.mp3` (served by the site, and the file to send by hand)
 and rebuilds `listen/episodes.json` from every story whose mp3 exists. The list is
@@ -23,6 +24,14 @@ own section so storycheck covers their words too:
     ...
 
 Run storycheck first.
+
+**Each sentence's take is kept** in out/listen-parts/<slug>/NNN.mp3 with its
+text beside it, and reused on the next run while the text is unchanged. A
+TTS take is different every time and now and then comes back with a tap or
+a glitch in it (episode 2, 2026-10-25); regenerating the whole episode to
+fix one sentence throws away the good takes with the bad. `--redo` names the
+sentences to take again; the run prints each sentence's start time in the
+finished mp3, so "a tap at 0:23" maps to a number.
 
 Every choice here was made by ear on 2026-10-21, on the first episode:
 
@@ -52,6 +61,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import audio  # noqa: E402  (load_key, TTS_API)
+from deckio import out_dir  # noqa: E402
 
 VOICE = "SAz9YHcvj6GT2YYXdXww"   # River
 MODEL = "eleven_turbo_v2_5"
@@ -150,6 +160,7 @@ def main():
     ap.add_argument("story", type=Path, nargs="?")
     ap.add_argument("--go", action="store_true")
     ap.add_argument("--index", action="store_true", help="rebuild listen/episodes.json only")
+    ap.add_argument("--redo", default="", help="sentence numbers to take again, e.g. 3,7")
     a = ap.parse_args()
     if a.index:
         write_index()
@@ -161,34 +172,57 @@ def main():
     flat = [s for p in paras for s in p]
     slug = slug_of(a.story)
     dest = LISTEN / f"{slug}.mp3"
-    print(f"{len(flat)} sentences, {sum(map(len, flat))} characters spoken")
+    parts_dir = out_dir("listen-parts") / slug
+    redo = {int(x) for x in a.redo.split(",") if x.strip()}
+    bad = [n for n in redo if not 1 <= n <= len(flat)]
+    if bad:
+        sys.exit(f"listen: --redo {bad}: there are {len(flat)} sentences")
+    def cached(i):
+        mp3, txt = parts_dir / f"{i + 1:03d}.mp3", parts_dir / f"{i + 1:03d}.txt"
+        return (i + 1 not in redo and mp3.exists() and txt.exists()
+                and txt.read_text(encoding="utf-8") == flat[i])
+    todo = [i for i in range(len(flat)) if not cached(i)]
+    print(f"{len(flat)} sentences, {sum(map(len, flat))} characters spoken; "
+          f"{len(todo)} to synthesise ({sum(len(flat[i]) for i in todo)} characters), "
+          f"{len(flat) - len(todo)} kept from the last run")
+    n = 0
     for p in paras:
-        print("  " + " | ".join(p))
+        print("  " + " | ".join(f"{n + j + 1}. {x}" for j, x in enumerate(p)))
+        n += len(p)
     print(f"{len(qs)} question(s)")
     if not a.go:
         print(f"\ndry run. Re-run with --go to write {dest}")
         return 0
-    key = audio.load_key()
+    key = audio.load_key() if todo else None
+    parts_dir.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory() as td:
         td = Path(td)
         ff("-f", "lavfi", "-i", "anullsrc=r=44100:cl=mono", "-t", str(SENT_GAP), td / "s.wav")
         ff("-f", "lavfi", "-i", "anullsrc=r=44100:cl=mono", "-t", str(PARA_GAP), td / "p.wav")
-        parts, i = [], 0
+        parts, i, t, timeline = [], 0, 0.0, []
+        def secs(f):
+            return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                                         "-of", "csv=p=0", f], capture_output=True, text=True).stdout)
         for pi, p in enumerate(paras):
             for si, s in enumerate(p):
-                prev = " ".join(flat[max(0, i - 2):i]) or None
-                nxt = " ".join(flat[i + 1:i + 3]) or None
-                raw = td / f"{i:03d}.mp3"
-                raw.write_bytes(synth(key, s, prev, nxt))
+                raw = parts_dir / f"{i + 1:03d}.mp3"
+                if i in todo:
+                    prev = " ".join(flat[max(0, i - 2):i]) or None
+                    nxt = " ".join(flat[i + 1:i + 3]) or None
+                    raw.write_bytes(synth(key, s, prev, nxt))
+                    (parts_dir / f"{i + 1:03d}.txt").write_text(s, encoding="utf-8")
                 wav = td / f"{i:03d}.wav"
                 ff("-i", raw, "-af", TRIM, "-ar", "44100", "-ac", "1", wav)
+                timeline.append((i + 1, t, s, i in todo))
+                t += secs(wav)
                 parts.append(wav)
                 if si < len(p) - 1:
-                    parts.append(td / "s.wav")
+                    parts.append(td / "s.wav"); t += SENT_GAP
                 i += 1
-                print(f"  [{i}/{len(flat)}] {s}")
             if pi < len(paras) - 1:
-                parts.append(td / "p.wav")
+                parts.append(td / "p.wav"); t += PARA_GAP
+        for num, start, s, new in timeline:
+            print(f"  {num:>2}  {int(start // 60)}:{start % 60:04.1f}  {'new ' if new else 'kept'}  {s}")
         (td / "list.txt").write_text("".join(f"file '{x}'\n" for x in parts))
         dest.parent.mkdir(parents=True, exist_ok=True)
         ff("-f", "concat", "-safe", "0", "-i", td / "list.txt",
