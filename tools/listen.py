@@ -4,8 +4,17 @@
     python3 tools/listen.py lessons/<date>-sluchanie-<slug>.story.txt          # dry run
     python3 tools/listen.py lessons/<date>-sluchanie-<slug>.story.txt --go     # synthesise
     python3 tools/listen.py --index                                            # rebuild the list only
-    python3 tools/listen.py <story> --go --redo 3,7    # new takes of sentences 3 and 7 only
-    python3 tools/listen.py <story> --go --whole      # one take, pauses from timestamps (trial 2026-10-25)
+    python3 tools/listen.py <story> --go --retake     # ask for a new take of the whole story
+    python3 tools/listen.py <story> --go --per-sentence [--redo 3,7]   # the old way, see below
+
+**The default since 2026-10-25 is one take of the whole story** (`main_whole`):
+the per-character timestamps from /with-timestamps say where each sentence
+ends, and the pause there is lengthened to SENT_GAP / PARA_GAP. The teacher
+heard the sentence-by-sentence version as "a bunch of sentences stitched
+together" — the tone reset and an in-breath came at every join — and chose
+this one. Pauses *inside* a sentence are the voice's own: in "Ania mówi:
+Dobrze!" the colon got almost none, which only splitting the line would fix.
+The notes below describe the per-sentence mode, kept for comparison.
 
 Writes `listen/<slug>.mp3` (served by the site, and the file to send by hand)
 and rebuilds `listen/episodes.json` from every story whose mp3 exists. The list is
@@ -220,8 +229,8 @@ def main():
     ap.add_argument("--go", action="store_true")
     ap.add_argument("--index", action="store_true", help="rebuild listen/episodes.json only")
     ap.add_argument("--redo", default="", help="sentence numbers to take again, e.g. 3,7")
-    ap.add_argument("--whole", action="store_true", help="one take of the whole story, pauses from timestamps")
-    ap.add_argument("--retake", action="store_true", help="with --whole: ask for a new take")
+    ap.add_argument("--per-sentence", action="store_true", help="the old way: one request per sentence")
+    ap.add_argument("--retake", action="store_true", help="ask for a new take of the whole story")
     a = ap.parse_args()
     if a.index:
         write_index()
@@ -229,7 +238,7 @@ def main():
     if not a.story:
         ap.error("give a story file, or --index")
     paras = sentences(a.story)
-    if a.whole:
+    if not a.per_sentence:
         return main_whole(a, paras)
     qs = questions(a.story)
     flat = [s for p in paras for s in p]

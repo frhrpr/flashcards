@@ -2,6 +2,96 @@
   "schema": 1,
   "episodes": [
     {
+      "id": "02-pierogi",
+      "title": "Pierogi",
+      "date": "2026-10-25",
+      "audio": "listen/02-pierogi.mp3",
+      "seconds": 58,
+      "text": [
+        "Jest wieczór. Marek jest w domu z kotem.",
+        "Nagle ktoś dzwoni do drzwi. To przyjaciel Marka.",
+        "— Cześć! Idziemy do restauracji? — pyta przyjaciel.",
+        "— Tak! Ale Ania jest jeszcze w pracy.",
+        "Marek dzwoni do Ani. Ania mówi: — Dobrze! Jadę tam rowerem.",
+        "Marek i przyjaciel idą do restauracji razem. Kot zostaje w domu.",
+        "W restauracji jest dużo ludzi. Marek je pierogi z mięsem. Przyjaciel je zupę i pije wodę.",
+        "Potem przychodzi Ania. Ania pije herbatę z cytryną.",
+        "— Smacznego! — mówi kelner.",
+        "Wieczorem Marek i Ania wracają do domu. Kot śpi na łóżku."
+      ],
+      "questions": [
+        {
+          "q": "Z kim Marek jest w domu?",
+          "options": [
+            "z Anią",
+            "z kotem",
+            "z przyjacielem"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Kto dzwoni do drzwi?",
+          "options": [
+            "Ania",
+            "przyjaciel",
+            "kelner"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Gdzie jest Ania?",
+          "options": [
+            "w domu",
+            "w pracy",
+            "w restauracji"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Czy Ania idzie do restauracji z Markiem?",
+          "options": [
+            "tak",
+            "nie"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Co je Marek?",
+          "options": [
+            "pierogi z mięsem",
+            "zupę",
+            "herbatę"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Co pije przyjaciel?",
+          "options": [
+            "herbatę z cytryną",
+            "wodę"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Z czym Ania pije herbatę?",
+          "options": [
+            "z cytryną",
+            "z mięsem"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Gdzie śpi kot?",
+          "options": [
+            "w restauracji",
+            "na łóżku",
+            "w pracy"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
       "id": "01-sobota",
       "title": "Sobota",
       "date": "2026-10-21",

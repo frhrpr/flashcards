@@ -487,10 +487,13 @@ audio, not the words.
   `listen/episodes.json`; the list is never edited by hand.
 - **How the audio is made, all decided by ear** — see the docstring of
   `tools/listen.py`. In short: voice River, not Antoni (aggressive over a
-  minute); one request per sentence with silence added here (0.7 s / 1.5 s),
-  because whole paragraphs ran the first sentences together; each request
-  pinned to Polish and given its neighbours as context, because a bare
-  four-word sentence came back read as English.
+  minute), pinned to Polish. **One take of the whole story**, then the pause
+  after each sentence lengthened to 0.7 s / 1.5 s using the per-character
+  timestamps the API returns. Before 2026-10-25 it was one request per
+  sentence with silence between (because a paragraph read in one go ran its
+  first sentences together); that sounded stitched — tone reset, in-breaths
+  at every join, and stray end-of-take blips — and the teacher chose the
+  single take. `--per-sentence` still exists.
 - **Own cast: Marek, Ania and their cat.** Not Sven and Ewa. A foreign name
   makes the model switch to English even when pinned to Polish — "Swen" got
   an English W. Reading stories keep their cast; a name on paper is harmless.
