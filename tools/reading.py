@@ -4,7 +4,11 @@
     python3 tools/reading.py          # rebuild the list
 
 Every story file in lessons/ dated FIRST or later that has a `--- pytania ---`
-section goes in, listening scripts excepted. Earlier stories stay paper-only
+section AND whose id is listed in read/approved.txt goes in, listening
+scripts excepted. **Nothing goes live without the teacher's approval**: on
+2026-10-25 a lesson story was pushed to the app before they had read it, and
+they had to find it there. Add the id to approved.txt only when they have
+said yes to that story; the tool prints what is waiting. Earlier stories stay paper-only
 (asked 2026-10-24: "not the previous ones, all the ones from now on"). The
 list is generated, never edited: the story file is the one source.
 
@@ -35,6 +39,7 @@ from listen import questions  # noqa: E402  (same question format)
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "read" / "stories.json"
+APPROVED = ROOT / "read" / "approved.txt"
 FIRST = "2026-10-21"
 WORD = re.compile(r"[^\W\d_]+", re.U)
 
@@ -119,16 +124,24 @@ def build(story, look):
     qs = questions(story)
     if not qs:
         sys.exit(f"reading: {story.name}: no questions")
-    slug = re.sub(r"^\d{4}-\d{2}-\d{2}-(homework-)?", "", story.name.replace(".story.txt", ""))
-    return {"id": slug, "title": title_of(story), "date": story.name[:10],
+    return {"id": story_id(story), "title": title_of(story), "date": story.name[:10],
             "paras": paras, "words": words, "questions": qs}
+
+
+def story_id(path):
+    return re.sub(r"^\d{4}-\d{2}-\d{2}-(homework-)?", "", path.name.replace(".story.txt", ""))
 
 
 def main():
     look = glosses()
-    stories = [build(s, look) for s in sorted((ROOT / "lessons").glob("*.story.txt"))
-               if s.name[:10] >= FIRST and "-sluchanie-" not in s.name
-               and "--- pytania ---" in s.read_text(encoding="utf-8")]
+    approved = {l.split("#")[0].strip() for l in APPROVED.read_text(encoding="utf-8").splitlines()} - {""}
+    cands = [s for s in sorted((ROOT / "lessons").glob("*.story.txt"))
+             if s.name[:10] >= FIRST and "-sluchanie-" not in s.name
+             and "--- pytania ---" in s.read_text(encoding="utf-8")]
+    for s in cands:
+        if story_id(s) not in approved:
+            print(f"  waiting for approval, not published: {story_id(s)}")
+    stories = [build(s, look) for s in cands if story_id(s) in approved]
     ids = [s["id"] for s in stories]
     if len(ids) != len(set(ids)):
         sys.exit(f"reading: duplicate story ids: {ids}")

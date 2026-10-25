@@ -1,0 +1,4 @@
+# Story ids the teacher has approved for the Reading page, one per line.
+# tools/reading.py publishes only these. Add one only after an explicit yes.
+dziwny-glos
+wazny-dzien
