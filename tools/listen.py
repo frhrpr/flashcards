@@ -151,6 +151,36 @@ def synth(key, text, prev, nxt):
         return r.read()
 
 
+def stray_tail(path):
+    """Where a take should end if it closes on a stray blip, else None.
+
+    Some takes come back with a click or breath after the speech has ended:
+    a gap of silence, then 20-80 ms of sound at the very end of the file.
+    The -50 dB trim keeps it, so it lands just before the pause and is heard
+    as a tap (episode 2, 2026-10-25: five of 21 takes). Speech never ends
+    that way, so a final burst under SHORT seconds after a gap of at least
+    GAP seconds is cut at the start of the gap."""
+    SHORT, GAP, BLIP_DB = 0.12, 0.08, -40
+    out = subprocess.run(["ffmpeg", "-i", path, "-af", "silencedetect=n=-45dB:d=%s" % GAP,
+                          "-f", "null", "-"], capture_output=True, text=True).stderr
+    starts = [float(x) for x in re.findall(r"silence_start: ([\d.]+)", out)]
+    ends = [float(x) for x in re.findall(r"silence_end: ([\d.]+)", out)]
+    dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                                "-of", "csv=p=0", path], capture_output=True, text=True).stdout)
+    # the last silence that closes before the file does, and what follows it
+    gaps = [(st, en) for st, en in zip(starts, ends) if en < dur - 0.005]
+    if not (gaps and dur - gaps[-1][1] < SHORT and gaps[-1][0] > 0.3):
+        return None
+    # silencedetect also "ends" a silence at the end of the file; only a tail
+    # that is actually loud is a blip
+    out = subprocess.run(["ffmpeg", "-i", path, "-af",
+                          f"atrim=start={gaps[-1][1]},astats=metadata=1,"
+                          "ametadata=print:key=lavfi.astats.Overall.Peak_level:file=-",
+                          "-f", "null", "-"], capture_output=True, text=True).stdout
+    peaks = [float(x) for x in re.findall(r"Peak_level=(-?[\d.]+)", out)]
+    return gaps[-1][0] if peaks and max(peaks) > BLIP_DB else None
+
+
 def ff(*args):
     subprocess.run(["ffmpeg", "-loglevel", "error", "-y", *args], check=True)
 
@@ -212,7 +242,11 @@ def main():
                     raw.write_bytes(synth(key, s, prev, nxt))
                     (parts_dir / f"{i + 1:03d}.txt").write_text(s, encoding="utf-8")
                 wav = td / f"{i:03d}.wav"
-                ff("-i", raw, "-af", TRIM, "-ar", "44100", "-ac", "1", wav)
+                cut = stray_tail(raw)
+                if cut is not None:
+                    print(f"  {i + 1:>2}: stray sound after the speech, cut at {cut:.2f}s")
+                ff("-i", raw, "-af", (f"atrim=0:{cut}," if cut is not None else "") + TRIM
+                   , "-ar", "44100", "-ac", "1", wav)
                 timeline.append((i + 1, t, s, i in todo))
                 t += secs(wav)
                 parts.append(wav)
