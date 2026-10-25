@@ -33,22 +33,32 @@ In: the k/g rule (*mleko → z mlekiem*), as a note in the table, because
 
 ## New words
 
-The restaurant: *restauracja, masło, ciasto, ile, kosztować* (carded, now
-priority) and *cytryna* (queued, card after the lesson). Arriving on his
-cards this week anyway: *babcia, dlaczego, ktoś, nagle, nic, przychodzić,
-razem, szczęśliwy, zmęczony, zupa*.
+Menu: *pierogi, ryż, czekolada, cytryna* (not in the deck; card after the
+lesson if they stick), *mięso* (carded, unseen). The restaurant itself:
+*restauracja, ile, kosztować*. Arriving on his cards this week anyway:
+*babcia, dlaczego, ktoś, nagle, nic, przychodzić, razem, szczęśliwy, zmęczony*.
 
 Vocabulary he is shaky on, worked in where it fits: *człowiek, otwierać,
-chyba, daleko, jeszcze, można, głodny*.
+blisko, można, głodny*.
 
 ## Exercise
 
-Nine sentences, the noun given in brackets, three per gender, no two of one
-gender in a row; every noun one he has met, none of the answers in the story.
-One uses *pod* (*Kot śpi pod krzesłem*), to show the same endings work there.
+Nine sentences, the noun in brackets, three per gender, no two of one gender
+in a row, every noun one he has met, no answer appearing in the story. Varied
+on purpose (asked 2026-10-25): the gap at the start, middle or end; after
+*z* (5), *pod* (2), *nad* (1), and once with nothing before it — *jedzie do
+pracy rowerem*, the "how" use he already knows from *płaci kartą*.
 
-Answers: bratem, krzesłem, siostrą, oknem, przyjacielem, żoną, rowerem, rybą,
-pytaniem.
+Answers: bratem, miastem, ławką, rowerem, krzesłem, żoną, przyjacielem,
+pytaniem, siostrą.
+
+## Revised 2026-10-25, before the lesson
+
+First draft had him ordering bread and butter and soup with bread, rain
+nobody could be sure of (*chyba pada deszcz*), soup "still hot" for no
+reason, and *kosztuje dużo, ale babcia płaci* with no contrast to justify
+*ale*. Now: fish with rice, pierogi with meat, ice cream with chocolate, and
+*— To nic! — mówi babcia i płaci kartą.* The ending is unchanged.
 
 ## Story
 

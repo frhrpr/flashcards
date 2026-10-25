@@ -2,17 +2,17 @@ Jest sobota. Sven jest zmęczony i głodny. Ewa otwiera lodówkę, ale nic tam n
 
 — Jestem głodna! — mówi Ewa. — Idziemy do restauracji?
 
-Restauracja nie jest daleko. Chyba pada deszcz, ale Sven idzie razem z Ewą.
+Restauracja jest blisko. Sven idzie tam razem z Ewą.
 
 W restauracji pracuje stary człowiek.
 
 — Dzień dobry! Co dla pani? — pyta człowiek.
 
-— Poproszę kawę z mlekiem i chleb z masłem.
+— Poproszę rybę z ryżem i herbatę z cytryną.
 
 — A dla pana?
 
-— Poproszę zupę z chlebem i herbatę z cytryną.
+— Poproszę pierogi z mięsem i kawę z mlekiem.
 
 Nagle ktoś otwiera drzwi. To babcia Ewy! Babcia przychodzi z kotem.
 
@@ -24,40 +24,44 @@ Nagle ktoś otwiera drzwi. To babcia Ewy! Babcia przychodzi z kotem.
 
 — Można — mówi człowiek i się śmieje. — Co dla pani?
 
-— Poproszę ciasto z serem. A dla kota rybę!
+— Poproszę lody z czekoladą. A dla kota mleko!
 
-Zupa jest jeszcze gorąca i bardzo dobra. Ewa pije kawę z mlekiem, a babcia je ciasto z serem. Kot je rybę.
+Pierogi są bardzo dobre. Ewa je rybę, a babcia je lody. Kot pije mleko.
 
-Potem Sven pyta, ile to kosztuje. To kosztuje dużo, ale babcia płaci kartą.
+— Ile to kosztuje? — pyta Sven.
+
+— To nic! — mówi babcia i płaci kartą.
 
 — Dziękujemy! — mówią Ewa i Sven.
 
 Potem Ewa i Sven idą do domu z babcią i z kotem. W domu Pies patrzy na kota babci i nie jest szczęśliwy.
 
-Ewa idzie do sklepu z (…). [brat]
+Ewa z (…) idzie do sklepu. [brat]
+Nad (…) leci samolot. [miasto]
+Pod (…) jest piłka. [ławka]
+Ewa jedzie do pracy (…). [rower]
 Kot śpi pod (…). [krzesło]
-Kasia jedzie do Krakowa z (…). [siostra]
-Ewa ma pokój z (…). [okno]
-Sven gra w piłkę z (…). [przyjaciel]
-Mąż pije kawę z (…). [żona]
-Sven idzie do parku z (…). [rower]
-Sven je chleb z (…). [ryba]
+Mąż z (…) pije kawę. [żona]
+Sven idzie z (…) do parku. [przyjaciel]
 Sven idzie do Ewy z (…). [pytanie]
+Kasia idzie do apteki z (…). [siostra]
 
 --- pytania ---
 
-Dlaczego Ewa i Sven idą do restauracji? | *w lodówce nic nie ma | pada deszcz | babcia jest w restauracji
-Z czym Ewa pije kawę? | z cytryną | *z mlekiem | z masłem
-Co je Sven? | *zupę z chlebem | ciasto z serem | rybę
-Kto przychodzi do restauracji? | brat Ewy | *babcia Ewy | Pies
-Z kim przychodzi babcia? | z Ewą | *z kotem | z chlebem
-Czy w restauracji można być z kotem? | *tak | nie
+Dlaczego Ewa i Sven idą do restauracji? | *w lodówce nic nie ma | restauracja jest blisko | babcia jest w restauracji
+Z czym Ewa pije herbatę? | *z cytryną | z mlekiem | z czekoladą
+Co je Sven? | *pierogi z mięsem | rybę z ryżem | lody
+Kto przychodzi do restauracji? | Pies | *babcia Ewy | stary człowiek
+Z kim przychodzi babcia? | z Ewą | *z kotem
+Co pije kot? | herbatę | kawę | *mleko
 Kto płaci? | Sven | Ewa | *babcia
 Czy Pies jest szczęśliwy? | tak | *nie
 
 --- lemmas ---
 Jest = być
 sobota = sobota
+Sven = -
+jest = być
 zmęczony = zmęczony
 i = i
 głodny = głodny
@@ -66,17 +70,17 @@ otwiera = otwierać
 lodówkę = lodówka
 ale = ale
 nic = nic
+tam = tam
 nie = nie
 ma = mieć
+Jestem = być
+głodna = głodny
 mówi = mówić
 Idziemy = iść
 do = do
 restauracji = restauracja
 Restauracja = restauracja
-daleko = daleko
-Chyba = chyba
-pada = padać
-deszcz = deszcz
+blisko = blisko
 idzie = iść
 razem = razem
 z = z
@@ -92,16 +96,16 @@ dla = dla
 pani = pani
 pyta = pytać
 Poproszę = poproszę
-kawę = kawa
-mlekiem = mleko
-chleb = chleb
-masłem = masło
-A = a
-pana = pan
-zupę = zupa
-chlebem = chleb
+rybę = ryba
+ryżem = ryż
 herbatę = herbata
 cytryną = cytryna
+A = a
+pana = pan
+pierogi = pierogi
+mięsem = mięso
+kawę = kawa
+mlekiem = mleko
 Nagle = nagle
 ktoś = ktoś
 drzwi = drzwi
@@ -123,24 +127,23 @@ Czy = czy
 można = można
 się = się
 śmieje = śmiać się
-ciasto = ciasto
-serem = ser
+lody = lody
+czekoladą = czekolada
 kota = kot
-rybę = ryba
-Zupa = zupa
-jeszcze = jeszcze
-gorąca = gorący
-dobra = dobry
-pije = pić
+mleko = mleko
+Pierogi = pierogi
+są = być
+bardzo = bardzo
 je = jeść
-Potem = potem
-ile = ile
+Kot = kot
+pije = pić
+Ile = ile
 kosztuje = kosztować
-dużo = dużo
 płaci = płacić
 kartą = karta
 Dziękujemy = dziękować
 mówią = mówić
+Potem = potem
 idą = iść
 babcią = babcia
 Pies = pies
@@ -148,35 +151,34 @@ patrzy = patrzeć
 na = na
 babci = babcia
 szczęśliwy = szczęśliwy
+sklepu = sklep
 brat = brat
-pokój = pokój
-okno = okno
-przyjaciel = przyjaciel
-Kasia = -
+Nad = nad
+leci = lecieć
+samolot = samolot
+miasto = miasto
+Pod = pod
+ławka = ławka
 jedzie = jechać
-Krakowa = -
-siostra = siostra
+pracy = praca
+rower = rower
+śpi = spać
+pod = pod
+krzesło = krzesło
 Mąż = mąż
 żona = żona
-gra = grać
-piłkę = piłka
+parku = park
+przyjaciel = przyjaciel
+pytanie = pytanie
+Kasia = -
+apteki = apteka
+siostra = siostra
 pytania = pytanie
+lodówce = lodówka
 czym = co
 Kto = kto
 kim = kto
 tak = tak
-tam = tam
-Jestem = być
-sklepu = sklep
-Kot = kot
-śpi = spać
-pod = pod
-krzesło = krzesło
-Sven = -
-rower = rower
-parku = park
-ryba = ryba
-lodówce = lodówka
-bardzo = bardzo
-głodna = głodny
-pytanie = pytanie
+Babcia = babcia
+dobre = dobry
+piłka = piłka

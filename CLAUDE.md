@@ -520,7 +520,9 @@ on a **Reading** page in the app; earlier ones stay paper-only, by request.
 So **every new story gets a `--- pytania ---` section** (same format as
 listening, every wrong option taken from the story) and then
 `python3 tools/reading.py`. The tool includes a story only when it has
-questions, so a story without them silently stays off the app.
+questions **and its id is in `read/approved.txt`**. Add the id only after the
+teacher has read the story and said yes: on 2026-10-25 a lesson story went
+live before they had seen it. The tool prints what is waiting.
 
 - **Any word can be tapped**: a sheet at the bottom shows the headword, its
   gloss, and the card's picture and recording when it has an approved card.
