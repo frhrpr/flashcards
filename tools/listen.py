@@ -5,6 +5,7 @@
     python3 tools/listen.py lessons/<date>-sluchanie-<slug>.story.txt --go     # synthesise
     python3 tools/listen.py --index                                            # rebuild the list only
     python3 tools/listen.py <story> --go --redo 3,7    # new takes of sentences 3 and 7 only
+    python3 tools/listen.py <story> --go --whole      # one take, pauses from timestamps (trial 2026-10-25)
 
 Writes `listen/<slug>.mp3` (served by the site, and the file to send by hand)
 and rebuilds `listen/episodes.json` from every story whose mp3 exists. The list is
@@ -56,7 +57,7 @@ Every choice here was made by ear on 2026-10-21, on the first episode:
 - A dialogue tag stays with its line ("Idziemy do parku? pyta Ania.") so it
   is read as one utterance; dashes are dropped because they are not spoken.
 """
-import argparse, json, re, subprocess, sys, tempfile, urllib.request
+import argparse, base64, json, re, subprocess, sys, tempfile, urllib.request
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -181,6 +182,34 @@ def stray_tail(path):
     return gaps[-1][0] if peaks and max(peaks) > BLIP_DB else None
 
 
+def whole_take(key, paras):
+    """The whole story in one request, with per-character timestamps.
+
+    Returns (mp3 bytes, [(sentence, start_s, end_s), ...], [para index per
+    sentence]). One take keeps the voice's tone and breathing continuous;
+    the timestamps say where each sentence ends so the pauses can be made
+    as long as a beginner needs."""
+    text, spans, para_of = "", [], []
+    for pi, p in enumerate(paras):
+        for si, sent in enumerate(p):
+            if text:
+                text += "\n\n" if si == 0 else " "
+            spans.append((len(text), len(text) + len(sent)))
+            para_of.append(pi)
+            text += sent
+    body = {"text": text, "model_id": MODEL, "language_code": "pl", "voice_settings": SETTINGS}
+    req = urllib.request.Request(audio.TTS_API + VOICE + "/with-timestamps", data=json.dumps(body).encode(),
+                                 headers={"xi-api-key": key, "Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=180) as r:
+        res = json.load(r)
+    al = res["alignment"]
+    if "".join(al["characters"]) != text:
+        sys.exit("listen: the timestamps do not line up with the text sent; nothing written")
+    st, en = al["character_start_times_seconds"], al["character_end_times_seconds"]
+    times = [(s_, st[a], en[b - 1]) for (a, b), s_ in zip(spans, [x for p in paras for x in p])]
+    return base64.b64decode(res["audio_base64"]), times, para_of
+
+
 def ff(*args):
     subprocess.run(["ffmpeg", "-loglevel", "error", "-y", *args], check=True)
 
@@ -191,6 +220,8 @@ def main():
     ap.add_argument("--go", action="store_true")
     ap.add_argument("--index", action="store_true", help="rebuild listen/episodes.json only")
     ap.add_argument("--redo", default="", help="sentence numbers to take again, e.g. 3,7")
+    ap.add_argument("--whole", action="store_true", help="one take of the whole story, pauses from timestamps")
+    ap.add_argument("--retake", action="store_true", help="with --whole: ask for a new take")
     a = ap.parse_args()
     if a.index:
         write_index()
@@ -198,6 +229,8 @@ def main():
     if not a.story:
         ap.error("give a story file, or --index")
     paras = sentences(a.story)
+    if a.whole:
+        return main_whole(a, paras)
     qs = questions(a.story)
     flat = [s for p in paras for s in p]
     slug = slug_of(a.story)
@@ -264,6 +297,67 @@ def main():
     dur = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
                           "-of", "csv=p=0", dest], capture_output=True, text=True).stdout.strip()
     print(f"wrote {dest}  ({float(dur):.0f} s)")
+    write_index()
+    return 0
+
+
+def main_whole(a, paras):
+    """One take, then the pause after each sentence lengthened to SENT_GAP or
+    PARA_GAP. Each cut sits just after the sentence's last sound, so an
+    in-breath stays where the voice put it, before the next sentence."""
+    flat = [x for p in paras for x in p]
+    slug = slug_of(a.story)
+    dest = LISTEN / f"{slug}.mp3"
+    parts_dir = out_dir("listen-parts") / slug
+    cache = parts_dir / "whole.json"
+    text_key = json.dumps(paras, ensure_ascii=False)
+    have = (not a.retake and cache.exists()
+            and json.loads(cache.read_text(encoding="utf-8")).get("paras") == text_key)
+    print(f"{len(flat)} sentences, {sum(map(len, flat))} characters; "
+          + ("reusing the saved take" if have else "one new take"))
+    if not a.go:
+        print(f"\ndry run. Re-run with --go to write {dest}")
+        return 0
+    parts_dir.mkdir(parents=True, exist_ok=True)
+    if have:
+        saved = json.loads(cache.read_text(encoding="utf-8"))
+        mp3, times, para_of = base64.b64decode(saved["mp3"]), saved["times"], saved["para_of"]
+    else:
+        mp3, times, para_of = whole_take(audio.load_key(), paras)
+        cache.write_text(json.dumps({"paras": text_key, "times": times, "para_of": para_of,
+                                     "mp3": base64.b64encode(mp3).decode()}), encoding="utf-8")
+    with tempfile.TemporaryDirectory() as td:
+        td = Path(td)
+        (td / "take.mp3").write_bytes(mp3)
+        ff("-i", td / "take.mp3", "-ar", "44100", "-ac", "1", td / "take.wav")
+        cuts, adds = [0.0], []
+        for i in range(len(times) - 1):
+            end, nxt = times[i][2], times[i + 1][1]
+            gap = max(0.0, nxt - end)
+            cuts.append(end + min(0.06, gap / 2))
+            want = PARA_GAP if para_of[i + 1] != para_of[i] else SENT_GAP
+            adds.append(max(0.0, want - gap))
+        parts, t, line = [], 0.0, []
+        for i, c in enumerate(cuts):
+            seg = td / f"{i:03d}.wav"
+            end = f":end={cuts[i + 1]}" if i + 1 < len(cuts) else ""
+            ff("-i", td / "take.wav", "-af", f"atrim=start={c}{end},asetpts=PTS-STARTPTS", seg)
+            parts.append(seg)
+            line.append((i + 1, t + (times[i][1] - c if i else 0), flat[i]))
+            t += (cuts[i + 1] - c) if i + 1 < len(cuts) else 0
+            if i < len(adds) and adds[i] > 0:
+                sil = td / f"s{i:03d}.wav"
+                ff("-f", "lavfi", "-i", "anullsrc=r=44100:cl=mono", "-t", f"{adds[i]:.3f}", sil)
+                parts.append(sil)
+                t += adds[i]
+        (td / "list.txt").write_text("".join(f"file '{x}'\n" for x in parts))
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        ff("-f", "concat", "-safe", "0", "-i", td / "list.txt",
+           "-af", "silenceremove=start_periods=1:start_threshold=-50dB,loudnorm=I=-16:TP=-1.5:LRA=11",
+           "-ar", "44100", "-b:a", "128k", dest)
+    for num, start, sent in line:
+        print(f"  {num:>2}  {int(start // 60)}:{start % 60:04.1f}  {sent}")
+    print(f"wrote {dest}")
     write_index()
     return 0
 
