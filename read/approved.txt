@@ -2,3 +2,4 @@
 # tools/reading.py publishes only these. Add one only after an explicit yes.
 dziwny-glos
 wazny-dzien
+kawa-z-mlekiem

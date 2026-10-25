@@ -7063,7 +7063,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "noz",
@@ -7257,8 +7258,7 @@
         "production",
         "listening"
       ],
-      "reviewed": true,
-      "priority": true
+      "reviewed": true
     },
     {
       "id": "rower",
@@ -9077,8 +9077,7 @@
         "production",
         "listening"
       ],
-      "reviewed": true,
-      "priority": true
+      "reviewed": true
     },
     {
       "id": "codziennie",
