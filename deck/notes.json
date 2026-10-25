@@ -12404,7 +12404,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "priority": true
     },
     {
@@ -12436,7 +12436,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "priority": true
     },
     {
@@ -12469,7 +12469,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "priority": true
     },
     {
@@ -12503,7 +12503,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "priority": true
     },
     {
@@ -12514,9 +12514,9 @@
       "ipa": "t͡sɨˈtrɨna",
       "note": null,
       "image": "media/img/cytryna.webp",
-      "image_alt": "a glass of tea with a slice of lemon",
+      "image_alt": "a whole lemon and a cut lemon half filling the frame",
       "image_basis": "sentence",
-      "image_prompt": "A clear glass of hot tea with a slice of lemon floating in it, a whole lemon beside the glass. No text or lettering. Square image.",
+      "image_prompt": "A close-up of one whole bright yellow lemon and one lemon cut in half, filling most of the frame, on a wooden table; a glass of tea is just visible, out of focus, behind them. No text or lettering. Square image.",
       "audio": "media/audio/cytryna.mp3",
       "sentence": {
         "pl": "Piję herbatę z cytryną.",
@@ -12570,7 +12570,7 @@
         "production",
         "listening"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "priority": true
     },
     {
@@ -12581,9 +12581,9 @@
       "ipa": "rɨʂ",
       "note": null,
       "image": "media/img/ryz.webp",
-      "image_alt": "a plate of fish with rice",
-      "image_basis": "sentence",
-      "image_prompt": "A plate with a piece of grilled fish and a mound of white rice, a lemon wedge on the side. No text or lettering. Square image.",
+      "image_alt": "a bowl of white rice filling the frame",
+      "image_basis": "word",
+      "image_prompt": "A close-up of a bowl heaped with plain white cooked rice, filling most of the frame, on a wooden table. Nothing else on the plate. No text or lettering. Square image.",
       "audio": "media/audio/ryz.mp3",
       "sentence": {
         "pl": "Ryba z ryżem jest bardzo dobra.",
@@ -12638,7 +12638,7 @@
       "cards": [
         "form"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "kind": "form",
       "parent": "kot"
     },
@@ -12672,7 +12672,7 @@
       "cards": [
         "form"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "kind": "form",
       "parent": "siostra"
     },
@@ -12707,7 +12707,7 @@
       "cards": [
         "form"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "kind": "form",
       "parent": "mieso"
     },
@@ -12738,7 +12738,7 @@
       "cards": [
         "form"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "kind": "form",
       "parent": "karta"
     }

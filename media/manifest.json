@@ -8683,18 +8683,18 @@
     "source": "generated"
   },
   "media/img/cytryna.webp": {
-    "bytes": 25556,
+    "bytes": 47574,
     "check": {
       "model": "gemini-flash-latest",
       "problem": "",
       "verdict": "ok",
       "why": ""
     },
-    "fingerprint": "8b251ea6fddb4a4a",
+    "fingerprint": "4f40d0a735478792",
     "model": "gemini-2.5-flash-image",
     "original_size": "1024x1024",
     "process_version": 1,
-    "prompt": "A clear glass of hot tea with a slice of lemon floating in it, a whole lemon beside the glass. No text or lettering. Square image.",
+    "prompt": "A close-up of one whole bright yellow lemon and one lemon cut in half, filling most of the frame, on a wooden table; a glass of tea is just visible, out of focus, behind them. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -12319,18 +12319,18 @@
     "source": "generated"
   },
   "media/img/ryz.webp": {
-    "bytes": 44574,
+    "bytes": 69150,
     "check": {
       "model": "gemini-flash-latest",
       "problem": "",
       "verdict": "ok",
       "why": ""
     },
-    "fingerprint": "fb983be7340bb64d",
+    "fingerprint": "a145da4ba235804c",
     "model": "gemini-2.5-flash-image",
     "original_size": "1024x1024",
     "process_version": 1,
-    "prompt": "A plate with a piece of grilled fish and a mound of white rice, a lemon wedge on the side. No text or lettering. Square image.",
+    "prompt": "A close-up of a bowl heaped with plain white cooked rice, filling most of the frame, on a wooden table. Nothing else on the plate. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
