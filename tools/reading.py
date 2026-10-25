@@ -59,6 +59,8 @@ FUNCTION_GLOSS = {
     "dziękuję": "thank you", "otwierać": "to open (is opening, opens often)",
     # new in a lesson, not carded yet: cards come after the lesson
     "cytryna": "lemon",
+    "pierogi": "pierogi (filled dumplings)", "ryż": "rice", "czekolada": "chocolate",
+    "kelner": "waiter", "rachunek": "the bill", "smacznego": "enjoy your meal!",
 }
 
 

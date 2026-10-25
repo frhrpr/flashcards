@@ -4,9 +4,9 @@ Jest sobota. Sven jest zmęczony i głodny. Ewa otwiera lodówkę, ale nic tam n
 
 Restauracja jest blisko. Sven idzie tam razem z Ewą.
 
-W restauracji pracuje stary człowiek.
+W restauracji pracuje stary kelner.
 
-— Dzień dobry! Co dla pani? — pyta człowiek.
+— Dzień dobry! Co dla pani? — pyta kelner.
 
 — Poproszę rybę z ryżem i herbatę z cytryną.
 
@@ -22,13 +22,15 @@ Nagle ktoś otwiera drzwi. To babcia Ewy! Babcia przychodzi z kotem.
 
 — Czy w restauracji można być z kotem? — pyta Sven.
 
-— Można — mówi człowiek i się śmieje. — Co dla pani?
+— Można — mówi kelner i się śmieje. — Co dla pani?
 
 — Poproszę lody z czekoladą. A dla kota mleko!
 
+— Smacznego! — mówi kelner.
+
 Pierogi są bardzo dobre. Ewa je rybę, a babcia je lody. Kot pije mleko.
 
-— Ile to kosztuje? — pyta Sven.
+— Poproszę rachunek. Ile to kosztuje? — pyta Sven.
 
 — To nic! — mówi babcia i płaci kartą.
 
@@ -51,7 +53,7 @@ Kasia idzie do apteki z (…). [siostra]
 Dlaczego Ewa i Sven idą do restauracji? | *w lodówce nic nie ma | restauracja jest blisko | babcia jest w restauracji
 Z czym Ewa pije herbatę? | *z cytryną | z mlekiem | z czekoladą
 Co je Sven? | *pierogi z mięsem | rybę z ryżem | lody
-Kto przychodzi do restauracji? | Pies | *babcia Ewy | stary człowiek
+Kto przychodzi do restauracji? | Pies | *babcia Ewy | kelner
 Z kim przychodzi babcia? | z Ewą | *z kotem
 Co pije kot? | herbatę | kawę | *mleko
 Kto płaci? | Sven | Ewa | *babcia
@@ -88,7 +90,6 @@ Ewą = -
 W = w
 pracuje = pracować
 stary = stary
-człowiek = człowiek
 Dzień = dzień
 dobry = dobry
 Co = co
@@ -182,3 +183,6 @@ tak = tak
 Babcia = babcia
 dobre = dobry
 piłka = piłka
+kelner = kelner
+Smacznego = smacznego
+rachunek = rachunek

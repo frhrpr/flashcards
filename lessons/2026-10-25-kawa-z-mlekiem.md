@@ -33,12 +33,13 @@ In: the k/g rule (*mleko → z mlekiem*), as a note in the table, because
 
 ## New words
 
-Menu: *pierogi, ryż, czekolada, cytryna* (not in the deck; card after the
+Restaurant words, asked for so the scene sounds like one: *kelner* (not
+*człowiek*), *rachunek*, *smacznego!*. Menu: *pierogi, ryż, czekolada, cytryna* (not in the deck; card after the
 lesson if they stick), *mięso* (carded, unseen). The restaurant itself:
 *restauracja, ile, kosztować*. Arriving on his cards this week anyway:
 *babcia, dlaczego, ktoś, nagle, nic, przychodzić, razem, szczęśliwy, zmęczony*.
 
-Vocabulary he is shaky on, worked in where it fits: *człowiek, otwierać,
+Vocabulary he is shaky on, worked in where it fits: *otwierać,
 blisko, można, głodny*.
 
 ## Exercise
