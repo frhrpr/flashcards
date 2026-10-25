@@ -12372,6 +12372,375 @@
         "listening"
       ],
       "reviewed": true
+    },
+    {
+      "id": "kelner",
+      "word": "kelner",
+      "gloss": "waiter",
+      "pos": "noun",
+      "ipa": "ˈkɛlnɛr",
+      "note": null,
+      "image": "media/img/kelner.webp",
+      "image_alt": "a waiter carrying a tray between tables",
+      "image_basis": "sentence",
+      "image_prompt": "A waiter in a white shirt and black apron carrying a tray with two plates between tables in a busy restaurant. No text or lettering. Square image.",
+      "audio": "media/audio/kelner.mp3",
+      "sentence": {
+        "pl": "Kelner pracuje w restauracji.",
+        "en": "The waiter works in a restaurant.",
+        "gap": "___ pracuje w restauracji.",
+        "answer": "Kelner",
+        "answer_lemma": "kelner",
+        "audio": "media/audio/kelner__sentence.mp3",
+        "lemmas": [
+          "kelner",
+          "pracować",
+          "w",
+          "restauracja"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "rachunek",
+      "word": "rachunek",
+      "gloss": "the bill",
+      "pos": "noun",
+      "ipa": "raˈxunɛk",
+      "note": null,
+      "image": "media/img/rachunek.webp",
+      "image_alt": "a waiter putting the bill on a restaurant table",
+      "image_basis": "sentence",
+      "image_prompt": "A waiter placing a small closed leather bill folder on a restaurant table in front of a customer who has finished eating. No text or lettering. Square image.",
+      "audio": "media/audio/rachunek.mp3",
+      "sentence": {
+        "pl": "Poproszę rachunek.",
+        "en": "The bill, please.",
+        "gap": "Poproszę ___.",
+        "answer": "rachunek",
+        "answer_lemma": "rachunek",
+        "audio": "media/audio/rachunek__sentence.mp3",
+        "lemmas": [
+          "poproszę",
+          "rachunek"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "pierogi",
+      "word": "pierogi",
+      "gloss": "filled dumplings",
+      "pos": "noun",
+      "ipa": "pʲɛˈrɔɡʲi",
+      "note": null,
+      "image": "media/img/pierogi.webp",
+      "image_alt": "a plate of pierogi",
+      "image_basis": "sentence",
+      "image_prompt": "A plate of Polish pierogi, half-moon shaped dumplings with crimped edges, topped with fried onion, on a wooden table. No text or lettering. Square image.",
+      "audio": "media/audio/pierogi.mp3",
+      "sentence": {
+        "pl": "Bardzo lubię pierogi.",
+        "en": "I really like pierogi.",
+        "gap": "Bardzo lubię ___.",
+        "answer": "pierogi",
+        "answer_lemma": "pierogi",
+        "audio": "media/audio/pierogi__sentence.mp3",
+        "lemmas": [
+          "bardzo",
+          "lubić",
+          "pierogi"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "nalesniki",
+      "word": "naleśniki",
+      "gloss": "pancakes",
+      "pos": "noun",
+      "ipa": "nalɛɕˈɲici",
+      "note": null,
+      "image": "media/img/nalesniki.webp",
+      "image_alt": "thin pancakes with jam on a plate",
+      "image_basis": "sentence",
+      "image_prompt": "A plate of thin rolled pancakes filled with jam, dusted with sugar, on a breakfast table in morning light. No text or lettering. Square image.",
+      "audio": "media/audio/nalesniki.mp3",
+      "sentence": {
+        "pl": "Na śniadanie jem naleśniki.",
+        "en": "For breakfast I eat pancakes.",
+        "gap": "Na śniadanie jem ___.",
+        "answer": "naleśniki",
+        "answer_lemma": "naleśniki",
+        "audio": "media/audio/nalesniki__sentence.mp3",
+        "lemmas": [
+          "na",
+          "śniadanie",
+          "jeść",
+          "naleśniki"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "cytryna",
+      "word": "cytryna",
+      "gloss": "lemon",
+      "pos": "noun",
+      "ipa": "t͡sɨˈtrɨna",
+      "note": null,
+      "image": "media/img/cytryna.webp",
+      "image_alt": "a glass of tea with a slice of lemon",
+      "image_basis": "sentence",
+      "image_prompt": "A clear glass of hot tea with a slice of lemon floating in it, a whole lemon beside the glass. No text or lettering. Square image.",
+      "audio": "media/audio/cytryna.mp3",
+      "sentence": {
+        "pl": "Piję herbatę z cytryną.",
+        "en": "I drink tea with lemon.",
+        "gap": "Piję herbatę z ___.",
+        "answer": "cytryną",
+        "answer_lemma": "cytryna",
+        "audio": "media/audio/cytryna__sentence.mp3",
+        "lemmas": [
+          "pić",
+          "herbata",
+          "z",
+          "cytryna"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "czekolada",
+      "word": "czekolada",
+      "gloss": "chocolate",
+      "pos": "noun",
+      "ipa": "t͡ʂɛkɔˈlada",
+      "note": null,
+      "image": "media/img/czekolada.webp",
+      "image_alt": "a child happily eating a chocolate bar",
+      "image_basis": "sentence",
+      "image_prompt": "A small child grinning with a chocolate bar in hand and chocolate on the corner of the mouth. No text or lettering. Square image.",
+      "audio": "media/audio/czekolada.mp3",
+      "sentence": {
+        "pl": "Dzieci lubią czekoladę.",
+        "en": "Children like chocolate.",
+        "gap": "Dzieci lubią ___.",
+        "answer": "czekoladę",
+        "answer_lemma": "czekolada",
+        "audio": "media/audio/czekolada__sentence.mp3",
+        "lemmas": [
+          "dziecko",
+          "lubić",
+          "czekolada"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "ryz",
+      "word": "ryż",
+      "gloss": "rice",
+      "pos": "noun",
+      "ipa": "rɨʂ",
+      "note": null,
+      "image": "media/img/ryz.webp",
+      "image_alt": "a plate of fish with rice",
+      "image_basis": "sentence",
+      "image_prompt": "A plate with a piece of grilled fish and a mound of white rice, a lemon wedge on the side. No text or lettering. Square image.",
+      "audio": "media/audio/ryz.mp3",
+      "sentence": {
+        "pl": "Ryba z ryżem jest bardzo dobra.",
+        "en": "Fish with rice is very good.",
+        "gap": "Ryba z ___ jest bardzo dobra.",
+        "answer": "ryżem",
+        "answer_lemma": "ryż",
+        "audio": "media/audio/ryz__sentence.mp3",
+        "lemmas": [
+          "ryba",
+          "z",
+          "ryż",
+          "być",
+          "bardzo",
+          "dobry"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": false,
+      "priority": true
+    },
+    {
+      "id": "kot_ins",
+      "word": "kotem",
+      "gloss": "cat, after z",
+      "pos": "noun",
+      "ipa": "ˈkɔtɛm",
+      "note": null,
+      "image": "media/img/kot_ins.webp",
+      "image_alt": "a grandmother arriving at a door holding a cat",
+      "image_basis": "sentence",
+      "image_prompt": "A smiling grandmother standing in an open front doorway holding a cat in her arms. No text or lettering. Square image.",
+      "audio": "media/audio/kot_ins.mp3",
+      "sentence": {
+        "pl": "Babcia przychodzi z kotem.",
+        "en": "Grandma comes with the cat.",
+        "gap": "Babcia przychodzi z ___.",
+        "answer": "kotem",
+        "answer_lemma": "kotem",
+        "audio": "media/audio/kot_ins__sentence.mp3",
+        "lemmas": [
+          "babcia",
+          "przychodzić",
+          "z",
+          "kot"
+        ]
+      },
+      "cards": [
+        "form"
+      ],
+      "reviewed": false,
+      "kind": "form",
+      "parent": "kot"
+    },
+    {
+      "id": "siostra_ins",
+      "word": "siostrą",
+      "gloss": "sister, after z",
+      "pos": "noun",
+      "ipa": "ˈɕɔstrɔ̃",
+      "note": null,
+      "image": "media/img/siostra_ins.webp",
+      "image_alt": "two sisters walking in a park",
+      "image_basis": "sentence",
+      "image_prompt": "Two young women, sisters, walking side by side along a path in a park, chatting. No text or lettering. Square image.",
+      "audio": "media/audio/siostra_ins.mp3",
+      "sentence": {
+        "pl": "Idę do parku z siostrą.",
+        "en": "I am going to the park with my sister.",
+        "gap": "Idę do parku z ___.",
+        "answer": "siostrą",
+        "answer_lemma": "siostrą",
+        "audio": "media/audio/siostra_ins__sentence.mp3",
+        "lemmas": [
+          "iść",
+          "do",
+          "park",
+          "z",
+          "siostra"
+        ]
+      },
+      "cards": [
+        "form"
+      ],
+      "reviewed": false,
+      "kind": "form",
+      "parent": "siostra"
+    },
+    {
+      "id": "mieso_ins",
+      "word": "mięsem",
+      "gloss": "meat, after z",
+      "pos": "noun",
+      "ipa": "ˈmjɛ̃sɛm",
+      "note": null,
+      "image": "media/img/mieso_ins.webp",
+      "image_alt": "a bowl of soup with pieces of meat",
+      "image_basis": "sentence",
+      "image_prompt": "A bowl of hearty soup with visible chunks of meat and vegetables, steam rising. No text or lettering. Square image.",
+      "audio": "media/audio/mieso_ins.mp3",
+      "sentence": {
+        "pl": "Zupa z mięsem jest bardzo dobra.",
+        "en": "Soup with meat is very good.",
+        "gap": "Zupa z ___ jest bardzo dobra.",
+        "answer": "mięsem",
+        "answer_lemma": "mięsem",
+        "audio": "media/audio/mieso_ins__sentence.mp3",
+        "lemmas": [
+          "zupa",
+          "z",
+          "mięso",
+          "być",
+          "bardzo",
+          "dobry"
+        ]
+      },
+      "cards": [
+        "form"
+      ],
+      "reviewed": false,
+      "kind": "form",
+      "parent": "mieso"
+    },
+    {
+      "id": "karta_ins",
+      "word": "kartą",
+      "gloss": "card, for how you pay",
+      "pos": "noun",
+      "ipa": "ˈkartɔ̃",
+      "note": null,
+      "image": "media/img/karta_ins.webp",
+      "image_alt": "a hand paying with a bank card at a terminal",
+      "image_basis": "sentence",
+      "image_prompt": "A hand holding a bank card against a card payment terminal at a shop counter. No text or lettering, no numbers on the screen. Square image.",
+      "audio": "media/audio/karta_ins.mp3",
+      "sentence": {
+        "pl": "Płacę kartą.",
+        "en": "I pay by card.",
+        "gap": "Płacę ___.",
+        "answer": "kartą",
+        "answer_lemma": "kartą",
+        "audio": "media/audio/karta_ins__sentence.mp3",
+        "lemmas": [
+          "płacić",
+          "karta"
+        ]
+      },
+      "cards": [
+        "form"
+      ],
+      "reviewed": false,
+      "kind": "form",
+      "parent": "karta"
     }
   ]
 }

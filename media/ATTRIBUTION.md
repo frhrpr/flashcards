@@ -37,11 +37,13 @@ do not edit by hand.
 | `media/audio/corka.mp3` | [Pl-córka.ogg](https://commons.wikimedia.org/wiki/File:Pl-c%C3%B3rka.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/cos.mp3` | [Pl-coś.ogg](https://commons.wikimedia.org/wiki/File:Pl-co%C5%9B.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/cukier.mp3` | [Pl-cukier.ogg](https://commons.wikimedia.org/wiki/File:Pl-cukier.ogg) | Frizabela | CC BY 2.5 | commons |
+| `media/audio/cytryna.mp3` | [Pl-cytryna.ogg](https://commons.wikimedia.org/wiki/File:Pl-cytryna.ogg) | user Equadus (inactive global account) | CC BY 2.5 | commons |
 | `media/audio/czapka.mp3` | [Pl-czapka.ogg](https://commons.wikimedia.org/wiki/File:Pl-czapka.ogg) | Rogra | CC BY 2.5 | commons |
 | `media/audio/czarny.mp3` | [Pl-czarny.ogg](https://commons.wikimedia.org/wiki/File:Pl-czarny.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/czas.mp3` | [Pl-czas.ogg](https://commons.wikimedia.org/wiki/File:Pl-czas.ogg) | user Equadus (inactive global account) | CC BY 2.5 | commons |
 | `media/audio/czasami.mp3` | [Pl-czasami.ogg](https://commons.wikimedia.org/wiki/File:Pl-czasami.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/czekac.mp3` | [Pl-czekać.ogg](https://commons.wikimedia.org/wiki/File:Pl-czeka%C4%87.ogg) | Derbeth | CC BY 2.5 | commons |
+| `media/audio/czekolada.mp3` | [Pl-czekolada.ogg](https://commons.wikimedia.org/wiki/File:Pl-czekolada.ogg) | Frizabela | CC BY 2.5 | commons |
 | `media/audio/czerwony.mp3` | [Pl-czerwony.ogg](https://commons.wikimedia.org/wiki/File:Pl-czerwony.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/czesc.mp3` | [Pl-cześć.ogg](https://commons.wikimedia.org/wiki/File:Pl-cze%C5%9B%C4%87.ogg) | Tomasz "odder" Kozlowski | CC BY-SA 2.5 | commons |
 | `media/audio/czesto.mp3` | [Pl-często.ogg](https://commons.wikimedia.org/wiki/File:Pl-cz%C4%99sto.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
@@ -233,6 +235,7 @@ do not edit by hand.
 | `media/audio/pusty.mp3` | [Pl-pusty.ogg](https://commons.wikimedia.org/wiki/File:Pl-pusty.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/pytac.mp3` | [Pl-pytać.ogg](https://commons.wikimedia.org/wiki/File:Pl-pyta%C4%87.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/pytanie.mp3` | [Pl-pytanie.ogg](https://commons.wikimedia.org/wiki/File:Pl-pytanie.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
+| `media/audio/rachunek.mp3` | [Pl-rachunek.ogg](https://commons.wikimedia.org/wiki/File:Pl-rachunek.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/rano.mp3` | [Pl-rano.ogg](https://commons.wikimedia.org/wiki/File:Pl-rano.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/razem.mp3` | [Pl-razem.ogg](https://commons.wikimedia.org/wiki/File:Pl-razem.ogg) | Beriolon | CC BY-SA 4.0 | commons |
 | `media/audio/reka.mp3` | [Pl-ręka.ogg](https://commons.wikimedia.org/wiki/File:Pl-r%C4%99ka.ogg) | Wyksztalcioch | Public domain | commons |
@@ -243,6 +246,7 @@ do not edit by hand.
 | `media/audio/rower.mp3` | [Pl-rower.ogg](https://commons.wikimedia.org/wiki/File:Pl-rower.ogg) | Ewczy | CC BY-SA 3.0 | commons |
 | `media/audio/rozumiec.mp3` | [Pl-rozumieć.ogg](https://commons.wikimedia.org/wiki/File:Pl-rozumie%C4%87.ogg) | Kajervi | Public domain | commons |
 | `media/audio/ryba.mp3` | [Pl-ryba.ogg](https://commons.wikimedia.org/wiki/File:Pl-ryba.ogg) | Derbeth | CC BY 2.5 | commons |
+| `media/audio/ryz.mp3` | [Pl-ryż.ogg](https://commons.wikimedia.org/wiki/File:Pl-ry%C5%BC.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/rzeka.mp3` | [Pl-rzeka.ogg](https://commons.wikimedia.org/wiki/File:Pl-rzeka.ogg) | Frizabela | CC BY 2.5 | commons |
 | `media/audio/samochod.mp3` | [Pl-samochód.ogg](https://commons.wikimedia.org/wiki/File:Pl-samoch%C3%B3d.ogg) | Derbeth | CC BY 2.5 | commons |
 | `media/audio/samolot.mp3` | [Pl-samolot.ogg](https://commons.wikimedia.org/wiki/File:Pl-samolot.ogg) | Wyksztalcioch | Public domain | commons |

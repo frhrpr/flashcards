@@ -826,6 +826,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/cytryna.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-cytryna.ogg",
+    "fingerprint": "a2080af8d5855e61",
+    "gain_db": -3.8,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-cytryna.ogg",
+    "seconds": 0.84,
+    "source": "commons",
+    "text": "cytryna"
+  },
+  "media/audio/cytryna__sentence.mp3": {
+    "fingerprint": "4cd513d6cbc68351",
+    "gain_db": -1.1,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.28,
+    "source": "tts",
+    "text": "Piję herbatę z cytryną.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/czapka.mp3": {
     "author": "Rogra",
     "commons_file": "Pl-czapka.ogg",
@@ -950,6 +971,27 @@
     "seconds": 1.18,
     "source": "tts",
     "text": "Czy ty czekasz na pociąg?",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/czekolada.mp3": {
+    "author": "Frizabela",
+    "commons_file": "Pl-czekolada.ogg",
+    "fingerprint": "92fbe4ceb3725d15",
+    "gain_db": -3.9,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-czekolada.ogg",
+    "seconds": 0.86,
+    "source": "commons",
+    "text": "czekolada"
+  },
+  "media/audio/czekolada__sentence.mp3": {
+    "fingerprint": "aa525311ada778b2",
+    "gain_db": 0.5,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.25,
+    "source": "tts",
+    "text": "Dzieci lubią czekoladę.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -2321,6 +2363,28 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/karta_ins.mp3": {
+    "fingerprint": "6b30b3ece302c22b",
+    "gain_db": -0.5,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.65,
+    "source": "tts",
+    "text": "kartą",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/karta_ins__sentence.mp3": {
+    "fingerprint": "84eb77e7092a6b02",
+    "gain_db": 1.0,
+    "model": "eleven_multilingual_v2",
+    "seconds": 0.84,
+    "source": "tts",
+    "text": "Płacę kartą.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/kasa.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-kasa.ogg",
@@ -2403,6 +2467,28 @@
     "seconds": 1.49,
     "source": "tts",
     "text": "Rano piję kawę z mlekiem.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/kelner.mp3": {
+    "fingerprint": "9be55eb70afc7370",
+    "gain_db": 0.2,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.76,
+    "source": "tts",
+    "text": "kelner",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/kelner__sentence.mp3": {
+    "fingerprint": "11b85ff3962f31e8",
+    "gain_db": 0.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.96,
+    "source": "tts",
+    "text": "Kelner pracuje w restauracji.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -2676,6 +2762,28 @@
     "seconds": 1.44,
     "source": "tts",
     "text": "Mały kot pije mleko.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/kot_ins.mp3": {
+    "fingerprint": "ecc7d4a333663ff7",
+    "gain_db": 0.3,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.65,
+    "source": "tts",
+    "text": "kotem",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/kot_ins__sentence.mp3": {
+    "fingerprint": "2e594915fd4a350b",
+    "gain_db": 1.5,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.36,
+    "source": "tts",
+    "text": "Babcia przychodzi z kotem.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -3547,6 +3655,28 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/mieso_ins.mp3": {
+    "fingerprint": "cda65105c7d2ee94",
+    "gain_db": 2.1,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.86,
+    "source": "tts",
+    "text": "mięsem",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/mieso_ins__sentence.mp3": {
+    "fingerprint": "9b6b6c2753f14a87",
+    "gain_db": -1.3,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.62,
+    "source": "tts",
+    "text": "Zupa z mięsem jest bardzo dobra.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/mieszkac.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-mieszkać.ogg",
@@ -3860,6 +3990,28 @@
     "seconds": 1.23,
     "source": "tts",
     "text": "Nagle dzwoni telefon.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/nalesniki.mp3": {
+    "fingerprint": "cb6b9db9599f7eeb",
+    "gain_db": 1.4,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.86,
+    "source": "tts",
+    "text": "naleśniki",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/nalesniki__sentence.mp3": {
+    "fingerprint": "635c83c404ff486c",
+    "gain_db": -0.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.7,
+    "source": "tts",
+    "text": "Na śniadanie jem naleśniki.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -4726,6 +4878,28 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/pierogi.mp3": {
+    "fingerprint": "7d47f91ab4af60b8",
+    "gain_db": 0.4,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.68,
+    "source": "tts",
+    "text": "pierogi",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/pierogi__sentence.mp3": {
+    "fingerprint": "f22a282da77d54a4",
+    "gain_db": 0.6,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.1,
+    "source": "tts",
+    "text": "Bardzo lubię pierogi.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/pierwszy.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-pierwszy.ogg",
@@ -5379,6 +5553,27 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/rachunek.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-rachunek.ogg",
+    "fingerprint": "6b26eba245b5322f",
+    "gain_db": 1.1,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-rachunek.ogg",
+    "seconds": 0.94,
+    "source": "commons",
+    "text": "rachunek"
+  },
+  "media/audio/rachunek__sentence.mp3": {
+    "fingerprint": "152f65254832881c",
+    "gain_db": 1.8,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.02,
+    "source": "tts",
+    "text": "Poproszę rachunek.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/rano.mp3": {
     "author": "user Equadus (inactive global account)",
     "commons_file": "Pl-rano.ogg",
@@ -5586,6 +5781,27 @@
     "seconds": 1.2,
     "source": "tts",
     "text": "W wodzie jest ryba.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/ryz.mp3": {
+    "author": "Derbeth",
+    "commons_file": "Pl-ryż.ogg",
+    "fingerprint": "c4682d063d349f1e",
+    "gain_db": 0.7,
+    "licence": "CC BY 2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-ry%C5%BC.ogg",
+    "seconds": 0.71,
+    "source": "commons",
+    "text": "ryż"
+  },
+  "media/audio/ryz__sentence.mp3": {
+    "fingerprint": "9c31fd5b998fc92e",
+    "gain_db": 0.0,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.62,
+    "source": "tts",
+    "text": "Ryba z ryżem jest bardzo dobra.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -5818,6 +6034,28 @@
     "seconds": 1.7,
     "source": "tts",
     "text": "Moja siostra ma czarnego psa.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/siostra_ins.mp3": {
+    "fingerprint": "49bdfd4d7df0f194",
+    "gain_db": -0.4,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.78,
+    "source": "tts",
+    "text": "siostrą",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/siostra_ins__sentence.mp3": {
+    "fingerprint": "cc574e698f9530db",
+    "gain_db": -1.5,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.33,
+    "source": "tts",
+    "text": "Idę do parku z siostrą.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -8444,6 +8682,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/cytryna.webp": {
+    "bytes": 25556,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "8b251ea6fddb4a4a",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A clear glass of hot tea with a slice of lemon floating in it, a whole lemon beside the glass. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/czapka.webp": {
     "bytes": 145850,
     "check": {
@@ -8537,6 +8791,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A person standing on an empty railway platform with a bag, looking down the track for the train. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/czekolada.webp": {
+    "bytes": 30038,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "60f33fa30e27575b",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A small child grinning with a chocolate bar in hand and chocolate on the corner of the mouth. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -9533,6 +9803,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/karta_ins.webp": {
+    "bytes": 12918,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "e7d439a1524412a6",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A hand holding a bank card against a card payment terminal at a shop counter. No text or lettering, no numbers on the screen. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/kasa.webp": {
     "bytes": 35090,
     "check": {
@@ -9594,6 +9880,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A person at a kitchen table in the morning pouring milk into a cup of coffee. Morning light. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/kelner.webp": {
+    "bytes": 44064,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "42751d8e975d128e",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A waiter in a white shirt and black apron carrying a tray with two plates between tables in a busy restaurant. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -9794,6 +10096,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "One domestic cat, full body, standing on a plain light surface against a plain background. Clear and simple, no people, no other objects competing for attention, no text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/kot_ins.webp": {
+    "bytes": 48806,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "1ee73401ecdbe967",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A smiling grandmother standing in an open front doorway holding a cat in her arms. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -10432,6 +10750,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/mieso_ins.webp": {
+    "bytes": 65088,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "d11c328307966d53",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A bowl of hearty soup with visible chunks of meat and vegetables, steam rising. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/mieszkac.webp": {
     "bytes": 50412,
     "check": {
@@ -10669,6 +11003,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A person reading a book at a desk, jumping in surprise as the phone on the desk beside them suddenly lights up. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/nalesniki.webp": {
+    "bytes": 88946,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "06363ae7821721f5",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A plate of thin rolled pancakes filled with jam, dusted with sugar, on a breakfast table in morning light. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
@@ -11294,6 +11644,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/pierogi.webp": {
+    "bytes": 72494,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "2158a1d1b8617a27",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A plate of Polish pierogi, half-moon shaped dumplings with crimped edges, topped with fried onion, on a wooden table. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/pierwszy.webp": {
     "bytes": 114046,
     "check": {
@@ -11776,6 +12142,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/rachunek.webp": {
+    "bytes": 25396,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "6fa97752ca860607",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A waiter placing a small closed leather bill folder on a restaurant table in front of a customer who has finished eating. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/rano.webp": {
     "bytes": 154224,
     "check": {
@@ -11936,6 +12318,22 @@
     "size": "800x800",
     "source": "generated"
   },
+  "media/img/ryz.webp": {
+    "bytes": 44574,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "fb983be7340bb64d",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A plate with a piece of grilled fish and a mound of white rice, a lemon wedge on the side. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/rzeka.webp": {
     "bytes": 106368,
     "check": {
@@ -12093,6 +12491,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A young woman crouching beside a black dog in a park, one hand resting on its back. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/siostra_ins.webp": {
+    "bytes": 210976,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "9983ef39bc51ee11",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "Two young women, sisters, walking side by side along a path in a park, chatting. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },
