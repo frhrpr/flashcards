@@ -705,9 +705,10 @@ plus 12 `kind: "form"` conjugation drills. 206 cards across four types
 (66 recognition, 66 listening, 62 production, 12 form); four notes carry no
 `production` card (see the gloss-collision rule above).
 
-Ear training holds **24 minimal pairs** derived from 18 contrast sets, of
-which 16 have recordings. The 8 c/cz/ć pairs are approved and shipped in
-`WORDS`/`SETS` but unrecorded, so the app skips them until the audio lands.
+Ear training holds **24 minimal pairs** derived from 18 contrast sets, every
+one recorded by two speakers (Alan and Frank; see `ear/takes/README.md`).
+The c/cz/ć pairs were recorded on 2026-08-24 — this line said otherwise until
+2026-10-25 and sent a reminder about them round for two months.
 
 Live since 2026-07-26 at `?u=evert`, and he is using it — ~390 reviews over
 15 days, 90%+ correct in the most recent week. Three lessons taught, all in
