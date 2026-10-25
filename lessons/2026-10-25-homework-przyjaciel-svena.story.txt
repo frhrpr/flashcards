@@ -1,0 +1,207 @@
+Jest wieczór. Nagle ktoś dzwoni do drzwi. Sven otwiera i nie wie, kto to jest. Pod drzwiami stoi wysoki mężczyzna z rowerem.
+
+— Sven! To ja, Adam!
+
+To Adam, stary przyjaciel Svena. Adam mieszka bardzo daleko. Sven jest bardzo szczęśliwy.
+
+— Dlaczego jesteś tutaj? — pyta Sven.
+
+— Jadę rowerem do Krakowa! Ale teraz jestem bardzo zmęczony i głodny.
+
+Adam ma czerwoną twarz. W lodówce nic nie ma, a Ewa jest jeszcze w pracy. Sven dzwoni do Ewy.
+
+— Idziemy do restauracji z Adamem — mówi Sven. — Przychodzisz?
+
+— Tak! Przychodzę potem.
+
+W restauracji Adam je pierogi z mięsem, a Sven je rybę z ryżem. Adam pije wodę, a Sven pije herbatę z cytryną.
+
+— Smacznego! — mówi kelner.
+
+Potem przychodzi Ewa. Ewa nie zna Adama.
+
+— Ewa, to jest Adam, mój przyjaciel.
+
+— Miło mi! — mówi Ewa.
+
+Ewa je lody z czekoladą. Adam mówi dużo i głośno, a Ewa i Sven się śmieją. Nagle Adam słyszy deszcz.
+
+— Mój rower! Jest na ulicy!
+
+— Poproszę rachunek! — mówi Sven.
+
+— Ile to kosztuje? — pyta Adam.
+
+— To nic, ja płacę! — mówi Sven.
+
+W nocy Adam śpi w pokoju. Rano Pies śpi razem z Adamem. Ewa się śmieje.
+
+— Pies ma nowego przyjaciela!
+
+Nad (…) mieszka Ewa. [sklep]
+Ewa siedzi w parku z (…). [książka]
+Rower stoi pod (…). [drzewo]
+Sven otwiera drzwi (…). [klucz]
+Pod (…) śpi kot. [lampa]
+Sven czeka z (…) na Ewę. [śniadanie]
+Pani pije kawę z (…). [pan]
+Mężczyzna z (…) idzie do parku. [kobieta]
+Ewa idzie do domu z (…). [dziecko]
+
+--- pytania ---
+
+Kto dzwoni do drzwi? | kelner | *Adam | Ewa
+Jak Adam jedzie do Krakowa? | *rowerem | z Ewą | z kelnerem
+Gdzie jest Ewa wieczorem? | w domu | *w pracy | w restauracji
+Co je Adam? | rybę z ryżem | *pierogi z mięsem | lody z czekoladą
+Z czym Sven pije herbatę? | *z cytryną | z czekoladą | z mięsem
+Dlaczego Adam mówi: „Mój rower!”? | Ewa przychodzi | *pada deszcz | Sven płaci
+Kto płaci? | Adam | *Sven | Ewa
+Z kim rano śpi Pies? | z Ewą | *z Adamem | z kelnerem
+
+--- lemmas ---
+Jest = być
+Wieczorem = wieczór
+ktoś = ktoś
+do = do
+drzwi = drzwi
+Sven = -
+otwiera = otwierać
+i = i
+nie = nie
+wie = wiedzieć
+kto = kto
+to = to
+jest = być
+Pod = pod
+drzwiami = drzwi
+stoi = stać
+wysoki = wysoki
+mężczyzna = mężczyzna
+z = z
+To = to
+ja = ja
+Adam = -
+stary = stary
+przyjaciel = przyjaciel
+Svena = -
+mieszka = mieszkać
+bardzo = bardzo
+daleko = daleko
+szczęśliwy = szczęśliwy
+Dlaczego = dlaczego
+jesteś = być
+tutaj = tutaj
+pyta = pytać
+Jadę = jechać
+Krakowa = -
+Ale = ale
+teraz = teraz
+jestem = być
+zmęczony = zmęczony
+głodny = głodny
+ma = mieć
+czerwoną = czerwony
+twarz = twarz
+W = w
+lodówce = lodówka
+nic = nic
+a = a
+Ewa = -
+jeszcze = jeszcze
+w = w
+pracy = praca
+Ewy = -
+Idziemy = iść
+restauracji = restauracja
+mówi = mówić
+Tak = tak
+potem = potem
+je = jeść
+pierogi = pierogi
+mięsem = mięso
+rybę = ryba
+ryżem = ryż
+pije = pić
+herbatę = herbata
+cytryną = cytryna
+Smacznego = smacznego
+kelner = kelner
+Potem = potem
+przychodzi = przychodzić
+zna = znać
+mój = mój
+lody = lody
+czekoladą = czekolada
+dużo = dużo
+się = się
+Nagle = nagle
+słyszy = słyszeć
+deszcz = deszcz
+Mój = mój
+rower = rower
+na = na
+ulicy = ulica
+Poproszę = poproszę
+rachunek = rachunek
+Ile = ile
+kosztuje = kosztować
+nocy = noc
+śpi = spać
+pokoju = pokój
+Rano = rano
+Pies = pies
+razem = razem
+śmieje = śmiać się
+Nad = nad
+sklep = sklep
+siedzi = siedzieć
+parku = park
+książka = książka
+Rower = rower
+pod = pod
+drzewo = drzewo
+klucz = klucz
+kot = kot
+lampa = lampa
+czeka = czekać
+Ewę = -
+śniadanie = śniadanie
+Pani = pani
+kawę = kawa
+pan = pan
+Mężczyzna = mężczyzna
+idzie = iść
+kobieta = kobieta
+domu = dom
+dziecko = dziecko
+pytania = pytanie
+Kto = kto
+Jak = jak
+jedzie = jechać
+Ewą = -
+Gdzie = gdzie
+wieczorem = wieczór
+Co = co
+Z = z
+czym = co
+pada = padać
+płaci = płacić
+kim = kto
+rano = rano
+wieczór = wieczór
+dzwoni = dzwonić
+rowerem = rower
+Adamem = -
+Przychodzisz = przychodzić
+Przychodzę = przychodzić
+wodę = woda
+Adama = -
+Miło = miło
+mi = ja
+głośno = głośno
+śmieją = śmiać się
+płacę = płacić
+nowego = nowy
+przyjaciela = przyjaciel
+kelnerem = kelner

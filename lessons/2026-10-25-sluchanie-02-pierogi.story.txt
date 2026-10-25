@@ -1,0 +1,104 @@
+Jest wieczór. Marek jest w domu z kotem.
+
+Nagle ktoś dzwoni do drzwi. To przyjaciel Marka.
+
+— Cześć! Idziemy do restauracji? — pyta przyjaciel.
+
+— Tak! Ale Ania jest jeszcze w pracy.
+
+Marek dzwoni do Ani. Ania mówi: — Dobrze! Jadę tam rowerem.
+
+Marek i przyjaciel idą do restauracji razem. Kot zostaje w domu.
+
+W restauracji jest dużo ludzi. Marek je pierogi z mięsem. Przyjaciel je zupę i pije wodę.
+
+Potem przychodzi Ania. Ania pije herbatę z cytryną.
+
+— Smacznego! — mówi kelner.
+
+Wieczorem Marek i Ania wracają do domu. Kot śpi na łóżku.
+
+--- pytania ---
+
+Z kim Marek jest w domu? | z Anią | *z kotem | z przyjacielem
+Kto dzwoni do drzwi? | Ania | *przyjaciel | kelner
+Gdzie jest Ania? | w domu | *w pracy | w restauracji
+Czy Ania idzie do restauracji z Markiem? | tak | *nie
+Co je Marek? | *pierogi z mięsem | zupę | herbatę
+Co pije przyjaciel? | herbatę z cytryną | *wodę
+Z czym Ania pije herbatę? | *z cytryną | z mięsem
+Gdzie śpi kot? | w restauracji | *na łóżku | w pracy
+
+--- lemmas ---
+Jest = być
+wieczór = wieczór
+Marek = -
+jest = być
+w = w
+domu = dom
+z = z
+kotem = kot
+Nagle = nagle
+ktoś = ktoś
+do = do
+drzwi = drzwi
+To = to
+przyjaciel = przyjaciel
+Cześć = cześć
+Idziemy = iść
+restauracji = restauracja
+pyta = pytać
+Tak = tak
+Ale = ale
+Ania = -
+jeszcze = jeszcze
+pracy = praca
+mówi = mówić
+Dobrze = dobrze
+Jadę = jechać
+tam = tam
+i = i
+idą = iść
+razem = razem
+Kot = kot
+W = w
+dużo = dużo
+ludzi = ludzie
+je = jeść
+pierogi = pierogi
+mięsem = mięso
+Przyjaciel = przyjaciel
+zupę = zupa
+pije = pić
+Potem = potem
+przychodzi = przychodzić
+herbatę = herbata
+cytryną = cytryna
+Smacznego = smacznego
+kelner = kelner
+Wieczorem = wieczór
+wracają = wracać
+śpi = spać
+na = na
+łóżku = łóżko
+pytania = pytanie
+Z = z
+kim = kto
+Kto = kto
+Gdzie = gdzie
+Czy = czy
+idzie = iść
+tak = tak
+nie = nie
+Co = co
+czym = co
+kot = kot
+dzwoni = dzwonić
+Marka = -
+Ani = -
+rowerem = rower
+zostaje = zostać
+wodę = woda
+Anią = -
+przyjacielem = przyjaciel
+Markiem = -
