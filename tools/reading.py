@@ -52,6 +52,8 @@ FUNCTION_GLOSS = {
     "oni": "they", "mój": "my", "twój": "your", "jego": "his", "jej": "her",
     "nie": "no, not", "tak": "yes",
     "dziękuję": "thank you", "otwierać": "to open (is opening, opens often)",
+    # new in a lesson, not carded yet: cards come after the lesson
+    "cytryna": "lemon",
 }
 
 
