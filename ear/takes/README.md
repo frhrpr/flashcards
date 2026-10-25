@@ -40,3 +40,21 @@ Raising the floor risks clipping a quiet frication onset, which is exactly
 what the trainer is about — but `ear_split.py` keeps 0.20s of padding around
 every cut, and `ear_build.py` trims with a 0.15s pad at -50dB, so the onset
 survives a late detection.
+
+## TTS voices (added 2026-10-25)
+
+`tts/<word>/<name>.mp3` — ElevenLabs clips for the nine hardest sets
+(proszę/prosię, czy/ci, kos/kosz/koś, kasa/kasza/Kasia, pas/pasz/paś,
+płace/płacze, moc/mocz, piec/piecz, owca/owcza), 21 words × 4 versions:
+River alone, River with context, Antoni with context, Sarah with context.
+"Context" is a Polish sentence sent as `previous_text` and not spoken, so the
+voice reads the word as Polish. `eleven_turbo_v2_5`, `language_code: "pl"`.
+
+Every clip was listened to by the teacher before it went in; one was
+rejected (`kos`, River alone). These are the approved takes, already
+silence-trimmed at -50 dB and loudness-normalised — copy them into
+`ear/raw/<word>/` unchanged. They are not regenerable: TTS gives a
+different take each call, and these are the ones that were checked.
+
+Speaker tags are `river`, `antoni`, `sarah`, so the listen-to-both replay
+after a miss stays on one voice.

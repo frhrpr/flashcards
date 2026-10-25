@@ -606,6 +606,13 @@ pairs: hear a word, tap which of two you heard.
   default: it is short, it is a warm-up, and there is no
   did-I-remember-this pressure in it. Completion is read from `done`, not
   session state, so a reload or his other device does not re-offer it.
+- **TTS clips are in, as extra voices, each one approved by ear.** Added
+  2026-10-25 for the nine hardest sets: River, Antoni and Sarah, 83 clips
+  (see `ear/takes/README.md`). More voices per word is what perceptual
+  training wants, and they cost four characters each. The worry below
+  about TTS not rendering the contrast still stands *as a reason to check*:
+  the teacher listened to every clip and rejected one, and any new TTS
+  clip goes through the same audition before it reaches `ear/raw/`.
 - **`FALLBACK_TTS` is gone.** It existed so the app was testable before any
   audio existed. Worse than useless now: for c/cz/ć before recordings exist
   it would drill him against a TTS voice that may not render the contrast at
@@ -1134,7 +1141,7 @@ Deferred on purpose: 4 grades instead of 2, and a stats screen.
   sheets, PDFs, the review and progress pages, the image inbox. Gitignored,
   one root, `deckio.out_dir()`. Windows reaches it as
   `\\wsl.localhost\Ubuntu\home\frhrpr\projects\flashcards\out`; give links
-  as `file://wsl.localhost/Ubuntu/home/frhrpr/projects/flashcards/out/...`.
+  as `file://///wsl.localhost/Ubuntu/home/frhrpr/projects/flashcards/out/...` (five slashes; two does not open when pasted).
   It was `Downloads\flashcards` until 2026-10-24: project files outside the
   project, and every write needing the sandbox lifted. Edge prints from the
   WSL path fine (`--print-to-pdf='\\wsl.localhost\...'`).
