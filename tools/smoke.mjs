@@ -386,7 +386,7 @@ try {
   check(eps.every(e => fs.existsSync(path.join(ROOT, e.audio))), "every episode's mp3 exists");
   m.setEpisodes(eps);
   m.renderLanding();
-  check(m.state().html.includes("go-listen") && m.state().html.includes("1 new story"),
+  check(m.state().html.includes("go-listen") && m.state().html.includes(m.newStories(eps.length)),
         "landing offers a new listening episode as a tile");
   m.renderEpisode(eps[0].id);
   const ep0 = m.state().html;

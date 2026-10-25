@@ -61,6 +61,8 @@ FUNCTION_GLOSS = {
     "cytryna": "lemon",
     "pierogi": "pierogi (filled dumplings)", "ryż": "rice", "czekolada": "chocolate",
     "kelner": "waiter", "rachunek": "the bill", "smacznego": "enjoy your meal!",
+    "naleśniki": "pancakes", "miło": "nicely (miło mi: pleased to meet you)",
+    "u": "at (someone's place): u nas, at our place",
 }
 
 
