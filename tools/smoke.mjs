@@ -419,7 +419,7 @@ try {
         "every word linked to a card links to an approved one");
   m.setStories(sts);
   m.renderLanding();
-  check(m.state().html.includes("go-read") && m.state().html.includes("2 new stories"),
+  check(m.state().html.includes("go-read") && m.state().html.includes(m.newStories(sts.length)),
         "landing offers new reading stories as a tile");
   m.renderStory(sts[0].id);
   const rd0 = m.state().html;
