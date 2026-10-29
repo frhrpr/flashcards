@@ -50,7 +50,7 @@ FUNCTION_GLOSS = {
     "a": "and, while", "ale": "but", "i": "and", "albo": "or", "bo": "because",
     "że": "that", "więc": "so", "czy": "whether; or (question word)",
     "do": "to", "na": "on, onto", "pod": "under", "nad": "above, by (a river)",
-    "w": "in", "z": "with; from", "dla": "for", "od": "from", "po": "after",
+    "w": "in", "z": "with; from", "dla": "for", "od": "from",
     "się": "oneself (with some verbs)", "to": "this, it", "ten": "this",
     "co": "what", "kto": "who", "gdzie": "where", "jak": "how", "który": "which",
     "ja": "I", "ty": "you", "on": "he", "ona": "she", "my": "we", "wy": "you (all)",
@@ -63,6 +63,7 @@ FUNCTION_GLOSS = {
     "kelner": "waiter", "rachunek": "the bill", "smacznego": "enjoy your meal!",
     "naleśniki": "pancakes", "miło": "nicely (miło mi: pleased to meet you)",
     "u": "at (someone's place): u nas, at our place",
+    "po": "after; po polsku: in Polish", "trochę": "a little",
 }
 
 

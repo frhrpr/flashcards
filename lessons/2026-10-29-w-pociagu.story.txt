@@ -1,0 +1,219 @@
+Jest poniedziałek i jest już późno. Sven jedzie pociągiem do domu. Jest bardzo zmęczony i głodny.
+
+Nagle ktoś mówi:
+
+— Przepraszam, mówisz po polsku?
+
+To wysoki człowiek w czerwonych spodniach. Je chleb z serem i pije herbatę z cytryną. Sven nie słyszy, więc człowiek pyta znowu:
+
+— Słyszysz mnie? Mówisz po polsku?
+
+— Tak, teraz słyszę — odpowiada Sven. — Mówię, ale tylko trochę.
+
+— Polski jest łatwy?
+
+— Nie! Polski nie jest łatwy — mówi Sven i się śmieje.
+
+— Jestem Marcin. Masz bardzo zmęczoną twarz. Jesteś głodny?
+
+— Tak, trochę.
+
+Marcin ma też czekoladę.
+
+— Proszę! — mówi Marcin. Sven je czekoladę.
+
+Marcin mówi dużo. Jedzie do Gdyni, do przyjaciela. Lubi pierogi z mięsem i kawę z mlekiem. Sven nie wie, co Marcin mówi, ale odpowiada: „Tak, tak!”
+
+Nagle Sven patrzy i widzi: to nie jest Sopot. To jest Gdynia!
+
+— Cześć! — mówi Marcin i wychodzi z pociągu.
+
+Sven dzwoni do Ewy.
+
+— Dlaczego dzwonisz tak późno? — pyta Ewa.
+
+— Bo jestem w Gdyni.
+
+— W Gdyni? Dlaczego?
+
+— Bo w pociągu mówię po polsku z Marcinem.
+
+— Z kim?
+
+— Nie wiem — mówi Sven. — Ale ma dobrą czekoladę.
+
+Dzisiaj jem (…). [ryba]
+Mam chleb z (…). [ryba]
+Ewa ma (…). [brat]
+Kot śpi pod (…). [krzesło]
+Czytam (…) w łóżku. [książka]
+Jadę do pracy (…). [rower]
+Rano piję (…). [mleko]
+Ewa idzie do parku z (…). [siostra]
+Jem zupę z (…). [chleb]
+Otwieram (…). [okno]
+Widzę (…) w parku. [kobieta]
+Robię (…) dla Ewy. [śniadanie]
+Pies śpi pod (…). [ławka]
+Ptak siedzi nad (…). [dom]
+Dziecko siedzi pod (…). [drzewo]
+Ewa pije (…) z cytryną. [woda]
+
+--- pytania ---
+
+Co je Marcin w pociągu? | *chleb z serem | pierogi z mięsem | herbatę z cytryną
+Z czym Marcin pije herbatę? | z mlekiem | *z cytryną | z serem
+Kto mówi po polsku tylko trochę? | *Sven | Marcin | Ewa
+Czy polski jest łatwy? | Tak, polski jest łatwy. | *Nie, polski nie jest łatwy.
+Co je Sven? | chleb z serem | *czekoladę | pierogi
+Do kogo jedzie Marcin? | *do przyjaciela | do Ewy | do domu
+Z kim Sven mówi po polsku w pociągu? | z Ewą | *z Marcinem
+Do kogo dzwoni Sven? | do Marcina | *do Ewy | do przyjaciela
+
+--- lemmas ---
+Jest = być
+poniedziałek = poniedziałek
+i = i
+już = już
+późno = późno
+Sven = -
+jedzie = jechać
+pociągiem = pociąg
+do = do
+domu = dom
+bardzo = bardzo
+zmęczony = zmęczony
+głodny = głodny
+Nagle = nagle
+ktoś = ktoś
+mówi = mówić
+Przepraszam = przepraszam
+mówisz = mówić
+po = po
+polsku = polski
+To = to
+wysoki = wysoki
+człowiek = człowiek
+w = w
+czerwonych = czerwony
+spodniach = spodnie
+Je = jeść
+chleb = chleb
+z = z
+serem = ser
+pije = pić
+herbatę = herbata
+cytryną = cytryna
+nie = nie
+słyszy = słyszeć
+więc = więc
+pyta = pytać
+znowu = znowu
+Słyszysz = słyszeć
+mnie = ja
+Tak = tak
+teraz = teraz
+słyszę = słyszeć
+odpowiada = odpowiadać
+Mówię = mówić
+ale = ale
+tylko = tylko
+trochę = trochę
+Polski = polski
+łatwy = łatwy
+Nie = nie
+jest = być
+się = się
+śmieje = śmiać się
+Jestem = być
+Marcin = -
+Masz = mieć
+zmęczoną = zmęczony
+twarz = twarz
+Jesteś = być
+ma = mieć
+też = też
+czekoladę = czekolada
+Proszę = proszę
+je = jeść
+dużo = dużo
+Jedzie = jechać
+Gdyni = -
+przyjaciela = przyjaciel
+Lubi = lubić
+pierogi = pierogi
+mięsem = mięso
+kawę = kawa
+mlekiem = mleko
+wie = wiedzieć
+patrzy = patrzeć
+widzi = widzieć
+to = to
+Sopot = -
+Gdynia = -
+Cześć = cześć
+wychodzi = wychodzić
+pociągu = pociąg
+dzwoni = dzwonić
+Ewy = -
+Dlaczego = dlaczego
+dzwonisz = dzwonić
+tak = tak
+Ewa = -
+Bo = bo
+jestem = być
+W = w
+mówię = mówić
+Marcinem = -
+Z = z
+kim = kto
+wiem = wiedzieć
+Ale = ale
+dobrą = dobry
+Co = co
+Marcina = -
+czym = co
+Kto = kto
+Czy = czy
+kogo = kto
+Ewą = -
+Dzisiaj = dzisiaj
+jem = jeść
+ryba = ryba
+Mam = mieć
+brat = brat
+Kot = kot
+śpi = spać
+pod = pod
+okno = okno
+Czytam = czytać
+książka = książka
+łóżku = łóżko
+idzie = iść
+parku = park
+Rano = rano
+piję = pić
+mleko = mleko
+Jem = jeść
+zupę = zupa
+rower = rower
+pytania = pytanie
+krzesło = krzesło
+Jadę = jechać
+pracy = praca
+siostra = siostra
+Otwieram = otwierać
+Widzę = widzieć
+kobieta = kobieta
+Robię = robić
+śniadanie = śniadanie
+dla = dla
+Ptak = ptak
+dom = dom
+Pies = pies
+ławka = ławka
+Dziecko = dziecko
+siedzi = siedzieć
+drzewo = drzewo
+woda = woda
+nad = nad
