@@ -2,6 +2,97 @@
   "schema": 1,
   "episodes": [
     {
+      "id": "03-ryba",
+      "title": "Ryba",
+      "date": "2026-10-29",
+      "audio": "listen/03-ryba.mp3",
+      "seconds": 56,
+      "text": [
+        "Jest sobota. Ania idzie do sklepu. Kupuje rybę, chleb i mleko.",
+        "Marek jest w domu z kotem. Marek czyta książkę, a kot śpi na krześle.",
+        "Ania wraca do domu. Ryba jest w kuchni, na stole.",
+        "— Marek, idziemy do parku? — pyta Ania.",
+        "— Tak, dobrze!",
+        "Marek i Ania idą do parku. Kot nie idzie. Kot zostaje w domu.",
+        "Wieczorem Marek i Ania wracają. Ania idzie do kuchni. Ryby nie ma!",
+        "— Gdzie jest ryba? — pyta Ania.",
+        "Marek patrzy na kota. Kot nie śpi. Kot siedzi pod stołem i jest bardzo szczęśliwy."
+      ],
+      "questions": [
+        {
+          "q": "Co kupuje Ania?",
+          "options": [
+            "rybę, chleb i mleko",
+            "książkę",
+            "kota"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Kto czyta książkę?",
+          "options": [
+            "Marek",
+            "Ania",
+            "kot"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Gdzie śpi kot?",
+          "options": [
+            "na krześle",
+            "pod stołem",
+            "w parku"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Gdzie jest ryba?",
+          "options": [
+            "w parku",
+            "w kuchni, na stole",
+            "na krześle"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Czy kot idzie do parku?",
+          "options": [
+            "tak",
+            "nie"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Kto idzie do kuchni?",
+          "options": [
+            "Marek",
+            "Ania",
+            "kot"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Gdzie siedzi kot wieczorem?",
+          "options": [
+            "na krześle",
+            "pod stołem",
+            "w sklepie"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Kto je rybę?",
+          "options": [
+            "Marek",
+            "Ania",
+            "kot"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    {
       "id": "02-pierogi",
       "title": "Pierogi",
       "date": "2026-10-25",

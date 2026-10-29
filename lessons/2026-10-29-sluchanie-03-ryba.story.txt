@@ -1,0 +1,88 @@
+Jest sobota. Ania idzie do sklepu. Kupuje rybę, chleb i mleko.
+
+Marek jest w domu z kotem. Marek czyta książkę, a kot śpi na krześle.
+
+Ania wraca do domu. Ryba jest w kuchni, na stole.
+
+— Marek, idziemy do parku? — pyta Ania.
+
+— Tak, dobrze!
+
+Marek i Ania idą do parku. Kot nie idzie. Kot zostaje w domu.
+
+Wieczorem Marek i Ania wracają. Ania idzie do kuchni. Ryby nie ma!
+
+— Gdzie jest ryba? — pyta Ania.
+
+Marek patrzy na kota. Kot nie śpi. Kot siedzi pod stołem i jest bardzo szczęśliwy.
+
+--- pytania ---
+
+Co kupuje Ania? | *rybę, chleb i mleko | książkę | kota
+Kto czyta książkę? | *Marek | Ania | kot
+Gdzie śpi kot? | *na krześle | pod stołem | w parku
+Gdzie jest ryba? | w parku | *w kuchni, na stole | na krześle
+Czy kot idzie do parku? | tak | *nie
+Kto idzie do kuchni? | Marek | *Ania | kot
+Gdzie siedzi kot wieczorem? | na krześle | *pod stołem | w sklepie
+Kto je rybę? | Marek | Ania | *kot
+
+--- lemmas ---
+Jest = być
+sobota = sobota
+Ania = -
+idzie = iść
+do = do
+sklepu = sklep
+Kupuje = kupować
+rybę = ryba
+chleb = chleb
+i = i
+mleko = mleko
+Marek = -
+jest = być
+w = w
+domu = dom
+z = z
+kotem = kot
+czyta = czytać
+książkę = książka
+a = a
+kot = kot
+śpi = spać
+na = na
+krześle = krzesło
+wraca = wracać
+Ryba = ryba
+kuchni = kuchnia
+stole = stół
+idziemy = iść
+parku = park
+pyta = pytać
+Tak = tak
+dobrze = dobrze
+idą = iść
+Kot = kot
+nie = nie
+zostaje = zostać
+Wieczorem = wieczór
+wracają = wracać
+Ryby = ryba
+ma = mieć
+Gdzie = gdzie
+ryba = ryba
+patrzy = patrzeć
+kota = kot
+siedzi = siedzieć
+pod = pod
+stołem = stół
+bardzo = bardzo
+szczęśliwy = szczęśliwy
+pytania = pytanie
+Co = co
+Kto = kto
+Czy = czy
+tak = tak
+je = jeść
+wieczorem = wieczór
+sklepie = sklep

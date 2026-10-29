@@ -299,6 +299,7 @@ do not edit by hand.
 | `media/audio/teraz.mp3` | [Pl-teraz.ogg](https://commons.wikimedia.org/wiki/File:Pl-teraz.ogg) | Wyksztalcioch | Public domain | commons |
 | `media/audio/tez.mp3` | [Pl-też.ogg](https://commons.wikimedia.org/wiki/File:Pl-te%C5%BC.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/torba.mp3` | [Pl-torba.ogg](https://commons.wikimedia.org/wiki/File:Pl-torba.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
+| `media/audio/troche.mp3` | [Pl-trochę.ogg](https://commons.wikimedia.org/wiki/File:Pl-troch%C4%99.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/trudny.mp3` | [Pl-trudny.ogg](https://commons.wikimedia.org/wiki/File:Pl-trudny.ogg) | user Equadus (inactive global account) | CC BY-SA 3.0 | commons |
 | `media/audio/trzeba.mp3` | [Pl-trzeba.ogg](https://commons.wikimedia.org/wiki/File:Pl-trzeba.ogg) | Wyksztalcioch | Public domain | commons |
 | `media/audio/trzy.mp3` | [Pl-trzy.ogg](https://commons.wikimedia.org/wiki/File:Pl-trzy.ogg) | Marcowy zając | CC BY 2.5 | commons |

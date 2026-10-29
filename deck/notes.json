@@ -12741,6 +12741,72 @@
       "reviewed": true,
       "kind": "form",
       "parent": "karta"
+    },
+    {
+      "id": "troche",
+      "word": "trochę",
+      "gloss": "a little, a bit",
+      "pos": "adverb",
+      "ipa": "ˈtrɔxɛ",
+      "note": null,
+      "image": "media/img/troche.webp",
+      "image_alt": "a splash of milk poured into a cup of coffee",
+      "image_basis": "sentence",
+      "image_prompt": "A small jug pouring just a small splash of milk into a cup of black coffee, close up on a cafe table. No text or lettering. Square image.",
+      "audio": "media/audio/troche.mp3",
+      "sentence": {
+        "pl": "Poproszę trochę mleka.",
+        "en": "A little milk, please.",
+        "gap": "Poproszę ___ mleka.",
+        "answer": "trochę",
+        "answer_lemma": "trochę",
+        "audio": "media/audio/troche__sentence.mp3",
+        "lemmas": [
+          "poproszę",
+          "trochę",
+          "mleko"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "po_polsku",
+      "word": "po polsku",
+      "gloss": "in Polish",
+      "pos": "adverb",
+      "ipa": "pɔ ˈpɔlsku",
+      "note": null,
+      "image": "media/img/po_polsku.webp",
+      "image_alt": "a man speaking, with a Polish flag in his speech bubble",
+      "image_basis": "sentence",
+      "image_prompt": "A friendly man in his forties talking, with a cartoon speech bubble beside his head containing only a small white-and-red Polish flag. No text or lettering. Square image.",
+      "audio": "media/audio/po_polsku.mp3",
+      "sentence": {
+        "pl": "Mówię trochę po polsku.",
+        "en": "I speak a little Polish.",
+        "gap": "Mówię trochę ___.",
+        "answer": "po polsku",
+        "answer_lemma": "po polsku",
+        "audio": "media/audio/po_polsku__sentence.mp3",
+        "lemmas": [
+          "mówić",
+          "trochę",
+          "po polsku"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
     }
   ]
 }

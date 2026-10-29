@@ -5047,6 +5047,28 @@
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
+  "media/audio/po_polsku.mp3": {
+    "fingerprint": "0d623921e02e7464",
+    "gain_db": 0.9,
+    "language_code": "pl",
+    "model": "eleven_turbo_v2_5",
+    "seconds": 0.76,
+    "source": "tts",
+    "text": "po polsku",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni",
+    "why": "no Commons recording for this word"
+  },
+  "media/audio/po_polsku__sentence.mp3": {
+    "fingerprint": "2f73a732874c10eb",
+    "gain_db": 0.9,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.07,
+    "source": "tts",
+    "text": "Mówię trochę po polsku.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
   "media/audio/pociag.mp3": {
     "author": "Derbeth",
     "commons_file": "Pl-pociąg.ogg",
@@ -6961,6 +6983,27 @@
     "seconds": 1.52,
     "source": "tts",
     "text": "Ta torba jest bardzo ciężka.",
+    "voice": "ErXwobaYiN019PkySvjV",
+    "voice_name": "Antoni"
+  },
+  "media/audio/troche.mp3": {
+    "author": "user Equadus (inactive global account)",
+    "commons_file": "Pl-trochę.ogg",
+    "fingerprint": "0ae4e87b64129d9d",
+    "gain_db": 0.0,
+    "licence": "CC BY-SA 3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Pl-troch%C4%99.ogg",
+    "seconds": 1.15,
+    "source": "commons",
+    "text": "trochę"
+  },
+  "media/audio/troche__sentence.mp3": {
+    "fingerprint": "240171ff44bdfef4",
+    "gain_db": -1.7,
+    "model": "eleven_multilingual_v2",
+    "seconds": 1.25,
+    "source": "tts",
+    "text": "Poproszę trochę mleka.",
     "voice": "ErXwobaYiN019PkySvjV",
     "voice_name": "Antoni"
   },
@@ -11768,6 +11811,22 @@
     "size": "800x800",
     "source": "supplied"
   },
+  "media/img/po_polsku.webp": {
+    "bytes": 41046,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "aafa0b795a5c9ae8",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A friendly man in his forties talking, with a cartoon speech bubble beside his head containing only a small white-and-red Polish flag. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
   "media/img/pociag.webp": {
     "bytes": 152644,
     "check": {
@@ -13159,6 +13218,22 @@
     "original_size": "1024x1024",
     "process_version": 1,
     "prompt": "A person on a street leaning to one side, straining to carry one very heavy, full shopping bag. No text or lettering. Square image.",
+    "size": "800x800",
+    "source": "generated"
+  },
+  "media/img/troche.webp": {
+    "bytes": 31818,
+    "check": {
+      "model": "gemini-flash-latest",
+      "problem": "",
+      "verdict": "ok",
+      "why": ""
+    },
+    "fingerprint": "c87f0c6ad72104e5",
+    "model": "gemini-2.5-flash-image",
+    "original_size": "1024x1024",
+    "process_version": 1,
+    "prompt": "A small jug pouring just a small splash of milk into a cup of black coffee, close up on a cafe table. No text or lettering. Square image.",
     "size": "800x800",
     "source": "generated"
   },

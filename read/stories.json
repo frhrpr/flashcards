@@ -1489,7 +1489,8 @@
      "gloss": "this, it"
     },
     "trochę": {
-     "gloss": "a little"
+     "gloss": "a little, a bit",
+     "note": "troche"
     },
     "twarz": {
      "gloss": "face",
@@ -1609,6 +1610,1588 @@
       "do Marcina",
       "do Ewy",
       "do przyjaciela"
+     ],
+     "answer": 1
+    }
+   ]
+  },
+  {
+   "id": "gosc-marcina",
+   "title": "Gość Marcina",
+   "date": "2026-10-29",
+   "paras": [
+    [
+     [
+      "Jest",
+      "być"
+     ],
+     [
+      " "
+     ],
+     [
+      "sobota",
+      "sobota"
+     ],
+     [
+      ". "
+     ],
+     [
+      "Wieczorem",
+      "wieczór"
+     ],
+     [
+      " "
+     ],
+     [
+      "przychodzi",
+      "przychodzić"
+     ],
+     [
+      " "
+     ],
+     [
+      "Marcin"
+     ],
+     [
+      ", "
+     ],
+     [
+      "nowy",
+      "nowy"
+     ],
+     [
+      " "
+     ],
+     [
+      "przyjaciel",
+      "przyjaciel"
+     ],
+     [
+      " "
+     ],
+     [
+      "Svena"
+     ],
+     [
+      ". "
+     ],
+     [
+      "Ewa"
+     ],
+     [
+      " "
+     ],
+     [
+      "jeszcze",
+      "jeszcze"
+     ],
+     [
+      " "
+     ],
+     [
+      "nie",
+      "nie"
+     ],
+     [
+      " "
+     ],
+     [
+      "zna",
+      "znać"
+     ],
+     [
+      " "
+     ],
+     [
+      "Marcina"
+     ],
+     [
+      "."
+     ]
+    ],
+    [
+     [
+      "Rano",
+      "rano"
+     ],
+     [
+      " "
+     ],
+     [
+      "Sven"
+     ],
+     [
+      " "
+     ],
+     [
+      "idzie",
+      "iść"
+     ],
+     [
+      " "
+     ],
+     [
+      "do",
+      "do"
+     ],
+     [
+      " "
+     ],
+     [
+      "sklepu",
+      "sklep"
+     ],
+     [
+      ". "
+     ],
+     [
+      "Kupuje",
+      "kupować"
+     ],
+     [
+      " "
+     ],
+     [
+      "rybę",
+      "ryba"
+     ],
+     [
+      ", "
+     ],
+     [
+      "chleb",
+      "chleb"
+     ],
+     [
+      ", "
+     ],
+     [
+      "ser",
+      "ser"
+     ],
+     [
+      " "
+     ],
+     [
+      "i",
+      "i"
+     ],
+     [
+      " "
+     ],
+     [
+      "lody",
+      "lody"
+     ],
+     [
+      ". "
+     ],
+     [
+      "Ewa"
+     ],
+     [
+      " "
+     ],
+     [
+      "robi",
+      "robić"
+     ],
+     [
+      " "
+     ],
+     [
+      "zupę",
+      "zupa"
+     ],
+     [
+      ". "
+     ],
+     [
+      "Zupa",
+      "zupa"
+     ],
+     [
+      " "
+     ],
+     [
+      "jest",
+      "być"
+     ],
+     [
+      " "
+     ],
+     [
+      "łatwa",
+      "łatwy"
+     ],
+     [
+      ". "
+     ],
+     [
+      "Potem",
+      "potem"
+     ],
+     [
+      " "
+     ],
+     [
+      "Sven"
+     ],
+     [
+      " "
+     ],
+     [
+      "robi",
+      "robić"
+     ],
+     [
+      " "
+     ],
+     [
+      "rybę",
+      "ryba"
+     ],
+     [
+      ". "
+     ],
+     [
+      "Ryba",
+      "ryba"
+     ],
+     [
+      " "
+     ],
+     [
+      "nie",
+      "nie"
+     ],
+     [
+      " "
+     ],
+     [
+      "jest",
+      "być"
+     ],
+     [
+      " "
+     ],
+     [
+      "łatwa",
+      "łatwy"
+     ],
+     [
+      "!"
+     ]
+    ],
+    [
+     [
+      "Wieczorem",
+      "wieczór"
+     ],
+     [
+      " "
+     ],
+     [
+      "jest",
+      "być"
+     ],
+     [
+      " "
+     ],
+     [
+      "już",
+      "już"
+     ],
+     [
+      " "
+     ],
+     [
+      "późno",
+      "późno"
+     ],
+     [
+      ", "
+     ],
+     [
+      "a",
+      "a"
+     ],
+     [
+      " "
+     ],
+     [
+      "Marcina"
+     ],
+     [
+      " "
+     ],
+     [
+      "nie",
+      "nie"
+     ],
+     [
+      " "
+     ],
+     [
+      "ma",
+      "mieć"
+     ],
+     [
+      ". "
+     ],
+     [
+      "Ewa"
+     ],
+     [
+      " "
+     ],
+     [
+      "jest",
+      "być"
+     ],
+     [
+      " "
+     ],
+     [
+      "głodna",
+      "głodny"
+     ],
+     [
+      " "
+     ],
+     [
+      "i",
+      "i"
+     ],
+     [
+      " "
+     ],
+     [
+      "trochę",
+      "trochę"
+     ],
+     [
+      " "
+     ],
+     [
+      "zmęczona",
+      "zmęczony"
+     ],
+     [
+      "."
+     ]
+    ],
+    [
+     [
+      "— "
+     ],
+     [
+      "Gdzie",
+      "gdzie"
+     ],
+     [
+      " "
+     ],
+     [
+      "jest",
+      "być"
+     ],
+     [
+      " "
+     ],
+     [
+      "Marcin"
+     ],
+     [
+      "? — "
+     ],
+     [
+      "pyta",
+      "pytać"
+     ],
+     [
+      " "
+     ],
+     [
+      "Ewa"
+     ],
+     [
+      "."
+     ]
+    ],
+    [
+     [
+      "Sven"
+     ],
+     [
+      " "
+     ],
+     [
+      "dzwoni",
+      "dzwonić"
+     ],
+     [
+      " "
+     ],
+     [
+      "do",
+      "do"
+     ],
+     [
+      " "
+     ],
+     [
+      "Marcina"
+     ],
+     [
+      ", "
+     ],
+     [
+      "ale",
+      "ale"
+     ],
+     [
+      " "
+     ],
+     [
+      "Marcin"
+     ],
+     [
+      " "
+     ],
+     [
+      "nie",
+      "nie"
+     ],
+     [
+      " "
+     ],
+     [
+      "odpowiada",
+      "odpowiadać"
+     ],
+     [
+      "."
+     ]
+    ],
+    [
+     [
+      "Nagle",
+      "nagle"
+     ],
+     [
+      " "
+     ],
+     [
+      "Sven"
+     ],
+     [
+      " "
+     ],
+     [
+      "słyszy",
+      "słyszeć"
+     ],
+     [
+      " "
+     ],
+     [
+      "głos",
+      "głos"
+     ],
+     [
+      " "
+     ],
+     [
+      "na",
+      "na"
+     ],
+     [
+      " "
+     ],
+     [
+      "ulicy",
+      "ulica"
+     ],
+     [
+      ". "
+     ],
+     [
+      "Ktoś",
+      "ktoś"
+     ],
+     [
+      " "
+     ],
+     [
+      "idzie",
+      "iść"
+     ],
+     [
+      " "
+     ],
+     [
+      "do",
+      "do"
+     ],
+     [
+      " "
+     ],
+     [
+      "drzwi",
+      "drzwi"
+     ],
+     [
+      ". "
+     ],
+     [
+      "To",
+      "to"
+     ],
+     [
+      " "
+     ],
+     [
+      "Marcin"
+     ],
+     [
+      " "
+     ],
+     [
+      "z",
+      "z"
+     ],
+     [
+      " "
+     ],
+     [
+      "przyjacielem",
+      "przyjaciel"
+     ],
+     [
+      "."
+     ]
+    ],
+    [
+     [
+      "— "
+     ],
+     [
+      "Dobry",
+      "dobry"
+     ],
+     [
+      " "
+     ],
+     [
+      "wieczór",
+      "wieczór"
+     ],
+     [
+      "! "
+     ],
+     [
+      "To",
+      "to"
+     ],
+     [
+      " "
+     ],
+     [
+      "jest",
+      "być"
+     ],
+     [
+      " "
+     ],
+     [
+      "Robert"
+     ],
+     [
+      ", "
+     ],
+     [
+      "mój",
+      "mój"
+     ],
+     [
+      " "
+     ],
+     [
+      "przyjaciel",
+      "przyjaciel"
+     ],
+     [
+      "."
+     ]
+    ],
+    [
+     [
+      "Ewa"
+     ],
+     [
+      " "
+     ],
+     [
+      "patrzy",
+      "patrzeć"
+     ],
+     [
+      " "
+     ],
+     [
+      "na",
+      "na"
+     ],
+     [
+      " "
+     ],
+     [
+      "jego",
+      "jego"
+     ],
+     [
+      " "
+     ],
+     [
+      "twarz",
+      "twarz"
+     ],
+     [
+      " "
+     ],
+     [
+      "i",
+      "i"
+     ],
+     [
+      " "
+     ],
+     [
+      "nagle",
+      "nagle"
+     ],
+     [
+      " "
+     ],
+     [
+      "się",
+      "się"
+     ],
+     [
+      " "
+     ],
+     [
+      "śmieje",
+      "śmiać się"
+     ],
+     [
+      ". "
+     ],
+     [
+      "Ten",
+      "ten"
+     ],
+     [
+      " "
+     ],
+     [
+      "człowiek",
+      "człowiek"
+     ],
+     [
+      " "
+     ],
+     [
+      "pracuje",
+      "pracować"
+     ],
+     [
+      " "
+     ],
+     [
+      "w",
+      "w"
+     ],
+     [
+      " "
+     ],
+     [
+      "restauracji",
+      "restauracja"
+     ],
+     [
+      "!"
+     ]
+    ],
+    [
+     [
+      "— "
+     ],
+     [
+      "Ja",
+      "ja"
+     ],
+     [
+      " "
+     ],
+     [
+      "znam",
+      "znać"
+     ],
+     [
+      " "
+     ],
+     [
+      "pana",
+      "pan"
+     ],
+     [
+      "! — "
+     ],
+     [
+      "mówi",
+      "mówić"
+     ],
+     [
+      " "
+     ],
+     [
+      "Ewa"
+     ],
+     [
+      "."
+     ]
+    ],
+    [
+     [
+      "— "
+     ],
+     [
+      "Tak",
+      "tak"
+     ],
+     [
+      "! — "
+     ],
+     [
+      "odpowiada",
+      "odpowiadać"
+     ],
+     [
+      " "
+     ],
+     [
+      "Robert"
+     ],
+     [
+      ". — "
+     ],
+     [
+      "A",
+      "a"
+     ],
+     [
+      " "
+     ],
+     [
+      "pani",
+      "pani"
+     ],
+     [
+      " "
+     ],
+     [
+      "je",
+      "jeść"
+     ],
+     [
+      " "
+     ],
+     [
+      "tylko",
+      "tylko"
+     ],
+     [
+      " "
+     ],
+     [
+      "zupę",
+      "zupa"
+     ],
+     [
+      "!"
+     ]
+    ],
+    [
+     [
+      "W",
+      "w"
+     ],
+     [
+      " "
+     ],
+     [
+      "kuchni",
+      "kuchnia"
+     ],
+     [
+      " "
+     ],
+     [
+      "jest",
+      "być"
+     ],
+     [
+      " "
+     ],
+     [
+      "ciemno",
+      "ciemno"
+     ],
+     [
+      "."
+     ]
+    ],
+    [
+     [
+      "— "
+     ],
+     [
+      "Sven"
+     ],
+     [
+      ", "
+     ],
+     [
+      "włącz",
+      "włączyć"
+     ],
+     [
+      " "
+     ],
+     [
+      "lampę",
+      "lampa"
+     ],
+     [
+      "! — "
+     ],
+     [
+      "mówi",
+      "mówić"
+     ],
+     [
+      " "
+     ],
+     [
+      "Ewa"
+     ],
+     [
+      "."
+     ]
+    ],
+    [
+     [
+      "Sven"
+     ],
+     [
+      ", "
+     ],
+     [
+      "Ewa"
+     ],
+     [
+      ", "
+     ],
+     [
+      "Marcin"
+     ],
+     [
+      " "
+     ],
+     [
+      "i",
+      "i"
+     ],
+     [
+      " "
+     ],
+     [
+      "Robert"
+     ],
+     [
+      " "
+     ],
+     [
+      "jedzą",
+      "jeść"
+     ],
+     [
+      " "
+     ],
+     [
+      "zupę",
+      "zupa"
+     ],
+     [
+      " "
+     ],
+     [
+      "i",
+      "i"
+     ],
+     [
+      " "
+     ],
+     [
+      "rybę",
+      "ryba"
+     ],
+     [
+      ". "
+     ],
+     [
+      "Marcin"
+     ],
+     [
+      " "
+     ],
+     [
+      "mówi",
+      "mówić"
+     ],
+     [
+      " "
+     ],
+     [
+      "dużo",
+      "dużo"
+     ],
+     [
+      " "
+     ],
+     [
+      "i",
+      "i"
+     ],
+     [
+      " "
+     ],
+     [
+      "głośno",
+      "głośno"
+     ],
+     [
+      ". "
+     ],
+     [
+      "Robert"
+     ],
+     [
+      " "
+     ],
+     [
+      "mówi",
+      "mówić"
+     ],
+     [
+      " "
+     ],
+     [
+      "cicho",
+      "cicho"
+     ],
+     [
+      ", "
+     ],
+     [
+      "ale",
+      "ale"
+     ],
+     [
+      " "
+     ],
+     [
+      "je",
+      "jeść"
+     ],
+     [
+      " "
+     ],
+     [
+      "dużo",
+      "dużo"
+     ],
+     [
+      ". "
+     ],
+     [
+      "Potem",
+      "potem"
+     ],
+     [
+      " "
+     ],
+     [
+      "jedzą",
+      "jeść"
+     ],
+     [
+      " "
+     ],
+     [
+      "lody",
+      "lody"
+     ],
+     [
+      ". "
+     ],
+     [
+      "Marcin"
+     ],
+     [
+      " "
+     ],
+     [
+      "ma",
+      "mieć"
+     ],
+     [
+      " "
+     ],
+     [
+      "dla",
+      "dla"
+     ],
+     [
+      " "
+     ],
+     [
+      "Ewy"
+     ],
+     [
+      " "
+     ],
+     [
+      "czekoladę",
+      "czekolada"
+     ],
+     [
+      ", "
+     ],
+     [
+      "więc",
+      "więc"
+     ],
+     [
+      " "
+     ],
+     [
+      "Ewa"
+     ],
+     [
+      " "
+     ],
+     [
+      "je",
+      "jeść"
+     ],
+     [
+      " "
+     ],
+     [
+      "lody",
+      "lody"
+     ],
+     [
+      " "
+     ],
+     [
+      "z",
+      "z"
+     ],
+     [
+      " "
+     ],
+     [
+      "czekoladą",
+      "czekolada"
+     ],
+     [
+      "."
+     ]
+    ],
+    [
+     [
+      "— "
+     ],
+     [
+      "Smacznego",
+      "smacznego"
+     ],
+     [
+      "! — "
+     ],
+     [
+      "mówi",
+      "mówić"
+     ],
+     [
+      " "
+     ],
+     [
+      "Robert"
+     ],
+     [
+      "."
+     ]
+    ],
+    [
+     [
+      "Robert"
+     ],
+     [
+      " "
+     ],
+     [
+      "pracuje",
+      "pracować"
+     ],
+     [
+      " "
+     ],
+     [
+      "w",
+      "w"
+     ],
+     [
+      " "
+     ],
+     [
+      "restauracji",
+      "restauracja"
+     ],
+     [
+      ", "
+     ],
+     [
+      "więc",
+      "więc"
+     ],
+     [
+      " "
+     ],
+     [
+      "zawsze",
+      "zawsze"
+     ],
+     [
+      " "
+     ],
+     [
+      "mówi",
+      "mówić"
+     ],
+     [
+      " „"
+     ],
+     [
+      "Smacznego",
+      "smacznego"
+     ],
+     [
+      "!”. "
+     ],
+     [
+      "Ewa"
+     ],
+     [
+      " "
+     ],
+     [
+      "i",
+      "i"
+     ],
+     [
+      " "
+     ],
+     [
+      "Sven"
+     ],
+     [
+      " "
+     ],
+     [
+      "się",
+      "się"
+     ],
+     [
+      " "
+     ],
+     [
+      "śmieją",
+      "śmiać się"
+     ],
+     [
+      "."
+     ]
+    ]
+   ],
+   "words": {
+    "a": {
+     "gloss": "and, while"
+    },
+    "ale": {
+     "gloss": "but"
+    },
+    "być": {
+     "gloss": "to be",
+     "note": "byc"
+    },
+    "chleb": {
+     "gloss": "bread",
+     "note": "chleb"
+    },
+    "cicho": {
+     "gloss": "quietly",
+     "note": "cicho"
+    },
+    "ciemno": {
+     "gloss": "dark (it is dark)",
+     "note": "ciemno"
+    },
+    "czekolada": {
+     "gloss": "chocolate",
+     "note": "czekolada"
+    },
+    "człowiek": {
+     "gloss": "person",
+     "note": "czlowiek"
+    },
+    "dla": {
+     "gloss": "for"
+    },
+    "do": {
+     "gloss": "to"
+    },
+    "dobry": {
+     "gloss": "good",
+     "note": "dobry"
+    },
+    "drzwi": {
+     "gloss": "door",
+     "note": "drzwi"
+    },
+    "dużo": {
+     "gloss": "a lot, many",
+     "note": "duzo"
+    },
+    "dzwonić": {
+     "gloss": "to call, to ring",
+     "note": "dzwonic"
+    },
+    "gdzie": {
+     "gloss": "where"
+    },
+    "głodny": {
+     "gloss": "hungry",
+     "note": "glodny"
+    },
+    "głos": {
+     "gloss": "voice",
+     "note": "glos"
+    },
+    "głośno": {
+     "gloss": "loudly",
+     "note": "glosno"
+    },
+    "i": {
+     "gloss": "and"
+    },
+    "iść": {
+     "gloss": "to go",
+     "note": "isc"
+    },
+    "ja": {
+     "gloss": "I"
+    },
+    "jego": {
+     "gloss": "his"
+    },
+    "jeszcze": {
+     "gloss": "still, yet",
+     "note": "jeszcze"
+    },
+    "jeść": {
+     "gloss": "to eat",
+     "note": "jesc"
+    },
+    "już": {
+     "gloss": "already; right away",
+     "note": "juz"
+    },
+    "ktoś": {
+     "gloss": "someone",
+     "note": "ktos"
+    },
+    "kuchnia": {
+     "gloss": "kitchen",
+     "note": "kuchnia"
+    },
+    "kupować": {
+     "gloss": "to buy",
+     "note": "kupowac"
+    },
+    "lampa": {
+     "gloss": "lamp",
+     "note": "lampa"
+    },
+    "lody": {
+     "gloss": "ice cream",
+     "note": "lody"
+    },
+    "mieć": {
+     "gloss": "to have",
+     "note": "miec"
+    },
+    "mój": {
+     "gloss": "my"
+    },
+    "mówić": {
+     "gloss": "to speak",
+     "note": "mowic"
+    },
+    "na": {
+     "gloss": "on, onto"
+    },
+    "nagle": {
+     "gloss": "suddenly",
+     "note": "nagle"
+    },
+    "nie": {
+     "gloss": "no, not",
+     "note": "nie"
+    },
+    "nowy": {
+     "gloss": "new",
+     "note": "nowy"
+    },
+    "odpowiadać": {
+     "gloss": "to answer",
+     "note": "odpowiadac"
+    },
+    "pan": {
+     "gloss": "sir, Mr",
+     "note": "pan"
+    },
+    "pani": {
+     "gloss": "madam, Mrs",
+     "note": "pani"
+    },
+    "patrzeć": {
+     "gloss": "to look",
+     "note": "patrzec"
+    },
+    "potem": {
+     "gloss": "then, afterwards",
+     "note": "potem"
+    },
+    "pracować": {
+     "gloss": "to work",
+     "note": "pracowac"
+    },
+    "przychodzić": {
+     "gloss": "to come, arrive",
+     "note": "przychodzic"
+    },
+    "przyjaciel": {
+     "gloss": "friend",
+     "note": "przyjaciel"
+    },
+    "pytać": {
+     "gloss": "to ask",
+     "note": "pytac"
+    },
+    "późno": {
+     "gloss": "late",
+     "note": "pozno"
+    },
+    "rano": {
+     "gloss": "in the morning",
+     "note": "rano"
+    },
+    "restauracja": {
+     "gloss": "restaurant",
+     "note": "restauracja"
+    },
+    "robić": {
+     "gloss": "to do, to make",
+     "note": "robic"
+    },
+    "ryba": {
+     "gloss": "fish",
+     "note": "ryba"
+    },
+    "ser": {
+     "gloss": "cheese",
+     "note": "ser"
+    },
+    "się": {
+     "gloss": "oneself (with some verbs)"
+    },
+    "sklep": {
+     "gloss": "shop",
+     "note": "sklep"
+    },
+    "smacznego": {
+     "gloss": "enjoy your meal!"
+    },
+    "sobota": {
+     "gloss": "Saturday",
+     "note": "sobota"
+    },
+    "słyszeć": {
+     "gloss": "to hear",
+     "note": "slyszec"
+    },
+    "tak": {
+     "gloss": "yes",
+     "note": "tak"
+    },
+    "ten": {
+     "gloss": "this"
+    },
+    "to": {
+     "gloss": "this, it"
+    },
+    "trochę": {
+     "gloss": "a little, a bit",
+     "note": "troche"
+    },
+    "twarz": {
+     "gloss": "face",
+     "note": "twarz"
+    },
+    "tylko": {
+     "gloss": "only",
+     "note": "tylko"
+    },
+    "ulica": {
+     "gloss": "street",
+     "note": "ulica"
+    },
+    "w": {
+     "gloss": "in"
+    },
+    "wieczór": {
+     "gloss": "evening",
+     "note": "wieczor"
+    },
+    "więc": {
+     "gloss": "so"
+    },
+    "włączyć": {
+     "gloss": "to switch on",
+     "note": "wlaczyc"
+    },
+    "z": {
+     "gloss": "with; from"
+    },
+    "zawsze": {
+     "gloss": "always",
+     "note": "zawsze"
+    },
+    "zmęczony": {
+     "gloss": "tired",
+     "note": "zmeczony"
+    },
+    "znać": {
+     "gloss": "to know (a person, a place)",
+     "note": "znac"
+    },
+    "zupa": {
+     "gloss": "soup",
+     "note": "zupa"
+    },
+    "łatwy": {
+     "gloss": "easy",
+     "note": "latwy"
+    },
+    "śmiać się": {
+     "gloss": "to laugh",
+     "note": "smiac_sie"
+    }
+   },
+   "questions": [
+    {
+     "q": "Co kupuje Sven?",
+     "options": [
+      "rybę, chleb, ser i lody",
+      "zupę",
+      "czekoladę"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Co robi Ewa?",
+     "options": [
+      "rybę",
+      "zupę",
+      "lody"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Dlaczego Ewa jest głodna?",
+     "options": [
+      "bo jest późno, a Marcina nie ma",
+      "bo zupa jest łatwa",
+      "bo Robert je dużo"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Z kim przychodzi Marcin?",
+     "options": [
+      "z Ewą",
+      "z przyjacielem"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Gdzie pracuje Robert?",
+     "options": [
+      "w sklepie",
+      "w restauracji",
+      "w kuchni"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Co mówi Ewa w kuchni?",
+     "options": [
+      "Sven, włącz lampę!",
+      "Smacznego!",
+      "Ja znam pana!"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Kto mówi cicho?",
+     "options": [
+      "Marcin",
+      "Robert",
+      "Ewa"
+     ],
+     "answer": 1
+    },
+    {
+     "q": "Co ma Marcin dla Ewy?",
+     "options": [
+      "lody",
+      "czekoladę",
+      "rybę"
      ],
      "answer": 1
     }

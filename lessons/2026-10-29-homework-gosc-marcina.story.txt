@@ -1,0 +1,199 @@
+Jest sobota. Wieczorem przychodzi Marcin, nowy przyjaciel Svena. Ewa jeszcze nie zna Marcina.
+
+Rano Sven idzie do sklepu. Kupuje rybę, chleb, ser i lody. Ewa robi zupę. Zupa jest łatwa. Potem Sven robi rybę. Ryba nie jest łatwa!
+
+Wieczorem jest już późno, a Marcina nie ma. Ewa jest głodna i trochę zmęczona.
+
+— Gdzie jest Marcin? — pyta Ewa.
+
+Sven dzwoni do Marcina, ale Marcin nie odpowiada.
+
+Nagle Sven słyszy głos na ulicy. Ktoś idzie do drzwi. To Marcin z przyjacielem.
+
+— Dobry wieczór! To jest Robert, mój przyjaciel.
+
+Ewa patrzy na jego twarz i nagle się śmieje. Ten człowiek pracuje w restauracji!
+
+— Ja znam pana! — mówi Ewa.
+
+— Tak! — odpowiada Robert. — A pani je tylko zupę!
+
+W kuchni jest ciemno.
+
+— Sven, włącz lampę! — mówi Ewa.
+
+Sven, Ewa, Marcin i Robert jedzą zupę i rybę. Marcin mówi dużo i głośno. Robert mówi cicho, ale je dużo. Potem jedzą lody. Marcin ma dla Ewy czekoladę, więc Ewa je lody z czekoladą.
+
+— Smacznego! — mówi Robert.
+
+Robert pracuje w restauracji, więc zawsze mówi „Smacznego!”. Ewa i Sven się śmieją.
+
+Ewa kupuje (…) w sklepie. [kurtka]
+Ewa mówi z (…). [kelner]
+Widzę (…) na ulicy. [ptak]
+Rower stoi pod (…). [drzewo]
+Masz (…)? [karta]
+Sven pije herbatę z (…). [cytryna]
+Ewa ma nowego (…). [przyjaciel]
+Jem chleb z (…). [czekolada]
+Kupuję (…) do kuchni. [krzesło]
+Ptak leci nad (…). [miasto]
+Czytam (…) rano. [list]
+Sven mówi z (…). [kobieta]
+Otwieram (…). [lodówka]
+Ewa czeka pod (…). [sklep]
+Ewa myje (…). [okno]
+Dom stoi nad (…). [rzeka]
+
+--- pytania ---
+
+Co kupuje Sven? | *rybę, chleb, ser i lody | zupę | czekoladę
+Co robi Ewa? | rybę | *zupę | lody
+Dlaczego Ewa jest głodna? | *bo jest późno, a Marcina nie ma | bo zupa jest łatwa | bo Robert je dużo
+Z kim przychodzi Marcin? | z Ewą | *z przyjacielem
+Gdzie pracuje Robert? | w sklepie | *w restauracji | w kuchni
+Co mówi Ewa w kuchni? | *Sven, włącz lampę! | Smacznego! | Ja znam pana!
+Kto mówi cicho? | Marcin | *Robert | Ewa
+Co ma Marcin dla Ewy? | lody | *czekoladę | rybę
+
+--- lemmas ---
+Jest = być
+sobota = sobota
+Wieczorem = wieczór
+przychodzi = przychodzić
+Marcin = -
+nowy = nowy
+przyjaciel = przyjaciel
+Svena = -
+Ewa = -
+jeszcze = jeszcze
+nie = nie
+zna = znać
+Marcina = -
+Rano = rano
+Sven = -
+idzie = iść
+do = do
+sklepu = sklep
+Kupuje = kupować
+rybę = ryba
+chleb = chleb
+ser = ser
+i = i
+lody = lody
+robi = robić
+zupę = zupa
+Zupa = zupa
+jest = być
+łatwa = łatwy
+Potem = potem
+Ryba = ryba
+już = już
+późno = późno
+a = a
+ma = mieć
+głodna = głodny
+trochę = trochę
+zmęczona = zmęczony
+Gdzie = gdzie
+pyta = pytać
+dzwoni = dzwonić
+ale = ale
+odpowiada = odpowiadać
+Nagle = nagle
+słyszy = słyszeć
+głos = głos
+na = na
+ulicy = ulica
+Ktoś = ktoś
+drzwi = drzwi
+To = to
+z = z
+człowiek = człowiek
+w = w
+Dobry = dobry
+wieczór = wieczór
+Robert = -
+mój = mój
+patrzy = patrzeć
+jego = jego
+twarz = twarz
+nagle = nagle
+się = się
+śmieje = śmiać się
+Ja = ja
+znam = znać
+pana = pan
+pracuje = pracować
+restauracji = restauracja
+Tak = tak
+A = a
+pani = pani
+je = jeść
+tylko = tylko
+W = w
+kuchni = kuchnia
+ciemno = ciemno
+włącz = włączyć
+lampę = lampa
+mówi = mówić
+jedzą = jeść
+dużo = dużo
+głośno = głośno
+cicho = cicho
+dla = dla
+Ewy = -
+czekoladę = czekolada
+czekoladą = czekolada
+Smacznego = smacznego
+kupuje = kupować
+sklepie = sklep
+kurtka = kurtka
+kelner = kelner
+Widzę = widzieć
+ptak = ptak
+Rower = rower
+stoi = stać
+pod = pod
+drzewo = drzewo
+Masz = mieć
+karta = karta
+pije = pić
+herbatę = herbata
+cytryna = cytryna
+nowego = nowy
+Jem = jeść
+czekolada = czekolada
+Kupuję = kupować
+krzesło = krzesło
+Ptak = ptak
+leci = lecieć
+nad = nad
+miasto = miasto
+Czytam = czytać
+list = list
+kobieta = kobieta
+Otwieram = otwierać
+lodówka = lodówka
+czeka = czekać
+sklep = sklep
+myje = myć
+okno = okno
+Dom = dom
+rzeka = rzeka
+pytania = pytanie
+Co = co
+Dlaczego = dlaczego
+bo = bo
+Z = z
+kim = kto
+Ewą = -
+Kto = kto
+rano = rano
+przyjacielem = przyjaciel
+Ten = ten
+jedzą = jeść
+więc = więc
+zawsze = zawsze
+śmieją = śmiać się
+Robert = -
