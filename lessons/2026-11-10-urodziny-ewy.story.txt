@@ -1,0 +1,222 @@
+W sobotę Ewa ma urodziny. Ewa myśli, że Sven nie pamięta.
+
+Ale Sven pamięta. Wieczorem Sven dzwoni do Marcina. Ewa jest w kuchni, więc Sven mówi bardzo cicho.
+
+— Marcin? Słyszysz mnie?
+
+— Nie, nie słyszę! Dlaczego mówisz tak cicho?
+
+— Bo Ewa jest w domu. W sobotę Ewa ma urodziny. Przychodzisz?
+
+— Tak! I Robert też.
+
+Potem Sven dzwoni do Adama. Adam to dobry człowiek, ale zawsze mówi bardzo głośno.
+
+— Urodziny Ewy? W sobotę? Ale w sobotę gra Polska!
+
+— Adam!
+
+— Dobrze, dobrze! — mówi Adam bardzo głośno.
+
+— Adam, nie mów tak głośno!
+
+Wtedy Ewa słyszy głos.
+
+— Sven, z kim mówisz? — pyta Ewa.
+
+— Z przyjacielem — odpowiada Sven.
+
+W sobotę wieczorem Marcin, Robert i Adam stoją pod drzwiami. Robert niesie kwiaty.
+
+— Słyszycie coś? — pyta Adam bardzo głośno.
+
+— Cicho! — mówi Marcin. — My nic nie słyszymy, ale Ewa słyszy wszystko!
+
+W domu Ewa i Sven słyszą głos Adama. Ewa się śmieje. Sven otwiera drzwi.
+
+— Ewa! Dzisiaj masz urodziny! — mówią przyjaciele.
+
+— Wiem! Słyszę wszystko. Wy zawsze mówicie bardzo głośno!
+
+— My? My mówimy cicho! — mówią Marcin i Robert.
+
+— Tak. Ale Adam nie.
+
+Potem Ewa, Sven i przyjaciele idą do pokoju. Adam widzi telewizor.
+
+— Sven, włącz telewizor! Polska gra!
+
+— Nie! — mówi Ewa. — Dzisiaj są moje urodziny!
+
+Marcin i Robert się śmieją. Ewa jest bardzo szczęśliwa.
+
+— Co (…) wieczorem? — Czytam książkę. [robić]
+— Lubisz kawę? — Tak, (…) kawę z mlekiem. [lubić]
+Sven i Ewa (…) na ptaka. [patrzeć]
+— Marcin, Robert, (…) do Ewy? — Tak. [dzwonić]
+Sven i ja (…) polskiego. [uczyć się]
+Ewa (…) tylko rano. [uczyć się]
+— Czy wy (…) pierogi? [lubić]
+— Co (…), Sven? — Myślę, że Adam mówi bardzo głośno. [myśleć]
+Ludzie w parku (…) psy. [lubić]
+— Dzwonisz do Ewy? — Tak, (…). [dzwonić]
+My zawsze (…) na ptaki w parku. [patrzeć]
+Pies (…) na kota. [patrzeć]
+— Co (…), dzieci? [robić]
+Marcin i Adam (…) do drzwi. [dzwonić]
+— Ty (…) polskiego? — Tak, uczę się. [uczyć się]
+Adam i ja (…), że Ewa wie. [myśleć]
+
+--- pytania ---
+
+Co myśli Ewa? | *że Sven nie pamięta | że Adam mówi cicho
+Dlaczego Sven mówi cicho? | *bo Ewa jest w domu | bo Adam mówi głośno | bo Marcin nie słyszy
+Kto zawsze mówi bardzo głośno? | Marcin | *Adam | Robert
+Co odpowiada Sven Ewie? | *Z przyjacielem. | Cicho! | Nie mów tak głośno!
+Gdzie jest Ewa, kiedy Sven dzwoni do Marcina? | *w kuchni | pod drzwiami
+Kto stoi pod drzwiami? | *Marcin, Robert i Adam | Ewa i Sven
+Co niesie Robert? | *kwiaty | drzwi
+Kto słyszy wszystko? | Marcin | *Ewa | Sven
+Dlaczego Adam chce włączyć telewizor? | *bo gra Polska | bo Ewa ma urodziny
+
+--- lemmas ---
+W = w
+sobotę = sobota
+Ewa = -
+ma = mieć
+urodziny = urodziny
+myśli = myśleć
+że = że
+Sven = -
+nie = nie
+pamięta = pamiętać
+Ale = ale
+Wieczorem = wieczór
+dzwoni = dzwonić
+do = do
+Marcina = -
+jest = być
+w = w
+kuchni = kuchnia
+więc = więc
+mówi = mówić
+bardzo = bardzo
+cicho = cicho
+Marcin = -
+Słyszysz = słyszeć
+mnie = ja
+Nie = nie
+słyszę = słyszeć
+Dlaczego = dlaczego
+mówisz = mówić
+tak = tak
+Bo = bo
+domu = dom
+Przychodzisz = przychodzić
+Tak = tak
+I = i
+Robert = -
+też = też
+Potem = potem
+Adama = -
+Adam = -
+to = to
+dobry = dobry
+człowiek = człowiek
+ale = ale
+zawsze = zawsze
+głośno = głośno
+Urodziny = urodziny
+Ewy = -
+Dobrze = dobrze
+mów = mówić
+Wtedy = wtedy
+słyszy = słyszeć
+głos = głos
+z = z
+kim = kto
+pyta = pytać
+Z = z
+przyjacielem = przyjaciel
+odpowiada = odpowiadać
+wieczorem = wieczór
+i = i
+stoją = stać
+pod = pod
+drzwiami = drzwi
+niesie = nieść
+kwiaty = kwiat
+Słyszycie = słyszeć
+coś = coś
+Cicho = cicho
+My = my
+nic = nic
+słyszymy = słyszeć
+wszystko = wszystko
+słyszą = słyszeć
+się = się
+śmieje = śmiać się
+otwiera = otwierać
+drzwi = drzwi
+Dzisiaj = dzisiaj
+masz = mieć
+mówią = mówić
+przyjaciele = przyjaciel
+Wiem = wiedzieć
+Słyszę = słyszeć
+Wy = wy
+mówicie = mówić
+mówimy = mówić
+szczęśliwa = szczęśliwy
+Co = co
+Czytam = czytać
+książkę = książka
+robić = robić
+Lubisz = lubić
+kawę = kawa
+mlekiem = mleko
+lubić = lubić
+na = na
+ptaka = ptak
+patrzeć = patrzeć
+dzwonić = dzwonić
+ja = ja
+polskiego = polski
+uczyć = uczyć się
+rano = rano
+ptaki = ptak
+Czy = czy
+wy = wy
+pierogi = pierogi
+Myślę = myśleć
+myśleć = myśleć
+Ludzie = człowiek
+parku = park
+psy = pies
+Dzwonisz = dzwonić
+Pies = pies
+kota = kot
+dzieci = dziecko
+Ty = ty
+uczę = uczyć się
+wie = wiedzieć
+pytania = pytanie
+Ewie = -
+Kto = kto
+stoi = stać
+tylko = tylko
+
+kiedy = kiedy
+Gdzie = gdzie
+gra = grać
+Polska = Polska
+idą = iść
+pokoju = pokój
+telewizor = telewizor
+włącz = włączyć
+są = być
+moje = mój
+śmieją = śmiać się
+włączyć = włączyć
+chce = chcieć
+widzi = widzieć

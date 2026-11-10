@@ -64,6 +64,7 @@ FUNCTION_GLOSS = {
     "naleśniki": "pancakes", "miło": "nicely (miło mi: pleased to meet you)",
     "u": "at (someone's place): u nas, at our place",
     "po": "after; po polsku: in Polish", "trochę": "a little",
+    "Polska": "Poland",
 }
 
 
