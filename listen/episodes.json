@@ -2,6 +2,92 @@
   "schema": 1,
   "episodes": [
     {
+      "id": "04-deszcz",
+      "title": "Deszcz",
+      "date": "2026-11-10",
+      "audio": "listen/04-deszcz.mp3",
+      "seconds": 54,
+      "text": [
+        "Jest sobota. Rano pada deszcz. Marek i Ania są w domu.",
+        "Marek czyta książkę. Ania robi zupę w kuchni. Kot siedzi na oknie i patrzy na deszcz.",
+        "— Lubisz deszcz? — pyta Ania kota.",
+        "Kot nic nie mówi.",
+        "Potem nie pada. Jest słońce.",
+        "— Idziemy do parku? — pyta Marek.",
+        "— Tak! — mówi Ania.",
+        "Marek i Ania idą do parku. Kot nie idzie. Kot nie lubi parku. Kot śpi na łóżku.",
+        "Wieczorem Marek i Ania wracają do domu. Jedzą zupę. Kot znowu siedzi na oknie i patrzy na ulicę."
+      ],
+      "questions": [
+        {
+          "q": "Co robi Marek rano?",
+          "options": [
+            "czyta książkę",
+            "robi zupę",
+            "śpi"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Gdzie Ania robi zupę?",
+          "options": [
+            "w kuchni",
+            "w parku"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Na co patrzy kot rano?",
+          "options": [
+            "na deszcz",
+            "na ulicę"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Co mówi kot?",
+          "options": [
+            "nic",
+            "tak"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Czy pada deszcz, kiedy Marek i Ania idą do parku?",
+          "options": [
+            "tak",
+            "nie"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Czy kot idzie do parku?",
+          "options": [
+            "tak",
+            "nie"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Gdzie śpi kot?",
+          "options": [
+            "na łóżku",
+            "na oknie",
+            "w parku"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Na co patrzy kot wieczorem?",
+          "options": [
+            "na deszcz",
+            "na ulicę"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    {
       "id": "03-ryba",
       "title": "Ryba",
       "date": "2026-10-29",

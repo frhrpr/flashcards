@@ -1,0 +1,81 @@
+Jest sobota. Rano pada deszcz. Marek i Ania są w domu.
+
+Marek czyta książkę. Ania robi zupę w kuchni. Kot siedzi na oknie i patrzy na deszcz.
+
+— Lubisz deszcz? — pyta Ania kota.
+
+Kot nic nie mówi.
+
+Potem nie pada. Jest słońce.
+
+— Idziemy do parku? — pyta Marek.
+
+— Tak! — mówi Ania.
+
+Marek i Ania idą do parku. Kot nie idzie. Kot nie lubi parku. Kot śpi na łóżku.
+
+Wieczorem Marek i Ania wracają do domu. Jedzą zupę. Kot znowu siedzi na oknie i patrzy na ulicę.
+
+--- pytania ---
+
+Co robi Marek rano? | *czyta książkę | robi zupę | śpi
+Gdzie Ania robi zupę? | *w kuchni | w parku
+Na co patrzy kot rano? | *na deszcz | na ulicę
+Co mówi kot? | *nic | tak
+Czy pada deszcz, kiedy Marek i Ania idą do parku? | tak | *nie
+Czy kot idzie do parku? | tak | *nie
+Gdzie śpi kot? | *na łóżku | na oknie | w parku
+Na co patrzy kot wieczorem? | na deszcz | *na ulicę
+
+--- lemmas ---
+Jest = być
+sobota = sobota
+Rano = rano
+pada = padać
+deszcz = deszcz
+Marek = -
+i = i
+Ania = -
+są = być
+w = w
+domu = dom
+czyta = czytać
+książkę = książka
+robi = robić
+zupę = zupa
+kuchni = kuchnia
+Kot = kot
+siedzi = siedzieć
+na = na
+oknie = okno
+patrzy = patrzeć
+Lubisz = lubić
+pyta = pytać
+kota = kot
+nic = nic
+nie = nie
+mówi = mówić
+Potem = potem
+słońce = słońce
+Idziemy = iść
+do = do
+parku = park
+Tak = tak
+idą = iść
+idzie = iść
+lubi = lubić
+śpi = spać
+łóżku = łóżko
+Wieczorem = wieczór
+wracają = wracać
+Jedzą = jeść
+znowu = znowu
+ulicę = ulica
+pytania = pytanie
+Co = co
+Gdzie = gdzie
+Czy = czy
+kiedy = kiedy
+rano = rano
+tak = tak
+wieczorem = wieczór

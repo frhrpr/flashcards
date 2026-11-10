@@ -1,0 +1,171 @@
+W poniedziałek wieczorem przychodzi babcia Ewy. Ewa mówi do Svena:
+
+— Babcia nie słyszy dobrze. Mów głośno!
+
+Wtedy babcia dzwoni do drzwi. Babcia niesie pierogi.
+
+— Dzień dobry! Lubicie pierogi? — pyta babcia.
+
+— TAK! BARDZO LUBIMY! — mówi Sven.
+
+Ewa robi herbatę w kuchni. Babcia i Sven siedzą w pokoju.
+
+— Co robicie w sobotę? — pyta babcia.
+
+— W SOBOTĘ NIC NIE ROBIMY!
+
+— Nic? A ja w sobotę robię pierogi. Moje dzieci bardzo lubią pierogi, ale nic nie robią! Ewa też lubi pierogi, ale nie robi.
+
+— PIEROGI SĄ ŁATWE?
+
+— Tak. Ty też lubisz pierogi. Robisz pierogi?
+
+— NIE! NIE ROBIĘ! ALE BARDZO LUBIĘ!
+
+— Sven, dlaczego mówisz tak głośno? Nie słyszysz dobrze?
+
+Ewa jest w kuchni i się śmieje.
+
+Teraz babcia mówi bardzo głośno, bo myśli, że Sven nie słyszy. A Sven mówi bardzo głośno, bo myśli, że babcia nie słyszy.
+
+— Sven to dobry człowiek! — mówi babcia bardzo głośno.
+
+— Słyszysz mnie? — Tak, (…) dobrze. [słyszeć]
+— Marcin, (…) do Ewy? — Nie, do Adama. [dzwonić]
+Ewa i ja (…) po polsku. [mówić]
+— Czy wy (…) polskiego? [uczyć się]
+Dzieci (…) bardzo głośno. [mówić]
+— Babcia słyszy dobrze? — (…), że tak. [myśleć]
+Pies (…) na ptaka. [patrzeć]
+— Sven, Ewa, (…) mnie? — pyta babcia. [słyszeć]
+My nic nie (…). [słyszeć]
+— Dlaczego (…) na mnie, Sven? [patrzeć]
+Sven i Ewa (…) wieczorem. [uczyć się]
+— Dlaczego (…) tak głośno, dzieci? [mówić]
+— Mówisz po polsku? — Tak, (…) trochę. [mówić]
+— Kiedy dzwonicie do babci? — (…) w poniedziałek. [dzwonić]
+— Wy też (…), że Sven to dobry człowiek? [myśleć]
+Babcia i Ewa (…) wszystko. [słyszeć]
+
+--- pytania ---
+
+Kto przychodzi w poniedziałek? | *babcia Ewy | dzieci babci
+Co niesie babcia? | *pierogi | herbatę
+Co mówi Ewa do Svena? | *Mów głośno! | Robisz pierogi?
+Kto robi herbatę? | *Ewa | babcia | Sven
+Co robi babcia w sobotę? | *pierogi | nic | herbatę
+Czy dzieci babci robią pierogi? | tak | *nie
+Dlaczego Sven mówi głośno? | *bo myśli, że babcia nie słyszy | bo babcia mówi głośno
+Co myśli babcia? | *że Sven nie słyszy dobrze | że Sven robi pierogi
+
+--- lemmas ---
+W = w
+poniedziałek = poniedziałek
+przychodzi = przychodzić
+babcia = babcia
+Ewy = -
+Ewa = -
+mówi = mówić
+do = do
+Svena = -
+Babcia = babcia
+nie = nie
+słyszy = słyszeć
+dobrze = dobrze
+Mów = mówić
+głośno = głośno
+Wtedy = wtedy
+dzwoni = dzwonić
+drzwi = drzwi
+niesie = nieść
+pierogi = pierogi
+Dzień = dzień
+dobry = dobry
+Lubicie = lubić
+pyta = pytać
+TAK = tak
+BARDZO = bardzo
+LUBIMY = lubić
+Sven = -
+robi = robić
+herbatę = herbata
+w = w
+kuchni = kuchnia
+i = i
+siedzą = siedzieć
+pokoju = pokój
+Co = co
+robicie = robić
+sobotę = sobota
+NIC = nic
+NIE = nie
+ROBIMY = robić
+Nic = nic
+A = a
+ja = ja
+robię = robić
+Moje = mój
+dzieci = dziecko
+bardzo = bardzo
+lubią = lubić
+ale = ale
+nic = nic
+robią = robić
+też = też
+lubi = lubić
+Pierogi = pierogi
+są = być
+łatwe = łatwy
+Tak = tak
+Ty = ty
+lubisz = lubić
+Robisz = robić
+ROBIĘ = robić
+ALE = ale
+LUBIĘ = lubić
+dlaczego = dlaczego
+mówisz = mówić
+tak = tak
+słyszysz = słyszeć
+Nie = nie
+jest = być
+się = się
+śmieje = śmiać się
+Teraz = teraz
+bo = bo
+myśli = myśleć
+że = że
+to = to
+człowiek = człowiek
+Słyszysz = słyszeć
+mnie = ja
+słyszeć = słyszeć
+Marcin = -
+dzwonić = dzwonić
+Adama = -
+na = na
+ptaka = ptak
+patrzeć = patrzeć
+Dlaczego = dlaczego
+My = my
+mówić = mówić
+Czy = czy
+wy = wy
+polskiego = polski
+uczyć = uczyć się
+Dzieci = dziecko
+myśleć = myśleć
+Pies = pies
+pytania = pytanie
+wieczorem = wieczór
+Mówisz = mówić
+po = po
+polsku = polski
+trochę = trochę
+Kiedy = kiedy
+dzwonicie = dzwonić
+babci = babcia
+Wy = wy
+wszystko = wszystko
+Kto = kto
+wieczorem = wieczór
