@@ -1,0 +1,86 @@
+Jest sobota. Marek i Ania idą do sklepu.
+
+Ania kupuje chleb, mleko i ser. Marek kupuje kawę i czekoladę.
+
+— Kupujemy też rybę? — pyta Marek.
+
+— Nie. Dzisiaj robimy zupę — mówi Ania.
+
+Potem Marek i Ania wracają do domu.
+
+W kuchni Ania robi zupę. Marek robi herbatę.
+
+Kot siedzi na krześle i patrzy na ser.
+
+— Nie! Ser nie jest dla kota! — mówi Ania.
+
+Wieczorem Marek i Ania jedzą zupę i chleb z serem. Kot pije mleko.
+
+--- pytania ---
+
+Co kupuje Ania? | *chleb, mleko i ser | kawę i czekoladę
+Co kupuje Marek? | *kawę i czekoladę | chleb, mleko i ser
+Czy Marek i Ania kupują rybę? | tak | *nie
+Co robi Ania w kuchni? | *zupę | herbatę
+Co robi Marek w kuchni? | *herbatę | zupę
+Gdzie siedzi kot? | *na krześle | w sklepie
+Na co patrzy kot? | *na ser | na zupę
+Co pije kot wieczorem? | *mleko | herbatę | kawę
+
+--- lemmas ---
+Jest = być
+jest = być
+sobota = sobota
+Marek = -
+i = i
+Ania = -
+idą = iść
+do = do
+sklepu = sklep
+kupuje = kupować
+chleb = chleb
+mleko = mleko
+ser = ser
+kawę = kawa
+czekoladę = czekolada
+Kupujemy = kupować
+też = też
+rybę = ryba
+pyta = pytać
+Nie = nie
+nie = nie
+Dzisiaj = dzisiaj
+robimy = robić
+zupę = zupa
+mówi = mówić
+Potem = potem
+wracają = wracać
+domu = dom
+W = w
+w = w
+kuchni = kuchnia
+robi = robić
+herbatę = herbata
+Kot = kot
+siedzi = siedzieć
+na = na
+krześle = krzesło
+patrzy = patrzeć
+Ser = ser
+dla = dla
+kota = kot
+Wieczorem = wieczór
+jedzą = jeść
+z = z
+serem = ser
+pije = pić
+pytania = pytanie
+Co = co
+Czy = czy
+kupują = kupować
+tak = tak
+Gdzie = gdzie
+sklepie = sklep
+Na = na
+co = co
+wieczorem = wieczór

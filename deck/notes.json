@@ -12807,6 +12807,668 @@
       ],
       "reviewed": true,
       "priority": true
+    },
+    {
+      "id": "kielbasa",
+      "word": "kiełbasa",
+      "gloss": "sausage",
+      "pos": "noun",
+      "ipa": "kʲɛwˈbasa",
+      "note": null,
+      "image": "media/img/kielbasa.webp",
+      "image_alt": "a sausage and a slice of bread on a plate",
+      "image_basis": "sentence",
+      "image_prompt": "A grilled sausage and a slice of rye bread on a plain white plate on a wooden table. No text or lettering. Square image.",
+      "audio": "media/audio/kielbasa.mp3",
+      "sentence": {
+        "pl": "Jem kiełbasę z chlebem.",
+        "en": "I am eating sausage with bread.",
+        "gap": "Jem ___ z chlebem.",
+        "answer": "kiełbasę",
+        "answer_lemma": "kiełbasa",
+        "audio": "media/audio/kielbasa__sentence.mp3",
+        "lemmas": [
+          "jeść",
+          "kiełbasa",
+          "z",
+          "chleb"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "musztarda",
+      "word": "musztarda",
+      "gloss": "mustard",
+      "pos": "noun",
+      "ipa": "muʂˈtarda",
+      "note": null,
+      "image": "media/img/musztarda.webp",
+      "image_alt": "a small jar of yellow mustard with a spoon",
+      "image_basis": "word",
+      "image_prompt": "A small open glass jar of yellow mustard with a little spoon in it, a dollop of mustard on a plate beside it. No text or lettering. Square image.",
+      "audio": "media/audio/musztarda.mp3",
+      "sentence": {
+        "pl": "Poproszę kiełbasę z musztardą.",
+        "en": "A sausage with mustard, please.",
+        "gap": "Poproszę kiełbasę z ___.",
+        "answer": "musztardą",
+        "answer_lemma": "musztarda",
+        "audio": "media/audio/musztarda__sentence.mp3",
+        "lemmas": [
+          "poproszę",
+          "kiełbasa",
+          "z",
+          "musztarda"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "ogorek",
+      "word": "ogórek",
+      "gloss": "cucumber",
+      "pos": "noun",
+      "ipa": "ɔˈɡurɛk",
+      "note": null,
+      "image": "media/img/ogorek.webp",
+      "image_alt": "one long green cucumber",
+      "image_basis": "sentence",
+      "image_prompt": "One long fresh green cucumber lying on a wooden chopping board. No text or lettering. Square image.",
+      "audio": "media/audio/ogorek.mp3",
+      "sentence": {
+        "pl": "Ogórek jest zielony i długi.",
+        "en": "The cucumber is green and long.",
+        "gap": "___ jest zielony i długi.",
+        "answer": "Ogórek",
+        "answer_lemma": "ogórek",
+        "audio": "media/audio/ogorek__sentence.mp3",
+        "lemmas": [
+          "ogórek",
+          "być",
+          "zielony",
+          "i",
+          "długi"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "pomidor",
+      "word": "pomidor",
+      "gloss": "tomato",
+      "pos": "noun",
+      "ipa": "pɔˈmʲidɔr",
+      "note": null,
+      "image": "media/img/pomidor.webp",
+      "image_alt": "one ripe red tomato",
+      "image_basis": "sentence",
+      "image_prompt": "One ripe, deep red tomato with its green stalk, on a plain light surface. No text or lettering. Square image.",
+      "audio": "media/audio/pomidor.mp3",
+      "sentence": {
+        "pl": "Ten pomidor jest bardzo czerwony.",
+        "en": "This tomato is very red.",
+        "gap": "Ten ___ jest bardzo czerwony.",
+        "answer": "pomidor",
+        "answer_lemma": "pomidor",
+        "audio": "media/audio/pomidor__sentence.mp3",
+        "lemmas": [
+          "ten",
+          "pomidor",
+          "być",
+          "bardzo",
+          "czerwony"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "mokry",
+      "word": "mokry",
+      "gloss": "wet",
+      "pos": "adjective",
+      "ipa": "ˈmɔkrɨ",
+      "note": null,
+      "image": "media/img/mokry.webp",
+      "image_alt": "a soaking wet dog shaking water off",
+      "image_basis": "sentence",
+      "image_prompt": "A soaking wet dog on a lakeside path shaking itself, water drops flying off its fur. No text or lettering. Square image.",
+      "audio": "media/audio/mokry.mp3",
+      "sentence": {
+        "pl": "Pies jest mokry.",
+        "en": "The dog is wet.",
+        "gap": "Pies jest ___.",
+        "answer": "mokry",
+        "answer_lemma": "mokry",
+        "audio": "media/audio/mokry__sentence.mp3",
+        "lemmas": [
+          "pies",
+          "być",
+          "mokry"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true,
+      "priority": true
+    },
+    {
+      "id": "jablko",
+      "word": "jabłko",
+      "gloss": "apple",
+      "pos": "noun",
+      "ipa": "ˈjapkɔ",
+      "note": null,
+      "image": "media/img/jablko.webp",
+      "image_alt": "a woman biting into a red apple",
+      "image_basis": "sentence",
+      "image_prompt": "A woman in her thirties biting into a crisp red apple, in a kitchen. No text or lettering. Square image.",
+      "audio": "media/audio/jablko.mp3",
+      "sentence": {
+        "pl": "Codziennie jem jabłko.",
+        "en": "I eat an apple every day.",
+        "gap": "Codziennie jem ___.",
+        "answer": "jabłko",
+        "answer_lemma": "jabłko",
+        "audio": "media/audio/jablko__sentence.mp3",
+        "lemmas": [
+          "codziennie",
+          "jeść",
+          "jabłko"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "ziemniak",
+      "word": "ziemniak",
+      "gloss": "potato",
+      "pos": "noun",
+      "ipa": "ˈʑɛmɲak",
+      "note": null,
+      "image": "media/img/ziemniak.webp",
+      "image_alt": "a paper bag full of raw potatoes",
+      "image_basis": "sentence",
+      "image_prompt": "A brown paper bag full of raw unpeeled potatoes, a few spilling out onto a market table. No text or lettering. Square image.",
+      "audio": "media/audio/ziemniak.mp3",
+      "sentence": {
+        "pl": "Kupuję ziemniaki.",
+        "en": "I am buying potatoes.",
+        "gap": "Kupuję ___.",
+        "answer": "ziemniaki",
+        "answer_lemma": "ziemniak",
+        "audio": "media/audio/ziemniak__sentence.mp3",
+        "lemmas": [
+          "kupować",
+          "ziemniak"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "cebula",
+      "word": "cebula",
+      "gloss": "onion",
+      "pos": "noun",
+      "ipa": "t͡sɛˈbula",
+      "note": null,
+      "image": "media/img/cebula.webp",
+      "image_alt": "an onion cut in half on a board",
+      "image_basis": "word",
+      "image_prompt": "One brown onion cut in half on a wooden chopping board, the rings of the cut side visible. No text or lettering. Square image.",
+      "audio": "media/audio/cebula.mp3",
+      "sentence": {
+        "pl": "Nie lubię cebuli.",
+        "en": "I do not like onion.",
+        "gap": "Nie lubię ___.",
+        "answer": "cebuli",
+        "answer_lemma": "cebula",
+        "audio": "media/audio/cebula__sentence.mp3",
+        "lemmas": [
+          "nie",
+          "lubić",
+          "cebula"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "talerz",
+      "word": "talerz",
+      "gloss": "plate",
+      "pos": "noun",
+      "ipa": "ˈtalɛʂ",
+      "note": null,
+      "image": "media/img/talerz.webp",
+      "image_alt": "an empty white plate on a table",
+      "image_basis": "sentence",
+      "image_prompt": "One empty white dinner plate on a wooden table, seen from slightly above, nothing on it. No text or lettering. Square image.",
+      "audio": "media/audio/talerz.mp3",
+      "sentence": {
+        "pl": "Na stole jest pusty talerz.",
+        "en": "There is an empty plate on the table.",
+        "gap": "Na stole jest pusty ___.",
+        "answer": "talerz",
+        "answer_lemma": "talerz",
+        "audio": "media/audio/talerz__sentence.mp3",
+        "lemmas": [
+          "na",
+          "stół",
+          "być",
+          "pusty",
+          "talerz"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "kubek",
+      "word": "kubek",
+      "gloss": "mug",
+      "pos": "noun",
+      "ipa": "ˈkubɛk",
+      "note": null,
+      "image": "media/img/kubek.webp",
+      "image_alt": "a big blue mug",
+      "image_basis": "sentence",
+      "image_prompt": "One big blue ceramic mug with a handle, standing on a desk. No text or lettering. Square image.",
+      "audio": "media/audio/kubek.mp3",
+      "sentence": {
+        "pl": "Mój kubek jest duży i niebieski.",
+        "en": "My mug is big and blue.",
+        "gap": "Mój ___ jest duży i niebieski.",
+        "answer": "kubek",
+        "answer_lemma": "kubek",
+        "audio": "media/audio/kubek__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "kubek",
+          "być",
+          "duży",
+          "i",
+          "niebieski"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "szklanka",
+      "word": "szklanka",
+      "gloss": "a glass (for drinking)",
+      "pos": "noun",
+      "ipa": "ˈʂklanka",
+      "note": null,
+      "image": "media/img/szklanka.webp",
+      "image_alt": "several clean drinking glasses on a shelf",
+      "image_basis": "sentence",
+      "image_prompt": "An open kitchen cupboard with a row of clean, empty drinking glasses on its shelf. No text or lettering. Square image.",
+      "audio": "media/audio/szklanka.mp3",
+      "sentence": {
+        "pl": "W szafce są szklanki.",
+        "en": "There are glasses in the cupboard.",
+        "gap": "W szafce są ___.",
+        "answer": "szklanki",
+        "answer_lemma": "szklanka",
+        "audio": "media/audio/szklanka__sentence.mp3",
+        "lemmas": [
+          "w",
+          "szafka",
+          "być",
+          "szklanka"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "lyzka",
+      "word": "łyżka",
+      "gloss": "spoon",
+      "pos": "noun",
+      "ipa": "ˈwɨʂka",
+      "note": null,
+      "image": "media/img/lyzka.webp",
+      "image_alt": "a metal spoon on a napkin",
+      "image_basis": "word",
+      "image_prompt": "One metal spoon lying on a folded white napkin, close up. No text or lettering. Square image.",
+      "audio": "media/audio/lyzka.mp3",
+      "sentence": {
+        "pl": "Jem zupę łyżką.",
+        "en": "I eat soup with a spoon.",
+        "gap": "Jem zupę ___.",
+        "answer": "łyżką",
+        "answer_lemma": "łyżka",
+        "audio": "media/audio/lyzka__sentence.mp3",
+        "lemmas": [
+          "jeść",
+          "zupa",
+          "łyżka"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "widelec",
+      "word": "widelec",
+      "gloss": "fork",
+      "pos": "noun",
+      "ipa": "vʲiˈdɛlɛt͡s",
+      "note": null,
+      "image": "media/img/widelec.webp",
+      "image_alt": "a fork lifting a piece of fish from a plate",
+      "image_basis": "sentence",
+      "image_prompt": "A fork lifting a piece of white fish fillet from a plate, close up on the fork. No text or lettering. Square image.",
+      "audio": "media/audio/widelec.mp3",
+      "sentence": {
+        "pl": "Jem rybę widelcem.",
+        "en": "I eat fish with a fork.",
+        "gap": "Jem rybę ___.",
+        "answer": "widelcem",
+        "answer_lemma": "widelec",
+        "audio": "media/audio/widelec__sentence.mp3",
+        "lemmas": [
+          "jeść",
+          "ryba",
+          "widelec"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "rozmawiac",
+      "word": "rozmawiać",
+      "gloss": "to talk (with someone), have a conversation",
+      "pos": "verb",
+      "ipa": "rɔzˈmavʲjat͡ɕ",
+      "note": "A conversation with someone. Simply speaking or saying something is mówić.",
+      "image": "media/img/rozmawiac.webp",
+      "image_alt": "a mother and her adult daughter talking at a kitchen table",
+      "image_basis": "sentence",
+      "image_prompt": "A mother and her adult daughter sitting at a kitchen table with cups of tea, talking and smiling at each other. No text or lettering. Square image.",
+      "audio": "media/audio/rozmawiac.mp3",
+      "sentence": {
+        "pl": "Matka i córka rozmawiają w kuchni.",
+        "en": "A mother and daughter are talking in the kitchen.",
+        "gap": "Matka i córka ___ w kuchni.",
+        "answer": "rozmawiają",
+        "answer_lemma": "rozmawiać",
+        "audio": "media/audio/rozmawiac__sentence.mp3",
+        "lemmas": [
+          "matka",
+          "i",
+          "córka",
+          "rozmawiać",
+          "w",
+          "kuchnia"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "prosic",
+      "word": "prosić",
+      "gloss": "to ask for, request",
+      "pos": "verb",
+      "ipa": "ˈprɔɕit͡ɕ",
+      "note": "Asking for something. Asking a question is pytać.",
+      "image": "media/img/prosic.webp",
+      "image_alt": "a woman at a cafe counter asking for a coffee",
+      "image_basis": "sentence",
+      "image_prompt": "A woman at a cafe counter speaking to the barista and pointing at the coffee machine. No text or lettering. Square image.",
+      "audio": "media/audio/prosic.mp3",
+      "sentence": {
+        "pl": "Ewa prosi o kawę.",
+        "en": "Ewa asks for a coffee.",
+        "gap": "Ewa ___ o kawę.",
+        "answer": "prosi",
+        "answer_lemma": "prosić",
+        "audio": "media/audio/prosic__sentence.mp3",
+        "lemmas": [
+          "prosić",
+          "o",
+          "kawa"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "probowac",
+      "word": "próbować",
+      "gloss": "to try",
+      "pos": "verb",
+      "ipa": "pruˈbɔvat͡ɕ",
+      "note": null,
+      "image": "media/img/probowac.webp",
+      "image_alt": "a man straining to push open a stuck window",
+      "image_basis": "sentence",
+      "image_prompt": "A man pushing hard with both hands against a stuck window frame, trying to open it. No text or lettering. Square image.",
+      "audio": "media/audio/probowac.mp3",
+      "sentence": {
+        "pl": "Próbuję otworzyć okno.",
+        "en": "I am trying to open the window.",
+        "gap": "___ otworzyć okno.",
+        "answer": "Próbuję",
+        "answer_lemma": "próbować",
+        "audio": "media/audio/probowac__sentence.mp3",
+        "lemmas": [
+          "próbować",
+          "otworzyć",
+          "okno"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "wygladac",
+      "word": "wyglądać",
+      "gloss": "to look (like), seem",
+      "pos": "verb",
+      "ipa": "vɨˈɡlɔndat͡ɕ",
+      "note": "How someone or something looks. To look at something is patrzeć.",
+      "image": "media/img/wygladac.webp",
+      "image_alt": "a smiling man in a smart jacket checking himself in a mirror",
+      "image_basis": "sentence",
+      "image_prompt": "A smiling man in a smart jacket looking at himself in a hallway mirror before going out. No text or lettering. Square image.",
+      "audio": "media/audio/wygladac.mp3",
+      "sentence": {
+        "pl": "Dzisiaj wyglądasz bardzo dobrze.",
+        "en": "You look very good today.",
+        "gap": "Dzisiaj ___ bardzo dobrze.",
+        "answer": "wyglądasz",
+        "answer_lemma": "wyglądać",
+        "audio": "media/audio/wygladac__sentence.mp3",
+        "lemmas": [
+          "dzisiaj",
+          "wyglądać",
+          "bardzo",
+          "dobrze"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "ciekawy",
+      "word": "ciekawy",
+      "gloss": "interesting",
+      "pos": "adjective",
+      "ipa": "t͡ɕɛˈkavɨ",
+      "note": null,
+      "image": "media/img/ciekawy.webp",
+      "image_alt": "a child looking at a beetle through a magnifying glass",
+      "image_basis": "word",
+      "image_prompt": "A child crouching in a garden, looking at a beetle on a leaf through a magnifying glass, eyes wide with interest. No text or lettering. Square image.",
+      "audio": "media/audio/ciekawy.mp3",
+      "sentence": {
+        "pl": "To jest bardzo ciekawe!",
+        "en": "This is very interesting!",
+        "gap": "To jest bardzo ___!",
+        "answer": "ciekawe",
+        "answer_lemma": "ciekawy",
+        "audio": "media/audio/ciekawy__sentence.mp3",
+        "lemmas": [
+          "to",
+          "być",
+          "bardzo",
+          "ciekawy"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "koniec",
+      "word": "koniec",
+      "gloss": "end",
+      "pos": "noun",
+      "ipa": "ˈkɔɲɛt͡s",
+      "note": null,
+      "image": "media/img/koniec.webp",
+      "image_alt": "a runner crossing the finish line",
+      "image_basis": "sentence",
+      "image_prompt": "A runner breaking through the finish-line tape at the end of a race, arms raised. No text or lettering. Square image.",
+      "audio": "media/audio/koniec.mp3",
+      "sentence": {
+        "pl": "Biegnę do końca!",
+        "en": "I am running to the end!",
+        "gap": "Biegnę do ___!",
+        "answer": "końca",
+        "answer_lemma": "koniec",
+        "audio": "media/audio/koniec__sentence.mp3",
+        "lemmas": [
+          "biec",
+          "do",
+          "koniec"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "problem",
+      "word": "problem",
+      "gloss": "problem",
+      "pos": "noun",
+      "ipa": "ˈprɔblɛm",
+      "note": null,
+      "image": "media/img/problem.webp",
+      "image_alt": "a frustrated man with his head in his hands in front of a laptop",
+      "image_basis": "sentence",
+      "image_prompt": "A frustrated man at a desk with his head in his hands, in front of a laptop. No text or lettering. Square image.",
+      "audio": "media/audio/problem.mp3",
+      "sentence": {
+        "pl": "Mam problem z komputerem.",
+        "en": "I have a problem with my computer.",
+        "gap": "Mam ___ z komputerem.",
+        "answer": "problem",
+        "answer_lemma": "problem",
+        "audio": "media/audio/problem__sentence.mp3",
+        "lemmas": [
+          "mieć",
+          "problem",
+          "z",
+          "komputer"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
     }
   ]
 }

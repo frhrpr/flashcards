@@ -1,0 +1,178 @@
+Rano dzwoni Marcin, przyjaciel Svena.
+
+— Cześć, Sven! Mam psa! Ma na imię Burek. W sobotę Burek i ja jesteśmy nad jeziorem. Przychodzicie?
+
+— Przychodzimy! — mówi Sven.
+
+W sobotę Sven i Ewa są nad jeziorem z Marcinem i z Burkiem. Ewa ma obiad: kiełbasę, ogórki i pomidory. Sven czyta książkę pod drzewem. Marcin i Burek patrzą na ptaka.
+
+— Marcin, lubisz kiełbasę z musztardą? — pyta Ewa.
+
+— Bardzo lubię! Burek też lubi kiełbasę.
+
+Nagle Burek biegnie do Ewy i je kiełbasę.
+
+— Burek! Nie! — mówi Marcin głośno.
+
+Ale Burek nie słyszy. Je i je. Potem biegnie do jeziora, a potem do Svena. Teraz Sven jest mokry! Książka też jest mokra!
+
+Sven patrzy na Marcina. Marcin patrzy na Burka.
+
+— Teraz mamy tylko ogórki i pomidory! — mówi Ewa.
+
+— Tam jest restauracja — mówi Marcin. — Ja płacę!
+
+W restauracji Sven je rybę z ryżem, a Ewa i Marcin jedzą zupę.
+
+— A pies? — pyta kelner. — Pies też je obiad?
+
+— Nie, dziękujemy — mówi Ewa. — Burek już ma obiad!
+
+Marcin i Burek / patrzeć / na / ptak → Marcin i Burek patrzą na ptaka.
+ja / czytać / list → (…)
+ty / patrzeć / na / kobieta → (…)
+Sven / kochać / Ewa → (…)
+ja / robić / obiad / z / brat → (…)
+my / mieszkać / z / babcia → (…)
+Ola / uczyć się / z / siostra → (…)
+ty / znać / Piotr → (…)
+my / lubić / czekolada → (…)
+wy / mieć / kawa / z / mleko → (…)
+wy / słyszeć / kot → (…)
+oni / pytać / lekarz → (…)
+Piotr i Ola / robić / pierogi / z / mięso → (…)
+
+--- pytania ---
+
+Kto dzwoni do Svena? | *Marcin | Ewa | kelner
+Jak ma na imię pies? | *Burek | Marcin | Sven
+Co Ewa ma na obiad? | *kiełbasę, ogórki i pomidory | rybę z ryżem | zupę
+Co robi Sven nad jeziorem? | *czyta książkę | robi obiad | patrzy na ptaka
+Co je Burek? | *kiełbasę | ogórki | rybę
+Czy Burek słyszy Marcina? | tak | *nie
+Kto płaci w restauracji? | *Marcin | Sven | Ewa
+Co je Sven w restauracji? | *rybę z ryżem | zupę | chleb z serem
+
+--- lemmas ---
+Jest = być
+i = i
+już = już
+Sven = -
+do = do
+bardzo = bardzo
+Ma = mieć
+Nagle = nagle
+mówi = mówić
+nie = nie
+słyszy = słyszeć
+w = w
+pyta = pytać
+Tak = tak
+teraz = teraz
+ale = ale
+się = się
+A = a
+co = co
+Lubisz = lubić
+Lubię = lubić
+pierogi = pierogi
+Ja = ja
+też = też
+z = z
+patrzy = patrzeć
+dzwoni = dzwonić
+Ewy = -
+Ewa = -
+mam = mieć
+pytania = pytanie
+Kto = kto
+Czy = czy
+robi = robić
+Burek = -
+Burka = -
+Burkiem = -
+Cześć = cześć
+Jak = jak
+Je = jeść
+Marcin = -
+Marcina = -
+Marcinem = -
+Ola = -
+Pies = pies
+Piotr = -
+Potem = potem
+Przychodzicie = przychodzić
+Przychodzimy = przychodzić
+Rano = rano
+Svena = -
+Tam = tam
+babcia = babcia
+biegnie = biec
+brat = brat
+chleb = chleb
+czekolada = czekolada
+czyta = czytać
+czytać = czytać
+drzewem = drzewo
+dziękujemy = dziękować
+głośno = głośno
+imię = imię
+je = jeść
+jedzą = jeść
+jesteśmy = być
+jeziorem = jezioro
+kawa = kawa
+kelner = kelner
+kobieta = kobieta
+kochać = kochać
+kot = kot
+książkę = książka
+lekarz = lekarz
+list = list
+lubi = lubić
+lubić = lubić
+mamy = mieć
+mieszkać = mieszkać
+mieć = mieć
+mięso = mięso
+mleko = mleko
+my = my
+na = na
+nad = nad
+obiad = obiad
+oni = oni
+patrzeć = patrzeć
+patrzą = patrzeć
+pies = pies
+pod = pod
+przyjaciel = przyjaciel
+psa = pies
+ptak = ptak
+ptaka = ptak
+pytać = pytać
+płaci = płacić
+płacę = płacić
+restauracja = restauracja
+restauracji = restauracja
+robić = robić
+rybę = ryba
+ryżem = ryż
+serem = ser
+siostra = siostra
+sobotę = sobota
+są = być
+słyszeć = słyszeć
+ty = ty
+uczyć = uczyć się
+wy = wy
+znać = znać
+zupę = zupa
+kiełbasę = kiełbasa
+ogórki = ogórek
+pomidory = pomidor
+musztardą = musztarda
+jeziora = jezioro
+mokry = mokry
+mokra = mokry
+tylko = tylko
+Książka = książka

@@ -2,6 +2,91 @@
   "schema": 1,
   "episodes": [
     {
+      "id": "05-zakupy",
+      "title": "Zakupy",
+      "date": "2026-11-16",
+      "audio": "listen/05-zakupy.mp3",
+      "seconds": 48,
+      "text": [
+        "Jest sobota. Marek i Ania idą do sklepu.",
+        "Ania kupuje chleb, mleko i ser. Marek kupuje kawę i czekoladę.",
+        "— Kupujemy też rybę? — pyta Marek.",
+        "— Nie. Dzisiaj robimy zupę — mówi Ania.",
+        "Potem Marek i Ania wracają do domu.",
+        "W kuchni Ania robi zupę. Marek robi herbatę.",
+        "Kot siedzi na krześle i patrzy na ser.",
+        "— Nie! Ser nie jest dla kota! — mówi Ania.",
+        "Wieczorem Marek i Ania jedzą zupę i chleb z serem. Kot pije mleko."
+      ],
+      "questions": [
+        {
+          "q": "Co kupuje Ania?",
+          "options": [
+            "chleb, mleko i ser",
+            "kawę i czekoladę"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Co kupuje Marek?",
+          "options": [
+            "kawę i czekoladę",
+            "chleb, mleko i ser"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Czy Marek i Ania kupują rybę?",
+          "options": [
+            "tak",
+            "nie"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Co robi Ania w kuchni?",
+          "options": [
+            "zupę",
+            "herbatę"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Co robi Marek w kuchni?",
+          "options": [
+            "herbatę",
+            "zupę"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Gdzie siedzi kot?",
+          "options": [
+            "na krześle",
+            "w sklepie"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Na co patrzy kot?",
+          "options": [
+            "na ser",
+            "na zupę"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Co pije kot wieczorem?",
+          "options": [
+            "mleko",
+            "herbatę",
+            "kawę"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
       "id": "04-deszcz",
       "title": "Deszcz",
       "date": "2026-11-10",
