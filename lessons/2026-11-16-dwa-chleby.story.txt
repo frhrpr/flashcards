@@ -1,0 +1,206 @@
+W sobotę na obiad przychodzi brat Ewy, Piotr, z żoną Olą. Sven robi obiad: zupę i rybę. Ewa myje okno.
+
+Nagle Sven widzi, że w kuchni nie ma chleba. Jest już późno!
+
+— Ewa, nie mamy chleba! — mówi Sven głośno.
+
+— Słyszę! Nie mów tak głośno! Idź do sklepu, a ja czekam na Piotra i Olę.
+
+Sven biegnie do sklepu. Kupuje chleb i masło. Potem biegnie do domu z chlebem i z masłem.
+
+W domu Ewa patrzy na Svena.
+
+— Sven, co ty robisz? Masz masło na koszuli!
+
+— Ewa, gdzie jest moja inna koszula?
+
+— Nie wiem! Nie pamiętasz?
+
+Sven szuka i szuka. Wtedy znajduje koszulę pod łóżkiem. Koszula jest czysta!
+
+Nagle Piotr dzwoni:
+
+— Sven? Ola i ja dzwonimy i dzwonimy! Nie słyszycie? Jesteśmy pod drzwiami!
+
+Sven otwiera drzwi. Piotr niesie chleb.
+
+— Dzień dobry! Mamy chleb na obiad! — mówi Ola.
+
+Sven patrzy na chleb, a potem na Ewę. Ewa się śmieje.
+
+— Ja też mam chleb! — mówi Sven.
+
+Piotr i Ola patrzą na Svena.
+
+— Dobrze! — mówi Piotr. — My bardzo lubimy chleb z masłem!
+
+Teraz na obiad mają zupę, rybę i dwa chleby.
+
+Piotr i Ola / patrzeć / na / Sven → Piotr i Ola patrzą na Svena.
+ja / czytać / książka → (…)
+Sven / lubić / ryż / z / mięso → (…)
+babcia / mieszkać / z / kot → (…)
+ty / patrzeć / na / ptak → (…)
+my / czekać / na / autobus → (…)
+wy / robić / zupa / z / ryba → (…)
+Ola / mieć / brat / i / siostra → (…)
+oni / słyszeć / samochód / pod / okno → (…)
+wy / pytać / kelner → (…)
+my / mówić / po polsku / z / kelner → (…)
+oni / pamiętać / Ola → (…)
+ja / robić / herbata / z / cytryna → (…)
+
+--- pytania ---
+
+Kto przychodzi na obiad? | *Piotr i Ola | babcia | kelner
+Co robi Sven? | *zupę i rybę | chleb | okno
+Czego nie ma w kuchni? | *chleba | masła | ryby
+Kto idzie do sklepu? | *Sven | Ewa | Piotr
+Co kupuje Sven w sklepie? | *chleb i masło | rybę | koszulę
+Gdzie Sven znajduje inną koszulę? | *pod łóżkiem | pod drzwiami | w sklepie
+Co niesie Piotr? | *chleb | masło | rybę
+Co lubią Piotr i Ola? | *chleb z masłem | zupę | rybę
+
+--- lemmas ---
+W = w
+sobotę = sobota
+na = na
+obiad = obiad
+przychodzi = przychodzić
+brat = brat
+Ewy = -
+Piotr = -
+z = z
+żoną = żona
+Olą = -
+Sven = -
+robi = robić
+zupę = zupa
+i = i
+rybę = ryba
+Ewa = -
+myje = myć
+okno = okno
+Nagle = nagle
+widzi = widzieć
+że = że
+w = w
+kuchni = kuchnia
+nie = nie
+ma = mieć
+chleba = chleb
+Jest = być
+już = już
+późno = późno
+mamy = mieć
+mówi = mówić
+głośno = głośno
+biegnie = biec
+do = do
+sklepu = sklep
+Kupuje = kupować
+chleb = chleb
+masło = masło
+Potem = potem
+domu = dom
+chlebem = chleb
+masłem = masło
+patrzy = patrzeć
+koszulę = koszula
+Teraz = teraz
+gdzie = gdzie
+jest = być
+moja = mój
+inna = inny
+koszula = koszula
+wiem = wiedzieć
+szuka = szukać
+Wtedy = wtedy
+znajduje = znaleźć
+pod = pod
+łóżkiem = łóżko
+czysta = czysty
+dzwoni = dzwonić
+Jesteśmy = być
+drzwiami = drzwi
+otwiera = otwierać
+drzwi = drzwi
+niesie = nieść
+Dzień = dzień
+dobry = dobry
+Mamy = mieć
+Ola = -
+a = a
+potem = potem
+Ewę = -
+się = się
+śmieje = śmiać się
+Ja = ja
+też = też
+mam = mieć
+Dobrze = dobrze
+bardzo = bardzo
+herbata = herbata
+idzie = iść
+babcia = babcia
+Mam = mieć
+zupa = zupa
+kelner = kelner
+Ptak = ptak
+pytania = pytanie
+Kto = kto
+Co = co
+Czego = co
+masła = masło
+ryby = ryba
+sklepie = sklep
+inną = inny
+tak = tak
+Na = na
+Brat = brat
+Gdzie = gdzie
+Idź = iść
+My = my
+Olę = -
+Piotra = -
+Svena = -
+Słyszę = słyszeć
+autobus = autobus
+chleby = chleb
+czekam = czekać
+czekać = czekać
+czytać = czytać
+dwa = dwa
+dzwonimy = dzwonić
+lubimy = lubić
+lubią = lubić
+mają = mieć
+mieszkać = mieszkać
+mów = mówić
+mówić = mówić
+pamiętasz = pamiętać
+patrzą = patrzeć
+po = po
+polsku = po polsku
+robisz = robić
+robić = robić
+słyszycie = słyszeć
+ty = ty
+Masz = mieć
+koszuli = koszula
+cytryna = cytryna
+kot = kot
+książka = książka
+lubić = lubić
+mieć = mieć
+mięso = mięso
+oni = oni
+pamiętać = pamiętać
+patrzeć = patrzeć
+pytać = pytać
+ryba = ryba
+ryż = ryż
+samochód = samochód
+siostra = siostra
+słyszeć = słyszeć
+wy = wy
