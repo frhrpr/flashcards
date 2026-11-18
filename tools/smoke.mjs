@@ -116,6 +116,9 @@ export const requested = () => asked;
 export { bankOrder, introducible, interleave, NOTES, openHint, hintOpens, HINT_SETS };
 export { cardRetired, RETIRE_IVL, stats, cardStates };
 export { schedule, fuzzDays, FUZZ };
+export { requeue, isPractice, RELEARN_SHORT, RELEARN_LONG, RELEARN_GAP };
+export const relearnSize = () => relearn.size;
+export const setQueue = q => { queue = q; relearn = new Map(); };
 export { renderEpisode, renderListenList, questionsHtml, newStories, listenStates };
 export const setEpisodes = e => { EPISODES = e; };
 export { renderStory, renderReadList, storyHtml, wordPopHtml, readingStates };
@@ -514,6 +517,52 @@ try {
   check(sched({ ivl: 6, ease: 2.5, reps: 2, due: 0 }, "z__x").ivl === 15 &&
         m.schedule({ ivl: 38, ease: 2.5, reps: 4, due: 0 }, "again", "z__x").ivl === 1,
         "a lapse still resets to a 1-day interval, unjittered");
+
+  /* Relearning a miss. Three cards on, then ten cards on, and only the first
+     correct answer after the miss is a review. requeue() is sliced in, so
+     this drives it for real; grade() is not, so its use is a text check. */
+  {
+    const q = () => m.state().queue;
+    const answer = g => { const k = q().shift(); const p = m.isPractice(k); m.requeue(k, g); return p; };
+    m.setQueue(["A", ...Array.from({ length: 60 }, (_, i) => `x${i}`)]);
+    check(answer("again") === false, "the answer that misses is a real review");
+    check(q().indexOf("A") === m.RELEARN_SHORT, "a missed card comes back three cards on");
+    q().splice(0, m.RELEARN_SHORT);
+    check(answer("good") === false, "the first correct answer after a miss is still a real review");
+    check(q().indexOf("A") === m.RELEARN_LONG, "then once more, ten cards on");
+    q().splice(0, m.RELEARN_LONG);
+    check(answer("again") === true, "a miss on the check is practice, not a second lapse");
+    check(q().indexOf("A") === m.RELEARN_SHORT, "and starts the two steps over");
+    q().splice(0, m.RELEARN_SHORT);
+    check(answer("good") === true && q().indexOf("A") === m.RELEARN_LONG,
+          "every answer after the first correct one stays practice");
+    q().splice(0, m.RELEARN_LONG);
+    check(answer("good") === true && !q().includes("A") && m.relearnSize() === 0,
+          "passing the long check lets the card go for today");
+
+    m.setQueue(["B", "y0"]);
+    answer("again");
+    check(!q().includes("B") && m.relearnSize() === 0,
+          "with fewer than two cards left to put between, the repeat is dropped");
+    m.setQueue(["C", "y0", "y1", "y2"]);
+    answer("again"); q().splice(0, 3); answer("good");
+    check(q().length === 0 && m.relearnSize() === 0,
+          "a correct answer is never followed by the same card straight away");
+    m.setQueue(["D", "y0", "y1"]);
+    answer("again");
+    check(q().indexOf("D") === 2, "short of three cards, it goes to the end if two fit");
+    m.setQueue(["E", "y0"]);
+    answer("good");
+    check(q().length === 1, "a card answered right first time is not repeated");
+
+    const gb = raw.slice(raw.indexOf("function grade(g){"), raw.indexOf("/* ══ ear training ══"));
+    check(/if \(!practice && \(!extraMode \|\| extraSaves\.has\(key\)\)\)/.test(gb),
+          "grade() writes neither state nor log for a practice answer");
+    check(gb.indexOf("isPractice(key)") < gb.indexOf("requeue(key, g)"),
+          "grade() reads the practice flag before requeue() moves it on");
+    check((raw.match(/relearn = new Map\(\);/g) || []).length === 3,
+          "relearn is cleared when a vocab or extra session starts");
+  }
 
   /* The unlock gate counts reps. It read `ivl >= 15`, which only a card at the
      full 2.5 ease ever hits exactly — 6 * 2.35 rounds to 14 — so any card that

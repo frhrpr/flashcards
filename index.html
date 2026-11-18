@@ -471,8 +471,8 @@ const write = READ_ONLY
    Two grades only: again / good. Ease starts at 2.5 and only moves
    on a lapse. Intervals: 1 day, 6 days, then ivl * ease. This is a
    deliberately simplified SM-2 — no Hard/Easy, no sub-day learning
-   steps. A card marked "again" is also nudged back into today's
-   session queue so it comes up again this sitting, not just tomorrow. */
+   steps. A card marked "again" also comes back twice more this
+   sitting, not just tomorrow — see requeue(). */
 const MS_DAY = 86400000;
 
 /* ── cards per note ────────────────────────────────────────────────
@@ -1429,8 +1429,69 @@ function showBack(){
   $("#good").addEventListener("click", () => grade("good"));
 }
 
+/* ── relearning a missed card ──────────────────────────────────────
+   A card he misses has to be got right twice more this session: once a few
+   cards later, then again about ten cards after that.
+
+   Measured on his log on 2026-11-18. The old rule showed a missed card once
+   more, three cards on. He got that retry right 81% of the time — and the
+   same card the next day only 58–64%, against 93% for a card he has never
+   missed. Of 213 misses in the previous 30 days, 109 were a card also missed
+   the day before; only 28 followed a gap of 11 days or more, and cards that
+   have lapsed are 96% right after three weeks. So the trouble was never long
+   intervals. It was a retry from ten-second memory that he passed and then
+   lost overnight, the same card failed evening after evening — which is what
+   he described as "the difficult ones are too difficult".
+
+   **Only the first correct answer after a miss is a review.** The answers up
+   to and including it are scheduled and logged exactly as before; the later
+   check is practice and touches neither card state nor the log. Two reasons.
+   Scheduling a second Good would take the card from reps 1 to reps 2 — six
+   days out — inside one sitting, skipping the next-day look that a lapse
+   exists to force. And keeping the log as it was keeps the before/after
+   comparable: next-day accuracy on missed cards is the number this was built
+   to move.
+
+   **Never back-to-back.** If fewer than `RELEARN_GAP` other cards are left to
+   put between, the repeat is dropped instead — Anki's "you pressed Good and
+   here it is again" at the end of a session teaches nothing, and the card is
+   due tomorrow anyway. Two rather than one, because a single card in between
+   is a ten-second gap and no better than none.
+
+   Kept in `relearn`, cleared whenever a session starts, so a check left over
+   from one session can never make the next session's first answer practice.
+   A reload loses pending checks; nothing is lost, the card is due tomorrow. */
+const RELEARN_SHORT = 3;
+const RELEARN_LONG  = 10;
+const RELEARN_GAP   = 2;
+let relearn = new Map();   // key -> { step: "short" | "long", real }
+
+/* Is this answer practice? True only for the checks after the first correct
+   answer following a miss. */
+const isPractice = key => relearn.has(key) && !relearn.get(key).real;
+
+/* After an answer: put the card back into `queue`, or let it go. */
+function requeue(key, g){
+  const r = relearn.get(key);
+  let step;
+  if (g === "again") {
+    step = "short";
+    relearn.set(key, { step, real: !r || r.real });
+  } else if (r && r.step === "short") {
+    step = "long";
+    relearn.set(key, { step, real: false });
+  } else {
+    relearn.delete(key);
+    return;
+  }
+  const at = Math.min(queue.length, step === "short" ? RELEARN_SHORT : RELEARN_LONG);
+  if (at < RELEARN_GAP) { relearn.delete(key); return; }
+  queue.splice(at, 0, key);
+}
+
 function grade(g){
   const key = queue.shift();
+  const practice = isPractice(key);
   const isNew = !cardStates[key];
   const next = schedule(cardStates[key] || newCardState(), g, key);
   // Stamped whichever way it was graded — it was still introduced today.
@@ -1447,7 +1508,7 @@ function grade(g){
      schedule is computed from the current state, so a practice answer that
      moved it in memory would silently become the starting point for the next
      real answer in the same page session. */
-  if (!extraMode || extraSaves.has(key)) {
+  if (!practice && (!extraMode || extraSaves.has(key))) {
     cardStates[key] = next;
     const entry = { card: key, grade: g, ts: Date.now() };
     reviewLog.push(entry);
@@ -1458,13 +1519,11 @@ function grade(g){
      angle, and having just seen the answer he would pass them on recall of
      the last ten seconds rather than of the word — which teaches the
      scheduler the wrong thing. They come back tomorrow. Done before the
-     "again" splice below, since that card is its own sibling. */
+     requeue below, since that card is its own sibling. */
   queue = queue.filter(k => noteOf(k) !== noteOf(key));
 
-  if (g === "again") {
-    // resurface later this session rather than only tomorrow
-    queue.splice(Math.min(queue.length, 3), 0, key);
-  }
+  // resurface later this session rather than only tomorrow
+  requeue(key, g);
 
   queue.length ? renderCard() : renderDone();
 }
@@ -2176,6 +2235,7 @@ function renderStory(id){
 function startVocab(light){
   nav(renderLanding);
   vocabLight = !!light;
+  relearn = new Map();
   queue = light ? [...dueCards] : interleave(dueCards, fresh);
   modeLabel.textContent = "Vocab";
   renderCard();
@@ -2212,6 +2272,7 @@ function startExtra(){
   extraSaves = new Set(fresh3);       // fixed now, not re-tested per grade
   sessionDone = 0;
   vocabLight = false;
+  relearn = new Map();
   queue = interleave(shuffle(practice), fresh3);
   countExtraRun();
   modeLabel.textContent = "Extra";

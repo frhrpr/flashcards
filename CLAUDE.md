@@ -98,8 +98,30 @@ notes`. `status` is `queued` → `known` → `carded`.
   `match /progress/{docId} { allow read, write: if true; }`
 - **SM-2-lite, two grades** (Again / Good) — not Anki's four. Ease starts
   at 2.5 and floors at 1.3. Intervals 1 day, 6 days, then `ivl * ease`. No
-  sub-day learning steps. "Again" also splices the card back into the session
-  queue at `min(queue.length, 3)`.
+  sub-day learning steps across days. Within a session, a missed card comes
+  back twice — see the next point.
+- **A miss is relearned in the session: three cards on, then ten on.**
+  `requeue()` in `index.html`, since 2026-11-18. The old single retry three
+  cards later was passed 81% of the time and the card failed the next day
+  36–42% of the time, against 7% for a never-missed card; half his misses in
+  the month before were a card also missed the day before, and only 28 of 213
+  followed a gap over 10 days. He had said the hard cards "are too difficult
+  when they come" — the data put that on the day after a miss, not on long
+  intervals, where lapsed cards were 96% right after three weeks.
+
+  **Only the first correct answer after a miss is a review.** The answers up
+  to it are scheduled and logged as before; the ten-cards-on check is practice
+  and touches neither state nor log. A second scheduled Good would jump reps
+  1 → 2, six days out, inside one sitting. It also keeps the log comparable:
+  **next-day accuracy on missed cards (58–64% before) is the number to check
+  this against**, from the first answer per card per day.
+
+  **Never back-to-back:** if fewer than two other cards are left to put
+  between, the repeat is dropped — the user's rule, so a Good is never
+  followed by the same card at the end of a session. The card is due tomorrow
+  anyway. Not yet done, and deliberately held until the above is measured: a
+  3-day step after a lapse, before the 6-day one, which lapsed cards pass only
+  ~81% of the time.
 - **Ease recovers, but only when earned.** A lapse costs 0.2; a correct
   answer returns 0.15, and only from the third consecutive one — which is
   also where ease starts affecting the interval. Ten correct answers in a row
