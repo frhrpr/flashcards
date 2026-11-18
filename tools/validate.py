@@ -101,9 +101,11 @@ def check_sentence(nid, s, word, vocab, kind=None):
     #
     # What is worth catching is the same capital in a place position cannot
     # explain: a mid-sentence answer capitalised when the headword is not.
-    # That is always a typo in the data.
+    # That is always a typo in the data. "Position" includes the start of a
+    # second sentence and of a line of dialogue: "Jest późno. ___ się." and
+    # "— Pomożesz mi? — ___!" both put the gap where a capital belongs.
     if (s["answer"][:1].isupper() and not word[:1].isupper()
-            and not s["gap"].strip().startswith("___")):
+            and not re.search(r'(^|[.!?…]\s+|—\s*)___', s["gap"].strip())):
         warn(nid, f"answer {s['answer']!r} is capitalised mid-sentence, but "
                   f"{word!r} is not a proper noun")
     if s["answer_lemma"] != word:

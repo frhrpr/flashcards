@@ -13469,6 +13469,968 @@
         "listening"
       ],
       "reviewed": true
+    },
+    {
+      "id": "lezec",
+      "word": "leżeć",
+      "gloss": "to be lying (down)",
+      "pos": "verb",
+      "ipa": "ˈlɛʐɛt͡ɕ",
+      "note": null,
+      "image": "media/img/lezec.webp",
+      "image_alt": "a cat lying stretched out in a patch of sunlight",
+      "image_basis": "sentence",
+      "image_prompt": "A ginger cat lying stretched out on its side on a wooden floor, in a bright patch of sunlight from a window, eyes half closed. No text or lettering. Square image.",
+      "audio": "media/audio/lezec.mp3",
+      "sentence": {
+        "pl": "Kot leży na słońcu.",
+        "en": "The cat is lying in the sun.",
+        "gap": "Kot ___ na słońcu.",
+        "answer": "leży",
+        "answer_lemma": "leżeć",
+        "audio": "media/audio/lezec__sentence.mp3",
+        "lemmas": [
+          "kot",
+          "leżeć",
+          "na",
+          "słońce"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "potrzebowac",
+      "word": "potrzebować",
+      "gloss": "to need",
+      "pos": "verb",
+      "ipa": "pɔtʂɛˈbɔvat͡ɕ",
+      "note": null,
+      "image": "media/img/potrzebowac.webp",
+      "image_alt": "a man looking at an old shoe with a hole in the sole",
+      "image_basis": "sentence",
+      "image_prompt": "A man sitting on a bench holding up one old, badly worn shoe, looking at a big hole in its sole. No text or lettering. Square image.",
+      "audio": "media/audio/potrzebowac.mp3",
+      "sentence": {
+        "pl": "Potrzebuję nowych butów.",
+        "en": "I need new shoes.",
+        "gap": "___ nowych butów.",
+        "answer": "Potrzebuję",
+        "answer_lemma": "potrzebować",
+        "audio": "media/audio/potrzebowac__sentence.mp3",
+        "lemmas": [
+          "potrzebować",
+          "nowy",
+          "buty"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "wchodzic",
+      "word": "wchodzić",
+      "gloss": "to go in, enter",
+      "pos": "verb",
+      "ipa": "ˈfxɔd͡ʑit͡ɕ",
+      "note": null,
+      "parts": "w- (in) + chodzić (to go)",
+      "image": "media/img/wchodzic.webp",
+      "image_alt": "a shivering samurai wading into icy water, in the style of a Japanese woodblock print",
+      "image_basis": "sentence",
+      "image_prompt": "Supplied by the user, not generated. A shivering samurai stepping into icy water by a snowy shore, in the style of a Japanese woodblock print.",
+      "audio": "media/audio/wchodzic.mp3",
+      "sentence": {
+        "pl": "Wchodzę do wody. Jest zimna!",
+        "en": "I am going into the water. It is cold!",
+        "gap": "___ do wody. Jest zimna!",
+        "answer": "Wchodzę",
+        "answer_lemma": "wchodzić",
+        "audio": "media/audio/wchodzic__sentence.mp3",
+        "lemmas": [
+          "wchodzić",
+          "do",
+          "woda",
+          "być",
+          "zimny"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "odwiedzac",
+      "word": "odwiedzać",
+      "gloss": "to visit (someone)",
+      "pos": "verb",
+      "ipa": "ɔdˈvʲjɛd͡zat͡ɕ",
+      "note": null,
+      "image": "media/img/odwiedzac.webp",
+      "image_alt": "a grown grandson and his grandmother on her sofa looking at a photo album",
+      "image_basis": "sentence",
+      "image_prompt": "A young man and his grandmother sitting together on her old sofa, looking at a photo album, cups of tea on the table in front of them. No text or lettering. Square image.",
+      "audio": "media/audio/odwiedzac.mp3",
+      "sentence": {
+        "pl": "W niedzielę odwiedzam babcię.",
+        "en": "On Sunday I visit my grandmother.",
+        "gap": "W niedzielę ___ babcię.",
+        "answer": "odwiedzam",
+        "answer_lemma": "odwiedzać",
+        "audio": "media/audio/odwiedzac__sentence.mp3",
+        "lemmas": [
+          "w",
+          "niedziela",
+          "odwiedzać",
+          "babcia"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "sprzatac",
+      "word": "sprzątać",
+      "gloss": "to tidy up, clean (a room)",
+      "pos": "verb",
+      "ipa": "ˈspʂɔntat͡ɕ",
+      "note": null,
+      "image": "media/img/sprzatac.webp",
+      "image_alt": "a woman vacuuming a living room",
+      "image_basis": "sentence",
+      "image_prompt": "A woman vacuuming the carpet in a living room, cushions piled on the sofa, a duster in her other hand. No text or lettering. Square image.",
+      "audio": "media/audio/sprzatac.mp3",
+      "sentence": {
+        "pl": "Dzisiaj sprzątam mieszkanie.",
+        "en": "Today I am cleaning the flat.",
+        "gap": "Dzisiaj ___ mieszkanie.",
+        "answer": "sprzątam",
+        "answer_lemma": "sprzątać",
+        "audio": "media/audio/sprzatac__sentence.mp3",
+        "lemmas": [
+          "dzisiaj",
+          "sprzątać",
+          "mieszkanie"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "krzyczec",
+      "word": "krzyczeć",
+      "gloss": "to shout, scream",
+      "pos": "verb",
+      "ipa": "ˈkʂɨt͡ʂɛt͡ɕ",
+      "note": null,
+      "image": "media/img/krzyczec.webp",
+      "image_alt": "a red-faced toddler screaming next to an ice cream stand",
+      "image_basis": "sentence",
+      "image_prompt": "A red-faced toddler screaming with its mouth wide open, standing next to an ice cream stand in a park, a tired parent beside it. No text or lettering. Square image.",
+      "audio": "media/audio/krzyczec.mp3",
+      "sentence": {
+        "pl": "Dziecko krzyczy, bo chce lody.",
+        "en": "The child is screaming because it wants ice cream.",
+        "gap": "Dziecko ___, bo chce lody.",
+        "answer": "krzyczy",
+        "answer_lemma": "krzyczeć",
+        "audio": "media/audio/krzyczec__sentence.mp3",
+        "lemmas": [
+          "dziecko",
+          "krzyczeć",
+          "bo",
+          "chcieć",
+          "lody"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "martwic_sie",
+      "word": "martwić się",
+      "gloss": "to worry",
+      "pos": "verb",
+      "ipa": "ˈmartfʲit͡ɕ ɕɛ",
+      "note": null,
+      "image": "media/img/martwic_sie.webp",
+      "image_alt": "a worried woman at a dark window at night, holding her phone",
+      "image_basis": "sentence",
+      "image_prompt": "A worried woman standing at a window at night, holding her phone and looking out into the dark street. No text or lettering. Square image.",
+      "audio": "media/audio/martwic_sie.mp3",
+      "sentence": {
+        "pl": "Jest późno. Martwię się.",
+        "en": "It is late. I am worried.",
+        "gap": "Jest późno. ___ się.",
+        "answer": "Martwię",
+        "answer_lemma": "martwić się",
+        "audio": "media/audio/martwic_sie__sentence.mp3",
+        "lemmas": [
+          "być",
+          "późno",
+          "martwić się",
+          "się"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "plywac",
+      "word": "pływać",
+      "gloss": "to swim",
+      "pos": "verb",
+      "ipa": "ˈpwɨvat͡ɕ",
+      "note": null,
+      "image": "media/img/plywac.webp",
+      "image_alt": "a woman swimming in a lane of an indoor pool",
+      "image_basis": "sentence",
+      "image_prompt": "A woman swimming front crawl in a lane of an indoor swimming pool, morning light through high windows. No text or lettering. Square image.",
+      "audio": "media/audio/plywac.mp3",
+      "sentence": {
+        "pl": "Codziennie rano pływam.",
+        "en": "I swim every morning.",
+        "gap": "Codziennie rano ___.",
+        "answer": "pływam",
+        "answer_lemma": "pływać",
+        "audio": "media/audio/plywac__sentence.mp3",
+        "lemmas": [
+          "codziennie",
+          "rano",
+          "pływać"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "zamawiac",
+      "word": "zamawiać",
+      "gloss": "to order (food, a taxi)",
+      "pos": "verb",
+      "ipa": "zaˈmavʲjat͡ɕ",
+      "note": null,
+      "image": "media/img/zamawiac.webp",
+      "image_alt": "a man at a restaurant table ordering, a waiter writing on a notepad",
+      "image_basis": "sentence",
+      "image_prompt": "A man sitting at a restaurant table pointing at the menu while a waiter stands beside him writing on a small notepad. No text or lettering. Square image.",
+      "audio": "media/audio/zamawiac.mp3",
+      "sentence": {
+        "pl": "Zamawiam zupę i pierogi.",
+        "en": "I am ordering soup and pierogi.",
+        "gap": "___ zupę i pierogi.",
+        "answer": "Zamawiam",
+        "answer_lemma": "zamawiać",
+        "audio": "media/audio/zamawiac__sentence.mp3",
+        "lemmas": [
+          "zamawiać",
+          "zupa",
+          "i",
+          "pierogi"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "usmiechac_sie",
+      "word": "uśmiechać się",
+      "gloss": "to smile",
+      "pos": "verb",
+      "ipa": "uɕˈmʲɛxat͡ɕ ɕɛ",
+      "note": null,
+      "parts": "related to śmiać się (to laugh)",
+      "image": "media/img/usmiechac_sie.webp",
+      "image_alt": "a baby smiling",
+      "image_basis": "sentence",
+      "image_prompt": "A baby in a high chair smiling broadly at someone off camera, a quiet happy smile, not laughing. No text or lettering. Square image.",
+      "audio": "media/audio/usmiechac_sie.mp3",
+      "sentence": {
+        "pl": "Dziecko się uśmiecha.",
+        "en": "The baby is smiling.",
+        "gap": "Dziecko się ___.",
+        "answer": "uśmiecha",
+        "answer_lemma": "uśmiechać się",
+        "audio": "media/audio/usmiechac_sie__sentence.mp3",
+        "lemmas": [
+          "dziecko",
+          "się",
+          "uśmiechać się"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "mieszkanie",
+      "word": "mieszkanie",
+      "gloss": "flat, apartment",
+      "pos": "noun",
+      "ipa": "mʲɛʂˈkaɲɛ",
+      "note": null,
+      "parts": "from mieszkać (to live)",
+      "image": "media/img/mieszkanie.webp",
+      "image_alt": "a small bright flat with a sofa, plants and a kitchen corner",
+      "image_basis": "sentence",
+      "image_prompt": "A small bright studio flat seen from the door: a sofa, a few plants, a little kitchen corner and a big window. No text or lettering. Square image.",
+      "audio": "media/audio/mieszkanie.mp3",
+      "sentence": {
+        "pl": "Moje mieszkanie jest małe, ale ładne.",
+        "en": "My flat is small but nice.",
+        "gap": "Moje ___ jest małe, ale ładne.",
+        "answer": "mieszkanie",
+        "answer_lemma": "mieszkanie",
+        "audio": "media/audio/mieszkanie__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "mieszkanie",
+          "być",
+          "mały",
+          "ale",
+          "ładny"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "gosc",
+      "word": "gość",
+      "gloss": "guest",
+      "pos": "noun",
+      "ipa": "ɡɔɕt͡ɕ",
+      "note": null,
+      "image": "media/img/gosc.webp",
+      "image_alt": "friends seated round a dinner table while the host brings in food",
+      "image_basis": "sentence",
+      "image_prompt": "Four friends sitting round a dinner table in a flat, chatting, while the host carries in a big dish of food. No text or lettering. Square image.",
+      "audio": "media/audio/gosc.mp3",
+      "sentence": {
+        "pl": "Dzisiaj mamy gości.",
+        "en": "We have guests today.",
+        "gap": "Dzisiaj mamy ___.",
+        "answer": "gości",
+        "answer_lemma": "gość",
+        "audio": "media/audio/gosc__sentence.mp3",
+        "lemmas": [
+          "dzisiaj",
+          "mieć",
+          "gość"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "bilet",
+      "word": "bilet",
+      "gloss": "ticket",
+      "pos": "noun",
+      "ipa": "ˈbʲilɛt",
+      "note": null,
+      "image": "media/img/bilet.webp",
+      "image_alt": "a hand holding a small paper train ticket",
+      "image_basis": "sentence",
+      "image_prompt": "Close up of a hand holding a small paper train ticket, only a few numbers printed on it, the background blurred. No words, only the numbers. Square image.",
+      "audio": "media/audio/bilet.mp3",
+      "sentence": {
+        "pl": "Mam bilet na pociąg.",
+        "en": "I have a train ticket.",
+        "gap": "Mam ___ na pociąg.",
+        "answer": "bilet",
+        "answer_lemma": "bilet",
+        "audio": "media/audio/bilet__sentence.mp3",
+        "lemmas": [
+          "mieć",
+          "bilet",
+          "na",
+          "pociąg"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "pogoda",
+      "word": "pogoda",
+      "gloss": "weather",
+      "pos": "noun",
+      "ipa": "pɔˈɡɔda",
+      "note": null,
+      "image": "media/img/pogoda.webp",
+      "image_alt": "a weather forecast chart with sun, cloud, rain and snow symbols",
+      "image_basis": "word",
+      "image_prompt": "A simple weather forecast chart: a row of five large weather symbols, sun, sun with a cloud, cloud, rain and snow, each with a temperature under it. No words, only the numbers. Square image.",
+      "audio": "media/audio/pogoda.mp3",
+      "sentence": {
+        "pl": "Dzisiaj jest ładna pogoda.",
+        "en": "The weather is nice today.",
+        "gap": "Dzisiaj jest ładna ___.",
+        "answer": "pogoda",
+        "answer_lemma": "pogoda",
+        "audio": "media/audio/pogoda__sentence.mp3",
+        "lemmas": [
+          "dzisiaj",
+          "być",
+          "ładny",
+          "pogoda"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "kawiarnia",
+      "word": "kawiarnia",
+      "gloss": "café",
+      "pos": "noun",
+      "ipa": "kaˈvʲarɲa",
+      "note": null,
+      "parts": "from kawa (coffee)",
+      "image": "media/img/kawiarnia.webp",
+      "image_alt": "a cosy café with people at small round tables",
+      "image_basis": "sentence",
+      "image_prompt": "Inside a cosy small café: a few people at small round tables with cups of coffee and slices of cake, a woman alone at one table looking at the door. No text or lettering. Square image.",
+      "audio": "media/audio/kawiarnia.mp3",
+      "sentence": {
+        "pl": "Czekam na Ewę w kawiarni.",
+        "en": "I am waiting for Ewa in a café.",
+        "gap": "Czekam na Ewę w ___.",
+        "answer": "kawiarni",
+        "answer_lemma": "kawiarnia",
+        "audio": "media/audio/kawiarnia__sentence.mp3",
+        "lemmas": [
+          "czekać",
+          "na",
+          "w",
+          "kawiarnia"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "walizka",
+      "word": "walizka",
+      "gloss": "suitcase",
+      "pos": "noun",
+      "ipa": "vaˈlʲiska",
+      "note": null,
+      "image": "media/img/walizka.webp",
+      "image_alt": "a cartoon man straining to lift a huge, overstuffed travel bag covered in stickers",
+      "image_basis": "sentence",
+      "image_prompt": "Supplied by the user, not generated. A cartoon man straining, sweating, to lift a huge overstuffed travel bag covered in travel stickers.",
+      "audio": "media/audio/walizka.mp3",
+      "sentence": {
+        "pl": "Moja walizka jest bardzo ciężka.",
+        "en": "My suitcase is very heavy.",
+        "gap": "Moja ___ jest bardzo ciężka.",
+        "answer": "walizka",
+        "answer_lemma": "walizka",
+        "audio": "media/audio/walizka__sentence.mp3",
+        "lemmas": [
+          "mój",
+          "walizka",
+          "być",
+          "bardzo",
+          "ciężki"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "ogrod",
+      "word": "ogród",
+      "gloss": "garden",
+      "pos": "noun",
+      "ipa": "ˈɔɡrut",
+      "note": null,
+      "image": "media/img/ogrod.webp",
+      "image_alt": "a small back garden with vegetable beds, flowers and a bench",
+      "image_basis": "sentence",
+      "image_prompt": "A small back garden behind a house: two vegetable beds, some flowers and a wooden bench, no people. No text or lettering. Square image.",
+      "audio": "media/audio/ogrod.mp3",
+      "sentence": {
+        "pl": "Mamy mały ogród.",
+        "en": "We have a small garden.",
+        "gap": "Mamy mały ___.",
+        "answer": "ogród",
+        "answer_lemma": "ogród",
+        "audio": "media/audio/ogrod__sentence.mp3",
+        "lemmas": [
+          "mieć",
+          "mały",
+          "ogród"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "zakupy",
+      "word": "zakupy",
+      "gloss": "shopping (the things bought)",
+      "pos": "noun",
+      "ipa": "zaˈkupɨ",
+      "note": null,
+      "parts": "from kupować (to buy)",
+      "image": "media/img/zakupy.webp",
+      "image_alt": "a man carrying two full shopping bags out of a supermarket",
+      "image_basis": "sentence",
+      "image_prompt": "A man walking out of a supermarket carrying two full shopping bags, bread and vegetables sticking out of the top. No text or lettering. Square image.",
+      "audio": "media/audio/zakupy.mp3",
+      "sentence": {
+        "pl": "W sobotę robię zakupy.",
+        "en": "On Saturday I do the shopping.",
+        "gap": "W sobotę robię ___.",
+        "answer": "zakupy",
+        "answer_lemma": "zakupy",
+        "audio": "media/audio/zakupy__sentence.mp3",
+        "lemmas": [
+          "w",
+          "sobota",
+          "robić",
+          "zakupy"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "gotowy",
+      "word": "gotowy",
+      "gloss": "ready",
+      "pos": "adjective",
+      "ipa": "ɡɔˈtɔvɨ",
+      "note": null,
+      "image": "media/img/gotowy.webp",
+      "image_alt": "a woman putting a steaming pot on a laid table",
+      "image_basis": "sentence",
+      "image_prompt": "A woman putting a big steaming pot down on a dining table laid with plates, calling over her shoulder to someone in the next room. No text or lettering. Square image.",
+      "audio": "media/audio/gotowy.mp3",
+      "sentence": {
+        "pl": "Obiad jest gotowy!",
+        "en": "Dinner is ready!",
+        "gap": "Obiad jest ___!",
+        "answer": "gotowy",
+        "answer_lemma": "gotowy",
+        "audio": "media/audio/gotowy__sentence.mp3",
+        "lemmas": [
+          "obiad",
+          "być",
+          "gotowy"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "zajety",
+      "word": "zajęty",
+      "gloss": "busy",
+      "pos": "adjective",
+      "ipa": "zaˈjɛntɨ",
+      "note": null,
+      "image": "media/img/zajety.webp",
+      "image_alt": "a man on the phone at a desk covered in papers, typing with his other hand",
+      "image_basis": "sentence",
+      "image_prompt": "A man at a desk covered in papers, a phone pressed to his ear, typing on a laptop with his free hand. No text or lettering. Square image.",
+      "audio": "media/audio/zajety.mp3",
+      "sentence": {
+        "pl": "Przepraszam, jestem teraz zajęty.",
+        "en": "Sorry, I am busy right now.",
+        "gap": "Przepraszam, jestem teraz ___.",
+        "answer": "zajęty",
+        "answer_lemma": "zajęty",
+        "audio": "media/audio/zajety__sentence.mp3",
+        "lemmas": [
+          "przepraszam",
+          "być",
+          "teraz",
+          "zajęty"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "ulubiony",
+      "word": "ulubiony",
+      "gloss": "favourite",
+      "pos": "adjective",
+      "ipa": "uluˈbʲɔnɨ",
+      "note": null,
+      "image": "media/img/ulubiony.webp",
+      "image_alt": "a dog proudly holding an old chewed ball in its mouth",
+      "image_basis": "sentence",
+      "image_prompt": "A happy dog standing on grass, proudly holding an old, chewed, faded ball in its mouth. No text or lettering. Square image.",
+      "audio": "media/audio/ulubiony.mp3",
+      "sentence": {
+        "pl": "To jest ulubiona piłka mojego psa.",
+        "en": "This is my dog’s favourite ball.",
+        "gap": "To jest ___ piłka mojego psa.",
+        "answer": "ulubiona",
+        "answer_lemma": "ulubiony",
+        "audio": "media/audio/ulubiony__sentence.mp3",
+        "lemmas": [
+          "to",
+          "być",
+          "ulubiony",
+          "piłka",
+          "mój",
+          "pies"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "smaczny",
+      "word": "smaczny",
+      "gloss": "tasty",
+      "pos": "adjective",
+      "ipa": "ˈsmat͡ʂnɨ",
+      "note": null,
+      "image": "media/img/smaczny.webp",
+      "image_alt": "a man tasting soup from a spoon, clearly enjoying it",
+      "image_basis": "sentence",
+      "image_prompt": "A man at a kitchen table tasting soup from a spoon, eyes closed, clearly enjoying it. No text or lettering. Square image.",
+      "audio": "media/audio/smaczny.mp3",
+      "sentence": {
+        "pl": "Ta zupa jest bardzo smaczna!",
+        "en": "This soup is very tasty!",
+        "gap": "Ta zupa jest bardzo ___!",
+        "answer": "smaczna",
+        "answer_lemma": "smaczny",
+        "audio": "media/audio/smaczny__sentence.mp3",
+        "lemmas": [
+          "ten",
+          "zupa",
+          "być",
+          "bardzo",
+          "smaczny"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "najpierw",
+      "word": "najpierw",
+      "gloss": "first (of all), before anything else",
+      "pos": "adverb",
+      "ipa": "ˈnajpʲɛrf",
+      "note": "Doing one thing before another. The adjective \"first\", as in the first day, is pierwszy.",
+      "image": "media/img/najpierw.webp",
+      "image_alt": "a woman at her desk enjoying a coffee, eyes closed, a pile of papers waiting beside her",
+      "image_basis": "sentence",
+      "image_prompt": "Supplied by the user, not generated. A drawn woman at her desk, eyes closed, savouring a mug of coffee, a tall pile of papers and a laptop waiting.",
+      "audio": "media/audio/najpierw.mp3",
+      "sentence": {
+        "pl": "Najpierw kawa, potem praca.",
+        "en": "Coffee first, then work.",
+        "gap": "___ kawa, potem praca.",
+        "answer": "Najpierw",
+        "answer_lemma": "najpierw",
+        "audio": "media/audio/najpierw__sentence.mp3",
+        "lemmas": [
+          "najpierw",
+          "kawa",
+          "potem",
+          "praca"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "zaraz",
+      "word": "zaraz",
+      "gloss": "in a moment, soon",
+      "pos": "adverb",
+      "ipa": "ˈzaras",
+      "note": null,
+      "image": "media/img/zaraz.webp",
+      "image_alt": "a woman leaving her desk, holding up one finger to a colleague",
+      "image_basis": "sentence",
+      "image_prompt": "A woman getting up from her office desk, holding up one finger to a colleague as if to say one moment. No text or lettering. Square image.",
+      "audio": "media/audio/zaraz.mp3",
+      "sentence": {
+        "pl": "Zaraz wracam!",
+        "en": "I will be right back!",
+        "gap": "___ wracam!",
+        "answer": "Zaraz",
+        "answer_lemma": "zaraz",
+        "audio": "media/audio/zaraz__sentence.mp3",
+        "lemmas": [
+          "zaraz",
+          "wracać"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "wczesnie",
+      "word": "wcześnie",
+      "gloss": "early",
+      "pos": "adverb",
+      "ipa": "ˈft͡ʂɛɕɲɛ",
+      "note": null,
+      "image": "media/img/wczesnie.webp",
+      "image_alt": "a woman alone in a dark empty office at dawn, one desk lamp on",
+      "image_basis": "sentence",
+      "image_prompt": "A woman alone at her desk in a large empty open-plan office, all the lights off except her desk lamp, dawn just starting at the windows. No text or lettering. Square image.",
+      "audio": "media/audio/wczesnie.mp3",
+      "sentence": {
+        "pl": "Przychodzę do pracy bardzo wcześnie.",
+        "en": "I come to work very early.",
+        "gap": "Przychodzę do pracy bardzo ___.",
+        "answer": "wcześnie",
+        "answer_lemma": "wcześnie",
+        "audio": "media/audio/wczesnie__sentence.mp3",
+        "lemmas": [
+          "przychodzić",
+          "do",
+          "praca",
+          "bardzo",
+          "wcześnie"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "oczywiscie",
+      "word": "oczywiście",
+      "gloss": "of course",
+      "pos": "adverb",
+      "ipa": "ɔt͡ʂɨˈvʲiɕt͡ɕɛ",
+      "note": null,
+      "image": "media/img/oczywiscie.webp",
+      "image_alt": "a man carrying a heavy box while his neighbour nods and reaches to help",
+      "image_basis": "sentence",
+      "image_prompt": "A man on a staircase struggling with a big cardboard box, while his neighbour smiles, nods and reaches out to take the other end. No text or lettering. Square image.",
+      "audio": "media/audio/oczywiscie.mp3",
+      "sentence": {
+        "pl": "— Pomożesz mi? — Oczywiście!",
+        "en": "\"Will you help me?\" \"Of course!\"",
+        "gap": "— Pomożesz mi? — ___!",
+        "answer": "Oczywiście",
+        "answer_lemma": "oczywiście",
+        "audio": "media/audio/oczywiscie__sentence.mp3",
+        "lemmas": [
+          "pomóc",
+          "ja",
+          "oczywiście"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "niestety",
+      "word": "niestety",
+      "gloss": "unfortunately",
+      "pos": "adverb",
+      "ipa": "ɲɛˈstɛtɨ",
+      "note": null,
+      "image": "media/img/niestety.webp",
+      "image_alt": "a family with a picnic basket looking sadly out of a window at the rain",
+      "image_basis": "sentence",
+      "image_prompt": "A family with a packed picnic basket standing at a window, looking out disappointed at heavy rain. No text or lettering. Square image.",
+      "audio": "media/audio/niestety.mp3",
+      "sentence": {
+        "pl": "Niestety pada deszcz.",
+        "en": "Unfortunately it is raining.",
+        "gap": "___ pada deszcz.",
+        "answer": "Niestety",
+        "answer_lemma": "niestety",
+        "audio": "media/audio/niestety__sentence.mp3",
+        "lemmas": [
+          "niestety",
+          "padać",
+          "deszcz"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "malo",
+      "word": "mało",
+      "gloss": "little, not much, few",
+      "pos": "adverb",
+      "ipa": "ˈmawɔ",
+      "note": null,
+      "image": "media/img/malo.webp",
+      "image_alt": "an hourglass with only a little sand left in the top",
+      "image_basis": "sentence",
+      "image_prompt": "Supplied by the user, not generated. Close-up of an hourglass with only a little sand left in the top bulb.",
+      "audio": "media/audio/malo.mp3",
+      "sentence": {
+        "pl": "Mam mało czasu!",
+        "en": "I have little time!",
+        "gap": "Mam ___ czasu!",
+        "answer": "mało",
+        "answer_lemma": "mało",
+        "audio": "media/audio/malo__sentence.mp3",
+        "lemmas": [
+          "mieć",
+          "mało",
+          "czas"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
+    },
+    {
+      "id": "nikt",
+      "word": "nikt",
+      "gloss": "nobody",
+      "pos": "pronoun",
+      "ipa": "ɲikt",
+      "note": null,
+      "parts": "ni- + kto (who), as nic is ni- + co",
+      "image": "media/img/nikt.webp",
+      "image_alt": "a man ringing the bell at the door of a dark house",
+      "image_basis": "sentence",
+      "image_prompt": "A man standing at the front door of a house, pressing the doorbell, every window of the house dark. No text or lettering. Square image.",
+      "audio": "media/audio/nikt.mp3",
+      "sentence": {
+        "pl": "Dzwonię i dzwonię, ale nikt nie otwiera.",
+        "en": "I ring and ring, but nobody opens.",
+        "gap": "Dzwonię i dzwonię, ale ___ nie otwiera.",
+        "answer": "nikt",
+        "answer_lemma": "nikt",
+        "audio": "media/audio/nikt__sentence.mp3",
+        "lemmas": [
+          "dzwonić",
+          "i",
+          "ale",
+          "nikt",
+          "nie",
+          "otwierać"
+        ]
+      },
+      "cards": [
+        "recognition",
+        "production",
+        "listening"
+      ],
+      "reviewed": true
     }
   ]
 }
