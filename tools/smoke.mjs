@@ -517,6 +517,19 @@ try {
   check(sched({ ivl: 6, ease: 2.5, reps: 2, due: 0 }, "z__x").ivl === 15 &&
         m.schedule({ ivl: 38, ease: 2.5, reps: 4, due: 0 }, "again", "z__x").ivl === 1,
         "a lapse still resets to a 1-day interval, unjittered");
+  {
+    /* After a miss: 1, 3, 6, then growth. A card never missed: 1, 6, 15. */
+    const run = (st, gs) => gs.map(g => (st = m.schedule(st, g, "z__x")).ivl);
+    check(run({ ivl: 38, ease: 2.5, reps: 4, due: 0 }, ["again", "good", "good", "good", "good"]).join()
+          === "1,1,3,6," + Math.round(6 * 2.45),
+          "after a lapse the ladder is 1, 3, 6 days, then ivl * ease");
+    check(run({ ivl: 0, ease: 2.5, reps: 0, due: 0 }, ["good", "good", "good"]).join() === "1,6,15",
+          "a card never missed still runs 1, 6, 15");
+    check(run({ ivl: 1, ease: 1.3, reps: 1, due: 0 }, ["good", "good"]).join() === "3,6",
+          "a card already part way up the old ladder joins the new one");
+    check(run({ ivl: 9, ease: 1.45, reps: 3, due: 0 }, ["good"]).join() === String(Math.round(9 * 1.6)),
+          "past the third correct answer, a low-ease card grows as before");
+  }
 
   /* Relearning a miss. Three cards on, then ten cards on, and only the first
      correct answer after the miss is a review. requeue() is sliced in, so

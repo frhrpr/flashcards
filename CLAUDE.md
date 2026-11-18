@@ -97,7 +97,8 @@ notes`. `status` is `queued` → `known` → `carded`.
 - Firestore rule is deliberately wide open within one collection:
   `match /progress/{docId} { allow read, write: if true; }`
 - **SM-2-lite, two grades** (Again / Good) — not Anki's four. Ease starts
-  at 2.5 and floors at 1.3. Intervals 1 day, 6 days, then `ivl * ease`. No
+  at 2.5 and floors at 1.3. Intervals 1 day, 6 days, then `ivl * ease`;
+  after a miss 1, 3, 6, then `ivl * ease` (see below). No
   sub-day learning steps across days. Within a session, a missed card comes
   back twice — see the next point.
 - **A miss is relearned in the session: three cards on, then ten on.**
@@ -119,9 +120,16 @@ notes`. `status` is `queued` → `known` → `carded`.
   **Never back-to-back:** if fewer than two other cards are left to put
   between, the repeat is dropped — the user's rule, so a Good is never
   followed by the same card at the end of a session. The card is due tomorrow
-  anyway. Not yet done, and deliberately held until the above is measured: a
-  3-day step after a lapse, before the 6-day one, which lapsed cards pass only
-  ~81% of the time.
+  anyway.
+- **After a miss the ladder is 1, 3, 6 days, not 1, 6** — same day,
+  2026-11-18. Lapsed cards passed the 6-day review only ~81% of the time,
+  against 96% for never-missed ones; about five extra reviews a day. It is
+  **derived, not stored**: "ease below 2.5 and fewer than three correct since"
+  is exactly "climbing back from a miss", because a lapse always cuts ease and
+  zeroes reps. So no field on card state, cards already on the old ladder
+  joined the new one on the day, and deleting it later leaves nothing behind.
+  Measured separately from the in-session change: that one moves the
+  day-after review, this one the review after it.
 - **Ease recovers, but only when earned.** A lapse costs 0.2; a correct
   answer returns 0.15, and only from the third consecutive one — which is
   also where ease starts affecting the interval. Ten correct answers in a row
