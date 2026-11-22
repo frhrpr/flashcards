@@ -65,6 +65,9 @@ FUNCTION_GLOSS = {
     "u": "at (someone's place): u nas, at our place",
     "po": "after; po polsku: in Polish", "trochę": "a little",
     "Polska": "Poland",
+    # words to guess (a trailing "?" in the lemma block): glossed on a tap,
+    # never on the sheet
+    "koncert": "concert", "mecz": "match, game (football)", "pizza": "pizza",
 }
 
 
@@ -98,7 +101,9 @@ def build(story, look):
         line = line.split("#", 1)[0]
         if "=" in line:
             tok, head = (x.strip() for x in line.split("=", 1))
-            lemmas[tok.lower()] = head
+            # a trailing "?" marks a word to guess (see storycheck); the app
+            # still glosses it on a tap, and the tap count says whether he did
+            lemmas[tok.lower()] = head.rstrip("?").strip()
     paras = []
     for p in body.split("--- pytania ---")[0].strip().split("\n\n"):
         if "(…)" in p:

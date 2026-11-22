@@ -2,6 +2,2858 @@
  "schema": 1,
  "stories": [
   {
+   "id": "dwa-bilety",
+   "title": "Dwa bilety",
+   "date": "2026-11-23",
+   "paras": [
+    [
+     [
+      "W",
+      "w"
+     ],
+     [
+      " "
+     ],
+     [
+      "piątek",
+      "piątek"
+     ],
+     [
+      " "
+     ],
+     [
+      "wieczorem",
+      "wieczór"
+     ],
+     [
+      " "
+     ],
+     [
+      "Ewa"
+     ],
+     [
+      " "
+     ],
+     [
+      "wraca",
+      "wracać"
+     ],
+     [
+      " "
+     ],
+     [
+      "z",
+      "z"
+     ],
+     [
+      " "
+     ],
+     [
+      "pracy",
+      "praca"
+     ],
+     [
+      " "
+     ],
+     [
+      "bardzo",
+      "bardzo"
+     ],
+     [
+      " "
+     ],
+     [
+      "szczęśliwa",
+      "szczęśliwy"
+     ],
+     [
+      ", "
+     ],
+     [
+      "bo",
+      "bo"
+     ],
+     [
+      " "
+     ],
+     [
+      "ma",
+      "mieć"
+     ],
+     [
+      " "
+     ],
+     [
+      "dwa",
+      "dwa"
+     ],
+     [
+      " "
+     ],
+     [
+      "bilety",
+      "bilet"
+     ],
+     [
+      " "
+     ],
+     [
+      "na",
+      "na"
+     ],
+     [
+      " "
+     ],
+     [
+      "koncert",
+      "koncert"
+     ],
+     [
+      ". "
+     ],
+     [
+      "Koncert",
+      "koncert"
+     ],
+     [
+      " "
+     ],
+     [
+      "jest",
+      "być"
+     ],
+     [
+      " "
+     ],
+     [
+      "w",
+      "w"
+     ],
+     [
+      " "
+     ],
+     [
+      "sobotę",
+      "sobota"
+     ],
+     [
+      " "
+     ],
+     [
+      "w",
+      "w"
+     ],
+     [
+      " "
+     ],
+     [
+      "parku",
+      "park"
+     ],
+     [
+      ", "
+     ],
+     [
+      "a",
+      "a"
+     ],
+     [
+      " "
+     ],
+     [
+      "Ewa"
+     ],
+     [
+      " "
+     ],
+     [
+      "bardzo",
+      "bardzo"
+     ],
+     [
+      " "
+     ],
+     [
+      "chce",
+      "chcieć"
+     ],
+     [
+      " "
+     ],
+     [
+      "iść",
+      "iść"
+     ],
+     [
+      "."
+     ]
+    ],
+    [
+     [
+      "— "
+     ],
+     [
+      "Sven"
+     ],
+     [
+      ", "
+     ],
+     [
+      "chcesz",
+      "chcieć"
+     ],
+     [
+      " "
+     ],
+     [
+      "iść",
+      "iść"
+     ],
+     [
+      " "
+     ],
+     [
+      "w",
+      "w"
+     ],
+     [
+      " "
+     ],
+     [
+      "sobotę",
+      "sobota"
+     ],
+     [
+      " "
+     ],
+     [
+      "na",
+      "na"
+     ],
+     [
+      " "
+     ],
+     [
+      "koncert",
+      "koncert"
+     ],
+     [
+      "? — "
+     ],
+     [
+      "pyta",
+      "pytać"
+     ],
+     [
+      "."
+     ]
+    ],
+    [
+     [
+      "Sven"
+     ],
+     [
+      " "
+     ],
+     [
+      "patrzy",
+      "patrzeć"
+     ],
+     [
+      " "
+     ],
+     [
+      "na",
+      "na"
+     ],
+     [
+      " "
+     ],
+     [
+      "bilety",
+      "bilet"
+     ],
+     [
+      ", "
+     ],
+     [
+      "a",
+      "a"
+     ],
+     [
+      " "
+     ],
+     [
+      "potem",
+      "potem"
+     ],
+     [
+      " "
+     ],
+     [
+      "na",
+      "na"
+     ],
+     [
+      " "
+     ],
+     [
+      "telewizor",
+      "telewizor"
+     ],
+     [
+      ". "
+     ],
+     [
+      "Wie",
+      "wiedzieć"
+     ],
+     [
+      ", "
+     ],
+     [
+      "że",
+      "że"
+     ],
+     [
+      " "
+     ],
+     [
+      "w",
+      "w"
+     ],
+     [
+      " "
+     ],
+     [
+      "sobotę",
+      "sobota"
+     ],
+     [
+      " "
+     ],
+     [
+      "wieczorem",
+      "wieczór"
+     ],
+     [
+      " "
+     ],
+     [
+      "Polska",
+      "Polska"
+     ],
+     [
+      " "
+     ],
+     [
+      "gra",
+      "grać"
+     ],
+     [
+      " "
+     ],
+     [
+      "ważny",
+      "ważny"
+     ],
+     [
+      " "
+     ],
+     [
+      "mecz",
+      "mecz"
+     ],
+     [
+      "."
+     ]
+    ],
+    [
+     [
+      "— "
+     ],
+     [
+      "Nie",
+      "nie"
+     ],
+     [
+      " "
+     ],
+     [
+      "mogę",
+      "móc"
+     ],
+     [
+      ", "
+     ],
+     [
+      "bo",
+      "bo"
+     ],
+     [
+      " "
+     ],
+     [
+      "w",
+      "w"
+     ],
+     [
+      " "
+     ],
+     [
+      "sobotę",
+      "sobota"
+     ],
+     [
+      " "
+     ],
+     [
+      "jest",
+      "być"
+     ],
+     [
+      " "
+     ],
+     [
+      "mecz",
+      "mecz"
+     ],
+     [
+      ". "
+     ],
+     [
+      "Adam"
+     ],
+     [
+      " "
+     ],
+     [
+      "i",
+      "i"
+     ],
+     [
+      " "
+     ],
+     [
+      "ja",
+      "ja"
+     ],
+     [
+      " "
+     ],
+     [
+      "chcemy",
+      "chcieć"
+     ],
+     [
+      " "
+     ],
+     [
+      "oglądać",
+      "oglądać"
+     ],
+     [
+      " "
+     ],
+     [
+      "mecz",
+      "mecz"
+     ],
+     [
+      " "
+     ],
+     [
+      "razem",
+      "razem"
+     ],
+     [
+      "."
+     ]
+    ],
+    [
+     [
+      "— "
+     ],
+     [
+      "Ty",
+      "ty"
+     ],
+     [
+      " "
+     ],
+     [
+      "i",
+      "i"
+     ],
+     [
+      " "
+     ],
+     [
+      "Adam"
+     ],
+     [
+      " "
+     ],
+     [
+      "zawsze",
+      "zawsze"
+     ],
+     [
+      " "
+     ],
+     [
+      "chcecie",
+      "chcieć"
+     ],
+     [
+      " "
+     ],
+     [
+      "oglądać",
+      "oglądać"
+     ],
+     [
+      " "
+     ],
+     [
+      "mecz",
+      "mecz"
+     ],
+     [
+      "! — "
+     ],
+     [
+      "mówi",
+      "mówić"
+     ],
+     [
+      " "
+     ],
+     [
+      "Ewa"
+     ],
+     [
+      ". — "
+     ],
+     [
+      "Dobrze",
+      "dobrze"
+     ],
+     [
+      ", "
+     ],
+     [
+      "więc",
+      "więc"
+     ],
+     [
+      " "
+     ],
+     [
+      "idę",
+      "iść"
+     ],
+     [
+      " "
+     ],
+     [
+      "z",
+      "z"
+     ],
+     [
+      " "
+     ],
+     [
+      "kimś",
+      "ktoś"
+     ],
+     [
+      " "
+     ],
+     [
+      "innym",
+      "inny"
+     ],
+     [
+      "."
+     ]
+    ],
+    [
+     [
+      "Najpierw",
+      "najpierw"
+     ],
+     [
+      " "
+     ],
+     [
+      "Ewa"
+     ],
+     [
+      " "
+     ],
+     [
+      "dzwoni",
+      "dzwonić"
+     ],
+     [
+      " "
+     ],
+     [
+      "do",
+      "do"
+     ],
+     [
+      " "
+     ],
+     [
+      "Piotra"
+     ],
+     [
+      ". "
+     ],
+     [
+      "Piotr"
+     ],
+     [
+      " "
+     ],
+     [
+      "mówi",
+      "mówić"
+     ],
+     [
+      ", "
+     ],
+     [
+      "że",
+      "że"
+     ],
+     [
+      " "
+     ],
+     [
+      "on",
+      "on"
+     ],
+     [
+      " "
+     ],
+     [
+      "i",
+      "i"
+     ],
+     [
+      " "
+     ],
+     [
+      "Ola"
+     ],
+     [
+      " "
+     ],
+     [
+      "bardzo",
+      "bardzo"
+     ],
+     [
+      " "
+     ],
+     [
+      "chcą",
+      "chcieć"
+     ],
+     [
+      " "
+     ],
+     [
+      "iść",
+      "iść"
+     ],
+     [
+      ", "
+     ],
+     [
+      "ale",
+      "ale"
+     ],
+     [
+      " "
+     ],
+     [
+      "nie",
+      "nie"
+     ],
+     [
+      " "
+     ],
+     [
+      "mogą",
+      "móc"
+     ],
+     [
+      ", "
+     ],
+     [
+      "bo",
+      "bo"
+     ],
+     [
+      " "
+     ],
+     [
+      "w",
+      "w"
+     ],
+     [
+      " "
+     ],
+     [
+      "sobotę",
+      "sobota"
+     ],
+     [
+      " "
+     ],
+     [
+      "rano",
+      "rano"
+     ],
+     [
+      " "
+     ],
+     [
+      "jadą",
+      "jechać"
+     ],
+     [
+      " "
+     ],
+     [
+      "do",
+      "do"
+     ],
+     [
+      " "
+     ],
+     [
+      "Gdańska"
+     ],
+     [
+      ". "
+     ],
+     [
+      "Potem",
+      "potem"
+     ],
+     [
+      " "
+     ],
+     [
+      "Ewa"
+     ],
+     [
+      " "
+     ],
+     [
+      "pisze",
+      "pisać"
+     ],
+     [
+      " "
+     ],
+     [
+      "do",
+      "do"
+     ],
+     [
+      " "
+     ],
+     [
+      "Adama"
+     ],
+     [
+      ". "
+     ],
+     [
+      "Adam"
+     ],
+     [
+      " "
+     ],
+     [
+      "odpowiada",
+      "odpowiadać"
+     ],
+     [
+      ", "
+     ],
+     [
+      "że",
+      "że"
+     ],
+     [
+      " "
+     ],
+     [
+      "nie",
+      "nie"
+     ],
+     [
+      " "
+     ],
+     [
+      "może",
+      "móc"
+     ],
+     [
+      ", "
+     ],
+     [
+      "bo",
+      "bo"
+     ],
+     [
+      " "
+     ],
+     [
+      "w",
+      "w"
+     ],
+     [
+      " "
+     ],
+     [
+      "sobotę",
+      "sobota"
+     ],
+     [
+      " "
+     ],
+     [
+      "pracuje",
+      "pracować"
+     ],
+     [
+      ", "
+     ],
+     [
+      "a",
+      "a"
+     ],
+     [
+      " "
+     ],
+     [
+      "wieczorem",
+      "wieczór"
+     ],
+     [
+      " "
+     ],
+     [
+      "ogląda",
+      "oglądać"
+     ],
+     [
+      " "
+     ],
+     [
+      "mecz",
+      "mecz"
+     ],
+     [
+      " "
+     ],
+     [
+      "ze",
+      "z"
+     ],
+     [
+      " "
+     ],
+     [
+      "Svenem"
+     ],
+     [
+      "."
+     ]
+    ],
+    [
+     [
+      "Ewa"
+     ],
+     [
+      " "
+     ],
+     [
+      "jest",
+      "być"
+     ],
+     [
+      " "
+     ],
+     [
+      "trochę",
+      "trochę"
+     ],
+     [
+      " "
+     ],
+     [
+      "smutna",
+      "smutny"
+     ],
+     [
+      ". "
+     ],
+     [
+      "Kto",
+      "kto"
+     ],
+     [
+      " "
+     ],
+     [
+      "może",
+      "móc"
+     ],
+     [
+      " "
+     ],
+     [
+      "iść",
+      "iść"
+     ],
+     [
+      " "
+     ],
+     [
+      "na",
+      "na"
+     ],
+     [
+      " "
+     ],
+     [
+      "koncert",
+      "koncert"
+     ],
+     [
+      "? "
+     ],
+     [
+      "Wtedy",
+      "wtedy"
+     ],
+     [
+      " "
+     ],
+     [
+      "dzwoni",
+      "dzwonić"
+     ],
+     [
+      " "
+     ],
+     [
+      "do",
+      "do"
+     ],
+     [
+      " "
+     ],
+     [
+      "babci",
+      "babcia"
+     ],
+     [
+      ", "
+     ],
+     [
+      "która",
+      "który"
+     ],
+     [
+      " "
+     ],
+     [
+      "zawsze",
+      "zawsze"
+     ],
+     [
+      " "
+     ],
+     [
+      "ma",
+      "mieć"
+     ],
+     [
+      " "
+     ],
+     [
+      "czas",
+      "czas"
+     ],
+     [
+      "."
+     ]
+    ],
+    [
+     [
+      "— "
+     ],
+     [
+      "Babciu",
+      "babcia"
+     ],
+     [
+      ", "
+     ],
+     [
+      "możesz",
+      "móc"
+     ],
+     [
+      " "
+     ],
+     [
+      "iść",
+      "iść"
+     ],
+     [
+      " "
+     ],
+     [
+      "w",
+      "w"
+     ],
+     [
+      " "
+     ],
+     [
+      "sobotę",
+      "sobota"
+     ],
+     [
+      " "
+     ],
+     [
+      "na",
+      "na"
+     ],
+     [
+      " "
+     ],
+     [
+      "koncert",
+      "koncert"
+     ],
+     [
+      "? "
+     ],
+     [
+      "Mam",
+      "mieć"
+     ],
+     [
+      " "
+     ],
+     [
+      "dwa",
+      "dwa"
+     ],
+     [
+      " "
+     ],
+     [
+      "bilety",
+      "bilet"
+     ],
+     [
+      "."
+     ]
+    ],
+    [
+     [
+      "— "
+     ],
+     [
+      "Oczywiście",
+      "oczywiście"
+     ],
+     [
+      ", "
+     ],
+     [
+      "że",
+      "że"
+     ],
+     [
+      " "
+     ],
+     [
+      "mogę",
+      "móc"
+     ],
+     [
+      "! — "
+     ],
+     [
+      "odpowiada",
+      "odpowiadać"
+     ],
+     [
+      " "
+     ],
+     [
+      "babcia",
+      "babcia"
+     ],
+     [
+      ". — "
+     ],
+     [
+      "I",
+      "i"
+     ],
+     [
+      " "
+     ],
+     [
+      "bardzo",
+      "bardzo"
+     ],
+     [
+      " "
+     ],
+     [
+      "chcę",
+      "chcieć"
+     ],
+     [
+      "!"
+     ]
+    ],
+    [
+     [
+      "W",
+      "w"
+     ],
+     [
+      " "
+     ],
+     [
+      "sobotę",
+      "sobota"
+     ],
+     [
+      " "
+     ],
+     [
+      "rano",
+      "rano"
+     ],
+     [
+      " "
+     ],
+     [
+      "Sven"
+     ],
+     [
+      " "
+     ],
+     [
+      "idzie",
+      "iść"
+     ],
+     [
+      " "
+     ],
+     [
+      "do",
+      "do"
+     ],
+     [
+      " "
+     ],
+     [
+      "sklepu",
+      "sklep"
+     ],
+     [
+      " "
+     ],
+     [
+      "i",
+      "i"
+     ],
+     [
+      " "
+     ],
+     [
+      "kupuje",
+      "kupować"
+     ],
+     [
+      " "
+     ],
+     [
+      "coś",
+      "coś"
+     ],
+     [
+      " "
+     ],
+     [
+      "dobrego",
+      "dobry"
+     ],
+     [
+      " "
+     ],
+     [
+      "na",
+      "na"
+     ],
+     [
+      " "
+     ],
+     [
+      "mecz",
+      "mecz"
+     ],
+     [
+      ". "
+     ],
+     [
+      "Ewa"
+     ],
+     [
+      " "
+     ],
+     [
+      "myje",
+      "myć"
+     ],
+     [
+      " "
+     ],
+     [
+      "okno",
+      "okno"
+     ],
+     [
+      " "
+     ],
+     [
+      "i",
+      "i"
+     ],
+     [
+      " "
+     ],
+     [
+      "śpiewa",
+      "śpiewać"
+     ],
+     [
+      ", "
+     ],
+     [
+      "bo",
+      "bo"
+     ],
+     [
+      " "
+     ],
+     [
+      "jest",
+      "być"
+     ],
+     [
+      " "
+     ],
+     [
+      "bardzo",
+      "bardzo"
+     ],
+     [
+      " "
+     ],
+     [
+      "szczęśliwa",
+      "szczęśliwy"
+     ],
+     [
+      ". "
+     ],
+     [
+      "Wieczorem",
+      "wieczór"
+     ],
+     [
+      " "
+     ],
+     [
+      "pada",
+      "padać"
+     ],
+     [
+      " "
+     ],
+     [
+      "deszcz",
+      "deszcz"
+     ],
+     [
+      ", "
+     ],
+     [
+      "ale",
+      "ale"
+     ],
+     [
+      " "
+     ],
+     [
+      "Ewa"
+     ],
+     [
+      " "
+     ],
+     [
+      "i",
+      "i"
+     ],
+     [
+      " "
+     ],
+     [
+      "babcia",
+      "babcia"
+     ],
+     [
+      " "
+     ],
+     [
+      "biorą",
+      "brać"
+     ],
+     [
+      " "
+     ],
+     [
+      "parasol",
+      "parasol"
+     ],
+     [
+      " "
+     ],
+     [
+      "i",
+      "i"
+     ],
+     [
+      " "
+     ],
+     [
+      "jadą",
+      "jechać"
+     ],
+     [
+      " "
+     ],
+     [
+      "autobusem",
+      "autobus"
+     ],
+     [
+      " "
+     ],
+     [
+      "do",
+      "do"
+     ],
+     [
+      " "
+     ],
+     [
+      "parku",
+      "park"
+     ],
+     [
+      "."
+     ]
+    ],
+    [
+     [
+      "Sven"
+     ],
+     [
+      " "
+     ],
+     [
+      "jest",
+      "być"
+     ],
+     [
+      " "
+     ],
+     [
+      "w",
+      "w"
+     ],
+     [
+      " "
+     ],
+     [
+      "domu",
+      "dom"
+     ],
+     [
+      " "
+     ],
+     [
+      "i",
+      "i"
+     ],
+     [
+      " "
+     ],
+     [
+      "czeka",
+      "czekać"
+     ],
+     [
+      " "
+     ],
+     [
+      "na",
+      "na"
+     ],
+     [
+      " "
+     ],
+     [
+      "Adama"
+     ],
+     [
+      ". "
+     ],
+     [
+      "Robi",
+      "robić"
+     ],
+     [
+      " "
+     ],
+     [
+      "herbatę",
+      "herbata"
+     ],
+     [
+      ", "
+     ],
+     [
+      "siada",
+      "siadać"
+     ],
+     [
+      " "
+     ],
+     [
+      "i",
+      "i"
+     ],
+     [
+      " "
+     ],
+     [
+      "włącza",
+      "włączyć"
+     ],
+     [
+      " "
+     ],
+     [
+      "telewizor",
+      "telewizor"
+     ],
+     [
+      ". "
+     ],
+     [
+      "Ale",
+      "ale"
+     ],
+     [
+      " "
+     ],
+     [
+      "meczu",
+      "mecz"
+     ],
+     [
+      " "
+     ],
+     [
+      "nie",
+      "nie"
+     ],
+     [
+      " "
+     ],
+     [
+      "ma",
+      "mieć"
+     ],
+     [
+      ". "
+     ],
+     [
+      "Jest",
+      "być"
+     ],
+     [
+      " "
+     ],
+     [
+      "tylko",
+      "tylko"
+     ],
+     [
+      " "
+     ],
+     [
+      "człowiek",
+      "człowiek"
+     ],
+     [
+      ", "
+     ],
+     [
+      "który",
+      "który"
+     ],
+     [
+      " "
+     ],
+     [
+      "gotuje",
+      "gotować"
+     ],
+     [
+      " "
+     ],
+     [
+      "zupę",
+      "zupa"
+     ],
+     [
+      ". "
+     ],
+     [
+      "Sven"
+     ],
+     [
+      " "
+     ],
+     [
+      "szuka",
+      "szukać"
+     ],
+     [
+      " "
+     ],
+     [
+      "i",
+      "i"
+     ],
+     [
+      " "
+     ],
+     [
+      "szuka",
+      "szukać"
+     ],
+     [
+      ", "
+     ],
+     [
+      "ale",
+      "ale"
+     ],
+     [
+      " "
+     ],
+     [
+      "nie",
+      "nie"
+     ],
+     [
+      " "
+     ],
+     [
+      "może",
+      "móc"
+     ],
+     [
+      " "
+     ],
+     [
+      "znaleźć",
+      "znaleźć"
+     ],
+     [
+      " "
+     ],
+     [
+      "meczu",
+      "mecz"
+     ],
+     [
+      "."
+     ]
+    ],
+    [
+     [
+      "Kiedy",
+      "kiedy"
+     ],
+     [
+      " "
+     ],
+     [
+      "Adam"
+     ],
+     [
+      " "
+     ],
+     [
+      "przychodzi",
+      "przychodzić"
+     ],
+     [
+      " "
+     ],
+     [
+      "z",
+      "z"
+     ],
+     [
+      " "
+     ],
+     [
+      "pizzą",
+      "pizza"
+     ],
+     [
+      ", "
+     ],
+     [
+      "patrzy",
+      "patrzeć"
+     ],
+     [
+      " "
+     ],
+     [
+      "na",
+      "na"
+     ],
+     [
+      " "
+     ],
+     [
+      "telewizor",
+      "telewizor"
+     ],
+     [
+      " "
+     ],
+     [
+      "i",
+      "i"
+     ],
+     [
+      " "
+     ],
+     [
+      "nic",
+      "nic"
+     ],
+     [
+      " "
+     ],
+     [
+      "nie",
+      "nie"
+     ],
+     [
+      " "
+     ],
+     [
+      "rozumie",
+      "rozumieć"
+     ],
+     [
+      "."
+     ]
+    ],
+    [
+     [
+      "— "
+     ],
+     [
+      "Sven"
+     ],
+     [
+      ", "
+     ],
+     [
+      "dlaczego",
+      "dlaczego"
+     ],
+     [
+      " "
+     ],
+     [
+      "oglądasz",
+      "oglądać"
+     ],
+     [
+      " "
+     ],
+     [
+      "zupę",
+      "zupa"
+     ],
+     [
+      "?"
+     ]
+    ],
+    [
+     [
+      "— "
+     ],
+     [
+      "Bo",
+      "bo"
+     ],
+     [
+      " "
+     ],
+     [
+      "nie",
+      "nie"
+     ],
+     [
+      " "
+     ],
+     [
+      "mogę",
+      "móc"
+     ],
+     [
+      " "
+     ],
+     [
+      "znaleźć",
+      "znaleźć"
+     ],
+     [
+      " "
+     ],
+     [
+      "meczu",
+      "mecz"
+     ],
+     [
+      "!"
+     ]
+    ],
+    [
+     [
+      "Adam"
+     ],
+     [
+      " "
+     ],
+     [
+      "patrzy",
+      "patrzeć"
+     ],
+     [
+      " "
+     ],
+     [
+      "w",
+      "w"
+     ],
+     [
+      " "
+     ],
+     [
+      "telefon",
+      "telefon"
+     ],
+     [
+      ". "
+     ],
+     [
+      "Nagle",
+      "nagle"
+     ],
+     [
+      " "
+     ],
+     [
+      "się",
+      "się"
+     ],
+     [
+      " "
+     ],
+     [
+      "śmieje",
+      "śmiać się"
+     ],
+     [
+      "."
+     ]
+    ],
+    [
+     [
+      "— "
+     ],
+     [
+      "Sven"
+     ],
+     [
+      ", "
+     ],
+     [
+      "mecz",
+      "mecz"
+     ],
+     [
+      " "
+     ],
+     [
+      "jest",
+      "być"
+     ],
+     [
+      " "
+     ],
+     [
+      "jutro",
+      "jutro"
+     ],
+     [
+      ", "
+     ],
+     [
+      "nie",
+      "nie"
+     ],
+     [
+      " "
+     ],
+     [
+      "dzisiaj",
+      "dzisiaj"
+     ],
+     [
+      "!"
+     ]
+    ],
+    [
+     [
+      "Sven"
+     ],
+     [
+      " "
+     ],
+     [
+      "dzwoni",
+      "dzwonić"
+     ],
+     [
+      " "
+     ],
+     [
+      "do",
+      "do"
+     ],
+     [
+      " "
+     ],
+     [
+      "Ewy"
+     ],
+     [
+      "."
+     ]
+    ],
+    [
+     [
+      "— "
+     ],
+     [
+      "Ewa"
+     ],
+     [
+      ", "
+     ],
+     [
+      "mecz",
+      "mecz"
+     ],
+     [
+      " "
+     ],
+     [
+      "jest",
+      "być"
+     ],
+     [
+      " "
+     ],
+     [
+      "jutro",
+      "jutro"
+     ],
+     [
+      "! "
+     ],
+     [
+      "Możemy",
+      "móc"
+     ],
+     [
+      " "
+     ],
+     [
+      "jeszcze",
+      "jeszcze"
+     ],
+     [
+      " "
+     ],
+     [
+      "iść",
+      "iść"
+     ],
+     [
+      " "
+     ],
+     [
+      "na",
+      "na"
+     ],
+     [
+      " "
+     ],
+     [
+      "koncert",
+      "koncert"
+     ],
+     [
+      "? "
+     ],
+     [
+      "Adam"
+     ],
+     [
+      " "
+     ],
+     [
+      "i",
+      "i"
+     ],
+     [
+      " "
+     ],
+     [
+      "ja",
+      "ja"
+     ],
+     [
+      " "
+     ],
+     [
+      "chcemy",
+      "chcieć"
+     ],
+     [
+      " "
+     ],
+     [
+      "iść",
+      "iść"
+     ],
+     [
+      "!"
+     ]
+    ],
+    [
+     [
+      "— "
+     ],
+     [
+      "Nie",
+      "nie"
+     ],
+     [
+      ", "
+     ],
+     [
+      "nie",
+      "nie"
+     ],
+     [
+      " "
+     ],
+     [
+      "możecie",
+      "móc"
+     ],
+     [
+      " — "
+     ],
+     [
+      "mówi",
+      "mówić"
+     ],
+     [
+      " "
+     ],
+     [
+      "Ewa"
+     ],
+     [
+      ". — "
+     ],
+     [
+      "Babcia",
+      "babcia"
+     ],
+     [
+      " "
+     ],
+     [
+      "i",
+      "i"
+     ],
+     [
+      " "
+     ],
+     [
+      "ja",
+      "ja"
+     ],
+     [
+      " "
+     ],
+     [
+      "mamy",
+      "mieć"
+     ],
+     [
+      " "
+     ],
+     [
+      "bilety",
+      "bilet"
+     ],
+     [
+      ", "
+     ],
+     [
+      "a",
+      "a"
+     ],
+     [
+      " "
+     ],
+     [
+      "wy",
+      "wy"
+     ],
+     [
+      " "
+     ],
+     [
+      "nie",
+      "nie"
+     ],
+     [
+      "."
+     ]
+    ],
+    [
+     [
+      "Wtedy",
+      "wtedy"
+     ],
+     [
+      " "
+     ],
+     [
+      "Sven"
+     ],
+     [
+      " "
+     ],
+     [
+      "słyszy",
+      "słyszeć"
+     ],
+     [
+      ", "
+     ],
+     [
+      "że",
+      "że"
+     ],
+     [
+      " "
+     ],
+     [
+      "ktoś",
+      "ktoś"
+     ],
+     [
+      " "
+     ],
+     [
+      "śpiewa",
+      "śpiewać"
+     ],
+     [
+      " "
+     ],
+     [
+      "bardzo",
+      "bardzo"
+     ],
+     [
+      " "
+     ],
+     [
+      "głośno",
+      "głośno"
+     ],
+     [
+      "."
+     ]
+    ],
+    [
+     [
+      "— "
+     ],
+     [
+      "Kto",
+      "kto"
+     ],
+     [
+      " "
+     ],
+     [
+      "tak",
+      "tak"
+     ],
+     [
+      " "
+     ],
+     [
+      "śpiewa",
+      "śpiewać"
+     ],
+     [
+      "? — "
+     ],
+     [
+      "pyta",
+      "pytać"
+     ],
+     [
+      "."
+     ]
+    ],
+    [
+     [
+      "— "
+     ],
+     [
+      "Babcia",
+      "babcia"
+     ],
+     [
+      "! — "
+     ],
+     [
+      "mówi",
+      "mówić"
+     ],
+     [
+      " "
+     ],
+     [
+      "Ewa"
+     ],
+     [
+      ". — "
+     ],
+     [
+      "Pije",
+      "pić"
+     ],
+     [
+      " "
+     ],
+     [
+      "herbatę",
+      "herbata"
+     ],
+     [
+      ", "
+     ],
+     [
+      "śpiewa",
+      "śpiewać"
+     ],
+     [
+      " "
+     ],
+     [
+      "i",
+      "i"
+     ],
+     [
+      " "
+     ],
+     [
+      "jest",
+      "być"
+     ],
+     [
+      " "
+     ],
+     [
+      "bardzo",
+      "bardzo"
+     ],
+     [
+      " "
+     ],
+     [
+      "szczęśliwa",
+      "szczęśliwy"
+     ],
+     [
+      "."
+     ]
+    ],
+    [
+     [
+      "Więc",
+      "więc"
+     ],
+     [
+      " "
+     ],
+     [
+      "Sven"
+     ],
+     [
+      " "
+     ],
+     [
+      "i",
+      "i"
+     ],
+     [
+      " "
+     ],
+     [
+      "Adam"
+     ],
+     [
+      " "
+     ],
+     [
+      "siedzą",
+      "siedzieć"
+     ],
+     [
+      " "
+     ],
+     [
+      "w",
+      "w"
+     ],
+     [
+      " "
+     ],
+     [
+      "domu",
+      "dom"
+     ],
+     [
+      ", "
+     ],
+     [
+      "jedzą",
+      "jeść"
+     ],
+     [
+      " "
+     ],
+     [
+      "pizzę",
+      "pizza"
+     ],
+     [
+      ", "
+     ],
+     [
+      "piją",
+      "pić"
+     ],
+     [
+      " "
+     ],
+     [
+      "herbatę",
+      "herbata"
+     ],
+     [
+      " "
+     ],
+     [
+      "i",
+      "i"
+     ],
+     [
+      " "
+     ],
+     [
+      "oglądają",
+      "oglądać"
+     ],
+     [
+      " "
+     ],
+     [
+      "człowieka",
+      "człowiek"
+     ],
+     [
+      ", "
+     ],
+     [
+      "który",
+      "który"
+     ],
+     [
+      " "
+     ],
+     [
+      "gotuje",
+      "gotować"
+     ],
+     [
+      " "
+     ],
+     [
+      "zupę",
+      "zupa"
+     ],
+     [
+      "."
+     ]
+    ]
+   ],
+   "words": {
+    "Polska": {
+     "gloss": "Poland"
+    },
+    "a": {
+     "gloss": "and, while"
+    },
+    "ale": {
+     "gloss": "but"
+    },
+    "autobus": {
+     "gloss": "bus",
+     "note": "autobus"
+    },
+    "babcia": {
+     "gloss": "grandmother",
+     "note": "babcia"
+    },
+    "bardzo": {
+     "gloss": "very",
+     "note": "bardzo"
+    },
+    "bilet": {
+     "gloss": "ticket",
+     "note": "bilet"
+    },
+    "bo": {
+     "gloss": "because"
+    },
+    "brać": {
+     "gloss": "to take",
+     "note": "brac"
+    },
+    "być": {
+     "gloss": "to be",
+     "note": "byc"
+    },
+    "chcieć": {
+     "gloss": "to want",
+     "note": "chciec"
+    },
+    "coś": {
+     "gloss": "something",
+     "note": "cos"
+    },
+    "czas": {
+     "gloss": "time",
+     "note": "czas"
+    },
+    "czekać": {
+     "gloss": "to wait",
+     "note": "czekac"
+    },
+    "człowiek": {
+     "gloss": "person",
+     "note": "czlowiek"
+    },
+    "deszcz": {
+     "gloss": "rain",
+     "note": "deszcz"
+    },
+    "dlaczego": {
+     "gloss": "why",
+     "note": "dlaczego"
+    },
+    "do": {
+     "gloss": "to"
+    },
+    "dobry": {
+     "gloss": "good",
+     "note": "dobry"
+    },
+    "dobrze": {
+     "gloss": "well; okay",
+     "note": "dobrze"
+    },
+    "dom": {
+     "gloss": "house, home",
+     "note": "dom"
+    },
+    "dwa": {
+     "gloss": "two",
+     "note": "dwa"
+    },
+    "dzisiaj": {
+     "gloss": "today",
+     "note": "dzisiaj"
+    },
+    "dzwonić": {
+     "gloss": "to call, to ring",
+     "note": "dzwonic"
+    },
+    "gotować": {
+     "gloss": "to cook",
+     "note": "gotowac"
+    },
+    "grać": {
+     "gloss": "to play",
+     "note": "grac"
+    },
+    "głośno": {
+     "gloss": "loudly",
+     "note": "glosno"
+    },
+    "herbata": {
+     "gloss": "tea",
+     "note": "herbata"
+    },
+    "i": {
+     "gloss": "and"
+    },
+    "inny": {
+     "gloss": "other, different",
+     "note": "inny"
+    },
+    "iść": {
+     "gloss": "to go",
+     "note": "isc"
+    },
+    "ja": {
+     "gloss": "I"
+    },
+    "jechać": {
+     "gloss": "to travel",
+     "note": "jechac"
+    },
+    "jeszcze": {
+     "gloss": "still, yet",
+     "note": "jeszcze"
+    },
+    "jeść": {
+     "gloss": "to eat",
+     "note": "jesc"
+    },
+    "jutro": {
+     "gloss": "tomorrow",
+     "note": "jutro"
+    },
+    "kiedy": {
+     "gloss": "when",
+     "note": "kiedy"
+    },
+    "koncert": {
+     "gloss": "concert"
+    },
+    "kto": {
+     "gloss": "who"
+    },
+    "ktoś": {
+     "gloss": "someone",
+     "note": "ktos"
+    },
+    "który": {
+     "gloss": "which"
+    },
+    "kupować": {
+     "gloss": "to buy",
+     "note": "kupowac"
+    },
+    "mecz": {
+     "gloss": "match, game (football)"
+    },
+    "mieć": {
+     "gloss": "to have",
+     "note": "miec"
+    },
+    "myć": {
+     "gloss": "to wash",
+     "note": "myc"
+    },
+    "móc": {
+     "gloss": "can, to be able to",
+     "note": "moc"
+    },
+    "mówić": {
+     "gloss": "to speak",
+     "note": "mowic"
+    },
+    "na": {
+     "gloss": "on, onto"
+    },
+    "nagle": {
+     "gloss": "suddenly",
+     "note": "nagle"
+    },
+    "najpierw": {
+     "gloss": "first (of all), before anything else",
+     "note": "najpierw"
+    },
+    "nic": {
+     "gloss": "nothing",
+     "note": "nic"
+    },
+    "nie": {
+     "gloss": "no, not",
+     "note": "nie"
+    },
+    "oczywiście": {
+     "gloss": "of course",
+     "note": "oczywiscie"
+    },
+    "odpowiadać": {
+     "gloss": "to answer",
+     "note": "odpowiadac"
+    },
+    "oglądać": {
+     "gloss": "to watch, look at",
+     "note": "ogladac"
+    },
+    "okno": {
+     "gloss": "window",
+     "note": "okno"
+    },
+    "on": {
+     "gloss": "he"
+    },
+    "padać": {
+     "gloss": "to fall",
+     "note": "padac"
+    },
+    "parasol": {
+     "gloss": "umbrella",
+     "note": "parasol"
+    },
+    "park": {
+     "gloss": "park",
+     "note": "park"
+    },
+    "patrzeć": {
+     "gloss": "to look",
+     "note": "patrzec"
+    },
+    "pisać": {
+     "gloss": "to write",
+     "note": "pisac"
+    },
+    "pizza": {
+     "gloss": "pizza"
+    },
+    "piątek": {
+     "gloss": "Friday",
+     "note": "piatek"
+    },
+    "pić": {
+     "gloss": "to drink",
+     "note": "pic"
+    },
+    "potem": {
+     "gloss": "then, afterwards",
+     "note": "potem"
+    },
+    "praca": {
+     "gloss": "work, job",
+     "note": "praca"
+    },
+    "pracować": {
+     "gloss": "to work",
+     "note": "pracowac"
+    },
+    "przychodzić": {
+     "gloss": "to come, arrive",
+     "note": "przychodzic"
+    },
+    "pytać": {
+     "gloss": "to ask",
+     "note": "pytac"
+    },
+    "rano": {
+     "gloss": "in the morning",
+     "note": "rano"
+    },
+    "razem": {
+     "gloss": "together",
+     "note": "razem"
+    },
+    "robić": {
+     "gloss": "to do, to make",
+     "note": "robic"
+    },
+    "rozumieć": {
+     "gloss": "to understand",
+     "note": "rozumiec"
+    },
+    "siadać": {
+     "gloss": "to sit down",
+     "note": "siadac"
+    },
+    "siedzieć": {
+     "gloss": "to be sitting",
+     "note": "siedziec"
+    },
+    "się": {
+     "gloss": "oneself (with some verbs)"
+    },
+    "sklep": {
+     "gloss": "shop",
+     "note": "sklep"
+    },
+    "smutny": {
+     "gloss": "sad",
+     "note": "smutny"
+    },
+    "sobota": {
+     "gloss": "Saturday",
+     "note": "sobota"
+    },
+    "szczęśliwy": {
+     "gloss": "happy",
+     "note": "szczesliwy"
+    },
+    "szukać": {
+     "gloss": "to look for",
+     "note": "szukac"
+    },
+    "słyszeć": {
+     "gloss": "to hear",
+     "note": "slyszec"
+    },
+    "tak": {
+     "gloss": "yes",
+     "note": "tak"
+    },
+    "telefon": {
+     "gloss": "telephone",
+     "note": "telefon"
+    },
+    "telewizor": {
+     "gloss": "television",
+     "note": "telewizor"
+    },
+    "trochę": {
+     "gloss": "a little, a bit",
+     "note": "troche"
+    },
+    "ty": {
+     "gloss": "you"
+    },
+    "tylko": {
+     "gloss": "only",
+     "note": "tylko"
+    },
+    "w": {
+     "gloss": "in"
+    },
+    "ważny": {
+     "gloss": "important",
+     "note": "wazny"
+    },
+    "wieczór": {
+     "gloss": "evening",
+     "note": "wieczor"
+    },
+    "wiedzieć": {
+     "gloss": "to know (a fact)",
+     "note": "wiedziec"
+    },
+    "więc": {
+     "gloss": "so"
+    },
+    "wracać": {
+     "gloss": "to come back",
+     "note": "wracac"
+    },
+    "wtedy": {
+     "gloss": "then, at that time",
+     "note": "wtedy"
+    },
+    "wy": {
+     "gloss": "you (all)"
+    },
+    "włączyć": {
+     "gloss": "to switch on",
+     "note": "wlaczyc"
+    },
+    "z": {
+     "gloss": "with; from"
+    },
+    "zawsze": {
+     "gloss": "always",
+     "note": "zawsze"
+    },
+    "znaleźć": {
+     "gloss": "to find",
+     "note": "znalezc"
+    },
+    "zupa": {
+     "gloss": "soup",
+     "note": "zupa"
+    },
+    "śmiać się": {
+     "gloss": "to laugh",
+     "note": "smiac_sie"
+    },
+    "śpiewać": {
+     "gloss": "to sing",
+     "note": "spiewac"
+    },
+    "że": {
+     "gloss": "that"
+    }
+   },
+   "questions": [
+    {
+     "q": "Dlaczego Ewa jest szczęśliwa w piątek?",
+     "options": [
+      "bo ma dwa bilety na koncert",
+      "bo Polska gra mecz",
+      "bo babcia śpiewa"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Dlaczego Sven nie chce iść na koncert?",
+     "options": [
+      "bo chce oglądać mecz",
+      "bo pracuje",
+      "bo jedzie do Gdańska"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Dlaczego Piotr i Ola nie mogą iść?",
+     "options": [
+      "bo jadą do Gdańska",
+      "bo pracują",
+      "bo oglądają mecz"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Kto nie może iść, bo w sobotę pracuje?",
+     "options": [
+      "Adam",
+      "Piotr",
+      "babcia"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Kto idzie z Ewą na koncert?",
+     "options": [
+      "babcia",
+      "Sven",
+      "Ola"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Co Sven ogląda w sobotę wieczorem?",
+     "options": [
+      "człowieka, który gotuje zupę",
+      "mecz",
+      "koncert"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Dlaczego Sven nie może znaleźć meczu?",
+     "options": [
+      "bo mecz jest jutro",
+      "bo pada deszcz",
+      "bo Adam przychodzi z pizzą"
+     ],
+     "answer": 0
+    },
+    {
+     "q": "Dlaczego Sven i Adam nie mogą iść na koncert?",
+     "options": [
+      "bo bilety mają Ewa i babcia",
+      "bo pada deszcz",
+      "bo oglądają mecz"
+     ],
+     "answer": 0
+    }
+   ]
+  },
+  {
    "id": "nad-jeziorem",
    "title": "Nad jeziorem",
    "date": "2026-11-16",

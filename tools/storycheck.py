@@ -64,6 +64,21 @@ share a spelling with a deck word. One would be used, and this repo has
 already watched an optional label become the quiet path of least resistance
 (see `image_basis` in CLAUDE.md). Rename the character instead — we choose
 the names, and it costs nothing.
+
+## `?` marks a word he is meant to guess
+
+    koncert = koncert ?
+
+A trailing `?` says the word is new *on purpose*: he is meant to work it out
+from the story, and the sheet does not gloss it. Added 2026-11-22, when the
+readings had become too easy and the teacher chose guessing from context as
+one of the ways to step them up. It is the one sanctioned way past the rule
+that every word must be met, so it is fenced: at most MAX_GUESS distinct
+headwords per file, listed separately so they are seen, and a `?` on a word
+he has already met is an error rather than a harmless no-op, because a marker
+that means nothing is how markers stop being read. Pick words he can get —
+cognates for a Dutch speaker, or ones the sentence pins down — and record
+each in vocab.csv as `queued` once the story has gone out.
 """
 import argparse, csv, json, re, sys, urllib.request
 from pathlib import Path
@@ -77,6 +92,8 @@ APP = ROOT / "index.html"
 SEP = re.compile(r"^\s*-{2,}\s*lemmas\s*-{2,}\s*$", re.I | re.M)
 TOKEN = re.compile(r"[^\W\d_]+", re.UNICODE)   # letters only: gap numbers are not words
 SKIP = "-"
+GUESS = "?"        # trailing marker: new on purpose, to be guessed
+MAX_GUESS = 3
 
 
 def die(msg):
@@ -194,11 +211,13 @@ def main():
              json.loads(NOTES.read_text(encoding="utf-8"))["notes"]
              if n.get("kind") != "form"}
 
-    tokens, unmapped = [], []
+    tokens, unmapped, guess = [], [], set()
     for tok in TOKEN.findall(body):
         head = lemmas.get(tok.lower())
         if head is None:
             unmapped.append(tok)
+        elif head.endswith(GUESS):
+            guess.add(head[:-1].strip())
         elif head != SKIP:
             tokens.append((tok, head))
 
@@ -228,6 +247,9 @@ def main():
         else:
             bank.append(w)
 
+    guessed_met = sorted(w for w in guess
+                         if (n := notes.get(w)) and n["id"] in started)
+
     unused = sorted(set(lemmas) - {t.lower() for t in TOKEN.findall(body)})
 
     def show(label, ws):
@@ -244,7 +266,18 @@ def main():
         print(f"\n  mapped but never used ({len(unused)}) — a typo in the block?")
         print("      " + "  ".join(unused))
 
+    show(f"to guess — new on purpose, not glossed (at most {MAX_GUESS})",
+         sorted(guess))
+
     problems = 0
+    if len(guess) > MAX_GUESS:
+        print(f"\n  TOO MANY TO GUESS ({len(guess)}) — the limit is {MAX_GUESS}. A story")
+        print(  "  full of guesses is a story he cannot read; card the rest first.")
+        problems += len(guess) - MAX_GUESS
+    if guessed_met:
+        print(f"\n  MARKED '?' BUT ALREADY MET ({len(guessed_met)}) — drop the '?':")
+        print("      " + "  ".join(guessed_met))
+        problems += len(guessed_met)
     if bank:
         print(f"\n  IN THE BANK, UNSEEN ({len(bank)}) — he has never met these, and")
         print(  "  nothing brings them near this story. Flag them or cut them.")

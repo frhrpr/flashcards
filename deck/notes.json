@@ -3094,7 +3094,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "czytac",
@@ -3692,7 +3693,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "pomoc_v",
@@ -4920,7 +4922,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "sobota",
@@ -5182,7 +5185,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "herbata",
@@ -5607,7 +5611,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "zamknac",
@@ -10647,7 +10652,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "spacer",
@@ -13899,7 +13905,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "pogoda",
@@ -14233,7 +14240,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "zaraz",

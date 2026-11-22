@@ -1079,6 +1079,18 @@ Deferred on purpose: 4 grades instead of 2, and a stats screen.
   Checked against all 41 `-` mappings ever written here: fourteen distinct
   tokens, every one a personal name, no collision with either list.
 
+  **The one sanctioned exception is a word to guess: `koncert = koncert ?`.**
+  Added 2026-11-22, when the teacher agreed the readings had become too easy.
+  A trailing `?` marks a word that is new on purpose: the sheet leaves it
+  unglossed and tells him some words are new. Capped at three per story, and
+  a `?` on a word he has already met is an error. Choose cognates for a Dutch
+  speaker or words the sentence pins down, gloss them in reading.py's
+  `FUNCTION_GLOSS` for the app's tap sheet, and add them to `vocab.csv` as
+  `queued` once the story has gone out. The same decision set the new bar for
+  stories: sentences joined with *bo, ale, więc, kiedy, że, który* (about 6–7
+  words a sentence rather than 3–4), roughly 350 words, and mostly
+  *dlaczego?* questions. See `lessons/2026-11-23-dwa-bilety.md`.
+
 - **`review.py --approve` refuses a note that changed after the page was
   built.** Approving asserts a human looked at it; if the sentence or a clip
   was replaced since the page was written, nobody has looked at the version
