@@ -6834,7 +6834,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "pracowac",
@@ -9083,7 +9084,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "codziennie",
@@ -13673,7 +13675,8 @@
         "production",
         "listening"
       ],
-      "reviewed": true
+      "reviewed": true,
+      "priority": true
     },
     {
       "id": "martwic_sie",

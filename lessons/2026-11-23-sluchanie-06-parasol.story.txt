@@ -1,0 +1,105 @@
+Jest niedziela. Marek chce iść do parku, ale rano pada deszcz, więc Marek i Ania są w domu.
+
+Ania pisze list do mamy, a Marek czyta książkę. Kot śpi na łóżku, bo nie lubi deszczu.
+
+Potem Ania idzie do kuchni, bo chce zrobić obiad. Ale w kuchni nie ma chleba i nie ma mleka.
+
+— Mogę iść do sklepu — mówi Marek. — Gdzie jest parasol?
+
+— Parasol jest pod stołem — mówi Ania.
+
+Marek bierze parasol i idzie do sklepu. Kupuje chleb, mleko i ser. Kiedy Marek wraca do domu, już nie pada. Jest słońce.
+
+W kuchni Ania robi zupę, a Marek robi herbatę. Kot siedzi na krześle i patrzy na ser. Ale Ania mówi, że ser nie jest dla kota, więc kot pije mleko.
+
+Po obiedzie Marek i Ania idą do parku, bo jest słońce. Kot nie idzie, bo znowu śpi na łóżku.
+
+--- pytania ---
+
+Dlaczego Marek i Ania są rano w domu? | *bo pada deszcz | bo kot śpi | bo Ania pisze list
+Co robi Ania rano? | *pisze list do mamy | czyta książkę | robi zupę
+Dlaczego kot śpi na łóżku? | *bo nie lubi deszczu | bo nie lubi parku | bo pije mleko
+Dlaczego Ania idzie do kuchni? | *bo chce zrobić obiad | bo kot jest w kuchni | bo pada deszcz
+Gdzie jest parasol? | *pod stołem | na łóżku | w kuchni
+Co kupuje Marek? | *chleb, mleko i ser | chleb, kawę i ser | mleko i rybę
+Czy pada deszcz, kiedy Marek wraca? | tak | *nie
+Dlaczego Marek i Ania idą do parku po obiedzie? | *bo jest słońce | bo kot chce iść | bo nie mają chleba
+
+--- lemmas ---
+Jest = być
+niedziela = niedziela
+Marek = -
+chce = chcieć
+iść = iść
+do = do
+parku = park
+ale = ale
+rano = rano
+pada = padać
+deszcz = deszcz
+więc = więc
+i = i
+Ania = -
+są = być
+w = w
+domu = dom
+pisze = pisać
+list = list
+mamy = mieć
+a = a
+czyta = czytać
+książkę = książka
+Kot = kot
+śpi = spać
+na = na
+łóżku = łóżko
+bo = bo
+nie = nie
+lubi = lubić
+deszczu = deszcz
+Potem = potem
+idzie = iść
+kuchni = kuchnia
+zrobić = robić
+obiad = obiad
+ma = mieć
+chleba = chleb
+mleka = mleko
+Mogę = móc
+sklepu = sklep
+mówi = mówić
+Gdzie = gdzie
+parasol = parasol
+pod = pod
+stołem = stół
+bierze = brać
+Kupuje = kupować
+chleb = chleb
+mleko = mleko
+ser = ser
+Kiedy = kiedy
+wraca = wracać
+już = już
+słońce = słońce
+robi = robić
+zupę = zupa
+herbatę = herbata
+siedzi = siedzieć
+krześle = krzesło
+patrzy = patrzeć
+że = że
+dla = dla
+kota = kot
+pije = pić
+Po = po
+obiedzie = obiad
+idą = iść
+znowu = znowu
+pytania = pytanie
+Dlaczego = dlaczego
+Co = co
+kawę = kawa
+rybę = ryba
+Czy = czy
+tak = tak
+mają = mieć

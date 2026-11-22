@@ -109,6 +109,13 @@ Accept the pronoun kept or dropped, and any sensible word order.
 - In the story, whether he works out *koncert, mecz, pizza* without asking,
   and whether he gets nos. 6 and 8 without going back to the text.
 
+## How it went
+
+On 2026-11-23 they read the story but did not reach the grammar. The teacher
+said this level of difficulty was right and should stay. The table and the
+twelve sentences went into the homework, *Mecz*, unchanged. *koncert, mecz,
+pizza* are in `vocab.csv` as `queued`.
+
 ## Checked
 
 `tools/storycheck.py` on story, exercise and questions: every word met apart

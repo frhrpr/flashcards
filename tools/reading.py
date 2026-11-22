@@ -50,7 +50,7 @@ FUNCTION_GLOSS = {
     "a": "and, while", "ale": "but", "i": "and", "albo": "or", "bo": "because",
     "że": "that", "więc": "so", "czy": "whether; or (question word)",
     "do": "to", "na": "on, onto", "pod": "under", "nad": "above, by (a river)",
-    "w": "in", "z": "with; from", "dla": "for", "od": "from",
+    "w": "in", "z": "with; from", "dla": "for", "od": "from", "o": "about (myśli o meczu: thinks about the match)",
     "się": "oneself (with some verbs)", "to": "this, it", "ten": "this",
     "co": "what", "kto": "who", "gdzie": "where", "jak": "how", "który": "which",
     "ja": "I", "ty": "you", "on": "he", "ona": "she", "my": "we", "wy": "you (all)",
@@ -68,6 +68,7 @@ FUNCTION_GLOSS = {
     # words to guess (a trailing "?" in the lemma block): glossed on a tap,
     # never on the sheet
     "koncert": "concert", "mecz": "match, game (football)", "pizza": "pizza",
+    "gol": "goal (football)", "fantastyczny": "fantastic",
 }
 
 

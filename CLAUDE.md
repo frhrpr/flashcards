@@ -545,6 +545,10 @@ audio, not the words.
   done", dashed like a finished Vocab), but still tappable, because episodes
   can be re-listened. It was a quiet grey link until 2026-10-25, when the
   teacher could not find it; the Reading tile does the same.
+- **Stepped up a little on 2026-11-23** (episode 6), at the teacher's
+  request: about 140 words and 70 seconds instead of 75 and 50, sentences
+  joined with *bo, ale, więc, kiedy*, three options per question, some
+  *dlaczego?*. Still linear, and each answer is still one sentence.
 - ElevenLabs free tier is 10,000 characters a month, shared with card
   sentences; a one-minute episode is about 500.
 
@@ -1090,6 +1094,8 @@ Deferred on purpose: 4 grades instead of 2, and a stats screen.
   stories: sentences joined with *bo, ale, więc, kiedy, że, który* (about 6–7
   words a sentence rather than 3–4), roughly 350 words, and mostly
   *dlaczego?* questions. See `lessons/2026-11-23-dwa-bilety.md`.
+  After that lesson the teacher said this level was right and should be kept
+  for every story from now on, homework included.
 
 - **`review.py --approve` refuses a note that changed after the page was
   built.** Approving asserts a human looked at it; if the sentence or a clip

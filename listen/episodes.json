@@ -2,6 +2,96 @@
   "schema": 1,
   "episodes": [
     {
+      "id": "06-parasol",
+      "title": "Parasol",
+      "date": "2026-11-23",
+      "audio": "listen/06-parasol.mp3",
+      "seconds": 68,
+      "text": [
+        "Jest niedziela. Marek chce iść do parku, ale rano pada deszcz, więc Marek i Ania są w domu.",
+        "Ania pisze list do mamy, a Marek czyta książkę. Kot śpi na łóżku, bo nie lubi deszczu.",
+        "Potem Ania idzie do kuchni, bo chce zrobić obiad. Ale w kuchni nie ma chleba i nie ma mleka.",
+        "— Mogę iść do sklepu — mówi Marek. — Gdzie jest parasol?",
+        "— Parasol jest pod stołem — mówi Ania.",
+        "Marek bierze parasol i idzie do sklepu. Kupuje chleb, mleko i ser. Kiedy Marek wraca do domu, już nie pada. Jest słońce.",
+        "W kuchni Ania robi zupę, a Marek robi herbatę. Kot siedzi na krześle i patrzy na ser. Ale Ania mówi, że ser nie jest dla kota, więc kot pije mleko.",
+        "Po obiedzie Marek i Ania idą do parku, bo jest słońce. Kot nie idzie, bo znowu śpi na łóżku."
+      ],
+      "questions": [
+        {
+          "q": "Dlaczego Marek i Ania są rano w domu?",
+          "options": [
+            "bo pada deszcz",
+            "bo kot śpi",
+            "bo Ania pisze list"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Co robi Ania rano?",
+          "options": [
+            "pisze list do mamy",
+            "czyta książkę",
+            "robi zupę"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Dlaczego kot śpi na łóżku?",
+          "options": [
+            "bo nie lubi deszczu",
+            "bo nie lubi parku",
+            "bo pije mleko"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Dlaczego Ania idzie do kuchni?",
+          "options": [
+            "bo chce zrobić obiad",
+            "bo kot jest w kuchni",
+            "bo pada deszcz"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Gdzie jest parasol?",
+          "options": [
+            "pod stołem",
+            "na łóżku",
+            "w kuchni"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Co kupuje Marek?",
+          "options": [
+            "chleb, mleko i ser",
+            "chleb, kawę i ser",
+            "mleko i rybę"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Czy pada deszcz, kiedy Marek wraca?",
+          "options": [
+            "tak",
+            "nie"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Dlaczego Marek i Ania idą do parku po obiedzie?",
+          "options": [
+            "bo jest słońce",
+            "bo kot chce iść",
+            "bo nie mają chleba"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
       "id": "05-zakupy",
       "title": "Zakupy",
       "date": "2026-11-16",
