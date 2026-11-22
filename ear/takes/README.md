@@ -23,6 +23,28 @@ and were read in SETS order instead, which is why their entries above name a
 different order — if either is ever re-cut, use the order it was actually
 read in, not the current sheet.
 
+## Waiting: the 2026-11-22 volunteer sheet
+
+Sent 2026-11-22 to a new volunteer: the 31 words of the hardest sets plus the
+four new pairs, each read 3 times, in this order (spaced so that look-alikes
+such as kosz/koszy and Kasia/Basia are at least five apart). It is not the
+full reading order, so split the take with exactly this:
+
+    --reps 3 --subset koszy,kasza,piecz,pasz,ci,prosie,kasia,moc,kos,placze,miec,owcza,pas-acute,kasa,czar,bicz,kos-acute,miecz,basza,czy,owca,kosz,prosze,piec,basia,bic,mocz,kosi,pas,car,place
+
+Move this into the table above once the take is in.
+
+## The order frank2 and alan1 were read in
+
+The reading order was regenerated on 2026-11-22, when four pairs were added
+(mieć/miecz, bić/bicz, Basia/basza, kosi/koszy). `frank2.wav` and `alan1.mov`
+were read in the order before that, so a re-cut of either needs this
+`--subset`, not the one in the current `ear/reading-order.txt`:
+
+    --subset car,kosz,wies-acute,szum,kasza,nic,leci,mocz,wiesz,nos-acute,pas-acute,kos,kasia,placze,szyk,owcza,ci,nos,siad,piecz,prosze,pasz,moc,szok,sad,sum,kos-acute,pas,owca,czar,piec,syk,czy,prosie,nic-acute,leczy,place,sok,kasa
+
+`alan0.mov` read the first ten of that list.
+
 ## Why the noise floors differ
 
 `--noise` sets what counts as silence between words, and the right value is a

@@ -9,44 +9,57 @@ further down, and that is the whole exercise.
 
     python3 tools/ear_split.py yourfile.wav
 
- 1. car       car   (done)
- 2. kosz      kosz   (done)
- 3. wieś      wies-acute   (done)
- 4. szum      szum   (done)
- 5. kasza     kasza   (done)
- 6. nic       nic   (done)
- 7. leci      leci   (done)
- 8. mocz      mocz   (done)
- 9. wiesz     wiesz   (done)
-10. noś       nos-acute   (done)
-11. paś       pas-acute   (done)
-12. kos       kos   (done)
-13. Kasia     kasia   (done)
-14. płacze    placze   (done)
-15. szyk      szyk   (done)
-16. owcza     owcza   (done)
-17. ci        ci   (done)
-18. nos       nos   (done)
-19. siad      siad   (done)
-20. piecz     piecz   (done)
-21. proszę    prosze   (done)
-22. pasz      pasz   (done)
-23. moc       moc   (done)
-24. szok      szok   (done)
-25. sad       sad   (done)
-26. sum       sum   (done)
-27. koś       kos-acute   (done)
-28. pas       pas   (done)
-29. owca      owca   (done)
-30. czar      czar   (done)
-31. piec      piec   (done)
-32. syk       syk   (done)
-33. czy       czy   (done)
-34. prosię    prosie   (done)
-35. nić       nic-acute   (done)
-36. leczy     leczy   (done)
-37. płace     place   (done)
-38. sok       sok   (done)
-39. kasa      kasa   (done)
+39 of these are already recorded, marked (done) below.
+To record only what is missing, read just the unmarked ones and run:
 
---subset car,kosz,wies-acute,szum,kasza,nic,leci,mocz,wiesz,nos-acute,pas-acute,kos,kasia,placze,szyk,owcza,ci,nos,siad,piecz,prosze,pasz,moc,szok,sad,sum,kos-acute,pas,owca,czar,piec,syk,czy,prosie,nic-acute,leczy,place,sok,kasa
+    python3 tools/ear_split.py yourfile.wav --subset bicz,koszy,basia,miecz,kosi,bic,basza,miec
+
+ 1. pasz      pasz   (done)
+ 2. nos       nos   (done)
+ 3. wiesz     wiesz   (done)
+ 4. kasza     kasza   (done)
+ 5. sad       sad   (done)
+ 6. bicz      bicz
+ 7. płace     place   (done)
+ 8. ci        ci   (done)
+ 9. koszy     koszy
+10. koś       kos-acute   (done)
+11. nić       nic-acute   (done)
+12. syk       syk   (done)
+13. moc       moc   (done)
+14. Basia     basia
+15. owca      owca   (done)
+16. wieś      wies-acute   (done)
+17. kosz      kosz   (done)
+18. siad      siad   (done)
+19. nic       nic   (done)
+20. piecz     piecz   (done)
+21. miecz     miecz
+22. pas       pas   (done)
+23. płacze    placze   (done)
+24. mocz      mocz   (done)
+25. czy       czy   (done)
+26. owcza     owcza   (done)
+27. czar      czar   (done)
+28. piec      piec   (done)
+29. kosi      kosi
+30. sum       sum   (done)
+31. kos       kos   (done)
+32. bić       bic
+33. prosię    prosie   (done)
+34. leczy     leczy   (done)
+35. szyk      szyk   (done)
+36. sok       sok   (done)
+37. kasa      kasa   (done)
+38. paś       pas-acute   (done)
+39. szum      szum   (done)
+40. noś       nos-acute   (done)
+41. proszę    prosze   (done)
+42. szok      szok   (done)
+43. basza     basza
+44. Kasia     kasia   (done)
+45. mieć      miec
+46. car       car   (done)
+47. leci      leci   (done)
+
+--subset pasz,nos,wiesz,kasza,sad,bicz,place,ci,koszy,kos-acute,nic-acute,syk,moc,basia,owca,wies-acute,kosz,siad,nic,piecz,miecz,pas,placze,mocz,czy,owcza,czar,piec,kosi,sum,kos,bic,prosie,leczy,szyk,sok,kasa,pas-acute,szum,nos-acute,prosze,szok,basza,kasia,miec,car,leci

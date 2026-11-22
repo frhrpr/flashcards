@@ -325,7 +325,21 @@ const WORDS = {
   "placze":     {w:["pła","cz","e"], g:"cries, weeps",        s:"cz"},
 
   "owca":       {w:["ow","c","a"],   g:"sheep",               s:"c"},
-  "owcza":      {w:["ow","cz","a"],  g:"ovine, sheep's",      s:"cz"}
+  "owcza":      {w:["ow","cz","a"],  g:"ovine, sheep's",      s:"cz"},
+
+  /* Added 2026-11-22 for the two contrasts he fails most, ś/ć against sz/cz
+     (paś/pasz 45%, koś/kosz 60%, ci/czy 65%). Skipped until audio exists. */
+  "miec":       {w:["mie","ć",""],   g:"to have",             s:"ci"},
+  "miecz":      {w:["mie","cz",""],  g:"sword",               s:"cz"},
+
+  "bic":        {w:["bi","ć",""],    g:"to beat, hit",        s:"ci"},
+  "bicz":       {w:["bi","cz",""],   g:"whip",                s:"cz"},
+
+  "basia":      {w:["Ba","si","a"],  g:"Basia (a name)",      s:"si"},
+  "basza":      {w:["ba","sz","a"],  g:"pasha",               s:"sz"},
+
+  "kosi":       {w:["ko","si",""],   g:"(he) mows",           s:"si"},
+  "koszy":      {w:["ko","sz","y"],  g:"of baskets",          s:"sz"}
 };
 
 /* One row per contrast family. A row of three is three separate pairs at
@@ -349,7 +363,12 @@ const SETS = [
   ["piec","piecz"],
   ["leci","leczy"],
   ["place","placze"],
-  ["owca","owcza"]
+  ["owca","owcza"],
+
+  ["miec","miecz"],
+  ["bic","bicz"],
+  ["basia","basza"],
+  ["kosi","koszy"]
 ];
 /* ── end of ear content ───────────────────────────────────────────── */
 
